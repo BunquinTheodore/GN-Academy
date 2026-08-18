@@ -1,0 +1,39 @@
+# Free Supabase has no restorable automatic backups (§4). Weekly pg_dump,
+# gzipped, kept 90 days as a workflow artifact. Stopgap, not a real backup
+# strategy — logged in DECISIONS.md.
+#
+# Requires repo secret SUPABASE_DB_URL: the full Postgres connection string
+# from Supabase → Settings → Database (use the session pooler URI on IPv4
+# runners).
+name: Weekly database backup
+
+on:
+  schedule:
+    - cron: "23 3 * * 1" # Mondays 03:23 UTC
+  workflow_dispatch:
+
+jobs:
+  dump:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install postgres client
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq postgresql-client
+      - name: pg_dump
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          if [ -z "$SUPABASE_DB_URL" ]; then
+            echo "SUPABASE_DB_URL secret not configured; skipping." && exit 0
+          fi
+          pg_dump "$SUPABASE_DB_URL" \
+            --no-owner --no-privileges --schema=public \
+            | gzip > "backup-$(date +%Y%m%d).sql.gz"
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: db-backup-${{ github.run_id }}
+          path: backup-*.sql.gz
+          retention-days: 90
+          if-no-files-found: warn
