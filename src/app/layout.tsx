@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Bricolage_Grotesque } from "next/font/google";
-import { Toaster } from "@/components/ui/sonner";
 import { env } from "@/lib/env";
 import "./globals.css";
 
@@ -12,6 +11,9 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  // Mono marks credential codes and scores — small, below-the-fold text.
+  // Not worth a preload that competes with the display font for LCP.
+  preload: false,
 });
 
 const bricolage = Bricolage_Grotesque({
@@ -40,7 +42,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${bricolage.variable} antialiased`}
       >
         {children}
-        <Toaster />
       </body>
     </html>
   );
