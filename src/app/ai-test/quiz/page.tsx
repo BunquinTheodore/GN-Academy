@@ -12,7 +12,9 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-export const dynamic = "force-dynamic";
+// Questions are stable content: serve a cached page, refresh every 5 min.
+// (Attempt creation is a client-side POST, so nothing here is per-user.)
+export const revalidate = 300;
 
 export default async function QuizPage() {
   let questions = null;
