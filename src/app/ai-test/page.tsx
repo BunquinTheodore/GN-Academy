@@ -33,10 +33,12 @@ export default function AiTestPage() {
           project, checking AI output — not trivia. You&apos;ll get a score out
           of 100 and the one skill area to fix first.
         </p>
-        {/* TODO(phase-2): start the quiz — engine ships with the funnel phase */}
-        <Button size="lg" className="h-12" disabled>
-          Start my test — opening soon
+        <Button asChild size="lg" className="h-12">
+          <Link href="/ai-test/quiz">Start my test</Link>
         </Button>
+        <p className="text-xs text-muted-foreground">
+          No account needed. Your result is scored instantly.
+        </p>
       </main>
     </div>
   );
