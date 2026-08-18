@@ -17,7 +17,7 @@ function formatIssueDate(value: Date | string | null | undefined): string | null
   if (!value) return null;
   const date = typeof value === "string" ? new Date(value) : value;
   if (Number.isNaN(date.getTime())) return null;
-  return new Intl.DateTimeFormat("en-PH", {
+  return new Intl.DateTimeFormat("en-GB", {
     day: "numeric",
     month: "long",
     year: "numeric",

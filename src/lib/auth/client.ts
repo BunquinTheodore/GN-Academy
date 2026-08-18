@@ -18,7 +18,7 @@ import { firebaseAuth, googleProvider } from "@/lib/firebase/client";
  */
 export async function completeSignIn(
   user: User,
-  options?: { marketingConsent?: boolean },
+  options?: { marketingConsent?: boolean; fullName?: string },
 ): Promise<void> {
   const idToken = await user.getIdToken();
 
@@ -28,6 +28,9 @@ export async function completeSignIn(
     body: JSON.stringify({
       idToken,
       marketingConsent: options?.marketingConsent,
+      // The ID token is minted before updateProfile lands, so the name
+      // travels explicitly on first sync.
+      fullName: options?.fullName,
     }),
   });
   if (!syncRes.ok) {
@@ -61,7 +64,10 @@ export async function signUpWithEmail(input: {
     input.password,
   );
   await updateProfile(cred.user, { displayName: input.fullName });
-  await completeSignIn(cred.user, { marketingConsent: input.marketingConsent });
+  await completeSignIn(cred.user, {
+    marketingConsent: input.marketingConsent,
+    fullName: input.fullName,
+  });
 }
 
 export async function signInWithEmail(input: {

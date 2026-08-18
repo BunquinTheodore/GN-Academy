@@ -103,7 +103,6 @@ export function Quiz({ assessmentSlug, questions }: QuizProps) {
     };
     window.addEventListener("popstate", onPop);
     return () => window.removeEventListener("popstate", onPop);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index, phase]);
 
   const syncAnswers = useCallback(

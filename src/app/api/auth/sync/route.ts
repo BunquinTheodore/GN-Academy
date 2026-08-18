@@ -16,6 +16,7 @@ import {
 const bodySchema = z.object({
   idToken: z.string().min(1),
   marketingConsent: z.boolean().optional(),
+  fullName: z.string().trim().min(1).max(120).optional(),
 });
 
 /**
@@ -47,7 +48,9 @@ export async function POST(request: Request) {
     await upsertProfileOnSync({
       id: uid,
       email: decoded.email ?? "",
-      full_name: typeof decoded.name === "string" ? decoded.name : null,
+      full_name:
+        parsed.data.fullName ??
+        (typeof decoded.name === "string" ? decoded.name : null),
       avatar_url: typeof decoded.picture === "string" ? decoded.picture : null,
       marketing_consent: parsed.data.marketingConsent,
     });

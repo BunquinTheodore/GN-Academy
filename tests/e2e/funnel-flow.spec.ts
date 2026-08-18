@@ -17,7 +17,7 @@ test.describe("funnel flow", () => {
 
   // Repeated local runs share one IP; clear rate-limit windows so the
   // limiter (working as designed) doesn't fail the suite.
-  test.beforeAll(async () => {
+  test.beforeEach(async () => {
     const supabase = createClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL!,
       process.env.SUPABASE_SERVICE_ROLE_KEY!,

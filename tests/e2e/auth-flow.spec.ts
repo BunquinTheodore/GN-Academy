@@ -20,7 +20,7 @@ test.describe("auth flow", () => {
 
   // Local runs share one IP; reset limiter windows so the rate limiter
   // (working as designed) doesn't fail the suite.
-  test.beforeAll(async () => {
+  test.beforeEach(async () => {
     const supabase = createClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL!,
       process.env.SUPABASE_SERVICE_ROLE_KEY!,
