@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Admin",
@@ -7,12 +9,17 @@ export const metadata: Metadata = {
 
 export default function AdminPage() {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-4">
       <h1 className="font-display text-2xl font-semibold">Admin</h1>
-      {/* TODO(phase-4): certifications, lessons, questions, credentials, enrollments, leads */}
+      <div className="flex flex-wrap gap-2">
+        <Button asChild variant="outline">
+          <Link href="/admin/enrollments">Pending enrollments</Link>
+        </Button>
+      </div>
+      {/* TODO(phase-4): certifications, lessons, questions, credentials, leads CSV */}
       <p className="max-w-prose text-sm text-muted-foreground">
-        Admin tools land phase by phase: leads and questions with the funnel,
-        enrollments and credentials with certification launch.
+        Content editing, question management, credential revocation, and lead
+        export arrive with the admin phase.
       </p>
     </div>
   );
