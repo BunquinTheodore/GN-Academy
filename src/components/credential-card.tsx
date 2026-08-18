@@ -88,7 +88,7 @@ export function CredentialCard({
             <p
               className={cn(
                 "text-[0.65rem] tracking-[0.18em] uppercase",
-                isInkCard ? "text-white/40" : "text-muted-foreground/70",
+                isInkCard ? "text-white/70" : "text-muted-foreground",
               )}
             >
               {level ?? "Professional certification"}
@@ -138,7 +138,7 @@ export function CredentialCard({
             <p
               className={cn(
                 "text-[0.6rem] tracking-[0.15em] uppercase",
-                isInkCard ? "text-white/40" : "text-muted-foreground/70",
+                isInkCard ? "text-white/70" : "text-muted-foreground",
               )}
             >
               Credential code
@@ -152,7 +152,7 @@ export function CredentialCard({
               <p
                 className={cn(
                   "text-[0.6rem] tracking-[0.15em] uppercase",
-                  isInkCard ? "text-white/40" : "text-muted-foreground/70",
+                  isInkCard ? "text-white/70" : "text-muted-foreground",
                 )}
               >
                 Issued
