@@ -36,6 +36,21 @@ test("legal pages exist and are marked as drafts", async ({ page }) => {
   await expect(page.getByText(/pending legal review/i)).toBeVisible();
 });
 
+test("ai-test entry leads to the quiz", async ({ page }) => {
+  await page.goto("/ai-test");
+  await page.getByRole("link", { name: "Start my test" }).click();
+  // Generous timeout: first dev-server compile of the route plus a failing
+  // placeholder-key DB call can take a while before the page responds.
+  await expect(page).toHaveURL(/\/ai-test\/quiz/, { timeout: 30_000 });
+  // With live keys the first question renders; with placeholders the
+  // explicit error state must show — never a crash or blank page.
+  await expect(
+    page
+      .getByRole("radiogroup")
+      .or(page.getByText("The test couldn't load")),
+  ).toBeVisible({ timeout: 15_000 });
+});
+
 test("security headers are present", async ({ page }) => {
   const response = await page.goto("/");
   const headers = response?.headers() ?? {};

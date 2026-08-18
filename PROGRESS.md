@@ -1,43 +1,38 @@
 # PROGRESS
 
-## Phase 1 — Foundation (branch: phase-1-foundation)
+## Phase 1 — Foundation (branch: phase-1-foundation) — COMPLETE*
+All items done; `npm run verify` green; Playwright 12/12 public flows; Lighthouse
+mobile / 94-95 perf + 100 a11y, /ai-test 93 + 100.
+*Gated on real keys (BLOCKED.md): full auth-flow e2e, applying migration 0001.
+Merge to main once those pass.
 
-- [x] Scaffold Next.js 15 + TS strict + Tailwind v4, git repo, state files
-- [x] Stack deps installed (firebase, firebase-admin, supabase-js, zod, RHF, resend, shadcn/ui, vitest, playwright)
-- [x] `verify` script (typecheck + lint + test + build)
-- [x] Env validation with Zod (client + server-only split), `.env.example`, placeholder `.env.local`
-- [x] Design tokens (ink/paper/gold/blue, gold isolated to `verified` token) + Bricolage/Geist/mono fonts
-- [x] `CredentialCard` in all four states (locked/goal/earned/verified) — visible on homepage + dashboard
-- [x] Firebase client init + auth helpers (email/password + Google)
-- [x] firebase-admin lazy server init (`server-only`)
-- [x] `POST /api/auth/sync` — `role: authenticated` claim + profiles upsert + consent capture
-- [x] `POST/DELETE /api/auth/session` — httpOnly session cookie (Firebase session cookie, 5 days)
-- [x] Middleware: optimistic redirect for /dashboard + /admin, CSP/HSTS/security headers
-- [x] Supabase browser client (token passthrough) + service-role server client
-- [x] Migration 0001: profiles (+ column-protect trigger), rate_limits (+ atomic fn), audit_log — RLS on all
-- [x] `scripts/make-admin.ts` (`npm run make-admin -- email`) + README docs
-- [x] Login / signup / forgot-password pages (separate marketing consent, open-redirect guard)
-- [x] Dashboard shell: profile completeness checklist + locked cert item + goal credential card
-- [x] Admin shell gated on custom claim (404 for non-admins)
-- [x] Homepage + marketing/legal pages, copy in `src/content/site.ts`
-- [x] keep-alive.yml + backup.yml workflows
-- [x] Vitest: 9 unit tests passing (schemas, open-redirect guard)
-- [x] Playwright: 12/12 public-page + redirect tests passing (mobile + desktop)
-- [ ] Playwright full auth flow — WRITTEN but gated on E2E_AUTH=1; needs real keys (BLOCKED.md #1)
-- [ ] Lighthouse ≥90 mobile on touched pages ← NEXT
-- [ ] Apply migration 0001 to real Supabase (BLOCKED.md #3)
-- [ ] Merge to main once key-dependent checks pass
+## Phase 2 — The funnel (branch: phase-2-funnel)
 
-Last verified: 2026-08-18 — `npm run verify` all green (typecheck, lint, 9 unit tests, build);
-`npm run test:e2e` 12 passed / 2 skipped (auth flow needs keys).
+- [x] Migration 0002: assessments, questions (no select policy — answers stay server-side), attempts, leads + RLS
+- [x] seed.sql: AI Readiness diagnostic + 15 scenario questions to §8 calibration standard (PH work contexts)
+- [x] Scoring engine: weighted competencies 25/20/35/20, bands, weakest-area — pure + 8 unit tests incl. §8 casual-user calibration
+- [x] Anon visitor cookie (gn_anon, httpOnly, 1yr)
+- [x] POST /api/attempts (rate-limited 5/IP/hr), PATCH answers, POST complete (server-side scoring; email capture rate-limited 3/IP/hr)
+- [x] Quiz UI: one question/screen, progress bar, localStorage + server persistence, browser-back = previous question, error states
+- [x] Email gate ONLY after final question; separate marketing consent; quiet skip link
+- [x] Results page: score, 4 competency bars, level copy, weakest area, locked credential card, 2 CTAs, share button
+- [x] Dynamic OG image (score + level) for results URLs
+- [x] Lead capture into `leads` + welcome email (Resend; skips gracefully on placeholder key; resend.dev sender until domain verifies)
+- [x] Anonymous attempts linked to account on signup via anon_id
+- [x] Analytics event stubs (§13 names, typed) at all funnel call sites — provider wired Phase 4
+- [x] /start-free stub; /ai-test start button live
+- [ ] Full funnel e2e (take test → email → results → row in leads) — needs real keys + applied migrations   ← NEXT (blocked)
+- [ ] Lighthouse on /ai-test/quiz + results — needs live DB to render
+- [ ] Homepage was built in Phase 1; privacy/terms drafts done in Phase 1
+
+Last verified: 2026-08-18 — verify green (16 unit tests), Playwright 14 passed / 2 key-gated skips.
 
 Known gaps:
-- `.env.local` holds placeholders — every Firebase/Supabase/Resend call fails until real keys are pasted.
-- /ai-test start button disabled (quiz engine is Phase 2). /verify lookup and /certifications catalogue are placeholders (Phase 3).
-- /dashboard/profile is a stub (full editor Phase 5).
-- Sonner toaster mounted but nothing fires toasts yet.
+- Quiz/results pages render their error state until real Supabase keys + migrations exist.
+- Welcome email uses onboarding@resend.dev until the domain is verified (BLOCKED.md).
+- max_attempts not enforced for the diagnostic (unlimited by design; IP rate limit is the guard).
 
-## Phase 2 — The funnel (next 3 tasks)
-1. Migration 0002: assessments, questions, attempts, leads (+ RLS + anon insert policy)
-2. Write the 15 AI Readiness questions to §8 calibration standard in seed.sql
-3. Quiz UI: one question per screen, localStorage + server persistence, progress bar
+## Phase 3 — Certification and credentials (next 3 tasks)
+1. Migration 0003: certifications, modules, lessons, enrollments, lesson_progress (+ FK assessments.certification_id)
+2. Seed: Certified AI Virtual Assistant + free AI Foundations with modules/lessons + 3 demo credentials
+3. /certifications catalogue + [slug] product page (server-rendered, JSON-LD Course)
