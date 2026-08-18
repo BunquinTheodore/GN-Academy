@@ -5,6 +5,8 @@ import {
   markClaimsSynced,
   upsertProfileOnSync,
 } from "@/lib/db/profiles";
+import { linkAttemptsToUser } from "@/lib/db/attempts";
+import { getAnonId } from "@/lib/auth/anon";
 import {
   checkRateLimit,
   RATE_LIMITS,
@@ -60,6 +62,14 @@ export async function POST(request: Request) {
         role: "authenticated",
       });
       await markClaimsSynced(uid);
+    }
+
+    // §8: claim any anonymous test attempts made from this browser.
+    const anonId = await getAnonId();
+    if (anonId) {
+      await linkAttemptsToUser(anonId, uid).catch((e) =>
+        console.error("attempt linking failed", e),
+      );
     }
 
     return Response.json({ synced: true, refreshed: !alreadySynced });
