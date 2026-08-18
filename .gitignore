@@ -30,8 +30,19 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# env files — never commit secrets
 .env*
+!.env.example
+
+# playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# secrets — never commit
+*service-account*.json
+firebase-adminsdk*.json
 
 # vercel
 .vercel
