@@ -64,6 +64,7 @@ export const footer = {
         { label: "Certifications", href: "/certifications" },
         { label: "Verify a credential", href: "/verify" },
         { label: "How it works", href: "/how-it-works" },
+        { label: "Blog", href: "/blog" },
       ],
     },
     {

@@ -528,3 +528,34 @@ insert into public.credential_sequences (prefix, year, last_seq) values
 ('CAVA', 2026, 2),
 ('AIF', 2026, 1)
 on conflict (prefix, year) do nothing;
+
+-- ════════════════════════════════════════════════════════════════════════════
+-- Blog — real posts, not lorem. Editable from /admin without a deploy.
+-- ════════════════════════════════════════════════════════════════════════════
+
+insert into public.posts
+  (id, slug, title, excerpt, category, author_name, status, published_at, content_mdx)
+values
+(
+  'b0000000-0000-4000-8000-000000000001',
+  'what-employers-actually-check',
+  'What employers actually check when you say you know AI',
+  'A line on your CV costs nothing to write, so it proves nothing. Here is what a hiring manager does next — and what makes that check come back in your favour.',
+  'Hiring',
+  'GN Academy',
+  'published',
+  '2026-08-12T02:00:00Z',
+  E'"Proficient in AI tools" is now on so many CVs that it has stopped carrying information. It costs one line to write and nothing to back up, so the people reading applications have quietly stopped treating it as a signal.\n\nThat is not cynicism. It is what happens to any claim that is free to make.\n\n## What the check actually looks like\n\nWhen a claim matters, someone tries to confirm it. In practice that is one of four things:\n\n- **A question in the interview.** "Walk me through the last thing you used AI for at work." Vague answers end the topic.\n- **A small task.** Draft this reply, summarise this document, clean up this list. They are watching your process, not your typing speed.\n- **A reference.** Did this person actually do the work described?\n- **A credential.** Something with an issuer and a code they can check themselves.\n\nOnly the last one survives a check the candidate is not present for — which matters, because most rejections happen before anyone speaks to you.\n\n## Why the task trips people up\n\nThe small task is where "I use ChatGPT every day" separates from "I work with AI."\n\nDaily chatting builds familiarity with a text box. Work requires something else: knowing which tasks to hand over, briefing with enough context to get a usable first draft, and — the part that gets missed — checking the output before it reaches someone who is relying on it.\n\nThat last habit is the one hiring managers are most quietly testing for. A confident wrong answer that reaches a client is worse than no answer at all, and everyone who has worked with these tools for a while has a story about it.\n\n## Making the claim checkable\n\nThe fix is not a longer CV line. It is making the claim survive a check you are not in the room for:\n\n1. **Be specific about the work, not the tool.** "Rebuilt a client''s weekly reporting so it takes 40 minutes instead of three hours" beats any tool name.\n2. **Keep one example you can walk through.** The prompt, what came back, what you changed, why.\n3. **Carry proof that stands on its own.** A credential with a public verification page answers the question before it is asked.\n\nNone of this requires you to be an expert. It requires the claim to be the kind of thing someone can confirm — which is a much lower bar than being the best, and a much higher bar than writing a line.\n\n## Where to start\n\nIf you are not sure which of these you can already do, the [AI Readiness Test](/ai-test) scores you across prompting, tool choice, workflow, and judgment in about ten minutes, and tells you which one is weakest. It is free and there is nothing to install.'
+),
+(
+  'b0000000-0000-4000-8000-000000000002',
+  'verify-a-credential-before-you-hire',
+  'How to verify a GN Academy credential before you hire',
+  'Every credential we issue has a code and a public page. Here is how to check one in about ten seconds, and what each part of the result means.',
+  'For employers',
+  'GN Academy',
+  'published',
+  '2026-08-14T02:00:00Z',
+  E'A certificate image proves nothing — it is a picture, and pictures are editable. That is why every GN Academy credential is a record you can look up rather than a file someone sends you.\n\n## The ten-second check\n\n1. Ask for the credential code. It looks like `CAVA-2026-000001` and belongs on a CV the same way a licence number does.\n2. Go to [gnacademy verification](/verify) and enter it.\n3. Read what comes back.\n\nNo account, no login, no waiting on us to reply to an email.\n\n## Reading the result\n\nThe verification page shows four things that matter:\n\n- **The holder''s name.** It should match the person in front of you.\n- **What they earned**, and at what level.\n- **When it was issued.** Codes are permanent and never reused.\n- **The status.** Active, revoked, or expired.\n\nA revoked credential still resolves. It does not disappear — the page says revoked, along with the reason. That is deliberate: a credential that silently vanishes is easy for its holder to explain away, and a withdrawal that stays visible is the only version that protects you.\n\n## What the competencies mean\n\nPassing is not a single number. Each credential carries a per-competency breakdown — prompting and output quality, tool fluency, workflow integration, and judgment and verification.\n\nThat breakdown is useful when you are choosing between candidates who both passed. Someone strong on workflow is a good fit for recurring operations work. Someone strong on judgment is who you want anywhere output reaches a client unreviewed.\n\n## If a code does not resolve\n\nNothing found means no credential with that code exists. Check for typos first — the format is prefix, year, then six digits. If it still comes back empty, treat the claim as unverified. We would rather you check than assume.'
+)
+on conflict (slug) do nothing;
