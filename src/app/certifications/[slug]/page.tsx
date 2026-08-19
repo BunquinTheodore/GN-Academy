@@ -5,6 +5,7 @@ import { BookOpen, CheckCircle2, Lock } from "lucide-react";
 import {
   getModulesWithLessonMeta,
   getPublishedCertificationBySlug,
+  listPublishedCertifications,
 } from "@/lib/db/certifications";
 import { formatPhp } from "@/lib/format";
 import { env } from "@/lib/env";
@@ -15,6 +16,17 @@ import { Button } from "@/components/ui/button";
 import { CredentialCard } from "@/components/credential-card";
 
 export const revalidate = 300;
+
+/**
+ * Prerender every published certification at build time. The catalogue is a
+ * handful of rows, so this costs nothing and turns the product page from
+ * "dynamic on first hit, then ISR" into a static file — no DB round trip in
+ * the critical path for the page most visitors land on from search.
+ */
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
+  const certifications = await listPublishedCertifications().catch(() => []);
+  return certifications.map((c) => ({ slug: c.slug }));
+}
 
 export async function generateMetadata({
   params,
