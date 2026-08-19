@@ -24,7 +24,7 @@ export async function submitDataRequestAction(
     headers: headerList,
   });
 
-  if (!(await checkRateLimit(request, RATE_LIMITS.emailCapture))) {
+  if (!(await checkRateLimit(request, RATE_LIMITS.dataRequest))) {
     return {
       error: "Too many requests from this connection. Try again in an hour.",
     };

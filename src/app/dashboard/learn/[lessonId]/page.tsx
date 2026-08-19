@@ -13,7 +13,7 @@ import {
 import { getEnrollment } from "@/lib/db/enrollments";
 import { getCompletedLessonIds } from "@/lib/db/progress";
 import { Button } from "@/components/ui/button";
-import { CompleteLessonForm } from "./complete-lesson-form";
+import { CompleteLessonButton } from "./complete-lesson-button";
 
 export const metadata: Metadata = {
   title: "Lesson",
@@ -100,7 +100,7 @@ export default async function LessonPage({
         )}
 
         {enrolled ? (
-          <CompleteLessonForm
+          <CompleteLessonButton
             lessonId={lessonId}
             isDone={isDone}
             isFreeTrack={context.certification.is_free}

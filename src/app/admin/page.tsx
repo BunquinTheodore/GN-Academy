@@ -102,6 +102,10 @@ function FunnelPanel({
         />
         <Stat label="Free enrollments" value={String(counts.freeEnrollments)} />
         <Stat
+          label="Lessons completed"
+          value={String(counts.lessonsCompleted)}
+        />
+        <Stat
           label="Paid enrollments"
           value={String(counts.paidEnrollments)}
           hint="Submitted, including still-pending payments"

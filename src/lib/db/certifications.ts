@@ -73,28 +73,22 @@ export async function getPublishedCertificationBySlug(
 export async function getModulesWithLessonMeta(
   certificationId: string,
 ): Promise<{ module: Module; lessons: LessonMeta[] }[]> {
-  const { data: modules, error } = await supabaseAdmin()
+  // One round trip, not two. This sits on the critical path of every lesson
+  // completion, and the database is a region away.
+  const { data, error } = await supabaseAdmin()
     .from("modules")
-    .select("*")
-    .eq("certification_id", certificationId)
-    .order("sort_order");
-  if (error) throw error;
-  if (!modules || modules.length === 0) return [];
-
-  const { data: lessons, error: lessonError } = await supabaseAdmin()
-    .from("lessons")
-    .select("id, module_id, title, slug, duration_minutes, sort_order, is_preview")
-    .in(
-      "module_id",
-      modules.map((m) => m.id),
+    .select(
+      "*, lessons ( id, module_id, title, slug, duration_minutes, sort_order, is_preview )",
     )
-    .order("sort_order");
-  if (lessonError) throw lessonError;
+    .eq("certification_id", certificationId)
+    .order("sort_order")
+    .order("sort_order", { referencedTable: "lessons" });
+  if (error) throw error;
 
-  return modules.map((module) => ({
-    module,
-    lessons: (lessons ?? []).filter((l) => l.module_id === module.id),
-  }));
+  return (data ?? []).map((row) => {
+    const { lessons, ...module } = row as Module & { lessons: LessonMeta[] };
+    return { module, lessons: lessons ?? [] };
+  });
 }
 
 /** Full lesson including content — caller must verify enrollment/preview first. */

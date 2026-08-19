@@ -27,6 +27,10 @@ export const RATE_LIMITS = {
   attemptCreate: { route: "attempt-create", max: 5, windowSeconds: 3600 },
   emailCapture: { route: "email-capture", max: 3, windowSeconds: 3600 },
   auth: { route: "auth", max: 10, windowSeconds: 900 },
+  // Its own bucket, not emailCapture's: someone exercising a legal right
+  // must never be blocked because a housemate on the same connection took
+  // the free test three times (§14).
+  dataRequest: { route: "data-request", max: 5, windowSeconds: 3600 },
   verifyLookup: { route: "verify-lookup", max: 30, windowSeconds: 3600 },
 } as const satisfies Record<string, RateLimitRule>;
 

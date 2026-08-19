@@ -19,6 +19,8 @@ export type AnalyticsEvent =
   | "test_completed"
   | "email_captured"
   | "free_course_started"
+  // Counted from lesson_progress in the admin funnel, not from the browser:
+  // the completion button is a no-JS server-action form on purpose.
   | "free_lesson_completed"
   | "free_exam_passed"
   | "certification_viewed"

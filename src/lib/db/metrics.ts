@@ -7,6 +7,7 @@ export type FunnelCounts = {
   testsCompleted: number;
   emailsCaptured: number;
   freeEnrollments: number;
+  lessonsCompleted: number;
   paidEnrollments: number;
   paidConfirmed: number;
   credentialsIssued: number;
@@ -52,6 +53,7 @@ async function countsFor(
     completed,
     emails,
     free,
+    lessons,
     paid,
     paidConfirmed,
     credentials,
@@ -64,6 +66,16 @@ async function countsFor(
       return q;
     })(),
     enrollments(true),
+    // Counted here rather than as a browser event: the completion button is
+    // a no-JS server-action form on purpose, so there is no reliable moment
+    // in the browser to fire from.
+    (() => {
+      let q = admin
+        .from("lesson_progress")
+        .select("id", { count: "exact", head: true });
+      if (since) q = q.gte("completed_at", since);
+      return q;
+    })(),
     enrollments(false),
     enrollments(false).in("status", ["active", "completed"]),
     (() => {
@@ -82,6 +94,7 @@ async function countsFor(
     testsCompleted: completed.count ?? 0,
     emailsCaptured: emails.count ?? 0,
     freeEnrollments: free.count ?? 0,
+    lessonsCompleted: lessons.count ?? 0,
     paidEnrollments: paid.count ?? 0,
     paidConfirmed: paidConfirmed.count ?? 0,
     credentialsIssued: credentials.count ?? 0,
