@@ -10,6 +10,7 @@ const LINKS: { href: string; label: string; exact?: boolean }[] = [
   { href: "/admin/questions", label: "Questions" },
   { href: "/admin/enrollments", label: "Enrollments" },
   { href: "/admin/credentials", label: "Credentials" },
+  { href: "/admin/leads", label: "Leads" },
 ];
 
 export function AdminNav() {

@@ -24,8 +24,11 @@ export default function AdminPage() {
         <Button asChild variant="outline">
           <Link href="/admin/credentials">Credentials</Link>
         </Button>
+        <Button asChild variant="outline">
+          <Link href="/admin/leads">Leads</Link>
+        </Button>
       </div>
-      {/* TODO(phase-4): leads CSV, blog, data requests */}
+      {/* TODO(phase-4): blog, data requests, funnel metrics */}
     </div>
   );
 }
