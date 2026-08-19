@@ -17,14 +17,16 @@ export default function StartFreePage() {
         the AI Readiness Test measures — prompting, tools, workflow, and
         judgment — built for Filipino work contexts.
       </p>
-      {/* TODO(phase-3): free course player + enrollment */}
-      <div className="rounded-md border border-dashed border-border p-4">
+      <div className="rounded-md border border-border bg-card p-4">
         <p className="text-sm">
-          The course opens with our certification launch. Create an account now
-          and your test result carries over automatically.
+          Five short lessons, a free exam, and a verifiable certificate at the
+          end. If you took the AI Readiness Test, your result carries over to
+          your account automatically.
         </p>
         <Button asChild className="mt-4">
-          <Link href="/signup">Create my free account</Link>
+          <Link href="/certifications/ai-foundations">
+            View the free course
+          </Link>
         </Button>
       </div>
     </PageShell>
