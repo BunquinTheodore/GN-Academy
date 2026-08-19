@@ -47,7 +47,43 @@ Known gaps:
 - GitHub Actions secrets still unset; gh CLI installed, awaiting `gh auth login`.
 - Video lessons: schema supports video_url; no videos exist yet (content decision).
 
-## Phase 4 — Admin and content (next 3 tasks)
-1. /admin CRUD: certifications, lessons, questions (the §8 "edit from admin" promise)
-2. Leads CSV export + credential revocation with audit trail
-3. MDX blog + sitemap/robots/OG images + analytics provider wiring
+## Phase 4 — Admin and content (branch: phase-4-admin-content) — COMPLETE
+
+Gate: *a non-developer publishes a new certification and a blog post with no
+deploy.* Met — both are database-backed and edited from /admin.
+
+- [x] Migration 0004: posts, data_requests, updated_at triggers — applied live
+- [x] /admin CRUD: certifications, modules, lessons (nested <details> editors,
+      one form per entity), questions with a competency-coverage panel
+- [x] Credential revocation with a mandatory public reason + reinstate
+- [x] Leads table + CSV export (admin claim re-checked in the route,
+      audit-logged, formula-injection safe, UTF-8 BOM)
+- [x] Enrollment-approved email
+- [x] DB-backed MDX blog with categories, Article JSON-LD, two real seed posts
+- [x] sitemap.ts, robots.ts, Organization JSON-LD, OG cards for certs + posts
+- [x] Analytics: cookieless provider via two env vars; 11 of 12 §13 events
+      wired. enrollment_confirmed and free_lesson_completed are counted from
+      the database instead — see DECISIONS
+- [x] /data-request form → admin queue → real account deletion (credentials
+      retained but unlinked, audit_log retained, per §14 and /privacy)
+- [x] Funnel metrics on /admin, last 30 days and all time, against §13 targets
+- [x] E2E: 54/54 live (mobile + desktop), now against a production build
+- [x] verify green: typecheck, lint, 21 unit tests, build
+
+Real bugs found by moving e2e to a production build:
+- Lesson progression needed a second click in production — chained action
+  redirects are dropped by the App Router. Fixed by returning the href.
+- The whole suite had been running against an unrelated project's server on
+  port 3000.
+- Data requests shared the email-capture rate-limit bucket.
+
+Known gaps carried forward:
+- Real GCash/Maya receiving numbers not yet in enrollment copy (BLOCKED.md).
+- GitHub Actions secrets still unset; gh CLI installed, awaiting `gh auth login`.
+- Analytics is inert until NEXT_PUBLIC_ANALYTICS_* are set (BLOCKED.md).
+- Video lessons: schema supports video_url; no videos exist yet.
+
+## Phase 5 — Talent layer (next)
+1. Public profiles /talent/[username], gated on a verified credential + is_public
+2. Portfolio uploads → Supabase Storage (buckets + policies)
+3. Employer directory with filters, enquiry form, /companies
