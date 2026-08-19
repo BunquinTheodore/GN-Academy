@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Bricolage_Grotesque } from "next/font/google";
 import { env } from "@/lib/env";
+import { site } from "@/content/site";
+import { AnalyticsScript } from "@/components/analytics-script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -31,6 +33,21 @@ export const metadata: Metadata = {
     "Professional AI certification for Filipinos. Take the free AI Readiness Test, earn a verified credential, and get found by employers.",
 };
 
+/**
+ * Sitewide issuer identity. A credential is only as credible as the body
+ * that issued it, so the organisation is described once, everywhere, and
+ * the credential pages point back at it.
+ */
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  name: site.name,
+  url: env.NEXT_PUBLIC_SITE_URL,
+  description: site.description,
+  slogan: site.tagline,
+  areaServed: { "@type": "Country", name: "Philippines" },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -41,7 +58,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${bricolage.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd),
+          }}
+        />
         {children}
+        <AnalyticsScript />
       </body>
     </html>
   );

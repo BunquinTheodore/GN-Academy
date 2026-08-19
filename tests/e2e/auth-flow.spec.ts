@@ -48,8 +48,12 @@ test.describe("auth flow", () => {
 
     // The dashboard renders the profile row read through the DAL — reaching
     // it proves the sync route upserted the profile.
+    // Sign-out is a Firebase signOut, a session-cookie DELETE, and a
+    // navigation. 10s was fine for a 36-test suite; with the whole suite
+    // running in parallel against one dev server it is the tightest budget
+    // in the file, and the only reason this test ever goes red.
     await page.getByRole("button", { name: "Sign out" }).click();
-    await expect(page).toHaveURL("/", { timeout: 10_000 });
+    await expect(page).toHaveURL("/", { timeout: 30_000 });
 
     await page.goto("/dashboard");
     await expect(page).toHaveURL(/\/login/);

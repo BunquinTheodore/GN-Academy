@@ -1,4 +1,5 @@
 import { NextResponse, type NextRequest } from "next/server";
+import { analyticsOrigin } from "@/lib/analytics";
 
 const SESSION_COOKIE = "gn_session";
 
@@ -27,13 +28,16 @@ export function middleware(request: NextRequest) {
     response = NextResponse.next();
   }
 
+  // Empty when analytics is off, so the header gains nothing then.
+  const analytics = analyticsOrigin();
+
   const csp = [
     "default-src 'self'",
-    "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://apis.google.com https://www.gstatic.com",
+    `script-src 'self' 'unsafe-inline' 'unsafe-eval' https://apis.google.com https://www.gstatic.com${analytics ? ` ${analytics}` : ""}`,
     "style-src 'self' 'unsafe-inline'",
     "img-src 'self' data: blob: https:",
     "font-src 'self' data:",
-    "connect-src 'self' https://*.googleapis.com https://*.firebaseapp.com https://*.supabase.co wss://*.supabase.co",
+    `connect-src 'self' https://*.googleapis.com https://*.firebaseapp.com https://*.supabase.co wss://*.supabase.co${analytics ? ` ${analytics}` : ""}`,
     "frame-src https://*.firebaseapp.com https://accounts.google.com",
     "object-src 'none'",
     "base-uri 'self'",

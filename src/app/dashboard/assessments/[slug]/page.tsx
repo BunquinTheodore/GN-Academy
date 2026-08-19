@@ -3,6 +3,7 @@ import { notFound, redirect } from "next/navigation";
 import { z } from "zod";
 import { getSessionUser } from "@/lib/auth/session";
 import { getPublicQuestions } from "@/lib/db/assessments";
+import { getCertificationById } from "@/lib/db/certifications";
 import { getEnrollment } from "@/lib/db/enrollments";
 import {
   countCompletedAttempts,
@@ -34,6 +35,7 @@ export default async function ExamPage({
   const exam = await getPublishedExamBySlug(parsed.data.slug).catch(() => null);
   if (!exam) notFound();
 
+  let isFreeTrack = false;
   if (exam.certification_id) {
     const enrollment = await getEnrollment(user.uid, exam.certification_id).catch(
       () => null,
@@ -41,6 +43,10 @@ export default async function ExamPage({
     if (!enrollment || !["active", "completed"].includes(enrollment.status)) {
       redirect("/dashboard/assessments");
     }
+    const cert = await getCertificationById(exam.certification_id).catch(
+      () => null,
+    );
+    isFreeTrack = cert?.is_free ?? false;
   }
 
   const used = await countCompletedAttempts(user.uid, exam.id).catch(() => 0);
@@ -60,6 +66,7 @@ export default async function ExamPage({
 
   return (
     <ExamPlayer
+      isFreeTrack={isFreeTrack}
       examSlug={exam.slug}
       examTitle={exam.title}
       passingScore={exam.passing_score ?? 70}

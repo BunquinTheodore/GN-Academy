@@ -87,19 +87,33 @@ export async function listPendingEnrollments(): Promise<
   return (data ?? []) as never;
 }
 
+/**
+ * Returns the updated row (with the student and certification joined on) so
+ * the caller can notify them, or null when the row was no longer pending —
+ * the status guard is what makes a double-click idempotent.
+ */
 export async function setEnrollmentStatus(
   id: string,
   status: "active" | "rejected",
-): Promise<void> {
-  const { error } = await supabaseAdmin()
+): Promise<
+  | (Enrollment & {
+      profiles: { email: string; full_name: string | null } | null;
+      certifications: { title: string; slug: string } | null;
+    })
+  | null
+> {
+  const { data, error } = await supabaseAdmin()
     .from("enrollments")
     .update({
       status,
       approved_at: status === "active" ? new Date().toISOString() : null,
     })
     .eq("id", id)
-    .eq("status", "pending");
+    .eq("status", "pending")
+    .select("*, profiles ( email, full_name ), certifications ( title, slug )")
+    .maybeSingle();
   if (error) throw error;
+  return data as never;
 }
 
 export async function updateEnrollmentProgress(

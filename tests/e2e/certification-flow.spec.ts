@@ -134,8 +134,11 @@ test.describe("certification journey", () => {
       await page
         .getByRole("button", { name: /Mark complete and continue|next lesson/ })
         .click();
+      // Each completion is several round trips to the database region, and
+      // both viewport projects run this journey at once — same budget as the
+      // other live round-trip waits in the suite.
       await page.waitForURL((url) => url.toString() !== before, {
-        timeout: 30_000,
+        timeout: 45_000,
       });
     }
     await expect(page).toHaveURL(/\/dashboard\/courses/, { timeout: 30_000 });

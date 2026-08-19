@@ -10,6 +10,8 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 
 type ExamPlayerProps = {
+  /** Free-track exams are the §13 top-of-funnel conversion, counted separately. */
+  isFreeTrack?: boolean;
   examSlug: string;
   examTitle: string;
   passingScore: number;
@@ -26,6 +28,7 @@ type ExamResult = {
 };
 
 export function ExamPlayer({
+  isFreeTrack = false,
   examSlug,
   examTitle,
   passingScore,
@@ -74,7 +77,10 @@ export function ExamPlayer({
       if (!res.ok) throw new Error(data?.error ?? "Could not score your exam.");
       setResult(data);
       setPhase("done");
-      if (data.passed && data.credentialCode) track("credential_issued");
+      if (data.passed) {
+        if (isFreeTrack) track("free_exam_passed");
+        if (data.credentialCode) track("credential_issued");
+      }
     } catch (e) {
       setError(e instanceof Error ? e.message : "Could not score your exam.");
       setPhase("quiz");

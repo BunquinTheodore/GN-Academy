@@ -24,7 +24,11 @@ export function EnrollForm({ slug, isFree }: { slug: string; isFree: boolean }) 
   return (
     <form
       action={formAction}
-      onSubmit={() => track("enrollment_started", { certification: slug })}
+      onSubmit={() =>
+        track(isFree ? "free_course_started" : "enrollment_started", {
+          certification: slug,
+        })
+      }
       className="flex flex-col gap-4"
     >
       <input type="hidden" name="slug" value={slug} />

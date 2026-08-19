@@ -2,17 +2,17 @@
 
 Items needing an action only the human can take.
 
-## 1. Migrations cannot be applied from THIS session — one small step
-The Supabase MCP server was authenticated, but MCP servers added mid-session
-only attach after a session restart. Either:
-- **(a)** Restart Claude Code in this folder (`claude` then `/resume` to pick
-  the session back up) — I'll then apply 0001, 0002, and the seed myself; or
-- **(b)** Paste the database password — I'll apply them via a direct
-  connection right now; or
-- **(c)** Paste `supabase/migrations/0001_profiles.sql`, then
-  `0002_assessments.sql`, then `supabase/seed.sql` into the dashboard SQL
-  editor yourself, in that order.
-Blocks: auth-flow e2e, funnel e2e, anything touching the database.
+## 1. Analytics provider account (new, Phase 4)
+The funnel events are wired and the loader is in place, but analytics stays
+inert until both vars are set in `.env.local` (and in the host's env):
+```
+NEXT_PUBLIC_ANALYTICS_SRC=https://<provider>/script.js
+NEXT_PUBLIC_ANALYTICS_WEBSITE_ID=<id>
+```
+Needs a cookieless provider so no consent banner is required. Umami Cloud's
+free tier is the assumed default; Plausible and Counter.dev share the same
+script-tag + `track(name, props)` shape, so any of them drops in. Until then
+`/admin` still reports the funnel from the database.
 
 ## 2. Resend domain (not urgent)
 Until your sending domain verifies (SPF + DKIM), email delivers only to your
