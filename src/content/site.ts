@@ -72,6 +72,7 @@ export const footer = {
       links: [
         { label: "About", href: "/about" },
         { label: "For employers", href: "/employers" },
+        { label: "For companies", href: "/companies" },
       ],
     },
     {
