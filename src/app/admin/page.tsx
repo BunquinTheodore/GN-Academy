@@ -21,8 +21,11 @@ export default function AdminPage() {
         <Button asChild variant="outline">
           <Link href="/admin/enrollments">Pending enrollments</Link>
         </Button>
+        <Button asChild variant="outline">
+          <Link href="/admin/credentials">Credentials</Link>
+        </Button>
       </div>
-      {/* TODO(phase-4): credential revocation, leads CSV, blog, data requests */}
+      {/* TODO(phase-4): leads CSV, blog, data requests */}
     </div>
   );
 }

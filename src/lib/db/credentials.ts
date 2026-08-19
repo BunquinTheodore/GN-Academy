@@ -109,3 +109,64 @@ export async function issueCredential(input: {
 
   return data;
 }
+
+// ── Admin (service role; callers must have re-checked the admin claim) ──────
+
+export type CredentialWithHolder = Credential & {
+  profiles: { email: string; full_name: string | null } | null;
+};
+
+/**
+ * Recent credentials, optionally filtered by code, holder name, or the
+ * holder's account email. Codes are permanent, so search is how an admin
+ * finds the one a complaint is about.
+ */
+export async function searchCredentials(
+  query: string,
+  limit = 50,
+): Promise<CredentialWithHolder[]> {
+  const admin = supabaseAdmin();
+  const trimmed = query.trim();
+
+  let builder = admin
+    .from("credentials")
+    .select("*, profiles ( email, full_name )")
+    .order("issued_at", { ascending: false })
+    .limit(limit);
+
+  if (trimmed) {
+    // Commas and parens would be read as PostgREST filter syntax.
+    const safe = trimmed.replace(/[,()]/g, " ");
+    builder = builder.or(
+      `credential_code.ilike.%${safe}%,holder_name.ilike.%${safe}%`,
+    );
+  }
+
+  const { data, error } = await builder;
+  if (error) throw error;
+  return (data ?? []) as never;
+}
+
+export async function setCredentialStatus(
+  id: string,
+  input:
+    | { status: "revoked"; reason: string }
+    | { status: "active" },
+): Promise<Credential | null> {
+  const { data, error } = await supabaseAdmin()
+    .from("credentials")
+    .update(
+      input.status === "revoked"
+        ? {
+            status: "revoked",
+            revoked_reason: input.reason,
+            revoked_at: new Date().toISOString(),
+          }
+        : { status: "active", revoked_reason: null, revoked_at: null },
+    )
+    .eq("id", id)
+    .select("*")
+    .maybeSingle();
+  if (error) throw error;
+  return data;
+}
