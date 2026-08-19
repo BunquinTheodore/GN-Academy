@@ -32,3 +32,8 @@ Resolved 2026-08-18: Firebase web config ✓ · Firebase service account ✓
 Email/Password + Google providers ENABLED ✓ · Resend key ✓ · IP_HASH_SALT ✓.
 Note: the value pasted as "service role secret" was the anon key again; the
 sb_secret_ key is its modern equivalent and is used instead.
+
+Resolved 2026-08-19: Storage buckets `avatars` and `portfolio` created
+programmatically with the service role (public-read, size and MIME limited);
+write policies restrict each user to their own UID folder. No dashboard step
+is needed.

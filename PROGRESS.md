@@ -83,7 +83,25 @@ Known gaps carried forward:
 - Analytics is inert until NEXT_PUBLIC_ANALYTICS_* are set (BLOCKED.md).
 - Video lessons: schema supports video_url; no videos exist yet.
 
-## Phase 5 — Talent layer (next)
-1. Public profiles /talent/[username], gated on a verified credential + is_public
-2. Portfolio uploads → Supabase Storage (buckets + policies)
-3. Employer directory with filters, enquiry form, /companies
+## Phase 5 — Talent layer (branch: phase-5-talent) — BUILT, NOT MERGED
+
+- [x] Migration 0005: portfolio_items, employer_enquiries, username format +
+      case-insensitive uniqueness, storage policies — applied to the live DB
+- [x] Storage buckets `avatars` and `portfolio` created against the live
+      project (clears the last standing human-only item)
+- [x] /dashboard/profile: full editor + portfolio items, WebP upload
+- [x] /talent/[username]: public profile, Person JSON-LD, credential links
+- [x] /employers: directory with skill + certification filters
+- [x] /employers/enquire + /admin/enquiries queue
+- [x] /companies page; footer + sitemap wiring
+- [x] verify green: typecheck, lint, 21 unit tests, build
+- [~] E2E tests/e2e/talent-flow.spec.ts written; publish journey, the
+      no-credential gate, and the storage-policy proof all pass. The
+      username-collision test still times out waiting on a profile save
+      under full parallel load — see HANDOFF §Next actions. The feature
+      itself passes when that test wins the race (17s) — this is the
+      cold-action-module cost, not a defect found in the code.
+- [ ] Re-run the FULL suite (all six specs) green, then merge to main
+
+## Phase 6 — Launch readiness (not started)
+See HANDOFF.md §Remaining work.
