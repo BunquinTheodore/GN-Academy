@@ -13,14 +13,16 @@ export default function AdminPage() {
       <h1 className="font-display text-2xl font-semibold">Admin</h1>
       <div className="flex flex-wrap gap-2">
         <Button asChild variant="outline">
+          <Link href="/admin/certifications">Certifications</Link>
+        </Button>
+        <Button asChild variant="outline">
+          <Link href="/admin/questions">Question sets</Link>
+        </Button>
+        <Button asChild variant="outline">
           <Link href="/admin/enrollments">Pending enrollments</Link>
         </Button>
       </div>
-      {/* TODO(phase-4): certifications, lessons, questions, credentials, leads CSV */}
-      <p className="max-w-prose text-sm text-muted-foreground">
-        Content editing, question management, credential revocation, and lead
-        export arrive with the admin phase.
-      </p>
+      {/* TODO(phase-4): credential revocation, leads CSV, blog, data requests */}
     </div>
   );
 }

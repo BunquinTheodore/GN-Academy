@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getSessionUser } from "@/lib/auth/session";
 import { SignOutButton } from "@/components/sign-out-button";
+import { AdminNav } from "@/components/admin/admin-nav";
 
 export default async function AdminLayout({
   children,
@@ -21,6 +22,9 @@ export default async function AdminLayout({
           <SignOutButton />
         </div>
       </header>
+      <div className="mx-auto w-full max-w-6xl px-4 pt-4">
+        <AdminNav />
+      </div>
       <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8">
         {children}
       </main>
