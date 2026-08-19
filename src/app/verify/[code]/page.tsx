@@ -7,6 +7,7 @@ import { env } from "@/lib/env";
 import { CredentialCard } from "@/components/credential-card";
 import { SiteHeader } from "@/components/site/header";
 import { SiteFooter } from "@/components/site/footer";
+import { TrackView } from "@/components/track-view";
 import { Button } from "@/components/ui/button";
 
 export const dynamic = "force-dynamic";
@@ -85,6 +86,12 @@ export default async function VerifyCodePage({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      )}
+      {credential && (
+        <TrackView
+          event="credential_verified"
+          props={{ status: credential.status }}
         />
       )}
 

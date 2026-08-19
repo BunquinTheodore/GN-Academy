@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
-import { ArrowLeft, CheckCircle2 } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { z } from "zod";
 import { getSessionUser } from "@/lib/auth/session";
 import {
@@ -13,7 +13,7 @@ import {
 import { getEnrollment } from "@/lib/db/enrollments";
 import { getCompletedLessonIds } from "@/lib/db/progress";
 import { Button } from "@/components/ui/button";
-import { completeLessonAction } from "./actions";
+import { CompleteLessonForm } from "./complete-lesson-form";
 
 export const metadata: Metadata = {
   title: "Lesson",
@@ -100,19 +100,11 @@ export default async function LessonPage({
         )}
 
         {enrolled ? (
-          <form action={completeLessonAction}>
-            <input type="hidden" name="lessonId" value={lessonId} />
-            <Button type="submit" className="h-11">
-              {isDone ? (
-                <>
-                  <CheckCircle2 className="size-4" aria-hidden />
-                  Completed — next lesson
-                </>
-              ) : (
-                "Mark complete and continue"
-              )}
-            </Button>
-          </form>
+          <CompleteLessonForm
+            lessonId={lessonId}
+            isDone={isDone}
+            isFreeTrack={context.certification.is_free}
+          />
         ) : (
           <Button asChild className="h-11">
             <Link href={`/certifications/${context.certification.slug}/enroll`}>

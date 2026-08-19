@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Bricolage_Grotesque } from "next/font/google";
 import { env } from "@/lib/env";
 import { site } from "@/content/site";
+import { AnalyticsScript } from "@/components/analytics-script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -64,6 +65,7 @@ export default function RootLayout({
           }}
         />
         {children}
+        <AnalyticsScript />
       </body>
     </html>
   );

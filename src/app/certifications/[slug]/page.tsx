@@ -14,6 +14,7 @@ import { SiteFooter } from "@/components/site/footer";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CredentialCard } from "@/components/credential-card";
+import { TrackView } from "@/components/track-view";
 
 export const revalidate = 300;
 
@@ -88,6 +89,7 @@ export default async function CertificationPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <TrackView event="certification_viewed" props={{ slug: cert.slug }} />
 
       <main className="flex-1">
         <section className="border-b border-border bg-card">
