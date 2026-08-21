@@ -97,12 +97,9 @@ Known gaps carried forward:
 
 The talent e2e was red for a real reason, not for load. See Phase 6.
 
-## Phase 6 — Hardening and launch readiness — BUILT, NOT COMMITTED
+## Phase 6 — Hardening and launch readiness — COMPLETE
 
-Everything in this section is loose in the working tree on `phase-5-talent`.
-Nothing here is committed and `phase-5-talent` is still not merged into `main`.
-Migration 0006 is the sharp one: it is already applied to the live database
-and recorded in `schema_migrations`, while the file itself is uncommitted.
+Six commits on `phase-5-talent`, merged to `main` as `6c92da7` and pushed.
 `npm run verify` is green and the full live e2e suite is **64/64 with no
 flakes, in 2.2 minutes** (it was 5.1 minutes before the last fix). See
 README §21 and §22.

@@ -20,9 +20,7 @@ do), `HANDOFF.md` (session-to-session narrative).
 
 ## 1. Status
 
-**Read this before anything else.** As of 21 August 2026 there is a large
-body of uncommitted work in the tree. Nothing below has been committed, and
-`phase-5-talent` has **not** been merged into `main`.
+All six phases are on `main` as of 21 August 2026.
 
 | Phase | Scope | State |
 |---|---|---|
@@ -30,12 +28,12 @@ body of uncommitted work in the tree. Nothing below has been committed, and
 | 2 — Funnel | AI Readiness Test, email capture, results | ✅ merged to `main` |
 | 3 — Certification | Courses, exams, credentials, public verification | ✅ merged to `main` |
 | 4 — Admin & content | Admin CRUD, blog, SEO, analytics, privacy tooling | ✅ merged to `main` |
-| 5 — Talent layer | Public profiles, portfolio, employer directory | 🔨 committed on `phase-5-talent`, **not merged** |
-| 6 — Hardening | Production bug fixes, audit fixes, configuration | 🔨 **uncommitted in the working tree** |
+| 5 — Talent layer | Public profiles, portfolio, employer directory | ✅ merged to `main` |
+| 6 — Hardening | Production bug fixes, audit fixes, configuration | ✅ merged to `main` |
 
-`main` is a complete, working product through Phase 4. The talent layer is on
-its branch. Everything from §21 below is loose in the working tree on
-`phase-5-talent`.
+`main` is the complete product. Nothing the platform needs in order to
+*function* is missing; what remains before taking money is credentials,
+content, and business decisions (§18 and `BLOCKED.md`).
 
 **Health of the working tree right now**
 
@@ -47,18 +45,8 @@ its branch. Everything from §21 below is loose in the working tree on
 | `npm run build` | green |
 | `npm run test:e2e` with `E2E_AUTH=1` | **64 of 64**, no flakes, 2.2 min |
 
-Everything is green. What remains is committing it (§22).
-
-> **Do not discard the working tree, and commit before doing anything else
-> risky.** Two things depend on it:
->
-> - `supabase/migrations/0006_tighten_write_policies.sql` **has already been
->   applied to the live database** and is recorded in `schema_migrations`, but
->   the file itself is uncommitted. Lose the file and the live schema carries
->   a change with no record of it in the repo, and the next `apply-migrations`
->   run will skip a migration nobody can read.
-> - Everything else in §21 — two production bug fixes, nine correctness
->   fixes, and two new e2e tests — exists only in the working tree.
+Everything is green and committed. Migrations 0001–0006 are applied to the
+live database and recorded in `schema_migrations`.
 
 ---
 
@@ -776,9 +764,7 @@ it is not exportable as static files.
 
 ## 21. What this session did (21 August 2026)
 
-All of it is uncommitted. `git diff --stat` shows 32 modified files plus three
-new ones (`src/lib/payment.ts`, `src/app/api/revalidate/route.ts`,
-`supabase/migrations/0006_tighten_write_policies.sql`).
+Six commits on `phase-5-talent`, merged to `main` as `6c92da7`.
 
 ### 21.1 The production bug that had been mistaken for slowness
 
@@ -896,8 +882,7 @@ Result: **64 of 64, no flakes**, and the whole suite went from 5.1 minutes to
 In order.
 
 1. ~~Re-run the full suite.~~ **Done — 64/64, no flakes, 2.2 min.**
-2. **Commit and push.** Nothing in §21 is committed. Suggested split, one
-   commit each, conventional commits, pushed individually:
+2. ~~Commit and push.~~ **Done — six commits, pushed.** For the record:
    - `fix: server actions that revalidate never finish in production` —
      `src/components/admin/admin-form.tsx`, `src/app/api/revalidate/`, the
      seven `src/app/admin/**/actions.ts` files,
@@ -920,8 +905,7 @@ In order.
    - `perf: verify the session cookie once per request` —
      `src/lib/auth/session.ts`
    - `docs: README as the complete reference; phase 6 state` — the `.md` files
-3. **Merge `phase-5-talent` into `main`** with `git merge --no-ff`, and push.
-   Then correct §1 of this file: phases 5 and 6 become "merged to `main`".
+3. ~~Merge `phase-5-talent` into `main`.~~ **Done — `6c92da7`, pushed.**
 4. **Re-measure Lighthouse on a quiet machine** across the public routes,
    including `/employers`, `/talent/[username]`, and `/companies`. Everything
    measured so far has been about ten points below its known-quiet value, the

@@ -15,9 +15,8 @@ judgement call), `BLOCKED.md` (things only a human can do).
 
 ## 1. Where things stand
 
-Phases 1–4 are merged to `main`. Phase 5 (the talent layer) is committed on
-`phase-5-talent` and **not merged**. Phase 6 — everything this session did —
-is **uncommitted in the working tree**.
+All six phases are merged to `main` (`6c92da7`) and pushed. `npm run verify`
+is green and the full live e2e suite is 64/64 with no flakes.
 
 The product works end to end: free AI Readiness Test → email capture → free
 course → paid certification → publicly verifiable credential → talent profile
@@ -27,11 +26,8 @@ checklist (README §18) is blocked on code.
 `README.md` §21 is the detailed account of this session and §22 is the ordered
 list of what to do next. Start there.
 
-**Do not discard the working tree.** Migration 0006 has already been applied
-to the live database and is recorded in `schema_migrations`, but the file is
-uncommitted — lose it and the live schema carries a change the repo has no
-record of. Everything else from this session lives only in the working tree
-too. Commit first, then do anything risky.
+Migrations 0001–0006 are applied to the live database and recorded in
+`schema_migrations`.
 
 ---
 
@@ -118,8 +114,8 @@ and navigate from the client.
 
 ## 3. Next actions
 
-See README §22 for the full ordered list. In short: re-run the suite, commit
-and push the six changes, merge `phase-5-talent`, then:
+See README §22 for the full ordered list. The suite, the commits, and the
+merge are all done. What is left:
 
 1. **Re-measure Lighthouse on a quiet machine** across the public routes,
    including `/employers`, `/talent/[username]`, and `/companies`. Everything
