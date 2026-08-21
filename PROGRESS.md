@@ -83,25 +83,96 @@ Known gaps carried forward:
 - Analytics is inert until NEXT_PUBLIC_ANALYTICS_* are set (BLOCKED.md).
 - Video lessons: schema supports video_url; no videos exist yet.
 
-## Phase 5 — Talent layer (branch: phase-5-talent) — BUILT, NOT MERGED
+## Phase 5 — Talent layer — COMPLETE
 
 - [x] Migration 0005: portfolio_items, employer_enquiries, username format +
       case-insensitive uniqueness, storage policies — applied to the live DB
-- [x] Storage buckets `avatars` and `portfolio` created against the live
-      project (clears the last standing human-only item)
+- [x] Storage buckets `avatars` and `portfolio` created against the live project
 - [x] /dashboard/profile: full editor + portfolio items, WebP upload
 - [x] /talent/[username]: public profile, Person JSON-LD, credential links
 - [x] /employers: directory with skill + certification filters
 - [x] /employers/enquire + /admin/enquiries queue
 - [x] /companies page; footer + sitemap wiring
-- [x] verify green: typecheck, lint, 21 unit tests, build
-- [~] E2E tests/e2e/talent-flow.spec.ts written; publish journey, the
-      no-credential gate, and the storage-policy proof all pass. The
-      username-collision test still times out waiting on a profile save
-      under full parallel load — see HANDOFF §Next actions. The feature
-      itself passes when that test wins the race (17s) — this is the
-      cold-action-module cost, not a defect found in the code.
-- [ ] Re-run the FULL suite (all six specs) green, then merge to main
+- [x] E2E tests/e2e/talent-flow.spec.ts green
 
-## Phase 6 — Launch readiness (not started)
-See HANDOFF.md §Remaining work.
+The talent e2e was red for a real reason, not for load. See Phase 6.
+
+## Phase 6 — Hardening and launch readiness — BUILT, NOT COMMITTED
+
+Everything in this section is loose in the working tree on `phase-5-talent`.
+Nothing here is committed and `phase-5-talent` is still not merged into `main`.
+Migration 0006 is the sharp one: it is already applied to the live database
+and recorded in `schema_migrations`, while the file itself is uncommitted.
+`npm run verify` is green and the full live e2e suite is **64/64 with no
+flakes, in 2.2 minutes** (it was 5.1 minutes before the last fix). See
+README §21 and §22.
+
+### The bug the talent suite was actually reporting
+
+A server action that calls `revalidatePath` and returns state to
+`useActionState` never finishes its transition in a production build. Measured
+end to end: the action and the page re-render both complete on the server in
+under a second, and the browser sits on a disabled "Saving…" button until the
+test's 90-second budget runs out. It reproduces with a single call against an
+unrelated fully dynamic route, disappears the moment the call is removed, and
+`next dev` hides it completely.
+
+Every admin editor called `revalidatePath`. **The whole admin area was broken
+in production and the suite never noticed**, because no test had ever
+submitted an admin form — they only read admin pages. Fixed:
+
+- [x] `revalidatePath` removed from every state-returning action. Calls that
+      targeted fully dynamic routes were no-ops and were deleted; the ones
+      that mattered (`/certifications`, `/certifications/[slug]`,
+      `/blog/[slug]`, `/ai-test/quiz`, `/sitemap.xml`) are now purged by
+      `POST /api/revalidate`, fired by `AdminForm` after a successful save
+- [x] Admin create/delete actions return `redirectTo` instead of calling
+      `redirect()` — the same pattern the lesson player already uses
+- [x] New e2e: an admin writes, publishes, and edits a post through the real
+      UI, and a logged-out stranger reads it immediately
+- [x] Profile saves measured 5/5 at 0.9–2.0s afterwards (was 2-of-3 hanging)
+- [x] Same failure from the client side: `router.refresh()` immediately after
+      `router.push()` in `CompleteLessonButton` stopped the lesson transition
+      from ever completing. Bisected on one build with a runtime toggle — the
+      journey passes in 36.4s without it and fails with it. Removed. **This
+      one has not been through a full suite yet.**
+
+### Correctness fixes found by an audit of the whole codebase
+
+- [x] A rejected paid enrollment could never be re-submitted — the retry path
+      existed but always hit the unique constraint, so a mistyped payment
+      reference locked a paying customer out permanently. `createEnrollment`
+      upserts now
+- [x] Ticking "list me in the directory" without a credential threw the whole
+      profile edit away while saying it had been saved. It now saves
+      everything and holds back only the tick
+- [x] A rejected enrollment rendered on the dashboard as an active course with
+      a progress bar and a dead "Start learning" button
+- [x] The exam result screen claimed "your credential is live" on any pass,
+      including passes where no credential was issued
+- [x] Two concurrent submissions of one exam attempt could both issue a
+      credential. `completeAttempt` is now the claim on the attempt: the
+      loser gets a 409
+- [x] `POST /api/attempts` accepted any published assessment slug, including
+      paid certification exams, skipping the enrollment and attempt-limit
+      checks. Diagnostic only now
+- [x] Account erasure left the avatar and portfolio images public at stable
+      URLs. Storage folders are deleted first
+- [x] Migration 0006 drops the two RLS policies that let a signed-in browser
+      write directly (`profiles` update, `attempts` insert) — the app has
+      never used them and they bypassed every server-side validation
+- [x] `getSessionUser` wrapped in React `cache()`: one revocation round trip
+      to Google per request instead of three
+- [x] Dead-end messages ("email us", "our payment instructions page") now name
+      a real address
+
+### Configuration that no longer needs a developer
+
+- [x] GCash/Maya receiving details are `NEXT_PUBLIC_PAYMENT_*` env vars
+- [x] Email sender is `RESEND_FROM`
+- [x] README rewritten as the complete reference for the codebase
+
+### Still open — none of it is code
+
+See `BLOCKED.md` and README §18: analytics account, Resend domain, payment
+account details, legal review, brand wording, hosting, and the first cohort.
