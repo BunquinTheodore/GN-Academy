@@ -1,7 +1,5 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
-import { redirect } from "next/navigation";
 import { z } from "zod";
 import { auditLog, requireAdmin } from "@/lib/auth/admin";
 import { optional, optionalInt, parseList } from "@/lib/admin/form-values";
@@ -18,11 +16,14 @@ import {
   type CertificationInput,
 } from "@/lib/db/certifications";
 
-/** Every public certification surface is cached — republish them together. */
-function revalidateCatalogue(slug?: string): void {
-  revalidatePath("/certifications");
-  if (slug) revalidatePath(`/certifications/${slug}`);
-  revalidatePath("/sitemap.xml");
+/**
+ * Every public certification surface is cached, so they are purged together.
+ * The paths are returned rather than revalidated here — see AdminFormState.
+ */
+function cataloguePaths(slug?: string): string[] {
+  return slug
+    ? ["/certifications", `/certifications/${slug}`, "/sitemap.xml"]
+    : ["/certifications", "/sitemap.xml"];
 }
 
 const SLUG = z
@@ -108,9 +109,7 @@ export async function saveCertificationAction(
         entityId: id,
         metadata: { slug: input.slug, is_published: input.is_published },
       });
-      revalidateCatalogue(input.slug);
-      revalidatePath(`/admin/certifications/${id}`);
-      return { ok: "Saved." };
+      return { ok: "Saved.", revalidate: cataloguePaths(input.slug) };
     }
 
     const created = await createCertification(input);
@@ -121,11 +120,12 @@ export async function saveCertificationAction(
       entityId: created.id,
       metadata: { slug: input.slug },
     });
-    revalidateCatalogue(input.slug);
-    redirect(`/admin/certifications/${created.id}`);
+    return {
+      ok: "Created.",
+      revalidate: cataloguePaths(input.slug),
+      redirectTo: `/admin/certifications/${created.id}`,
+    };
   } catch (e) {
-    // redirect() throws a control-flow signal — never swallow it.
-    if (e && typeof e === "object" && "digest" in e) throw e;
     console.error("save certification failed", e);
     const message = e instanceof Error ? e.message : "";
     if (message.includes("duplicate key")) {
@@ -181,9 +181,10 @@ export async function saveModuleAction(
       entityId: moduleId ?? null,
       metadata: { certification_id: certificationId, title: rest.title },
     });
-    revalidatePath(`/admin/certifications/${certificationId}`);
-    revalidateCatalogue();
-    return { ok: moduleId ? "Module saved." : "Module added." };
+    return {
+      ok: moduleId ? "Module saved." : "Module added.",
+      revalidate: cataloguePaths(),
+    };
   } catch (e) {
     console.error("save module failed", e);
     return { error: "Couldn't save the module." };
@@ -218,9 +219,7 @@ export async function deleteModuleAction(
       entityId: moduleId.data,
       metadata: { certification_id: certificationId.data },
     });
-    revalidatePath(`/admin/certifications/${certificationId.data}`);
-    revalidateCatalogue();
-    return { ok: "Module deleted." };
+    return { ok: "Module deleted.", revalidate: cataloguePaths() };
   } catch (e) {
     console.error("delete module failed", e);
     return { error: "Couldn't delete the module." };
@@ -278,11 +277,16 @@ export async function saveLessonAction(
       action: lessonId ? "lesson.updated" : "lesson.created",
       entity: "lesson",
       entityId: lessonId ?? null,
-      metadata: { module_id: moduleId, title: input.title },
+      metadata: {
+        certification_id: certificationId,
+        module_id: moduleId,
+        title: input.title,
+      },
     });
-    revalidatePath(`/admin/certifications/${certificationId}`);
-    revalidateCatalogue();
-    return { ok: lessonId ? "Lesson saved." : "Lesson added." };
+    return {
+      ok: lessonId ? "Lesson saved." : "Lesson added.",
+      revalidate: cataloguePaths(),
+    };
   } catch (e) {
     console.error("save lesson failed", e);
     const message = e instanceof Error ? e.message : "";
@@ -316,9 +320,7 @@ export async function deleteLessonAction(
       entityId: lessonId.data,
       metadata: { certification_id: certificationId.data },
     });
-    revalidatePath(`/admin/certifications/${certificationId.data}`);
-    revalidateCatalogue();
-    return { ok: "Lesson deleted." };
+    return { ok: "Lesson deleted.", revalidate: cataloguePaths() };
   } catch (e) {
     console.error("delete lesson failed", e);
     return { error: "Couldn't delete the lesson." };

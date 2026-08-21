@@ -1,6 +1,5 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { auditLog, requireAdmin } from "@/lib/auth/admin";
 import { optional } from "@/lib/admin/form-values";
@@ -48,7 +47,6 @@ export async function resolveDataRequestAction(
       entityId: parsed.data.requestId,
       metadata: { kind: resolved.kind },
     });
-    revalidatePath("/admin/data-requests");
     return { ok: `Marked ${parsed.data.status}.` };
   } catch (e) {
     console.error("resolve data request failed", e);
@@ -131,7 +129,6 @@ export async function executeDeletionAction(
         entityId: parsed.data.requestId,
         metadata: { account_found: false, leads: leads?.length ?? 0 },
       });
-      revalidatePath("/admin/data-requests");
       return {
         ok: `No account matched that address. Removed ${leads?.length ?? 0} lead record(s).`,
       };
@@ -159,7 +156,6 @@ export async function executeDeletionAction(
       resolvedBy: admin.uid,
     });
 
-    revalidatePath("/admin/data-requests");
     return {
       ok: `Deleted. ${report.credentialsUnlinked} credential(s) kept and unlinked, as the privacy page promises.`,
     };

@@ -1,6 +1,5 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { auditLog, requireAdmin } from "@/lib/auth/admin";
 import type { AdminFormState } from "@/components/admin/admin-form";
@@ -47,7 +46,6 @@ export async function resolveEnquiryAction(
       entityId: parsed.data.enquiryId,
     });
 
-    revalidatePath("/admin/enquiries");
     return { ok: `Marked ${parsed.data.status}.` };
   } catch (e) {
     console.error("resolve enquiry failed", e);

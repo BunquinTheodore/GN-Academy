@@ -1,6 +1,5 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { auditLog, requireAdmin } from "@/lib/auth/admin";
 import { optional, optionalInt } from "@/lib/admin/form-values";
@@ -79,9 +78,11 @@ export async function saveQuestionAction(
       // is readable by anyone with admin, and this is exam material.
       metadata: { assessment_id: assessmentId, competency: input.competency },
     });
-    revalidatePath(`/admin/questions/${assessmentId}`);
-    revalidatePath("/ai-test/quiz");
-    return { ok: questionId ? "Question saved." : "Question added." };
+    return {
+      ok: questionId ? "Question saved." : "Question added.",
+      // The quiz caches its question set for five minutes.
+      revalidate: ["/ai-test/quiz"],
+    };
   } catch (e) {
     console.error("save question failed", e);
     return { error: "Couldn't save the question." };
@@ -111,9 +112,7 @@ export async function deleteQuestionAction(
       entityId: questionId.data,
       metadata: { assessment_id: assessmentId.data },
     });
-    revalidatePath(`/admin/questions/${assessmentId.data}`);
-    revalidatePath("/ai-test/quiz");
-    return { ok: "Question deleted." };
+    return { ok: "Question deleted.", revalidate: ["/ai-test/quiz"] };
   } catch (e) {
     console.error("delete question failed", e);
     return { error: "Couldn't delete the question." };
@@ -159,9 +158,7 @@ export async function saveAssessmentAction(
       entityId: assessmentId,
       metadata: { is_published: rest.is_published },
     });
-    revalidatePath(`/admin/questions/${assessmentId}`);
-    revalidatePath("/ai-test/quiz");
-    return { ok: "Saved." };
+    return { ok: "Saved.", revalidate: ["/ai-test/quiz"] };
   } catch (e) {
     console.error("save assessment failed", e);
     return { error: "Couldn't save the assessment." };
