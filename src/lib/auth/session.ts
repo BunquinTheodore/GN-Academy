@@ -1,5 +1,6 @@
 import "server-only";
 
+import { cache } from "react";
 import { cookies } from "next/headers";
 import { adminAuth } from "@/lib/firebase/admin";
 
@@ -32,19 +33,29 @@ export type SessionUser = {
   admin: boolean;
 };
 
-/** Verifies the session cookie with firebase-admin. Null when signed out. */
-export async function getSessionUser(): Promise<SessionUser | null> {
-  const store = await cookies();
-  const cookie = store.get(SESSION_COOKIE)?.value;
-  if (!cookie) return null;
-  try {
-    const decoded = await adminAuth().verifySessionCookie(cookie, true);
-    return {
-      uid: decoded.uid,
-      email: decoded.email ?? null,
-      admin: decoded.admin === true,
-    };
-  } catch {
-    return null;
-  }
-}
+/**
+ * Verifies the session cookie with firebase-admin. Null when signed out.
+ *
+ * Wrapped in React's `cache` so it runs once per request rather than once
+ * per caller. `verifySessionCookie(cookie, true)` checks revocation, which
+ * is a real network round trip to Google — and a single interaction asks for
+ * the user three times over (the layout, the page, and the server action the
+ * page dispatched). Deduplicating them is free and removes two round trips
+ * from every authenticated interaction. The cache lives for one request, so
+ * a revoked session is still caught on the next one.
+ */
+export const getSessionUser = cache(async (): Promise<SessionUser | null> => {
+    const store = await cookies();
+    const cookie = store.get(SESSION_COOKIE)?.value;
+    if (!cookie) return null;
+    try {
+      const decoded = await adminAuth().verifySessionCookie(cookie, true);
+      return {
+        uid: decoded.uid,
+        email: decoded.email ?? null,
+        admin: decoded.admin === true,
+      };
+    } catch {
+      return null;
+    }
+});
