@@ -7,7 +7,7 @@ export type Assessment = {
   id: string;
   slug: string;
   title: string;
-  type: "knowledge" | "practical" | "simulation" | "diagnostic";
+  type: "knowledge" | "practical" | "simulation" | "diagnostic" | "chapter";
   question_count: number | null;
   is_published: boolean;
 };

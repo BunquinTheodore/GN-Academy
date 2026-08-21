@@ -6,6 +6,8 @@ import {
 } from "@/lib/db/certifications";
 import { getEnrollment, updateEnrollmentProgress } from "@/lib/db/enrollments";
 import { getCompletedLessonIds, markLessonComplete } from "@/lib/db/progress";
+import { getModuleQuiz } from "@/lib/db/course-progress";
+import { supabaseAdmin } from "@/lib/supabase/server";
 
 const paramsSchema = z.object({ lessonId: z.string().uuid() });
 
@@ -67,7 +69,7 @@ export async function POST(
 
     // The completion write has to land before the progress read, or the
     // lesson just finished would be missing from the count.
-    await markLessonComplete(user.uid, lessonId);
+    const firstTime = await markLessonComplete(user.uid, lessonId);
     const done = await getCompletedLessonIds(
       user.uid,
       allLessons.map((l) => l.id),
@@ -87,6 +89,39 @@ export async function POST(
       certContext.certification.id,
       percent,
     );
+
+    // Finishing the last lesson of a chapter leads into that chapter's quiz
+    // rather than straight on to the next chapter — the quiz is the point at
+    // which the reading turns into something the credential can stand on.
+    const finishedModule = modules.find((m) =>
+      m.lessons.some((l) => l.id === lessonId),
+    );
+    // Only on the run that actually completes the chapter. Without this, going
+    // back to re-read lesson one and pressing Complete drags the learner into
+    // an earlier chapter's quiz instead of onward.
+    if (firstTime && finishedModule) {
+      const moduleDone = finishedModule.lessons.every((l) => done.has(l.id));
+      if (moduleDone) {
+        const quiz = await getModuleQuiz(finishedModule.module.id).catch(
+            () => null,
+          );
+        if (quiz) {
+          const { data: passedQuiz, error: quizLookupError } =
+            await supabaseAdmin()
+              .from("attempts")
+              .select("id")
+              .eq("user_id", user.uid)
+              .eq("assessment_id", quiz.id)
+              .eq("passed", true)
+              .limit(1);
+          // A failed lookup must not be read as "they have not passed it" —
+          // that would send someone who already passed back into the quiz.
+          if (!quizLookupError && (!passedQuiz || passedQuiz.length === 0)) {
+            return Response.json({ nextHref: `/dashboard/assessments/${quiz.slug}` });
+          }
+        }
+      }
+    }
 
     return Response.json({
       nextHref: next ? `/dashboard/learn/${next.id}` : COURSES,

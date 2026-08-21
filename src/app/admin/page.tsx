@@ -18,6 +18,7 @@ const SECTIONS = [
   { href: "/admin/questions", label: "Question sets" },
   { href: "/admin/posts", label: "Blog" },
   { href: "/admin/enrollments", label: "Pending enrollments" },
+  { href: "/admin/assignments", label: "Assignments to review" },
   { href: "/admin/credentials", label: "Credentials" },
   { href: "/admin/leads", label: "Leads" },
   { href: "/admin/enquiries", label: "Enquiries" },

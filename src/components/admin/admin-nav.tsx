@@ -10,6 +10,7 @@ const LINKS: { href: string; label: string; exact?: boolean }[] = [
   { href: "/admin/questions", label: "Questions" },
   { href: "/admin/posts", label: "Blog" },
   { href: "/admin/enrollments", label: "Enrollments" },
+  { href: "/admin/assignments", label: "Assignments" },
   { href: "/admin/credentials", label: "Credentials" },
   { href: "/admin/leads", label: "Leads" },
   { href: "/admin/enquiries", label: "Enquiries" },

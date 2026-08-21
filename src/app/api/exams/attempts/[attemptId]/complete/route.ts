@@ -4,15 +4,7 @@ import { scoreAttempt } from "@/lib/assessment/scoring";
 import { getScorableQuestions } from "@/lib/db/assessments";
 import { completeAttempt, getAttemptById } from "@/lib/db/attempts";
 import { supabaseAdmin } from "@/lib/supabase/server";
-import { markEnrollmentCompleted, getEnrollment } from "@/lib/db/enrollments";
-import {
-  getCredentialForUserAndCertification,
-  issueCredential,
-} from "@/lib/db/credentials";
-import { getProfileById } from "@/lib/db/profiles";
-import { sendEmail } from "@/lib/email/send";
-import { CredentialIssuedEmail } from "@/lib/email/credential-issued";
-import { env } from "@/lib/env";
+import { maybeIssueCredential } from "@/lib/credentials/issue";
 
 const bodySchema = z.object({
   answers: z
@@ -95,52 +87,16 @@ export async function POST(
 
     let credentialCode: string | null = null;
 
-    if (passed && assessment.certification_id) {
-      const { data: cert } = await supabaseAdmin()
-        .from("certifications")
-        .select("*")
-        .eq("id", assessment.certification_id)
-        .single();
-
-      const enrollment = await getEnrollment(user.uid, assessment.certification_id);
-      if (cert && enrollment && ["active", "completed"].includes(enrollment.status)) {
-        const existing = await getCredentialForUserAndCertification(
-          user.uid,
-          assessment.certification_id,
-        );
-        if (existing) {
-          credentialCode = existing.credential_code;
-        } else {
-          const profile = await getProfileById(user.uid);
-          const holderName =
-            profile?.full_name?.trim() || profile?.email || "GN Academy member";
-
-          const credential = await issueCredential({
-            user_id: user.uid,
-            certification_id: assessment.certification_id,
-            credential_prefix: cert.credential_prefix,
-            holder_name: holderName,
-            title: cert.title,
-            level: cert.level,
-            competencies: result.competencies,
-          });
-          credentialCode = credential.credential_code;
-
-          await markEnrollmentCompleted(user.uid, assessment.certification_id);
-
-          if (profile?.email) {
-            await sendEmail({
-              to: profile.email,
-              subject: `Your credential is live: ${credential.credential_code}`,
-              react: CredentialIssuedEmail({
-                holderName,
-                title: cert.title,
-                credentialCode: credential.credential_code,
-                verifyUrl: `${env.NEXT_PUBLIC_SITE_URL}/verify/${credential.credential_code}`,
-              }),
-            });
-          }
-        }
+    // Chapter quizzes are formative: you retake them until they stick, and
+    // passing one has never been the thing that earns a credential.
+    if (passed && assessment.certification_id && assessment.type !== "chapter") {
+      const outcome = await maybeIssueCredential({
+        userId: user.uid,
+        certificationId: assessment.certification_id,
+        competencies: result.competencies,
+      });
+      if (outcome.status === "issued" || outcome.status === "already") {
+        credentialCode = outcome.credential.credential_code;
       }
     }
 

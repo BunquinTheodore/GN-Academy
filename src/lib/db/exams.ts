@@ -23,6 +23,13 @@ export async function getPublishedExamBySlug(slug: string): Promise<Exam | null>
   return data;
 }
 
+/**
+ * The final exams a learner can sit for a credential.
+ *
+ * Chapter quizzes are excluded on purpose: they live inside the course player,
+ * and listing them here put them under "pass this and your credential is
+ * issued on the spot" with a View my credential button that led nowhere.
+ */
 export async function listPublishedExams(): Promise<Exam[]> {
   const { data, error } = await supabaseAdmin()
     .from("assessments")
@@ -30,7 +37,8 @@ export async function listPublishedExams(): Promise<Exam[]> {
       "id, slug, title, type, question_count, is_published, certification_id, passing_score, max_attempts",
     )
     .eq("is_published", true)
-    .neq("type", "diagnostic");
+    .neq("type", "diagnostic")
+    .is("module_id", null);
   if (error) throw error;
   return data ?? [];
 }

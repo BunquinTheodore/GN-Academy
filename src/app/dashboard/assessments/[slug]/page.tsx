@@ -35,7 +35,10 @@ export default async function ExamPage({
   const exam = await getPublishedExamBySlug(parsed.data.slug).catch(() => null);
   if (!exam) notFound();
 
+  const isChapterQuiz = exam.type === "chapter";
   let isFreeTrack = false;
+  let courseSlug: string | null = null;
+  let hasAssignment = false;
   if (exam.certification_id) {
     const enrollment = await getEnrollment(user.uid, exam.certification_id).catch(
       () => null,
@@ -47,6 +50,9 @@ export default async function ExamPage({
       () => null,
     );
     isFreeTrack = cert?.is_free ?? false;
+    courseSlug = cert?.slug ?? null;
+    // Only assignment courses have a page to send anyone to.
+    hasAssignment = cert?.requires_assignment ?? false;
   }
 
   const used = await countCompletedAttempts(user.uid, exam.id).catch(() => 0);
@@ -67,6 +73,8 @@ export default async function ExamPage({
   return (
     <ExamPlayer
       isFreeTrack={isFreeTrack}
+      isChapterQuiz={isChapterQuiz}
+      courseSlug={hasAssignment ? courseSlug : null}
       examSlug={exam.slug}
       examTitle={exam.title}
       passingScore={exam.passing_score ?? 70}

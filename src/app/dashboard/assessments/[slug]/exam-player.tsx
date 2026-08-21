@@ -12,6 +12,13 @@ import { Progress } from "@/components/ui/progress";
 type ExamPlayerProps = {
   /** Free-track exams are the §13 top-of-funnel conversion, counted separately. */
   isFreeTrack?: boolean;
+  /**
+   * A chapter quiz is formative — you retake it until it sticks, and passing
+   * one never issues anything. The result screen has to say so, or a learner
+   * reasonably reads "Passed" as "I have earned the certificate".
+   */
+  isChapterQuiz?: boolean;
+  courseSlug?: string | null;
   examSlug: string;
   examTitle: string;
   passingScore: number;
@@ -29,6 +36,8 @@ type ExamResult = {
 
 export function ExamPlayer({
   isFreeTrack = false,
+  isChapterQuiz = false,
+  courseSlug = null,
   examSlug,
   examTitle,
   passingScore,
@@ -131,29 +140,42 @@ export function ExamPlayer({
           <h1 className="font-display mt-3 text-xl font-semibold">
             {!result.passed
               ? `Not this time — the pass mark is ${result.passingScore}%.`
-              : result.credentialCode
-                ? "Passed. Your credential is live."
-                : "Passed."}
+              : isChapterQuiz
+                ? "Chapter passed."
+                : result.credentialCode
+                  ? "Passed. Your credential is live."
+                  : "Passed."}
           </h1>
           <p className="mt-2 text-sm text-muted-foreground">
             {!result.passed
-              ? "Review the lessons for your weakest areas below, then use another attempt when you're ready."
-              : result.credentialCode
-                ? "It's already publicly verifiable — the code below is yours permanently."
-                : // A pass without a code means the credential already exists,
-                  // or the enrollment is not active yet. Never claim a public
-                  // page that the holder cannot open.
-                  "Your score is recorded. Check your credentials page for the certificate — if it isn't there yet, your enrollment is still awaiting confirmation."}
+              ? isChapterQuiz
+                ? "Retake it as many times as you like — this one is for learning, not for gatekeeping. Review the weak areas below first."
+                : "Review the lessons for your weakest areas below, then use another attempt when you're ready."
+              : isChapterQuiz
+                ? "On to the next chapter. Your certificate comes from the final assignment, once all the chapters are done."
+                : result.credentialCode
+                  ? "It's already publicly verifiable — the code below is yours permanently."
+                  : // A pass without a code means the credential already exists,
+                    // or the enrollment is not active yet. Never claim a public
+                    // page that the holder cannot open.
+                    "Your score is recorded. Check your credentials page for the certificate — if it isn't there yet, your enrollment is still awaiting confirmation."}
           </p>
         </div>
 
         <div className="flex flex-col gap-2 rounded-lg border border-border bg-card p-5">
-          {result.competencies.map((c) => (
-            <div key={c.key} className="flex items-baseline justify-between text-sm">
-              <span>{c.label}</span>
-              <span className="font-mono text-muted-foreground">{c.score}</span>
-            </div>
-          ))}
+          {/* A quiz that asked nothing about tool fluency has not measured it,
+              and showing it as 0 reads as a failure rather than a silence. */}
+          {result.competencies
+            .filter((c) => c.total > 0)
+            .map((c) => (
+              <div
+                key={c.key}
+                className="flex items-baseline justify-between text-sm"
+              >
+                <span>{c.label}</span>
+                <span className="font-mono text-muted-foreground">{c.score}</span>
+              </div>
+            ))}
         </div>
 
         {result.passed && result.credentialCode ? (
@@ -172,6 +194,21 @@ export function ExamPlayer({
             <Button asChild variant="outline" className="h-12">
               <Link href="/dashboard/credentials">My credentials</Link>
             </Button>
+          </div>
+        ) : isChapterQuiz && courseSlug ? (
+          <div className="flex flex-col gap-3">
+            <Button asChild className="h-12">
+              <Link href="/dashboard/courses">
+                {result.passed ? "Continue the course" : "Back to the lessons"}
+              </Link>
+            </Button>
+            {result.passed && (
+              <Button asChild variant="outline" className="h-12">
+                <Link href={`/dashboard/assignments/${courseSlug}`}>
+                  See the final assignment
+                </Link>
+              </Button>
+            )}
           </div>
         ) : (
           <Button asChild className="h-12">

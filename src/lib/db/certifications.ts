@@ -21,6 +21,7 @@ export type Certification = {
   credential_prefix: string;
   hero_image_url: string | null;
   sort_order: number;
+  requires_assignment: boolean;
   is_published: boolean;
 };
 

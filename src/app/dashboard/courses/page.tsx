@@ -9,6 +9,7 @@ import {
 } from "@/lib/db/certifications";
 import { getCompletedLessonIds } from "@/lib/db/progress";
 import { getCredentialForUserAndCertification } from "@/lib/db/credentials";
+import { getCourseCompletion } from "@/lib/db/course-progress";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -38,6 +39,11 @@ export default async function CoursesPage() {
       const firstIncomplete = modules
         .flatMap((m) => m.lessons)
         .find((l) => !done.has(l.id));
+      // Assignment courses have chapter quizzes standing between the reading
+      // and the final submission, so the card has to show more than a bar.
+      const completion = cert.requires_assignment
+        ? await getCourseCompletion(user.uid, cert.id).catch(() => null)
+        : null;
       const credential =
         enrollment.status === "completed"
           ? await getCredentialForUserAndCertification(user.uid, cert.id).catch(
@@ -48,7 +54,7 @@ export default async function CoursesPage() {
         lessonIds.length === 0
           ? 0
           : Math.round((done.size / lessonIds.length) * 100);
-      return { enrollment, cert, percent, firstIncomplete, credential };
+      return { enrollment, cert, percent, firstIncomplete, credential, completion };
     }),
   );
 
@@ -75,7 +81,8 @@ export default async function CoursesPage() {
         </div>
       ) : (
         <div className="grid gap-5 md:grid-cols-2">
-          {visible.map(({ enrollment, cert, percent, firstIncomplete, credential }) => (
+          {visible.map(
+            ({ enrollment, cert, percent, firstIncomplete, credential, completion }) => (
             <Card key={enrollment.id}>
               <CardHeader>
                 <div className="flex items-start justify-between gap-3">
@@ -132,11 +139,42 @@ export default async function CoursesPage() {
                       </div>
                       <Progress value={percent} aria-label={`${percent}% of lessons done`} />
                     </div>
+                    {completion && completion.quizzes.length > 0 && (
+                      <ul className="flex flex-col gap-1 text-xs text-muted-foreground">
+                        {completion.quizzes.map((q) => (
+                          <li key={q.assessmentId}>
+                            <Link
+                              href={`/dashboard/assessments/${q.slug}`}
+                              className="hover:text-foreground"
+                            >
+                              {q.moduleTitle} quiz —{" "}
+                              {q.passed ? (
+                                <span className="text-primary">
+                                  passed, {q.bestScore}%
+                                </span>
+                              ) : q.bestScore === null ? (
+                                "not taken yet"
+                              ) : (
+                                `best ${q.bestScore}%, need ${q.passingScore}%`
+                              )}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                     <div className="flex flex-wrap gap-2">
                       {firstIncomplete ? (
                         <Button asChild size="sm">
                           <Link href={`/dashboard/learn/${firstIncomplete.id}`}>
                             {percent === 0 ? "Start learning" : "Continue"}
+                          </Link>
+                        </Button>
+                      ) : cert.requires_assignment ? (
+                        <Button asChild size="sm">
+                          <Link href={`/dashboard/assignments/${cert.slug}`}>
+                            {completion?.readyForAssignment
+                              ? "Go to the assignment"
+                              : "Finish the chapter quizzes"}
                           </Link>
                         </Button>
                       ) : (
