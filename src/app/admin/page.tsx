@@ -20,6 +20,7 @@ const SECTIONS = [
   { href: "/admin/enrollments", label: "Pending enrollments" },
   { href: "/admin/credentials", label: "Credentials" },
   { href: "/admin/leads", label: "Leads" },
+  { href: "/admin/enquiries", label: "Enquiries" },
   { href: "/admin/data-requests", label: "Data requests" },
 ];
 

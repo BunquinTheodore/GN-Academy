@@ -58,6 +58,16 @@ export async function saveAnswers(id: string, answers: Answer[]): Promise<void> 
   if (error) throw error;
 }
 
+/**
+ * Marks an attempt complete and returns whether THIS call is the one that
+ * did it.
+ *
+ * The `completed_at is null` guard makes the write the claim on the attempt,
+ * not just a record of it: two submissions of the same attempt racing each
+ * other (a double click, a retried request) would otherwise both pass an
+ * earlier "has it finished?" read and both go on to issue a credential. The
+ * loser gets false and must stop.
+ */
 export async function completeAttempt(
   id: string,
   input: {
@@ -67,9 +77,10 @@ export async function completeAttempt(
     level: string;
     recommended_path: string;
     email?: string | null;
+    passed?: boolean;
   },
-): Promise<void> {
-  const { error } = await supabaseAdmin()
+): Promise<boolean> {
+  const { data, error } = await supabaseAdmin()
     .from("attempts")
     .update({
       answers: input.answers,
@@ -78,10 +89,14 @@ export async function completeAttempt(
       level: input.level,
       recommended_path: input.recommended_path,
       email: input.email ?? null,
+      ...(input.passed === undefined ? {} : { passed: input.passed }),
       completed_at: new Date().toISOString(),
     })
-    .eq("id", id);
+    .eq("id", id)
+    .is("completed_at", null)
+    .select("id");
   if (error) throw error;
+  return (data?.length ?? 0) > 0;
 }
 
 /** On signup, claim any anonymous attempts made from this browser (§8). */

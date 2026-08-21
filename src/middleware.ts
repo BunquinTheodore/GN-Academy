@@ -35,6 +35,10 @@ export function middleware(request: NextRequest) {
     "default-src 'self'",
     `script-src 'self' 'unsafe-inline' 'unsafe-eval' https://apis.google.com https://www.gstatic.com${analytics ? ` ${analytics}` : ""}`,
     "style-src 'self' 'unsafe-inline'",
+    // browser-image-compression runs the resize in a worker created from a
+    // blob URL; without this the upload silently falls back to the main
+    // thread (or fails outright, depending on the browser).
+    "worker-src 'self' blob:",
     "img-src 'self' data: blob: https:",
     "font-src 'self' data:",
     `connect-src 'self' https://*.googleapis.com https://*.firebaseapp.com https://*.supabase.co wss://*.supabase.co${analytics ? ` ${analytics}` : ""}`,

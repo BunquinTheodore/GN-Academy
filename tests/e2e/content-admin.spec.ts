@@ -1,6 +1,8 @@
-import { expect, test } from "@playwright/test";
+import { expect, test, type Page } from "@playwright/test";
 import { config } from "dotenv";
 import { createClient } from "@supabase/supabase-js";
+import { cert, getApps, initializeApp } from "firebase-admin/app";
+import { getAuth } from "firebase-admin/auth";
 
 config({ path: ".env.local" });
 
@@ -218,5 +220,143 @@ test.describe("data requests", () => {
     expect(data).toMatchObject({ kind: "deletion", status: "pending" });
 
     await service.from("data_requests").delete().eq("email", email);
+  });
+});
+
+/**
+ * Promotes a signed-up user to admin the same way `npm run make-admin` does.
+ * The claim only reaches the app through a freshly minted session cookie, so
+ * the caller has to sign out and back in afterwards.
+ */
+async function makeAdmin(email: string): Promise<void> {
+  const app =
+    getApps()[0] ??
+    initializeApp({
+      credential: cert({
+        projectId: process.env.FIREBASE_ADMIN_PROJECT_ID!,
+        clientEmail: process.env.FIREBASE_ADMIN_CLIENT_EMAIL!,
+        privateKey: process.env.FIREBASE_ADMIN_PRIVATE_KEY!.replace(
+          /\\n/g,
+          "\n",
+        ),
+      }),
+    });
+  const auth = getAuth(app);
+  const user = await auth.getUserByEmail(email);
+  await auth.setCustomUserClaims(user.uid, {
+    ...(user.customClaims ?? {}),
+    role: "authenticated",
+    admin: true,
+  });
+}
+
+async function signUp(page: Page, email: string, name: string): Promise<void> {
+  await page.goto("/signup");
+  await page.getByLabel("Full name").fill(name);
+  await page.getByLabel("Email", { exact: true }).fill(email);
+  await page.getByLabel("Password", { exact: true }).fill("admin-flow-pass-1");
+  await page.getByRole("button", { name: "Create my account" }).click();
+  await expect(page).toHaveURL(/\/dashboard/, { timeout: 45_000 });
+}
+
+async function signIn(page: Page, email: string): Promise<void> {
+  await page.goto("/login");
+  await page.getByLabel("Email", { exact: true }).fill(email);
+  await page.getByLabel("Password", { exact: true }).fill("admin-flow-pass-1");
+  await page.getByRole("button", { name: "Sign in", exact: true }).click();
+  await expect(page).toHaveURL(/\/dashboard/, { timeout: 45_000 });
+}
+
+/**
+ * The §17 gate, exercised through the actual UI rather than through the
+ * database: a non-developer writes a post, publishes it, and it is live.
+ *
+ * This exists because the admin editors were, for a while, permanently stuck
+ * on "Saving…" in a production build while the write landed underneath —
+ * every server action here calls revalidatePath, and a server action that
+ * both revalidates and returns state to useActionState never finishes its
+ * transition. Nothing in the suite submitted an admin form, so nothing caught
+ * it. Any test that does is enough; this one also proves the cache purge that
+ * replaced those calls actually reaches the public page.
+ */
+test.describe("admin publishing", () => {
+  test.skip(
+    process.env.E2E_AUTH !== "1",
+    "Set E2E_AUTH=1 with real keys in .env.local to run live flows.",
+  );
+
+  test.beforeEach(async () => {
+    await serviceClient().from("rate_limits").delete().neq("key", "");
+  });
+
+  test("an admin writes, publishes, and edits a post without a deploy", async ({
+    page,
+    browser,
+  }) => {
+    test.setTimeout(240_000);
+    const stamp = `${Date.now().toString(36)}${Math.random()
+      .toString(36)
+      .slice(2, 7)}`;
+    const email = `e2e-admin+${stamp}@example.com`;
+    const slug = `e2e-post-${stamp}`;
+    const title = `E2E publishing check ${stamp}`;
+    const service = serviceClient();
+
+    await signUp(page, email, "Admin Flow Tester");
+    const { data: profile } = await service
+      .from("profiles")
+      .select("id")
+      .eq("email", email)
+      .single();
+
+    try {
+      await makeAdmin(email);
+      // The session cookie is minted from the ID token, so the new claim only
+      // arrives with a new sign-in.
+      await page.goto("/dashboard");
+      await page.getByRole("button", { name: "Sign out" }).click();
+      await expect(page).toHaveURL(/\/(login)?$/, { timeout: 30_000 });
+      await signIn(page, email);
+
+      // 1. Create it — the form must come back, not hang on "Saving…".
+      await page.goto("/admin/posts/new");
+      await page.getByLabel("Title").fill(title);
+      await page.getByLabel("URL slug").fill(slug);
+      await page.getByLabel("Category").fill("Hiring");
+      await page.getByLabel("Excerpt").fill("Written by the e2e suite.");
+      await page
+        .getByLabel("Body (Markdown)")
+        .fill("## Body\n\nThis paragraph proves the post rendered.");
+      await page.getByLabel("Status").selectOption("published");
+      await page.getByRole("button", { name: "Create" }).click();
+
+      await expect(page).toHaveURL(/\/admin\/posts\/[0-9a-f-]{36}$/, {
+        timeout: 90_000,
+      });
+
+      // 2. A logged-out stranger can read it immediately — the cached blog
+      //    page has to have been purged, not left to expire on its own.
+      const strangerContext = await browser.newContext();
+      const stranger = await strangerContext.newPage();
+      await stranger.goto(`/blog/${slug}`);
+      await expect(stranger.getByRole("heading", { level: 1 })).toContainText(
+        title,
+      );
+      await expect(
+        stranger.getByText("This paragraph proves the post rendered."),
+      ).toBeVisible();
+
+      // 3. Editing an existing post reports success instead of hanging.
+      await page.getByLabel("Excerpt").fill("Edited by the e2e suite.");
+      await page.getByRole("button", { name: "Save" }).first().click();
+      await expect(page.getByText("Saved.")).toBeVisible({ timeout: 90_000 });
+
+      await strangerContext.close();
+    } finally {
+      await service.from("posts").delete().eq("slug", slug);
+      if (profile?.id) {
+        await service.from("profiles").delete().eq("id", profile.id);
+      }
+    }
   });
 });

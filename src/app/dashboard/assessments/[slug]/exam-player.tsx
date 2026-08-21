@@ -129,14 +129,21 @@ export function ExamPlayer({
             <p className="font-mono text-xl text-muted-foreground">/100</p>
           </div>
           <h1 className="font-display mt-3 text-xl font-semibold">
-            {result.passed
-              ? "Passed. Your credential is live."
-              : `Not this time — the pass mark is ${result.passingScore}%.`}
+            {!result.passed
+              ? `Not this time — the pass mark is ${result.passingScore}%.`
+              : result.credentialCode
+                ? "Passed. Your credential is live."
+                : "Passed."}
           </h1>
           <p className="mt-2 text-sm text-muted-foreground">
-            {result.passed
-              ? "It's already publicly verifiable — the code below is yours permanently."
-              : "Review the lessons for your weakest areas below, then use another attempt when you're ready."}
+            {!result.passed
+              ? "Review the lessons for your weakest areas below, then use another attempt when you're ready."
+              : result.credentialCode
+                ? "It's already publicly verifiable — the code below is yours permanently."
+                : // A pass without a code means the credential already exists,
+                  // or the enrollment is not active yet. Never claim a public
+                  // page that the holder cannot open.
+                  "Your score is recorded. Check your credentials page for the certificate — if it isn't there yet, your enrollment is still awaiting confirmation."}
           </p>
         </div>
 

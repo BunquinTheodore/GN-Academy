@@ -1,7 +1,5 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
-import { redirect } from "next/navigation";
 import { z } from "zod";
 import { auditLog, requireAdmin } from "@/lib/auth/admin";
 import { optional } from "@/lib/admin/form-values";
@@ -14,10 +12,17 @@ import {
   type PostInput,
 } from "@/lib/db/posts";
 
-function revalidateBlog(slug?: string): void {
-  revalidatePath("/blog");
-  if (slug) revalidatePath(`/blog/${slug}`);
-  revalidatePath("/sitemap.xml");
+/**
+ * The cached blog surfaces. /blog itself is rendered per request (it filters
+ * by category), so only the post page and the sitemap actually hold a copy.
+ * Returned rather than revalidated here — see AdminFormState.
+ */
+function blogPaths(...slugs: (string | null | undefined)[]): string[] {
+  const paths = ["/sitemap.xml"];
+  for (const slug of slugs) {
+    if (slug) paths.push(`/blog/${slug}`);
+  }
+  return paths;
 }
 
 const postSchema = z.object({
@@ -84,12 +89,12 @@ export async function savePostAction(
         entityId: id,
         metadata: { slug: input.slug, status: input.status },
       });
-      revalidateBlog(input.slug);
-      if (existing && existing.slug !== input.slug) {
-        revalidateBlog(existing.slug);
-      }
-      revalidatePath(`/admin/posts/${id}`);
-      return { ok: "Saved." };
+      return {
+        ok: "Saved.",
+        // The old slug too, when it changed: its cached page must stop
+        // serving a post that no longer lives there.
+        revalidate: blogPaths(input.slug, existing?.slug),
+      };
     }
 
     const created = await createPost(input);
@@ -100,10 +105,12 @@ export async function savePostAction(
       entityId: created.id,
       metadata: { slug: input.slug, status: input.status },
     });
-    revalidateBlog(input.slug);
-    redirect(`/admin/posts/${created.id}`);
+    return {
+      ok: "Created.",
+      revalidate: blogPaths(input.slug),
+      redirectTo: `/admin/posts/${created.id}`,
+    };
   } catch (e) {
-    if (e && typeof e === "object" && "digest" in e) throw e;
     console.error("save post failed", e);
     const message = e instanceof Error ? e.message : "";
     if (message.includes("duplicate key")) {
@@ -134,11 +141,13 @@ export async function deletePostAction(
       entityId: id.data,
       metadata: { slug: existing?.slug ?? null },
     });
-    revalidateBlog(existing?.slug);
+    return {
+      ok: "Post deleted.",
+      revalidate: blogPaths(existing?.slug),
+      redirectTo: "/admin/posts",
+    };
   } catch (e) {
     console.error("delete post failed", e);
     return { error: "Couldn't delete the post." };
   }
-
-  redirect("/admin/posts");
 }

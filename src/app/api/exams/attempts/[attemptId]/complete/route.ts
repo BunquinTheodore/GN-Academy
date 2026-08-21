@@ -76,17 +76,22 @@ export async function POST(
     const passingScore = assessment.passing_score ?? 70;
     const passed = result.overall >= passingScore;
 
-    await completeAttempt(attempt.id, {
+    // Whoever wins this write owns the attempt. A second, racing submission
+    // loses it and must not go on to issue a second credential.
+    const claimed = await completeAttempt(attempt.id, {
       answers: parsed.data.answers,
       score: result.overall,
       competency_scores: result.competencies,
       level: result.level,
       recommended_path: result.recommendedPath,
+      passed,
     });
-    await supabaseAdmin()
-      .from("attempts")
-      .update({ passed })
-      .eq("id", attempt.id);
+    if (!claimed) {
+      return Response.json(
+        { error: "This attempt was already submitted." },
+        { status: 409 },
+      );
+    }
 
     let credentialCode: string | null = null;
 

@@ -22,6 +22,7 @@ const useDevServer = process.env.E2E_DEV === "1";
 
 export default defineConfig({
   testDir: "tests/e2e",
+  globalSetup: "./tests/e2e/global-setup.ts",
   fullyParallel: true,
   /**
    * The app under test is one Node process. Playwright's default (about half

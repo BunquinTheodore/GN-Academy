@@ -1,6 +1,5 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { auditLog, requireAdmin } from "@/lib/auth/admin";
 import { setEnrollmentStatus } from "@/lib/db/enrollments";
@@ -28,7 +27,6 @@ export async function decideEnrollmentAction(formData: FormData): Promise<void> 
 
   // Null means someone else already decided this one — nothing to log or send.
   if (!enrollment) {
-    revalidatePath("/admin/enrollments");
     return;
   }
 
@@ -56,5 +54,4 @@ export async function decideEnrollmentAction(formData: FormData): Promise<void> 
     });
   }
 
-  revalidatePath("/admin/enrollments");
 }

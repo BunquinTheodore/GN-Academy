@@ -6,6 +6,7 @@ import { getPublishedCertificationBySlug } from "@/lib/db/certifications";
 import { getEnrollment } from "@/lib/db/enrollments";
 import { formatPhp } from "@/lib/format";
 import { site } from "@/content/site";
+import { paymentChannels, paymentDetailsPublished } from "@/lib/payment";
 import { EnrollForm } from "./enroll-form";
 
 export const metadata: Metadata = {
@@ -53,12 +54,35 @@ export default async function EnrollPage({
             <div className="mt-4 border-t border-border pt-4 text-muted-foreground">
               <p className="font-medium text-foreground">How to pay</p>
               <ol className="mt-2 list-decimal space-y-1 pl-4">
-                {/* TODO(blocked): real GCash/Maya receiving numbers — see BLOCKED.md */}
-                <li>
-                  Send {formatPhp(cert.price_php)} via GCash or Maya to the
-                  account number shown on our payment instructions page
-                  (published with the first cohort).
-                </li>
+                {paymentDetailsPublished ? (
+                  <li>
+                    Send {formatPhp(cert.price_php)} to:
+                    <ul className="mt-2 space-y-2">
+                      {paymentChannels.map((channel) => (
+                        <li key={channel.key}>
+                          <span className="font-medium text-foreground">
+                            {channel.label}
+                          </span>{" "}
+                          — {channel.accountName}
+                          <br />
+                          <span className="font-mono text-foreground">
+                            {channel.accountNumber}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                ) : (
+                  <li>
+                    Email{" "}
+                    <span className="font-medium text-foreground">
+                      {site.contactEmail}
+                    </span>{" "}
+                    for the GCash or Maya account to pay{" "}
+                    {formatPhp(cert.price_php)} into — the receiving details
+                    are published with the first cohort.
+                  </li>
+                )}
                 <li>Keep the receipt — copy its reference number.</li>
                 <li>Enter the reference number below.</li>
               </ol>

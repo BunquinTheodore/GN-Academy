@@ -2,14 +2,42 @@ import "server-only";
 
 import { adminAuth } from "@/lib/firebase/admin";
 import { supabaseAdmin } from "@/lib/supabase/server";
+import { AVATAR_BUCKET, PORTFOLIO_BUCKET } from "@/lib/storage";
 
 export type DeletionReport = {
   profileDeleted: boolean;
   attemptsDeleted: number;
   leadsDeleted: number;
   credentialsUnlinked: number;
+  filesDeleted: number;
   firebaseUserDeleted: boolean;
 };
+
+/**
+ * Both buckets are public-read, and every object a person uploads lives in a
+ * folder named after their UID. Deleting the rows that point at those files
+ * is not erasure while the files themselves stay at a stable public URL, so
+ * the folders go too.
+ */
+async function deleteOwnedObjects(userId: string): Promise<number> {
+  const storage = supabaseAdmin().storage;
+  let removed = 0;
+
+  for (const bucket of [AVATAR_BUCKET, PORTFOLIO_BUCKET]) {
+    const { data: files, error } = await storage
+      .from(bucket)
+      .list(userId, { limit: 1000 });
+    if (error) throw error;
+    if (!files || files.length === 0) continue;
+
+    const paths = files.map((f) => `${userId}/${f.name}`);
+    const { error: removeError } = await storage.from(bucket).remove(paths);
+    if (removeError) throw removeError;
+    removed += paths.length;
+  }
+
+  return removed;
+}
 
 /**
  * RA 10173 erasure (§14). Removes the person's account and everything
@@ -22,6 +50,8 @@ export type DeletionReport = {
  *    the link to the account.
  *  - audit_log entries stay. They record what staff did, not what the
  *    subject did, and are the evidence that this deletion happened at all.
+ *
+ * Everything else goes, including the avatar and portfolio images in storage.
  *
  * Order matters: the Firebase user goes last, so a failure part-way through
  * leaves an account that can still sign in and ask again, rather than an
@@ -37,8 +67,13 @@ export async function deleteAccountData(input: {
     attemptsDeleted: 0,
     leadsDeleted: 0,
     credentialsUnlinked: 0,
+    filesDeleted: 0,
     firebaseUserDeleted: false,
   };
+
+  // Before the profile row goes: portfolio_items cascade with it, and once
+  // they are gone nothing records which files belonged to this person.
+  report.filesDeleted = await deleteOwnedObjects(input.userId);
 
   // Unlink first: the profile delete would do it via ON DELETE SET NULL, but
   // doing it explicitly means the count is reportable and the intent is in

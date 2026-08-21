@@ -1,6 +1,5 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { auditLog, requireAdmin } from "@/lib/auth/admin";
 import type { AdminFormState } from "@/components/admin/admin-form";
@@ -59,9 +58,6 @@ export async function decideCredentialAction(
         ...(decision === "revoke" ? { reason } : {}),
       },
     });
-
-    revalidatePath("/admin/credentials");
-    revalidatePath(`/verify/${credential.credential_code}`);
 
     return {
       ok:

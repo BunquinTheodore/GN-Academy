@@ -31,6 +31,9 @@ export const RATE_LIMITS = {
   // must never be blocked because a housemate on the same connection took
   // the free test three times (§14).
   dataRequest: { route: "data-request", max: 5, windowSeconds: 3600 },
+  // A recruiter contacting several candidates in one sitting is normal
+  // behaviour, so this is looser than the other write buckets.
+  enquiry: { route: "enquiry", max: 10, windowSeconds: 3600 },
   verifyLookup: { route: "verify-lookup", max: 30, windowSeconds: 3600 },
 } as const satisfies Record<string, RateLimitRule>;
 
