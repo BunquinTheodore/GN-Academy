@@ -15,6 +15,11 @@ on:
 jobs:
   dump:
     runs-on: ubuntu-latest
+    env:
+      # /usr/bin/pg_dump is Debian's pg_wrapper and it resolves to the
+      # distro's 16 even with 17 installed, so every step below calls the
+      # versioned binary directly.
+      PG_DUMP: /usr/lib/postgresql/17/bin/pg_dump
     steps:
       # Ubuntu ships postgresql-client 16, and pg_dump refuses to dump a
       # newer server — Supabase is on 17. The first version of this workflow
@@ -30,7 +35,8 @@ jobs:
             | sudo tee /etc/apt/sources.list.d/pgdg.list > /dev/null
           sudo apt-get update -qq
           sudo apt-get install -y -qq postgresql-client-17
-          pg_dump --version
+          test -x "$PG_DUMP" || { echo "$PG_DUMP not installed" >&2; exit 1; }
+          "$PG_DUMP" --version
 
       - name: pg_dump
         env:
@@ -47,7 +53,7 @@ jobs:
           fi
 
           FILE="backup-$(date +%Y%m%d).sql.gz"
-          pg_dump "$SUPABASE_DB_URL" \
+          "$PG_DUMP" "$SUPABASE_DB_URL" \
             --no-owner --no-privileges --schema=public \
             | gzip > "$FILE"
 
