@@ -16,24 +16,58 @@ jobs:
   dump:
     runs-on: ubuntu-latest
     steps:
-      - name: Install postgres client
+      # Ubuntu ships postgresql-client 16, and pg_dump refuses to dump a
+      # newer server — Supabase is on 17. The first version of this workflow
+      # used the distro package and every run failed with a version mismatch
+      # while still reporting success, so PGDG it is, pinned to the major
+      # version the server actually runs.
+      - name: Install PostgreSQL 17 client
         run: |
+          sudo install -d /usr/share/postgresql-common/pgdg
+          sudo curl -fsSL -o /usr/share/postgresql-common/pgdg/apt.postgresql.org.asc \
+            https://www.postgresql.org/media/keys/ACCC4CF8.asc
+          echo "deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" \
+            | sudo tee /etc/apt/sources.list.d/pgdg.list > /dev/null
           sudo apt-get update -qq
-          sudo apt-get install -y -qq postgresql-client
+          sudo apt-get install -y -qq postgresql-client-17
+          pg_dump --version
+
       - name: pg_dump
         env:
           SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
         run: |
+          # pipefail matters more than it looks: without it the exit code of
+          # `pg_dump | gzip` is gzip's, so a failed dump uploaded an empty
+          # archive and the run went green. A backup that looks like it works
+          # is worse than no backup.
+          set -euo pipefail
+
           if [ -z "$SUPABASE_DB_URL" ]; then
             echo "SUPABASE_DB_URL secret not configured; skipping." && exit 0
           fi
+
+          FILE="backup-$(date +%Y%m%d).sql.gz"
           pg_dump "$SUPABASE_DB_URL" \
             --no-owner --no-privileges --schema=public \
-            | gzip > "backup-$(date +%Y%m%d).sql.gz"
+            | gzip > "$FILE"
+
+          # Prove the archive is a real dump rather than a valid-but-empty
+          # gzip. Every dump of this schema contains the profiles table.
+          gzip -t "$FILE"
+          if ! gzip -dc "$FILE" | grep -q "CREATE TABLE public.profiles"; then
+            echo "Dump does not contain the expected schema — failing." >&2
+            gzip -dc "$FILE" | head -40 >&2
+            exit 1
+          fi
+
+          echo "$FILE is $(stat -c%s "$FILE") bytes, $(gzip -dc "$FILE" | wc -l) lines uncompressed."
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: db-backup-${{ github.run_id }}
           path: backup-*.sql.gz
           retention-days: 90
-          if-no-files-found: warn
+          # A missing file means the dump failed silently, which is the whole
+          # failure mode this workflow exists to avoid.
+          if-no-files-found: error
