@@ -220,3 +220,35 @@ account details, legal review, brand wording, hosting, and the first cohort.
       competencies as zero, which made one course's credential mathematically
       unobtainable, plus nine other defects
 
+## Phase 9 . Review pass before shipping (22 August 2026)
+
+Committed as `aa4f721`. A code review over the 94-file diff found nine issues;
+six were fixed here and two are written up in `HANDOFF.md` §4b as deliberate
+deferrals.
+
+- [x] The AI test results page sent anonymous finishers into two routes that
+      now redirect to login. They go through `/signup?next=` instead
+- [x] An approved assignment with no active credential told the learner to
+      start the assignment again
+- [x] `seed-courses.ts` rewrites questions in place by `sort_order`; deleting
+      and re-inserting scored in-flight attempts as zero
+- [x] `attempt-create` rate limit 5/hour to 20/hour per hashed IP, because
+      mobile carrier NAT puts many of this audience behind one address
+- [x] Exam and quiz radiogroups labelled by their own question. Unnamed, they
+      also collided with the theme toggle's radiogroup and made the exam e2e
+      assert against the wrong element
+- [x] Theme toggle reachable on phones, in both the public header and the
+      dashboard mobile bar
+- [x] Dashboard reads deduplicated with React `cache()`; independent
+      assignment reads parallelised
+- [x] Em dash guard extended to `scripts/`, which had been writing one into
+      `assessments.title`; 18 live rows cleaned, and the database re-checked
+      across every table rather than four
+- [ ] `SiteHeader` reads the session, so every public page is dynamic and three
+      `revalidate` exports are dead. Written up, not fixed
+- [ ] The dashboard's per-course loop is still serialised
+
+Suite at the end: `npm run verify` green, 68 e2e tests passing. The
+certification journey remains occasionally flaky on the lesson-to-lesson
+navigation under full concurrency; it passes on retry and the cause is the one
+documented in `src/app/api/lessons/[lessonId]/complete/route.ts`.
