@@ -16,8 +16,20 @@ judgement call), `BLOCKED.md` (things only a human can do).
 
 **The site is live:** https://gn-academy-phi.vercel.app
 
-Everything is merged to `main` and deployed. `npm run verify` is green and the
-full live e2e suite passes. Migrations 0001 to 0008 are applied to production.
+Everything is on `main`, pushed, and deployed. **The GitHub repo is connected
+to Vercel, so a push to `main` builds and promotes to production by itself.**
+Nothing has to be deployed by hand; check `npx vercel ls` after a push rather
+than assuming either way.
+
+`npm run verify` is green. The e2e suite is 68 passing, with one known flake:
+the certification journey occasionally times out moving between lessons under
+full concurrency and passes on retry. The cause is written up in
+`src/app/api/lessons/[lessonId]/complete/route.ts`. Treat a red run there as
+unproven, not as broken.
+
+Migrations 0001 to 0008 are applied to production. The catalogue is six
+published courses: two that end in an exam, four that end in a reviewed
+assignment.
 
 The product loop works end to end: a stranger reads the landing page, creates
 an account, sees the catalogue, enrols, reads a course, passes a quiz per
@@ -62,8 +74,15 @@ README 23.
 ### No em dashes in user-facing text
 
 250 removed from the app and the seed, every course file rewritten, and the
-live database refreshed. `tests/unit/no-em-dashes.test.ts` keeps them out.
-README 24.
+live database cleaned. `tests/unit/no-em-dashes.test.ts` keeps them out, and it
+scans `scripts/` as well as `src/`.
+
+Worth knowing, because it was nearly missed: the first database sweep checked
+`questions`, `lessons`, `posts` and `certifications`, reported clean, and left
+eighteen em dashes in `assessments.title`, which learners read on their courses
+page. `scripts/seed-courses.ts` had been writing them there. Verify a claim
+like this by walking `information_schema` and testing `to_jsonb(t)::text` on
+every table, not the tables that obviously hold prose. README 24.
 
 ---
 
@@ -93,6 +112,23 @@ database. `scripts/refresh-seed-content.ts` and
 `seed-courses.ts --replace-questions` exist for exactly that, and both are
 opt-in because both discard admin edits.
 
+**A shared UI control can silently capture a test's locators.** Adding the
+light/dark/system toggle put a second `radiogroup` on every signed-in page. The
+exam e2e called `page.getByRole("radio")` unscoped, so `radios.first()` matched
+the theme control, which is visible immediately, and the visibility wait passed
+before any question had rendered. The test then found no answer and failed
+somewhere else entirely. Scope locators to the thing under test, and give an
+interactive group an accessible name so it can be told apart.
+
+**Running the e2e suite repeatedly exhausts the rate limiter.** `attempt-create`
+is capped per hashed IP per hour, and the funnel tests start a real attempt on
+both viewport projects. Three runs inside an hour and the later ones fail with
+what looks like a broken quiz page. Before believing a funnel failure, check
+`public.rate_limits`; the bucket for a local run is
+`sha256("$IP_HASH_SALT:unknown"|"::1")` plus `:attempt-create`, and deleting
+just that row is safe because a request from Vercel always carries
+`x-forwarded-for`.
+
 **Never pipe a long script through `head`.** Doing that to
 `seed-courses.ts --replace-questions` sent SIGPIPE and killed it halfway, which
 looked like a partial failure of the script rather than of the pipe.
@@ -115,8 +151,9 @@ looked like a partial failure of the script rather than of the pipe.
 5. **Lighthouse on a quiet machine.** Never re-measured since the rebrand, the
    motion work, or the new shell. Use the paired-control method in
    `DECISIONS.md`.
-6. **Connect the Git repo to Vercel** if you want pushes to deploy
-   automatically. Deploys currently run from a local machine.
+6. **Nothing to do about deploys.** The repo is already connected: pushing to
+   `main` deploys. This entry used to say the opposite, which was true earlier
+   in the project and is not now.
 
 ---
 

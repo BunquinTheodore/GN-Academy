@@ -791,7 +791,7 @@ There are two shapes of course, and they end differently.
 Assistant) end in one final exam. Passing it issues the credential
 automatically. `certifications.requires_assignment` is false.
 
-**Assignment courses** (the five newer ones) have a quiz attached to each
+**Assignment courses** (the four newer ones) have a quiz attached to each
 chapter and end in a written assignment that a human reads. The credential is
 released when a reviewer approves it, not when a score crosses a line.
 
