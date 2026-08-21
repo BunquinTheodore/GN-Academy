@@ -1,0 +1,928 @@
+{
+  "slug": "ai-social-media-management",
+  "title": "AI Social Media Management",
+  "subtitle": "Run client accounts with AI drafting and you judging",
+  "level": "professional",
+  "category": "Social media",
+  "format": "Self-paced online",
+  "summary": "Learn to manage social media accounts for paying clients — pillars, calendars, captions, community and reporting — with AI doing the repetitive drafting while you keep the judgment calls. Twelve lessons built around the work a client actually pays for, not follower-count theatre.",
+  "description": "This course is for Filipino VAs, freelancers and jobseekers who want to be hired to run a business's social media, not just post on their own account. You will build the full system a client pays for: content pillars drawn from their real offers, a monthly calendar they can approve, captions and hooks written at volume that still sound human, platform-native versions for Facebook, Instagram, TikTok and LinkedIn, a comments-and-DM routine that includes handling complaints in public, and a one-page monthly report that argues for your renewal. AI is used where it belongs — drafting, variations, repurposing — while you keep the decisions about voice, offers, risk and what to do next. By the end you will have a month-long plan for a real business, finished captions, replies to a live complaint, and the metrics you would report, all producible on a phone or a laptop with free tools.",
+  "skills": [
+    "Content pillar systems",
+    "Social media calendar planning",
+    "AI-assisted hook and caption writing",
+    "Platform-native repurposing",
+    "Community management and complaint handling",
+    "Client reporting and metrics",
+    "Scheduling and batch workflows"
+  ],
+  "outcomes": [
+    "Build a content pillar system from a client's actual offers and customer questions",
+    "Plan and get sign-off on a monthly content calendar a client can approve as-is",
+    "Draft captions and hooks at volume with AI and edit out the parts that sound robotic",
+    "Adapt one content idea into platform-native posts for Facebook, Instagram, TikTok and LinkedIn",
+    "Report monthly results in numbers tied to the client's business, not vanity metrics"
+  ],
+  "roles": [
+    "Social Media Manager",
+    "Social Media Virtual Assistant",
+    "Community Manager",
+    "Freelance Content Writer"
+  ],
+  "price_php": 1499,
+  "is_free": false,
+  "passing_score": 70,
+  "credential_prefix": "AISM",
+  "sort_order": 4,
+  "modules": [
+    {
+      "slug": "chapter-1-what-you-are-actually-being-hired-for",
+      "title": "What You Are Actually Being Hired For",
+      "description": "Before any posting, get clear on the job: what a client means by \"manage my page\", which parts of the work AI can carry, and how to capture a brand's voice so every draft already sounds like them.",
+      "lessons": [
+        {
+          "slug": "the-job-behind-manage-my-page",
+          "title": "The Job Behind \"Manage My Page\"",
+          "duration_minutes": 8,
+          "content_mdx": "# The Job Behind \"Manage My Page\"\n\n\"Manage my page\" is the vaguest sentence in this business. In the client's head it usually means: someone posts three times a week so the page does not look abandoned. If that is all you sell, you are competing with every person in the country who owns a phone, and you will be priced like it.\n\nHere is the fuller job — the one that carries a monthly retainer.\n\n## The five things you are paid to deliver\n\n**Strategy.** Which audience, which offers, which platforms, and what the page is supposed to do for the business. A page selling merienda boxes to office workers is a different machine from a page selling bookkeeping services to clients in Australia. Strategy is the reason any post exists.\n\n**A calendar.** A dated plan the client can read in five minutes and approve — what goes out, on which day, tied to which offer. Without one, you are begging for ideas every Monday, and the client feels like they are managing you instead of the other way around.\n\n**Copy and creative.** Captions, hooks, and simple graphics. This is the visible part, and it is real craft, but it sits on top of the first two.\n\n**Community.** Comments, DMs, and the person typing \"hm po?\" at 11pm. For small Filipino businesses the sale often does not close on the post — it closes in the inbox. A page with unanswered comments stacking up is a page leaking customers.\n\n**Reporting.** One page a month: what happened, what you learned, what you will do next. This is the document your renewal is argued from.\n\nNotice that posting appears once, inside the third item. Most of the work happens before and after the post goes live.\n\n## Why posting is the thin slice\n\nAnyone can post. Very few people can decide what should be posted, get it approved, keep it consistent for six months, answer every message the same day, and then explain in plain numbers what the business got for its money.\n\nThat gap is what you are paid to close. When you describe your service to a client, describe it as those five deliverables, in that order. It changes the price, and it changes how you get treated.\n\n## The question that changes the conversation\n\nAsk this in the first call, before any talk of rates:\n\n**\"What do you want to happen in your business because of this page?\"**\n\nThen stay quiet and let them answer.\n\nSome answers are usable straight away: more inquiries in Messenger, more reseller sign-ups, more walk-ins on weekends, orders going to their Shopee listing instead of DMs where they keep getting lost.\n\nSome are not: \"more followers\", \"we just need to be active\", \"our competitor posts daily\". When you get one of those, push one level down. A question that works: \"If we grew you to ten thousand followers and nobody messaged you, would you count that as a win?\" That is a hard question to answer yes to, and whatever they say next is usually closer to the real goal.\n\n## Three follow-ups worth asking\n\n- **Where does a sale actually close right now?** DMs, a Shopee or Lazada listing, a walk-in, a form, a phone call. Your content should push people toward that place, not somewhere new that nobody is manning.\n- **What is your best offer, and what does it cost you when it does not sell?** This tells you which topics deserve the most slots on the calendar later.\n- **Who answers the messages now, and how fast?** If the answer is \"my sister, sometimes\", community work is probably the most valuable thing you can sell them.\n\n## Write the job down in one sentence\n\nBefore you quote a price, compress everything into one line you both agree on:\n\n*\"This page exists to bring in Messenger inquiries from working moms in Metro Manila who want weekly meal prep, so we fill the twenty slots we open each month.\"*\n\nThat sentence becomes your filter. When the client forwards a viral dance trend that has nothing to do with meal prep, you have something to point at that is not just your opinion.\n\n## Do this before the next lesson\n\nPick one real business you will use for the whole course — a friend's shop, a former employer, a store you actually buy from. Write your best guess at its one-sentence job. Keep it where you can find it: in lesson three you will hold that guess up against the brand voice brief you build, and rewrite it wherever the evidence disagrees."
+        },
+        {
+          "slug": "where-ai-helps-and-where-it-wrecks-you",
+          "title": "Where AI Helps and Where It Wrecks You",
+          "duration_minutes": 8,
+          "content_mdx": "# Where AI Helps and Where It Wrecks You\n\nAI will fill a blank caption box faster than you can type. It will also tell a customer, with complete confidence, that shipping is free nationwide, that the promo runs until Sunday, and that a product is safe for pregnant women — none of which your client ever said. The tool is not lying on purpose. It is finishing a pattern that sounds like other captions it has seen.\n\nSo hold one line for the whole course: **AI drafts, you decide.**\n\n## The test before you delegate\n\nAsk two questions about the task:\n\n1. Can I check the output against something true?\n2. If it goes out wrong, can it be fixed quietly?\n\nIf both answers are yes, hand it over. A weak hook is fixable — you rewrite it. A wrong price is not fixable, because someone has already screenshotted it and sent it to the client.\n\n## Hand these over without guilt\n\n- **First drafts.** A blank caption box is expensive. A mediocre draft you can cut into is cheap.\n- **Variations.** Eight hook options for one idea, so you can pick instead of pray.\n- **Repurposing.** One approved Facebook caption turned into an Instagram version, a TikTok script, and a LinkedIn post.\n- **Summarising comments.** Paste in a month of comments and ask for the recurring questions, objections, and complaints, grouped. That summary feeds both your monthly report and next month's content.\n- **Tightening.** \"Cut this to two sentences.\" \"Make the first line fit before the See More cut.\"\n- **Structure.** Pillar brainstorms, outlines, turning messy notes into a table.\n- **Language smoothing.** Making your own Taglish draft consistent instead of half-formal, half-barkada.\n\n## Never delegate these\n\n- Prices, inclusions, stock levels, sizes, shipping times, and cut-offs\n- Anything health, skin, or medical — \"cures\", \"safe for\", \"no side effects\"\n- Money claims: guaranteed income, guaranteed returns, \"sure ROI\"\n- Promo mechanics. Raffles and sales promotions in the Philippines may need a permit from the DTI, and the exact wording of the mechanics carries obligations the client has to stand behind. Have them confirm it rather than letting a draft decide.\n- Replies to complaints, and any comment that names a real person\n- Anything comparing the client to a named competitor\n- Apologies, refunds, and replacements\n\nThe rule is not that AI can never produce these sentences. It is that the facts inside them must come from the client, in writing, not from the model's guess.\n\n## Build a source-of-truth file first\n\nBefore you write a single caption, get one document from the client: every offer, its price, what is included, shipping and cut-off times, sizes or variants, claims they are allowed to make, and claims they are not. Keep it in Google Docs or a notes app you can open on your phone.\n\nWhen you prompt, you paste the relevant part of that file into the prompt. You never rely on the model remembering it and you never rely on remembering it yourself at 1am.\n\n## A prompting habit you repeat every time\n\nEvery drafting prompt you write this month should have the same five parts:\n\n1. **Voice brief** — the one-pager from the next lesson, pasted at the top.\n2. **Facts** — copied from the source-of-truth file, not typed from memory.\n3. **Task with a number** — \"write 8 hook options\", not \"write some hooks\".\n4. **Constraints** — platform, length, banned words, where the call to action points.\n5. **Output format** — a numbered list, so you can pick and mix instead of accepting a blob.\n\nTwo habits go with it. Always ask for more options than you need, because the good one is rarely the first one. And never ship a first output — if you did not change anything, you did not do the job the client is paying for.\n\n## The fact pass\n\nBefore anything reaches the client, read every draft hunting for four things: numbers, dates, names, and promises. Every one must trace back to the source-of-truth file. Delete or fix anything that does not.\n\nOn a batch of captions this is a short, boring pass, and it is the whole difference between a VA a client trusts with their page and a VA who costs them a customer. Do it on the full batch in one sitting, with the file open beside you — not caption by caption from memory.\n\n## Try it now\n\nTake the business you picked. Write down five drafting tasks you would hand to AI this month, and five decisions you would never hand over. Keep the second list where you can see it."
+        },
+        {
+          "slug": "the-brand-voice-brief",
+          "title": "The Brand Voice Brief",
+          "duration_minutes": 8,
+          "content_mdx": "# The Brand Voice Brief\n\nLeft on its own, AI has one voice, and readers have learned to spot it. It opens with \"In today's fast-paced world\". It says \"elevate\" and \"we are thrilled to announce\". It lists three adjectives when one would do, and it ends with a row of emojis. On a Filipino Facebook feed, that caption reads like a bank notification, and people scroll past it.\n\nThe fix is not a cleverer prompt each time. It is a one-page brief you paste at the top of every prompt, so the model starts from your client's voice instead of its own.\n\n## Get the brief from a call, not a form\n\nSend a form and you get one-word answers. Get thirty to forty-five minutes on Zoom or Messenger, ask permission to record, and let them talk.\n\nClients often cannot describe their own voice in the abstract. They can react to things. So build the call around reactions.\n\n**Audience.** \"Describe your last five customers.\" Age, work, where they live, why they bought. Then the question that pays for itself: \"Can you screenshot two or three real messages customers have sent you?\" That is how their audience actually types — po and opo, all lowercase, \"hi maam ask lang\". You now know the register to write in.\n\n**Offers.** Walk through everything they sell, with prices and inclusions. Which one sells best, which one they wish sold more, and what they are not allowed to promise about any of it.\n\n**Tone.** Pull up three posts — one of theirs they liked, and two from other pages in their category. Ask what they like and what makes them uncomfortable. Then ask the sharpest question in the interview: \"What would you never post?\" Banned words usually come out here, unprompted.\n\n**Language.** Pure English, Taglish, or mostly Filipino? Do they use po and opo with customers? Are customers called sis, mars, boss, or nothing at all? Emojis — none, a few, or plenty? Do replies open with \"Hi po!\" or \"Hello!\"?\n\n**Proof.** Testimonials, years in business, awards, anything real you are allowed to quote.\n\n## The one page itself\n\nKeep it short enough to paste into a prompt. Ten fields:\n\n- **Business in one line** — what they sell, to whom\n- **Who we talk to** — the audience, in a sentence, plus how they type\n- **What we sell** — offers, prices, inclusions\n- **What the page is for** — the one-sentence job from lesson one\n- **Voice** — three words, plus \"we sound like...\" in one sentence\n- **Language rules** — Taglish level, po/opo, emoji use, sentence length\n- **Always say** — words and phrases they own\n- **Never say** — banned words, tired phrases, hype\n- **Claims we cannot make** — health, income, delivery guarantees\n- **Call to action** — the exact wording, and where it sends people\n\nEnd the page with three real posts of theirs that sound right. Examples teach the model more than adjectives do. \"Warm and approachable\" means nothing; a real caption that is warm and approachable means everything.\n\n## Test the one-sentence job\n\nField four is the guess you wrote in lesson one, and now you have evidence. Read it beside the audience line, the offers and the call to action. Does the audience match the customers they described? Does the result it names match where sales actually close? Rewrite it until every part is backed by something else on the page, and note what changed — that is your first real finding.\n\n## Use it every single time\n\nPaste the brief at the top of every drafting prompt, before the task. If you use Claude, keep it in a Project so it applies to every chat about that client. If you use ChatGPT, keep it as a saved document you paste from, one per client. Never let two clients share a brief — that is how a bakery ends up sounding like an accounting firm.\n\n## The three-caption test\n\nBefore you commit to the brief, generate three captions for the same offer in three slightly different registers — one more formal, one plain, one more playful. Send all three to the client with one question: \"Which of these sounds like you, which one does not, and why?\"\n\nTheir answer is more brief material, in their own words. Add it to the page.\n\n## Do this now\n\nWrite the brief for the business you chose, then do the one-sentence test above and keep both versions. If you cannot interview them yet, build a draft from evidence: their last twenty posts, their replies in the comments, any message they have sent you. Mark every field you had to guess. Those guesses are your agenda for the real call."
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A sari-sari-style online store owner tells you: \"Simple lang, post 3x a week, ipapadala ko na yung photos.\" She wants your rate. What is the strongest move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Quote a low posting-only rate now to win her, then upsell the bigger scope once you have proved yourself."
+            },
+            {
+              "id": "b",
+              "text": "Ask what she wants to happen in her business because of the page, then scope and price the job around that."
+            },
+            {
+              "id": "c",
+              "text": "Tell her three posts a week is too few to move anything, propose daily posting, and price the bigger volume."
+            },
+            {
+              "id": "d",
+              "text": "Accept the scope as described and quote a per-post rate, since she knows her own business better than you do."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "judgment",
+          "explanation": "Posting sits inside one of five deliverables — strategy, calendar, copy and creative, community, reporting. Asking for the business result first is what lets you scope and price the four she did not know to ask for."
+        },
+        {
+          "prompt": "You ask a prospective client what she wants from the page. She says, \"Gusto namin umabot ng 10k followers.\" What is the best next question?",
+          "options": [
+            {
+              "id": "a",
+              "text": "\"Which competitor's follower count are we benchmarking against, so we know what number to aim for?\""
+            },
+            {
+              "id": "b",
+              "text": "\"Should we run a follower giveaway and build the first month's calendar around it?\""
+            },
+            {
+              "id": "c",
+              "text": "\"If we hit 10,000 followers and nobody messaged you, would you count that as a win?\""
+            },
+            {
+              "id": "d",
+              "text": "\"How many months do you want for 10k, so I can work backwards into a posting frequency?\""
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "judgment",
+          "explanation": "Follower count is a stated goal, not usually the real one. Pushing one level down is what surfaces the business outcome — inquiries, orders, walk-ins — that the one-sentence job and the whole calendar get built on."
+        },
+        {
+          "prompt": "An AI-drafted caption for a skincare client reads: \"Free shipping nationwide, safe even for sensitive skin.\" The client never mentioned either. What went wrong, and what do you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The model invented a promise and a health claim; cut both unless the client put them in writing."
+            },
+            {
+              "id": "b",
+              "text": "The prompt was too thin; rewrite it asking for a more careful caption and use whatever the second version says."
+            },
+            {
+              "id": "c",
+              "text": "Keep the shipping line, since it is normal for the whole category, and cut only the sensitive-skin claim before you post."
+            },
+            {
+              "id": "d",
+              "text": "Send it to the client with both lines flagged and let her approve or delete them before anything goes out."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "judgment",
+          "explanation": "Shipping terms and skin-safety claims are facts and promises, not drafting. They have to trace back to something the client put in writing. Neither line is rescued by a better prompt, by what the category usually does, or by pushing the decision back to the client inside a draft."
+        },
+        {
+          "prompt": "All four of these are copy tasks on your desk today. Which one passes both delegation questions — checkable against something true, and quietly fixable if it goes out wrong?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Drafting the Messenger reply that tells a waiting buyer whether the sale really ends on Sunday night."
+            },
+            {
+              "id": "b",
+              "text": "Writing the public apology for a batch of late orders so the client can post it quickly."
+            },
+            {
+              "id": "c",
+              "text": "Drafting the mechanics wording for the client's raffle so she only has to read it and approve."
+            },
+            {
+              "id": "d",
+              "text": "Turning one client-approved Facebook caption into Instagram, TikTok and LinkedIn versions of the same post."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "tools",
+          "explanation": "Repurposing starts from copy the client already approved, so you can check it against that copy, and a clumsy version is edited quietly. The other three state a fact you cannot verify, commit the client publicly, or carry promo obligations — wrong once, none of them is quietly fixable."
+        },
+        {
+          "prompt": "Your captions keep coming back sounding like a chatbot — \"elevate\", \"thrilled to announce\", emoji rows — even though your prompts are detailed. What fixes it fastest?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Add \"write like a human, avoid corporate language\" to the end of every prompt you send."
+            },
+            {
+              "id": "b",
+              "text": "Paste the client's voice brief, with its never-say list and three real posts, at the top of the prompt."
+            },
+            {
+              "id": "c",
+              "text": "Switch to a different AI tool, on the basis that each one has its own fixed house writing style."
+            },
+            {
+              "id": "d",
+              "text": "Ask for longer captions and more of them each time, so there is more room for personality to come through."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "prompting",
+          "explanation": "Abstract instructions like \"be human\" give the model nothing to imitate. Real posts of the client's plus an explicit never-say list are concrete, which is why the brief goes at the top of the prompt rather than a note tacked on at the end."
+        },
+        {
+          "prompt": "A commenter on your clinic client's page posts publicly that a treatment left her face swollen. Your client is asleep. What do you do first?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Hide the comment so it stops spreading, then raise it with the client first thing in the morning."
+            },
+            {
+              "id": "b",
+              "text": "Reply publicly that you are sorry and will refund her session, so the thread does not escalate any further overnight."
+            },
+            {
+              "id": "c",
+              "text": "Get the facts and the approved wording from the client before anything goes public, even if that means waiting."
+            },
+            {
+              "id": "d",
+              "text": "Ask ChatGPT for an empathetic holding reply and post it right away so the response time still looks good."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "judgment",
+          "explanation": "Complaints, apologies and refunds are all on the never-delegate list, and a health complaint carries the most risk of any of them. Hiding it, promising money, or posting an unapproved reply each commit the client to something she never agreed to while she is asleep."
+        },
+        {
+          "prompt": "You have forty-five minutes on a discovery call. Which part gives you the most usable voice material for the brief?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Showing them three real posts — one theirs, two from other pages — and asking what they would never post themselves."
+            },
+            {
+              "id": "b",
+              "text": "Asking them for three adjectives that describe the brand, then writing the voice line straight from those three words."
+            },
+            {
+              "id": "c",
+              "text": "Copying the About section and the page bio into the brief as your reference for how they sound."
+            },
+            {
+              "id": "d",
+              "text": "Asking an AI tool to describe the typical tone of their industry and using that as your starting baseline."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "workflow",
+          "explanation": "Clients react to examples far more usefully than they describe themselves in the abstract, and \"I would never post that\" is where banned words and tired phrases surface. Adjectives, an About section and an industry average all describe a voice without ever showing you one."
+        },
+        {
+          "prompt": "You have twenty AI-assisted captions ready for the client's approval. What is the last step before you send them?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Read them once for typos and tone drift, since the facts already came from your own prompt."
+            },
+            {
+              "id": "b",
+              "text": "Ask the AI to proofread its own output and confirm that every detail in it is correct."
+            },
+            {
+              "id": "c",
+              "text": "Add hashtags and suggested post times to each one so the client can approve the whole batch at once."
+            },
+            {
+              "id": "d",
+              "text": "Do a fact pass: trace every number, date, name and promise back to the source-of-truth file."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "workflow",
+          "explanation": "A model cannot verify its own claims, and a fact that went into a prompt can still come back altered. The fact pass is the one step that catches a wrong price, a moved cut-off or an invented promo before a customer sees it."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-2-a-content-system-a-client-will-sign-off-on",
+      "title": "A Content System a Client Will Sign Off On",
+      "description": "Turn a vague business into a pillar system, a dated calendar with real PH selling moments on it, and a batching-and-scheduling routine you can run every week without burning out.",
+      "lessons": [
+        {
+          "slug": "content-pillars-that-fit-the-business",
+          "title": "Content Pillars That Fit the Business",
+          "duration_minutes": 7,
+          "content_mdx": "# Content Pillars That Fit the Business\n\nA client tells you to post three times a week. If you open a blank calendar, you will fill it with whatever comes to mind, and by week three you are posting \"Happy Monday\" over a stock photo. Content pillars are what stop that. A pillar is a repeating subject you have decided this business will keep talking about, chosen because it moves someone closer to buying.\n\nMost templates hand you pillars like Educate, Entertain, Inspire, Promote. Those are categories, not subjects. They tell you nothing about what to actually write on a Tuesday for an aircon cleaning service in Cavite.\n\n## Start with what they actually sell\n\nOpen a sheet and list every offer: name, rough price band, who it is for, and how a person buys it. Then ask the client which offer brings in the most money. Pillars that never touch the money-maker are decoration.\n\n## Mine the questions and the objections\n\nThe best pillars come from things real people already said. Go find them:\n\n- The Messenger inbox and the comments on the last three months of posts\n- Shopee or Lazada reviews and the Q&A tab, if the client sells there\n- What the client hears on a call in the minute before someone pays\n- What people say when they do not buy — too expensive, not sure it works, kailangan ko munang itanong sa asawa ko\n- Comments on a competitor's page, which your client cannot delete and did not curate\n\nAsk the client two questions directly: \"What do people ask you again and again?\" and \"What is the reason people back out?\" Write the answers down in their words, not yours.\n\nThis is a good place for AI. Paste forty real comments or DMs into ChatGPT or Claude and ask it to group them into recurring themes and name each theme. Strip out names and phone numbers first — those are other people's messages. The model is fast, and it is good at spotting a pattern you skimmed past. You still decide which themes deserve a pillar — it does not know which theme is attached to the money.\n\n## Turn the themes into four or five pillars\n\nFour or five is the working range. Fewer and the page starts repeating itself inside a month. More and you cannot keep any of them warm.\n\nFor that aircon cleaning service, the themes might become:\n\n- **Is it worth the money** — how often a unit needs cleaning, what a dirty unit does to the Meralco bill, what happens if you keep skipping it\n- **What we actually do** — the process step by step, so nobody is surprised when the technician arrives\n- **Proof** — before and after, a customer's own words, a repeat client on their third year\n- **The people** — the technicians, the van, an honest bad day on the job\n- **Book now** — slots left this week, service areas, what to prepare before they arrive\n\nEach pillar answers a question or kills an objection. That is the whole test. If you cannot say which question a pillar answers, it is a category and it will produce filler.\n\n## Set a healthy mix\n\nPillars decide what you talk about. The mix decides how often. Three posts a week is about twelve a month, and a workable shape for those twelve is: five that teach or answer, three that show proof, two that sell directly, two that are simply human. Only two of the twelve ask for the sale outright; the other ten are what make that ask arrive from a page the reader already recognises.\n\nKeep roughly the same balance at other volumes. At twenty posts a month that lands near eight teaching, five proof, four selling, three human — not an exact conversion, and it does not need to be. Teaching and proof carry the bulk of the month, and direct selling stays a small part of it.\n\nTwo adjustments are worth making. Cluster the selling posts around the 15th and month-end, when your audience has just been paid. And if the client is new to posting, run heavier on proof at the start — a page with no evidence on it gives a new buyer nothing to check.\n\n## Write the pillar sheet\n\nGive the client one page they can approve. For each pillar: the name, the question it answers, three example post ideas, and one line saying what this pillar must never do (\"Proof posts never use a stock photo\").\n\nThat last line saves you arguments later. So does a monthly review. If a pillar produced eight posts and no saves, no comments and no inquiries, retire it and replace it with something the inbox is already asking about."
+        },
+        {
+          "slug": "building-the-monthly-calendar",
+          "title": "Building the Monthly Calendar and Getting It Approved",
+          "duration_minutes": 8,
+          "content_mdx": "# Building the Monthly Calendar and Getting It Approved\n\nPillars tell you what to talk about. A calendar tells you when, on which platform, and whether anyone has said yes to it yet. It is also the single document that protects you: when a client asks in week three why nothing is posted, you point at the row that has been sitting in \"For approval\" since the 2nd.\n\nGoogle Sheets is enough. It is free, it opens on a phone, and the client can comment without learning a new tool.\n\n## The sheet\n\nOne row per post per platform. If the same idea goes to Facebook and Instagram in different form, that is two rows, because they get scheduled separately and one of them can fail on its own.\n\nColumns:\n\n- **Date** and **Day** — write the day name; it is how you notice you scheduled a sale on a Sunday\n- **Platform** — Facebook, Instagram, TikTok, LinkedIn\n- **Pillar** — from your approved pillar sheet\n- **Format** — single image, carousel, Reel, text-only\n- **Hook** — the first line only, not the full caption\n- **Asset needed** — photo from client, screen recording, Canva graphic\n- **Status** — Idea, Drafted, For approval, Approved, Scheduled, Posted\n- **Link** — pasted in after it goes live, so the monthly report writes itself\n\nColour the Status column. A client who opens the sheet on their phone should see in three seconds what is waiting on them.\n\n## Anchor the month to when people actually buy\n\nA calendar built on generic content days will miss the days your audience opens their wallet. Before you fill anything in, mark these:\n\n- **The 15th and month-end.** Payday. Many PH employers pay on the 15th and on the last working day, so put in the real date each month rather than assuming a 30th. Selling posts go on and just before those days, not on the 20th.\n- **Double-date sales.** 9.9, 10.10, 11.11, 12.12 and the monthly double dates on Shopee and Lazada. Even businesses not selling on those platforms compete with them for attention that week.\n- **Back-to-school**, the start of the school year, and the spending that comes with it.\n- **Ber-months and 13th month pay.** Christmas buying starts far earlier here than an overseas client will expect. If your client is overseas, say this out loud — they will plan for a December push and miss September.\n- **Local fiestas, town anniversaries, barangay events** for any business tied to one area.\n- **The client's own dates.** Restock days, delivery cutoffs, class schedules, when the kitchen is closed.\n\nThat last one matters most. Never place a hard-sell post on a day the client cannot deliver. A sold-out promo does more damage than a quiet week.\n\n## Fill it in two passes\n\nFirst pass: dates, platforms, pillars and formats only. No writing. You are looking at shape — three selling posts in one week, no proof posts all month, four Reels in a row that the client has no footage for.\n\nSecond pass: hooks. This is where AI earns its keep. Give it the pillar, the offer and the audience, ask for ten first lines, then throw out eight. You are choosing, not accepting.\n\n## Run the approval like a professional\n\nSend the whole month at once. Post-by-post approval turns into a hundred messages and nothing ships.\n\n- **Give a deadline in the message.** \"Please leave comments by Thursday 5pm PHT. If I do not hear back, I will proceed with what is in the sheet.\"\n- **Fix the number of revision rounds** — two is a common arrangement. Write it into your proposal so the third round is a conversation about scope, not a favour.\n- **Ask for comments inside the sheet**, not in chat. Chat scrolls away and you will lose the instruction you need in week four.\n- **Approve hooks, not final captions.** Finished captions go out for sign-off during the weekly batch, on the same silence rule and with the same exceptions. Otherwise the client is editing a month of captions in one sitting and will simply stop replying.\n\nOne exception to the silence rule: anything with a price, a medical or health claim, a guarantee, or a legal term is never approved by silence. Chase those rows until you have a written yes, and keep the message where you can find it again.\n\n## Leave room for the month to change\n\nKeep two or three slots empty and labelled \"flex\". A trend, a news moment, a customer post worth resharing. Tell the client the flex slots exist during approval, so using one is not a surprise — it is the plan working."
+        },
+        {
+          "slug": "batching-and-scheduling-the-week",
+          "title": "Batching and Scheduling the Week",
+          "duration_minutes": 8,
+          "content_mdx": "# Batching and Scheduling the Week\n\nThe fastest way to burn out on a social media retainer is to produce posts one at a time, on the day they are due. You open Canva, write a caption, hunt for the photo, schedule, close everything — then do it again tomorrow. The switching is what exhausts you, not the work.\n\nBatching means you touch each type of task once a week.\n\n## One batch session\n\nBook the same block every week and defend it. Monday, 9am to 12nn, works well: after the weekend's comments, before the client's week gets loud.\n\nRun it in this order:\n\n1. **Pull next week's approved rows** from the calendar. Only Approved rows — and that approval covered the hook and the plan, not the caption you are about to write.\n2. **Write all captions in one sitting.** Group by pillar, not by date. Writing five proof captions in a row is far faster than writing one of each.\n3. **Build all assets.** Open Canva once and work through every graphic using the client's saved template and brand kit.\n4. **Proof pass.** Read only for facts: prices, dates, cutoffs, spelling of names, the link, the branch address. It is a separate pass because you cannot proofread and write at once.\n5. **Send the week's captions for sign-off.** Drop them into the sheet in one go with a stated cutoff, on the same silence rule as the monthly approval. Rows with a price, a guarantee or a health claim are the exception: those wait for a written yes.\n6. **Schedule.** Last, in one go. A queued post can still be edited before it fires, so a late comment costs you a minute. Rows still waiting on a written yes stay out until it arrives.\n\nDo not slide between writing and designing. Finish one before starting the other.\n\n## Scheduling\n\nMeta Business Suite handles Facebook and Instagram together, it is free, and a client who already manages their own page will often have both connected to it. Buffer's free tier covers a few channels and queued posts, enough for one client. TikTok lets you schedule from its web uploader. LinkedIn has its own native scheduler on posts.\n\nWhichever you use, close the loop in the sheet: change Status to Scheduled and paste the post link once it goes live. A calendar that does not record what shipped is useless at report time.\n\n## Some posts must be published live\n\nQueueing everything looks efficient and quietly costs the client money. Publish these yourself, in real time:\n\n- **Anything reacting to a trend, a news item or a viral moment.** By the time a queued version fires, the moment has moved.\n- **Sale launches and limited stock.** Be at the keyboard when it goes out; the first replies decide whether it sells.\n- **Anything needing fast replies in the first hour** — a question post, a giveaway, a live-selling announcement.\n- **Posts tied to something you must change at the same time**, like a link in bio or a pinned comment.\n\nA useful rule: if a post needs you present after it publishes, do not queue it.\n\n## Check for failed posts\n\nScheduled is not the same as posted. Posts fail for boring reasons — an expired access token, the client removing your page access, a video stuck in processing, a Reel rejected on aspect ratio, a caption over the character limit.\n\nSpend five minutes every morning: open the page as a normal visitor, not through the dashboard, and confirm yesterday's and today's posts are there. Tick the Posted status. A failure caught at 8am is a small fix. One caught on Friday means four missing posts and a hard conversation.\n\n## Working with US or AU clients\n\nManila runs two hours behind Sydney, and three hours behind while Sydney is on daylight saving, roughly October to April. It runs twelve to thirteen hours ahead of the US East Coast, again depending on daylight saving. That changes how you run the week.\n\n- **Write PHT on every date in the sheet**, and agree once, in writing, that the calendar is in PHT. Otherwise a 6pm post becomes a 6am post.\n- **Send approvals before you sleep.** A US client's morning is your night; a request sent at your 9am sits unread all day.\n- **Set your internal deadline 24 hours before publish**, not on the day. One skipped reply should never cost a post.\n- **Do not promise same-day changes** across a twelve-hour gap. Say instead: \"Changes requested before 6pm PHT go out the next day.\"\n\nAn AU client is easier — their working day overlaps most of yours, so keep the harder conversations there and leave the US ones asynchronous."
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A client sells home-baked cakes. You draft pillars named Educate, Entertain, Inspire and Promote, and the client approves them. Where does this set fail the test a pillar has to pass?",
+          "options": [
+            {
+              "id": "a",
+              "text": "There are only four of them, and the working range starts at five, so the page will end up repeating the same subject inside a single month."
+            },
+            {
+              "id": "b",
+              "text": "None of them names a subject or the customer question it answers, so on Tuesday you still have nothing specific to write about this client's cakes."
+            },
+            {
+              "id": "c",
+              "text": "They are not tied to a platform, so you cannot tell whether a pillar's posts belong on Facebook, on Instagram or on TikTok when you build the calendar."
+            },
+            {
+              "id": "d",
+              "text": "They leave out a proof pillar, and a page that is new to posting should run heavier on proof than on any other pillar for its first month."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "judgment",
+          "explanation": "A pillar has to answer a real question or kill a real objection, which is why you derive them from the client's offers, inbox and reasons people back out. Educate and Inspire are categories: they pass the client's eye test and still leave you staring at a blank Tuesday."
+        },
+        {
+          "prompt": "Your client runs an aircon cleaning service and wants all twelve of this month's posts to be booking promos, because that is what makes money. What do you propose instead?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Agree for this month, since the client knows the business best, then review whether a promo-only month actually worked before you plan the next one."
+            },
+            {
+              "id": "b",
+              "text": "Agree, but rewrite the same promo in twelve different formats and styles so the feed does not read as repetitive to someone who follows the page."
+            },
+            {
+              "id": "c",
+              "text": "Run all twelve promos but move them into the last week of the month, so the earlier weeks build up the engagement the promos can then convert."
+            },
+            {
+              "id": "d",
+              "text": "Keep about two of the twelve as direct selling posts near the 15th and month-end, and fill the rest with teaching, proof and human posts."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "judgment",
+          "explanation": "In a twelve-post month the shape is five teaching, three proof, two selling and two human. Only two of the twelve ask for the sale outright, and the other ten are what make that ask arrive from a page the reader already recognises. Putting those two near the 15th and month-end gets more out of fewer of them."
+        },
+        {
+          "prompt": "An overseas client wants their Christmas campaign for a PH audience to launch on 1 December, the same date as their home market. What do you tell them about how the PH calendar runs?",
+          "options": [
+            {
+              "id": "a",
+              "text": "That Christmas buying here ramps up from the ber-months, so the campaign should start well before December, with selling posts near the 15th and month-end."
+            },
+            {
+              "id": "b",
+              "text": "That 1 December works for PH too, but the budget should be weighted to the final week, once 13th month pay has been released to employees."
+            },
+            {
+              "id": "c",
+              "text": "That the launch is better pushed to mid-December, because PH shoppers hold out for the 12.12 double-date sale before committing to any of their gift spending."
+            },
+            {
+              "id": "d",
+              "text": "That December timing matters little in this market, so the effort is better spent on back-to-school, which is the larger PH spending season of the two."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "workflow",
+          "explanation": "Christmas buying starts far earlier here than an overseas client will expect, which is why the ber-months and 13th month pay go on the calendar before you fill anything in. Say it out loud during planning or they will budget for a December push and miss September."
+        },
+        {
+          "prompt": "Your approval deadline was Thursday 5pm PHT and you said you would proceed with the sheet if you heard nothing. Friday morning the client still has not replied. Two unapproved rows quote a promo price and one claims a treatment result. What do you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Publish everything as planned, including the price and treatment rows, since the deadline was stated in writing and the client agreed to that rule."
+            },
+            {
+              "id": "b",
+              "text": "Hold the entire month until the client replies, since not one row in the sheet carries an explicit written approval from them yet."
+            },
+            {
+              "id": "c",
+              "text": "Publish the ordinary rows as agreed, and chase a written yes for the price rows and the treatment-result row before either goes out."
+            },
+            {
+              "id": "d",
+              "text": "Publish the price and treatment rows with the figure and the result claim softened, so nothing specific is stated and nothing needs chasing."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "judgment",
+          "explanation": "Silence can carry routine content, because you set that rule in writing and the client accepted it. It never carries a price, a guarantee, or a health or legal claim: chase those specific rows for an explicit yes and keep the message, because a wrong price or result claim lands on you as much as on the client."
+        },
+        {
+          "prompt": "You have three hours booked for your weekly batch and eight approved rows to produce. Which sequence gets the most done and still leaves the client's sign-off in place?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Work down the list post by post: write that caption, build that graphic, schedule it, then move on to the next row and do the same again."
+            },
+            {
+              "id": "b",
+              "text": "Pull the approved rows, write every caption grouped by pillar, build every asset, run a facts-only proof pass, send the captions for sign-off, then schedule."
+            },
+            {
+              "id": "c",
+              "text": "Build every graphic first so the visuals suggest the captions, then write, then proof and schedule each post as soon as its caption is finished."
+            },
+            {
+              "id": "d",
+              "text": "Write and schedule the first half of the week in this session, then book a second shorter session midweek for the remaining posts, their assets and their sign-off."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "workflow",
+          "explanation": "Batching means touching each type of task once; switching between writing and designing is what drains the session. The facts-only pass is separate because you cannot proofread and write at once, and the sign-off step is where the finished captions get approved, since the monthly round only approved hooks."
+        },
+        {
+          "prompt": "You are filling next week's queue. Four posts are drafted and approved. Which one is safe to leave in the scheduler rather than publishing yourself?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A reaction to a trend that is running right now, drafted and approved during the batch and queued for Wednesday morning, when this client's audience is usually most active."
+            },
+            {
+              "id": "b",
+              "text": "A giveaway announcement asking followers to comment their answer, queued for Thursday so that it lands while the client's shop is open for questions."
+            },
+            {
+              "id": "c",
+              "text": "A carousel of service areas and delivery cutoffs, approved in the batch, that nothing this week will change and needs no reply beyond ordinary moderation."
+            },
+            {
+              "id": "d",
+              "text": "A limited-stock sale launch, queued for Friday 7pm so that it fires exactly on time whether or not you are at your keyboard that evening."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "judgment",
+          "explanation": "If a post needs you present after it publishes, do not queue it. Trend reactions go stale before a queued version fires, and giveaways and launches live or die on how fast the first replies come; a static service-areas carousel needs none of that."
+        },
+        {
+          "prompt": "You start your five-minute morning check. Yesterday's Reel shows as published in Meta Business Suite, with no error against it. What do you do next?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Open the client's page as an ordinary visitor sees it, confirm the Reel is there, then change its status to Posted in the sheet."
+            },
+            {
+              "id": "b",
+              "text": "Take the dashboard at its word, since a post that failed to go out would have been flagged with an error there instead of being marked as published."
+            },
+            {
+              "id": "c",
+              "text": "Compare yesterday's follower count and reach against the day before, and treat a normal-looking rise on the page as confirmation that the Reel went out."
+            },
+            {
+              "id": "d",
+              "text": "Queue an identical copy of the Reel for this evening, so that the week's post count still lands where the approved calendar says it should."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "tools",
+          "explanation": "A dashboard row is not proof that anything shipped, and the failures are quiet ones: an expired token, a rejected aspect ratio, a video stuck in processing. Viewing the page as an outsider is the only check that shows what the audience actually sees, and ticking Posted keeps the sheet worth reading."
+        },
+        {
+          "prompt": "Your client is in New York and asks for a caption change today, in a message that arrived while you were asleep. The post is queued for 6pm PHT. What do you set up so this stops recurring?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Move the posting times into the client's business hours, so any request they send arrives well before the post is actually due to go out."
+            },
+            {
+              "id": "b",
+              "text": "Relabel every date in the calendar in the client's time zone, so what they see matches what they ask for and nothing gets misread."
+            },
+            {
+              "id": "c",
+              "text": "Stop queueing altogether and publish every post by hand, so that a late change can always be absorbed before anything goes out."
+            },
+            {
+              "id": "d",
+              "text": "Keep the calendar in PHT, set your internal deadline 24 hours before publish, and state a PHT cutoff after which changes wait a day."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "workflow",
+          "explanation": "Manila runs twelve to thirteen hours ahead of the US East Coast, so a same-day edit is not something you can promise. The calendar stays in PHT because posting times have to land on the audience, not on the client, and the 24-hour internal deadline is what stops one skipped reply costing a post."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-3-writing-at-volume-without-sounding-like-a-robot",
+      "title": "Writing at Volume Without Sounding Like a Robot",
+      "description": "The craft half of the job: hooks that earn the second line, captions that read like a person wrote them, and one idea rewritten so it belongs on each platform.",
+      "lessons": [
+        {
+          "slug": "hooks-that-earn-the-second-line",
+          "title": "Hooks That Earn the Second Line",
+          "duration_minutes": 8,
+          "content_mdx": "# Hooks That Earn the Second Line\n\n## Your reader is not reading, they are deciding\n\nOn a phone, a Facebook caption is cut off after the opening lines, with a \"See more\" hiding the rest. Instagram trims the feed caption at roughly 125 characters before its own \"... more\". TikTok shows a few words over the video while the thumb is already moving. Everything you wrote after that only exists if the first line convinces someone to keep going.\n\nSo the hook's job is not to be clever. Its job is to make the second line feel necessary.\n\nA common failure in client work is the announcement opener: \"Hi everyone! We are excited to announce a change to our schedule.\" That line describes how the business feels. Nobody scrolling at 9pm cares how the business feels. Compare: \"Sold out by 10am last Saturday. Here is the new cutoff.\" Same news, but now it is about the reader's chance of getting one.\n\n## Five patterns that work in a PH feed\n\n**The question they already asked.** Not a rhetorical one — \"Looking for the best coffee?\" is dead on arrival. Use a question you have actually seen in the client's comments or DMs: \"Bakit mas mahal ang shipping papuntang province?\" You get these free by reading a month of their inbox.\n\n**The number.** \"Three things I check before accepting a rush order.\" A number sets the size of the read, which lowers the cost of starting.\n\n**The mistake.** \"The mistake I see most with new online sellers: they price the item and forget the packaging.\" Only write a mistake the client genuinely sees. You are borrowing their authority, so it has to be theirs.\n\n**Before and after.** \"Same product in March and in June. Only the photos changed.\" Use the client's real numbers or no numbers. Never invent a result to make a hook land — the comments will ask for details you do not have, and you will be answering for it.\n\n**The overheard customer.** One real line, in quotes, exactly as the person said it: \"Ate, pwede po bang hulugan?\" This one is hard to beat, because you cannot fake it and readers recognise it on sight.\n\n## Get a dozen from AI, then earn the one\n\nAI is good at range and bad at judgment, so use it for range. A prompt that works:\n\n\"Here is the business, the offer, and the voice guide. The post is about [one idea]. Give me 12 hook lines: three questions taken from the customer questions below, three built on a number, three about a mistake, three quoting a customer. Maximum 12 words each. No emoji, no exclamation marks, no 'discover' or 'unlock'.\"\n\nYou will get twelve. Plenty of them will be generic. That is fine — you are asking the model for shapes, not for the answer.\n\nThen sharpen the survivor:\n\n- **Replace generic nouns with the client's specifics.** \"Small business owners\" becomes \"milk tea shops sa Cubao\". Specific reads as true.\n- **Cut the wind-up.** If the line starts \"One thing I have learned is that...\", delete up to the actual point.\n- **Check the promise is paid off.** If the hook says three things, the caption has three things. A hook the caption does not deliver is bait, and it costs the client trust in exchange for a few extra views.\n- **Fit the visible space.** Say it out loud. If you run out of breath, it is too long for the sliver of caption a phone will show.\n\n## The two-line test\n\nBefore you queue anything, paste only the hook and the second line into your notes app and look at it on your own phone. That is close to what the audience sees. If you would scroll past your own post, rewrite it. Do not tell yourself the good part is further down — nobody is going down there.\n\nKeep a running note of the hooks that pulled comments for this client and the ones that died. After a month you are not guessing any more, and you have something concrete to point at when you ask to be kept on."
+        },
+        {
+          "slug": "captions-that-sound-like-a-person",
+          "title": "Captions That Sound Like a Person",
+          "duration_minutes": 8,
+          "content_mdx": "# Captions That Sound Like a Person\n\n## Four parts, in order\n\nCaptions that work usually have the same skeleton: **hook, one idea, proof, one clear next step.** Once you can fill it in, you can work through a batch in one sitting instead of staring at an empty box.\n\n**Hook** — the line that earns the second line.\n\n**One idea.** A caption is not a brochure. If the post is about the new 4pm same-day cake cutoff, it does not also mention the ube flavour, the hiring post and the Christmas bundle. Every extra idea makes the reader choose, and choosing means scrolling. The extra ideas are not wasted — they are next week's posts, and your calendar already has slots for them.\n\n**Proof.** The line that makes it believable. Proof is not \"quality and affordability\". Proof is a detail only this business could say: \"We mix the batter the night before, so a 4pm cutoff is really a 9pm decision.\" A real number the client actually has. A sentence a customer actually wrote. A detail in the photo you can point at.\n\n**One clear next step.** One. \"Comment CAKE and we will send the price list\" beats \"DM us, visit our site, follow the page, and tag a friend\". Four asks is the same as no ask. Pick the one you are willing to count at the end of the month.\n\n## Editing an AI draft\n\nAI will hand you captions that are competent and hollow. Your value is the edit. Work from a cut list.\n\n**Hollow openers.** \"In today's fast-paced world.\" \"Are you looking for...\" \"We are thrilled to announce.\" Delete the whole sentence and start at the second one. It is usually better.\n\n**Stacked adjectives.** \"Delicious, affordable, high-quality meals\" says nothing. Keep the one that is true and make it specific: \"Kanin, ulam and drink, packed for one office lunch.\"\n\n**Fake enthusiasm.** Exclamation marks, \"amazing\", \"game-changer\", \"you won't believe\". Enthusiasm you have not earned reads like a stranger shouting.\n\n**The \"not just X, but Y\" formula.** AI reaches for it constantly. \"Not just a bakery, but a community.\" Once you notice it you will see it everywhere, and so will the client's readers.\n\n**Generic advice.** \"Consistency is key.\" Here is the fastest test you have: if the caption would still make sense pasted onto a competitor's page, it is not finished.\n\nThen read it out loud. If you would not say it to a customer standing in front of you, cut it. Expect to lose words, sometimes whole sentences. Shorter is not the goal — specific is — but the two usually arrive together.\n\n## Taglish, emoji and all-caps\n\nThese are not questions of taste. They are questions about the client's audience, and the evidence is already sitting on their page.\n\nOpen the comments and read fifty of them. If their customers write in Taglish, Taglish is correct. \"Available pa po ba ang chocolate?\" is how the reader thinks, and matching it is not unprofessional, it is accurate. If the same client also sells bookkeeping to corporate finance teams on LinkedIn, straight English is correct there. One brand can hold two registers as long as both are deliberate and written down.\n\nEmoji work as signposts — a marker in front of each item in a list, or one at the end of a line. They stop working as decoration sprinkled through every sentence, and a screen reader reads each one out loud to the person using it. Some clients, like clinics, law offices and financial services, are better with none.\n\nAll-caps is for one word carrying real weight: a cutoff, PAUBOS, SOLD OUT. A caption in all-caps reads like a tarpaulin.\n\nWhatever you decide, write the rule into the client's voice guide with two examples of yes and two of no. Your AI drafts then start closer to right, and the next person who touches the account does not undo your work in a week."
+        },
+        {
+          "slug": "one-idea-every-platform",
+          "title": "One Idea, Every Platform",
+          "duration_minutes": 9,
+          "content_mdx": "# One Idea, Every Platform\n\n## Cross-posting is visible\n\nIt shows. An Instagram caption saying \"link in bio\" sitting on Facebook. A LinkedIn post wearing fifteen hashtags. A TikTok description that is a five-paragraph Facebook caption nobody will open. Cross-posting does not just perform badly — it tells the audience nobody is really minding the page, which is the impression your client pays you to prevent.\n\nThe fix is not four different ideas. It is one idea, written four times.\n\n## What actually differs, for a PH audience\n\n**Facebook.** For a lot of Philippine consumer businesses this is still where the customers are, across a wide age range, and much of the buying happens in Messenger and in groups rather than on the page. People comment in public and expect a reply in public. Longer text is tolerated, so a short story works here. Links are clickable. Video and Reels sit in the same feed, so a vertical clip gets a second life here.\n\n**Instagram.** Two jobs live in one app. A still post leans on the image with the caption supporting it; a Reel is vertical video with sound, and for many accounts that is where non-followers run into the page. Plan for both, not just the still. Saves and shares into Stories matter alongside likes, and conversation moves into DMs, so budget reply time there. Links in captions are not clickable, so the next step has to be a DM, a comment, or link in bio — write the ask to match, or the post has no ask.\n\n**TikTok.** Video first, sound on, and the hook has to be spoken and on screen in the opening seconds. The description can run long, but keep it short and searchable anyway: people do search TikTok for reviews the way they search Google. Comments are where the selling conversation happens, and a good comment is often worth turning into its own video.\n\n**LinkedIn.** Almost nobody is buying a cake here. It earns its place when the client sells to businesses, recruits, or wants to be visible to corporate buyers. Plain text, few or no hashtags, and the opening lines have to work before the post is cut off at \"see more\". Conversation is public and slower: people comment under their real name and job title, so a reply from the client's own account carries weight, and a cold direct message reads far more like a sales approach than the same question would in Messenger. Plenty of that reading happens on a phone, so write for a small screen.\n\n## The rewrite drill\n\nOne idea: a Marikina bakeshop is moving the same-day cake cutoff to 4pm.\n\n- **Facebook.** Six lines. Open with the real moment — turning away four orders at 4:10pm last Saturday. Explain why the cutoff exists (the batter is mixed the night before). Ask people to comment their usual order time so you can plan.\n- **Instagram.** A photo of the 3:55pm counter with a three-line caption, or the same rush cut as a Reel. Either way the ask is \"DM us to reserve\", because a link in the caption would not work.\n- **TikTok.** Twenty seconds of the 3:55pm rush, spoken hook in the first two seconds: \"Ito ang mukha ng 4:01pm.\" Description short and searchable: same day cake cutoff Marikina.\n- **LinkedIn.** Only if the client sells corporate orders. Different angle entirely: how they handle bulk office orders without breaking the kitchen, written so a corporate buyer can reply in comments.\n\nSame fact, four posts, and none of them is a copy.\n\n## Working this with AI\n\nGive the model the finished Facebook caption plus one line on each platform's constraint, and ask for native rewrites, not translations: \"Rewrite this for Instagram as a three-line caption with a DM ask and no link, plus a fifteen-second Reel script; for TikTok as a spoken script with a short searchable description; and for LinkedIn as plain text for corporate buyers, no hashtags.\"\n\nThen check the output, because the model does not know your client. Confirm the Instagram version has no clickable-link ask. Confirm the TikTok script says the hook out loud instead of assuming on-screen text. Confirm the LinkedIn version is about the business problem, not the cake.\n\nTwo practical notes. Draft captions offline in a notes app and paste them in later. And upload video on wifi — a client's TikTok schedule is not worth your load.\n\nFinally: not every idea belongs on every platform. If you cannot make a genuinely native version this week, leave that platform out of the calendar and say so when the client reviews it. \"We skipped LinkedIn because this one is a walk-in offer\" is a professional answer. A cross-posted caption is not."
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "You asked AI for hook options for a bakeshop post announcing that the same-day cake cutoff is now 4pm. Which of these is the strongest starting point?",
+          "options": [
+            {
+              "id": "a",
+              "text": "\"3 reasons why ordering a same-day cake is a great idea for your next celebration.\""
+            },
+            {
+              "id": "b",
+              "text": "\"Last Saturday we turned away four orders at 4:10pm. The cutoff is now 4pm.\""
+            },
+            {
+              "id": "c",
+              "text": "\"Looking for the best same-day cake in Marikina? We have got you covered.\""
+            },
+            {
+              "id": "d",
+              "text": "\"Big news for all our cake lovers out there: same-day ordering just got a little better this week.\""
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "judgment",
+          "explanation": "A hook works when it is specific to this business and makes the second line necessary, and a real moment with a real detail does that. The listicle, the rhetorical question and the vague good-news line could all sit on any bakery's page, and none of them tells the reader what actually changed."
+        },
+        {
+          "prompt": "You are about to ask AI for hook options for the 4pm cutoff post. Which way of asking gives you the most usable set to work from?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ask the model for the single strongest hook it can write, giving it the voice guide, the offer and the customer questions, so you do not have to sift through a dozen weak lines to find one worth keeping."
+            },
+            {
+              "id": "b",
+              "text": "Ask for twelve catchy hooks about same-day cakes, then send the three you like best to the client with a note on each one and let them pick whichever sounds most like their page."
+            },
+            {
+              "id": "c",
+              "text": "Give the model the business, the offer, the voice guide and this post's one idea, then ask for twelve hooks split across question, number, mistake and quoted customer, twelve words maximum."
+            },
+            {
+              "id": "d",
+              "text": "Ask for a full caption first, then cut everything except the single line that reads best and use that as the hook, since the model writes better when it is working in whole paragraphs."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "prompting",
+          "explanation": "You are using AI for range, not judgment, so the prompt has to carry the context and force variety across the patterns with a length limit. Asking for one best line, or handing the choice straight to the client, skips the part where range is the point, and pulling a hook out of a finished caption gives you one shape instead of four."
+        },
+        {
+          "prompt": "You are checking a caption for a Pasig print shop that does rush tarpaulins. Which line is actually doing the work of proof?",
+          "options": [
+            {
+              "id": "a",
+              "text": "\"Trusted by hundreds of Pasig businesses for their rush printing needs, every single year since we opened in 2019.\""
+            },
+            {
+              "id": "b",
+              "text": "\"We use only premium inks and heavy-duty tarpaulin material on every single order.\""
+            },
+            {
+              "id": "c",
+              "text": "\"Nobody else in the city turns around a rush tarpaulin job faster than our team does.\""
+            },
+            {
+              "id": "d",
+              "text": "\"Files in before 11am print that same afternoon, because the big press runs twice daily.\""
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "judgment",
+          "explanation": "Proof is a detail only this business could say, and a process step the reader can check against their own deadline is exactly that. A round trust number, a materials claim and a speed superlative all sound concrete, but any competitor could write those three lines without changing a word."
+        },
+        {
+          "prompt": "You are editing an AI-written caption for the bakeshop and it reads fine. Which signal tells you it is not finished yet?",
+          "options": [
+            {
+              "id": "a",
+              "text": "You could paste it onto a competitor's page and it would still make sense."
+            },
+            {
+              "id": "b",
+              "text": "It is noticeably shorter than the captions this client usually posts on the page."
+            },
+            {
+              "id": "c",
+              "text": "It uses no emoji at all, not even in the short list of items near the end."
+            },
+            {
+              "id": "d",
+              "text": "It asks the reader to do only one thing instead of two or three."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "workflow",
+          "explanation": "The competitor test is the fastest check for generic writing: if nothing in the caption is specific to this client, the draft has been approved rather than edited. Short, emoji-free and single-ask are not faults, and are often signs the caption is working."
+        },
+        {
+          "prompt": "Your client is a Makati bookkeeping firm. Their Facebook comments are mostly Taglish from small store owners; their LinkedIn audience is corporate finance staff. How should you handle language and tone?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Use straight English on every platform, since bookkeeping is a professional service and Taglish in a caption will read as careless to a corporate reader."
+            },
+            {
+              "id": "b",
+              "text": "Match each audience: Taglish where the customers write in Taglish, plain English on LinkedIn, and write both rules into the client's voice guide."
+            },
+            {
+              "id": "c",
+              "text": "Write everything in Taglish, including LinkedIn, so the brand voice stays consistent no matter which page the reader happens to land on."
+            },
+            {
+              "id": "d",
+              "text": "Ask the client which of the two styles they prefer and apply that one everywhere, so nothing you publish can be called inconsistent."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "judgment",
+          "explanation": "Language is a question about the audience, and the evidence is already sitting in the client's own comments. One brand can hold two registers as long as both are deliberate and written down, so your drafts and the next VA on the account stay consistent."
+        },
+        {
+          "prompt": "You have written a strong five-paragraph Facebook caption. The client also wants Instagram, TikTok and LinkedIn covered this week, and you have one afternoon left. What do you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Post the full caption on Facebook, then run it through AI to translate it into a shorter version for each of the other three platforms."
+            },
+            {
+              "id": "b",
+              "text": "Cover all four so the calendar stays full: the same caption everywhere, with the hashtags and the link swapped to suit each platform."
+            },
+            {
+              "id": "c",
+              "text": "Post it on Facebook, rewrite it properly for Instagram and TikTok, and reuse the Facebook text on LinkedIn since both are text-heavy platforms."
+            },
+            {
+              "id": "d",
+              "text": "Rewrite the one idea into a native version per platform, and leave out any platform you cannot make a native version for this week."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "workflow",
+          "explanation": "Native rewrites are the work. A translation or a trim is still the Facebook post wearing a different shirt, and LinkedIn is not simply a longer feed. Skipping a platform with a stated reason is a professional answer the client can approve."
+        },
+        {
+          "prompt": "You end an Instagram caption with \"click the link below to order\". Why is that a problem?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Instagram will show the post to fewer people, because captions that mention an outside link get downranked in the feed by the algorithm."
+            },
+            {
+              "id": "b",
+              "text": "The link is clickable, but it opens inside Instagram's own in-app browser, where the order form usually breaks."
+            },
+            {
+              "id": "c",
+              "text": "Links in Instagram captions are not clickable, so the ask has to be a DM, a comment or link in bio."
+            },
+            {
+              "id": "d",
+              "text": "Links in captions only work once an account is verified, and this client's account has not been verified."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "tools",
+          "explanation": "Instagram captions do not make links clickable at all, so an ask built on one leaves the post with no working next step for anybody. Write the ask to match how the platform actually behaves, not how you wish it did."
+        },
+        {
+          "prompt": "You are turning the 4pm cutoff idea into a TikTok. What do you do with the hook and the description?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Say the hook out loud in the opening seconds and put it on screen too, and keep the description short and searchable."
+            },
+            {
+              "id": "b",
+              "text": "Write the description as a two-paragraph version of the caption, so viewers who watch on mute still get the whole story."
+            },
+            {
+              "id": "c",
+              "text": "Open with a slow shot of the cakes and save the cutoff for the end, so viewers stay to the finish of the video."
+            },
+            {
+              "id": "d",
+              "text": "Use \"link in bio\" as the description and let the video carry everything else, since almost nobody reads a TikTok description."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "judgment",
+          "explanation": "On TikTok the video carries the hook, spoken and on screen in the first seconds, while the description mostly serves search. On-screen text is what covers a muted viewer, not a long description, and burying the news at the end asks for patience you have not earned yet."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-4-community-complaints-and-proof-of-work",
+      "title": "Community, Complaints, and Proof of Work",
+      "description": "The unglamorous work that keeps the retainer: answering people every day, handling a public complaint without making it worse, and reporting results in numbers the client cares about.",
+      "lessons": [
+        {
+          "slug": "comments-and-dms-are-the-job",
+          "title": "Comments and DMs Are the Job",
+          "duration_minutes": 8,
+          "content_mdx": "# Comments and DMs Are the Job\n\nThe posts get the compliments. The inbox keeps the retainer.\n\nA client may not see the difference between a good caption and an average one. They can absolutely tell when a customer says \"hindi sinasagot ang messages niyo\" in public. It is the part of the work they see every day, and the part you can be excellent at from week one.\n\n## Set a response-time target and put it in writing\n\nDo not promise \"always online\". Promise something you can hit on a bad day, then beat it.\n\nA realistic target for one VA on a small page: first reply within two hours during agreed working hours, and every unanswered message cleared before you log off. Write down which hours those are. If your client is in Australia and their customers are in Metro Manila, say whose clock the two hours run on. If you work PH nights to cover US customers, that cover is worth money — charge for it, do not give it away by accident.\n\nFacebook may show a responsiveness indicator on a Page that meets Meta's thresholds, but Meta has changed and moved it more than once. Do not build your promise on a badge you do not control. Keep your own record of reply times instead.\n\n## The daily routine\n\nRun the same loop every working day:\n\n- New comments on posts from the last seven days, not just today's. People comment on old posts.\n- The main inbox, then Instagram's **message requests**, then the **Spam** folder in the Page inbox. First-time senders and anything the filter caught sit outside your main view, and that is where new buyers get lost.\n- Tagged posts, shares with a caption, and Facebook recommendations or reviews.\n- Anything you left open yesterday waiting on the client.\n\nEnd the loop by writing two numbers in a sheet: inquiries received, and how many became an order or a booking. That log takes seconds and becomes the first line of your monthly report.\n\n## Build a saved-reply bank the client approved\n\nYou will answer the same handful of questions forever. Write them once, get them signed off once, and stop improvising.\n\nOpen a Google Sheet with three columns: the question, the approved reply, and a note on when not to use it. Cover price, stock, sizes, delivery time and courier, payment methods, shop location or booking link, \"is this legit\", and following up on an order.\n\nThis is a good use of AI. Paste the client's price list and policies into ChatGPT or Claude and ask for three different wordings of each reply, in the brand voice you documented for this client. Three wordings matter — a page where every reply is identical reads like a bot. Then edit them yourself and send the sheet for approval before a single one goes out.\n\nThe Page inbox in Meta Business Suite has Saved Replies; Instagram professional accounts have Quick Replies, pulled up by typing the shortcut word you assigned. Load your approved bank into both so you are picking, not typing.\n\nOne rule that outranks the bank: never send a saved reply that does not answer the question actually asked. A customer who asked about shipping to Davao and got your shop hours knows exactly what happened.\n\n## Turn a buying question into an order\n\n\"Magkano po?\" is not a question. It is a raised hand. Answer it and immediately hand over the next step in the same message.\n\nWeak: \"590 po.\"\n\nBetter: \"590 po, plus 89 shipping to Davao. Ready to ship today. Send your full name, complete address and contact number and I'll send the payment details po.\"\n\nThen payment. Two hard rules:\n\n- Use the client's official GCash or bank details, copied from the document they gave you. Never type an account number from memory, and never give your own number \"para mabilis\".\n- If a customer asks you to confirm that a payment landed, you do not confirm it. Only the client can see the account.\n\n## What you escalate instead of answering\n\nSend it up when a wrong answer costs the client money, safety or a legal problem:\n\n- Discounts, bulk or wholesale quotes, and anything not on the approved price list\n- Refunds, replacements or anything beyond the published policy\n- Claims about health, results, ingredients, safety or legality\n- Anyone naming a lawyer, DTI, or a barangay complaint\n- Press, partnership and influencer requests\n- Complaints about a named staff member\n- Anything you would have to guess to answer\n\nEscalate in one message, not a scroll of screenshots: what the customer asked, the screenshot, what you propose to reply, and when you need it. Clients approve fast when you have already done the thinking."
+        },
+        {
+          "slug": "handling-a-complaint-in-public",
+          "title": "Handling a Complaint in Public",
+          "duration_minutes": 8,
+          "content_mdx": "# Handling a Complaint in Public\n\nA public complaint is not an emergency. It becomes one when it is answered badly, answered slowly, or deleted.\n\nWrite for the people reading the thread, not the person complaining. What they can see is how the business behaves when someone is angry. That is the whole game.\n\n## Triage in sixty seconds\n\nBefore you type anything, sort the complaint into one of four buckets. Each one gets a different response.\n\n- **A real service failure.** Late order, wrong item, damaged package, no-show booking. Verifiable and fixable.\n- **A misunderstanding.** They read the price wrong, missed the cut-off, or expected next-day delivery that was never promised.\n- **A scam accusation.** \"Scammer 'to, wag kayo mag-order.\" High heat, and it can come from someone who genuinely paid and heard nothing back.\n- **A pile-on or a bad-faith account.** Ten similar comments in an hour, a competitor, or an account with no history that just wants a fight.\n\nThen check one fact before replying: does the client's record show this person as a real customer? If you cannot check, that limits what you are allowed to say, which is the next section.\n\n## Apologise for the experience, not for facts you cannot verify\n\nYou were not in the warehouse. You do not know if the rider was late or if the customer gave the wrong address. So do not write a reply that concedes it.\n\nAvoid: \"Sorry po, na-delay talaga ang shipment namin.\" You just admitted a fault on the record for something you have not confirmed.\n\nUse instead: \"Sorry po for the trouble this caused. Hindi po ito ang expected experience. Send me your order number in DM and I'll check it right now.\"\n\nThat reply does three things at once: it treats the person as real, it commits to action, and it admits nothing you would have to walk back. It works for all four buckets.\n\n## What is answered in public, what moves to DM\n\nPublic: the acknowledgement, the timeline, and anything the crowd needs to know. One reply, under four lines.\n\nDM: order numbers, addresses, phone numbers, refunds, discounts, anything specific to that one person's account.\n\nPublic again: when it is resolved, and only if the customer says so. \"Glad this is sorted po\" under the original comment is the most useful thing that will appear on that thread. Never announce a resolution the customer has not confirmed.\n\nFor a late-delivery pile-on during a sale rush, do not answer twelve comments with the same paragraph — that reads like a bot and stacks the complaint at the top of the feed. Post one short update, pin it, and reply to each comment with a single line pointing at it.\n\nFor a scam accusation, the instinct is to delete. Deleting is the worst available move: the accuser screenshots it and now has a better story. Reply once, publicly, with only things that can be checked — that the business is real, where it operates from, that orders can be traced — and ask them to send the reference number so you can track the payment. Then stop replying. One calm reply plus silence beats a thread.\n\n## When hiding or deleting is defensible\n\nHiding is defensible, and you should say why in your notes to the client:\n\n- The comment contains someone's phone number, address or order details\n- Slurs, threats, or sexual harassment\n- Spam, scam links, or \"message this healer\" replies under a customer's complaint\n- The same person copy-pasting the same comment fifteen times\n\nDeleting is for content that is unlawful or exposes someone's private details; screenshot it before it goes. On Facebook, hiding keeps a comment visible to its author and their friends while taking it out of everyone else's view, which is why it is the safer tool.\n\nA negative review that is merely unfair is not any of these. It stays up, and it gets a calm reply. Agree the hide-and-delete rule with your client in advance, in writing, so you are not making that call alone at 9pm.\n\n## Never send an unedited AI draft on a complaint\n\nAI is genuinely useful here — ask for three versions at different levels of formality, check whether your draft admits fault, or put your reply into natural Taglish. It is dangerous as a final answer, because it will confidently offer a refund policy that does not exist, invent a delivery timeline, or apologise for a failure nobody has confirmed. It has no idea what your client can afford.\n\nSo: AI drafts, you decide, and anything touching money, health, safety or the law gets the client's yes first. A complaint reply is the one place where being ten minutes slower and correct beats being instant and wrong."
+        },
+        {
+          "slug": "the-monthly-report-clients-read",
+          "title": "The Monthly Report a Client Actually Reads",
+          "duration_minutes": 8,
+          "content_mdx": "# The Monthly Report a Client Actually Reads\n\nA client who cannot see what you did all month has nothing to weigh against the invoice at renewal time. A one-page report on the same date every month is the cheapest renewal insurance you can buy.\n\nOne page. Sent as a PDF or an image, because your client will open it on a phone between two other things.\n\n## Lead with the business outcome, not the follower count\n\nYour client did not hire you to collect followers. They hired you to sell more banana bread, book more nail appointments, or fill more freelance slots. So the top of the page answers the question they actually have: **did this bring me business?**\n\nThe metrics that belong at the top:\n\n- Inquiries — comments and DMs asking about price, stock, or booking\n- Orders or bookings you can trace to social\n- Saves and shares — the two signals that a post was worth keeping or passing on\n- Link clicks, if there is a shop link or booking form\n\nFollowers still go on the page, near the bottom, in small type. A home baker with 900 followers and 30 orders a month is winning. A page with 9,000 followers and four inquiries is a hobby.\n\n## Where the numbers come from\n\nYou need two sources and you should name both.\n\nPlatform analytics give you the platform-side numbers — reach, engagement, link clicks, and saves and shares where the platform reports them. Meta Business Suite covers Facebook and Instagram, a TikTok business account has an analytics tab, and a LinkedIn Page has built-in analytics. They do not all report the same metrics or name them the same way, so check what is actually there before you promise a row in the table.\n\nYour own log gives you inquiries and orders — the sheet you filled in during your daily inbox routine. Platforms cannot see a sale that happened over GCash, so this column only exists because you counted it.\n\nThe two will not agree, and that is fine. Say which number came from where. A client who catches an unexplained mismatch stops trusting the whole page.\n\n## The shape of the page\n\nFive blocks, in this order:\n\n**1. One headline sentence.** \"38 inquiries and 21 traceable orders this month, up from 24 and 12 in July, mostly from three reels.\"\n\n**2. A small table.** This month against last month. Six rows maximum: inquiries, orders, reach, saves, shares, link clicks. Two columns of numbers and nothing else.\n\n**3. What caused it.** Two or three sentences tied to specific posts, not vibes. \"The 'how we pack your order' reel got the most saves of anything we have posted and brought 11 inquiries in four days. The same kind of post got more comments at 7pm than the one we ran at noon.\"\n\n**4. What did not work.** One honest line. \"The three product-only photo posts did almost nothing. I will stop making them.\" Clients trust a report that admits something more than one that only reports wins.\n\n**5. Three things I will do differently next month.** Not ten. Three, each one a specific action: \"Two behind-the-scenes reels per week instead of one.\" \"Move the Friday post to 7pm.\" \"Test a bundle post before payday week.\"\n\n## Say what you can prove and no more\n\nDo not write \"our content generated 50,000 pesos in sales\" unless the client's own numbers say so. Write \"21 orders came in through DMs and comments this month\" — that is yours, you counted it, and nobody can argue with it.\n\nWhen a month is bad, report it. Reach drops for reasons outside your control: a platform change, a slow month before payday, a week when the client had no stock to sell. Name the reason, show what you tested, and put your fix in the three actions. A VA who explains a bad month sounds like someone running the account. A VA who hides it gets found out at renewal.\n\n## Send it like it matters\n\nSame date every month, before the client has to ask. Attach it to a short message with the headline sentence in the text, so they get the point even if they never open the file.\n\nIf the retainer is up for renewal, add one line at the bottom: what you would do with another three months, and what you would need — budget for boosting, faster product photos, access to the shop's order data. That line is how a monthly report turns into a longer contract.\n\nYour deliverable for this module is real: the daily routine, one live complaint answered, and this page. That is the whole job a client pays for."
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A customer comments on your client's post: \"May discount po ba kung 10 pcs kukunin ko?\" The approved price list only has single-item and 3-piece prices. What do you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Offer them ten percent off on the spot, since bulk discounts are a fairly common ask on pages that sell online"
+            },
+            {
+              "id": "b",
+              "text": "Send the saved reply with the 3-piece price and hope the buyer takes that deal instead of pushing"
+            },
+            {
+              "id": "c",
+              "text": "Reply that you will confirm and come back shortly, then escalate with the screenshot and a proposed answer"
+            },
+            {
+              "id": "d",
+              "text": "Tell them to message the client's personal account directly so the two of them can settle the price"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "judgment",
+          "explanation": "Bulk and wholesale quotes are not on the approved price list, so answering means guessing with the client's margin. Escalate — but escalate well: the screenshot, the question, and what you propose to say, so the client can just say yes."
+        },
+        {
+          "prompt": "You are building the saved-reply bank for a new client. Which approach fits the module's routine?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Write each reply as the question comes up during the week, so the bank grows out of the real messages the page actually gets"
+            },
+            {
+              "id": "b",
+              "text": "Draft the common questions from the price list, get three wordings each from AI, edit, then have the client approve the sheet"
+            },
+            {
+              "id": "c",
+              "text": "Ask the client to write every reply themselves, so the brand voice is guaranteed correct before a single message goes out"
+            },
+            {
+              "id": "d",
+              "text": "Set an auto-reply that sends the full price list to every new message, so no buyer is ever left waiting for an answer"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "workflow",
+          "explanation": "The bank is approved once, up front, so you stop improvising — and several wordings per question stop the page reading like a bot. AI drafts the variations; you edit, and the client signs off before any of them go out."
+        },
+        {
+          "prompt": "A buyer sends a GCash screenshot and asks, \"Received na po ba?\" You do not have access to the client's GCash account. What is the right reply?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Confirm it right away, since a screenshot showing a reference number and the correct amount is proof enough"
+            },
+            {
+              "id": "b",
+              "text": "Check that the amount on the screenshot matches the price list, then tell the buyer it has gone through"
+            },
+            {
+              "id": "c",
+              "text": "Tell them that payment confirmation is not part of your job and ask them to wait for the client to check"
+            },
+            {
+              "id": "d",
+              "text": "Thank them, say you are passing the reference number on for confirmation, and give a time to expect it"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "judgment",
+          "explanation": "You cannot confirm money you cannot see, and a matching amount on a screenshot is not the same as a payment landing in the account. Acknowledge it, pass the reference number to the client, and give the customer a timeline so they are not left guessing."
+        },
+        {
+          "prompt": "A commenter posts: \"5 days na wala pa rin order ko. Ganito ba kayo mag-serve?\" You have no access to the courier tracking. Which public reply is the best first move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "\"Sorry po for the trouble this caused. Hindi po ito ang expected experience. Send your order number in DM and I'll check it now.\""
+            },
+            {
+              "id": "b",
+              "text": "\"Sorry po, na-delay talaga ang deliveries namin this week. Rest assured po darating na yan within the next few days. Salamat po.\""
+            },
+            {
+              "id": "c",
+              "text": "\"Our policy po is 3-7 working days, so hindi pa po late ang order ninyo. Please po check again after Friday bago mag-comment.\""
+            },
+            {
+              "id": "d",
+              "text": "Hide the comment first, then message the customer privately, so the thread does not pull in more complaints from the other buyers still waiting"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "judgment",
+          "explanation": "Apologise for the experience, not for a fault you have not verified, and move the order details to DM. Option b concedes a delay you cannot confirm, c argues with an angry customer in public, and d hides a legitimate complaint."
+        },
+        {
+          "prompt": "An account with almost no posting history comments \"SCAMMER 'to, wag kayo mag-order dito\" on your client's newest post. What is the strongest response?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Delete the comment immediately so it does not spread, then block the account before anyone else sees it"
+            },
+            {
+              "id": "b",
+              "text": "Reply in a long thread defending the business, answering every follow-up until the accuser runs out of things to say"
+            },
+            {
+              "id": "c",
+              "text": "Reply once in public with checkable facts, ask for the reference number so you can trace it, then stop"
+            },
+            {
+              "id": "d",
+              "text": "Ignore it completely, since replying to a scam accusation only pushes the comment into more people's feeds"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "judgment",
+          "explanation": "Deleting hands the accuser a screenshot and a better story, and arguing keeps the thread alive at the top of the post. One calm, verifiable reply plus silence is what the onlookers judge you on."
+        },
+        {
+          "prompt": "Your client's Facebook Page has a negative recommendation you believe is unfair, and under it a comment listing another customer's full name and phone number. What does the module's rule say?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Hide both of them, since an unfair recommendation does the page as much damage as a leaked phone number does"
+            },
+            {
+              "id": "b",
+              "text": "Hide the comment carrying the personal details, leave the recommendation up, and answer it calmly in public"
+            },
+            {
+              "id": "c",
+              "text": "Leave both up and reply to each in public, since hiding anything at all can be read as censorship"
+            },
+            {
+              "id": "d",
+              "text": "Report both to the platform and wait for its decision, rather than making the call on the page yourself"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "judgment",
+          "explanation": "Hiding is for content that exposes or harms someone: personal details, slurs, threats, scam links. A negative recommendation that is merely unfair stays up and gets a calm reply, and you agree the hide-and-delete rule with the client in writing before the night you have to use it."
+        },
+        {
+          "prompt": "You ask Claude or ChatGPT to draft a reply to a public complaint about a damaged order. What is the right way to use what it gives you?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Send whichever version sounds the most professional, since a complaint reply is urgent and speed is what matters"
+            },
+            {
+              "id": "b",
+              "text": "Send the strongest draft as written, adding the customer's name at the top so the reply feels personal"
+            },
+            {
+              "id": "c",
+              "text": "Ask the AI to decide whether a refund or a replacement is the fairer outcome here, then send that"
+            },
+            {
+              "id": "d",
+              "text": "Treat the drafts as options, cut any policy or timeline you cannot verify, and get the client's yes"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "prompting",
+          "explanation": "AI will confidently invent refund policies and delivery timelines it has no way of knowing, and it has no idea what your client can afford. Use it for wording and tone; the decision about money and risk stays with you and the client."
+        },
+        {
+          "prompt": "Your client's page gained 900 followers this month, but inquiries dropped from 34 to 19. What goes at the top of your one-page report?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The drop in inquiries, the likely reason for it, and the three things you will change next month"
+            },
+            {
+              "id": "b",
+              "text": "The follower growth, since it is the strongest number this month and sets a positive tone for the page"
+            },
+            {
+              "id": "c",
+              "text": "A note that reach was down across the platform this month, with the inquiry numbers further down the page"
+            },
+            {
+              "id": "d",
+              "text": "Reach and impressions, which are bigger numbers than inquiries and easier to explain to a busy client"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "judgment",
+          "explanation": "The report leads with the outcome the client's business feels, good or bad, then explains the cause and commits to three specific changes. Leading with followers in a month when inquiries fell is exactly the report a client stops trusting."
+        }
+      ]
+    }
+  ],
+  "assignment": {
+    "title": "One Month of Social Media for a Real Business",
+    "brief_mdx": "Pick a real Philippine small business you could plausibly work with — a milk tea shop, an online thrift seller, a dental clinic, a neighbourhood bakery, a Shopee reseller. Look at what they currently post. Then submit, as text, a complete month-one plan containing: (1) a short client brief — what they sell, who buys, what result they want from social media; (2) a brand voice brief you would paste into your AI prompts, including tone, Taglish preference and banned words; (3) four content pillars with a one-line reason each, plus your posting mix; (4) a two-week calendar table with date, platform, pillar, format and hook for every post; (5) one content idea written out fully as three finished captions — one Facebook, one Instagram or TikTok, one LinkedIn — with a line on what you changed for each and why; (6) three replies you would send from the inbox, including one to a public comment complaining about a late order; and (7) the three metrics you would report at month's end and what you would change because of them. Plain text or Markdown. No design work — the words are the deliverable.",
+    "criteria": [
+      "Pillars and calendar come from this specific business's real offers and customer questions rather than generic categories, and every calendar row is tagged to a pillar",
+      "The three captions come from one idea but are genuinely rewritten per platform — different opening line, length, format and call to action — not the same caption pasted three times",
+      "Captions read like a person wrote them: concrete details about the business, a first line that says something specific, and no hollow AI filler or fake enthusiasm",
+      "The complaint reply de-escalates, offers a real next step, moves the right part of the conversation to DM, and promises nothing the manager is not authorised to promise",
+      "The reporting section names metrics tied to the client's business result rather than follower count, and states what would change next month because of them",
+      "The calendar is realistic to run: sustainable posting frequency, plausible dates and times for a PH audience, and specific enough that a client could approve it as-is"
+    ],
+    "min_words": 300
+  }
+}

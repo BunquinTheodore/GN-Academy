@@ -1,0 +1,928 @@
+{
+  "slug": "ai-essentials-for-work",
+  "title": "AI Essentials for Work",
+  "subtitle": "Understand AI properly, then put it to work",
+  "level": "foundation",
+  "category": "Foundations",
+  "format": "Self-paced online",
+  "summary": "The course for anyone who keeps hearing about AI at work and wants to actually understand it. Twelve short lessons on what AI is, how to brief it, where it fits into work you already do, and when to trust your own judgment instead.",
+  "description": "This is for anyone whose office, client, or classmate keeps bringing up AI while they are still poking at a chatbot and hoping for the best. You'll learn what a language model is actually doing, why it can be fluent and wrong at the same time, how to brief it so it returns usable work, and how to build it into a task you repeat every week. It also covers the parts people skip: what to verify before you send, what you must never paste into a chatbot, and how to describe your AI skills to an employer without overclaiming. By the end you'll have one real workflow from your own job or studies, written down and tested — which is also the final assignment.",
+  "skills": [
+    "How language models work",
+    "Prompt briefing",
+    "Tool selection",
+    "Repeatable AI workflows",
+    "Output verification",
+    "Data privacy and confidentiality",
+    "Honest skill positioning"
+  ],
+  "outcomes": [
+    "Explain what a language model is doing and why it can be confidently wrong",
+    "Write a full brief instead of a one-line prompt, and steer a bad answer into a usable one",
+    "Choose the right tool for a task — including choosing not to use AI",
+    "Turn one repeating task into a workflow you can run the same way every week",
+    "Decide what to verify before sending, and what must never be pasted into a chatbot"
+  ],
+  "roles": [
+    "Students",
+    "Virtual assistants and freelancers",
+    "Office and BPO staff",
+    "Jobseekers"
+  ],
+  "price_php": 1499,
+  "is_free": false,
+  "passing_score": 70,
+  "credential_prefix": "AIE",
+  "sort_order": 2,
+  "modules": [
+    {
+      "slug": "chapter-1-what-ai-actually-is-and-why-it-gets-things-wrong",
+      "title": "What AI actually is (and why it gets things wrong)",
+      "description": "Enough of how the machine works to stop being surprised by it — including why fluent answers and wrong answers look identical.",
+      "lessons": [
+        {
+          "slug": "how-language-models-work",
+          "title": "How language models actually work",
+          "duration_minutes": 7,
+          "content_mdx": "# How language models actually work\n\nYou type a question. A paragraph comes back in clean English, with headings, maybe a numbered list. It reads like a colleague who went and did the research. That impression is where most of the trouble starts, because no research happened. Something much stranger happened, and once you understand what, most of the machine's odd behaviour stops being odd.\n\n## It is a prediction machine, not a filing cabinet\n\nA language model was trained by being shown an enormous amount of text — websites, books, forums, manuals, code, transcripts. During training it was not filing facts away under headings. It was adjusting internal settings, billions of them in current models, so that given any stretch of text it could make a good guess at the next word. Then, with that word added, it guesses the next one. Then the next. A language model predicts the next token — a word or piece of one — again and again, and that loop is most of the trick.\n\nWhen you ask it to \"write a follow-up message to a client who has not paid,\" it is not opening a folder marked *client emails*. It is producing the words that most plausibly follow your request, based on patterns in all the text it absorbed. The result reads like a follow-up message because it has absorbed a great many follow-up messages.\n\nIt helps to picture a colleague who has read an entire library at speed and remembers the shape of everything but the page number of nothing. Ask them how a demand letter is usually structured and they are genuinely useful. Ask them for the exact figure in a government contribution table and they will hand you something with the *shape* of one — neat columns, confident tone, wrong numbers.\n\n## The model holds no record\n\nTwo things follow from that immediately.\n\nFirst, there is no stored record for the answer to match. Ask the same question twice in two separate chats and you can get two different answers, sometimes contradicting each other. That is not a fault you can report. Prediction has some deliberate randomness in it — which is also why it can give you three different captions instead of the same one three times.\n\nSecond, it knows nothing about you. It has never seen your client's rate card, your school's enrolment rules, your team's Shopee returns policy, or last week's sales sheet. When it appears to know, it is filling the gap with the most typical version of that thing. If you want it working with your reality, you have to paste your reality in.\n\n## The training cutoff\n\nTraining happened once, over text gathered up to a certain point in time. That point is called the training cutoff. After it, the model has no knowledge of its own, and it does not feel time passing. Ask about something from last month and it may confidently describe a world that has moved on, or invent something plausible to fill the space.\n\nSome products soften this. Many chat tools can now search the web, or read a file or link you hand them. When that happens they genuinely are looking something up — but that is a separate feature sitting on top of the model, and when it runs you can often tell, because sources or citations appear. The reverse does not hold: a tool can read a file you uploaded and answer from it without citing anything. So no sources shown is not proof that nothing was looked up — it is a reason to find out where a fact came from before you lean on it.\n\n## What this one fact explains\n\nMost of the familiar complaints about AI come out of it:\n\n- **It stated something false with total confidence.** Sounding right is what it is built to do. Being right is not a separate dial.\n- **It gave me a link that goes nowhere.** Web addresses have a very predictable shape, so an invented one looks correct.\n- **It did not know about something recent.** Training cutoff.\n- **It gave a different answer the second time.** There is no record to return to.\n- **I pushed back and it immediately agreed and changed its answer.** It is completing a conversation, not defending a finding.\n- **It rewrote my paragraph beautifully but got a rule wrong.** You supplied the paragraph. You did not supply the rule.\n\n## The line to carry forward\n\nThe model is strongest when you bring the material and ask it to do something with it. It is weakest when it has to supply the material itself. Everything in the next two lessons — spotting a wrong answer, and choosing tasks worth giving it — grows out of that sentence."
+        },
+        {
+          "slug": "confidently-wrong",
+          "title": "Why AI is confidently wrong",
+          "duration_minutes": 7,
+          "content_mdx": "# Why AI is confidently wrong\n\nMost tools tell you when they fail. A spreadsheet shows #DIV/0!. A page that will not load shows an error. A language model has no equivalent. When it is wrong, the output looks exactly like the output when it is right — same fluency, same formatting, same calm tone. That is the real problem. Not that it fails, but that failure is invisible.\n\nThe common word for this is **hallucination**: content that is fluent, plausible and untrue. It is not lying, because there is no intent. It is not a glitch either. It is the ordinary behaviour of a prediction machine, described in the last lesson, running into a gap.\n\n## Why wrong answers arrive well dressed\n\nA wrong answer is not a degraded version of a right one. It is produced the same way, by the same process. So it comes out with the same polish.\n\nIt also comes out with detail. This is the part that fools people. Among humans, specifics are a signal — someone who quotes a section number, a date and a name has read something. For a model, specifics are free. Section numbers, form codes, dates, prices, web addresses and reference lists all have very predictable shapes, and producing a convincing shape is precisely what the model is good at. **Specificity is not evidence.**\n\nAnd it will not hedge unless you ask. A real expert slows down at the edge of what they know: \"I think it changed last year, let me check.\" The model has no felt edge. The sentence it is least sure of and the sentence it is most sure of come out in the same voice.\n\n## Where the risk concentrates\n\nRisk is not spread evenly across a reply. It clusters in a few categories:\n\n- **Exact numbers** — fees, rates, percentages, deadlines, statistics, measurements.\n- **Names** — who wrote what, who said what, which company did what, job titles.\n- **Laws, rules and requirements** — government forms, visa documents, labour rules, university requirements, marketplace and platform policies.\n- **Prices and plans** — third-party tool pricing changes constantly, and the model's picture of it is frozen at the training cutoff.\n- **Links, citations and references** — including file paths, product codes and account names.\n- **Recent events** — anything after the cutoff.\n- **Anything about you** — your client, your school, your employer, your numbers.\n\nOutside those categories, risk drops sharply. Rewriting your paragraph, changing tone, restructuring your own notes, brainstorming angles, summarising text you pasted — these are low-risk not because the model is more careful there, but because you supplied the facts and you can see what it did with them.\n\n## Warning signs worth pausing on\n\n- A number, date or fee appears that you did not provide and no source is shown.\n- A quote is attributed to a named person.\n- A link, citation or form number turns up that you did not give it.\n- It answers instantly and completely a question you personally found hard to research.\n- The answer concerns something recent.\n- It confirms a false premise in your own question. If you ask \"why does this platform charge a fee for withdrawals,\" it will often explain the fee rather than tell you there isn't one. Your question set the pattern; it completed it.\n- It describes something small and local — a specific barangay office, a small agency, a niche local company — with the fluency of something well documented.\n\n## Two traps that catch careful people\n\n**Mostly right is the dangerous kind.** A summary of a report you pasted, 300 words long, entirely accurate except one figure that quietly changed — that is far more likely to reach a client than an answer that is obviously nonsense. Obvious nonsense gets deleted. Nearly-right gets forwarded.\n\n**You are least suspicious when it tells you what you wanted.** You asked because you were busy. It came back tidy and agreeable. That is the exact moment you skip the check.\n\n## What to do with this for now\n\nModule 4 covers the actual habits — what to check, how, and what you must never send unverified. This lesson has a smaller job: build the reflex of reading an AI reply and feeling which sentences are load-bearing.\n\nA useful practice starting today: as you read a reply, mentally underline every sentence that would embarrass you if it turned out to be false. Only a few sentences carry that weight. Those are the ones that will need work later. The rest is just writing."
+        },
+        {
+          "slug": "strong-and-weak-tasks",
+          "title": "What AI is good at and bad at",
+          "duration_minutes": 7,
+          "content_mdx": "# What AI is good at and bad at\n\nThe instinct is to sort tasks by difficulty — hard things for humans, easy things for AI. That is the wrong axis. A language model can write a decent condolence message, which is hard, and get a percentage of a real figure wrong, which is easy. Sort by something else.\n\n## Three questions that sort any task\n\n**1. Who supplies the material?** If you bring the content and ask the model to do something to it, you are in strong territory. If the model has to produce the content out of its training, you are in weak territory.\n\n**2. Would you notice if it were wrong?** A bad rewrite of your own paragraph is obvious in two seconds. A wrong requirement in a checklist is invisible unless you already knew the answer — and if you already knew it, you would not have asked.\n\n**3. Does the task need today's information, private information, or someone's name on the decision?** Any yes pulls the task toward weak.\n\n## What it is genuinely strong at\n\nAll of these assume you supply the raw material:\n\n- **Transforming.** Notes into an email, an email into a checklist, a paragraph into three bullets.\n- **Drafting a first version.** A proposal, a caption, a message chasing a late payment. First drafts are cheap to check and cheap to throw away.\n- **Summarising what you paste.** A long thread, a meeting transcript, a policy document.\n- **Sorting and labelling.** Sixty customer messages into complaint, question, order.\n- **Explaining.** A confusing idea from your lecture notes, in simpler words, with an example.\n- **Translating and shifting tone.** English to Filipino, casual to formal, long to short, angry to professional.\n\n## What it is weak at\n\n- **Facts you cannot check.** The whole of the last lesson.\n- **Arithmetic on real figures.** It predicts text, and digits are text to it. Do not work out your month's income by typing your sales into a chat box and trusting the total. Some tools can run real code on a file you upload, and when that happens the arithmetic is genuine — but plain chat is not a calculator. Google Sheets is.\n- **Judgment calls.** Whether to drop a client, accept a lower rate, report a colleague. It can lay out the considerations, which is useful. The decision is yours, and your name goes on it.\n- **Anything current.** Prices, platform policies, this week's changes.\n- **Anything private.** Your client's numbers, your team's history, what your manager actually meant.\n\n## The same job, split down the middle\n\n- A VA handling an inbox: drafting replies to routine enquiries in the client's usual tone — strong. Deciding whether to approve a refund outside policy — weak.\n- An online seller: rewriting a Shopee listing so it is clearer and easier to search — strong. Working out last month's real profit — weak.\n- A student: explaining a difficult concept from lecture notes you pasted — strong. Producing sources for the paper — weak.\n- An office worker: summarising a forty-message email thread — strong. Stating the company leave policy — weak, unless you paste the policy in first.\n- Social media: twelve caption variations for one photo — strong. What is trending this week — weak.\n\n## Most weak tasks convert\n\nThis is the part that changes how you work. A weak task usually becomes a strong one the moment you supply the material.\n\n- Weak: \"What are the requirements for renewing a business permit?\" Strong: paste the official page and ask it to turn that into a plain-English checklist with the documents grouped by where you get them.\n- Weak: \"How much did I earn last month?\" Strong: \"Here are my column headings — what Google Sheets formula gives me the monthly total per product?\"\n- Weak: \"What does my contract say about termination?\" Strong: paste the clause and ask what it means and what to watch out for.\n\nSame tool, same day, same five minutes. The only difference is who brought the facts.\n\nOne caution before you start pasting everything: some material is not yours to paste. Client data, ID numbers, anything under a confidentiality agreement. Module 4 draws that line properly — for now, just note that the line exists.\n\n## One line to remember\n\n**AI is good at handling material. It is bad at being the source of material.**\n\nEvery strong use in this course is a version of that sentence. The next module takes the other half of the job: once you have picked a task it can actually do, how do you brief it so the first draft is close enough to be worth having?"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A client asks you what documents they need to renew a business permit. You ask a chatbot and get back a tidy checklist with form names and a fee. Nothing in the reply shows a source. What is the right next move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Send it on — the form names and the exact fee are specific enough that they must have come from official material."
+            },
+            {
+              "id": "b",
+              "text": "Treat it as a draft only: requirements and fees are high-risk categories, so check it against the official source first."
+            },
+            {
+              "id": "c",
+              "text": "Ask the chatbot whether it is sure, and send the checklist once it stands by the answer it already gave you."
+            },
+            {
+              "id": "d",
+              "text": "Ask the same question again in a second chat, and send the checklist if the two replies broadly agree on the documents and the fee."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "workflow",
+          "explanation": "Requirements, form numbers and fees are exactly the categories where a model produces convincing detail out of pattern rather than record. Asking it to confirm, or comparing two chats, only tests whether it repeats a pattern — not whether the pattern is true."
+        },
+        {
+          "prompt": "You have five minutes and want the lowest-risk use of a chatbot. Which of these can you trust with the least checking?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Summarising a forty-message email thread you pasted in, with the original still in front of you."
+            },
+            {
+              "id": "b",
+              "text": "Getting the current price of a paid Canva plan so you can put a figure into next month's budget."
+            },
+            {
+              "id": "c",
+              "text": "Getting three studies about remote work productivity, with author names, to cite in a report you are writing."
+            },
+            {
+              "id": "d",
+              "text": "Getting the deadline for a government filing this quarter so that your team can plan the work around it."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "judgment",
+          "explanation": "You supplied the material, so the model is only reshaping text you can see and compare against. Prices, named studies and deadlines all need the model to be the source of the facts, which is where it invents."
+        },
+        {
+          "prompt": "You ask the same question in two different chats and get two different answers. What should you conclude?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The second answer is the better one, because the tool had built up more context by the time you asked again."
+            },
+            {
+              "id": "b",
+              "text": "Something has gone wrong inside the tool, and an inconsistency like this is worth reporting to support as a bug."
+            },
+            {
+              "id": "c",
+              "text": "Whichever answer carries more detail is the reliable one, since detail shows it drew on more of its training."
+            },
+            {
+              "id": "d",
+              "text": "Neither answer is more authoritative: both are fresh predictions, so the fact still needs an outside source."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "tools",
+          "explanation": "A model generates each answer fresh rather than retrieving a stored one, so variation between chats is normal and tells you nothing about which is correct. Extra detail is not evidence either — specifics are cheap for a model to produce."
+        },
+        {
+          "prompt": "You need to explain your company's new leave policy to your team in simpler words. What turns this from a weak task into a strong one?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Telling the chatbot to be accurate, stick to the real rules, and not make anything up in its answer."
+            },
+            {
+              "id": "b",
+              "text": "Asking it to attach a citation to every statement it makes about how the leave policy works."
+            },
+            {
+              "id": "c",
+              "text": "Pasting the actual policy text into the chat and asking it to rewrite that in plain English."
+            },
+            {
+              "id": "d",
+              "text": "Asking what the standard leave policy is for companies in your industry, then adapting it yourself."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "judgment",
+          "explanation": "Weak tasks become strong when you supply the material, because the model is then only reshaping something you can check line by line. Instructions to be accurate give it no information it did not already have, and an industry-standard answer is not your policy."
+        },
+        {
+          "prompt": "You sell on Shopee and want to know last month's profit and write a short update for your business partner. What is the sound way to use AI here?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Type your sales and costs into the chat and ask it to work out the profit and write the update for you."
+            },
+            {
+              "id": "b",
+              "text": "Work the figures out in Google Sheets yourself, then paste the totals in and ask it to write the update."
+            },
+            {
+              "id": "c",
+              "text": "Ask it what a typical monthly profit margin is for online sellers, and use that figure to estimate your own."
+            },
+            {
+              "id": "d",
+              "text": "Ask it for the profit, then ask it to go back over its own arithmetic before you use the number anywhere."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "workflow",
+          "explanation": "Plain chat predicts text rather than calculating, so real arithmetic belongs in a spreadsheet; the writing is the part the model is actually strong at. Asking it to re-check its own maths just produces another prediction."
+        },
+        {
+          "prompt": "A draft you asked for comes back with a smooth paragraph, plus a quote attributed to a named executive and a link to a report. What deserves your suspicion first?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nothing in particular — a named quote and a working-looking link are signs that it found real sources."
+            },
+            {
+              "id": "b",
+              "text": "The paragraph, since that is where the argument sits and where an error would change your meaning."
+            },
+            {
+              "id": "c",
+              "text": "The report link on its own, since a quote from a named executive is too specific for a model to have invented."
+            },
+            {
+              "id": "d",
+              "text": "The quote and the link, because you supplied neither and both sit in the highest-risk categories."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "judgment",
+          "explanation": "Names, quotes and web addresses have very predictable shapes, which makes invented ones look convincing. Anything factual that you did not provide and that has no shown source is where you start."
+        },
+        {
+          "prompt": "You ask about a change a platform made last month. The reply is detailed and confident, with no sources shown. What is the most accurate reading of the situation?",
+          "options": [
+            {
+              "id": "a",
+              "text": "You cannot tell from the reply alone whether anything was looked up, so a change that recent stays unconfirmed."
+            },
+            {
+              "id": "b",
+              "text": "Detail with no citations usually means it recalled the change from training rather than going to look it up."
+            },
+            {
+              "id": "c",
+              "text": "The tool would have told you if it did not know, so a confident tone with no hedging means the answer is current."
+            },
+            {
+              "id": "d",
+              "text": "It is likely right in outline, with only the finer details from last month a little out of date and easily corrected."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "tools",
+          "explanation": "Training happened once, up to a fixed date, and the model does not feel time passing, so anything recent is a gap it can fill fluently. Some tools do search the web or read a file you hand them, but that is a separate feature sitting on top of the model, and the reply on its own does not tell you which happened."
+        },
+        {
+          "prompt": "A teammate says a 300-word AI summary of a report is \"mostly right, so it's fine to send.\" Why is that the wrong call?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Because summarising is a weak task for AI, so a summary of a report should never go to a client no matter who has checked it."
+            },
+            {
+              "id": "b",
+              "text": "Because the model would produce a different summary next time, so no single version of it can ever be relied on."
+            },
+            {
+              "id": "c",
+              "text": "Because mostly-right output is the kind that gets forwarded — one altered figure inside good writing reaches the client."
+            },
+            {
+              "id": "d",
+              "text": "Because a mostly-right summary means the model worked from its own training instead of the report you pasted in."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "judgment",
+          "explanation": "Obvious nonsense gets deleted; near-perfect output gets passed on, which is what makes a single wrong figure inside it dangerous. Summarising pasted material is a strong use — the risk sits in the specific facts, not in the task."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-2-briefing-ai-like-a-colleague",
+      "title": "Briefing AI like a colleague",
+      "description": "The difference between a one-line request and a real brief — and what to do when the answer comes back wrong.",
+      "lessons": [
+        {
+          "slug": "four-part-brief",
+          "title": "The four parts of a good brief",
+          "duration_minutes": 9,
+          "content_mdx": "# The four parts of a good brief\n\nYou would never walk up to a new teammate, say \"write a post about our sale,\" and walk away. You would tell them what the shop sells, what the sale actually is, who reads the page, and what a finished post looks like. A chatbot needs the same things, for the same reason: it can only work with what is in front of it. It has no idea what your client agreed to last Tuesday.\n\nHere is a weak prompt, rebuilt one part at a time. Watch what changes at each step.\n\n**The starting prompt:** *Write a Facebook post about our sale.*\n\nWhat comes back is fluent and useless. Amazing deals you don't want to miss. A row of emoji. A discount figure it made up. It reads like a stock post because that is what it is — an average of every sale post it has ever seen. You gave it nothing of yours, so it gave you nothing of yours back.\n\n## Part 1 — Who, and what the situation is\n\nSay who is speaking, and to whom.\n\n*Add:* \"You are writing for a small Filipino skincare brand that sells on Shopee and posts on Facebook. The buyers are women 25 to 40, mostly Metro Manila and Cebu. The page's tone is calm and plain — the owner dislikes hard selling.\"\n\nThe shouting stops. The emoji thin out. The post starts to sound like it belongs on that page rather than on any page. Context like this narrows the range the model draws from; the facts come next.\n\nThe invented discount is still there.\n\n## Part 2 — The exact task\n\n\"A post about our sale\" is a topic, not a task. Only you know the real details, so only you can supply them.\n\n*Add:* \"Announce a three-day sale: 20% off everything, August 28 to 30, Shopee only. Mention that the barrier cream is nearly out of stock.\"\n\nThe invented discount is gone — there is nothing left for it to guess at. It can still garble a figure you handed it, but it is no longer filling the gap itself. When output comes back hollow, the cause is often a question only you have the answer to.\n\n## Part 3 — Constraints and boundaries\n\nConstraints are the things you would tell a junior so they do not embarrass you in public.\n\n*Add:* \"Under 80 words. No emoji in the first line. Do not claim the product treats any skin condition. Do not use 'limited time only.' Light Taglish is fine, but keep it readable for someone reading in English.\"\n\nThe draft comes back shorter and flatter, and the line about clearing up breakouts is gone. What you lose is a flourish; what you gain is a post nobody has to review.\n\n\"Do not promise a delivery date\" or \"do not mention the price\" is the difference between a draft you can post and a draft that creates a problem for somebody else. If a rule only exists in your head, it does not exist in the brief.\n\n## Part 4 — The output format\n\nSay what you want handed to you, and in what shape.\n\n*Add:* \"Give me three versions in a numbered list. After each one, add a single line suggesting what the photo should show. No introduction, no explanation of your choices.\"\n\nThis part is pure time saved. Without it you get one option plus three paragraphs on why it works, and you spend time deleting what you did not ask for. With it, you paste straight into your drafts and move on. It also makes the three versions comparable, which is the real reason to ask for three.\n\n## What the finished brief looks like\n\nRead the four additions back to back and you have about a paragraph. In exchange you get a draft that needs editing instead of a draft that needs replacing.\n\nThe four parts, in the order easiest to remember:\n\n- **Context** — who is speaking, who is reading, what the situation is\n- **Task** — the specific thing to produce, with the real details only you hold\n- **Constraints** — length, tone, and the things it must not say\n- **Format** — how you want it delivered\n\nOne warning. A good brief makes the output more useful; it does not make it true. The stock level, the sale dates, and any product claim are still yours to check. A well-briefed wrong answer looks exactly as confident as a right one.\n\nAnd not every request needs all four. \"What is another word for 'delayed' that sounds less like an excuse?\" is fine as one line. The four parts earn their keep the moment someone other than you will see the result."
+        },
+        {
+          "slug": "give-it-your-material",
+          "title": "Feed it your actual material",
+          "duration_minutes": 9,
+          "content_mdx": "# Feed it your actual material\n\nA lot of effort goes into hunting for the perfect phrasing — the magic opening line, the right role to assign, the word that finally makes it behave. Most of that effort is wasted. The bigger lever is much duller: what you paste in.\n\n## The same request, twice\n\nA client is unhappy that a delivery slipped. You need a reply.\n\n**Attempt one, all wording:** \"Act as an expert customer service professional. Craft a compelling, empathetic, highly professional reply to a client who is upset about a late delivery.\"\n\nYou get a competent, hollow email. It apologises for \"the inconvenience caused,\" names nothing specific, and promises a resolution you may not be able to deliver. You will rewrite most of it.\n\n**Attempt two, all material:** you paste the last four messages of the actual thread, then add one line — \"Draft my reply. I can commit to Thursday, not earlier. Match how I have been writing in this thread.\"\n\nThe second draft refers to the order, picks up the thing you already promised on Monday, drops \"inconvenience caused\" because you never talk like that, and stops short of a date you cannot meet. Same model, same minute. One version had the facts and the other had adjectives.\n\n## What \"your actual material\" means\n\nAnything that exists outside the model and inside your job:\n\n- The email or chat thread, pasted in full rather than summarised from memory\n- Your raw meeting notes, however messy — messy is fine, it reads them better than you expect\n- The figures you pulled yourself from Google Sheets, Shopee, or Meta Business Suite\n- The client's brand guide, house rules, or the \"never say this\" list\n- Last month's version of the same report, so the new one matches\n- Two or three things you wrote yourself, when voice matters\n\nThat last one deserves its own habit.\n\n## Show an example instead of describing one\n\nDescribing tone is slow and imprecise. \"Friendly but professional, warm but not cheesy\" means something different to everybody, including the model.\n\nPasting three captions you actually wrote last month, followed by \"match this voice — here is the new product,\" is quicker to type and gives it something concrete to copy rather than adjectives to interpret. Same for structure: paste one weekly report you were happy with, then say \"same sections, same order, this week's numbers are below.\"\n\nOne good example usually carries more than a paragraph of description. Two or three is about the ceiling; past that you are mostly spending your own time, and you risk the samples pulling against each other.\n\n## Too much, and the wrong kind\n\nMore is not automatically better. Three ways it goes wrong.\n\n**Volume that buries the point.** You need a summary of one refund policy change, so you paste the whole 60-page handbook. The section that matters is now competing with 59 pages of other rules, and the answer drifts toward whatever else it found in there. Paste the section.\n\n**Contradictions you did not notice.** The old price list and the new price list, both in the same window. It has no way to know which one won, and it usually will not ask. Delete the stale version before you paste.\n\n**Context that is not about the task.** Your job history, the client's founding story, three months of unrelated messages. It fills space and pulls the answer sideways.\n\nThe test is simple: would you hand this to a colleague doing this exact task? If you would trim it before passing it to a person, trim it before pasting it here.\n\nYou can also tell when you have overfed it. The answer keeps circling a detail you do not care about, or it starts answering a slightly different question than the one you asked. That is your signal to cut the input down and ask again, not to argue with it.\n\n## Two practical notes\n\nIf you work mainly from your phone, keep source material somewhere you can copy from — a notes app, a Google Doc, a pinned chat with yourself. On a phone the temptation is to retype a shortened version from memory, and the detail that would have made the answer specific is what gets dropped. Paste, don't retype.\n\nAnd before any of this: not everything is yours to paste. Client records, ID numbers, contracts under NDA, anything you would not forward to a stranger — those need their own rules, set by your client's contract and your employer's policy rather than by what is convenient. A rough guide: if you would hesitate to email it outside the company, hesitate here too."
+        },
+        {
+          "slug": "fixing-a-bad-answer",
+          "title": "Fixing a bad answer",
+          "duration_minutes": 8,
+          "content_mdx": "# Fixing a bad answer\n\nThe draft comes back wrong. The two reflexes: press the same prompt again and hope for a better roll, or type \"are you sure?\" Both feel like corrections. Neither is one.\n\nSteering is a skill of its own, and it is mostly about being specific.\n\n## Name what is wrong, not that it is wrong\n\n\"That's not good, try again\" gives the model nothing to work with. It will produce a different draft, not a better one, and it may lose the parts you liked.\n\nCompare: \"The second paragraph is too formal for this client — she writes short and casual. The 15% figure is wrong; the real number is 8%. Everything else is fine, keep it.\"\n\nThree things happen there that matter:\n\n- You located the problem (which paragraph)\n- You said what \"wrong\" means, and supplied the correction\n- You protected what worked\n\nThat last one is easy to forget. What comes back is usually a new draft, not your draft with one line fixed, so if you do not say \"keep the rest,\" the rest is up for grabs. It is normal to fix one problem and find your favourite line has quietly disappeared.\n\n## One change per turn\n\nYou have five corrections. Sending all five at once feels efficient. What often comes back is some applied, one half-applied, and something that was previously fine now broken.\n\nWork in passes, hardest first:\n\n1. **Facts** — wrong numbers, wrong names, invented details\n2. **Structure** — what is missing, what should be cut, what order\n3. **Tone and wording** — last, because the earlier passes rewrite it anyway\n\nFixing tone before structure is wasted effort. You polish sentences that are about to be deleted.\n\n## \"Are you sure?\" is not a correction\n\nAsk a chatbot whether it is sure and it will readily apologise and change its answer — including when the first answer was right.\n\nUsually it has not gone back to check anything. It is reading doubt in your message and adjusting to it. Some tools genuinely can look something up mid-conversation — a chatbot with web search switched on, or one that can reopen a file you attached — but that only helps if it actually goes and looks, and an apology on its own is not evidence that it did. If it comes back without a source or a quote, treat the new number as another guess. Either way, what you have tested is how agreeable it is, not whether the claim is true.\n\nWhat to do instead:\n\n- Send it back to the material, when there is material: \"Which line of the report I pasted does the 8% come from? Quote it.\" The point is not to trust its account of itself — that is subject to the same agreeableness problem — it is to get something you can go and look at. If it cannot produce the line, you have learned something anyway.\n- Give it the correction outright, if you already know it\n- Check it yourself, if it is a fact that matters — a name, a date, a number going to a client\n\nA habit worth building: before you ask, decide how you would verify the answer. If you cannot verify it, be careful about sending it.\n\n## When the chat has gone stale\n\nLong conversations rot, and the signs are consistent:\n\n- It reintroduces a mistake you corrected ten messages ago\n- You are now fixing the fix\n- Each version comes back longer and blander\n- The instruction that actually matters is buried under twenty turns\n\nBy then the conversation is full of your rejected drafts and your contradicting instructions, and the model treats all of it as context. Firmness does not clear that. Leaving does.\n\nCopy out the best version you have, open a fresh chat, and paste it as the starting point: \"Here is a draft. Here is the brief. Here are the three things to change.\" You keep the progress and drop the mess. Moving out feels like starting over. It is the opposite.\n\nCopy the good version out **before** you keep pushing. It is easy to argue your way past a draft that was already good enough and then be unable to get back to it.\n\n## The loop worth keeping\n\nRead the output properly. Name the specific problem. Ask for one change, and say what to keep. Read it again.\n\nTwo or three rounds of that beats ten rounds of \"make it better\" — and it is also a fair description of how you would work with a capable new colleague who cannot see your screen, does not know your client, and will never push back when you are the one who is wrong."
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "You ask for \"a caption for our sale\" and get something fluent, generic, and built around a discount figure you never mentioned. Which single change to your prompt fixes the most?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Tell it to act as an expert social media copywriter with years of Philippine retail experience"
+            },
+            {
+              "id": "b",
+              "text": "Ask it to be more creative and less generic, and to avoid stock promotional phrasing"
+            },
+            {
+              "id": "c",
+              "text": "Supply the real sale details — the discount, the dates, the platform, which product to highlight"
+            },
+            {
+              "id": "d",
+              "text": "Resubmit the same prompt a few times and pick the best of the results you get"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "prompting",
+          "explanation": "Invented details appear when you ask a question only you have the answer to. Supplying the actual task details removes the gap the model was filling with guesses. Role instructions and creativity requests change the styling, not the facts."
+        },
+        {
+          "prompt": "A client wants captions in her existing page voice. You have her whole two-year caption archive and the tone section of her brand guide. What do you paste?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Three recent captions she published, with the line \"match this voice, here is the new product\""
+            },
+            {
+              "id": "b",
+              "text": "The full two-year archive of her captions, so the model can see the voice at its full range"
+            },
+            {
+              "id": "c",
+              "text": "The tone section of the brand guide, and ask it to follow the adjectives that are listed there"
+            },
+            {
+              "id": "d",
+              "text": "A careful description of the voice that you wrote yourself after reading through the archive"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "prompting",
+          "explanation": "A short set of real samples is the cheapest way to carry a voice. Two or three is about the ceiling — a full archive spans years of drift and the samples start pulling against each other. The brand guide's tone section and your own summary are both descriptions, and adjectives mean different things to different readers."
+        },
+        {
+          "prompt": "An AI-written summary contains a figure you doubt. You type \"are you sure?\" and it apologises and gives a different number. What have you learned?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The new number is more reliable, because being challenged made it go back and re-check its own working"
+            },
+            {
+              "id": "b",
+              "text": "The original number was right — a model only changes its answer when it is pushed"
+            },
+            {
+              "id": "c",
+              "text": "The chat has gone stale, and the fix is to move the draft into a fresh window"
+            },
+            {
+              "id": "d",
+              "text": "Nothing about accuracy — it answered your doubt, so the figure still needs checking against the source"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "judgment",
+          "explanation": "The apology and the new number are a response to your doubt, not evidence that anything was verified. Some tools can genuinely look something up mid-conversation, but only if they actually go and look — with no source or quote in the reply, treat the new number as another guess and check it yourself."
+        },
+        {
+          "prompt": "A draft is mostly good, but it has a wrong delivery date, one paragraph that is too formal, and a missing bullet point. What is the most reliable next move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Resubmit the original prompt unchanged, and hope the next attempt comes back cleaner than this one"
+            },
+            {
+              "id": "b",
+              "text": "Send all three corrections in one message, so the next version arrives with everything fixed at once"
+            },
+            {
+              "id": "c",
+              "text": "Correct the date first, say to keep the rest unchanged, then handle the others in later turns"
+            },
+            {
+              "id": "d",
+              "text": "Start a fresh chat with a longer brief that folds the three corrections in from the beginning"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "prompting",
+          "explanation": "Stacked corrections tend to come back partly applied, with something that was already fine now broken. Work in passes — facts first, then structure, then tone — and say what to keep, because what comes back is usually a fresh draft rather than your draft with one line changed."
+        },
+        {
+          "prompt": "Twenty-five messages into a chat, the model keeps reintroducing an error you corrected earlier and every version comes back blander than the last. What is the fastest fix?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Repeat the correction more firmly and in capital letters so the instruction cannot be missed"
+            },
+            {
+              "id": "b",
+              "text": "Copy the best version out, start a fresh chat, and paste it in with a clean brief"
+            },
+            {
+              "id": "c",
+              "text": "Ask the model to summarise the conversation so far so that it holds on to the agreed rules"
+            },
+            {
+              "id": "d",
+              "text": "Ask it to explain why it keeps making the mistake, then correct the reason it gives you"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "workflow",
+          "explanation": "A long chat carries all your rejected drafts and contradicting instructions as context, and the model treats every part of it as relevant. Firmness does not clear that, and neither does a summary that stays in the same window. Moving the best draft out keeps the progress and drops the mess."
+        },
+        {
+          "prompt": "You need a short summary of a client's current refund policy for their support team. The handbook file contains the current refund section, the superseded version it replaced, and an unrelated chapter on leave credits. What do you paste?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The current refund section only, plus a line saying who the summary is for"
+            },
+            {
+              "id": "b",
+              "text": "Both refund sections, so the model can see the full history of the policy"
+            },
+            {
+              "id": "c",
+              "text": "The refund section and the leave chapter, since both come from the same handbook"
+            },
+            {
+              "id": "d",
+              "text": "Nothing from the file — describe the current policy from memory in the prompt"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "tools",
+          "explanation": "Two versions of the same rule in one window give the model no way to know which one won, and it usually will not ask — it may summarise the policy that no longer applies. Unrelated chapters pull the answer sideways, and working from memory throws away the material that made the answer specific."
+        },
+        {
+          "prompt": "You asked for \"some caption ideas for the sale\" and received one long caption followed by three paragraphs explaining the approach. Which part of the brief was missing?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Context about the client, the audience, and where the caption is going to be posted"
+            },
+            {
+              "id": "b",
+              "text": "Constraints on tone and vocabulary, such as no hard selling and no emoji in the opening"
+            },
+            {
+              "id": "c",
+              "text": "A stronger opening instruction, such as telling it to act as a professional copywriter first"
+            },
+            {
+              "id": "d",
+              "text": "The output format — how many options, how long, and no commentary on the choices"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "prompting",
+          "explanation": "\"Some ideas\" is not a number and not a shape. Format decides what actually lands on your screen: how many items, how long, and what to leave out. Stating it saves you the cleanup and makes the options comparable to each other."
+        },
+        {
+          "prompt": "A customer is unhappy about a late delivery. You write a careful, detailed prompt describing the situation from memory but do not paste the thread. What is the main risk?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The model will use its own generic voice, which only a stronger role instruction could have fixed"
+            },
+            {
+              "id": "b",
+              "text": "The reply will be fluent but miss the specifics only the thread holds — what was promised, when"
+            },
+            {
+              "id": "c",
+              "text": "The prompt will be too long, and the extra detail will push the reply into vague, unfocused rambling"
+            },
+            {
+              "id": "d",
+              "text": "The reply will take the customer's side and concede more than your client has actually agreed to"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "prompting",
+          "explanation": "Careful wording cannot supply facts the model does not have. Pasting the real thread gives it the commitments, the dates, and the way you have been writing to this person, which is what makes a reply usable instead of generic."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-3-from-one-off-prompts-to-a-working-system",
+      "title": "From one-off prompts to a working system",
+      "description": "Picking the right tool, then wiring AI into work you already repeat so quality stops depending on your memory.",
+      "lessons": [
+        {
+          "slug": "choosing-the-right-tool",
+          "title": "Choosing the right tool for the task",
+          "duration_minutes": 7,
+          "content_mdx": "# Choosing the right tool for the task\n\nA client sends you a 50-minute Zoom recording and asks for \"notes by tomorrow.\" You paste the request into a chatbot and it cheerfully produces meeting notes — for a meeting it never heard. The prompt was not the problem. The tool was.\n\nA lot of the frustration people blame on AI is really a mismatch: a text tool pointed at an audio problem, or a chat window pointed at 4,000 rows.\n\n## The five kinds of tool you will actually meet\n\n**General chat assistants** — ChatGPT, Claude. These work on text you give them: drafting, rewriting, summarising, translating, planning. They are the most flexible and the easiest to misuse: they answer confidently even when they cannot see the thing you are asking about.\n\n**Transcription tools.** These turn audio into text — client calls, voice notes, a long Messenger voice message. Zoom and Google Meet can produce transcripts as well, though on both it depends on your plan, so check before you promise it. Standalone tools like Otter take uploaded files. Get the transcript first, then bring the text to a chat assistant. That order matters more than which brand you pick.\n\n**Spreadsheet and data tools.** Google Sheets and Excel have AI features on their paid plans, and any chat assistant can write a formula if you describe your columns. Build the formula with AI; do not ask it to compute the answer. A formula you can inspect runs the same way on 4,000 rows every month. A number typed into a chat window has no working you can check.\n\n**Design tools.** Canva's AI features generate images and draft copy inside the layout, and on the paid tier it will remove a background or resize one design for several platforms, so check which tier you are on before promising any of that. If the deliverable is visual, start here — a chat assistant describing a poster is not a poster.\n\n**The AI already inside the tools you use.** Gmail suggests short replies. Buffer has an assistant that drafts post variations. Meta Business Suite has writing help for posts, depending on your account. This category is badly underrated: these tools already hold your page, your inbox, your posting history, so you skip the step of explaining context. Check here before opening a new tab.\n\n## A decision habit: three questions, in order\n\n1. **What is the finished thing?** A transcript, a caption set, a formula, a 1080x1080 graphic, a client reply. Name the artefact, not the topic.\n2. **Where does the raw material live?** Audio needs transcription first. Thousands of rows need a spreadsheet. Material sitting inside a tool you already pay for points you at the AI in that tool.\n3. **Is this judgment or production?** Production — volume, formatting, first drafts, translation — is where AI earns its keep. Judgment about a person, a price, or a relationship stays with you.\n\nRun those three questions and the tool usually picks itself. Skip them and you spend six minutes briefing a chatbot about a file it cannot open.\n\n## The tasks where you are faster alone\n\n- A two-line reply to a client whose tone you already know.\n- Anything under about thirty seconds of typing.\n- Renaming files, sorting a folder, moving data between two tabs.\n- Anything where explaining the background takes longer than doing the work.\n\nThe tell: a few minutes of briefing, an answer that is nearly right, then a few more minutes of fixing. Keep that task for yourself — unless you do it every week, in which case the next lesson applies.\n\n## Free tiers, paid plans, and metered data\n\nFree tiers are genuinely useful. Three catches are worth knowing before you promise a client a deadline.\n\n- **Caps reset on a clock.** Free plans limit how much you can do per day or per few hours. With a deadline in front of you, do not spend the allowance on experiments.\n- **Free often means a smaller model.** Some tools switch you to a lighter version once you pass a limit. If answers suddenly get shallow, that may be why.\n- **Uploads are what eat your data.** Plain text chat costs very little mobile data. Uploading a one-hour recording, generating images, or exporting video is where a load disappears. Queue those for wifi.\n\nIf you can afford one paid plan, put it on the tool your paid work passes through most. One tool you use daily beats three free accounts you half-remember.\n\n## Try this\n\nList the three tasks you did most this week. For each, write the finished thing, then the tool category. If one says \"chat assistant\" but the material is audio, a spreadsheet, or a design file, you just found the leak."
+        },
+        {
+          "slug": "build-a-repeatable-workflow",
+          "title": "Turning a repeating task into a workflow",
+          "duration_minutes": 7,
+          "content_mdx": "# Turning a repeating task into a workflow\n\nA good result you cannot repeat is luck. A workflow is that same result written down so it stops depending on whether you remembered the trick you used last Tuesday.\n\nThis is also the difference between someone who \"uses AI\" and someone who can hand over a process. The first gets a good answer sometimes. The second can show how the answer gets made.\n\n## Pick a task you already repeat\n\nGood candidates have three traits: you do it at least weekly, you have done it enough times to know what good looks like, and it has a clear finished product. A few real ones:\n\n- Five Instagram captions a week for a client selling on Shopee.\n- A Monday morning status report for an Australian client in Sydney, sent before their afternoon.\n- Turning a recorded discovery call into a scope note.\n- Weekly sales figures pulled into the same summary for a small business owner.\n\nBad candidates are one-off tasks and anything whose output changes shape completely each time. Do those by hand.\n\n## Write the steps as they actually happen\n\nNot how they should happen. How they do. Open a note and write the task as a numbered list of verbs, including the boring parts you never think about. The Monday report might really be:\n\n1. Open the dashboard, screenshot last week's numbers.\n2. Copy the numbers into the tracking sheet.\n3. Compare against the week before, notice anything odd.\n4. Write a short summary in the client's tone.\n5. Add three lines on what you are doing this week.\n6. Send by 7am PH time so it lands in their morning.\n\nWritten out, the report is mostly gathering and checking — only two of the six steps are writing. Write out your own and see where its steps fall. That changes where AI helps.\n\n## Label each step: you, AI, or AI-then-you\n\nGo down the list and mark every step with one of three labels.\n\n- **You.** Anything that needs access to the truth — logging into a dashboard, checking a real number — and anything that is a decision about a person or a relationship. Steps 1, 2, 3 and 6 above are all yours.\n- **AI.** Volume and formatting. Reshaping data, translating, producing five variations of something.\n- **AI-then-you.** Drafting where you approve. Step 4 and step 5 belong here: AI writes, you read it against what you actually know, then you fix or reject.\n\nA workflow with no \"you\" steps is not a workflow, it is a risk. A workflow that is all \"you\" steps has nothing to automate. Where your list lands between those two is a fact about the task, not a target.\n\n## Fix the inputs\n\nEvery run needs two kinds of input.\n\n**Standing inputs** barely change: who the client is, what they sell, tone rules, the format they want, the sections the report always has. You write these once. The next lesson turns them into a reusable pack.\n\n**Run inputs** change every time: this week's numbers, this week's dates, this campaign's product.\n\nWrite the run inputs as a short gathering checklist. Then hold one rule: if an input is missing, you stop and get it. You do not let AI improvise a number, and you do not estimate one yourself to keep the flow going. A lot of the mistakes that reach a client start as a missing input someone filled in from memory.\n\n## Define the finished output before you start\n\nSay exactly what done looks like: format, length, sections, where it lands, who reads it. \"Five captions, two lines each, no hashtags in the caption body, saved in the content sheet under next week's dates.\" That sentence is what makes every run produce the same shape of thing — reviewable, comparable, and handoverable if you get sick or get promoted.\n\n## Run it twice before you trust it\n\nThe first run works because you are holding the missing details in your head. The second run is the honest one. As you go, keep a running note of one thing: where did I have to fix something? Each fix belongs back in the workflow — usually as a sentence in the brief or a new checklist item — not as a thing you promise to remember.\n\nAfter two clean runs, you have something to say in an interview: not \"I use ChatGPT\" but \"I built a weekly reporting process where AI drafts and I verify, and here are the steps.\" If you timed the job before and after, say that too — your own measured numbers, never borrowed ones.\n\n## Try this\n\nTake one weekly task. Write the steps, label each one, list the standing and run inputs, and write the done sentence. One page. That page is the start of your final assignment."
+        },
+        {
+          "slug": "prompt-library",
+          "title": "Your saved prompts and standing briefs",
+          "duration_minutes": 6,
+          "content_mdx": "# Your saved prompts and standing briefs\n\nYou wrote a brief three weeks ago that produced exactly the captions your client wanted. Today you are scrolling through chat history trying to find it, and the version you eventually find is the one from before you fixed the tone. That scroll is the tax you pay for not having a library.\n\nA prompt library is small and boring on purpose: a handful of prompts you actually reuse, plus one standing pack of context about your work. It is small enough to build in one sitting, and it is the thing that makes your output consistent instead of moody.\n\n## Name prompts so future you can find them\n\nIt is easy to end up with names like \"caption prompt\" and \"caption prompt 2 (good).\" Six weeks later those mean nothing. Use a three-part name:\n\n**[job] — [who it is for] — [what comes out]**\n\n- \"Weekly captions — Shopee client — 5 posts, 2 lines each\"\n- \"Call to scope note — any client — one page, 4 sections\"\n- \"Invoice follow-up — polite second reminder\"\n\nYou are naming the finished thing, not the topic. When you are rushing on a Monday you will search for the output you need, not for the clever technique you used.\n\n## Keep it in one place, and make it phone-friendly\n\nOne Google Doc with headings works. A Google Sheet works better if you have more than about ten: columns for name, the prompt itself, last updated, and a notes field for what it is good and bad at. Either one opens on a phone, which matters if you brief clients from the road.\n\nThe rule that matters more than the format: **one place**. A prompt in your Notes app, one in a Messenger message to yourself, and one pinned in a chat window is not a library, it is three hiding places.\n\n## The standing context pack\n\nSeparate from your prompts, write one block of context you paste at the top of a new chat before the actual request. It answers the questions you find yourself re-explaining every time:\n\n- Who you are and what your role is.\n- The client or brand: what they sell, and who buys it.\n- The audience and the platform, in plain terms — \"Filipino mums, 25 to 40, mostly on Facebook, buy at payday.\"\n- Tone rules, including any words that are banned. Ask the client if you have never been told.\n- Hard constraints: length, language, whether Taglish is allowed, what you may never promise on the brand's behalf.\n- One short example of output the client already approved.\n\nKeep it under a page. A context pack that grows to three pages stops getting pasted, and an unpasted brief helps nobody.\n\nOne limit worth stating now: a context pack is background, not confidential material. Customer lists, contracts, logins, and anything a client would not want repeated do not belong in it. If you are not sure whether something crosses that line, leave it out and describe it in general terms instead.\n\n## Noticing when a prompt has gone stale\n\nPrompts decay quietly. Watch for these signs:\n\n- You fix the same thing in every output — cutting emoji, removing a phrase, making it shorter.\n- The results feel generic in a way they did not before.\n- Your client's feedback has started repeating.\n\nThe usual causes are ordinary: the client changed their positioning, the platform changed what performs, the tool updated its model, or your prompt has been edited so many times it now contradicts itself.\n\nThe habit that fixes all of them: **fix the prompt, not the output.** Every time you edit an AI result, ask whether a sentence in the brief could have prevented that edit. If yes, add the sentence. If you are cutting emoji every single week, \"no emoji\" goes into the brief permanently and you never do that edit again.\n\n## Keep a light version note\n\nAt the bottom of each saved prompt, one line per change: the date and what you changed. \"12 Aug — added no-emoji rule, added the 2-line limit.\" That is enough to roll back when a change makes things worse, and enough to show a client or an employer that you maintain your process rather than improvise it.\n\nDo not build a versioning system. Two lines of history beat a system you abandon in a month.\n\n## Try this\n\nOpen your chat history and find the three prompts that produced work you actually sent. Name them with the three-part format, paste them into one doc, and write your context pack underneath. Next time you start a task, start from the doc — not from a blank chat box."
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A client sends you a 50-minute recorded call and asks for a summary of the decisions made. What is the right first move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Write down what you remember of the call and ask a chat assistant to tidy your notes into a summary."
+            },
+            {
+              "id": "b",
+              "text": "Run the recording through a transcription tool, then give the transcript to a chat assistant."
+            },
+            {
+              "id": "c",
+              "text": "Brief a chat assistant fully on the client and the project, then ask it for the decisions."
+            },
+            {
+              "id": "d",
+              "text": "Play the recording back at normal speed and type the summary yourself as you listen."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "tools",
+          "explanation": "A chat assistant only works on text you actually hand it, so audio needs transcription first. A thorough brief does not substitute for the source material, and your memory of the call is not the record the client asked for. Get the transcript, then brief the assistant on it."
+        },
+        {
+          "prompt": "Every month you pull revenue by region from a sheet with about 4,000 rows. What is the best use of AI here?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Paste all the rows into a chat assistant and ask it to total each region for you."
+            },
+            {
+              "id": "b",
+              "text": "Screenshot the sheet and ask a chat assistant to read the regional totals off the image."
+            },
+            {
+              "id": "c",
+              "text": "Ask a chat assistant for a quick estimate, then spot-check two or three regions by hand."
+            },
+            {
+              "id": "d",
+              "text": "Describe your columns to a chat assistant and have it write a formula you can check."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "tools",
+          "explanation": "Build the formula with AI; do not ask it to compute the answer. A formula can be inspected and runs the same way on every row next month, while a number typed into a chat window has no working you can verify. A spot-check only tells you about the rows you checked."
+        },
+        {
+          "prompt": "You are mapping your Monday report into a workflow and labelling each step as you, AI, or AI-then-you. Which step should stay with you entirely?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Reformatting last week's figures into the standard table the report always uses."
+            },
+            {
+              "id": "b",
+              "text": "Drafting the three-line summary paragraph in the tone the client prefers."
+            },
+            {
+              "id": "c",
+              "text": "Deciding which dip in the numbers is a real problem worth flagging."
+            },
+            {
+              "id": "d",
+              "text": "Producing two alternative subject lines for the email that carries the report."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "workflow",
+          "explanation": "Steps that need access to the truth, or judgment about the client relationship, stay entirely yours. Reformatting and producing variations are AI steps, and the summary paragraph is AI-then-you, where AI drafts and you approve. Deciding what counts as a problem worth raising is never handed over."
+        },
+        {
+          "prompt": "Your weekly caption workflow produces something different every time. Sometimes four captions, sometimes seven, sometimes with hashtags, sometimes without. What fixes this?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Write a done sentence fixing format, count and length, and list the inputs each run."
+            },
+            {
+              "id": "b",
+              "text": "Switch to a different AI tool and settle on whichever one gives the steadiest output."
+            },
+            {
+              "id": "c",
+              "text": "Write a longer, more detailed prompt each week describing that week's campaign and products."
+            },
+            {
+              "id": "d",
+              "text": "Generate three versions each week and pick whichever one comes closest to what you wanted."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "workflow",
+          "explanation": "The same shape of result every week comes from defining the finished output and the fixed inputs up front. Writing a fresh prompt or picking the best of three still leaves you re-deciding the format on every run, which is where the drift comes from."
+        },
+        {
+          "prompt": "You have about thirty saved prompts and you can never find the one you need on a busy Monday. Which naming approach will actually help?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Number them in the order you created them, with the newest ones kept at the top."
+            },
+            {
+              "id": "b",
+              "text": "Name each one by the job, who it is for, and what comes out of it."
+            },
+            {
+              "id": "c",
+              "text": "Name each one after the technique it uses, such as role-play or step-by-step prompting."
+            },
+            {
+              "id": "d",
+              "text": "Name each one after the tool you wrote it for, such as ChatGPT or Canva."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "prompting",
+          "explanation": "When you are rushing you search for the finished thing you need, not the technique, the tool, or the date you saved it. A name like \"Weekly captions, Shopee client, 5 posts of 2 lines\" matches the way you will look for it. \"Caption prompt 2\" does not."
+        },
+        {
+          "prompt": "For the last month, every batch of captions your prompt produces has too many emoji, and you delete them by hand every time. What is the right response?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Keep deleting them, since it only takes a minute and the rest of the output is good."
+            },
+            {
+              "id": "b",
+              "text": "Start a fresh chat each week so the tool does not pick up habits from earlier messages."
+            },
+            {
+              "id": "c",
+              "text": "Add a no-emoji rule to the saved prompt, and note the date you changed it."
+            },
+            {
+              "id": "d",
+              "text": "Try a different AI tool, since this one has clearly changed the way it writes."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "prompting",
+          "explanation": "Fix the prompt, not the output. Any edit you make every single time is a missing instruction, and putting it into the brief means you never do that edit again. The dated line underneath is what lets you roll the change back if it makes things worse."
+        },
+        {
+          "prompt": "A client you have worked with for two years messages asking whether you can move tomorrow's call an hour later. What should you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Paste the message into a chat assistant with your context pack and ask for a polite reply."
+            },
+            {
+              "id": "b",
+              "text": "Ask a chat assistant for three reply options and choose whichever one sounds most like you."
+            },
+            {
+              "id": "c",
+              "text": "Save a scheduling-reply prompt to your library so the next reschedule is faster to answer."
+            },
+            {
+              "id": "d",
+              "text": "Write the two-line reply yourself and get back to the work you were already doing."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "judgment",
+          "explanation": "A two-line reply to a client whose tone you already know is on the faster-alone list, where opening a tool costs more than typing. Built-in suggested replies earn their place on routine mail, but this is a personal message inside a two-year relationship. A library entry is for tasks that repeat with the same shape, which one-off reschedules do not."
+        },
+        {
+          "prompt": "You are on mobile data with no wifi until tonight. You have a 40-minute recording to transcribe and a set of captions to draft, both due tomorrow. What is the sensible plan?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Draft the captions now over data, and queue the recording upload for wifi tonight."
+            },
+            {
+              "id": "b",
+              "text": "Upload the recording now while you have time, and leave the captions until tonight."
+            },
+            {
+              "id": "c",
+              "text": "Do the captions and the upload now, saving only image and video jobs for wifi."
+            },
+            {
+              "id": "d",
+              "text": "Wait and do both tonight on wifi, so neither job eats into your mobile data."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "tools",
+          "explanation": "Plain text chat uses very little mobile data, while uploading long audio is one of the heavy jobs, alongside generating images and exporting video. Do the text work on the road and queue the upload for wifi. Waiting until tonight spends your afternoon on nothing and puts a next-day deadline on one evening."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-4-judgment-privacy-and-your-reputation",
+      "title": "Judgment, privacy, and your reputation",
+      "description": "The habits that decide whether AI makes you more valuable or costs you a client, a job, or your credibility.",
+      "lessons": [
+        {
+          "slug": "checking-before-you-send",
+          "title": "Checking before you send",
+          "duration_minutes": 7,
+          "content_mdx": "# Checking before you send\n\nA model can be fluent and wrong in the same sentence, and the wrong part looks exactly like the right part. That is why the last step before you send belongs to you. This lesson is what that step consists of.\n\nA common mistake is treating checking as one setting. Either you check nothing, or you read every line three times and lose the speed you came for. Checking is a dial, not a switch.\n\n## Two questions set the dial\n\nAsk two questions:\n\n**Who will see this?** Only you? Your teammate? Your client? Your client's customers? The public?\n\n**What breaks if it is wrong?** Nothing? Mild embarrassment? A refund? A missed deadline? Someone's money or health?\n\nThat gives three rough settings:\n\n- **Skim.** Only you see it and you would spot a mistake anyway — a study outline, a list of ideas, a rough draft you will rewrite in your own words.\n- **Check the facts.** Someone at work sees it and a mistake is fixable — an internal report, a meeting summary, a draft going to your team lead.\n- **Check everything checkable.** A client, a customer or the public sees the model's wording largely unchanged, or money, law, health or a deadline is involved — a quote, an invoice, a product listing, a post from the brand account.\n\nWhat sets the dial is not only whether something gets published, but how much of the model's output reaches the reader unchanged. A caption you will rewrite line by line is already being checked, by you, as you rewrite it. A quote you send exactly as generated is not.\n\nMuch of the day's work sits in the middle. The point is to spend your checking time where the damage is.\n\n## Do not ask the model if it is sure\n\nThe easiest non-check to fall into is replying \"are you sure?\" The model may apologise and change its answer, or apologise and repeat it. Neither tells you anything. It has no separate memory of having verified something. Asking twice is not two sources — it is the same source twice.\n\nThe same goes for pasting the answer into a second chatbot. Two models can be confidently wrong in the same way, especially about things that are rarely written down clearly.\n\nA real check goes outside the AI:\n\n- **The original document.** If the model summarised a contract, a syllabus or a 40-page report, open the file and search for the clause. If it quoted a sentence and you cannot find that sentence, delete the claim.\n- **The official site.** Rules, fees, deadlines and requirements come from the agency or company that sets them, not from a summary of a summary.\n- **The actual person.** If the draft says your teammate agreed to Friday or the client approved the design, scroll up in the thread and confirm.\n\n## The last pass before you send\n\nFor anything client-facing, run this first:\n\n1. **Recompute the numbers.** Totals, percentages and date arithmetic go into Google Sheets or a calculator. Never trust arithmetic written inside a paragraph.\n2. **Check names, dates, prices and titles** against the source. Spelling of the client's name and company first — that is the mistake people remember.\n3. **Find every quote and citation.** No source, no sentence.\n4. **Look hard at anything impressively specific.** Invented detail hides in confident specifics, not in vague statements.\n5. **Read it as the recipient.** Does it answer what they actually asked? Does it promise something you cannot deliver?\n\nOne more that is easy to miss: an answer that is correct somewhere else is still wrong for you. Models have absorbed a lot of US material, so a confident answer about taxes, employment rules or consumer refunds may describe rules that do not apply in the Philippines. If it matters, confirm it on a Philippine source.\n\n## Verification stands in for the conversation you cannot have\n\nIf your client is in the US, most of your working day falls inside their night. You cannot ask a quick clarifying question and get an answer while the work is still open, and a mistake sits live in their inbox until they wake up. In that setup, checking is not extra care. It is doing the job that a quick chat would do in an office.\n\n## When you cannot verify something\n\nYou have three honest options: cut the claim, flag it, or ask. \"I could not confirm the current fee on the agency site, so I left a placeholder — can you check this one?\" reads as careful. Guessing and hoping reads as careless the one time it lands wrong.\n\nProducing a draft is no longer the scarce part. The checking is what your client is actually paying for."
+        },
+        {
+          "slug": "never-paste-this",
+          "title": "What you must never paste into a chatbot",
+          "duration_minutes": 7,
+          "content_mdx": "# What you must never paste into a chatbot\n\nWhen you paste something into a chatbot, it leaves your computer. It goes to a company's servers, it is usually stored for some period, and depending on the product and your settings it may be reviewed by staff or used to improve the model. That is not a scandal — it is how the service works. It just means a chatbot is not a private notebook. Treat it as sending information to an outside company, because that is what it is.\n\nThat framing answers most questions on its own: would you be comfortable emailing this to a vendor you have never met?\n\n## The list\n\nNever paste these, in any chatbot, on any plan:\n\n- **Passwords, OTPs, API keys, recovery codes.** No exceptions.\n- **Government ID numbers** — TIN, SSS, PhilHealth, Pag-IBIG, PhilSys, passport, driver's licence.\n- **Bank, card and e-wallet details** — account numbers, statements, GCash transaction records.\n- **Medical information** about anyone, including yourself when it is attached to your name.\n- **Customer and contact lists** — CRM exports, mailing lists, order files with names and mobile numbers.\n- **Unreleased material** — pricing not yet announced, campaign creative before launch, contracts under negotiation, code your client owns, a manuscript.\n- **Other people's personal data** in general: a colleague's résumé, a complainant's message with their address, a screenshot of a group chat.\n\nScreenshots count. It is easy to be careful about pasting a customer list and then upload a photo of one without thinking. The image carries the same data.\n\n## Other people's data is not yours to share\n\nThe Philippine Data Privacy Act of 2012 (RA 10173), enforced by the National Privacy Commission, gives people rights over information that describes them — to be informed about how it is used, to access it, to have it corrected — and puts duties on the organisations that collect and hold it, including duties about who they share it with. You do not need the law in detail to get the practical rule: when a client hands you their customer list for a specific job, sending it to a third-party AI company is a disclosure nobody agreed to. That becomes your client's problem as well as yours.\n\n\"I deleted the chat afterwards\" does not undo it.\n\n## How to still get help\n\nA lot of the time you can reword the task so the sensitive part never goes into the chatbot at all.\n\n**Replace with placeholders.** Names become Client A and Supplier B. Real numbers become fake numbers of the same shape. If the draft works with placeholders, you fill in the real details yourself afterwards.\n\n**Describe the structure instead of the content.** For spreadsheet work you rarely need the data at all: \"I have a sheet of about 800 rows. Column A is order date, B is order ID, C is customer ID, D is amount. Write a formula that flags customers with more than two orders in one month.\" Then run the formula on the real file in Google Sheets yourself.\n\n**Summarise up a level.** Instead of pasting a customer's angry message, describe it: \"A customer says a delivery arrived four days late and wants a refund. Our policy allows store credit only. Draft a reply that is apologetic but does not promise a refund.\" Same draft, none of their data.\n\n**Build with dummy data, run on real data.** That is the general pattern — use the model to make the tool, not to touch the material.\n\n## Find out what you are actually allowed to do\n\nDo not guess, and do not read silence as permission.\n\nLook first at your employment contract, any NDA you signed, your company's IT or acceptable-use policy, and the client onboarding documents. Then ask in writing and keep the reply: \"I would like to use ChatGPT for drafting and formatting. I will not paste customer data or anything unreleased. Is that okay, and is there a tool you would prefer I use?\"\n\nTwo things worth knowing when you ask. Consumer plans often have a setting that controls whether your chats are used to improve the model — go find that switch yourself instead of trusting a forum post. Business and enterprise accounts usually come with stronger data terms, which is why some employers answer \"yes, but only on the company account.\" That is a reasonable answer, not a brush-off.\n\nIf you freelance, you are the company. Decide your own rule, put it in your onboarding message, and follow it. Raising this before a client has to ask you about it puts you in a better position than being asked."
+        },
+        {
+          "slug": "talking-about-ai-skills",
+          "title": "Talking about your AI skills honestly",
+          "duration_minutes": 7,
+          "content_mdx": "# Talking about your AI skills honestly\n\nTwo opposite mistakes cost people work here. One is the person whose CV says \"AI expert\" and who cannot survive the first follow-up question. The other is the person who does careful, well-built AI work and describes it as \"I just use ChatGPT\" — and then gets paid like it.\n\nThe fix for both is the same. Stop describing a tool. Describe a workflow.\n\n## The unit of credibility is a workflow\n\nNobody can verify \"proficient in AI.\" Anybody can picture this:\n\n\"Every Monday I draft 20 product descriptions for a Shopee store. I fill in a spec sheet with dimensions, materials and price, feed it to ChatGPT along with a house style guide, then check every measurement and price against the supplier file before anything goes live.\"\n\nFour parts: the **task** you repeat, the **tool**, what **you** do around the model, and the **check** you run. The check is the part that reads as senior. Anyone can generate. The people worth hiring are the ones who know what to catch.\n\nA CV bullet built the same way, with the figures left blank for you:\n\n\"Built a weekly reporting routine using ChatGPT and Google Sheets — campaign numbers into a fixed template, written summary generated from a saved brief, all figures verified against the source dashboard. Cut the report from [your old time] to [your new time].\"\n\nUse your own measured before-and-after. If you never measured it, measure it next week instead of inventing a figure. A number you cannot defend is worse than no number.\n\n## In the interview\n\nAssume one question: \"walk me through how you actually use it.\"\n\nHave one workflow you can narrate end to end without notes — one you have genuinely built and run more than once. Cover:\n\n- what you were doing before\n- how you brief it now — context and examples, not one-line requests\n- what you check, every time\n- one time it went wrong and what you changed afterwards\n\nThat last one is the most persuasive thing you can say. \"It kept inventing product features, so now the spec sheet goes into the prompt and I reject anything not on it\" tells an interviewer you have used this on real work with real consequences. Someone who says they have never had a problem has not been looking.\n\nIf you are asked about a tool you have not used, say so and say what you have used instead. \"I have not used that one; I have done the same work in ChatGPT and I would expect to pick it up quickly\" is a good answer. Bluffing about a tool lasts until the follow-up question.\n\n## When to disclose\n\nDisclose when:\n\n- the client asked for original human writing, or their brief or contract says so\n- your school or employer has a policy — school rules govern academic work, and you should not guess at them\n- the output uses someone's likeness, voice or identity\n- a generated image could be mistaken for a real photo of a real thing\n- you are unsure, and finding out later would damage the relationship\n\nYou do not need to announce it for grammar checking, brainstorming, formatting, summarising your own notes or translating your own draft. You do not disclose spellcheck either.\n\nThe clean way to handle grey areas is to settle them at the start, in your proposal or onboarding message: \"I use AI for outlines and first drafts. Everything I deliver is edited and fact-checked by me. If you would rather I did not, tell me and I will work differently.\" Said before the work, that is professionalism. Discovered after, it is a problem.\n\n## \"Can't AI just do that?\"\n\nYou will hear this from a client negotiating you down, or from a relative at a family reunion. Do not argue that AI is useless — they can see it is not. Do not fold either.\n\nAnswer with what actually happens:\n\n\"You could paste your product list into ChatGPT tonight and have thirty descriptions before you go to bed. Some will have the wrong dimensions, some will promise a warranty you do not offer, and they will all sound like each other. What you are paying me for is the spec sheet that goes in, the style rules, and the check that catches those before a customer does.\"\n\nThat is not defensive. It moves the conversation from typing speed to accountability, and accountability is what you can charge for, because the model cannot take any.\n\nThe most hireable version of you is not the one who claims the most. It is the one who can say precisely what they do, precisely what they check, and precisely where they would want help."
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "This morning AI drafted two things for you: a caption for your own Facebook page that you will rewrite line by line before posting, and a rate quote email to a new client with prices and a delivery date that you will send exactly as drafted. You have twenty minutes before both go out. How should you spend it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Give both the same careful pass, since the caption is public and a public mistake stays online where anyone can find it later."
+            },
+            {
+              "id": "b",
+              "text": "Spend it on the prices and the delivery date, checking them against your rate sheet and calendar, and skim the caption."
+            },
+            {
+              "id": "c",
+              "text": "Split the twenty minutes evenly, so neither piece of work goes out with less attention paid to it than the other."
+            },
+            {
+              "id": "d",
+              "text": "Send both back through the chatbot and ask it to review its own prices, dates and wording before you send them."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "judgment",
+          "explanation": "The dial is set by who sees it, what breaks if it is wrong, and how much of the model's output reaches the reader unchanged. The caption gets rewritten line by line, so you are checking it as you rewrite. The quote goes out exactly as generated, carrying prices and a date that can cost you money."
+        },
+        {
+          "prompt": "You asked AI to summarise a 30-page client contract. The summary says the client can cancel with 15 days' notice, and that number is going straight into the proposal you are writing. What is the real check?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Reply \"are you sure about the 15 days?\" and go with whichever answer the model gives you the second time."
+            },
+            {
+              "id": "b",
+              "text": "Paste the summary into a different chatbot and treat the fifteen days as confirmed if the second one agrees with the first."
+            },
+            {
+              "id": "c",
+              "text": "Ask the model how confident it is about that specific clause, and use the number if it says it is certain."
+            },
+            {
+              "id": "d",
+              "text": "Open the contract yourself, find the cancellation clause, and read what it actually says about the notice period."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "judgment",
+          "explanation": "Asking the model again is the same source twice, and a second model can be confidently wrong in the same way. A real check goes outside the AI — to the original document, the official site, or the actual person."
+        },
+        {
+          "prompt": "An AI-drafted monthly summary for your client has revenue totals and percentage changes written out inside the paragraphs. The working looks tidy and every step is explained. What should you do before it goes out?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Recompute the totals and the percentage changes yourself in Google Sheets or a calculator, outside the chatbot."
+            },
+            {
+              "id": "b",
+              "text": "Accept the figures, since the model showed each step of its working and every step visibly follows from the one before it."
+            },
+            {
+              "id": "c",
+              "text": "Ask the model to double-check its own arithmetic, and send the corrected version it hands back to you."
+            },
+            {
+              "id": "d",
+              "text": "Spot-check the largest number only, on the basis that an error big enough to matter would show up there."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "judgment",
+          "explanation": "Arithmetic written inside prose is easy for a model to get wrong while sounding correct, and tidy working is not evidence that the maths is right. Step one of the last pass is to redo totals, percentages and date arithmetic in a spreadsheet or calculator."
+        },
+        {
+          "prompt": "A client sends you a spreadsheet of 800 customers — names, mobile numbers, emails and order history — and asks you to find their repeat buyers. What is the safe way to use AI here?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Paste the whole sheet in, get the answer you need, then delete the conversation and switch off chat history."
+            },
+            {
+              "id": "b",
+              "text": "Delete the name column first, then paste the remaining mobile numbers, emails and order history for it to sort."
+            },
+            {
+              "id": "c",
+              "text": "Describe the columns with a few made-up rows, get the formula back, and run it on the real file yourself."
+            },
+            {
+              "id": "d",
+              "text": "Upload it as a screenshot rather than pasting the text, so the raw data never goes across as a file."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "judgment",
+          "explanation": "For spreadsheet work you rarely need the data itself, only its structure: build the formula with dummy rows, then run it on the real file yourself, so the customer data never goes into the chatbot. A screenshot carries the same data as text, and mobile numbers and emails still identify people once the names are gone."
+        },
+        {
+          "prompt": "A colleague forwards you a customer's complaint letter — full name, home address and account number included — and asks you to use AI to rewrite the reply more politely. What should you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Paste it as it is: your colleague collected the data, so the duty of care for it sits with them."
+            },
+            {
+              "id": "b",
+              "text": "Swap the name, address and account number for placeholders, paste the rest, and fill the details back in after."
+            },
+            {
+              "id": "c",
+              "text": "Use it as it stands but delete the chat afterwards, so the customer's details are not left in your history."
+            },
+            {
+              "id": "d",
+              "text": "Rewrite the reply by hand from scratch instead, since a customer complaint is never something AI should be anywhere near."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "judgment",
+          "explanation": "The Data Privacy Act gives people rights over information that describes them and puts duties on the organisations holding it, so passing a customer's details to a third-party AI company is a disclosure nobody agreed to. Deleting the chat afterwards does not undo it, and placeholders get you the same rewrite without sending anything identifying."
+        },
+        {
+          "prompt": "Your employer has no written policy about AI tools and nobody has ever mentioned them. You want to use a chatbot to draft internal reports. What is the sensible move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Read the absence of a policy as permission, and stop if someone later says the company would rather you did not."
+            },
+            {
+              "id": "b",
+              "text": "Use a paid personal plan rather than the free one, since paid plans come with stronger data terms for work."
+            },
+            {
+              "id": "c",
+              "text": "Assume it is not allowed and leave the question alone, since raising it invites a no you cannot take back."
+            },
+            {
+              "id": "d",
+              "text": "Ask your manager in writing, say what you would and would not paste, and keep the reply you get back."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "judgment",
+          "explanation": "Silence is not permission, and never asking leaves you exposed either way. A written answer you have kept protects you if it is questioned later, and naming what you would and would not paste makes it easy for a manager to say yes — sometimes yes on the company account."
+        },
+        {
+          "prompt": "You are writing the AI line on your CV. Which one holds up best when an interviewer says \"walk me through that\"?",
+          "options": [
+            {
+              "id": "a",
+              "text": "\"Proficient with ChatGPT, Claude and Google Sheets; comfortable writing prompts for drafting, summarising and formatting work.\""
+            },
+            {
+              "id": "b",
+              "text": "\"Use AI daily to draft product copy, cutting turnaround time sharply and freeing hours for higher-value work.\""
+            },
+            {
+              "id": "c",
+              "text": "\"Draft weekly Shopee listings from a spec sheet in ChatGPT, checking every price and dimension against the supplier file.\""
+            },
+            {
+              "id": "d",
+              "text": "\"Experienced in AI-assisted content production, with strong attention to accuracy and a careful review process on every draft.\""
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "judgment",
+          "explanation": "The credible unit is a workflow: the repeated task, the tool, what you prepare, and the specific check you run. A tool list, an improvement claim with no measurement behind it, and adjectives about your own accuracy all invite a follow-up question you cannot answer."
+        },
+        {
+          "prompt": "On a discovery call a prospective client says: \"Why would I pay you when ChatGPT can write these for free?\" Which response follows what this lesson recommends?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Name the parts that are yours — the spec sheet, the style rules, the check — and what goes wrong without them."
+            },
+            {
+              "id": "b",
+              "text": "Point out that AI-written copy comes out generic and inaccurate, and that their customers will be able to tell straight away."
+            },
+            {
+              "id": "c",
+              "text": "Agree that the tools have changed, and offer a lower rate on this project so that you stay competitive on price."
+            },
+            {
+              "id": "d",
+              "text": "Explain that you do not use AI on client work at all, so what they are buying is entirely written by hand."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "judgment",
+          "explanation": "Arguing that AI does not work is not credible to someone who has seen it work, and dropping your rate concedes the point. Moving the conversation to the material you prepare, the checks you run and who is accountable for an error puts it on ground the model cannot cover."
+        }
+      ]
+    }
+  ],
+  "assignment": {
+    "title": "The One-Task AI Workflow",
+    "brief_mdx": "Pick one task you genuinely repeat — a weekly report, a batch of customer replies, class notes, product listings, a posting schedule — and submit a single text document with six short parts.\n\n1. **The task.** What it is, the steps you do now, and roughly how long it takes each time.\n2. **The workflow.** The same task rewritten as ordered steps, each marked AI or you, with one sentence on why the human steps stay human.\n3. **The standing prompt.** The full prompt you would paste every time — context, task, constraints, output format — written so a co-worker could run it unchanged.\n4. **One real run.** The output you actually got, pasted in. Trim it to about 300 words if it is long.\n5. **Your check.** What you verified and against which source outside the AI, including at least one thing the model got wrong or that you could not confirm.\n6. **Two honest sentences.** How you would describe this skill to an employer or client.\n\nEverything is submitted as text — no file uploads. Before you submit, remove or replace real names, client details and personal data. Doing that properly is part of what is being marked.",
+    "criteria": [
+      "The task is genuinely repeating, with the current steps and a rough time given — not a one-off, and not a vague 'write content'",
+      "The workflow separates AI steps from human steps, and the human steps sit where a mistake would actually cost something",
+      "The standing prompt contains context, task, constraints and output format, and is complete enough for someone else to paste and run unchanged",
+      "The verification section names specific items checked against a real source outside the AI, and reports at least one error or unconfirmed claim",
+      "Real names, client details and personal data have been removed or replaced, with a sign that the learner understands why",
+      "The closing description matches what was actually built — no 'AI expert', no invented results or figures"
+    ],
+    "min_words": 300
+  }
+}

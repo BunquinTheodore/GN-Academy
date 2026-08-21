@@ -1,0 +1,928 @@
+{
+  "slug": "ai-powered-digital-marketing",
+  "title": "AI-Powered Digital Marketing",
+  "subtitle": "Plan it, draft it with AI, then read the numbers",
+  "level": "professional",
+  "category": "Marketing",
+  "format": "Self-paced online",
+  "summary": "Practical digital marketing for small businesses and freelance marketers: pin down the customer and the offer first, use AI as the drafting engine, then read the numbers that tell you whether it worked.",
+  "description": "This course is for freelancers, VAs and small business owners who already run marketing — a Facebook page, a small email list, a boosted post, a landing page — and want AI to speed up the drafting without taking over the thinking. You start where copy actually starts: a customer picture built from real evidence and an offer written on one page. Then you build a brand voice guide AI can follow, draft and adapt one message across email, landing pages and social, and put the whole thing on a campaign calendar sized to the hours you really have. The last module covers the four numbers that matter — reach, clicks, conversion, cost per result — what each is telling you, and which part to fix when it moves. You finish able to run a small campaign end to end and defend every claim in it.",
+  "skills": [
+    "Customer and offer definition",
+    "Brand voice guides",
+    "AI-assisted copy drafting",
+    "Email and landing page copy",
+    "Campaign calendars",
+    "Marketing metrics reading",
+    "Honest claims and disclosure"
+  ],
+  "outcomes": [
+    "Write a one-page offer before writing any copy",
+    "Build a brand voice guide that AI drafts can actually follow",
+    "Draft and adapt one message across email, landing pages and social",
+    "Plan a dated campaign calendar you can keep with the hours you have",
+    "Read reach, clicks, conversion and cost per result — and change the right thing"
+  ],
+  "roles": [
+    "Freelance marketer",
+    "Social media manager",
+    "Small business owner",
+    "Marketing VA"
+  ],
+  "price_php": 1499,
+  "is_free": false,
+  "passing_score": 70,
+  "credential_prefix": "AIDM",
+  "sort_order": 3,
+  "modules": [
+    {
+      "slug": "chapter-1-who-you-re-selling-to-and-what-you-re-selling",
+      "title": "Who you're selling to, and what you're selling",
+      "description": "The written work that must exist before any copy: a customer picture built from evidence, an offer on one page, and the message brief every later draft runs from.",
+      "lessons": [
+        {
+          "slug": "customer-picture",
+          "title": "Who you are actually selling to",
+          "duration_minutes": 7,
+          "content_mdx": "# Who you are actually selling to\n\nA lot of marketing copy fails before a single word is written. Not because the writing was weak, but because it was aimed at a person who does not exist.\n\nBefore you open ChatGPT or Claude in the next module, you need one page describing a real buyer, built from evidence you can point at. This lesson is how to build that page.\n\n## The persona that teaches you nothing\n\nYou have probably seen this format:\n\n> Maria, 32, marketing officer, Metro Manila. Loves coffee and weekend travel. Values work-life balance and personal growth.\n\nNone of that came from anywhere. You invented her, so she can only ever agree with you. Feed that to an AI and the copy that comes back could belong to any business in your category, because it was built from your assumptions rather than from people.\n\nHere is the test for every line on your customer picture: **can you say where it came from?** A screenshot, a message, a review, a sale. If you cannot name the source, delete the line.\n\n## Five places the evidence already is\n\nYou do not need a research budget. You need an afternoon and a notebook.\n\n- **Your past buyers.** Even three to five is enough. For each one: what did they ask before they paid, what were they doing right before they found you, and what did they say afterwards?\n- **Your inbox, DMs and comments.** Every repeated question is an objection wearing a polite face. If \"Magkano po?\" appears twenty times under your posts, price is missing from wherever people are actually looking.\n- **Competitor reviews.** Shopee and Lazada reviews, Facebook page reviews, Google reviews of similar local businesses. Read the three-star ones first. A five-star review often stops at \"salamat po\" and an angry one is often about delivery, but a middling review is where someone explains what almost worked.\n- **What people ask in public.** Facebook group posts asking for recommendations, replies under a competitor's post, questions in a Viber community you belong to. Log the question, not your answer to it.\n- **What people type into a search bar.** Open Google, or the search box in TikTok or Shopee, and start typing the phrase your buyer would use — \"bookkeeper for online seller\", \"VA for Messenger\". Before you press enter, read the suggestions that drop down: those are phrasings other people have already searched for. Write down the exact wording of any suggestion that sounds like your buyer, then run the search and log the related searches at the foot of the results page. Each phrase you keep becomes a candidate line in the problem block.\n\nCopy the wording exactly, Taglish and all. \"Ang hirap mag-reply sa lahat ng messages\" is usable. \"Struggles with customer communication efficiency\" is you talking, not them.\n\n## The four blocks on the page\n\n**Situation.** Where they are right now, concretely. Not \"small business owner\" but \"runs a home baking business from her kitchen, takes orders in Messenger, tracks them in a notebook, delivers on weekends.\"\n\n**The problem, in their own words.** Two or three real quotes. Do not tidy them up. The tidying is where the useful detail dies.\n\n**Where they already spend time online.** Which Facebook groups, which Viber community, TikTok or LinkedIn, and roughly when they are on. This decides where your copy lands later, and it is often not where you assumed.\n\n**What stops them from buying.** Five common ones: money, timing, trust, effort, or permission — they need to check with a spouse, a boss, or a business partner first. Name which one, and say what evidence points to it.\n\n## When you have no buyers yet\n\nBorrow the evidence. Message five people who fit the description and ask what they currently do about the problem and what they have already tried and dropped. Read fifty competitor reviews. Sit in the relevant Facebook group for a week and log the questions people ask.\n\nWhat you are not allowed to do is skip to guessing and call it research.\n\n## Keep it one page, and date it\n\nOne page forces you to choose. Put the date at the top and note how many sources it is built from. Five past buyers and forty reviews is a different level of confidence than one interview, and future you needs to know which one you had.\n\nRevisit it every few months. Buyers move. The picture you built during the holiday rush will not describe the same people in March, and copy written against a stale picture quietly stops working without telling you why.\n\nThe next lesson takes this page and puts it next to the thing you are actually selling."
+        },
+        {
+          "slug": "one-page-offer",
+          "title": "The offer on one page",
+          "duration_minutes": 7,
+          "content_mdx": "# The offer on one page\n\nHere is a sentence that costs Filipino freelancers a lot of money: \"I do social media management, rates depend on the scope.\"\n\nNo amount of clever copy saves that. The reader has to do work — guess what they get, guess what it costs, guess whether it is even for them — and a post from a stranger rarely earns that much effort. They scroll.\n\nCopy can make a clear offer more appealing. It cannot make a vague offer understandable. So the offer gets written down first, on one page, before any headline exists.\n\n## The six things the page must answer\n\n**1. What the buyer actually gets.** Deliverables, quantities, and a timeframe. Not \"social media management\" but \"12 posts a month, written and scheduled, plus inbox replies on weekdays within 4 hours, and one report at month end.\"\n\n**2. Price and payment terms.** The number, what triggers payment, and how it is paid. Fifty percent down and the balance on delivery, GCash or bank transfer. If you price in tiers, write one sentence saying what separates them.\n\n**3. Who it is not for.** This is the block people skip and the one that does the most work. \"Not for businesses that need daily video editing.\" \"Not for someone launching in under two weeks.\" Saying no in writing makes the yes believable, and it stops the enquiries that eat your afternoons and go nowhere.\n\n**4. The one change it makes.** Before and after, in the buyer's terms. \"You stop opening Messenger at 11pm\" beats \"streamlined communications.\" Pick one change. Two changes is already two offers.\n\n**5. The single action you want them to take.** One. Book a call, or send a message with a keyword, or fill in the form. If the page offers three ways to proceed, you have handed the reader a decision they did not ask for.\n\n**6. What happens right after they take it.** \"I reply within one working day with three questions and a proposed start date.\" This is where trust is won cheaply, and it is the easiest line on the page to leave out.\n\n## The read-back test\n\nHand the page to someone who does not know your business — a friend, a groupmate, your sister. Ask them to explain it back, then tell you the price and who it is not for.\n\nIf they hesitate on any of the three, the problem is the offer, not their attention span. Fix the page. Do not go looking for a better headline.\n\n## What a rewrite looks like\n\nBefore: \"Affordable bookkeeping for small businesses. Message me for rates.\"\n\nAfter: \"Monthly bookkeeping for online sellers doing 50 to 300 orders a month. I record your sales and expenses, reconcile your GCash and bank statements, and send one summary before the 10th. Fixed monthly fee, paid at the start of the month. Not for businesses that need audited financial statements or BIR representation. Message me the word BOOKS and I will send four questions.\"\n\nSame service. The second one can be sold from a post. The first one cannot be acted on until a conversation happens, and starting a conversation with a stranger is a far bigger ask than reading a paragraph.\n\n## About \"DM for price\"\n\nIt is common here, and there are real reasons for it — competitors copying you, wanting to qualify people first, prices that genuinely vary by scope. But understand the trade. You are charging every interested stranger a small effort tax before they learn anything. Some will pay it. The ones who do not simply scroll on, and you never find out they were there.\n\nIf you must keep full pricing private, put a starting price on the page. \"Packages start at\" filters out the people who were never going to buy and reassures the ones who can.\n\n## Price is part of the offer, not a separate argument\n\nIf the price feels wrong every time you type it, that is information about the offer, not about your confidence. Either what the buyer gets is too thin for the number, or the terms are wrong — a payment split, a smaller first engagement, a shorter commitment. Change the offer, not the adjectives around it.\n\nDate the page. When the price or the deliverables change, every piece of copy that references them has to change too. The next lesson builds the document where that gets tracked."
+        },
+        {
+          "slug": "message-brief",
+          "title": "The message brief every draft runs from",
+          "duration_minutes": 8,
+          "content_mdx": "# The message brief every draft runs from\n\nYou now have two documents: a customer picture built from evidence, and an offer on one page. The message brief squeezes both into the single page you will paste into every AI prompt for the rest of this course.\n\nThis is the most reused document you will make: get it right once and every later draft starts from something true.\n\n## Why AI needs this specifically\n\nAn AI model will write confident marketing copy about anything you ask. Give it nothing and it fills the gap with the average of all the marketing it has ever seen — \"elevate your brand\", \"in today's fast-paced world\" — and where it needs a specific, it supplies one. Ask for a Facebook ad with no brief and you may well get \"trusted by over 500 clients.\" You never said that, and you would still have to defend it.\n\nThe brief closes both gaps: your real specifics, so the model need not invent any, and the claims that are off the table.\n\n## The five sections\n\n**1. Who this is for.** Three or four lines lifted from the customer picture, including one real quote. Their situation, the main problem, and what stops them buying.\n\n**2. The main promise.** One sentence — the one change from the offer page, said in their words. If it will not fit in one sentence, you have two offers and need to pick.\n\n**3. Three proof points, each with its evidence.** Write this in two columns. Left: the claim. Right: what backs it. Say the service is inbox management — these rows show the shape, not anyone's real track record:\n\n- \"Replies go out within 4 hours\" — because that is the commitment in your contract and the inbox timestamps show it.\n- \"Cuts your evening admin\" — because current clients said so unprompted at their one-month check-in.\n- \"Works with your current setup\" — because you have onboarded clients on Meta Business Suite, Shopee chat, and plain Messenger.\n\nThe right column has to hold something you could show someone: a message, a timestamp, a line in the contract, something a client said. Reasoning does not count, and neither does the claim restated in different words. A row like that is not a proof point. It is a hope. Cut it, or go get the evidence.\n\n**4. The top two objections, and your answers.** Take them from the repeated questions in your inbox, not from imagination. Write each answer the way you would say it aloud. Two is enough — copy that answers six objections reads like an argument.\n\n**5. Claims that are off-limits.** An explicit list. Usually:\n\n- Guaranteed results, income, or rankings\n- Health, medical or financial outcomes you are not licensed to promise\n- \"Number one\", \"best\", \"leading\", unless you can name the source\n- Invented numbers of clients, years in business, or percentages\n- Naming a client who has not given you permission\n- Fake scarcity — \"only 3 slots left\" when there are more\n\nSome are regulated in some industries. If you are not certain a claim is allowed for what you sell, treat it as off-limits until you check. The list also keeps your copy consistent when you are drafting fast and tired at 11pm.\n\n## Format it to be pasted\n\nKeep it in a Google Doc or a note you can copy in one motion, plain text, under one page. In the next module every prompt starts the same way: here is my brief, here is the placement, write three options in my voice.\n\nAdd one line at the top of the brief: \"Use only the facts in this brief. If you need a detail I have not given you, leave a blank in square brackets instead of inventing one.\" No model follows that perfectly, so you still read the draft — but the brackets show where your evidence is thin.\n\n## Test it before you rely on it\n\nPaste the brief into ChatGPT or Claude, ask for three email subject lines, and read them honestly.\n\nIf they could belong to any business in your category, the brief is too thin — usually vague proof points or a generic promise. Go back and add the detail. If a subject line makes a claim you cannot back, add it to the off-limits list and run again.\n\nTwo rounds and the brief starts earning its keep.\n\n## Keep it alive\n\nDate it. When the price changes, when the deliverables change, or when you get better evidence, update the brief before the next draft, not after.\n\nEverything downstream inherits from this page — the voice guide next module, the emails and landing page after that, and the numbers you will defend in the final one."
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "You are cleaning up a customer picture you wrote last year. Which of these lines earns its place on an evidence-based page?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Aged 25 to 40, mostly female, based in Metro Manila and the nearby provinces."
+            },
+            {
+              "id": "b",
+              "text": "Values authenticity and wants to grow her business steadily without burning herself out."
+            },
+            {
+              "id": "c",
+              "text": "Three separate buyers asked \"kasama ba ang pag-reply sa messages?\" before they paid."
+            },
+            {
+              "id": "d",
+              "text": "A busy professional with no time for social media and a following to keep up."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "judgment",
+          "explanation": "Every line on the page has to have a source you can point at. Only c comes from something that happened and was recorded — three real buyers asking the same question before paying. The others read plausibly, but nobody can say where they came from, which is exactly the invented persona the lesson tells you to delete."
+        },
+        {
+          "prompt": "You are launching a new service this month and have no past buyers at all. Which approach builds the customer picture the lesson asks for?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Write your best guess from experience now, then correct the page once the first sales come in."
+            },
+            {
+              "id": "b",
+              "text": "Read three-star competitor reviews and ask five people who fit what they tried and then dropped."
+            },
+            {
+              "id": "c",
+              "text": "Ask an AI for a detailed persona for your market, then edit it until it matches what you expect."
+            },
+            {
+              "id": "d",
+              "text": "Boost a post for a week and build the page from the age and location breakdown in the results."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "workflow",
+          "explanation": "With no buyers of your own you borrow evidence rather than invent it. Competitor reviews and short conversations with people who fit give you their real wording and their real objections. A guess you plan to fix later, an AI persona, and an audience breakdown all leave you with a page where no line has a source behind it."
+        },
+        {
+          "prompt": "\"Magkano po?\" has appeared under your posts about twenty times this month. What is the most useful reading of that?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Your audience is price sensitive, so the number is too high and the price should come down."
+            },
+            {
+              "id": "b",
+              "text": "Comments like these are low intent, so they are safest ignored while you work the real enquiries."
+            },
+            {
+              "id": "c",
+              "text": "These are warm leads, so the work is to reply to each one privately and qualify them there."
+            },
+            {
+              "id": "d",
+              "text": "Price is missing from where people are already looking, and the repeated question names that gap."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "judgment",
+          "explanation": "A question repeated that often is an objection wearing a polite face, and it points at what you have failed to publish rather than at the price itself. Replying privately handles the individual comment but leaves the same gap on the page for the next twenty people who look."
+        },
+        {
+          "prompt": "A client hires you to rewrite her page. Her offer reads: \"Social media management, rates depend on scope. DM for details.\" She wants a stronger headline. What do you do first?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Pin down the deliverables, the price and terms, and who it is not for, then write."
+            },
+            {
+              "id": "b",
+              "text": "Draft three headline options in her voice and let her pick whichever one reads best."
+            },
+            {
+              "id": "c",
+              "text": "Add urgency to the page, such as a limited number of client slots left this month."
+            },
+            {
+              "id": "d",
+              "text": "Move the message button higher up so more readers start a conversation with her."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "workflow",
+          "explanation": "Copy can make a clear offer more appealing, but it cannot make a vague one understandable. Headlines, urgency and button placement all assume the reader already knows what is being sold and for how much. Here they do not, so the offer page has to be settled before any of the three is worth doing."
+        },
+        {
+          "prompt": "You are tempted to drop the \"who it is not for\" block from your offer page because it might scare people off. On the lesson's reasoning, what does keeping it do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "It signals that you are selective, which is the quickest way to justify a higher price."
+            },
+            {
+              "id": "b",
+              "text": "It gives you something to point at when a client later asks for work outside the scope."
+            },
+            {
+              "id": "c",
+              "text": "It makes the yes believable and cuts the enquiries that were never going to fit anyway."
+            },
+            {
+              "id": "d",
+              "text": "It protects you if a client complains afterwards that the service was not what they expected."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "judgment",
+          "explanation": "Saying no in writing is what makes the rest of the page credible, and it stops the enquiries that eat your afternoons and go nowhere. Scope clarity and a record to point at are real side benefits, but the reason the lesson keeps the block is what it does to the reader who does fit."
+        },
+        {
+          "prompt": "In the two-column proof section of your brief, the claim \"Clients save hours every week\" has \"obvious from the nature of the service\" written in the evidence column. By the rule the brief uses, what is that row?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A valid proof point, because the evidence column is filled in and the reasoning behind it holds."
+            },
+            {
+              "id": "b",
+              "text": "Not a proof point, because the column holds reasoning rather than something you could show."
+            },
+            {
+              "id": "c",
+              "text": "A proof point needing softer wording, such as \"clients can save hours every week\" instead."
+            },
+            {
+              "id": "d",
+              "text": "An objection answer rather than a proof point, so it belongs in section four of the brief."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "judgment",
+          "explanation": "The right column has to hold something you could put in front of someone: a message, a timestamp, a line in the contract, a sentence a client said. Reasoning does not count, and neither does the claim restated in other words. Softening the wording changes how bold the claim sounds but leaves the column just as empty."
+        },
+        {
+          "prompt": "You paste your brief into an AI tool and ask for ad copy. The draft says \"Trusted by over 500 Filipino sellers.\" You have 22 clients. What does this tell you about how you are using the brief?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The model is drawing on real market data you do not have, so the rounded figure stands."
+            },
+            {
+              "id": "b",
+              "text": "Ask the model to bring the number down to something safer and more believable, such as 100."
+            },
+            {
+              "id": "c",
+              "text": "AI drafting is too risky for public ad copy, so keep the model to internal drafts only."
+            },
+            {
+              "id": "d",
+              "text": "The brief lacks your real number, a bracket-blank instruction, and invented counts as off-limits."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "prompting",
+          "explanation": "Where a model needs a specific and has not been given one, it supplies one. The fix sits on your side of the prompt: put the real figure in the brief, tell the model to leave a bracketed blank instead of inventing, and name invented client counts on the off-limits list. Lowering the number keeps a claim you still cannot defend."
+        },
+        {
+          "prompt": "A landing page you are reviewing ends with four options: book a call, download the price list, follow the Facebook page, and message on Viber. Judged against the one-page offer, what is the problem?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Four actions hand the reader a decision; the offer names one action and what follows it."
+            },
+            {
+              "id": "b",
+              "text": "Viber is too informal a channel to sit alongside a booking link on a business landing page."
+            },
+            {
+              "id": "c",
+              "text": "The price list should stay private until a call has happened and the lead has been qualified."
+            },
+            {
+              "id": "d",
+              "text": "The actions all sit at the very end, so they should be repeated higher up the page as well."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "judgment",
+          "explanation": "The offer page commits to a single action and to what happens right after it. Four routes push the choice back onto a reader who came to make one decision, not four. Which channel the buttons use and where they sit are secondary to how many of them there are."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-2-one-voice-many-drafts",
+      "title": "One voice, many drafts",
+      "description": "AI as the drafting engine: a voice guide it can follow, variations for every placement, and the editing pass that makes the copy yours.",
+      "lessons": [
+        {
+          "slug": "brand-voice-guide",
+          "title": "Writing a brand voice guide",
+          "duration_minutes": 7,
+          "content_mdx": "# Writing a brand voice guide\n\nAI can imitate a voice, but only one it has actually seen. Tell it \"friendly and professional\" and you get the draft everyone else gets: three exclamation marks, a rhetorical question, and a closing line about not missing out.\n\nA voice guide fixes that. It is one page you write once and paste into every prompt from now on.\n\n## What goes on the page\n\nSix parts. Keep the whole thing to a single screen.\n\n- **Three tone words, each with a limit.** Not \"warm\" but \"warm, not clingy.\" Not \"expert\" but \"expert, not lecturing.\" The limit is what stops the model from overshooting.\n- **Reading level.** Say it plainly: \"Someone who finished high school understands it on the first read. No word a customer would have to look up.\"\n- **Sentence length.** \"Most sentences under 15 words. One longer sentence per paragraph at most.\" A limit like that is easier for a model to follow than any adjective you could give it.\n- **Taglish rules.** Decide once, in writing. For example: \"Captions can be Taglish — sige, salamat, ingat are fine. Product listings stay in English because overseas buyers read them. Never switch languages inside a headline.\" If you skip this, the model guesses differently every time.\n- **The never list.** Words and punctuation the brand does not use. Exclamation marks. \"Unlock.\" \"Elevate.\" \"Dear valued customer.\" ALL CAPS for emphasis. Three emojis in a row.\n- **Two or three real samples.** Actual writing you have already published and liked.\n\n## The samples do most of the work\n\nEverything above is a description. The samples are evidence, and a model tends to copy the writing in front of it more closely than it follows a description of it.\n\nGet them from what already exists. Scroll your own page and pick the caption you would happily show a stranger. Pull a Messenger reply you sent a customer that felt exactly right.\n\nDo not write fresh samples for the guide. Writing one on purpose can come out the way you *think* you sound rather than the way you actually write, and the model copies whatever stiffness lands on the page.\n\nLabel each sample with what it was: \"Facebook caption, new flavour launch.\" \"Reply to a customer asking if we deliver to Cavite.\"\n\n## What changes when you paste it in\n\nRun the same job twice and read the two drafts side by side.\n\nWithout the guide, the prompt is just *\"Write a Facebook caption for my milk tea shop's new ube flavour.\"* What comes back looks like this:\n\n> Calling all milk tea lovers! Our NEW Ube Dream is finally here and it's everything you've been waiting for. Rich, creamy, made with real ube — one flavour you don't want to miss. Don't miss out!\n\nWith the guide, you paste the full page, then the same request, then one more line — *\"Match the samples more than the description. When in doubt, choose the plainer word.\"* Now you get something closer to this:\n\n> Ube Dream is on the menu starting today. Real ube, same base as our classic milk tea, a little less sweet. Available at the Imus branch while the batch lasts. Message us and we will set one aside.\n\nThe sentences got shorter. The exclamation marks went. The opening stopped announcing and started saying something. The second draft is still not finished, but it is yours to edit instead of yours to rewrite.\n\nWhat the guide does **not** fix: it still does not know your price, your Tuesday closing, or that the ube is only available on weekends. Voice controls *how* the copy sounds. A separate message brief — who it is for, the one thing it must say, the proof, the action you want — controls *what* it says. You paste both.\n\n## Keep it short, keep it reachable\n\nOne page is not laziness, it is accuracy. A three-page guide starts contradicting itself — \"be playful\" on page one, \"be authoritative\" on page three — and the model splits the difference into mush. It also becomes something you stop pasting.\n\nSave it where you can copy it from a phone: a note app, a pinned message to yourself, a short Google Doc.\n\n## Test whether it is working\n\nGenerate three captions with the guide and three without. Show all six, unlabelled, to someone who knows the brand — a business partner, a long-time customer, the client whose page you manage. Ask which three sound like the brand.\n\nIf they cannot tell, your guide is describing instead of showing. Add another real sample and delete an adjective. Repeat until the difference is obvious to someone who was not in the room when you wrote it.\n"
+        },
+        {
+          "slug": "drafting-and-variations",
+          "title": "Drafting one message in many shapes",
+          "duration_minutes": 7,
+          "content_mdx": "# Drafting one message in many shapes\n\nOne announcement has to land in four or five places: a Facebook post, a Viber blast, a product blurb, a few ad headlines, maybe an SMS. The tempting shortcut is to write the Facebook post and paste it everywhere, trimming as needed.\n\nThat does not work. Shrinking a post is not the same as writing an SMS. Each placement is read in a different posture, at a different moment, by someone with a different amount of patience.\n\n## Every prompt has three blocks, and only one changes\n\nEvery drafting prompt in this course has three parts, in this order:\n\n1. The **voice guide** from the last lesson.\n2. The **message brief** — who it is for, the one thing it must say, the proof, the action you want.\n3. The **placement**, described concretely.\n\nBlocks one and two are copy-paste: the same text goes into every placement. Only block three changes. That is the whole system.\n\n## Describe the placement, not just its name\n\n\"Write a Facebook post\" tells the model almost nothing. Tell it how the placement actually behaves:\n\n- **Facebook post.** Captions get truncated on a phone. Write as if nobody taps to expand: the hook and the offer go in the first line, not the third.\n- **SMS or Viber.** One screen, one action. An SMS carries no profile picture, so say who is texting before anything else. No \"Hi! We hope this message finds you well.\" Viber gives more room, but people read it like a text.\n- **Product blurb.** This is searched, not scrolled. The first sentence carries what the thing is, the size or variant, and who it fits — someone is comparing you against three other tabs.\n- **Ad headlines.** Short, and you need a set, because they compete with each other for your budget.\n\nPut those descriptions in the prompt in your own words. The model does not know your audience's reading habits until you state them.\n\n## One brief, four shapes\n\nSay the brief is: milk tea shop in Imus, new ube flavour, offer locked as \"15% off until Friday, 11:59 PM,\" action is to message the page. Four placements, same first two blocks:\n\n**Facebook post.** *Ube Dream is on the menu. 15% off until Friday, 11:59 PM. Real ube, same base as our classic, a little less sweet. Message us and we will set one aside.*\n\n**SMS.** *Milk Tea Co: Ube Dream is out. 15% off until Friday, 11:59 PM. Reply UBE to reserve.*\n\n**Product blurb.** *Ube Dream, 16oz. Milk tea with real ube, less sweet than our classic. For regulars who find flavoured drinks too sugary. 15% off until Friday, 11:59 PM.*\n\n**Ad headlines.** *Ube milk tea, 15% off until Friday* (price). *Real ube, not syrup* (what makes it different).\n\nSame offer, word for word, in all four. What changes is the first move each one makes.\n\n## Ask for a batch, and make the batch differ\n\nOne draft gives you one draft to argue with. Ask for a set:\n\n*\"Give me 8 ad headlines. Each one leads with a different angle — price, speed, the problem it removes, who it is for, proof, what makes it different, the deadline, and the objection you hear most — and label each with its angle.\"*\n\nThe labels matter. Now you are choosing between **ideas**. Ask for \"8 variations\" without angles and you tend to get eight rewordings of the same sentence. Variations should differ in what they lead with, not in their adjectives.\n\n## Keeping every version saying the same thing\n\nThe model fills space by inventing. \"Free shipping\" turns up in a headline nobody promised. The SMS says same-day delivery. Now two customers in your comments are quoting different offers at each other.\n\nThree habits:\n\n- **Lock the exact wording of the offer.** \"15% off until Friday, 11:59 PM\" appears word for word in every placement. Not \"almost 20% off,\" not \"this week only.\" Put that phrase in the brief and tell the model not to reword it.\n- **Audit the claims after the batch.** Ask: *\"List every factual claim across these drafts. Mark any that is not in the brief I gave you.\"* You still read the list yourself; the model is not a reliable judge of its own output.\n- **Promote, do not patch.** If the model added something you like and it happens to be true, add it to the brief and regenerate everything.\n\nDrafting all four placements in one prompt is fine, and often better — they end up sharing vocabulary. But do not trust it on length. Models are unreliable at counting characters; a draft confidently labelled \"148 characters\" may not be. Character limits get checked in the real box, which is what the next lesson is about.\n"
+        },
+        {
+          "slug": "editing-ai-copy",
+          "title": "Editing what AI gives you",
+          "duration_minutes": 6,
+          "content_mdx": "# Editing what AI gives you\n\nThe draft arrives in seconds. Everything after that is the part you are actually paid for — and the part that keeps your client's page from sounding like every other page.\n\nRun the same four passes every time, in this order. Each one is looking for a different thing, which is why doing them all at once misses so much.\n\n## Pass 1: cut the throat-clearing and the giveaways\n\nAI drafts warm up before they start. \"In today's fast-paced digital world.\" \"Are you tired of spending hours on...\" \"Looking for a reliable supplier? Look no further.\"\n\nThe fix is mechanical: delete the first sentence and read what is left. Check whether the second sentence was the real opening all along, and whether the paragraph is stronger without the run-up.\n\nThen hunt the giveaway phrasing. The current tells are easy to spot once you have a list: *elevate, unlock, seamless, game-changer, dive into, in the world of, we are excited to announce.* Also the tic of three — \"faster, smarter, better\" — and the \"it's not just X, it's Y\" construction. And any sentence that compliments the reader for being smart enough to be reading.\n\nA reader does not owe you a diagnosis. Nobody is going to leave a comment telling you the copy sounded like a stranger wrote it, so this check has to happen before you post, not after.\n\n## Pass 2: check every fact against the brief\n\nGo line by line with the message brief open beside the draft. Every number, date, price, name, cut-off time, and promise gets matched to something in the brief.\n\nAnything that is not in the brief is either something you personally know to be true, or it is out. There is no third option.\n\nWatch hardest for the claims that create obligations later: guarantees (\"guaranteed results\"), timeframes (\"in just 7 days\"), superlatives (\"the most trusted\"), and anything about shipping, refunds, or availability. Those are the lines a customer, a platform or a regulator can ask you to back up. A sentence like \"trusted by hundreds of Filipino businesses\" costs nothing to generate and can cost you a client to defend.\n\nThere is a real line between copy that sounds confident and a claim you cannot stand behind, and it is worth working out where yours sits before a client asks. For now the test is simple: could you show someone where this number came from?\n\n## Pass 3: tighten to the real limit, not the maximum\n\nEvery placement has two limits — what the platform allows and what people actually read. Edit to the second one.\n\nA Facebook caption gets truncated on a phone. An SMS is billed in segments. A marketplace product title has a hard cap. Count in the real box, not in the chat window, because the model's character count is a guess.\n\nHow to tighten fast:\n\n- Read it aloud. Cut every word your mouth wanted to skip.\n- Delete adjectives first. They are the cheapest words in the draft.\n- Where two sentences say one thing, keep the better one.\n\nThen check that the ask survived. Trimming happens from the bottom, and the call to action lives at the bottom. A tight, charming post that forgot to say \"message us to reserve\" is a failed post.\n\n## Pass 4: read it on a phone before it ships\n\nPaste the copy into the actual composer, on an actual phone, and look at it.\n\nYou are checking things no desktop preview shows you: where the caption gets cut off, whether the link preview swallows the message, whether the emoji renders as a box, whether a Taglish line breaks in an awkward place, whether the button sits under a thumb. Send yourself the SMS or the Viber message and read it in your own inbox the way a customer would.\n\nIf the copy points to a landing page, open that page on mobile data rather than office wifi. Slow loading is part of the message your customer receives.\n\n## When to stop editing and go back\n\nIf you are rewriting more than about half the draft, the problem is upstream. The brief was vague, or the voice guide is too thin, or the placement was never described. Fixing the prompt and regenerating is faster than sanding down a draft that was pointed in the wrong direction — and it fixes every future draft too.\n\nOne last habit: when a piece comes out genuinely good, paste it into your voice guide as a new sample and retire a weaker one. The guide should be better in three months than it is today.\n"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Your voice guide says \"friendly, professional, approachable,\" and the drafts still come back sounding like every other page. What is the single change most likely to fix it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Add two or three pieces of writing you have actually published and liked, labelled with what each one was"
+            },
+            {
+              "id": "b",
+              "text": "Add four more tone words, each with its own limit, so that the description of the voice covers far more ground"
+            },
+            {
+              "id": "c",
+              "text": "Tell the model to avoid generic marketing language and to write something more creative than it did last time"
+            },
+            {
+              "id": "d",
+              "text": "Expand the guide to three pages so that it covers the customer, the products and the tone in much more detail"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "prompting",
+          "explanation": "Tone words describe the voice; real samples show it, and a model tends to copy the writing in front of it more closely than it follows a description. Adding adjectives or pages gives it more description, not more evidence."
+        },
+        {
+          "prompt": "You manage a boutique that posts Taglish captions on Facebook but sells through a marketplace listing that overseas buyers read. What belongs in the voice guide?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A blanket rule that everything the brand publishes is written in Taglish, since that is how it really sounds to regulars"
+            },
+            {
+              "id": "b",
+              "text": "Nothing about language at all, so that you stay free to decide case by case as you review each individual draft"
+            },
+            {
+              "id": "c",
+              "text": "A rule naming where Taglish is allowed: captions Taglish, marketplace listings English, no switching inside a headline"
+            },
+            {
+              "id": "d",
+              "text": "A blanket rule that everything is written in English, so that nothing in a caption or a listing confuses an overseas buyer"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "judgment",
+          "explanation": "The same brand has different readers in different places, so the language rule is written per placement. Leaving it unstated is the one option that guarantees the model guesses differently on every draft."
+        },
+        {
+          "prompt": "You want a set of ad headlines worth testing against each other. Which prompt gets you that?",
+          "options": [
+            {
+              "id": "a",
+              "text": "\"Write your single best headline for this offer, and then give me three tighter versions of the same line.\""
+            },
+            {
+              "id": "b",
+              "text": "\"Give me 8 headlines, each leading with a different angle (price, proof, who it is for), and label each one.\""
+            },
+            {
+              "id": "c",
+              "text": "\"Give me 8 variations of this headline, keeping the meaning exactly the same but changing the wording and the rhythm each time.\""
+            },
+            {
+              "id": "d",
+              "text": "\"Give me 8 headlines and make each one sound as different from the others as you can possibly manage.\""
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "prompting",
+          "explanation": "Variations should differ in what they lead with, not in their adjectives, and the angle labels are what let you see which idea won. Asking for variety without naming the angles still tends to return rewordings of one idea."
+        },
+        {
+          "prompt": "An AI-drafted Viber message includes \"free shipping nationwide.\" That is not in your message brief, but your supplier has covered shipping on past orders. What do you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Keep it in the Viber message only, since it is short and that placement needs something extra to compete"
+            },
+            {
+              "id": "b",
+              "text": "Soften it to \"shipping discounts may apply\" so the message is not promising anything specific you cannot deliver"
+            },
+            {
+              "id": "c",
+              "text": "Keep it and check with the supplier after the blast goes out, since they have covered shipping on past orders anyway"
+            },
+            {
+              "id": "d",
+              "text": "Cut it, confirm with the supplier, and if it is true add it to the brief and regenerate every placement"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "workflow",
+          "explanation": "Anything not in the brief is out unless you personally know it is true. Promoting a confirmed claim back into the brief is what keeps every placement saying the same thing, instead of leaving one version making a promise the others do not."
+        },
+        {
+          "prompt": "You have written a five-line Facebook caption and it reads well on your laptop. What is the important check before posting?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Trim it down to two lines so that nothing in the caption can end up hidden below the cut-off"
+            },
+            {
+              "id": "b",
+              "text": "Add emoji to the opening line so that the caption stands out while someone is scrolling quickly through the feed"
+            },
+            {
+              "id": "c",
+              "text": "Paste it into the composer on a phone and see how much of it shows before the caption is cut"
+            },
+            {
+              "id": "d",
+              "text": "Run it back through the model and ask whether five lines is the right length for a Facebook post"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "judgment",
+          "explanation": "Write as if nobody taps to expand: the hook and the offer have to live above the point where the caption is cut. Where that point falls shifts with the device and the app, so the real composer on a real phone is the only thing that shows you."
+        },
+        {
+          "prompt": "You are on your fourth AI draft of a landing page section and you are still rewriting most of every sentence. What is the right move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Stop editing and go upstream: fix the brief or the voice guide, then regenerate the section"
+            },
+            {
+              "id": "b",
+              "text": "Push through and finish the edit by hand, since the draft at least handed you a usable structure"
+            },
+            {
+              "id": "c",
+              "text": "Ask the model to make the section better and see whether the fifth attempt lands closer than the fourth"
+            },
+            {
+              "id": "d",
+              "text": "Switch to a different AI tool, since this one clearly does not suit the way that you write for clients"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "workflow",
+          "explanation": "Rewriting more than about half a draft is a signal that the input was wrong, not the output. Fixing the brief or the voice guide is faster than sanding down one bad draft, and it improves every draft after it."
+        },
+        {
+          "prompt": "An AI draft opens with \"In today's fast-paced digital world, small businesses need every advantage they can get.\" What do you do with it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Keep it, since it sets up context about the market before the offer arrives in the next line"
+            },
+            {
+              "id": "b",
+              "text": "Ask the model to shorten it to about half the length and keep it in place as the opening line"
+            },
+            {
+              "id": "c",
+              "text": "Replace it with a question opener such as \"Are you tired of losing customers to faster shops?\""
+            },
+            {
+              "id": "d",
+              "text": "Delete the sentence and read what is left to see whether the second one was the real opening"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "judgment",
+          "explanation": "AI drafts warm up before they start, and the sentence after the warm-up can be the stronger place to begin. Shortening the run-up or swapping in a question opener keeps the throat-clearing, just in a different costume."
+        },
+        {
+          "prompt": "You asked for an SMS under 160 characters, and the AI states the draft is 152 characters. What should you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Take the count as given, since you named the 160-character limit in the prompt and the model reported following it"
+            },
+            {
+              "id": "b",
+              "text": "Paste it into the actual sending box and read the count there, because models are unreliable at counting"
+            },
+            {
+              "id": "c",
+              "text": "Ask the model to count the draft again and accept the number if it comes back the same on the second try"
+            },
+            {
+              "id": "d",
+              "text": "Trim about twenty more characters as a safety margin, then send it without checking the count anywhere"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "tools",
+          "explanation": "A character count from a language model is an estimate, not a measurement, and asking it twice can repeat the same estimate. Length gets verified in the box the message will actually be sent from."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-3-email-pages-and-the-campaign-calendar",
+      "title": "Email, pages, and the campaign calendar",
+      "description": "Where the copy actually lands — a small email list, a landing page with one job, and a dated calendar sized to the hours you have.",
+      "lessons": [
+        {
+          "slug": "email-that-gets-read",
+          "title": "Email that gets opened and answered",
+          "duration_minutes": 8,
+          "content_mdx": "# Email that gets opened and answered\n\nYour Facebook page followers are rented. If reach drops or the page gets restricted, they are still out there but you can no longer reach them. An email list is one of the few audiences you own. Even a small one is worth more than a follower count, because you can reach all of them, on purpose, on a date you choose.\n\n## Build it with permission\n\nPermission means the person typed their email into a form knowing two things: what they will get, and roughly how often. Say both at the sign-up point. \"Weekly note on getting bookkeeping clients, one email most Thursdays\" is a promise you can keep.\n\nWhat is not permission: exporting everyone who ever messaged your page, lifting emails out of a Facebook group, adding your client's contact list to your own. Under the Data Privacy Act, a marketing list rests on consent, and information must serve the purpose it was collected for. Beyond the law, people who did not ask for your email mark it as spam, which quietly damages delivery for the rest of your list.\n\nAsk at moments that make sense: a free checklist, a waitlist for a class that is not open yet, a tick box on an order form. A small list you built yourself is worth more than a large one you did not, because the people on it remember agreeing to hear from you.\n\n## Subject line and preview text are one unit\n\nPreview text is the grey line the inbox shows after the subject. Leave it blank and the app grabs the first thing in your email — usually \"View in browser\" — and you have wasted half your space.\n\nWrite them as a pair, where the preview continues the thought instead of repeating it:\n\n- Subject: **Cart opens Monday, 8pm**\n- Preview: 20 slots, then it closes until March\n\nCompare that to \"Cart opens Monday\" followed by \"Cart opens Monday — don't miss out.\" Same space, half the information. Keep the subject short enough to survive a phone screen, and never promise something the email does not deliver.\n\n## One email, one ask\n\nEach email gets one reason to exist, one ask, and one link — placed twice, once mid-email and once at the end. If you have three things to say, that is three emails, or one email and two things you were honest enough to cut.\n\nAsking for a reply is worth more than it looks. \"Reply with which of the two dates suits you and I'll hold a slot\" gets answers, and replies tell the inbox provider you are a real correspondent, not a broadcaster.\n\n## A three-email launch\n\n- **Email 1, about a week out — announce.** What it is, who it is for, when it opens, what it costs.\n- **Email 2, about three days out — proof and objection.** One customer story or result, then the objection you hear most in DMs, answered plainly.\n- **Email 3, morning of the deadline — close.** Four sentences. What closes, when, and the link. No new arguments.\n\nThose three are already a working email program.\n\n## Send timing\n\nFor a Philippine consumer audience, evenings after dinner and the lunch break both work, because that is when phones come out. Pick two slots, use each for a month, keep the better one.\n\nFor clients overseas, the reader's clock counts, not yours. Sydney runs two hours ahead of Manila, three during their daylight saving, so a 9am Sydney send lands at 6 or 7 in your morning. In the US, 9am New York is your evening of the same day and 9am Los Angeles is around midnight; set it for the zone holding most of the list. Either way you write in your afternoon and schedule the send instead of staying up to press it live.\n\nCheck the current offset first. Eastern Australia and most of the US shift for daylight saving and the Philippines never does, so an offset you memorised last year may be an hour off today. Perth does not move: it keeps Manila's clock year-round. Watch the date as well as the hour: a send timed for a US Pacific morning falls on your next calendar day.\n\n## What AI should and should not draft\n\nGive it: ten subject-and-preview pairs to choose from, a pass to tighten a long paragraph, and a check that the draft really contains only one ask.\n\nDo not let it supply facts. The deadline, the number of slots, the price, the testimonial — those come from you. AI will happily write \"join hundreds of happy students\" for a first run with none, and it defaults to \"Dear valued customer\" politeness and manufactured urgency. Cut both in your editing pass."
+        },
+        {
+          "slug": "landing-page-basics",
+          "title": "Landing pages that do one job",
+          "duration_minutes": 8,
+          "content_mdx": "# Landing pages that do one job\n\nA landing page is a page built for one action. Not to explain your business, not to show your portfolio — one action. Buy this. Book this call. Reserve this slot. Everything on the page either moves someone toward that action or it comes off.\n\n## Why sending ad traffic to your homepage loses sales\n\nSomeone taps your boosted post about a Saturday bookkeeping workshop. They arrive mid-thought, already half-decided, on a phone, with very little patience for a detour. Your homepage greets them with a menu, an About link, three other services, a blog, and a chat bubble. It asks them to make the decision again from scratch, and it offers five ways to leave before they do.\n\nA dedicated page continues the thought instead of restarting it. That is the whole trick, and it is why one page per offer beats one homepage for everything.\n\n## The six blocks, in order\n\n**1. A headline that repeats the ad's promise.** Use close to the same words. If the ad said \"Saturday bookkeeping workshop for VAs who want higher-paying clients,\" the headline is not \"Level up your finance skills.\" The reader should recognise, in one second, that they are in the right place.\n\n**2. What it is, in one plain sentence.** What it is, who it is for, the format, the date. \"A three-hour live class on Zoom, Saturday 9am, for VAs who already do admin work and want to add bookkeeping.\"\n\n**3. Proof.** Screenshots of real client messages, with permission. A named client. A result you can defend. If this is the first run and you have none, say so honestly — \"this is the first batch, which is why it is priced lower and why I am capping it at twelve people\" — is stronger than a vague claim you cannot back.\n\n**4. What they get.** A short list of concrete items, including delivery. Recording included, workbook as a Google Sheet, a follow-up Q&A a week after.\n\n**5. Objections answered.** Write down the three or four questions people actually send you in DMs and answer them here. Price, time commitment, \"will this work for my niche,\" \"do I need experience,\" refund policy. Every objection you answer on the page is a message you do not have to answer at 11pm.\n\n**6. The action.** One form or one button, repeated two or three times as the page gets longer. Ask only for the fields you need to deliver — usually a name, an email, and at most one qualifying question. Every extra field is one more reason to abandon the form.\n\n## Payment that PH buyers can actually complete\n\nIf your only checkout is a card, you lose the buyers who do not have one. Offer GCash and bank transfer, and put the steps on the page rather than promising to send them later:\n\n- The exact account name and number\n- The exact amount\n- Where to send the screenshot — Messenger, email, or the form\n- How fast you confirm: \"within 12 hours on weekdays\"\n\nManual payment fails at the silence, not at the transfer. Somebody sends money and hears nothing for a day, and now you are handling a worried follow-up instead of an onboarding. Repeat the same instructions on the thank-you page, because people close the tab and forget where they read it.\n\n## Write it mobile-first\n\nAssume one thumb on a phone, sometimes on metered data.\n\n- One column, top to bottom. No side-by-side layouts.\n- Headline and first button reachable with a short scroll.\n- Short paragraphs — three lines on a phone is long.\n- Keep critical information out of images. Text inside a graphic is hard to zoom, awkward to read, and costs data to load.\n- Few images, compressed. A page that keeps someone waiting on mobile data loses them before it finishes loading.\n- Buttons big enough for a thumb, labelled with the action: \"Reserve my slot,\" not \"Submit.\"\n\nOpen the finished page on your own phone, on mobile data, not on wifi, before you spend a peso on ads.\n\n## The one-job test\n\nRead the page and ask: what is the single thing I want done here? Then count everything that does something else — the nav bar, the link to your other service, the social icons. Remove them. On a landing page, a link that is not the action is an exit.\n\nAI is useful here for drafting FAQ answers from objections you collected and for producing headline variants to test against the ad's wording. It cannot supply the proof, the price, or the payment details."
+        },
+        {
+          "slug": "campaign-calendar",
+          "title": "Campaign plans and content calendars",
+          "duration_minutes": 9,
+          "content_mdx": "# Campaign plans and content calendars\n\nA small campaign can have fine copy and still come apart on scheduling: the announcement goes out two days before the class, and the warm-up posts never happen because that week had client work in it. A calendar is how you stop that.\n\n## Plan backwards from the date\n\nStart with the one date that cannot move: cart closes, class starts, sale ends. Call it launch day. Then walk backwards and give every stretch of days a job, so no gap is left where nothing is meant to happen.\n\nA workable shape for a small offer:\n\n- **Launch day** — the thing happens or the cart closes.\n- **Days 1 to 5 before** — cart open. Sales emails and offer posts run daily-ish.\n- **Days 6 to 12 before** — announcement. The email and post go out at the start of it, date and price public; the days after carry questions answered in public.\n- **Days 13 to 26 before** — warm-up content. Teaching posts about the problem your offer solves, so the announcement lands on people already thinking about it.\n- **Days 27 to 30 before** — production. Landing page live and tested on a phone, all three emails written, graphics made, payment instructions checked.\n\nNotice where production sits: at the front, not the end. Everything that must exist before traffic arrives is done before the first ad peso is spent. The classic failure is a boosted post pointing at a page still being edited.\n\n## Count the hours you actually have\n\nWrite the number at the top of the sheet. If client work leaves you four hours a week, the calendar gets four hours a week — not the six you would have on a good week.\n\nThen price each row in minutes, using timings you have measured rather than hopeful ones — time yourself once on a caption and its Canva graphic, and once on an email. Add the column up. If the total is bigger than your number, you cut rows. You do not cut sleep, and you do not promise yourself you will move faster.\n\n## Recurring slots beat inspiration\n\nFix the slots and stop deciding daily: a post Tuesday and Friday, an email Thursday, one story Monday. Same days every week.\n\nSlots turn a blank calendar into a form to fill in, which is an easier problem. They also train your audience to expect the Thursday email.\n\n## Batch the production\n\nOne making day, not seven. Batching by task goes further than scattering the same minutes across the week: write every caption, then open Canva once and make every graphic, then schedule the lot in Meta Business Suite or Buffer. Switching between writing and designing burns time you never see on the calendar.\n\nA bad Wednesday no longer takes the campaign with it — the posts are already queued.\n\n## Mix the post types\n\nRotate four kinds so the feed does not read as one advert:\n\n- **Teaching** — something useful on its own, no ask.\n- **Proof** — a client result, a screenshot with permission, a before and after.\n- **Process** — how you work, what you are building, why you priced it that way.\n- **Ask** — the offer, the link, the deadline.\n\nDuring warm-up, keep asks rare — roughly one in four. During the open-cart week, flip it: mostly asks, because the interested need the link in front of them and the rest have already scrolled past.\n\n## A calendar you will actually keep\n\nA Google Sheet with six columns does the job: date, slot and channel, post type, hook or topic, asset needed, status. Nothing fancier is required, and it opens on a phone.\n\n## Using AI to expand the skeleton\n\nYou build the skeleton — the dates, the fixed slots, the post-type rotation, the hour budget. AI fills the topic lines inside it.\n\nPrompt it with your offer one-pager, customer picture and voice guide from the earlier modules, then constrain it hard: \"Here are my slots: Tuesday post, Friday post, Thursday email. Here are the four post types. Return exactly 12 rows for the next 4 weeks, one topic line each, in a table with these columns. Do not add channels I have not listed. Do not add extra posts.\"\n\nWithout a cap, you might get back a daily reel schedule and a podcast, because the model has no idea how many hours you have or that you deliver client work on Wednesdays. Treat what it returns as a suggestion that must survive your time column. Delete before you add.\n\nNothing on the calendar is a promise until you have checked it against your real hours. A modest plan you keep beats an ambitious one you abandon in the second week."
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "You run a small bakery's Facebook page. Around 300 people have messaged the page over the past year asking about prices and orders. Your VA suggests exporting those contacts into your email tool so the Christmas launch reaches more people. What is the right move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Do not import them; post and reply with a link to a sign-up form that says what the emails are and how often they come"
+            },
+            {
+              "id": "b",
+              "text": "Import them into the email tool but add an unsubscribe link at the bottom, so anyone who objects can take themselves off the list"
+            },
+            {
+              "id": "c",
+              "text": "Import only the ones who actually placed an order, on the basis that paying customers already have a relationship with the bakery"
+            },
+            {
+              "id": "d",
+              "text": "Import all 300 and send one first email asking them to confirm they want to keep hearing from you, then delete the rest"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "judgment",
+          "explanation": "Messaging your page about prices is not permission to be emailed — permission means someone gave you their address knowing what they would get and how often. Under the Data Privacy Act, a marketing list rests on consent, and information must serve the purpose it was collected for. Beyond that, people who did not ask mark you as spam, which damages delivery for your whole list. A confirmation email or an unsubscribe link does not fix a list you should not have imported."
+        },
+        {
+          "prompt": "Which subject line and preview text pair is doing the most work?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Subject: \"Big news inside\" / Preview: \"You won't want to miss this one\""
+            },
+            {
+              "id": "b",
+              "text": "Subject: \"Enrolment closes Friday\" / Preview: \"Enrolment closes Friday — last chance to join\""
+            },
+            {
+              "id": "c",
+              "text": "Subject: \"Enrolment closes Friday\" / Preview: \"12 seats left, next batch is in March\""
+            },
+            {
+              "id": "d",
+              "text": "Subject: \"You've been chosen for something special\" / Preview: \"Details on the March bookkeeping class\""
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "prompting",
+          "explanation": "The preview line is extra space, so it should continue the subject rather than repeat it or stay vague. Pair C adds two new facts — how many seats are left and the next available date — while B wastes the line, A says nothing the reader can act on, and D promises something the email does not deliver."
+        },
+        {
+          "prompt": "You are sending a three-email launch for a Saturday workshop. Email 1 announced it a week out. What job should email 2, about three days before, be doing?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Re-sending email 1 with a fresh subject line to everyone on the list who did not open the first one"
+            },
+            {
+              "id": "b",
+              "text": "Answering the objection you hear most in DMs, backed by one real customer story or result you can defend"
+            },
+            {
+              "id": "c",
+              "text": "Adding a second, cheaper option so that people who find the workshop price too high still have something to buy"
+            },
+            {
+              "id": "d",
+              "text": "Asking subscribers to forward the workshop to a friend who might need the training more than they do"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "workflow",
+          "explanation": "The middle email exists to move people who are interested but hesitant, and hesitation is made of specific objections — price, time, \"will this work for my niche.\" A resend adds no new information, a second offer breaks the one-email-one-ask rule, and a forward request spends your best slot on somebody else's decision."
+        },
+        {
+          "prompt": "Your client's audience is in Sydney. You are drafting their weekly email in Manila on a Tuesday afternoon. What do you do about send time?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Send it now while you are at your desk on Tuesday afternoon, and note the send time so you can compare open rates across the next few weeks"
+            },
+            {
+              "id": "b",
+              "text": "Send at 8pm Manila time, since that is the after-dinner slot that works well for Philippine consumer lists and is easy to keep consistent"
+            },
+            {
+              "id": "c",
+              "text": "Work out the send time from the Manila-to-Sydney gap you wrote down last year, then schedule it for the start of the Sydney business morning"
+            },
+            {
+              "id": "d",
+              "text": "Schedule it for the Sydney morning, checking the current offset because eastern Australia shifts for daylight saving and the Philippines does not"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "tools",
+          "explanation": "For an overseas audience the reader's local clock is the one that matters, not yours and not the slot that suits a PH consumer list. Offsets are not fixed — eastern Australia and most of the US move for daylight saving while the Philippines never does — so confirm the current gap when you schedule rather than reusing a number you remember."
+        },
+        {
+          "prompt": "You boosted a post for one specific ₱1,500 Saturday workshop. The link goes to your business homepage, which lists your four services, an About section and a blog. Sales are low despite decent clicks. What is most likely wrong, and what fixes it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The ad copy is not doing enough work; rewrite the boosted post with a stronger hook and point it at the same homepage"
+            },
+            {
+              "id": "b",
+              "text": "The homepage restarts a decision the reader already half-made; build one page whose headline repeats the ad's promise and asks one action"
+            },
+            {
+              "id": "c",
+              "text": "The homepage is slow on mobile data; compress the images, remove the chat bubble and send the same campaign traffic there again"
+            },
+            {
+              "id": "d",
+              "text": "The audience is too broad for a paid post; narrow it to your city and to bookkeeping interests, then re-run the same boost"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "judgment",
+          "explanation": "Clicks were fine, so the ad and the targeting did their job — the page lost people. Campaign traffic arrives mid-thought, and a homepage makes them decide again while offering several ways to leave. A faster homepage is still a homepage; a dedicated page continues the thought and gives them one thing to do."
+        },
+        {
+          "prompt": "Your landing page sells a ₱1,200 digital workbook. Many of your buyers do not have credit cards. What belongs on the page itself?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The account name and number, the exact amount, where to send the screenshot, and how quickly you confirm receipt"
+            },
+            {
+              "id": "b",
+              "text": "A line saying GCash and bank transfer are accepted, inviting the buyer to message the page for the account details"
+            },
+            {
+              "id": "c",
+              "text": "Card checkout only, since manual payments get hard to track once orders start arriving at any real volume"
+            },
+            {
+              "id": "d",
+              "text": "A link out to a payment instructions post pinned on your Facebook page, so the landing page itself stays short"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "judgment",
+          "explanation": "Manual payment breaks down at the silence after the transfer, not at the transfer itself, so the page must carry the full steps plus your confirmation window. Anything that makes the buyer message you first, or leave the page to find the details, adds a step where sales quietly disappear — and card-only checkout loses the buyers you were told about in the stem."
+        },
+        {
+          "prompt": "You have four hours a week for marketing around client work. You ask AI for a launch calendar and it returns three posts a day plus two emails a week. What do you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Keep the volume but write shorter posts, on the basis that three quick captions take less time to produce than one long one"
+            },
+            {
+              "id": "b",
+              "text": "Run the full plan for the first week, then decide from experience which rows are worth keeping and which ones to drop next time"
+            },
+            {
+              "id": "c",
+              "text": "Cut the plan to the recurring slots that fit four hours, price each remaining row in minutes, and batch them into one production day"
+            },
+            {
+              "id": "d",
+              "text": "Keep the rows you like the look of, publish them across the launch week, and save the extras for the next campaign instead"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "workflow",
+          "explanation": "AI has no idea how many hours you have, so its output is a suggestion that must survive your time budget before anything is scheduled. Fixed slots plus a per-row minute estimate keep the calendar to something you can still be doing in week eight; the other three all commit you to volume you never costed."
+        },
+        {
+          "prompt": "You have already built a calendar skeleton — your slots, your post-type rotation and your hour budget. Which prompt gets AI to fill it in usefully?",
+          "options": [
+            {
+              "id": "a",
+              "text": "\"Here is my offer one-pager and voice guide. Work out how many posts a week I should be doing for this bookkeeping course launch, pick the channels, and give me the calendar with a topic line for each row.\""
+            },
+            {
+              "id": "b",
+              "text": "\"Here is my offer one-pager and voice guide. My slots are Tuesday post, Friday post, Thursday email. Fill four weeks of topic lines, and tell me which bookkeeping topics are trending in the Philippines right now so I can lead with those.\""
+            },
+            {
+              "id": "c",
+              "text": "\"Here is my offer one-pager, customer picture and voice guide. Write the full caption for every post in the four-week launch, across Facebook, Instagram, TikTok, LinkedIn and email, so everything is drafted before I start.\""
+            },
+            {
+              "id": "d",
+              "text": "\"Here is my offer one-pager, customer picture and voice guide. My slots are Tuesday post, Friday post, Thursday email. Return exactly 12 rows for four weeks, one topic line each, in this table. Do not add channels I have not listed.\""
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "prompting",
+          "explanation": "You own the skeleton — dates, slots, post types, hour budget — and AI fills the topic lines inside it. Option A hands the skeleton back, so volume comes from the model instead of your hours; B asks for current trend data it cannot know and will invent; C adds channels you did not plan and drafts far more than four hours a week can deliver."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-4-the-numbers-and-the-claims-you-can-defend",
+      "title": "The numbers, and the claims you can defend",
+      "description": "Reading reach, clicks, conversion and cost per result, knowing which part to fix when they move, and staying on the right side of the honesty line.",
+      "lessons": [
+        {
+          "slug": "four-numbers",
+          "title": "The four numbers that matter",
+          "duration_minutes": 7,
+          "content_mdx": "# The four numbers that matter\n\nYour ads manager will show you dozens of columns. Most of them are there because someone, somewhere, asked for them. For a small campaign — a boosted post, a landing page, a few emails — four numbers carry almost all the useful information.\n\n## The chain, from impression to sale\n\n**Reach** is how many different people saw your post or ad. It is not the same as impressions, which counts how many times it was shown. One person who sees your ad three times is one reach and three impressions. Reach answers a single question: did anyone see this at all?\n\n**Clicks** are how many people tapped through to wherever you sent them — a landing page, a Shopee listing, a Messenger thread. On its own a click count means little. The number you want is **click-through rate (CTR)**: clicks divided by impressions, written as a percentage. CTR answers a better question: of the times it was shown, how often did someone want more?\n\n**Conversion rate** picks up where the click ends. Of the people who arrived, how many did the one thing you asked — bought, booked, joined the list, sent the message? Conversions divided by visits, as a percentage. This is the number your landing page is responsible for.\n\n**Cost per result** is total spend divided by number of results. You decide what counts as a result — a sign-up, a sale, a booked call — and you keep that definition the same from campaign to campaign, or the number means nothing.\n\nThose four sit in a chain: shown, clicked, landed, converted. Every step loses people. That is normal, and it is also why one bad number never tells you where the problem is. You need the shape of the whole chain.\n\n## Rates tell you more than totals\n\nSay you ran two ads for the same offer. Ad A got 500 clicks from 50,000 impressions. Ad B got 120 clicks from 6,000. Ad A looks like the winner if you read only the clicks column. But A's CTR is 1 percent and B's is 2 percent — B earned twice the interest per time it was shown. A was simply shown more often, which may just mean it was given more budget.\n\nTotals tell you how big something was. Rates tell you how well it worked. When you compare two things, compare rates. When you report to a client, give both, and say which is which.\n\n## Reading one small report end to end\n\nHere is a report the size you will actually see. You spent ₱1,000 over five days boosting a post that offers a free checklist.\n\n- Impressions: 6,200\n- Reach: 4,100\n- Link clicks: 118, a CTR of about 1.9 percent\n- Landing page visits: 94\n- Sign-ups: 12, a conversion rate of about 13 percent\n- Cost per sign-up: about ₱83\n\nRead it left to right. It was shown 6,200 times to 4,100 people, distribution you cannot judge yet, since you have no past campaign to hold it against. Nearly 2 percent of impressions became a click, so the promise in the ad is landing with somebody. Then 118 clicks became only 94 visits — 24 people short, about a fifth of the clicks. The report will not tell you why. It could be a heavy page on mobile data, people tapping back before it paints, or the ad platform and your analytics counting a visit differently. That gap is something to go and check, not something to conclude. Of those who did land, 13 in 100 signed up, and ₱83 is now your benchmark: the next campaign beats it or it does not.\n\nNotice that no single number was alarming. The gap between clicks and visits only appeared because you read the chain in order.\n\n## Likes and followers are the weakest signal\n\nReactions, likes and follower counts are the easiest numbers to grow and the least connected to money. A like costs the reader nothing and commits them to nothing. A post can collect hundreds of reactions and produce two sign-ups, while a quieter one brings in more.\n\nShares and saves are a little better, because they cost some effort and put you in front of new people. But none of these belong at the top of a report. Put reach, CTR, conversion rate and cost per result first, and put engagement at the bottom as context, not as the result.\n\n## What to write down\n\nAfter every campaign, add one row to a Google Sheet: date, offer, spend, reach, CTR, conversion rate, cost per result. Same columns every time. Three months of that is worth more than any dashboard, because it is the only place you can see whether you are getting better."
+        },
+        {
+          "slug": "what-to-change",
+          "title": "What to change when a number moves",
+          "duration_minutes": 7,
+          "content_mdx": "# What to change when a number moves\n\nA number moving is not a verdict. It points to one stage of the chain — shown, clicked, landed, converted — and each stage has its own short list of fixes. The skill is matching the pattern to the stage, then changing one thing at a time.\n\n## Low reach\n\nFew people saw it at all. Nothing downstream can be judged yet, so do not touch the landing page.\n\nOn paid: check the ad was approved and running, that the budget is not spread across five ad sets, and that the audience is not drawn so tightly almost nobody qualifies.\n\nOn organic: how a page's posts get distributed is the platform's decision, and nobody outside it can tell you the rule. What you control is timing and whether the post gives anyone a reason to reply. Post when your audience is awake. Manila is UTC+8 year-round: Perth shares that clock, Sydney is two or three hours ahead, and your evening is a New York morning. Only the US West Coast is asleep then. Daylight saving moves the gap for US and Sydney clients, never for Perth or Brisbane.\n\n## High reach, few clicks\n\nPlenty of people saw it and kept scrolling. The promise is not landing. Fix in this order: the first line, then the image, then the offer.\n\nStart with the first line, because it is the part that shows before \"See more\". The image is second, because it stops the thumb. Only after both have been tried is it worth asking whether the offer is wrong for this audience.\n\n## Many clicks, few conversions\n\nPeople wanted it, arrived, and left. The click was earned and the page broke the promise. The usual culprits, in the order worth checking them:\n\n- The page headline does not repeat the ad's promise, so the visitor thinks they landed in the wrong place.\n- The page is slow. A photo straight from a phone camera can be several megabytes, and on metered mobile data people leave before it paints.\n- The page asks for too much. Every field is another reason to stop. If you ask for phone, company and budget at first contact, cut back to name and email and watch the rate.\n- Price appears for the first time on the page and it is a surprise.\n- There is more than one thing to do, so people do none of them.\n\n## Rising cost per result\n\nCost per result is not a separate problem. It is the other numbers showing up in your wallet. When it climbs, look up the chain and find which rate fell.\n\nIf CTR fell while reach held steady, the likeliest read is that the audience has seen this creative often enough to stop noticing it — refresh the image and the opening line, keep the offer. If conversion rate fell, something changed on the page or in the offer. If both held and cost still rose, you may simply be in a more expensive week — the run-up to a big sale date — and the honest move is to wait rather than thrash.\n\n## How long to wait\n\nLong enough to have results, not long enough in days. A conversion rate built on nine clicks is noise; the same rate on 150 clicks is information. If a change has produced a handful of results, you have learned nothing yet, however many days passed.\n\nTwo habits protect you. Let a change run a full week, because weekday and weekend behaviour differ and a Tuesday-to-Thursday reading flatters or punishes unfairly. And change one thing at a time — new image, or new headline, or new audience, never all three — or you will not know which one moved the number.\n\n## Let AI summarise the export, not explain it\n\nExport the report as a CSV. Strip anything personal first — subscriber names, emails and phone numbers do not belong in a chat window. Then ask for description, not explanation:\n\n\"Here is a campaign export covering two periods. Summarise what changed between them. Describe only what is in the numbers. Do not suggest reasons or causes. For each change, say which stage it belongs to: reach, click-through, conversion, or cost. Flag any rate calculated from fewer than 30 results as too small to trust.\"\n\nThat gets the arithmetic done and flags the small samples, which is the part people skip. The \"why\" stays yours, because you are the only one who knows you swapped the image on the 8th and the client raised the price on the 12th. If the model volunteers a reason anyway — \"engagement dropped due to audience fatigue\" — treat it as a guess, not a finding, and check the CTR yourself."
+        },
+        {
+          "slug": "the-honesty-line",
+          "title": "The honesty line in marketing copy",
+          "duration_minutes": 7,
+          "content_mdx": "# The honesty line in marketing copy\n\nPersuasion and misrepresentation are not two ends of one scale. They are different activities. Persuasion is choosing which true things to say first, and saying them vividly. Misrepresentation leaves the reader believing something that is not so — whether or not any single sentence was technically false.\n\nThe line is commercial as well as moral. A client who buys on a claim you cannot back asks for a refund, tells people, and does not come back. It is also regulated ground: in the Philippines, misleading advertising falls under consumer protection law, and claims for food, drugs, cosmetics and supplements sit with the FDA. Interpreting the detail is not your job — the point is that copy promising a cure carries more than a marketing risk.\n\n## The claims you do not get to make\n\n**Invented statistics.** This is the easiest failure to commit now, because AI produces them smoothly. Ask for a punchy opener and you get \"studies show 73 percent of small businesses...\" with no study behind it. If you cannot say where a number came from, cut it. Describe the shape instead: \"most of the work is follow-up, not first contact\" is defensible; a made-up percentage never is.\n\n**Guaranteed results or income.** \"Earn ₱50,000 a month\" and \"guaranteed page-one ranking\" are promises about someone else's future, which you do not control. Describe the work, what past clients did, and your refund policy. Do not promise the outcome.\n\n**Medical and health claims.** Cures, treats, heals, no side effects, or \"FDA approved\" for a product that only holds a registration. If you write for supplement, skincare or wellness sellers, this is where the money and the danger both are. Say what the product contains and what it is for, not what it will cure.\n\n**Result images that are not real.** A generated or heavily retouched before-and-after is a lie in picture form, one a reader has no way to check.\n\n## Testimonials\n\nA testimonial can be shortened for length and tidied for typos. It cannot be changed in meaning. Turning \"it helped my sales a bit\" into \"it doubled my sales\" is not editing, it is fabrication, even if the client does not mind.\n\nThree rules keep you clean: get written permission, keep the original message where you can find it, and never pair real words with a stock photo of someone who is not that person. And do not ask AI to write a testimonial \"in the style of a happy client\" — there is no honest version of that.\n\n## Disclosure\n\nSay it plainly, in the post, where a scrolling reader will see it — not in the twentieth hashtag.\n\n- Paid partnerships and sponsored posts: say the brand paid you.\n- Free product, a gifted stay, a comped service: that is still a paid partnership.\n- Affiliate links: say you earn a commission.\n- AI-generated images: label them, especially anything that could pass for a photograph of a real product, place or person. A generated background is not the same as a generated photo of the dish you sell.\n\n## The pre-publish claims check\n\nBefore anything goes out, run the draft through three columns. On a boosted post that is a short job.\n\n| Claim in the draft | Evidence I can show | Verdict |\n| --- | --- | --- |\n| \"Used by sellers in three cities\" | Client list in my sheet | Keep |\n| \"40 percent growth in 30 days\" | Nothing | Cut |\n| \"Replies within the hour\" | My own inbox | Soften |\n\nList every sentence a reader could treat as fact. Next to it write the evidence you could produce if asked — a screenshot, an invoice, a product label. Then give each row a verdict:\n\n- **Keep** — the evidence supports it as written.\n- **Soften** — the evidence supports something smaller: \"clients often see results in the first month\" instead of a number you cannot show.\n- **Cut** — there is no evidence. Not \"find a source later\". Cut.\n\nAI is useful for the first column and useless for the second. Ask it: \"List every factual claim in this draft — anything a reader could check or dispute. Do not judge them, just list them.\" It is good at spotting claims you stopped seeing. It cannot verify your evidence; asked to, it will hand you sources that sound right and do not exist.\n\nAfter a few rounds the difference stops being about persuasion. \"Three clients in Cebu cut their reply time to under an hour\" is a sentence you can back up if asked; \"revolutionise your customer service\" is not. Specificity is no guarantee: the invented 73 percent was specific too. What counts is whether evidence exists."
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A client boosted a post for ₱900. It reached 5,200 people, collected 310 reactions and 45 shares, produced 88 link clicks and 6 sign-ups. She messages you: \"It went viral, let's do that again.\" What is the most useful thing to tell her?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Reach was strong for ₱900, so the campaign worked as it stands and the same post should be boosted again."
+            },
+            {
+              "id": "b",
+              "text": "The 310 reactions show the creative is right, so the sign-up form is the only part worth changing next."
+            },
+            {
+              "id": "c",
+              "text": "The result is 6 sign-ups at about ₱150 each — that is the number to judge and to beat."
+            },
+            {
+              "id": "d",
+              "text": "The 45 shares put the post in front of new people, so treat shares as the result to beat next time."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "judgment",
+          "explanation": "Cost per result is what the campaign actually bought you: ₱900 over 6 sign-ups is about ₱150 each. Reactions and shares cost the reader little and belong at the bottom of the report as context, never as the result."
+        },
+        {
+          "prompt": "An ad was shown 30,000 times over a week and got 90 clicks — a click-through rate of 0.3 percent. It reached about 18,000 people, the budget is spending normally and the ad is approved. What do you change first?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The first line of the ad, then the image, since it is seen and not earning clicks."
+            },
+            {
+              "id": "b",
+              "text": "The landing page headline and the form, since something on the page is stopping people from converting."
+            },
+            {
+              "id": "c",
+              "text": "The daily budget, so the ad is shown more times and the click count climbs back up again."
+            },
+            {
+              "id": "d",
+              "text": "The audience, narrowing it to the most likely buyers so that the clicks come from better-matched people."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "workflow",
+          "explanation": "CTR is clicks divided by impressions — 90 from 30,000 is 0.3 percent — so the break is at the click stage and the fix belongs in the ad: first line, then image, then offer. Almost nobody reached the landing page, so it cannot be the problem yet."
+        },
+        {
+          "prompt": "Your ad has a click-through rate of about 2 percent and sent 1,200 people to your landing page over two weeks, but only 36 signed up — a conversion rate of 3 percent, against the 13 percent your last campaign managed. Which explanation is worth checking first?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The audience is too broad, so people who were never going to buy are the ones doing the clicking."
+            },
+            {
+              "id": "b",
+              "text": "The budget is too low for the platform to find buyers, so it is serving the cheapest clicks it can."
+            },
+            {
+              "id": "c",
+              "text": "The offer is priced too high for this market, so the price needs to come down before anything else."
+            },
+            {
+              "id": "d",
+              "text": "The page is not repeating the ad's promise, so visitors arrive thinking they have landed somewhere else."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "workflow",
+          "explanation": "A 2 percent CTR means the ad earned the click, so the loss happened after people landed. Start at the page stage — promise match first, then load speed and how many fields the form demands — rather than reworking the audience, budget or price that were doing their job."
+        },
+        {
+          "prompt": "Cost per sign-up has climbed from about ₱80 to about ₱140 over three weeks. Reach has held steady, conversion rate on the page is unchanged, but CTR has fallen every week. The image and copy have not changed. What is the right move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Raise the daily budget so more people are reached and the average cost per sign-up comes back down."
+            },
+            {
+              "id": "b",
+              "text": "Rewrite the landing page and shorten the form, then judge the change after a couple of days."
+            },
+            {
+              "id": "c",
+              "text": "Refresh the image and opening line for the same offer and audience, then let it run a full week."
+            },
+            {
+              "id": "d",
+              "text": "Move the campaign to a different platform, since this audience has clearly stopped responding to the offer."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "workflow",
+          "explanation": "Rising cost is the other numbers showing up in your wallet, and here it is the falling CTR — the likeliest read is that the audience has seen this creative often enough to stop noticing it. Change the creative only, keep everything else fixed, and give it a full week so the next reading means something."
+        },
+        {
+          "prompt": "You swapped your landing page headline yesterday. Since then the page has had 11 visits and 3 sign-ups — 27 percent, up from 12 percent. What should you conclude?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The new headline is clearly better, so roll it out to the emails and the ads today."
+            },
+            {
+              "id": "b",
+              "text": "Nothing yet — three sign-ups is far too few to be a rate, whatever the percentage looks like."
+            },
+            {
+              "id": "c",
+              "text": "The headline is working, so keep it and give it one more day before rolling it out elsewhere."
+            },
+            {
+              "id": "d",
+              "text": "Restore the old headline, since a jump that large is more likely to be broken tracking than real."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "judgment",
+          "explanation": "Wait for enough results, not enough days. A rate built on three conversions is noise, and one day cannot show you how a full week behaves, so there is nothing here to roll out, keep or reverse yet."
+        },
+        {
+          "prompt": "You have exported two weeks of campaign data and want AI to help you read it. Which instruction is safest?",
+          "options": [
+            {
+              "id": "a",
+              "text": "\"Look at this export and explain why performance dropped in week two, and what caused each of the drops.\""
+            },
+            {
+              "id": "b",
+              "text": "\"Analyse this export and tell me what I should fix first, second and third, with a reason for each.\""
+            },
+            {
+              "id": "c",
+              "text": "\"Summarise this export, then add benchmarks for my industry so I know whether these numbers are good or bad.\""
+            },
+            {
+              "id": "d",
+              "text": "\"Summarise what changed between the two weeks. Describe only the numbers, and flag rates built on few results.\""
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "prompting",
+          "explanation": "The model can do arithmetic on data it can see, but any \"why\" is a guess — you are the one who knows what you changed and when. Asking it to rank fixes or to supply industry benchmarks invites reasons and figures it has no way to check."
+        },
+        {
+          "prompt": "During your pre-publish claims check you reach a line AI drafted: \"Studies show 73 percent of small businesses waste their ad budget.\" You cannot find any study behind it. What do you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Cut the number, and if the point still matters, state only the shape you have actually seen yourself."
+            },
+            {
+              "id": "b",
+              "text": "Soften it to \"studies show most small businesses waste their ad budget\", which drops the specific figure."
+            },
+            {
+              "id": "c",
+              "text": "Keep it but add \"according to industry research\", so it is attributed rather than stated as your own."
+            },
+            {
+              "id": "d",
+              "text": "Ask AI for the source, then cite whatever study it returns alongside the number in the draft."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "judgment",
+          "explanation": "A claim with no evidence gets cut, not blurred or borrowed. Vaguer wording and an added attribution both still credit research that does not exist, and a model asked to produce a source will hand you one that sounds right and is not real."
+        },
+        {
+          "prompt": "You are publishing a review of a skincare product. The brand sent it to you free, you shortened a customer's message from three sentences to one without changing what she said, and the main product image is AI-generated. What has to be true before you publish?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Disclose the free product only, since a trimmed testimonial and a generated product image are normal practice."
+            },
+            {
+              "id": "b",
+              "text": "Say the product was gifted, label the image as AI-generated, and keep the shortened testimonial as it is."
+            },
+            {
+              "id": "c",
+              "text": "Restore the testimonial in full and disclose the gift, but leave the image alone since it is not a photograph."
+            },
+            {
+              "id": "d",
+              "text": "Disclose the gift and the testimonial edit, but leave the image unlabelled since it only illustrates the post."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "judgment",
+          "explanation": "A gifted product is a paid partnership and has to be disclosed, and an image that could pass for a photo of the real product has to be labelled. Trimming a testimonial for length is fine as long as its meaning survives, so there is nothing to restore or flag there."
+        }
+      ]
+    }
+  ],
+  "assignment": {
+    "title": "One campaign, start to finish",
+    "brief_mdx": "Pick one real offer — your own service, a client's product, or a small business you know well — and submit a complete campaign brief as text, roughly 800 to 1,000 words. Include all seven parts: (1) a customer picture in about five lines, naming the evidence you based it on; (2) the offer on one page — what the buyer gets, price and payment terms, who it is not for, and the single action you want; (3) your voice guide as five rules; (4) the same message in three shapes: a Facebook post, an email with subject line and one ask, and a landing page outline with one call to action; (5) a two-week content calendar with dates and what goes out on each; (6) your measurement plan — the one number that defines success, the target, and what you would change if it misses; and (7) a claims check listing every claim your copy makes and the evidence behind it. At the end, say in two lines which parts AI drafted and what you changed.",
+    "criteria": [
+      "The customer picture and the offer are specific and consistent, and the copy sells that offer to that person — not a vaguer version of either",
+      "One voice runs through all three pieces, and each piece is genuinely adapted to its placement rather than pasted across them",
+      "The email has a subject line and exactly one ask; the landing page outline drives one call to action and names the payment or signup step",
+      "The two-week calendar is dated, realistic for one person's hours, and every entry traces back to the campaign's offer",
+      "Success is defined by one named number with a target, plus a stated change to make if it misses — not just 'more sales'",
+      "Every claim in the copy appears in the claims check with real evidence; no invented statistics, guarantees, or undisclosed paid or AI-generated content"
+    ],
+    "min_words": 300
+  }
+}
