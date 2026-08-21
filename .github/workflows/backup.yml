@@ -59,10 +59,15 @@ jobs:
 
           # Prove the archive is a real dump rather than a valid-but-empty
           # gzip. Every dump of this schema contains the profiles table.
+          #
+          # grep -c and not grep -q: -q exits on the first match, which
+          # SIGPIPEs gzip, and under pipefail that fails the job on a dump
+          # that is perfectly good. -c reads the whole stream.
           gzip -t "$FILE"
-          if ! gzip -dc "$FILE" | grep -q "CREATE TABLE public.profiles"; then
+          MATCHES=$(gzip -dc "$FILE" | grep -c "CREATE TABLE public.profiles" || true)
+          if [ "$MATCHES" -eq 0 ]; then
             echo "Dump does not contain the expected schema — failing." >&2
-            gzip -dc "$FILE" | head -40 >&2
+            gzip -dc "$FILE" | head -40 >&2 || true
             exit 1
           fi
 
