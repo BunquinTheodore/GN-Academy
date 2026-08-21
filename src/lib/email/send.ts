@@ -21,9 +21,11 @@ export async function sendEmail(input: {
   try {
     const resend = new Resend(serverEnv.RESEND_API_KEY);
     const { error } = await resend.emails.send({
-      // TODO(blocked): switch to the verified domain sender once DNS
-      // verification is done — see BLOCKED.md.
-      from: "GN Academy <onboarding@resend.dev>",
+      // Resend's sandbox sender only delivers to the account owner, so this
+      // has to move to a verified domain before the first real cohort. It is
+      // an env var rather than an edit here so that DNS verification is the
+      // only thing standing between now and working email.
+      from: process.env.RESEND_FROM || "GN Academy <onboarding@resend.dev>",
       to: input.to,
       subject: input.subject,
       react: input.react,
