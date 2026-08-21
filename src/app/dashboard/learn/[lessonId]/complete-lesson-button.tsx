@@ -1,16 +1,23 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { CheckCircle2 } from "lucide-react";
 import { track } from "@/lib/analytics";
 import { Button } from "@/components/ui/button";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import { completeLessonAction } from "./actions";
 
 /**
- * Calls the server action, then navigates itself. See the action for why the
- * navigation does not happen server-side.
+ * Records the lesson through a route handler, then navigates.
+ *
+ * Neither half is the obvious shape, and both are load-bearing. See
+ * `src/app/api/lessons/[lessonId]/complete/route.ts` for why this is a plain
+ * fetch instead of a server action, and why the server hands back an href
+ * rather than redirecting.
+ *
+ * `pending` is not cleared on success: the next lesson is already being
+ * navigated to, and flipping the label back first makes the button look as
+ * though it did nothing.
  */
 export function CompleteLessonButton({
   lessonId,
@@ -22,22 +29,27 @@ export function CompleteLessonButton({
   isFreeTrack: boolean;
 }) {
   const router = useRouter();
-  const [pending, startTransition] = useTransition();
+  const [pending, setPending] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  function onClick() {
+  async function onClick() {
     setError(null);
-    startTransition(async () => {
-      try {
-        const { nextHref } = await completeLessonAction(lessonId);
-        if (isFreeTrack && !isDone) track("free_lesson_completed");
-        router.push(nextHref);
-        // The lesson list and progress bar on the courses page are cached.
-        router.refresh();
-      } catch {
-        setError("Couldn't save your progress. Check your connection and try again.");
-      }
-    });
+    setPending(true);
+    try {
+      const response = await fetch(`/api/lessons/${lessonId}/complete`, {
+        method: "POST",
+      });
+      const body = (await response.json()) as { nextHref?: string };
+      if (!response.ok || !body.nextHref) throw new Error("save failed");
+
+      if (isFreeTrack && !isDone) track("free_lesson_completed");
+      router.push(body.nextHref);
+    } catch {
+      setError(
+        "Couldn't save your progress. Check your connection and try again.",
+      );
+      setPending(false);
+    }
   }
 
   return (
