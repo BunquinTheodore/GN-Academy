@@ -11,6 +11,9 @@
   --font-mono: var(--font-geist-mono);
   --font-display: var(--font-bricolage);
   --font-heading: var(--font-bricolage);
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-brand-cyan: var(--brand-cyan);
   --color-verified: var(--verified);
   --color-verified-foreground: var(--verified-foreground);
   --color-verified-text: var(--verified-text);
@@ -54,49 +57,63 @@
 }
 
 /*
- * GN Academy tokens (§11).
- * Institutional ink #101B2E · cool paper #F5F7FA · verification gold #C08A2E ·
- * signal blue #2C5FF6 · muted slate secondary text.
- * Gold lives ONLY in --verified; it is deliberately not mapped to accent or
- * primary so seeing it always means "verified credential".
+ * GN Academy tokens (§11), taken from the logo by sampling its pixels:
+ * neon lime #C8F048 (the mark) · cyan #08C0E8 and amber #F8D028 (the plate's
+ * gradient) · near-black plate · cool paper #F5F7FA.
+ *
+ * Two rules hold this together:
+ *
+ * 1. The lime is gorgeous and unusable as text — 1.31:1 on white. So
+ *    --primary is a deepened version of the same hue that passes AA as both
+ *    text and a button fill, and --brand carries the actual neon for fills,
+ *    chips and anything sitting on a dark surface, always with
+ *    --brand-foreground (near-black) on top. That pairing is the logo.
+ *
+ * 2. The logo's amber is NOT mapped to any token. It is close enough to the
+ *    verification gold that using it in the UI would blunt the one signal
+ *    this product cannot afford to blunt: gold means "verified credential"
+ *    and nothing else. It lives in the logo image only.
  */
 :root {
-  --ink: oklch(0.24 0.037 258);
-  --background: oklch(0.977 0.005 247);
-  --foreground: oklch(0.24 0.037 258);
+  --ink: oklch(0.22 0.012 250);
+  --background: oklch(0.977 0.004 247);
+  --foreground: oklch(0.22 0.012 250);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.24 0.037 258);
+  --card-foreground: oklch(0.22 0.012 250);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.24 0.037 258);
-  --primary: oklch(0.55 0.21 264);
-  --primary-foreground: oklch(0.985 0.002 247);
+  --popover-foreground: oklch(0.22 0.012 250);
+  --primary: oklch(0.52 0.145 122);
+  --primary-foreground: oklch(0.99 0 0);
+  --brand: oklch(0.897 0.192 122);
+  --brand-foreground: oklch(0.18 0.012 250);
+  --brand-cyan: oklch(0.748 0.135 220);
   --secondary: oklch(0.94 0.008 250);
-  --secondary-foreground: oklch(0.24 0.037 258);
+  --secondary-foreground: oklch(0.22 0.012 250);
   --muted: oklch(0.945 0.007 250);
   --muted-foreground: oklch(0.5 0.035 255);
-  --accent: oklch(0.94 0.012 258);
-  --accent-foreground: oklch(0.24 0.037 258);
+  --accent: oklch(0.945 0.012 122);
+  --accent-foreground: oklch(0.22 0.012 250);
   --destructive: oklch(0.55 0.22 27);
   --border: oklch(0.895 0.01 250);
   --input: oklch(0.895 0.01 250);
-  --ring: oklch(0.55 0.21 264);
+  --ring: oklch(0.52 0.145 122);
   --verified: oklch(0.665 0.115 79);
   --verified-foreground: oklch(0.24 0.037 258);
   --verified-text: oklch(0.5 0.105 79);
-  --chart-1: oklch(0.55 0.21 264);
+  --chart-1: oklch(0.52 0.145 122);
   --chart-2: oklch(0.665 0.115 79);
-  --chart-3: oklch(0.5 0.035 255);
-  --chart-4: oklch(0.37 0.05 258);
-  --chart-5: oklch(0.75 0.12 264);
+  --chart-3: oklch(0.748 0.135 220);
+  --chart-4: oklch(0.37 0.03 250);
+  --chart-5: oklch(0.897 0.192 122);
   --radius: 0.5rem;
   --sidebar: oklch(1 0 0);
-  --sidebar-foreground: oklch(0.24 0.037 258);
-  --sidebar-primary: oklch(0.55 0.21 264);
-  --sidebar-primary-foreground: oklch(0.985 0.002 247);
-  --sidebar-accent: oklch(0.94 0.012 258);
-  --sidebar-accent-foreground: oklch(0.24 0.037 258);
+  --sidebar-foreground: oklch(0.22 0.012 250);
+  --sidebar-primary: oklch(0.52 0.145 122);
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+  --sidebar-accent: oklch(0.945 0.012 122);
+  --sidebar-accent-foreground: oklch(0.22 0.012 250);
   --sidebar-border: oklch(0.895 0.01 250);
-  --sidebar-ring: oklch(0.55 0.21 264);
+  --sidebar-ring: oklch(0.52 0.145 122);
 }
 
 .dark {
@@ -107,8 +124,11 @@
   --card-foreground: oklch(0.96 0.005 247);
   --popover: oklch(0.26 0.035 258);
   --popover-foreground: oklch(0.96 0.005 247);
-  --primary: oklch(0.65 0.18 264);
-  --primary-foreground: oklch(0.985 0.002 247);
+  --primary: oklch(0.86 0.19 122);
+  --primary-foreground: oklch(0.18 0.012 250);
+  --brand: oklch(0.897 0.192 122);
+  --brand-foreground: oklch(0.18 0.012 250);
+  --brand-cyan: oklch(0.748 0.135 220);
   --secondary: oklch(0.31 0.035 258);
   --secondary-foreground: oklch(0.96 0.005 247);
   --muted: oklch(0.31 0.035 258);
@@ -118,23 +138,23 @@
   --destructive: oklch(0.66 0.2 25);
   --border: oklch(1 0 0 / 12%);
   --input: oklch(1 0 0 / 16%);
-  --ring: oklch(0.65 0.18 264);
+  --ring: oklch(0.86 0.19 122);
   --verified: oklch(0.72 0.12 80);
   --verified-foreground: oklch(0.21 0.032 258);
   --verified-text: oklch(0.78 0.11 80);
-  --chart-1: oklch(0.65 0.18 264);
+  --chart-1: oklch(0.86 0.19 122);
   --chart-2: oklch(0.72 0.12 80);
-  --chart-3: oklch(0.72 0.02 252);
+  --chart-3: oklch(0.748 0.135 220);
   --chart-4: oklch(0.85 0.01 250);
-  --chart-5: oklch(0.55 0.21 264);
+  --chart-5: oklch(0.52 0.145 122);
   --sidebar: oklch(0.26 0.035 258);
   --sidebar-foreground: oklch(0.96 0.005 247);
-  --sidebar-primary: oklch(0.65 0.18 264);
-  --sidebar-primary-foreground: oklch(0.985 0.002 247);
+  --sidebar-primary: oklch(0.86 0.19 122);
+  --sidebar-primary-foreground: oklch(0.18 0.012 250);
   --sidebar-accent: oklch(0.31 0.035 258);
   --sidebar-accent-foreground: oklch(0.96 0.005 247);
   --sidebar-border: oklch(1 0 0 / 12%);
-  --sidebar-ring: oklch(0.65 0.18 264);
+  --sidebar-ring: oklch(0.86 0.19 122);
 }
 
 @layer base {

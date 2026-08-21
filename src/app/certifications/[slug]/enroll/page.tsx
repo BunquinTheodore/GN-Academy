@@ -68,6 +68,23 @@ export default async function EnrollPage({
                           <span className="font-mono text-foreground">
                             {channel.accountNumber}
                           </span>
+                          {channel.qrUrl && (
+                            <span className="mt-3 block">
+                              {/* Not next/image: the QR is operator-supplied
+                                  config and may sit on any host. */}
+                              {/* eslint-disable-next-line @next/next/no-img-element */}
+                              <img
+                                src={channel.qrUrl}
+                                alt={`${channel.label} QR code for ${channel.accountName}`}
+                                className="size-44 rounded-lg border border-border bg-white p-2"
+                                loading="lazy"
+                              />
+                              <span className="mt-1 block text-xs">
+                                Scan in the {channel.label} app, or send to the
+                                number above.
+                              </span>
+                            </span>
+                          )}
                         </li>
                       ))}
                     </ul>

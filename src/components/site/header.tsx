@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { nav, site } from "@/content/site";
 import { Button } from "@/components/ui/button";
@@ -8,9 +9,20 @@ export function SiteHeader() {
       <div className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between gap-4 px-4">
         <Link
           href="/"
-          className="font-display text-lg font-semibold tracking-tight"
+          className="flex items-center gap-2.5 font-display text-lg font-semibold tracking-tight"
         >
-          {site.name}
+          {/* The mark is drawn for a black plate, so it keeps one — shrunk to
+              the wordmark's height it reads as a badge rather than a logo
+              pasted onto paper. */}
+          <Image
+            src="/brand/gn-academy-logo.png"
+            alt=""
+            width={512}
+            height={512}
+            className="size-8 rounded-md bg-black object-contain"
+            priority
+          />
+          <span>{site.name}</span>
         </Link>
 
         <nav aria-label="Main" className="hidden items-center gap-1 md:flex">

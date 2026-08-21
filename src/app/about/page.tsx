@@ -15,13 +15,33 @@ export default function AboutPage() {
         almost none — employers need proof, and talented people deserve a way
         to give it.
       </p>
-      {/* TODO(blocked): brand relationship (GN Club / MAZAL) — waiting on a
-          business decision, see BLOCKED.md. Keep this page generic until then. */}
+
+      <h2 className="font-display text-lg font-semibold text-foreground">
+        Part of GN Ventures
+      </h2>
       <p>
-        Every credential we issue has a public verification page any employer
-        can check in seconds. That is the whole model: learn, prove it, get
-        hired.
+        GN Academy is the learning and certification arm of GN Ventures. That
+        matters for a practical reason rather than a branding one: GN Ventures
+        is a web3 community, and a community is a network of people who are
+        hiring. Passing an assessment here does not just produce a certificate
+        — it puts you in front of the companies and founders already inside
+        that network.
       </p>
+
+      <h2 className="font-display text-lg font-semibold text-foreground">
+        Learn, prove, get hired
+      </h2>
+      <p>
+        Three steps, and the third is the point. You learn a skill, you prove
+        it under assessment, and the credential you earn carries a code any
+        employer can check in seconds. From there your profile is visible to
+        the people looking for exactly that skill.
+      </p>
+      <p>
+        Every credential we issue has a public verification page. That is the
+        whole model — no screenshots to fake, no claims to take on trust.
+      </p>
+
     </PageShell>
   );
 }
