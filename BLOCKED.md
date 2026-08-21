@@ -4,6 +4,12 @@ Items needing an action only the human can take. Nothing here blocks the code
 — every one of these is an account, a credential, or a business decision. See
 README §22 for the engineering work that is still outstanding.
 
+Resolved 2026-08-21: `gh auth login` done as BunquinTheodore, and the three
+repo secrets (`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`,
+`SUPABASE_DB_URL`) are set. Both workflows dispatched and verified: keep-alive
+pings the database, and the backup produces a real 80 KB dump — it had never
+produced one before today, see README §18.
+
 ## 1. Analytics provider account (new, Phase 4)
 The funnel events are wired and the loader is in place, but analytics stays
 inert until both vars are set in `.env.local` (and in the host's env):

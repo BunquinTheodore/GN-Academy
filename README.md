@@ -665,7 +665,7 @@ code.
 
 | # | Item | Owner |
 |---|---|---|
-| 1 | `gh auth login`, then set repo secrets so the keep-alive and backup workflows run | User |
+| 1 | ~~Repo secrets for the keep-alive and backup workflows~~ — **done, both verified running** | ✅ |
 | 2 | Real GCash/Maya receiving name + number → the `NEXT_PUBLIC_PAYMENT_*` vars (§13) | User |
 | 3 | Sign up on the live site, then `npm run make-admin -- <email>` | User |
 | 4 | Verify the Resend sending domain (SPF + DKIM) | User |
@@ -684,11 +684,26 @@ it is not exportable as static files.
 ### Operations
 
 - `.github/workflows/keep-alive.yml` pings Supabase every 3 days; the free
-  tier pauses a project after 7 days of inactivity.
+  tier pauses a project after 7 days of inactivity. Verified green.
 - `.github/workflows/backup.yml` takes a weekly `pg_dump`, gzipped, kept 90
   days as a workflow artifact. A stopgap, not a real backup strategy — the
-  free tier has no restorable automatic backups.
+  free tier has no restorable automatic backups. Verified producing a real
+  dump (80 KB gzipped, ~2,300 lines).
 - Both workflows skip cleanly when their secrets are unset.
+
+Three things about the backup are load-bearing and were each learned by
+watching it fail:
+
+- It installs **PostgreSQL 17** from PGDG and calls
+  `/usr/lib/postgresql/17/bin/pg_dump` by absolute path. Ubuntu ships client
+  16, which refuses to dump a 17 server, and `/usr/bin/pg_dump` is Debian's
+  `pg_wrapper` — it resolves to 16 even once 17 is installed.
+- It sets `pipefail`. Without it `pg_dump | gzip` exits with *gzip's* status,
+  so for months the job archived a 170-byte gzip of nothing and reported
+  success every week.
+- It verifies the archive with `grep -c`, never `grep -q`. `-q` exits on the
+  first match, SIGPIPEs the `gzip` feeding it, and under `pipefail` fails the
+  job on a dump that is perfectly good.
 
 ---
 
