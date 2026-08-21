@@ -67,9 +67,11 @@ test.describe("talent layer", () => {
     await serviceClient().from("rate_limits").delete().neq("key", "");
   });
 
-  // Profile saves are live round trips to Firebase and to a database in
-  // another region, behind an action module that is loaded on first use.
-  // Whichever test touches it first pays for that; the others queue.
+  // These tests once failed here for what looked like load — a save that sat
+  // on "Saving…" until the budget ran out. It was not load: the action was
+  // calling revalidatePath, which stops a useActionState transition from ever
+  // completing in a production build. See AdminFormState. Measure before
+  // widening a timeout in this file.
 
   test("a profile without a credential cannot go public", async ({ page }) => {
     test.setTimeout(120_000);
@@ -77,23 +79,28 @@ test.describe("talent layer", () => {
     const userId = await signUp(page, email, "No Credential");
 
     try {
+      const headline = `Held back ${unique()}`;
       await page.goto("/dashboard/profile");
       await page.getByLabel("Username").fill(`nocred-${unique()}`);
+      await page.getByLabel("Headline").fill(headline);
       await page
         .getByLabel("List me in the employer directory")
         .check();
       await page.getByRole("button", { name: "Save" }).first().click();
 
-      await expect(
-        page.getByText(/once you hold an active credential/i),
-      ).toBeVisible({ timeout: 90_000 });
+      await expect(page.getByText(/Saved as private/i)).toBeVisible({
+        timeout: 90_000,
+      });
 
+      // The tick is refused; the rest of the edit is not. Someone filling the
+      // form in before they have passed anything must not lose it.
       const { data } = await serviceClient()
         .from("profiles")
-        .select("is_public")
+        .select("is_public, headline")
         .eq("id", userId)
         .single();
       expect(data!.is_public).toBe(false);
+      expect(data!.headline).toBe(headline);
     } finally {
       await serviceClient().from("profiles").delete().eq("id", userId);
     }
@@ -129,7 +136,21 @@ test.describe("talent layer", () => {
         timeout: 90_000,
       });
 
-      // 2. A logged-out stranger sees it, credentials and all
+      // 2. Add a piece of work. The portfolio is the reason the talent layer
+      //    exists, and its editor shares AdminForm with everything else that
+      //    was hanging in production, so it gets exercised here.
+      const workTitle = `Weekly reporting pipeline ${stamp}`;
+      await page.getByRole("group").getByText("+ Add a piece of work").click();
+      await page.getByLabel("Title").fill(workTitle);
+      await page
+        .getByLabel("What you did")
+        .fill("Automated a Shopify sales digest; cut two hours a week.");
+      await page.getByRole("button", { name: "Add" }).click();
+      await expect(page.getByText("Added to your portfolio.")).toBeVisible({
+        timeout: 90_000,
+      });
+
+      // 3. A logged-out stranger sees it, credentials and all
       const strangerContext = await browser.newContext();
       const stranger = await strangerContext.newPage();
       await stranger.goto(`/talent/${username}`);
@@ -141,18 +162,19 @@ test.describe("talent layer", () => {
       ).toBeVisible();
       await expect(stranger.getByText(code)).toBeVisible();
       await expect(stranger.getByText("Inbox triage")).toBeVisible();
+      await expect(stranger.getByText(workTitle)).toBeVisible();
 
       // The credential link goes to the real public verification page.
       await stranger.getByRole("link", { name: new RegExp(code) }).click();
       await expect(stranger).toHaveURL(new RegExp(`/verify/${code}`));
 
-      // 3. They appear in the employer directory
+      // 4. They appear in the employer directory
       await stranger.goto("/employers");
       await expect(
         stranger.getByRole("link", { name: /Talent Flow Tester/ }),
       ).toBeVisible();
 
-      // 4. An employer enquiry about them reaches the queue
+      // 5. An employer enquiry about them reaches the queue
       await stranger.goto(`/employers/enquire?talent=${username}`);
       await stranger.getByLabel("Your name").fill("Hiring Manager");
       await stranger
@@ -176,7 +198,7 @@ test.describe("talent layer", () => {
         .single();
       expect(enquiry).toMatchObject({ talent_user_id: userId, status: "new" });
 
-      // 5. Unpublishing hides the profile — and looks identical to a
+      // 6. Unpublishing hides the profile — and looks identical to a
       //    username that never existed.
       await page.goto("/dashboard/profile");
       await page.getByLabel("List me in the employer directory").uncheck();

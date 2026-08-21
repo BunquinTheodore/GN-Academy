@@ -6,6 +6,11 @@
 export const site = {
   name: "GN Academy",
   tagline: "Learn. Prove. Get hired.",
+  // The one address the product points people at. Anywhere the app tells
+  // someone to get in touch, it has to say where — "email us" with no
+  // address is a dead end, and the places that say it are the places where
+  // someone is already stuck.
+  contactEmail: "gnclub.contactus@gmail.com",
   description:
     "Professional AI certification for Filipinos. Take the free AI Readiness Test, earn a verified credential, and get found by employers.",
 } as const;

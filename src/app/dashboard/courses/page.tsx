@@ -92,7 +92,9 @@ export default async function CoursesPage() {
                   >
                     {enrollment.status === "pending"
                       ? "Awaiting payment confirmation"
-                      : enrollment.status}
+                      : enrollment.status === "rejected"
+                        ? "Payment not confirmed"
+                        : enrollment.status}
                   </Badge>
                 </div>
               </CardHeader>
@@ -102,6 +104,23 @@ export default async function CoursesPage() {
                     We&apos;re matching your payment reference — usually within
                     24 hours. You&apos;ll get an email the moment it clears.
                   </p>
+                ) : enrollment.status === "rejected" ? (
+                  // Never show a progress bar and a "Start learning" button
+                  // for a course the learner cannot open.
+                  <div className="flex flex-col gap-3">
+                    <p className="text-sm text-muted-foreground">
+                      We couldn&apos;t match a payment to this enrollment. If
+                      you paid, submit it again with the reference number from
+                      your receipt — nothing is lost.
+                    </p>
+                    <div>
+                      <Button asChild size="sm">
+                        <Link href={`/certifications/${cert.slug}/enroll`}>
+                          Submit it again
+                        </Link>
+                      </Button>
+                    </div>
+                  </div>
                 ) : (
                   <>
                     <div className="flex flex-col gap-1.5">

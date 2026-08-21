@@ -29,7 +29,11 @@ export async function POST(request: Request) {
   const assessment = await getPublishedAssessmentBySlug(
     parsed.data.assessmentSlug,
   ).catch(() => null);
-  if (!assessment) {
+  // Only the free diagnostic starts from here. Certification exams belong to
+  // /api/exams/[slug]/attempts, which checks enrollment and the three-attempt
+  // allowance — without this guard those checks are one POST away from being
+  // skipped entirely, by anyone, logged out.
+  if (!assessment || assessment.type !== "diagnostic") {
     return Response.json({ error: "Test not found." }, { status: 404 });
   }
 

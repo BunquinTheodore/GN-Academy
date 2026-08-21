@@ -1,6 +1,5 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { getSessionUser } from "@/lib/auth/session";
 import { optional, optionalInt, parseList } from "@/lib/admin/form-values";
@@ -81,20 +80,23 @@ export async function saveProfileAction(
     getProfileById(user.uid).catch(() => null),
   ]);
 
-  if (is_public && credentialCount === 0) {
-    return {
-      error:
-        "Public profiles list verified talent, so they open once you hold an active credential. Your profile is saved as private until then.",
-    };
-  }
+  // A taken username is the one thing that cannot be saved at all — there is
+  // nothing sensible to store — so it is refused before anything is written.
   if (usernameTaken) {
     return { error: `“${username}” is taken. Try another.` };
   }
+
+  // Asking to be listed without a credential is not an error in the edit:
+  // everything they typed is still worth keeping, and the page invites them
+  // to fill it in before they pass. Save it private and say so, rather than
+  // discarding a form someone just spent ten minutes on.
+  const heldBack = is_public && credentialCount === 0;
 
   const avatarPath = optional(formData.get("avatar_path"));
 
   const input: ProfileInput = {
     ...parsed.data,
+    is_public: is_public && !heldBack,
     skills: parseList(formData.get("skills")).slice(0, 20),
     avatar_url: avatarPath
       ? publicStorageUrl(AVATAR_BUCKET, avatarPath)
@@ -112,9 +114,11 @@ export async function saveProfileAction(
     return { error: "Couldn't save your profile. Try again." };
   }
 
-  revalidatePath("/dashboard/profile");
-  if (username) revalidatePath(`/talent/${username}`);
-  revalidatePath("/employers");
+  if (heldBack) {
+    return {
+      ok: "Saved as private. Public profiles list verified talent, so yours opens the day you hold an active credential — nothing you typed is lost.",
+    };
+  }
 
   // The banner above the form already shows the public URL; repeating it
   // here just puts the same sentence on screen twice.
@@ -180,10 +184,6 @@ export async function savePortfolioItemAction(
     return { error: "Couldn't save that piece of work." };
   }
 
-  revalidatePath("/dashboard/profile");
-  const profile = await getProfileById(user.uid).catch(() => null);
-  if (profile?.username) revalidatePath(`/talent/${profile.username}`);
-
   return { ok: itemId ? "Saved." : "Added to your portfolio." };
 }
 
@@ -203,10 +203,6 @@ export async function deletePortfolioItemAction(
     console.error("delete portfolio item failed", e);
     return { error: "Couldn't remove that item." };
   }
-
-  revalidatePath("/dashboard/profile");
-  const profile = await getProfileById(user.uid).catch(() => null);
-  if (profile?.username) revalidatePath(`/talent/${profile.username}`);
 
   return { ok: "Removed." };
 }

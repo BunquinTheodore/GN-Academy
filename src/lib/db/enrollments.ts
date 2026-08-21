@@ -44,7 +44,15 @@ export async function listEnrollmentsForUser(
   return data ?? [];
 }
 
-/** Free certifications activate instantly; paid ones start pending (§17). */
+/**
+ * Free certifications activate instantly; paid ones start pending (§17).
+ *
+ * Upsert, not insert: (user_id, certification_id) is unique, and the enroll
+ * page deliberately lets someone through again after a rejection — a mistyped
+ * payment reference has to be fixable. A plain insert made that second
+ * attempt fail forever on a duplicate key, with a generic "try again" that
+ * would never come true.
+ */
 export async function createEnrollment(input: {
   user_id: string;
   certification_id: string;
@@ -55,15 +63,19 @@ export async function createEnrollment(input: {
 }): Promise<Enrollment> {
   const { data, error } = await supabaseAdmin()
     .from("enrollments")
-    .insert({
-      user_id: input.user_id,
-      certification_id: input.certification_id,
-      status: input.is_free ? "active" : "pending",
-      approved_at: input.is_free ? new Date().toISOString() : null,
-      payment_method: input.payment_method ?? null,
-      payment_ref: input.payment_ref ?? null,
-      amount_paid_php: input.amount_paid_php ?? null,
-    })
+    .upsert(
+      {
+        user_id: input.user_id,
+        certification_id: input.certification_id,
+        status: input.is_free ? "active" : "pending",
+        approved_at: input.is_free ? new Date().toISOString() : null,
+        enrolled_at: new Date().toISOString(),
+        payment_method: input.payment_method ?? null,
+        payment_ref: input.payment_ref ?? null,
+        amount_paid_php: input.amount_paid_php ?? null,
+      },
+      { onConflict: "user_id,certification_id" },
+    )
     .select("*")
     .single();
   if (error) throw error;

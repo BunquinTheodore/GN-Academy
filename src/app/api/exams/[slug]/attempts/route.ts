@@ -7,6 +7,7 @@ import {
 } from "@/lib/db/exams";
 import { createAttempt } from "@/lib/db/attempts";
 import { clientIpFrom, hashIp } from "@/lib/rate-limit";
+import { site } from "@/content/site";
 
 const paramsSchema = z.object({ slug: z.string().min(1).max(100) });
 
@@ -45,7 +46,7 @@ export async function POST(
     if (used >= exam.max_attempts) {
       return Response.json(
         {
-          error: `You've used all ${exam.max_attempts} attempts for this exam. Email us if you believe this is wrong.`,
+          error: `You've used all ${exam.max_attempts} attempts for this exam. Email ${site.contactEmail} if you believe this is wrong.`,
         },
         { status: 403 },
       );

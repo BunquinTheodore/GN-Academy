@@ -41,7 +41,7 @@ const sections = [
   {
     heading: "Your rights",
     body: [
-      "Under the Data Privacy Act of 2012 (RA 10173) you may access, correct, or delete your personal data, object to processing, and withdraw consent. Use the form at /data-request or email us — we respond within 15 working days.",
+      "Under the Data Privacy Act of 2012 (RA 10173) you may access, correct, or delete your personal data, object to processing, and withdraw consent. Use the form at /data-request or email gnclub.contactus@gmail.com — we respond within 15 working days.",
     ],
   },
   {

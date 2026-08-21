@@ -68,7 +68,9 @@ export async function POST(
     const questions = await getScorableQuestions(attempt.assessment_id);
     const result = scoreAttempt(questions, parsed.data.answers);
 
-    await completeAttempt(attempt.id, {
+    // The write is the claim on the attempt: a racing second submission
+    // loses it and must not capture the lead or send the email again.
+    const claimed = await completeAttempt(attempt.id, {
       answers: parsed.data.answers,
       score: result.overall,
       competency_scores: result.competencies,
@@ -76,6 +78,9 @@ export async function POST(
       recommended_path: result.recommendedPath,
       email: parsed.data.email ?? null,
     });
+    if (!claimed) {
+      return Response.json({ attemptId: attempt.id });
+    }
 
     if (parsed.data.email) {
       await createLead({
