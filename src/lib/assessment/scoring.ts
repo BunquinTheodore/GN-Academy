@@ -89,14 +89,25 @@ export function scoreAttempt(
     };
   });
 
-  const totalWeight = competencies.reduce((sum, c) => sum + c.weight, 0);
-  const overall = Math.round(
-    competencies.reduce((sum, c) => sum + c.score * c.weight, 0) /
-      (totalWeight || 1),
-  );
+  // Only the competencies this assessment actually asked about count toward
+  // the score. The weights were written for the AI Readiness Test, which
+  // always covers all four; a chapter quiz covers whichever ones its chapter
+  // teaches. Weighting the absent ones as zero made a quiz of eight judgment
+  // questions score 20% for a perfect paper — permanently unpassable against a
+  // 70% mark. Normalising over what was asked leaves the diagnostic's own
+  // scoring identical, because there every competency is present.
+  const answered = competencies.filter((c) => c.total > 0);
+  const totalWeight = answered.reduce((sum, c) => sum + c.weight, 0);
+  const overall =
+    totalWeight === 0
+      ? 0
+      : Math.round(
+          answered.reduce((sum, c) => sum + c.score * c.weight, 0) / totalWeight,
+        );
 
-  const weakest = competencies.reduce((min, c) =>
-    c.score < min.score ? c : min,
+  // Same reasoning: a competency the quiz never asked about is not a weakness.
+  const weakest = (answered.length > 0 ? answered : competencies).reduce(
+    (min, c) => (c.score < min.score ? c : min),
   );
 
   const level = levelForScore(overall);

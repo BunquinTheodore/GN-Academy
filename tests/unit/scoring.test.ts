@@ -115,3 +115,61 @@ describe("levelForScore", () => {
     expect(levelForScore(100)).toBe("advanced");
   });
 });
+
+describe("assessments that cover only some competencies", () => {
+  /**
+   * Chapter quizzes cover whichever competencies their chapter teaches. The
+   * weights in COMPETENCIES were written for the AI Readiness Test, where all
+   * four always appear — weighting the absent ones as zero made a perfect
+   * paper on a judgment-only quiz score 20%, which is below every pass mark
+   * there is. That shipped, and made one course's credential unobtainable.
+   */
+  const judgmentOnly: ScorableQuestion[] = Array.from({ length: 8 }, (_, i) => ({
+    id: `q${i}`,
+    competency: "judgment",
+    correct_option_id: "a",
+    points: 1,
+  }));
+
+  it("scores a perfect single-competency quiz as 100, not as its weight", () => {
+    const answers = judgmentOnly.map((q) => ({
+      questionId: q.id,
+      optionId: "a",
+    }));
+    expect(scoreAttempt(judgmentOnly, answers).overall).toBe(100);
+  });
+
+  it("scores half right as 50 on a single-competency quiz", () => {
+    const answers = judgmentOnly.map((q, i) => ({
+      questionId: q.id,
+      optionId: i < 4 ? "a" : "b",
+    }));
+    expect(scoreAttempt(judgmentOnly, answers).overall).toBe(50);
+  });
+
+  it("never reports an unasked competency as the weakest area", () => {
+    const answers = judgmentOnly.map((q) => ({
+      questionId: q.id,
+      optionId: "a",
+    }));
+    expect(scoreAttempt(judgmentOnly, answers).weakest.key).toBe("judgment");
+  });
+
+  it("weights two competencies against each other, not against all four", () => {
+    // prompting 25 and workflow 35. All prompting right, all workflow wrong,
+    // so the score is 25/(25+35) = 42, not 25/100.
+    const mixed: ScorableQuestion[] = [
+      { id: "p1", competency: "prompting", correct_option_id: "a", points: 1 },
+      { id: "p2", competency: "prompting", correct_option_id: "a", points: 1 },
+      { id: "w1", competency: "workflow", correct_option_id: "a", points: 1 },
+      { id: "w2", competency: "workflow", correct_option_id: "a", points: 1 },
+    ];
+    const answers = [
+      { questionId: "p1", optionId: "a" },
+      { questionId: "p2", optionId: "a" },
+      { questionId: "w1", optionId: "b" },
+      { questionId: "w2", optionId: "b" },
+    ];
+    expect(scoreAttempt(mixed, answers).overall).toBe(42);
+  });
+});
