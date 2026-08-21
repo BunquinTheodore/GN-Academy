@@ -33,7 +33,7 @@ export default async function AdminDataRequestsPage() {
         <h1 className="font-display text-2xl font-semibold">Data requests</h1>
         <p className="mt-1 max-w-prose text-sm text-muted-foreground">
           RA 10173 gives 15 working days to reply. Verify the person owns the
-          address before acting — this queue is a request, not an
+          address before acting. This queue is a request, not an
           authorisation.
         </p>
       </div>
@@ -92,7 +92,7 @@ export default async function AdminDataRequestsPage() {
                             <p className="mt-1 text-sm text-muted-foreground">
                               Deletes the profile, attempts, enrollments,
                               progress, and lead rows, and removes the sign-in.
-                              Credentials are kept and unlinked — that is what
+                              Credentials are kept and unlinked, which is what
                               the privacy page promises, and employers holding
                               a code must still get an answer.
                             </p>
@@ -202,12 +202,12 @@ export default async function AdminDataRequestsPage() {
                         </td>
                         <td className="p-3">{request.status}</td>
                         <td className="p-3 text-muted-foreground">
-                          {request.resolution_note ?? "—"}
+                          {request.resolution_note ?? "n/a"}
                         </td>
                         <td className="p-3 text-muted-foreground">
                           {request.resolved_at
                             ? formatDate(request.resolved_at)
-                            : "—"}
+                            : "n/a"}
                         </td>
                       </tr>
                     ))}

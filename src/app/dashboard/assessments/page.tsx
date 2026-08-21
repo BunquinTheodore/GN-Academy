@@ -108,7 +108,7 @@ export default async function AssessmentsPage() {
                     </Button>
                   ) : (
                     <p className="text-sm text-muted-foreground">
-                      No attempts remaining — email{" "}
+                      No attempts remaining. Email{" "}
                       {cert ? `us about ${cert.title}` : "us"} if you believe
                       this is wrong.
                     </p>

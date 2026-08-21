@@ -12,7 +12,7 @@ export default function AboutPage() {
       <p>
         GN Academy certifies AI-ready Filipino talent. We exist because
         &ldquo;knows how to use AI&rdquo; is on every CV and verifiable on
-        almost none — employers need proof, and talented people deserve a way
+        almost none. Employers need proof, and talented people deserve a way
         to give it.
       </p>
 
@@ -23,9 +23,9 @@ export default function AboutPage() {
         GN Academy is the learning and certification arm of GN Ventures. That
         matters for a practical reason rather than a branding one: GN Ventures
         is a web3 community, and a community is a network of people who are
-        hiring. Passing an assessment here does not just produce a certificate
-        — it puts you in front of the companies and founders already inside
-        that network.
+        hiring. Passing an assessment here does not just produce a certificate.
+        It puts you in front of the companies and founders already inside that
+        network.
       </p>
 
       <h2 className="font-display text-lg font-semibold text-foreground">
@@ -39,7 +39,7 @@ export default function AboutPage() {
       </p>
       <p>
         Every credential we issue has a public verification page. That is the
-        whole model — no screenshots to fake, no claims to take on trust.
+        whole model: no screenshots to fake, no claims to take on trust.
       </p>
 
     </PageShell>

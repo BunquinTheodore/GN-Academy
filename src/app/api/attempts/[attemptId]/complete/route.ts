@@ -107,7 +107,7 @@ export async function POST(
   } catch (e) {
     console.error("attempt complete failed", e);
     return Response.json(
-      { error: "Could not score your test. Your answers are saved — try again." },
+      { error: "Could not score your test. Your answers are saved, so try again." },
       { status: 500 },
     );
   }

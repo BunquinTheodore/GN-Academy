@@ -52,7 +52,7 @@ const certSchema = z.object({
     .toUpperCase()
     .min(2)
     .max(10)
-    .regex(/^[A-Z]+$/, "Letters only — it becomes the credential code prefix."),
+    .regex(/^[A-Z]+$/, "Letters only. It becomes the credential code prefix."),
   sort_order: z.number().int().min(0).max(9999),
   is_published: z.boolean(),
 });
@@ -206,7 +206,7 @@ export async function deleteModuleAction(
   }
   if (formData.get("confirm") !== "on") {
     return {
-      error: "Tick the confirmation box — this also deletes the module's lessons.",
+      error: "Tick the confirmation box. This also deletes the module's lessons.",
     };
   }
 

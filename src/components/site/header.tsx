@@ -1,9 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import { nav, site } from "@/content/site";
+import { getSessionUser } from "@/lib/auth/session";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/theme-toggle";
 
-export function SiteHeader() {
+/**
+ * The public header knows whether you are signed in, because the catalogue
+ * moved behind the login: offering "Create free account" to someone who
+ * already has one, with no way back to their dashboard, is the kind of small
+ * wrongness that makes a site feel unmaintained.
+ */
+export async function SiteHeader() {
+  const user = await getSessionUser();
+
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
       <div className="mx-auto flex h-14 w-full max-w-6xl items-center justify-between gap-4 px-4">
@@ -38,12 +48,26 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Button asChild variant="ghost" size="sm" className="hidden sm:inline-flex">
-            <Link href="/login">Sign in</Link>
-          </Button>
-          <Button asChild size="sm" className="h-10">
-            <Link href={nav.cta.href}>{nav.cta.label}</Link>
-          </Button>
+          <ThemeToggle />
+          {user ? (
+            <Button asChild size="sm" className="h-10">
+              <Link href="/dashboard">My dashboard</Link>
+            </Button>
+          ) : (
+            <>
+              <Button
+                asChild
+                variant="ghost"
+                size="sm"
+                className="hidden sm:inline-flex"
+              >
+                <Link href="/login">Sign in</Link>
+              </Button>
+              <Button asChild size="sm" className="h-10">
+                <Link href={nav.cta.href}>{nav.cta.label}</Link>
+              </Button>
+            </>
+          )}
         </div>
       </div>
     </header>

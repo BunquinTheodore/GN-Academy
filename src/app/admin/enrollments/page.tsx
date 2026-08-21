@@ -32,7 +32,7 @@ export default async function AdminEnrollmentsPage() {
         </p>
       ) : pending.length === 0 ? (
         <p className="rounded-lg border border-dashed border-border p-8 text-muted-foreground">
-          Queue is clear — no payments waiting for confirmation.
+          Queue is clear. No payments waiting for confirmation.
         </p>
       ) : (
         <div className="overflow-x-auto rounded-lg border border-border bg-card">
@@ -52,16 +52,16 @@ export default async function AdminEnrollmentsPage() {
               {pending.map((e) => (
                 <tr key={e.id} className="border-b border-border last:border-0">
                   <td className="p-3">
-                    <p className="font-medium">{e.profiles?.full_name ?? "—"}</p>
+                    <p className="font-medium">{e.profiles?.full_name ?? "n/a"}</p>
                     <p className="text-xs text-muted-foreground">
                       {e.profiles?.email}
                     </p>
                   </td>
-                  <td className="p-3">{e.certifications?.title ?? "—"}</td>
-                  <td className="p-3 uppercase">{e.payment_method ?? "—"}</td>
-                  <td className="p-3 font-mono">{e.payment_ref ?? "—"}</td>
+                  <td className="p-3">{e.certifications?.title ?? "n/a"}</td>
+                  <td className="p-3 uppercase">{e.payment_method ?? "n/a"}</td>
+                  <td className="p-3 font-mono">{e.payment_ref ?? "n/a"}</td>
                   <td className="p-3 font-mono">
-                    {e.amount_paid_php != null ? formatPhp(e.amount_paid_php) : "—"}
+                    {e.amount_paid_php != null ? formatPhp(e.amount_paid_php) : "n/a"}
                   </td>
                   <td className="p-3">{formatDate(e.enrolled_at)}</td>
                   <td className="p-3">

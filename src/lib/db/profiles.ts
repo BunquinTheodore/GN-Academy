@@ -1,5 +1,7 @@
 import "server-only";
 
+import { cache } from "react";
+
 import { supabaseAdmin } from "@/lib/supabase/server";
 
 export type Profile = {
@@ -24,7 +26,14 @@ export type Profile = {
   updated_at: string;
 };
 
-export async function getProfileById(id: string): Promise<Profile | null> {
+/**
+ * Deduplicated per request with React's `cache`, for the same reason
+ * `getSessionUser` is: the dashboard layout and the dashboard page both need
+ * this, and every navigation inside the signed-in shell paid for it twice.
+ */
+export const getProfileById = cache(async function getProfileById(
+  id: string,
+): Promise<Profile | null> {
   const { data, error } = await supabaseAdmin()
     .from("profiles")
     .select("*")
@@ -32,7 +41,7 @@ export async function getProfileById(id: string): Promise<Profile | null> {
     .maybeSingle();
   if (error) throw error;
   return data;
-}
+})
 
 export async function upsertProfileOnSync(input: {
   id: string;

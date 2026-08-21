@@ -26,7 +26,7 @@ export function CredentialIssuedEmail({
   return (
     <Html lang="en">
       <Head />
-      <Preview>{`${credentialCode} — your credential is verifiable now`}</Preview>
+      <Preview>{`${credentialCode} is issued: your credential is verifiable now`}</Preview>
       <Body style={{ backgroundColor: "#F5F7FA", fontFamily: "Arial, sans-serif" }}>
         <Container
           style={{
@@ -72,7 +72,7 @@ export function CredentialIssuedEmail({
             </Link>
           </Section>
           <Text style={{ color: "#B9C4D6", fontSize: 13, marginTop: 20 }}>
-            Put the code on your CV and profiles — anyone can check it at the
+            Put the code on your CV and profiles. Anyone can check it at the
             link above, no account needed. Congratulations; this one&apos;s
             earned.
           </Text>

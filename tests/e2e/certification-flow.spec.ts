@@ -150,12 +150,17 @@ test.describe("certification journey", () => {
 
     const questionCount = correctTextByPrompt.size;
     for (let i = 0; i < questionCount; i++) {
-      const radios = page.getByRole("radio");
+      // Scoped to the question's own fieldset. An unscoped radio query also
+      // matches the theme toggle in the sidebar, which is a radiogroup and is
+      // visible immediately, so the wait below passed before the question had
+      // rendered and the answer key then matched nothing.
+      const answers = page.locator("fieldset");
+      const radios = answers.getByRole("radio");
       await expect(radios.first()).toBeVisible({ timeout: 15_000 });
       // Click the correct option by matching visible text against the key.
       let clicked = false;
       for (const text of correctTextByPrompt.values()) {
-        const option = page.getByRole("radio", { name: text, exact: true });
+        const option = answers.getByRole("radio", { name: text, exact: true });
         if ((await option.count()) === 1) {
           await option.click();
           clicked = true;

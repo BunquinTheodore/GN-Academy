@@ -42,12 +42,16 @@ test.describe("auth flow", () => {
 
     // Redirects to the dashboard once the session cookie is set.
     await expect(page).toHaveURL(/\/dashboard/, { timeout: 45_000 });
-    await expect(
-      page.getByText("Your talent profile", { exact: true }),
-    ).toBeVisible();
 
-    // The dashboard renders the profile row read through the DAL — reaching
-    // it proves the sync route upserted the profile.
+    // The greeting is rendered from the profile row read through the DAL, so
+    // seeing the name this account signed up with proves the sync route
+    // upserted it. Nothing here is viewport-specific: the sidebar carries the
+    // same state but is display:none below lg, so asserting on it passed on
+    // desktop and failed on mobile for reasons that had nothing to do with
+    // auth.
+    await expect(
+      page.getByRole("heading", { name: "Welcome back, E2E" }),
+    ).toBeVisible();
     // Sign-out is a Firebase signOut, a session-cookie DELETE, and a
     // navigation. 10s was fine for a 36-test suite; with the whole suite
     // running in parallel against one dev server it is the tightest budget

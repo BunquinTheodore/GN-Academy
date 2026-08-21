@@ -38,7 +38,7 @@ export function CertificationFields({ cert }: { cert?: Certification }) {
         name="subtitle"
         label="Subtitle"
         defaultValue={cert?.subtitle}
-        placeholder="Run client operations with AI — and prove it"
+        placeholder="Run client operations with AI, and prove it"
       />
 
       <div className="grid gap-4 sm:grid-cols-3">

@@ -17,12 +17,13 @@ export const site = {
 
 export const nav = {
   links: [
-    { label: "Certifications", href: "/certifications" },
     { label: "How it works", href: "/how-it-works" },
+    { label: "For employers", href: "/employers" },
     { label: "Verify a credential", href: "/verify" },
   ],
-  // §10: low-commitment ask converts better than "Get certified".
-  cta: { label: "Take the free test", href: "/ai-test" },
+  // The course catalogue is behind the login, so the public ask is the
+  // account itself. Signing up is still free and still takes a minute.
+  cta: { label: "Create free account", href: "/signup" },
 } as const;
 
 export const home = {
@@ -43,7 +44,7 @@ export const home = {
       },
       {
         title: "Prove",
-        body: "Pass a practical assessment — not a multiple-choice memory quiz — and earn a credential.",
+        body: "Pass a practical assessment, not a multiple-choice memory quiz, and earn a credential.",
       },
       {
         title: "Get hired",
@@ -53,7 +54,7 @@ export const home = {
   },
   verification: {
     heading: "A score means nothing until it's verified",
-    body: "Anyone can claim AI skills. A GN Academy credential carries a code any employer can check — no login, no screenshots to fake.",
+    body: "Anyone can claim AI skills. A GN Academy credential carries a code any employer can check. No login, no screenshots to fake.",
     cta: { label: "See how verification works", href: "/verify" },
   },
 } as const;
@@ -66,7 +67,6 @@ export const footer = {
       heading: "Platform",
       links: [
         { label: "AI Readiness Test", href: "/ai-test" },
-        { label: "Certifications", href: "/certifications" },
         { label: "Verify a credential", href: "/verify" },
         { label: "How it works", href: "/how-it-works" },
         { label: "Blog", href: "/blog" },

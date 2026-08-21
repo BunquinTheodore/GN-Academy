@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { redirect } from "next/navigation";
+import { getSessionUser } from "@/lib/auth/session";
 import { listPublishedCertifications } from "@/lib/db/certifications";
 import { formatPhp } from "@/lib/format";
 import { SiteHeader } from "@/components/site/header";
@@ -11,10 +13,12 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Certifications",
   description:
-    "Professional AI certifications for Filipino virtual assistants, freelancers, and jobseekers — every credential publicly verifiable.",
+    "Professional AI certifications for Filipino virtual assistants, freelancers, and jobseekers. Every credential is publicly verifiable.",
 };
 
-export const revalidate = 300;
+// Was ISR-cached and public. The catalogue is now behind the login, so it is
+// rendered per request for a known learner instead.
+export const dynamic = "force-dynamic";
 
 const LEVEL_LABEL: Record<string, string> = {
   foundation: "Foundation",
@@ -23,6 +27,9 @@ const LEVEL_LABEL: Record<string, string> = {
 };
 
 export default async function CertificationsPage() {
+  const user = await getSessionUser();
+  if (!user) redirect("/login?next=/certifications");
+
   let certifications = null;
   try {
     certifications = await listPublishedCertifications();

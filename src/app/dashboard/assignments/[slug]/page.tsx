@@ -82,7 +82,7 @@ export default async function AssignmentPage({
                 is live and publicly verifiable.
               </>
             ) : (
-              "Your credential is being prepared — check your credentials page in a moment."
+              "Your credential is being prepared. Check your credentials page in a moment."
             )}
             {submission?.reviewer_note && (
               <span className="mt-2 block">{submission.reviewer_note}</span>
@@ -115,7 +115,7 @@ export default async function AssignmentPage({
               <span className="mt-2 block">{submission.reviewer_note}</span>
             )}
             <span className="mt-2 block">
-              Edit your work below and send it again — there is no limit on
+              Edit your work below and send it again. There is no limit on
               attempts.
             </span>
           </AlertDescription>
@@ -134,7 +134,7 @@ export default async function AssignmentPage({
           {assignment.criteria.map((c) => (
             <li key={c} className="flex gap-2">
               <span aria-hidden className="text-primary">
-                —
+                ·
               </span>
               <span>{c}</span>
             </li>
@@ -198,7 +198,7 @@ export default async function AssignmentPage({
                 label="Link (optional)"
                 type="url"
                 defaultValue={submission?.link_url ?? undefined}
-                hint="A public link to anything supporting your work — a doc, a post, a spreadsheet."
+                hint="A public link to anything supporting your work: a doc, a post, a spreadsheet."
               />
             </AdminForm>
           </div>

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Free AI Readiness Test",
   description:
-    "Fifteen scenario questions, ten minutes, a score out of 100 — find out how ready you are for AI-powered work.",
+    "Fifteen scenario questions, ten minutes, a score out of 100. Find out how ready you are for AI-powered work.",
 };
 
 /**
@@ -29,8 +29,8 @@ export default function AiTestPage() {
           How ready are you for AI-powered work?
         </h1>
         <p className="text-muted-foreground">
-          Real work scenarios — managing a client&apos;s inbox, scoping a
-          project, checking AI output — not trivia. You&apos;ll get a score out
+          Real work scenarios, not trivia: managing a client&apos;s inbox,
+          scoping a project, checking AI output. You&apos;ll get a score out
           of 100 and the one skill area to fix first.
         </p>
         <Button asChild size="lg" className="h-12">

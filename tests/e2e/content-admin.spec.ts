@@ -100,18 +100,21 @@ test.describe("SEO surfaces", () => {
     "Set E2E_AUTH=1 with real keys in .env.local to run live flows.",
   );
 
-  test("sitemap lists certifications and posts but never a credential", async ({
+  test("sitemap lists posts but never a credential or a gated course", async ({
     request,
   }) => {
     const response = await request.get("/sitemap.xml");
     expect(response.status()).toBe(200);
     const xml = await response.text();
 
-    expect(xml).toContain("/certifications/certified-ai-virtual-assistant");
     expect(xml).toContain("/blog/what-employers-actually-check");
     // Credential pages are public but deliberately unlisted — a sitemap of
     // them would turn a lookup tool into a directory of holders.
     expect(xml).not.toContain("/verify/CAVA-");
+    // Course pages moved behind the login. Listing a URL that answers with a
+    // redirect wastes crawl budget and puts a dead result in front of anyone
+    // who finds it.
+    expect(xml).not.toContain("/certifications");
   });
 
   test("robots keeps crawlers out of admin and dashboard", async ({
@@ -122,6 +125,7 @@ test.describe("SEO surfaces", () => {
     const body = await response.text();
     expect(body).toContain("Disallow: /admin");
     expect(body).toContain("Disallow: /dashboard");
+    expect(body).toContain("Disallow: /certifications");
     expect(body).toContain("Sitemap:");
   });
 });

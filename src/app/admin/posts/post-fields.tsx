@@ -72,8 +72,8 @@ export function PostFields({ post }: { post?: Post }) {
         label="Status"
         defaultValue={post?.status ?? "draft"}
         options={[
-          { value: "draft", label: "Draft — invisible on the site" },
-          { value: "published", label: "Published — live on /blog" },
+          { value: "draft", label: "Draft (invisible on the site)" },
+          { value: "published", label: "Published (live on /blog)" },
         ]}
       />
     </>

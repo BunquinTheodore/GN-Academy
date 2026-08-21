@@ -39,7 +39,7 @@ function NotFoundState({ code }: { code: string }) {
       <p className="text-muted-foreground">
         Nothing matches{" "}
         <span className="font-mono text-foreground">{code.toUpperCase().slice(0, 40)}</span>.
-        Check for typos — codes look like{" "}
+        Check for typos. Codes look like{" "}
         <span className="font-mono">CAVA-2026-001248</span>. If someone showed
         you this code as proof of certification, treat that claim with
         caution.
@@ -130,7 +130,7 @@ export default async function VerifyCodePage({
             <p className="mt-3 rounded-md border border-destructive/40 bg-destructive/5 p-3 text-sm">
               This credential was revoked
               {credential.revoked_at && ` on ${formatDate(credential.revoked_at)}`}
-              {credential.revoked_reason && ` — ${credential.revoked_reason}`}. It
+              {credential.revoked_reason && `: ${credential.revoked_reason}`}. It
               should not be relied on as proof of certification.
             </p>
           )}
@@ -192,8 +192,8 @@ export default async function VerifyCodePage({
 
           <div className="mt-8 border-t border-border pt-6">
             <p className="text-sm text-muted-foreground">
-              Hiring? Every GN Academy credential is checkable like this one —
-              in seconds, no account.
+              Hiring? You can check every GN Academy credential like this one
+              in seconds, no account needed.
             </p>
             <Button asChild variant="outline" size="sm" className="mt-3">
               <Link href="/employers">Hire verified talent</Link>

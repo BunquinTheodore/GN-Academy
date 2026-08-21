@@ -163,7 +163,7 @@ export async function executeDeletionAction(
     console.error("account deletion failed", e);
     return {
       error:
-        "Deletion failed part-way. The account can still sign in — check the server logs before retrying.",
+        "Deletion failed part-way. The account can still sign in, so check the server logs before retrying.",
     };
   }
 }

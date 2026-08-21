@@ -75,7 +75,7 @@ function ConversionRow({
               : "font-mono text-lg font-semibold"
           }
         >
-          {value === null ? "—" : `${value}%`}
+          {value === null ? "n/a" : `${value}%`}
         </span>
       </span>
     </div>
@@ -173,10 +173,10 @@ export default async function AdminPage() {
           <FunnelPanel heading="Last 30 days" counts={metrics.last30Days} />
           <FunnelPanel heading="All time" counts={metrics.allTime} />
           <p className="max-w-prose text-sm text-muted-foreground">
-            These come from the database, not from the analytics provider —
-            payment confirmations and credential issuance are things staff do
+            These come from the database, not from the analytics provider.
+            Payment confirmations and credential issuance are things staff do
             on the server, which no browser beacon can see. A rate shows{" "}
-            <span className="font-mono">—</span> when nothing has entered that
+            <span className="font-mono">n/a</span> when nothing has entered that
             stage yet; 0% would imply a real measurement.
           </p>
         </>

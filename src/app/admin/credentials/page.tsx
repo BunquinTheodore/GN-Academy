@@ -32,7 +32,7 @@ export default async function AdminCredentialsPage({
         <h1 className="font-display text-2xl font-semibold">Credentials</h1>
         <p className="mt-1 max-w-prose text-sm text-muted-foreground">
           Revoking a credential does not delete it. The verification page keeps
-          working and says <em>revoked</em>, with your reason — a credential
+          working and says <em>revoked</em>, with your reason. A credential
           that silently vanishes is easier to explain away than one that
           visibly failed.
         </p>
@@ -107,7 +107,7 @@ export default async function AdminCredentialsPage({
                     <p className="rounded-md border border-destructive/40 bg-destructive/5 p-3 text-sm">
                       Revoked
                       {c.revoked_at && ` on ${formatDate(c.revoked_at)}`}
-                      {c.revoked_reason && ` — ${c.revoked_reason}`}
+                      {c.revoked_reason && `: ${c.revoked_reason}`}
                     </p>
                   )}
 

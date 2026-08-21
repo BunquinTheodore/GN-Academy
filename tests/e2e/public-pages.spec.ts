@@ -1,13 +1,36 @@
 import { expect, test } from "@playwright/test";
 
-test("homepage renders with the funnel CTA", async ({ page }) => {
+test("the landing page sells and sends visitors to sign up", async ({ page }) => {
   await page.goto("/");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText(
+    /almost nobody can prove it/i,
+  );
   await expect(
-    page.getByRole("heading", { level: 1 }),
-  ).toContainText(/ready for the AI-powered workplace/i);
-  await expect(
-    page.getByRole("link", { name: "Take the free test" }).first(),
+    page.getByRole("link", { name: /create your free account/i }).first(),
   ).toBeVisible();
+});
+
+/**
+ * The catalogue is the paid product and now sits behind the login, so the
+ * landing page must not link into it — not in the nav, not in the body, not
+ * in the footer. A link that bounces a stranger to /login is a worse first
+ * impression than no link.
+ */
+test("the landing page never links to the gated catalogue", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.locator('a[href^="/certifications"]')).toHaveCount(0);
+  await expect(page.locator('a[href="/start-free"]')).toHaveCount(0);
+});
+
+test("courses are unreachable until you sign in", async ({ page }) => {
+  for (const path of [
+    "/certifications",
+    "/certifications/ai-foundations",
+    "/start-free",
+  ]) {
+    await page.goto(path);
+    await expect(page, `${path} must require a session`).toHaveURL(/\/login/);
+  }
 });
 
 test("protected dashboard redirects logged-out visitors to login", async ({

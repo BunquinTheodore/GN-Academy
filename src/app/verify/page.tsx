@@ -8,7 +8,7 @@ import { Label } from "@/components/ui/label";
 export const metadata: Metadata = {
   title: "Verify a credential",
   description:
-    "Check any GN Academy credential code and see exactly what its holder earned — no account needed.",
+    "Check any GN Academy credential code and see exactly what its holder earned. No account needed.",
   alternates: { canonical: "/verify" },
 };
 
@@ -25,7 +25,7 @@ export default function VerifyPage() {
     <PageShell title="Verify a credential">
       <p>
         Every GN Academy credential has a code like{" "}
-        <span className="font-mono text-foreground">CAVA-2026-001248</span> —
+        <span className="font-mono text-foreground">CAVA-2026-001248</span>,
         printed on the certificate and listed on the holder&apos;s CV. Enter it
         below to see the holder, certification, competencies, and status.
       </p>
@@ -49,7 +49,7 @@ export default function VerifyPage() {
 
       <p className="text-sm">
         Verification pages are public and permanent. A revoked credential shows
-        as revoked — it never silently disappears.
+        as revoked. It never silently disappears.
       </p>
     </PageShell>
   );

@@ -22,7 +22,7 @@ export default function GlobalError({
       </h1>
       <p className="max-w-sm text-sm text-muted-foreground">
         The page hit an error and couldn&apos;t load. Your work is saved where
-        possible — try again, and if it keeps failing, come back in a few
+        possible. Try again, and if it keeps failing, come back in a few
         minutes.
       </p>
       <Button onClick={reset}>Try again</Button>

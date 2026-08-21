@@ -1,5 +1,7 @@
 import "server-only";
 
+import { cache } from "react";
+
 import { supabaseAdmin } from "@/lib/supabase/server";
 import type { CompetencyResult } from "@/lib/assessment/scoring";
 
@@ -32,7 +34,12 @@ export async function getCredentialByCode(
   return data;
 }
 
-export async function listCredentialsForUser(
+/**
+ * Deduplicated per request with React's `cache`, for the same reason
+ * `getSessionUser` is: the dashboard layout and the dashboard page both need
+ * this, and every navigation inside the signed-in shell paid for it twice.
+ */
+export const listCredentialsForUser = cache(async function listCredentialsForUser(
   userId: string,
 ): Promise<Credential[]> {
   const { data, error } = await supabaseAdmin()
@@ -42,7 +49,7 @@ export async function listCredentialsForUser(
     .order("issued_at", { ascending: false });
   if (error) throw error;
   return data ?? [];
-}
+})
 
 export async function getCredentialForUserAndCertification(
   userId: string,

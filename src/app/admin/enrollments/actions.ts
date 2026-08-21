@@ -43,7 +43,7 @@ export async function decideEnrollmentAction(formData: FormData): Promise<void> 
     // un-approve a payment the admin has already matched.
     await sendEmail({
       to: enrollment.profiles.email,
-      subject: `Payment confirmed — ${enrollment.certifications?.title ?? "your course"} is open`,
+      subject: `Payment confirmed: ${enrollment.certifications?.title ?? "your course"} is open`,
       react: EnrollmentApprovedEmail({
         studentName:
           enrollment.profiles.full_name?.trim() ||

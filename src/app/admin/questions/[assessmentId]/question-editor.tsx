@@ -30,7 +30,7 @@ function QuestionFields({
         required
         rows={4}
         defaultValue={question?.prompt}
-        hint="Write it as a scenario the learner could actually face — §8 tests decisions, not definitions."
+        hint="Write it as a scenario the learner could actually face. §8 tests decisions, not definitions."
       />
 
       <fieldset className="flex flex-col gap-3">

@@ -29,7 +29,7 @@ export function EnrollmentApprovedEmail({
   return (
     <Html lang="en">
       <Head />
-      <Preview>{`Payment confirmed — ${title} is open`}</Preview>
+      <Preview>{`Payment confirmed: ${title} is open`}</Preview>
       <Body
         style={{ backgroundColor: "#F5F7FA", fontFamily: "Arial, sans-serif" }}
       >

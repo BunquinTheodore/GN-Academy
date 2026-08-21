@@ -28,14 +28,14 @@ export default function DataRequestPage() {
       <p>
         Your account, profile, test attempts, course progress, and lead record
         are deleted outright. Credentials you earned are kept but unlinked from
-        your account — a credential is a public statement we made about your
+        your account. A credential is a public statement we made about your
         competency at a point in time, and employers who checked your code have
         to keep getting an answer. The verification page keeps showing the
         holder name printed on the certificate; nothing ties it back to a login.
       </p>
       <p>
         If you want a credential itself withdrawn, say so in the request and
-        we&apos;ll revoke it — the code then resolves as revoked rather than
+        we&apos;ll revoke it. The code then resolves as revoked rather than
         disappearing.
       </p>
       <p className="text-sm">

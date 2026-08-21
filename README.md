@@ -30,6 +30,8 @@ All six phases are on `main` as of 21 August 2026.
 | 4 — Admin & content | Admin CRUD, blog, SEO, analytics, privacy tooling | ✅ merged to `main` |
 | 5 — Talent layer | Public profiles, portfolio, employer directory | ✅ merged to `main` |
 | 6 — Hardening | Production bug fixes, audit fixes, configuration | ✅ merged to `main` |
+| 7 — Deploy | Live on Vercel, Firebase domains, workflows verified | ✅ merged to `main` |
+| 8 — Curriculum & UI | Chapter quizzes, reviewed assignments, four courses, gated catalogue, dashboard shell, theming | ✅ this session |
 
 `main` is the complete product. Nothing the platform needs in order to
 *function* is missing; what remains before taking money is credentials,
@@ -140,6 +142,8 @@ Analytics stays completely off — no third-party bytes shipped — unless
 | `npm run test:e2e` | Playwright; live flows skip unless `E2E_AUTH=1` |
 | `npm run make-admin -- <email>` | Sets the `admin` custom claim (user must have signed up first) |
 | `npx tsx scripts/apply-migrations.ts [--seed]` | Applies pending migrations, optionally seeds |
+| `npx tsx scripts/seed-courses.ts [slug]` | Loads `supabase/courses/*.json`. Add `--replace-questions` to overwrite question sets (discards `/admin` edits) |
+| `npx tsx scripts/refresh-seed-content.ts [--write]` | Re-applies `seed.sql` text to rows that already exist. Dry run by default |
 
 E2E environment switches: `E2E_AUTH=1` (run live flows), `E2E_DEV=1` (dev
 server instead of a production build), `E2E_PORT` (default 3222),
@@ -777,175 +781,186 @@ watching it fail:
 
 ---
 
-## 21. What this session did (21 August 2026)
+---
 
-Six commits on `phase-5-talent`, merged to `main` as `6c92da7`.
+## 21. Courses, chapter quizzes and reviewed assignments
 
-### 21.1 The production bug that had been mistaken for slowness
+There are two shapes of course, and they end differently.
 
-The talent e2e had been failing on a profile save that sat on a disabled
-"Saving…" button until the test's budget ran out. The previous session read
-that as parallel-worker load. It was not. Running the spec alone with a single
-worker still failed, so it was measured properly against a production build:
+**Exam courses** (the original two: AI Foundations, Certified AI Virtual
+Assistant) end in one final exam. Passing it issues the credential
+automatically. `certifications.requires_assignment` is false.
 
-| Measurement | Result |
-|---|---|
-| Server-side action duration | ~850 ms, in **every** run including the failing ones |
-| Page re-render behind it | ~500 ms, completed |
-| Browser | 200 + `text/x-component`, body never finishes, button stays disabled |
-| With all three `revalidatePath` calls removed | 4 of 4 pass |
-| With a single call restored, on an unrelated fully dynamic route | 2 of 3 fail |
-| Under `next dev` | never reproduces |
+**Assignment courses** (the five newer ones) have a quiz attached to each
+chapter and end in a written assignment that a human reads. The credential is
+released when a reviewer approves it, not when a score crosses a line.
 
-**Any server action that calls `revalidatePath` and returns state to
-`useActionState` hangs the client in a production build.** Every admin editor
-did exactly that, so *the whole admin area was broken in production* — and the
-suite never noticed, because no test had ever submitted an admin form. They
-only read admin pages and asserted 404s.
+### The learner's path through an assignment course
 
-Fixed by removing `revalidatePath` from every state-returning action:
+1. Read a chapter's lessons. Finishing the last one leads **into that chapter's
+   quiz**, not into the next chapter.
+2. Pass the quiz. Chapter quizzes are formative: unlimited retakes, and passing
+   one never issues anything.
+3. Repeat for all four chapters.
+4. The assignment unlocks only once every lesson is read and every chapter quiz
+   passed. That gate is enforced in the server action, not just on the page,
+   because a page is not a gate and the review queue is the expensive part.
+5. Submit. A reviewer approves, requests changes, or fails it. Returning work
+   requires a written note, since it is the only feedback the learner gets.
+6. Approval issues the credential and emails it.
 
-- Calls targeting fully dynamic routes (`/dashboard/*`, `/admin/*`,
-  `/talent/[username]`, `/employers`, `/verify/[code]`) were **no-ops** and
-  were deleted.
-- Calls that genuinely mattered (`/certifications`, `/certifications/[slug]`,
-  `/blog/[slug]`, `/ai-test/quiz`, `/sitemap.xml`) are returned as
-  `AdminFormState.revalidate` and purged by `AdminForm` through the new
-  admin-only `POST /api/revalidate`, fired after the save has succeeded.
-- Admin create/delete actions return `redirectTo` instead of calling
-  `redirect()` — the same workaround the lesson player already used.
-- New e2e: **an admin writes, publishes, and edits a post through the real
-  UI**, and a logged-out stranger reads it immediately. This is the test whose
-  absence hid the bug.
-- Profile saves measured **5/5 at 0.9–2.0 s** afterwards.
+### Where a credential can be issued
 
-### 21.2 Nine more defects, found by a multi-agent audit and each verified
+`src/lib/credentials/issue.ts` — `maybeIssueCredential()` — and nowhere else.
+Both routes to a certificate (an exam pass, and an assignment approval) call
+it, and it re-reads enrollment, the approved submission and any existing
+credential from the database rather than trusting its caller. Duplicating those
+conditions across two call sites is how a credential eventually reaches
+somebody who did not earn it.
 
-- **A rejected paid enrollment could never be re-submitted.** The retry path
-  existed on purpose, but `createEnrollment` was a plain insert against a
-  unique constraint, so a mistyped payment reference locked a paying customer
-  out permanently behind "try again". Now an upsert.
-- **Ticking "list me in the employer directory" without a credential threw the
-  whole profile edit away** while the message claimed it had been saved. It
-  now saves everything and holds back only the tick.
-- **A rejected enrollment rendered as an active course** with a progress bar
-  and a "Start learning" button that led nowhere. It now explains itself and
-  offers a re-submit.
-- **The exam result screen claimed "your credential is live" on any pass**,
-  including passes where no credential was issued.
-- **Two concurrent submissions of one exam attempt could both issue a
-  credential.** `completeAttempt` is now the claim on the attempt — it writes
-  under `completed_at is null` and returns whether it won; the loser gets 409.
-- **`POST /api/attempts` accepted any published assessment slug**, including
-  paid certification exams, so the enrollment and three-attempt checks were
-  one POST away from being skipped. Diagnostic only now.
-- **Account erasure left the avatar and portfolio images public** at stable
-  URLs. Storage folders are deleted first, before `portfolio_items` cascades
-  away and nothing records which files were whose.
-- **Migration 0006 drops the two RLS policies that let a signed-in browser
-  write directly** (`profiles` update, `attempts` insert). The app has never
-  used them and they bypassed every server-side validation. **Already applied
-  to the live database.**
-- **Dead-end messages** ("email us", "our payment instructions page") now name
-  a real address.
+For an assignment course, which has no final exam to score, the credential's
+competency breakdown is computed from the learner's best attempt at each
+chapter quiz. A credential with no breakdown is worth noticeably less to the
+employer reading it.
 
-Also: `getSessionUser` is wrapped in React `cache()`, so a request makes one
-revocation round trip to Google instead of three.
+### Course content lives in files
 
-### 21.3 Two "needs a developer" items became configuration
+`supabase/courses/*.json` is the authored source. Load it with:
 
-- GCash/Maya receiving details are `NEXT_PUBLIC_PAYMENT_*` (§13). A channel
-  renders only when both its name and its number are set.
-- The email sender is `RESEND_FROM`, defaulting to Resend's sandbox address.
+```
+npx tsx scripts/seed-courses.ts                 # every course
+npx tsx scripts/seed-courses.ts ai-essentials   # one
+```
 
-### 21.4 The last measurement, and where it stopped
+Idempotent and deliberately conservative. Courses, chapters and lesson text are
+refreshed on every run; **quiz questions are inserted only when a chapter quiz
+has none**, so an admin's edits in `/admin` survive a reseed. Nothing is ever
+deleted. Chapters are matched on `slug` and lessons on `(module_id, slug)`.
 
-A full live suite ran at **62 passed / 2 failed**. Both failures were the same
-test — *"enroll free, finish lessons, pass exam, verify credential publicly"* —
-on both viewports, at a lesson-to-lesson navigation, with the button stuck on
-"Saving…". It reproduced alone with one worker, so it was a real regression,
-not load.
+> Chapters are matched on slug for a reason. They used to be matched on title,
+> and renaming a chapter then inserted a *second* module and re-created its
+> lessons as new rows, silently resetting every enrolled learner's progress for
+> that chapter and re-locking their assignment. Migration 0008 added
+> `modules.slug` to give a chapter a stable identity.
 
-Bisected on one build with a runtime toggle: **`router.refresh()` called
-immediately after `router.push()` inside the same transition** was one cause —
-the same family as §21.1. Removing it took the desktop run from failing to
-passing-on-retry, and the journey passed in 36.4 s when run alone.
+### Writing course content
 
-It was not the whole story. The suite still failed the journey under load, so
-it was measured again:
+Three rules, each of which was learned by an adversarial review catching a
+draft that broke it:
 
-| Configuration | Result |
-|---|---|
-| Journey alone, one worker, either viewport | passes, ~33 s |
-| Full suite, 3 workers | fails |
-| Full suite, 2 workers | still fails — so not simple queueing |
-
-Concurrency of any kind was enough. The remaining cause was the server-action
-transport itself: an action's response carries a re-render of the current
-route, and that stream stalls under concurrency even when the action's own
-work is finished. **Lesson completion was moved off server actions entirely**
-to `POST /api/lessons/[lessonId]/complete`, which answers with JSON — no
-transition to commit, no re-render riding on the response.
-
-Result: **64 of 64, no flakes**, and the whole suite went from 5.1 minutes to
-2.2 minutes.
+1. **Never invent a statistic.** No "half of all AI mistakes", no "70% of the
+   work", no "nine times out of ten". If a number would help and you do not
+   know it, describe the shape instead.
+2. **Never describe a product feature you cannot verify.** This matters most in
+   the Claude course. Prices, plan tiers, limits, and named buttons all change
+   or were never true.
+3. **Quiz options must all be roughly the same length, and the answer key must
+   be spread across a, b, c and d.** Drafts consistently made the correct answer
+   the longest option, which lets a test-wise learner score well having read
+   nothing. That would hollow out the credential the whole product rests on.
+   Measured on what shipped: correct-is-longest in about 11% of questions,
+   below the 25% that guessing would give.
 
 ---
 
-## 22. What is left to do
+## 22. The public site is a sales page; courses are behind the login
 
-In order.
+`/certifications`, `/certifications/[slug]` and `/start-free` all require a
+session and redirect to `/login?next=…`. The landing page describes what is
+sold and links only to sign-up and sign-in — it contains no link into the
+catalogue at all, which `tests/e2e/public-pages.spec.ts` asserts.
 
-1. ~~Re-run the full suite.~~ **Done — 64/64, no flakes, 2.2 min.**
-2. ~~Commit and push.~~ **Done — six commits, pushed.** For the record:
-   - `fix: server actions that revalidate never finish in production` —
-     `src/components/admin/admin-form.tsx`, `src/app/api/revalidate/`, the
-     seven `src/app/admin/**/actions.ts` files,
-     `tests/e2e/content-admin.spec.ts`
-   - `fix: navigation after a lesson never completed in production` —
-     `src/app/dashboard/learn/[lessonId]/complete-lesson-button.tsx`
-   - `fix: correctness defects found by a full-codebase audit` —
-     `src/lib/db/{enrollments,attempts}.ts`, both attempt-completion routes,
-     `src/app/api/attempts/route.ts`,
-     `src/app/api/exams/[slug]/attempts/route.ts`,
-     `src/lib/account/delete.ts`, `src/app/dashboard/courses/page.tsx`,
-     `src/app/dashboard/assessments/[slug]/exam-player.tsx`,
-     `src/app/dashboard/profile/actions.ts`, `src/app/privacy/page.tsx`,
-     `src/content/site.ts`,
-     `supabase/migrations/0006_tighten_write_policies.sql`,
-     `tests/e2e/talent-flow.spec.ts`
-   - `feat: payment and email sender details are configuration` —
-     `src/lib/payment.ts`, `src/app/certifications/[slug]/enroll/page.tsx`,
-     `src/lib/email/send.ts`, `.env.example`
-   - `perf: verify the session cookie once per request` —
-     `src/lib/auth/session.ts`
-   - `docs: README as the complete reference; phase 6 state` — the `.md` files
-3. ~~Merge `phase-5-talent` into `main`.~~ **Done — `6c92da7`, pushed.**
-4. **Re-measure Lighthouse on a quiet machine** across the public routes,
-   including `/employers`, `/talent/[username]`, and `/companies`. Everything
-   measured so far has been about ten points below its known-quiet value, the
-   control included, so the absolute numbers are still unconfirmed. Use the
-   paired-control method in `DECISIONS.md`. Lighthouse 13.4.1 runs from
-   `npx lighthouse`. A public talent profile has to exist for that route —
-   insert a temporary profile plus credential with the service role, measure,
-   then delete both.
-5. **Decide on `npm audit`.** 9 vulnerabilities, 3 high, all reached through
-   the build toolchain: `postcss` and `sharp` via `next`, `uuid` via
-   `firebase-admin`. None is runtime attack surface here — `next/image` is
-   never used, so sharp never runs. `npm audit fix --force` would move Next to
-   16 and *downgrade* firebase-admin. The non-breaking route is npm
-   `overrides` pinning `postcss@^8.5.26`, `sharp@^0.35.3`, `uuid@^11.1.1`;
-   verify and re-run `auth-flow.spec.ts` afterwards, because the uuid override
-   sits under firebase-admin.
-6. **Work the launch checklist** (§18). Items 2, 4, 7 and 8 are the ones that
-   actually gate taking money.
+Consequences worth knowing:
 
-### Known gaps deliberately left alone
+- Course pages are **out of the sitemap** and disallowed in `robots.txt`.
+  Listing a URL that answers with a redirect wastes crawl budget and puts a
+  dead result in front of whoever finds it.
+- `/certifications/[slug]` lost its `generateStaticParams` and ISR window. It
+  was prerendered and public; it is now `force-dynamic` and per-learner.
+- **This costs organic discovery.** Course pages used to be indexable, with OG
+  cards and `Course` JSON-LD. That was traded for the gate deliberately, at the
+  client's request. The AI Readiness Test at `/ai-test` is still public and is
+  now the only free entry point a stranger can reach.
 
-- No site-wide default OG image. Certifications, blog posts, and test results
-  each have one; the homepage and the marketing pages do not.
-- `lesson_progress` still carries an insert policy the app does not use. It is
-  harmless — the worst a caller could do is mark their own lesson complete —
-  and it was left out of migration 0006 rather than bundled in unmeasured.
-- Course content is the seeded curriculum only, and no lesson has a video.
-  `lessons.video_url` exists and is unused.
+Landing copy is data, in `src/content/landing.ts`. A non-developer edits it.
+
+### Motion
+
+`motion` v13 (the library formerly called framer-motion), wrapped in
+`src/components/motion/reveal.tsx` so the whole page moves the same way.
+`Reveal`, `Stagger`/`StaggerItem`, and a slow `AuroraBackdrop` behind the hero.
+
+Two rules hold it together: nothing travels more than a few pixels, and every
+animation collapses to a plain fade under `prefers-reduced-motion`. The second
+is not decoration — for some people parallax and long travel cause actual
+nausea.
+
+> `npm create @motion-script@latest` does not exist on npm, and `npm create`
+> scaffolds a new project rather than adding to this one. `motion` is the real
+> package.
+
+### Theming
+
+`next-themes` was already a dependency but nothing was wired to it.
+`ThemeProvider` sits in the root layout with `attribute="class"`, which is what
+the `@custom-variant dark` rule in `globals.css` keys off. `<html>` carries
+`suppressHydrationWarning`, because next-themes sets that class before React
+hydrates and the markup differs by design.
+
+The toggle is three-way: light, dark, **system**. System is a real option
+rather than a hidden default — a phone that switches at sunset should take the
+site with it, and someone who set that up should be able to see it is being
+honoured. The control renders nothing until mounted, since the server cannot
+know which theme to highlight.
+
+---
+
+## 23. The signed-in shell
+
+`src/app/dashboard/layout.tsx` is a persistent sidebar (START / PROGRAM /
+CONNECT) carrying live state: profile completeness as a percentage, a count of
+active courses, a count of credentials. It collapses to a scrollable top bar
+below `lg`, because a 240px rail on a 360px screen is not navigation.
+
+`/dashboard` shows one card per enrolled course with a status badge and **the
+single next action** for it — Not started, In progress, Quizzes left,
+Assignment ready, Under review, Changes requested, Exam ready, Certified. The
+question someone opens that page with is "what do I do now", so each card
+answers exactly that rather than offering a menu.
+
+Profile completeness lives in `src/lib/dashboard/completeness.ts` and counts
+only fields an employer reads. Location is excluded because it defaults to
+"Philippines" for everyone, and showing 20% to someone who has filled in
+nothing is worse than useless as a prompt.
+
+---
+
+## 24. No em dashes in user-facing text
+
+The client's objection is that the em dash reads as machine-written, and they
+are right that it is a tell. 250 of them were removed from `src` and
+`supabase/seed.sql`, and every course file was rewritten to drop them.
+
+`tests/unit/no-em-dashes.test.ts` fails the build if one comes back.
+
+Two things about the rule:
+
+- **Removing one is a rewrite, not a replacement.** Swapping `—` for `-` is
+  just as obvious a tell, and a comma splice reads worse than the dash did.
+  Two complete thoughts usually want a full stop; an explanation usually wants
+  a colon; an aside usually wants commas or cutting.
+- **Developer comments are exempt**, and the test skips them. The request was
+  about text a user reads, and several comments here use dashes while
+  explaining decisions that cost real time to work out.
+- **The test scans `scripts/` too, not just `src/`.** It did not at first, and
+  `scripts/seed-courses.ts` built a chapter quiz title as `${mod.title} —
+  chapter quiz` and wrote it into `assessments.title`, where learners read it
+  on their courses page. The guard was green the whole time.
+  `scripts/refresh-seed-content.ts` is exempt by name, because finding em
+  dashes is what it does.
+
+Checking the live database means checking **every** table, not the four that
+hold obvious prose. The first sweep queried `questions`, `lessons`, `posts` and
+`certifications`, reported clean, and left eighteen em dashes sitting in
+`assessments.title`. The honest query walks `information_schema` and tests
+`to_jsonb(t)::text` per table.

@@ -1,14 +1,20 @@
 /**
  * Loads course content from supabase/courses/*.json into the database.
  *
- *   npx tsx scripts/seed-courses.ts               # load every file
- *   npx tsx scripts/seed-courses.ts ai-essentials # load one
+ *   npx tsx scripts/seed-courses.ts                    # load every file
+ *   npx tsx scripts/seed-courses.ts ai-essentials      # load one
+ *   npx tsx scripts/seed-courses.ts --replace-questions # see the warning below
  *
  * Idempotent, and deliberately conservative about what it overwrites. Courses,
  * chapters and lesson text are the authored source and get refreshed on every
  * run. Quiz questions are inserted only when a chapter quiz has none, matching
- * how supabase/seed.sql already behaves — otherwise an admin's edits in /admin
+ * how supabase/seed.sql already behaves. Otherwise an admin's edits in /admin
  * would be silently reverted the next time someone ran a seed.
+ *
+ * --replace-questions overrides that and rewrites the question set from the
+ * file. It DISCARDS anything edited in /admin, so it is opt-in and loud. Use it
+ * when the authored questions themselves changed, which so far has meant a
+ * copy edit across every course at once.
  *
  * Nothing is deleted. Lessons are matched on (module_id, slug), which is a
  * unique constraint, so re-running never orphans a learner's progress.
@@ -78,7 +84,11 @@ function client(): SupabaseClient {
   return createClient(url, key, { auth: { persistSession: false } });
 }
 
-async function loadCourse(db: SupabaseClient, course: CourseFile) {
+async function loadCourse(
+  db: SupabaseClient,
+  course: CourseFile,
+  replaceQuestions: boolean,
+) {
   console.log(`\n── ${course.title} (${course.slug})`);
 
   const { data: cert, error: certError } = await db
@@ -176,7 +186,7 @@ async function loadCourse(db: SupabaseClient, course: CourseFile) {
           slug: quizSlug,
           certification_id: cert.id,
           module_id: moduleId,
-          title: `${mod.title} — chapter quiz`,
+          title: `${mod.title}: chapter quiz`,
           type: "chapter",
           passing_score: 70,
           question_count: mod.quiz.length,
@@ -195,7 +205,57 @@ async function loadCourse(db: SupabaseClient, course: CourseFile) {
       .select("id", { count: "exact", head: true })
       .eq("assessment_id", quiz.id);
 
-    if ((count ?? 0) === 0) {
+    // Rewriting the wording of an existing question set must not change the
+    // question ids. `attempts.answers` stores the id of every question a
+    // learner answered and there is no foreign key behind it, so deleting and
+    // re-inserting scores an in-flight attempt as zero and burns one of the
+    // learner's allowed tries. When the file still has the same number of
+    // questions, which is what a copy edit looks like, update them in place by
+    // sort_order and leave the ids alone. `scripts/refresh-seed-content.ts`
+    // avoids the same trap for the same reason.
+    const sameShape = replaceQuestions && (count ?? 0) === mod.quiz.length;
+
+    if (sameShape) {
+      const { data: existing, error: readError } = await db
+        .from("questions")
+        .select("id, sort_order")
+        .eq("assessment_id", quiz.id)
+        .order("sort_order");
+      if (readError) throw readError;
+
+      for (const [qi, q] of mod.quiz.entries()) {
+        const row = existing?.find((r) => r.sort_order === qi + 1);
+        if (!row) continue;
+        const { error } = await db
+          .from("questions")
+          .update({
+            prompt: q.prompt,
+            options: q.options,
+            correct_option_id: q.correct_option_id,
+            competency: q.competency,
+            explanation: q.explanation,
+          })
+          .eq("id", row.id);
+        if (error) throw error;
+      }
+      console.log(
+        `   chapter ${index + 1}: ${mod.lessons.length} lessons, ${mod.quiz.length} questions rewritten in place`,
+      );
+    }
+
+    if (replaceQuestions && !sameShape && (count ?? 0) > 0) {
+      // The question count changed, so there is no safe positional match.
+      console.warn(
+        `   chapter ${index + 1}: question count changed (${count} in the database, ${mod.quiz.length} in the file). Replacing them, which invalidates any attempt still in progress on this quiz.`,
+      );
+      const { error } = await db
+        .from("questions")
+        .delete()
+        .eq("assessment_id", quiz.id);
+      if (error) throw error;
+    }
+
+    if (!sameShape && (replaceQuestions || (count ?? 0) === 0)) {
       const rows = mod.quiz.map((q, qi) => ({
         assessment_id: quiz.id,
         prompt: q.prompt,
@@ -232,7 +292,9 @@ async function loadCourse(db: SupabaseClient, course: CourseFile) {
 }
 
 async function main() {
-  const only = process.argv[2];
+  const args = process.argv.slice(2);
+  const replaceQuestions = args.includes("--replace-questions");
+  const only = args.find((a) => !a.startsWith("--"));
   const files = readdirSync(COURSES_DIR).filter((f) => f.endsWith(".json"));
   const chosen = only ? files.filter((f) => f.startsWith(only)) : files;
 
@@ -242,9 +304,14 @@ async function main() {
   }
 
   const db = client();
+  if (replaceQuestions) {
+    console.log(
+      "--replace-questions: existing quiz questions will be deleted and rewritten from the files.",
+    );
+  }
   for (const file of chosen) {
     const course = JSON.parse(readFileSync(join(COURSES_DIR, file), "utf8")) as CourseFile;
-    await loadCourse(db, course);
+    await loadCourse(db, course, replaceQuestions);
   }
   console.log("\nAll done.");
 }

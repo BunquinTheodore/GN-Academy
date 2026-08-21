@@ -52,7 +52,7 @@ export function WelcomeEmail({
           <Section>
             <Text style={{ color: "#5A6B82", fontSize: 14 }}>
               Your result page has the full breakdown and what to work on
-              first. It&apos;s yours to share — but remember, this score is
+              first. It&apos;s yours to share, but remember that this score is
               unverified. Employers can only see credentials.
             </Text>
             <Link

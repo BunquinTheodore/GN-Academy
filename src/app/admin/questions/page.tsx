@@ -31,7 +31,7 @@ export default async function AdminQuestionsPage() {
         <h1 className="font-display text-2xl font-semibold">Question sets</h1>
         <p className="mt-1 max-w-prose text-sm text-muted-foreground">
           The AI Readiness Test and every certification exam. Edited questions
-          take effect for the next person who starts — correct answers never
+          take effect for the next person who starts. Correct answers never
           leave the server.
         </p>
       </div>

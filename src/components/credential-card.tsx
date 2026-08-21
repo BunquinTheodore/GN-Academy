@@ -56,9 +56,9 @@ export function CredentialCard({
       )}
       aria-label={
         state === "locked"
-          ? "Locked credential — not yet verified"
+          ? "Locked credential, not yet verified"
           : state === "goal"
-            ? "Credential goal — not yet earned"
+            ? "Credential goal, not yet earned"
             : `Credential: ${title}, ${holderName}`
       }
     >
@@ -144,7 +144,7 @@ export function CredentialCard({
               Credential code
             </p>
             <p className="font-mono text-sm tracking-wider">
-              {credentialCode ?? "— — — —"}
+              {credentialCode ?? "•••• •••• ••••"}
             </p>
           </div>
           {issued && (
@@ -164,7 +164,7 @@ export function CredentialCard({
 
         {state === "locked" && (
           <p className="border-t border-border pt-4 text-sm font-medium text-foreground">
-            Your score is unverified — employers can&apos;t see it.
+            Your score is unverified. Employers can&apos;t see it.
           </p>
         )}
         {state === "goal" && (

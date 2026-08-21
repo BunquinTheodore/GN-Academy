@@ -26,7 +26,7 @@ const USERNAME = z
   .max(30)
   .regex(
     /^[a-z0-9](?:[a-z0-9-]{1,28}[a-z0-9])$/,
-    "Lowercase letters, numbers, and hyphens only — and it can't start or end with a hyphen.",
+    "Lowercase letters, numbers, and hyphens only. It can't start or end with a hyphen.",
   );
 
 const profileSchema = z.object({
@@ -116,7 +116,7 @@ export async function saveProfileAction(
 
   if (heldBack) {
     return {
-      ok: "Saved as private. Public profiles list verified talent, so yours opens the day you hold an active credential — nothing you typed is lost.",
+      ok: "Saved as private. Public profiles list verified talent, so yours opens the day you hold an active credential. Nothing you typed is lost.",
     };
   }
 
@@ -125,7 +125,7 @@ export async function saveProfileAction(
   return {
     ok: is_public
       ? "Saved. Your public profile is up to date."
-      : "Saved. Your profile is private — only you can see it.",
+      : "Saved. Your profile is private: only you can see it.",
   };
 }
 

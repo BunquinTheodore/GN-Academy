@@ -70,7 +70,7 @@ export function CompleteLessonButton({
         ) : isDone ? (
           <>
             <CheckCircle2 className="size-4" aria-hidden />
-            Completed — next lesson
+            Completed: next lesson
           </>
         ) : (
           "Mark complete and continue"

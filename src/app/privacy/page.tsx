@@ -11,7 +11,7 @@ const sections = [
   {
     heading: "What we collect",
     body: [
-      "Account details: name, email address, and — if you choose to add it — a mobile number, profile photo, headline, skills, and portfolio items.",
+      "Account details: name and email address, plus a mobile number, profile photo, headline, skills, and portfolio items if you choose to add them.",
       "Assessment data: your answers, scores, and competency breakdowns from the AI Readiness Test and certification exams. If you take the test without an account, we store the attempt against an anonymous browser identifier, plus your email if you choose to give it.",
       "Payment references: for certification enrollments we store the payment method, reference number, and amount. We never see or store card numbers or wallet credentials.",
       "Technical data: we store a salted hash of your IP address for rate limiting and abuse prevention. We do not store raw IP addresses.",
@@ -29,7 +29,7 @@ const sections = [
     body: [
       "Account and profile data: for as long as your account exists, then deleted on request or account deletion.",
       "Anonymous test attempts not linked to an account: up to 24 months, then deleted.",
-      "Issued credentials: retained permanently as issued records, because employers rely on them — but on account deletion they are unlinked from your personal data.",
+      "Issued credentials: retained permanently as issued records, because employers rely on them. On account deletion they are unlinked from your personal data.",
     ],
   },
   {
@@ -41,7 +41,7 @@ const sections = [
   {
     heading: "Your rights",
     body: [
-      "Under the Data Privacy Act of 2012 (RA 10173) you may access, correct, or delete your personal data, object to processing, and withdraw consent. Use the form at /data-request or email gnclub.contactus@gmail.com — we respond within 15 working days.",
+      "Under the Data Privacy Act of 2012 (RA 10173) you may access, correct, or delete your personal data, object to processing, and withdraw consent. Use the form at /data-request or email gnclub.contactus@gmail.com. We respond within 15 working days.",
     ],
   },
   {
@@ -56,7 +56,7 @@ export default function PrivacyPage() {
   return (
     <PageShell title="Privacy policy">
       <p className="rounded-md border border-verified/40 bg-verified/5 p-4 text-sm text-foreground">
-        Draft — pending legal review. Last updated 18 August 2026.
+        Draft, pending legal review. Last updated 18 August 2026.
       </p>
       {sections.map((s) => (
         <section key={s.heading}>

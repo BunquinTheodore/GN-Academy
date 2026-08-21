@@ -35,7 +35,7 @@ export async function decideCredentialAction(
   if (decision === "revoke" && (!reason || reason.length < 10)) {
     return {
       error:
-        "Give a reason of at least 10 characters — it is shown publicly on the verification page.",
+        "Give a reason of at least 10 characters. It is shown publicly on the verification page.",
     };
   }
 

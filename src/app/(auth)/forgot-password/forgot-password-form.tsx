@@ -43,8 +43,8 @@ export function ForgotPasswordForm() {
         <h1 className="font-display text-2xl font-semibold">Check your email</h1>
         <p className="text-sm text-muted-foreground">
           If an account exists for <span className="font-medium text-foreground">{sentTo}</span>,
-          a reset link is on its way. It can take a minute or two to arrive —
-          check spam too.
+          a reset link is on its way. It can take a minute or two to arrive, so
+          check your spam folder too.
         </p>
         <Button asChild variant="outline" className="h-11 w-full">
           <Link href="/login">Back to sign in</Link>

@@ -229,10 +229,20 @@ export function Quiz({ assessmentSlug, questions }: QuizProps) {
       )}
 
       <fieldset className="flex flex-col gap-4">
-        <legend className="font-display text-lg leading-snug font-semibold text-balance sm:text-xl">
+        <legend id={`prompt-${question.id}`} className="font-display text-lg leading-snug font-semibold text-balance sm:text-xl">
           {question.prompt}
         </legend>
-        <div className="mt-2 flex flex-col gap-2.5" role="radiogroup">
+        {/*
+          Named by the question itself, so a screen reader entering the
+          group hears what it is answering. It also separates these radios
+          from the theme toggle, which is a radiogroup too and sits in the
+          same page.
+        */}
+        <div
+          className="mt-2 flex flex-col gap-2.5"
+          role="radiogroup"
+          aria-labelledby={`prompt-${question.id}`}
+        >
           {question.options.map((option) => {
             const isSelected = selected === option.id;
             return (

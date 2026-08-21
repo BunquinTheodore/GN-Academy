@@ -39,7 +39,7 @@ export default async function AdminAssignmentsPage({
         <h1 className="font-display text-2xl font-semibold">Assignments</h1>
         <p className="mt-1 text-sm text-muted-foreground">
           Approving one issues the learner&apos;s credential and emails them.
-          Sending it back needs a note — it is the only feedback they get.
+          Sending it back needs a note, since it is the only feedback they get.
         </p>
       </div>
 
@@ -94,7 +94,7 @@ export default async function AdminAssignmentsPage({
                   </p>
                   <ul className="mt-1.5 flex flex-col gap-1 text-xs text-muted-foreground">
                     {s.assignments.criteria.map((c) => (
-                      <li key={c}>— {c}</li>
+                      <li key={c}>• {c}</li>
                     ))}
                   </ul>
                 </div>

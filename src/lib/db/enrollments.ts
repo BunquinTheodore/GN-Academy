@@ -1,5 +1,7 @@
 import "server-only";
 
+import { cache } from "react";
+
 import { supabaseAdmin } from "@/lib/supabase/server";
 
 export type EnrollmentStatus = "pending" | "active" | "completed" | "rejected";
@@ -32,7 +34,12 @@ export async function getEnrollment(
   return data;
 }
 
-export async function listEnrollmentsForUser(
+/**
+ * Deduplicated per request with React's `cache`, for the same reason
+ * `getSessionUser` is: the dashboard layout and the dashboard page both need
+ * this, and every navigation inside the signed-in shell paid for it twice.
+ */
+export const listEnrollmentsForUser = cache(async function listEnrollmentsForUser(
   userId: string,
 ): Promise<Enrollment[]> {
   const { data, error } = await supabaseAdmin()
@@ -42,7 +49,7 @@ export async function listEnrollmentsForUser(
     .order("enrolled_at", { ascending: false });
   if (error) throw error;
   return data ?? [];
-}
+})
 
 /**
  * Free certifications activate instantly; paid ones start pending (§17).

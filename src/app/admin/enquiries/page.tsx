@@ -45,7 +45,7 @@ export default async function AdminEnquiriesPage() {
         <h1 className="font-display text-2xl font-semibold">Enquiries</h1>
         <p className="mt-1 max-w-prose text-sm text-muted-foreground">
           Employers asking about specific talent, or about a role in general.
-          Reply from your own inbox — this queue is a record, not a mailbox.
+          Reply from your own inbox. This queue is a record, not a mailbox.
         </p>
       </div>
 

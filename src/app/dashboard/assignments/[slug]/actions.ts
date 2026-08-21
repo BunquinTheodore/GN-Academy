@@ -94,6 +94,6 @@ export async function submitAssignmentAction(
   }
 
   return {
-    ok: "Submitted. A reviewer reads it and you'll hear back either way — usually within a few days.",
+    ok: "Submitted. A reviewer reads it and you'll hear back either way, usually within a few days.",
   };
 }

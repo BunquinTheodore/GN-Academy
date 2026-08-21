@@ -47,7 +47,7 @@ export default async function QuizPage() {
               The test couldn&apos;t load
             </h1>
             <p className="text-muted-foreground">
-              Something went wrong on our side — your connection is fine.
+              Something went wrong on our side. Your connection is fine.
               Reload the page to try again; nothing you&apos;ve done is lost.
             </p>
           </div>

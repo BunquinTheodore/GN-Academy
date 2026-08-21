@@ -139,7 +139,7 @@ export function ExamPlayer({
           </div>
           <h1 className="font-display mt-3 text-xl font-semibold">
             {!result.passed
-              ? `Not this time — the pass mark is ${result.passingScore}%.`
+              ? `Not this time. The pass mark is ${result.passingScore}%.`
               : isChapterQuiz
                 ? "Chapter passed."
                 : result.credentialCode
@@ -149,16 +149,16 @@ export function ExamPlayer({
           <p className="mt-2 text-sm text-muted-foreground">
             {!result.passed
               ? isChapterQuiz
-                ? "Retake it as many times as you like — this one is for learning, not for gatekeeping. Review the weak areas below first."
+                ? "Retake it as many times as you like. This one is for learning, not for gatekeeping. Review the weak areas below first."
                 : "Review the lessons for your weakest areas below, then use another attempt when you're ready."
               : isChapterQuiz
                 ? "On to the next chapter. Your certificate comes from the final assignment, once all the chapters are done."
                 : result.credentialCode
-                  ? "It's already publicly verifiable — the code below is yours permanently."
+                  ? "It's already publicly verifiable, and the code below is yours permanently."
                   : // A pass without a code means the credential already exists,
                     // or the enrollment is not active yet. Never claim a public
                     // page that the holder cannot open.
-                    "Your score is recorded. Check your credentials page for the certificate — if it isn't there yet, your enrollment is still awaiting confirmation."}
+                    "Your score is recorded. Check your credentials page for the certificate. If it isn't there yet, your enrollment is still awaiting confirmation."}
           </p>
         </div>
 
@@ -244,10 +244,20 @@ export function ExamPlayer({
       )}
 
       <fieldset className="flex flex-col gap-4">
-        <legend className="font-display text-lg leading-snug font-semibold text-balance">
+        <legend id={`prompt-${question.id}`} className="font-display text-lg leading-snug font-semibold text-balance">
           {question.prompt}
         </legend>
-        <div className="mt-2 flex flex-col gap-2.5" role="radiogroup">
+        {/*
+          Named by the question itself, so a screen reader entering the
+          group hears what it is answering. It also separates these radios
+          from the theme toggle, which is a radiogroup too and sits in the
+          same page.
+        */}
+        <div
+          className="mt-2 flex flex-col gap-2.5"
+          role="radiogroup"
+          aria-labelledby={`prompt-${question.id}`}
+        >
           {question.options.map((option) => {
             const isSelected = selected === option.id;
             return (

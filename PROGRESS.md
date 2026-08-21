@@ -173,3 +173,50 @@ submitted an admin form — they only read admin pages. Fixed:
 
 See `BLOCKED.md` and README §18: analytics account, Resend domain, payment
 account details, legal review, brand wording, hosting, and the first cohort.
+
+## Phase 7 — Deployed — COMPLETE
+
+- [x] Live at https://gn-academy-phi.vercel.app (Vercel Hobby, at the client's
+      instruction; their terms bar commercial use, which is a live risk once
+      money changes hands)
+- [x] NEXT_PUBLIC_SITE_URL corrected from localhost, so the sitemap, OG cards
+      and credential email links point at the real origin
+- [x] Firebase authorized domains added via the Identity Toolkit admin API,
+      without which every sign-in on the live domain fails
+- [x] jose pinned to v5: firebase-admin depends on jwks-rsa, which `require()`s
+      an ESM-only jose 6. Next keeps firebase-admin external, so every
+      authenticated route 500'd in production while passing locally
+- [x] Repo secrets set; keep-alive and backup workflows dispatched and verified
+- [x] The weekly backup had never once produced a backup. Wrong pg_dump major
+      version, and `pg_dump | gzip` exited with gzip's status so it reported
+      success while archiving 170 bytes of nothing. Now produces ~80 KB
+- [x] Production smoke test: 9/9, including sign-up on the live domain and the
+      GCash QR rendering on the enroll page
+
+## Phase 8 — Curriculum and UI — COMPLETE
+
+- [x] Migration 0007: chapter quizzes, assignments, assignment_submissions,
+      certifications.requires_assignment
+- [x] Migration 0008: modules.slug, so renaming a chapter stops forking the
+      module and resetting learners' progress
+- [x] maybeIssueCredential(): the single place a credential is released, with
+      every prerequisite re-read from the database
+- [x] Learner flow: chapter quiz after each chapter (unlimited retakes), then
+      an assignment gated on all lessons read and all quizzes passed
+- [x] Admin review queue; approving issues the credential and emails it,
+      returning work requires a written note
+- [x] Four new courses, text only: AI Essentials for Work, AI-Powered Digital
+      Marketing, AI Social Media Management, Prompt Engineering with Claude.
+      About 37,000 words, 128 questions, four assignments
+- [x] Public site is now a sales page; catalogue behind the login, out of the
+      sitemap and disallowed in robots
+- [x] Motion on the landing page (motion v13), reduced-motion respected
+- [x] Signed-in shell: persistent sidebar with live state, per-course status
+      cards carrying one next action each
+- [x] Light / dark / system theme toggle
+- [x] Every em dash removed from user-facing text: 250 in the app and seed,
+      every course file rewritten, live database refreshed, guarded by a test
+- [x] Fixed by /code-review before shipping: scoreAttempt weighted absent
+      competencies as zero, which made one course's credential mathematically
+      unobtainable, plus nine other defects
+

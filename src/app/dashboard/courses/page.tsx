@@ -108,7 +108,7 @@ export default async function CoursesPage() {
               <CardContent className="flex flex-col gap-4">
                 {enrollment.status === "pending" ? (
                   <p className="text-sm text-muted-foreground">
-                    We&apos;re matching your payment reference — usually within
+                    We&apos;re matching your payment reference, usually within
                     24 hours. You&apos;ll get an email the moment it clears.
                   </p>
                 ) : enrollment.status === "rejected" ? (
@@ -118,7 +118,7 @@ export default async function CoursesPage() {
                     <p className="text-sm text-muted-foreground">
                       We couldn&apos;t match a payment to this enrollment. If
                       you paid, submit it again with the reference number from
-                      your receipt — nothing is lost.
+                      your receipt. Nothing is lost.
                     </p>
                     <div>
                       <Button asChild size="sm">
@@ -147,7 +147,7 @@ export default async function CoursesPage() {
                               href={`/dashboard/assessments/${q.slug}`}
                               className="hover:text-foreground"
                             >
-                              {q.moduleTitle} quiz —{" "}
+                              {q.moduleTitle} quiz:{" "}
                               {q.passed ? (
                                 <span className="text-primary">
                                   passed, {q.bestScore}%

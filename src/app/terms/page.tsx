@@ -37,7 +37,7 @@ export default function TermsPage() {
   return (
     <PageShell title="Terms of service">
       <p className="rounded-md border border-verified/40 bg-verified/5 p-4 text-sm text-foreground">
-        Draft — pending legal review. Last updated 18 August 2026.
+        Draft, pending legal review. Last updated 18 August 2026.
       </p>
       {sections.map((s) => (
         <section key={s.heading}>

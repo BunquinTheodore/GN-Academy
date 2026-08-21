@@ -51,7 +51,7 @@ export function EmailGate({
           Your score is ready
         </h1>
         <p className="mt-2 text-sm text-muted-foreground">
-          Enter your email and we&apos;ll show your full result now — score,
+          Enter your email and we&apos;ll show your full result now: score,
           competency breakdown, and the one area to fix first. We&apos;ll also
           send you a copy so you don&apos;t lose it.
         </p>
@@ -89,7 +89,7 @@ export function EmailGate({
             disabled={submitting}
           />
           <span>
-            Also send me course updates and career tips. Optional — your
+            Also send me course updates and career tips. Optional: your
             result email arrives either way.
           </span>
         </label>
@@ -116,7 +116,7 @@ export function EmailGate({
           disabled={submitting}
           className="min-h-11 px-2 text-xs text-muted-foreground underline-offset-4 hover:underline"
         >
-          Skip — show my result without saving it
+          Skip and show my result without saving it
         </button>
       </div>
     </div>

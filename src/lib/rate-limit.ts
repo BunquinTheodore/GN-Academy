@@ -24,7 +24,13 @@ export type RateLimitRule = {
 };
 
 export const RATE_LIMITS = {
-  attemptCreate: { route: "attempt-create", max: 5, windowSeconds: 3600 },
+  // 20, not 5. This is keyed on the hashed client IP, and a large share of
+  // this audience reaches the site through mobile carrier NAT, where hundreds
+  // of people leave from one address. At 5 an hour a handful of strangers on
+  // the same network silently used up the free test for everybody behind it.
+  // The row this creates is cheap and anonymous; the spam control that
+  // actually matters is emailCapture below, which stays at 3.
+  attemptCreate: { route: "attempt-create", max: 20, windowSeconds: 3600 },
   emailCapture: { route: "email-capture", max: 3, windowSeconds: 3600 },
   auth: { route: "auth", max: 10, windowSeconds: 900 },
   // Its own bucket, not emailCapture's: someone exercising a legal right

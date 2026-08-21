@@ -80,7 +80,7 @@ export default async function EditCertificationPage({
       <section>
         <h2 className="font-display text-lg font-semibold">Curriculum</h2>
         <p className="mt-1 max-w-prose text-sm text-muted-foreground">
-          Modules hold lessons. Lesson bodies are Markdown — headings, lists,
+          Modules hold lessons. Lesson bodies are Markdown, so headings, lists,
           bold, and links all work. Preview lessons are readable without
           enrolling; everything else is gated.
         </p>

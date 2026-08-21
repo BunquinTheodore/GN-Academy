@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { BookOpen, CheckCircle2, Lock } from "lucide-react";
+import { getSessionUser } from "@/lib/auth/session";
 import {
   getModulesWithLessonMeta,
   getPublishedCertificationBySlug,
-  listPublishedCertifications,
 } from "@/lib/db/certifications";
 import { formatPhp } from "@/lib/format";
 import { env } from "@/lib/env";
@@ -16,18 +16,10 @@ import { Button } from "@/components/ui/button";
 import { CredentialCard } from "@/components/credential-card";
 import { TrackView } from "@/components/track-view";
 
-export const revalidate = 300;
-
-/**
- * Prerender every published certification at build time. The catalogue is a
- * handful of rows, so this costs nothing and turns the product page from
- * "dynamic on first hit, then ISR" into a static file — no DB round trip in
- * the critical path for the page most visitors land on from search.
- */
-export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  const certifications = await listPublishedCertifications().catch(() => []);
-  return certifications.map((c) => ({ slug: c.slug }));
-}
+// Course pages are behind the login now, so there is nothing to prerender and
+// nothing to cache publicly — the ISR window and generateStaticParams that
+// used to keep this page static both went with the gate.
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
@@ -40,7 +32,7 @@ export async function generateMetadata({
   return {
     title: cert.title,
     description: cert.summary ?? undefined,
-    alternates: { canonical: `/certifications/${cert.slug}` },
+    robots: { index: false, follow: false },
   };
 }
 
@@ -50,6 +42,11 @@ export default async function CertificationPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+
+  const user = await getSessionUser();
+  if (!user) {
+    redirect(`/login?next=${encodeURIComponent(`/certifications/${slug}`)}`);
+  }
   const cert = await getPublishedCertificationBySlug(slug).catch(() => null);
   if (!cert) notFound();
 

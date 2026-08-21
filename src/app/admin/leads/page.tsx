@@ -27,7 +27,7 @@ export default async function AdminLeadsPage() {
           <p className="mt-1 max-w-prose text-sm text-muted-foreground">
             {counts.total} captured · {counts.consented} consented to
             marketing. Resend is a transactional sender on the free plan, so
-            campaigns go out from whatever list tool you export into — and only
+            campaigns go out from whatever list tool you export into, and only
             to the consented rows.
           </p>
         </div>
@@ -72,7 +72,7 @@ export default async function AdminLeadsPage() {
                     <td className="p-3">{lead.email}</td>
                     <td className="p-3 text-muted-foreground">{lead.source}</td>
                     <td className="p-3 text-muted-foreground">
-                      {lead.career_path ?? "—"}
+                      {lead.career_path ?? "n/a"}
                     </td>
                     <td className="p-3">
                       <Badge

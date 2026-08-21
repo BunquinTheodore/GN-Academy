@@ -22,7 +22,7 @@ export default async function AdminCertificationsPage() {
           <h1 className="font-display text-2xl font-semibold">Certifications</h1>
           <p className="mt-1 text-sm text-muted-foreground">
             Everything on the public catalogue, plus drafts. Edits go live on
-            the next page load — no deploy.
+            the next page load, with no deploy needed.
           </p>
         </div>
         <Button asChild>
@@ -58,7 +58,7 @@ export default async function AdminCertificationsPage() {
                       ? "Free"
                       : cert.price_php
                         ? formatPhp(cert.price_php)
-                        : "—"}
+                        : "n/a"}
                   </span>
                   <Badge variant={cert.is_published ? "default" : "secondary"}>
                     {cert.is_published ? "Published" : "Draft"}

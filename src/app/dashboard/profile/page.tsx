@@ -45,7 +45,7 @@ export default async function ProfilePage() {
         <h1 className="font-display text-2xl font-semibold">Your profile</h1>
         <p className="mt-1 text-sm text-muted-foreground">
           This is what employers see when they open your talent page. Your
-          credentials are attached automatically — you can&apos;t edit those,
+          credentials are attached automatically. You can&apos;t edit those,
           which is exactly why they&apos;re worth something.
         </p>
       </div>
@@ -105,7 +105,7 @@ export default async function ProfilePage() {
               label="Headline"
               defaultValue={profile?.headline}
               placeholder="AI-assisted VA for e-commerce founders"
-              hint="One line. What you do and who for — not a job title."
+              hint="One line. What you do and who for, not a job title."
             />
 
             <TextAreaField

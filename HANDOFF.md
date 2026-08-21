@@ -1,12 +1,11 @@
-# GN Academy — Session Handoff
+# GN Academy: Session Handoff
 
-**Written:** 21 August 2026
+**Written:** 22 August 2026
 
-`README.md` is now the complete reference for this codebase — stack, setup,
-env vars, auth model, database schema, route map, security, testing, launch
-checklist, and the "don't fix this" list. Read it first. This file is only
-what a person picking the work up needs that the README does not say: what
-happened last, and what to do next.
+`README.md` is the complete reference for this codebase: stack, setup, env
+vars, auth model, database schema, route map, security, testing, launch
+checklist, and the "don't fix this" list. Read it first. This file is only what
+someone picking the work up needs that the README does not say.
 
 Also: `PROGRESS.md` (phase-by-phase resume point), `DECISIONS.md` (every
 judgement call), `BLOCKED.md` (things only a human can do).
@@ -15,133 +14,160 @@ judgement call), `BLOCKED.md` (things only a human can do).
 
 ## 1. Where things stand
 
-All six phases are merged to `main` (`6c92da7`) and pushed. `npm run verify`
-is green and the full live e2e suite is 64/64 with no flakes.
+**The site is live:** https://gn-academy-phi.vercel.app
 
-The product works end to end: free AI Readiness Test → email capture → free
-course → paid certification → publicly verifiable credential → talent profile
-→ employer enquiry, with a full admin area behind it. Nothing on the launch
-checklist (README §18) is blocked on code.
+Everything is merged to `main` and deployed. `npm run verify` is green and the
+full live e2e suite passes. Migrations 0001 to 0008 are applied to production.
 
-`README.md` §21 is the detailed account of this session and §22 is the ordered
-list of what to do next. Start there.
-
-Migrations 0001–0006 are applied to the live database and recorded in
-`schema_migrations`.
+The product loop works end to end: a stranger reads the landing page, creates
+an account, sees the catalogue, enrols, reads a course, passes a quiz per
+chapter, submits a final assignment, a human reviews it, and the credential
+issues with a public verification page.
 
 ---
 
-## 2. What this session did
+## 2. What this session added
 
-### It found the bug the talent test had been reporting all along
+### Chapter quizzes and reviewed assignments
 
-The talent e2e had been failing on a profile save that sat on "Saving…" until
-the budget ran out. The previous session read that as load — parallel workers
-competing for a cold server-action module — and it was not. Running the spec
-alone with one worker still failed, so it was measured properly:
+Courses can now end in a human decision rather than a score. Migration 0007
+added `assessments.module_id` (a quiz per chapter), the `assignments` and
+`assignment_submissions` tables, and `certifications.requires_assignment`.
+Migration 0008 added `modules.slug`.
 
-- The server finishes everything. The action completed in ~850 ms, the page
-  re-render right behind it in ~500 ms, in *every* run including the failing
-  ones.
-- The browser never commits the transition. The action POST returns 200 with
-  `text/x-component` and the button stays disabled forever.
-- Removing every `revalidatePath` call from the action: 4/4 pass. Putting a
-  single one back, against an unrelated fully dynamic route: 2/3 fail.
-- `next dev` never reproduces it.
+Credential issuance moved into one function, `maybeIssueCredential()`. Both
+paths to a certificate go through it, and it re-reads every prerequisite from
+the database rather than trusting its caller. Full description in README 21.
 
-**Any server action that calls `revalidatePath` and returns state to
-`useActionState` hangs the client in a production build.** Every admin editor
-did exactly that, so *the whole admin area was broken in production* — and the
-suite never noticed, because no test had ever submitted an admin form. They
-only read admin pages and asserted 404s.
+### Four new courses
 
-The fix: no server action calls `revalidatePath` any more. Calls that pointed
-at fully dynamic routes were no-ops and were deleted; the ones that mattered
-are returned as `AdminFormState.revalidate` and purged by `AdminForm` through
-`POST /api/revalidate` after the save has already succeeded. Create and delete
-actions return `redirectTo` instead of calling `redirect()`, which is the same
-workaround the lesson player already used. There is now an e2e test in which
-an admin writes, publishes, and edits a post through the real UI and a
-logged-out stranger reads it immediately.
+AI Essentials for Work, AI-Powered Digital Marketing, AI Social Media
+Management, and Prompt Engineering with Claude. Four chapters of three lessons
+each, an eight-question quiz per chapter, one final assignment. Text only.
+About 37,000 words and 128 questions in total. Authored in
+`supabase/courses/*.json`, loaded with `scripts/seed-courses.ts`.
 
-### It audited the rest of the codebase and fixed what it found
+### The public site became a sales page
 
-Nine more real defects, each verified against the code before being touched.
-The list is in `PROGRESS.md` under Phase 6; the ones worth knowing about:
+`/certifications`, `/certifications/[slug]` and `/start-free` now require a
+session. The landing page describes the offer and links only to sign-up and
+sign-in. See README 22, including the SEO cost of that trade.
 
-- A **rejected paid enrollment could never be re-submitted**. The retry path
-  existed on purpose, but `createEnrollment` was a plain insert against a
-  unique constraint, so a mistyped payment reference locked a paying customer
-  out permanently behind "try again", forever.
-- Ticking "list me in the employer directory" without a credential **threw the
-  whole profile edit away** while the message said it had been saved.
-- Two concurrent submissions of one exam attempt could **both issue a
-  credential**. `completeAttempt` is now the claim on the attempt.
-- `POST /api/attempts` accepted **any** published assessment slug, including
-  paid certification exams, skipping the enrollment and attempt-limit checks.
-- Account erasure left the person's **avatar and portfolio images public** at
-  stable URLs.
-- Migration 0006 drops the two RLS policies that let a signed-in browser write
-  directly to `profiles` and `attempts`. The app has never used them, and they
-  bypassed every server-side validation.
+### A signed-in shell, motion, and theming
 
-### It made the last two "needs a developer" items configuration
+Persistent sidebar with live state, per-course status cards, `motion` v13 on
+the landing page with reduced-motion support, and a light/dark/system toggle.
+README 23.
 
-GCash/Maya receiving details are `NEXT_PUBLIC_PAYMENT_*`; the email sender is
-`RESEND_FROM`. Both degrade honestly when unset.
+### No em dashes in user-facing text
 
-### And it chased the same bug to the bottom
-
-The free certification journey kept failing at a lesson-to-lesson navigation.
-`router.refresh()` immediately after `router.push()` was part of it and was
-removed. That still left the journey failing under load — and at two workers
-as well as three, so it was not queueing.
-
-The real answer is more general than either earlier fix: **an action's
-response carries a re-render of the current route, and that stream stalls
-under concurrency even when the action's own work has finished.** Lesson
-completion now goes through `POST /api/lessons/[lessonId]/complete`, a route
-handler that answers with JSON and nothing else.
-
-**64 of 64, no flakes** — and the suite went from 5.1 minutes to 2.2, which is
-the same finding seen from the other side.
-
-The rule to carry forward: when a mutation exists to do work and then send the
-user somewhere, rather than to update the page in place, use a route handler
-and navigate from the client.
+250 removed from the app and the seed, every course file rewritten, and the
+live database refreshed. `tests/unit/no-em-dashes.test.ts` keeps them out.
+README 24.
 
 ---
 
-## 3. Next actions
+## 3. Things that cost time, so you do not repeat them
 
-See README §22 for the full ordered list. The suite, the commits, and the
-merge are all done. What is left:
+**An adversarial review of generated course content is not optional.** The
+first draft of every course looked excellent and was not shippable: invented
+statistics ("half of all AI mistakes", "70% of the work"), wrong platform
+facts, an overstated reading of RA 10173, and quizzes where the correct answer
+was reliably the longest option. The last one matters most: a test-wise learner
+could score well having read nothing, which hollows out the credential the
+product rests on. Three passes were needed. Measured on what shipped:
+correct-is-longest in 12% of 128 questions against 25% for guessing, and an
+answer key of exactly 32 on each of a, b, c and d.
 
-1. **Re-measure Lighthouse on a quiet machine** across the public routes,
-   including `/employers`, `/talent/[username]`, and `/companies`. Everything
-   measured in earlier sessions was about ten points below its known-quiet
-   value, control included, so the absolute numbers are still unconfirmed.
-   Use the paired-control method in `DECISIONS.md`.
-2. **`npm audit`** reports 9 vulnerabilities (3 high), all in the build
-   toolchain reached through `next` (postcss, sharp) and through
-   `firebase-admin` (uuid). None is runtime attack surface for this app —
-   `next/image` is never used, so sharp never runs. `npm audit fix --force`
-   would move Next to 16 and *downgrade* firebase-admin; npm `overrides`
-   pinning `postcss@^8.5.26`, `sharp@^0.35.3`, and `uuid@^11.1.1` is the
-   non-breaking route. Verify and run the auth e2e afterwards — the uuid
-   override sits under firebase-admin.
-3. **Work the launch checklist** in README §18. Items 2, 4, 7 and 8 are the
-   ones that actually gate taking money.
+**`/code-review` caught a bug that would have shipped a dead product.**
+`scoreAttempt` averaged across the four fixed competencies and weighted absent
+ones as zero, so a chapter of eight judgment questions scored 20% for a perfect
+paper against a 70% pass mark. One course's credential was mathematically
+unobtainable. Nothing in ordinary testing would have surfaced it.
+
+**Seeding does not update.** `seed.sql` inserts with `on conflict do nothing`
+and guards its question blocks with `where not exists`; `seed-courses.ts`
+inserts questions only when a quiz has none. That is correct, since it protects
+`/admin` edits, but it means changing authored copy does nothing to a live
+database. `scripts/refresh-seed-content.ts` and
+`seed-courses.ts --replace-questions` exist for exactly that, and both are
+opt-in because both discard admin edits.
+
+**Never pipe a long script through `head`.** Doing that to
+`seed-courses.ts --replace-questions` sent SIGPIPE and killed it halfway, which
+looked like a partial failure of the script rather than of the pipe.
 
 ---
 
-## 4. Session-start ritual
+## 4. Next actions
 
-1. Read `README.md`, then this file, then `PROGRESS.md` → `BLOCKED.md`.
+1. **Rotate the admin password.** It is still `12345678` on an account that
+   reads every lead's phone number, can delete users, and now approves
+   assignments. `/admin` is on the public internet.
+2. **Verify the Resend domain.** Email still only reaches the account owner, so
+   a learner whose assignment you approve gets a credential and no email. That
+   is the largest functional gap left.
+3. **Rotate the three secrets pasted in chat** (Supabase service key, database
+   password, Resend key) if that transcript is stored anywhere shared.
+4. **Decide `npm audit`.** Nine findings, all in build tooling. The
+   non-breaking route is npm `overrides` pinning `postcss`, `sharp` and `uuid`.
+   Verify and re-run `auth-flow.spec.ts` afterwards.
+5. **Lighthouse on a quiet machine.** Never re-measured since the rebrand, the
+   motion work, or the new shell. Use the paired-control method in
+   `DECISIONS.md`.
+6. **Connect the Git repo to Vercel** if you want pushes to deploy
+   automatically. Deploys currently run from a local machine.
+
+---
+
+## 4b. Known issues a code review found and this session did not fix
+
+Both are real, both were measured, and neither is a correctness bug. They are
+here so the next session does not have to rediscover them.
+
+### Public marketing pages no longer prerender
+
+`SiteHeader` became `async` and reads the session cookie so it can show "My
+dashboard" instead of "Sign in". That makes every page containing it dynamic.
+Confirmed in the build output: `/`, `/about`, `/privacy`, `/terms`,
+`/how-it-works`, `/companies`, `/blog`, `/employers`, `/verify` and
+`/talent/[username]` all report `ƒ (Dynamic)`, and only nine routes remain in
+`.next/prerender-manifest.json`.
+
+Two consequences: the `export const revalidate = 300` still sitting in
+`blog/page.tsx`, `blog/[slug]/page.tsx` and `employers/page.tsx` does nothing,
+and a signed-in visitor now waits on a Firebase `verifySessionCookie` round
+trip to Google before the header paints on a page that used to be a static
+file.
+
+The fix is to stop reading the session on the server here: keep `SiteHeader`
+synchronous and move the two auth-dependent buttons into a small client
+component that reads Firebase auth state. The cost is a brief "Sign in" flash
+for signed-in users on public pages. That trade was not made unilaterally on
+the last day of a session, because it changes what every visitor sees first.
+
+### The dashboard still serialises per-course reads
+
+`src/app/dashboard/page.tsx` loops over enrollments and awaits inside the loop.
+The three assignment reads are now a `Promise.all`, and the three DAL functions
+the layout and the page both call (`getProfileById`,
+`listEnrollmentsForUser`, `listCredentialsForUser`) are wrapped in React
+`cache()` so they run once per request instead of twice. What remains is the
+loop itself: a learner in five courses still pays roughly five sequential
+`getModulesWithLessonMeta` + `getCompletedLessonIds` pairs, on a page that is
+`force-dynamic`. Collapsing it means restructuring a 120-line loop with several
+`continue` branches into a function that returns a card, which is a real
+refactor rather than a tidy-up.
+
+---
+
+## 5. Session-start ritual
+
+1. Read `README.md`, then this file, then `PROGRESS.md`, then `BLOCKED.md`.
 2. State the next three tasks.
-3. `npm run verify` — fix anything broken before adding features.
+3. `npm run verify` before adding anything.
 4. Work; commit per feature; push each; update the state files as you go.
 
-And the rule this session earned twice: **measure before you fix.** A red e2e
-has been the environment three times and a genuine production bug twice, and
-the two look identical from the failure message.
+And the rule this project keeps re-earning: **measure before you fix.** A red
+e2e run has been the environment three times and a real production bug three
+times, and the two are indistinguishable from the failure message alone.

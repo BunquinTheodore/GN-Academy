@@ -25,7 +25,7 @@ export default function NewCertificationPage() {
           New certification
         </h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          Save it as a draft first — modules, lessons, and the exam are added
+          Save it as a draft first. Modules, lessons, and the exam are added
           on the next screen. Publish when it&apos;s ready to sell.
         </p>
       </div>

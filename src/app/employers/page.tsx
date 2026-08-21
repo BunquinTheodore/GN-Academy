@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "For employers",
   description:
-    "Hire Filipino talent with verified AI skills. Every profile here holds a credential you can check in seconds — no screenshots, no self-reported claims.",
+    "Hire Filipino talent with verified AI skills. Every profile here holds a credential you can check in seconds. No screenshots, no self-reported claims.",
   alternates: { canonical: "/employers" },
 };
 
@@ -95,7 +95,7 @@ export default async function EmployersPage({
           <p className="mt-3 text-muted-foreground">
             Everyone listed here passed a scored assessment and holds a
             credential with a public verification page. There is no unverified
-            tier to filter out — that is the whole point.
+            tier to filter out. That is the whole point.
           </p>
         </div>
 

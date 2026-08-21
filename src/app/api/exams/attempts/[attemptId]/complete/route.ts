@@ -110,7 +110,7 @@ export async function POST(
   } catch (e) {
     console.error("exam complete failed", e);
     return Response.json(
-      { error: "Could not score your exam. Your answers are safe — try again." },
+      { error: "Could not score your exam. Your answers are safe, so try again." },
       { status: 500 },
     );
   }

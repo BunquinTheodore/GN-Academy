@@ -1,0 +1,928 @@
+{
+  "slug": "prompt-engineering-with-claude",
+  "title": "Prompt Engineering with Claude",
+  "subtitle": "Write the brief, then pick the right Claude for the job",
+  "level": "professional",
+  "category": "Prompt engineering",
+  "format": "Self-paced online",
+  "summary": "A twelve-lesson course on prompting as a craft, then on the three places you would actually use it: Claude the chat assistant, Claude Code, and Claude Cowork. You finish with one real piece of work taken from a weak one-liner to a finished, checked output.",
+  "description": "Most people meet Claude through a chat box and never leave it. This course starts with the craft itself: what a usable brief contains, how to hand over your real source material instead of describing it, how to correct a bad answer instead of rerolling it, and how to lay out a long prompt so the instructions do not get buried. Then it walks through the three Claude surfaces so you know which one a job belongs in: claude.ai for interactive work, with Projects, Artifacts and uploaded files; Claude Code, which is a developer tool and is described honestly as one; and Claude Cowork, the agentic workspace where you hand a task off instead of approving every step. It is written for people doing real work with overseas clients and small businesses, on a phone as often as a laptop. The final assignment is one piece of your own work, briefed properly and run end to end.",
+  "skills": [
+    "Prompt briefing",
+    "Working from your own source material",
+    "Correcting and steering output",
+    "Structuring long prompts",
+    "Claude Projects and Artifacts",
+    "Surface selection across Claude tools",
+    "Reviewing agentic work"
+  ],
+  "outcomes": [
+    "Turn a one-line request into a brief with context, task, constraints and output shape",
+    "Give Claude your actual documents and examples, and structure a long prompt so nothing gets lost in it",
+    "Diagnose what is wrong with an answer and fix it in one follow-up instead of starting over",
+    "Set up a Project on claude.ai so repeat work starts with the right instructions and files every time",
+    "Choose between claude.ai, Claude Code and Cowork for a given job, and say why in one sentence"
+  ],
+  "roles": [
+    "Virtual assistants and freelancers",
+    "Students",
+    "Small business owners and operators",
+    "Jobseekers"
+  ],
+  "price_php": 1499,
+  "is_free": false,
+  "passing_score": 70,
+  "credential_prefix": "PEC",
+  "sort_order": 5,
+  "modules": [
+    {
+      "slug": "chapter-1-the-craft-of-the-brief",
+      "title": "The craft of the brief",
+      "description": "Prompting as a skill, before any particular tool: what a brief has to contain, what material to hand over, and what to do when the answer comes back wrong.",
+      "lessons": [
+        {
+          "slug": "what-a-good-brief-contains",
+          "title": "What a good brief contains",
+          "duration_minutes": 7,
+          "content_mdx": "# What a good brief contains\n\nYou type: \"Write an email to my client about the delay.\" What comes back is polished, polite and useless: an apology for a delay it knows nothing about, addressed to a person it has never met, in a voice that is not yours.\n\nNothing went wrong. You handed over one sentence, and every gap in that sentence got filled with the most average answer available. The specifics were all in your head.\n\nThink of it the way you would think about handing work to a new teammate on their first day. You would not say \"write the email\" and walk off. You would tell them who the client is, what happened, what you want the client to do next, and roughly what the message should look like. That is a brief, and it has four parts.\n\n## Context: the situation and the reader\n\nWho is this for, and what do they already know? A client in Sydney who has been waiting three days for a report is a different reader from a prospect who has never worked with you. Say which one it is, and say what led here: the report is late because her data arrived on Friday, not because you forgot.\n\nContext is also where you say who you are. \"I am a virtual assistant handling admin for a small e-commerce store\" changes the answer more than most people expect.\n\n## The task\n\nOne clear verb, one clear object. Not \"help me with the client email\" but \"write the email that tells her the report will land Wednesday and asks her to confirm the two figures I flagged.\"\n\nIf you want two things (a message plus three subject lines), say both. Claude will do both. It will not guess that you also wanted subject lines.\n\n## The constraints\n\nThe limits that make the answer usable: length, tone, what to leave out, what must appear. Under 150 words. Apologise once, not twice. Do not promise a time of day. Plain English, because the reader is not a native speaker either.\n\nConstraints are also where you rule things out. \"Do not offer a discount\" is often the most valuable line in the whole brief.\n\n## The shape of the output\n\nWhat form should the answer take? An email with a subject line. A table with three columns. Five bullet points, one line each. A message short enough to paste into Viber. If you do not say, you get paragraphs, because paragraphs are the default.\n\n## The same request, briefed\n\n> I am a VA for a small Australian bookkeeping firm. Our client Marisa has been waiting since Monday for her monthly report. It is late because her bank export came through incomplete and I had to request it again.\n>\n> Write the email telling her the report will be sent Wednesday, and asking her to confirm two transactions I could not match.\n>\n> Under 150 words. Warm but not chatty. Apologise once, briefly. Do not blame her for the export. Do not promise a time of day.\n>\n> Give me a subject line, then the email body, then a one-line version I can send on WhatsApp if she asks for a quick update.\n\nThat is four short paragraphs of thinking you were going to have to do anyway, written down instead of assumed. The reply usually comes back close enough to send after one small edit.\n\n## The part people skip\n\nMost thin prompts are not lazy. They are written by someone who has the whole situation so clearly in mind that typing it out feels redundant. It isn't. Everything you leave unsaid gets replaced by an average.\n\nA useful check before you press enter: if you handed this exact message to a competent stranger with no access to your inbox, could they do the job? If not, the missing piece is the one to add.\n\nAnd briefs are reusable. The client-update brief you write today works next month with two words changed. Keep the ones that worked."
+        },
+        {
+          "slug": "give-it-your-actual-material",
+          "title": "Give it your actual material",
+          "duration_minutes": 7,
+          "content_mdx": "# Give it your actual material\n\nThere are two ways to tell Claude what your client's emails sound like. You can describe them, saying \"friendly but professional, fairly short, no jargon\", or you can paste three of their actual emails. The second wins every time, and it takes less effort.\n\n## Description is lossy\n\n\"Friendly but professional\" covers a thousand different writing styles. It does not tell Claude that your client opens with \"Hi team,\" never uses exclamation marks, signs off with just her first name, and always puts the deadline in the first line. Those small things are what make a draft sound like it came from your desk rather than from a template.\n\nThe same goes for work material. \"I have some notes from the meeting\" gives Claude nothing. The notes themselves (messy, half-abbreviated, with three names you never explained) give it everything, and it is good at reading through the mess.\n\nSo the rule is simple: if the real thing exists, hand over the real thing. Past emails, the client's brief, last quarter's report, the spreadsheet rows, the job posting you are applying to, the untidy Google Doc. Claude takes pasted text, and it takes uploaded files: PDFs, images, text files and documents. So a scanned page or a screenshot of a chat thread counts as material too.\n\n## Examples are the fastest instruction\n\nAn example does in ten seconds what a paragraph of adjectives cannot. If you want your cover letters to read a certain way, paste one you were proud of and say \"match this voice, different job.\" If you want product descriptions in the shop's house format, paste two existing ones.\n\nLabel them so their job is clear. \"Here are two examples of the format I want. Do not reuse their content\" saves you from a draft that quietly recycles the sample's details.\n\n## Do not bury the instruction\n\nHere is the failure that surprises people. You paste 2,000 words of meeting notes, type \"summarise this\" underneath, and get back something that misses half of what you needed.\n\nLong material swallows short instructions. The fix is layout. Give the message obvious sections with plain labels:\n\n```\nINSTRUCTIONS\nPull out every decision and every action item from the notes below.\nFor each action item, give the owner and the deadline if one was stated.\n\nCONTEXT\nThis was a Monday planning call for a small online store. \"JR\" is the owner.\n\nNOTES\n[paste the notes here]\n\nREMINDER\nDecisions first, then action items as a table: task, owner, deadline.\n```\n\nTwo things are doing work there. The labels separate instruction from raw material, so Claude stops trying to follow sentences that happen to appear inside your notes. And the instruction shows up again at the end, after the long block, where it is easy to find. Three extra lines, and long prompts get noticeably more reliable.\n\n## Say what each piece is\n\nOne line of framing per attachment goes a long way. \"This is the client's original brief\" and \"this is my draft, which she rejected\" are two documents with completely different roles, and Claude cannot tell them apart from the file names.\n\n## What not to paste\n\nHand over what the work needs and strip what it does not. Client bank details, someone's home address, a passport scan, passwords: none of that is required to draft a follow-up email, so remove it first or swap in a placeholder like [ACCOUNT NUMBER]. Redacting takes a few seconds, and it is a habit worth having before the day it matters.\n\n## In short\n\nA description of your material is a summary you wrote from memory. The material is the material. Give it the real thing, label the parts, and put your instruction where it cannot get lost."
+        },
+        {
+          "slug": "steering-a-bad-answer",
+          "title": "Steering a bad answer",
+          "duration_minutes": 8,
+          "content_mdx": "# Steering a bad answer\n\nThe draft comes back wrong. The common reaction is to close the chat, open a new one, and type the same prompt again, slightly more firmly. That rarely helps. The same brief produces the same class of answer, and you have thrown away the one useful thing you had: a concrete example of what you do not want.\n\nA bad first draft is not a failure. It is information. Your job now is to say what is wrong with it, in one specific sentence, and send that back.\n\n## Name the single thing\n\nVague corrections get vague fixes. \"This isn't quite right, try again\" leaves Claude guessing which part to change, and often it changes the part you liked.\n\nCompare the two:\n\n- \"Make it better\" gets you a reshuffled version of the same draft.\n- \"The structure is right. The tone is too formal. Rewrite it the way I would talk to a client I have worked with for two years.\" gets you the fix you wanted.\n\nSay what to keep as well as what to change. Claude has no way of knowing paragraph two was perfect unless you tell it.\n\n## Point at the exact spot\n\nIf the problem is local, quote it. \"The second bullet says we can deliver by Friday. I never said that. Take it out.\" Or: \"the opening line sounds like a press release. Give me five alternatives for that line only and leave the rest alone.\"\n\nAsking for options on one line, rather than a whole new draft, is one of the highest-value follow-ups there is. You get choice where the problem is and stability everywhere else.\n\n## When you cannot name what is wrong\n\nSometimes it just feels off. Two moves help.\n\nAsk it to critique its own work: \"Before I use this, list the three weakest parts of this draft and explain why each one is weak.\" Claude is better at spotting problems in a finished draft than at avoiding them while writing, and the critique often names the thing you were struggling to put into words. Then you pick which of the three you actually care about.\n\nOr ask what it assumed: \"What did you assume about the reader and the situation that I did not tell you?\" The answer shows you exactly which holes in your brief got filled with averages. Sometimes closing two of those holes is the whole fix.\n\n## Correct one thing at a time\n\nFive instructions in one message tends to produce a draft that half-follows all of them. Tone first, then length, then the specific line. You get there faster that way.\n\nWatch for the drift where each fix breaks something earlier. When it happens, say so plainly: \"You fixed the tone but dropped the Wednesday deadline that was in the third paragraph. Put it back.\"\n\n## When starting over is the right call\n\nThere is a point where the thread stops helping. After several rounds, the conversation is full of rejected drafts and every new attempt is pulling from all of them. If you are giving the same correction for the third time, stop.\n\nBut do not retype the original prompt. By now you know exactly what was missing from it: the tone, the thing to leave out, the format you needed. Write a new brief with all of that included and start clean. The five rounds were not wasted; they are how you found out what your brief should have said.\n\n## The habit worth keeping\n\nWhen a follow-up finally produces the right result, notice the words that did it, and put them in the brief next time. \"Do not use the phrase 'reach out'\" and \"keep it under 150 words\" began life as corrections for most people who now write them up front.\n\nAfter a few weeks, a good brief is mostly a collection of corrections you no longer have to make."
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A VA sends: \"Write a message to my client about the late report.\" The reply is a polished, generic apology she cannot use. Which single addition would improve the next attempt most?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Who the client is, why the report is late, and what she wants them to do"
+            },
+            {
+              "id": "b",
+              "text": "A note asking for a more professional and warmer tone than the first draft"
+            },
+            {
+              "id": "c",
+              "text": "A line saying she is a virtual assistant who works with several overseas clients"
+            },
+            {
+              "id": "d",
+              "text": "An instruction to avoid clichés and keep every sentence short and plain throughout"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "prompting",
+          "explanation": "The draft is generic because the situation is missing, not because the wording is off. Context (who the reader is, what happened) plus a clear task (what you want them to do) is what turns an average apology into the specific message you needed. Tone and style notes only polish an answer that is already aimed at the right target."
+        },
+        {
+          "prompt": "Your brief explains the situation, names the task and sets the tone. The answer still comes back as four paragraphs of prose when you needed a three-column table. Which part of the brief was missing?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The context: Claude did not know enough about the reader you were writing for"
+            },
+            {
+              "id": "b",
+              "text": "The shape: you never said what form the answer should take, so it guessed"
+            },
+            {
+              "id": "c",
+              "text": "The constraints: the limits on tone, vocabulary and word count were left out"
+            },
+            {
+              "id": "d",
+              "text": "The task: the verb was too vague, so Claude picked the job it thought you meant"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "prompting",
+          "explanation": "Format is its own part of a brief. If you do not say \"a table with these three columns\" or \"five bullets, one line each,\" you get paragraphs, because paragraphs are the default. The other three parts were present here, which is why the content was fine and only the form was wrong."
+        },
+        {
+          "prompt": "You want draft emails that sound like the ones your client already signs off on. Which approach gets closest to her voice with the least effort?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Describe the style in a paragraph: friendly, short sentences, no jargon at all"
+            },
+            {
+              "id": "b",
+              "text": "Ask Claude to infer the style from her industry and her company's website copy"
+            },
+            {
+              "id": "c",
+              "text": "Paste three emails she has already approved, labelled clearly as style samples"
+            },
+            {
+              "id": "d",
+              "text": "Ask for a professional tone, then correct the wording after each draft arrives"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "tools",
+          "explanation": "A description is a summary you wrote from memory, and it loses the small habits that make writing recognisable: how she opens, whether she uses exclamation marks, where the deadline goes. Real examples carry all of that at once. Label them as samples so their content does not get reused in the draft."
+        },
+        {
+          "prompt": "You paste 2,000 words of meeting notes and type \"summarise this\" at the end. The summary misses several decisions. What is the best fix?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Split the notes across several messages so that each one stays short"
+            },
+            {
+              "id": "b",
+              "text": "Shorten the notes yourself first so only the important parts get pasted"
+            },
+            {
+              "id": "c",
+              "text": "Move to a fresh chat and paste the notes in there a second time"
+            },
+            {
+              "id": "d",
+              "text": "Label the sections and repeat the instruction after the notes as well"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "prompting",
+          "explanation": "Long material swallows short instructions. Plain labels like INSTRUCTIONS, NOTES and REMINDER separate what you are asking for from the raw text, and restating the instruction after the long block puts it somewhere easy to find. Pre-trimming the notes defeats the point, since deciding what matters is the job you handed over."
+        },
+        {
+          "prompt": "A draft has exactly the structure you wanted, but the tone is stiff and corporate. What is the most efficient next move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Reply asking it to keep the structure and rewrite it in plainer language"
+            },
+            {
+              "id": "b",
+              "text": "Open a new chat and send the same prompt again, hoping for something better"
+            },
+            {
+              "id": "c",
+              "text": "Ask for ten more drafts and pick whichever one happens to read closest to right"
+            },
+            {
+              "id": "d",
+              "text": "Rewrite the whole thing yourself, since the draft is already fairly close to usable"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "judgment",
+          "explanation": "Naming what to keep matters as much as naming what to change, because otherwise the fix often breaks the part you liked. Re-sending the same prompt in a new chat throws away the draft that showed you what was wrong, and asking for ten versions makes you do the diagnosis by comparison instead of just stating it."
+        },
+        {
+          "prompt": "Something about a draft feels wrong but you cannot say what. Which follow-up is most likely to get you unstuck?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Send the draft back with a note saying it is not quite right yet"
+            },
+            {
+              "id": "b",
+              "text": "Ask it to list the three weakest parts of the draft and why"
+            },
+            {
+              "id": "c",
+              "text": "Ask for a completely different version of the draft, written from another angle"
+            },
+            {
+              "id": "d",
+              "text": "Accept the draft and fix whatever bothers you once you finally spot it"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "judgment",
+          "explanation": "Claude is better at finding problems in a finished draft than at avoiding them while writing, so asking for a self-critique often puts words to the thing you could not name. You then choose which of the listed weaknesses you care about. \"Not quite right\" gives it nothing to work with and usually returns a reshuffle."
+        },
+        {
+          "prompt": "After five rounds of corrections the thread is full of rejected drafts, and you have just repeated the same correction for the third time. What should you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Keep correcting in the same thread, since the older drafts add useful context"
+            },
+            {
+              "id": "b",
+              "text": "Ask it to combine the best parts of all five drafts into one final version"
+            },
+            {
+              "id": "c",
+              "text": "Write one fresh brief that folds in everything the five rounds taught you"
+            },
+            {
+              "id": "d",
+              "text": "Send the first draft back and ask it to try again starting from there"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "workflow",
+          "explanation": "There is a point where the pile of rejected attempts starts pulling every new draft off course. Starting over is right here, but not with the original prompt. The corrections you kept repeating are exactly the lines the new brief needs, so the five rounds become the raw material for a better first attempt."
+        },
+        {
+          "prompt": "You write the same kind of weekly client update every Friday, and briefing it properly takes ten minutes each time. What cuts that time most next week?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Keep one chat open all week and add each new update into that same thread"
+            },
+            {
+              "id": "b",
+              "text": "Memorise the four parts of a brief so you can retype them a bit quicker"
+            },
+            {
+              "id": "c",
+              "text": "Ask Claude each week what details it needs before it starts writing anything"
+            },
+            {
+              "id": "d",
+              "text": "Save the brief that worked and swap in this week's material each time"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "workflow",
+          "explanation": "A brief that produced a good result is a template, not a one-off. Most of it (who the reader is, the tone, the length, the format, the things to avoid) stays true from week to week, so only the material changes. Retyping it from memory each Friday repeats work you have already done once."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-2-claude-the-assistant",
+      "title": "Claude the assistant",
+      "description": "Everything on claude.ai: where it runs, how Projects hold your standing setup, how files come in, and what comes out as an Artifact.",
+      "lessons": [
+        {
+          "slug": "where-claude-runs",
+          "title": "Where Claude runs, and when a chat is the right tool",
+          "duration_minutes": 8,
+          "content_mdx": "# Where Claude runs, and when a chat is the right tool\n\nClaude the assistant is the version most people meet first. You type, it answers, you push back, it tries again. That is claude.ai, and this chapter is about what it can hold for you and what comes out of it.\n\n## The surfaces it runs on\n\nThe same assistant is available in several places:\n\n- **Web.** claude.ai in a browser, on a laptop or a phone.\n- **Desktop app.** For macOS, Windows, Linux and ChromeOS.\n- **Mobile app.** For work you start while you are away from a desk.\n- **Slack.** An integration, so you can bring Claude into where a team already talks.\n- **Microsoft 365 add-ins.** They sit alongside the documents you are already editing.\n\nThe surface changes where you are standing, not what Claude is. Pick the one closest to the work. If your client communication lives in Slack, use Slack. If you spend your day in Word, the Microsoft 365 add-in saves you copying text back and forth. If you think of a fix for a proposal while you are on a jeepney, the phone is fine.\n\nOne thing worth saying plainly: this is not the API. The API is for developers building Claude into their own software, and it is not what this course teaches. Here, you are the one at the keyboard.\n\n## What \"interactive\" actually means\n\nNothing happens between your messages. Claude reads what you sent, answers, and stops. It does not carry on working while you make coffee. Every step is one you asked for and can look at before asking for the next one.\n\nThat sounds like a limitation. It is actually the whole reason to use a chat. When you cannot describe the finished thing in advance, you get there by looking at a draft and reacting to it. The back-and-forth is how the target gets defined.\n\n## Jobs that suit a chat\n\n- **Writing you will judge by eye.** A reply to a client who is unhappy, a proposal, a bio, a caption. You want to read it before it goes anywhere.\n- **Thinking out loud.** Deciding how to price a package, or whether to take a project on. You want the reasoning visible so you can argue with it.\n- **Turning something messy into something usable.** A voice-note transcript into meeting notes, a rambling brief into a checklist.\n- **Understanding a document.** A contract clause, an error message, a policy. You ask, then you ask again about the part that still does not make sense.\n- **Learning something.** You control the pace, and you can say \"slower\" or \"example please\" at any point.\n\nIn each of these, you are the editor. That is the job a chat is built for.\n\n## Jobs that fit something else\n\n- **Work that should run while you sleep.** If you want to hand a task off and collect the result later, that is Claude Cowork, in chapter 4.\n- **Changing code across a real project.** If the work is edits to files in a codebase, that is Claude Code, in chapter 3.\n- **Output your own app produces automatically.** That is the API, and outside what we cover.\n\nYou will still use a chat for parts of those jobs: planning, drafting the brief, checking a result. Choosing a surface is not a lifetime commitment.\n\n## A test before you open a conversation\n\nAsk yourself three questions:\n\n1. Do I want to see each step before the next one happens?\n2. Am I likely to change my mind once I see a draft?\n3. Can I hand over the material in a message or a file?\n\nThree yeses mean a chat is the right tool. If the honest answer to the first is \"no, I just want it done and delivered\", note that down. Chapter 4 is written for exactly that feeling.\n\nOne last habit. Because a chat only moves when you move it, a conversation is cheap to abandon. If a thread has gone in circles, start a new one and bring across only what was working. You are not required to rescue a bad conversation."
+        },
+        {
+          "slug": "projects-on-claude-ai",
+          "title": "Projects: setting up so you stop re-explaining",
+          "duration_minutes": 8,
+          "content_mdx": "# Projects: setting up so you stop re-explaining\n\nIf you use Claude for the same client or the same kind of work every week, you have probably noticed the tax: every new conversation starts blank. You explain who the client is, what tone they want, which words they hate, what the product actually does. Then you do it again tomorrow.\n\nA Project is where you put that setup once. It holds instructions, files and context, and every conversation you start inside it begins already knowing them.\n\n## What a Project holds\n\nThree things, and it helps to keep them separate in your head.\n\n**Instructions.** Standing directions in plain English: who the audience is, what tone to use, what to never do. \"Write for small business owners in the Philippines. Short sentences. Use Philippine peso in examples. Never promise a delivery date I have not given you.\"\n\n**Files.** Reference material the work keeps pointing back to: the brand guide, the service menu, last quarter's report, a glossary of product names.\n\n**Context.** The background that makes the rest make sense: what the client sells, who their customers are, what you were hired to do.\n\nSet that up once and your daily prompt shrinks to the actual task. Instead of five paragraphs of preamble followed by \"now write the caption\", you write \"caption for Tuesday's post about the new delivery cut-off\" and the rest is already in the room.\n\n## What belongs in instructions, what belongs in a prompt\n\nUse one line to decide: **if it will still be true next month, it belongs in the Project. If it is only true for this task, it belongs in the prompt.**\n\nProject instructions:\n\n- The client's tone rules and banned words.\n- How you spell the product names.\n- The format you always deliver in: headline, three bullets, call to action.\n- Standing constraints: no medical claims, no competitor names, no exclamation marks.\n\nThis prompt, today:\n\n- The topic, the deadline, the word count.\n- The three points the client sent this morning.\n- \"Shorter than last time. The last one ran long.\"\n- The one-off exception: \"this one is for LinkedIn, so make it more formal.\"\n\nChapter 1 asked you to write a brief. A Project is simply the durable half of that brief, stored so you stop retyping it.\n\n## One Project per job, not one Project for everything\n\nThe most common mistake is treating a Project as a folder for every file you own. Someone puts five clients' documents into one Project, and then wonders why the tone comes out generic and the wrong product gets mentioned.\n\nA Project works because its setup describes one situation. Make one per client, or one per recurring job: \"Weekly newsletter\", \"Client A social\", \"Job applications\". If you would not read the instructions aloud to a new assistant working on this specific task, they do not belong in this Project.\n\nFor a jobseeker, that might mean one Project holding your CV, your two strongest work samples, and an instruction to write in your own voice rather than corporate filler. Every application you draft starts from there.\n\n## Writing instructions that actually work\n\n- **Be specific about what you do not want.** \"Never open with a rhetorical question\" travels further than \"sound natural\".\n- **Show, do not describe.** Paste a short example of your voice into the instructions. One real paragraph beats three adjectives.\n- **Keep it short enough to read.** Instructions are directions, not documentation. Long background belongs in a file in the Project, not in the instruction box.\n- **Fix it when it slips.** If you find yourself correcting the same thing in the chat twice, that correction is a missing instruction. Move it into the Project so you never type it a third time.\n\nThat last habit is the one that compounds. Every recurring correction you promote into the Project is a small piece of re-explaining you never do again, and after a few weeks the setup starts to feel like it was written by someone who knows the client well. It was. It was you."
+        },
+        {
+          "slug": "files-in-artifacts-out",
+          "title": "Files in, Artifacts out",
+          "duration_minutes": 9,
+          "content_mdx": "# Files in, Artifacts out\n\nMost real work does not start from nothing. It starts from a document someone sent you: a scanned contract, a spreadsheet export, a screenshot of an error, a brief written in a hurry. And it usually has to end as something you can hand over. Claude handles both ends: files going in, and Artifacts coming out.\n\n## Getting the material in\n\nYou can upload PDFs, images, text files and documents straight into a conversation. You can also connect Google Drive, OneDrive and SharePoint, so the files you already keep there can be brought in without downloading and re-uploading them first.\n\nThat covers most of what lands in a freelancer's inbox: the client's 14-page requirements PDF, a photo of a receipt, a screenshot of a dashboard, last month's report.\n\nTwo habits make this work far better.\n\n**Attach the real thing instead of describing it.** People often summarise a document and ask about their summary. Your summary already dropped the detail that mattered. Upload the file and let the reading happen against the actual words.\n\n**A file is not a brief.** Attaching a PDF tells Claude what the material is, not what you want done with it. Every upload should come with a job:\n\n> Attached is the client's requirements PDF. Pull out only the deliverables and their due dates, as a table. Ignore the legal section. Flag anything where the date is vague.\n\nCompare that with attaching the same file and typing \"thoughts?\". Both get an answer. Only one gets an answer you can use.\n\n**Say which part matters.** In a long document, point at the section: \"section 4 only\", \"the last two pages\", \"the rows where status is overdue\". Narrowing the target usually improves the result more than any clever wording.\n\nImages work the same way. A screenshot of an error message with \"what is this telling me, and what do I check first\" is a real question. The same screenshot alone is a guessing game.\n\n## What comes out: Artifacts\n\nSome answers belong in the chat: a quick explanation, a yes or no. Others are things you will keep, revise and send to someone. Those come out as Artifacts: standalone outputs that sit beside the conversation rather than being buried in it. Documents, web pages, code, datasets and figures can all be Artifacts. They persist, and they can be shared.\n\nThe useful shift is to stop thinking of the output as a message and start thinking of it as a document you own.\n\nGood candidates:\n\n- An onboarding guide or standard operating procedure for a client's VA team.\n- A one-page site for your services, or a simple landing page.\n- A cleaned-up dataset or table built from a messy export.\n- A figure or chart summarising numbers you pulled out of a report.\n\n## Revise the thing, do not rebuild it\n\nThe mistake beginners make is treating each request as a new job. They get a good draft, then start a fresh conversation and paste it back in to ask for a change.\n\nDo it the other way. Keep working on the same Artifact:\n\n- \"Section 3 is too long. Cut it to five lines and keep the example.\"\n- \"Add a section on what to do when a client goes quiet.\"\n- \"Same guide, but written for someone on their first week.\"\n\nEach pass revises the document rather than producing an unrelated new one, so the parts you already approved survive. This is the same instinct as chapter 1's advice on fixing a wrong answer: name the specific part that is wrong instead of asking for another attempt.\n\n## Putting the two ends together\n\nA typical VA task now looks like this. Upload the client's brief and last month's report. Ask for a progress update as an Artifact, in the format you always send. Read it, cut the two paragraphs that overclaim, ask for a shorter opening. Then take the finished document to the client.\n\nFiles in gave it the facts. The Artifact gave you something to edit rather than a wall of chat text. Your judgment did the part in the middle, which is still the part that matters."
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "You have to reply to an overseas client about a deadline you missed, and you want to read the wording before anything is sent. Which approach fits best?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A chat on claude.ai, where you read each draft and adjust as you go"
+            },
+            {
+              "id": "b",
+              "text": "A background task that writes and files the message while you work"
+            },
+            {
+              "id": "c",
+              "text": "Claude Code, so the message is tracked next to your project files"
+            },
+            {
+              "id": "d",
+              "text": "A tool built into your own software that generates the reply for you"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "judgment",
+          "explanation": "A chat is interactive: nothing happens between your messages, so you see every draft before it goes anywhere. That is exactly what a sensitive client email needs. Background handoffs and code tools are for other shapes of work, and building it into software is the API, which is not what you use as an editor of your own writing."
+        },
+        {
+          "prompt": "Which statement about where Claude the assistant runs is accurate?",
+          "options": [
+            {
+              "id": "a",
+              "text": "It is only on the web, so offline work needs a different product"
+            },
+            {
+              "id": "b",
+              "text": "It runs on web, desktop, mobile, Slack, and Microsoft 365 add-ins"
+            },
+            {
+              "id": "c",
+              "text": "It runs on desktop only, with the web version reserved for coding"
+            },
+            {
+              "id": "d",
+              "text": "It runs on mobile and web, while Slack access needs the API instead"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "tools",
+          "explanation": "The assistant is available on the web, as a desktop app (macOS, Windows, Linux, ChromeOS), on mobile, through a Slack integration, and as Microsoft 365 add-ins. The surface changes where you work, not what Claude is. The API is a separate thing for developers building Claude into their own software."
+        },
+        {
+          "prompt": "You write weekly captions for one client. Which of these belongs in the Project instructions rather than in today's prompt?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The deadline and the word count for the caption you owe today"
+            },
+            {
+              "id": "b",
+              "text": "The three bullet points the client emailed you this morning"
+            },
+            {
+              "id": "c",
+              "text": "The client's tone rules and how the product names are spelled"
+            },
+            {
+              "id": "d",
+              "text": "A note that this draft should be shorter than the last one was"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "workflow",
+          "explanation": "The test is whether it will still be true next month. Tone rules and product spellings are standing facts, so they go in the Project and stop being retyped. Deadlines, this week's bullet points, and one-off corrections are true only for this task, so they belong in the prompt."
+        },
+        {
+          "prompt": "A VA puts every document she owns (five different clients, forty files) into one Project. What goes wrong?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Projects refuse documents when unrelated clients appear together"
+            },
+            {
+              "id": "b",
+              "text": "Uploaded files stop being readable once the folder mixes sources"
+            },
+            {
+              "id": "c",
+              "text": "Nothing at all; more material in one place always helps the output"
+            },
+            {
+              "id": "d",
+              "text": "The standing setup no longer describes one job, so answers drift"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "judgment",
+          "explanation": "A Project works because its instructions and files describe one situation. Mix five clients and the setup can no longer say who the audience is or which product to name, so results come back generic or wrong. Make one Project per client or per recurring job instead."
+        },
+        {
+          "prompt": "A client sends a 14-page requirements PDF and you need the deliverables and due dates. What is the strongest first move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Upload the PDF and say which section to turn into a dated table"
+            },
+            {
+              "id": "b",
+              "text": "Retype the parts you remember so the conversation stays shorter"
+            },
+            {
+              "id": "c",
+              "text": "Describe the document yourself, since uploads only work for images"
+            },
+            {
+              "id": "d",
+              "text": "Paste the file name and ask Claude to find it on the client's site"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "tools",
+          "explanation": "Upload the real document rather than your summary of it, because your summary has already dropped detail. Then give the upload a job and point at the part that matters. PDFs, images, text and documents can all be uploaded, and Drive, OneDrive and SharePoint can be connected."
+        },
+        {
+          "prompt": "You have an onboarding guide as an Artifact and section three runs too long. What should you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Open a fresh conversation and paste the whole guide back in first"
+            },
+            {
+              "id": "b",
+              "text": "Ask for that section to be cut, revising the same Artifact again"
+            },
+            {
+              "id": "c",
+              "text": "Copy it into a document app, because an Artifact cannot be changed"
+            },
+            {
+              "id": "d",
+              "text": "Ask for a brand new guide, since each request makes a separate one"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "workflow",
+          "explanation": "An Artifact is a standalone output you keep revising, so name the specific part that is wrong and ask for that change. Everything you already approved survives. Starting over discards good work and usually costs you a second round of corrections."
+        },
+        {
+          "prompt": "You connect Google Drive and point Claude at a folder of meeting notes. What still has to come from you?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The exact file format, since connected documents arrive unreadable"
+            },
+            {
+              "id": "b",
+              "text": "A separate upload of each file, as connectors only list the names"
+            },
+            {
+              "id": "c",
+              "text": "The job: what to pull from the notes and what the result should be"
+            },
+            {
+              "id": "d",
+              "text": "A summary of every note, since connected files load one at a time"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "prompting",
+          "explanation": "Handing over material is not the same as giving a brief. The connector solves access to the files; you still have to say what to extract, what to ignore, and what shape the answer should take. Without that, you get a general response instead of a usable one."
+        },
+        {
+          "prompt": "Which of these jobs is the poorest fit for an interactive chat where you approve every step?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Rewriting a cover letter for a job ad, then tightening it twice"
+            },
+            {
+              "id": "b",
+              "text": "Talking through pricing for a small business and settling wording"
+            },
+            {
+              "id": "c",
+              "text": "Turning a messy client brief into a checklist you review by line"
+            },
+            {
+              "id": "d",
+              "text": "A long unattended job you want finished overnight with no steering"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "judgment",
+          "explanation": "A chat only moves when you move it: nothing happens between your messages. That suits work you want to read and react to. Work you would rather hand off and collect later is a different execution model, which is what Claude Cowork covers in chapter 4."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-3-claude-code",
+      "title": "Claude Code",
+      "description": "The developer tool, described honestly: what it does to a codebase, the approve-as-you-go loop, and the files and add-ons that shape how it behaves.",
+      "lessons": [
+        {
+          "slug": "what-claude-code-is",
+          "title": "What Claude Code actually is",
+          "duration_minutes": 8,
+          "content_mdx": "# What Claude Code actually is\n\nClaude Code is an agentic coding assistant. \"Agentic\" means it does not only answer questions. It takes actions for you: reading files, changing them, running commands. What it acts on is a codebase, which is just the folder of files that makes up a program, a website, or a script.\n\n## Where it runs\n\nThe main way to use Claude Code is the `claude` command in a terminal, the plain text window where you type commands instead of clicking. You install it, sign in, open the folder your project lives in, and start a session.\n\nThere are other doorways to the same assistant: a desktop app, a web surface, and extensions for VS Code and JetBrains, which are two editors developers write code in. If you already work in one of those editors, the extension keeps you there. Claude Code is primarily a command-line tool, and the terminal is the main way in.\n\n## What it does that a chat window does not\n\nIn Chapter 2 you saw the pattern on claude.ai: the work happens in a conversation, and moving the result into your project is your job. Claude Code works inside the project itself.\n\nGive it a task and it reads the project on its own (several files, the folder structure, the tests) and then writes changes directly into those files. It can run the tests to check its own work, and it can make a commit, which is a saved checkpoint in your project's version history.\n\nSo the unit of work is different. On claude.ai the unit is a message. In Claude Code the unit is a change to your project.\n\n## Who it is genuinely for\n\n- People who already work in a codebase every day.\n- People learning to code who have a real project, not just exercises.\n- Semi-technical people who maintain something: a VA who edits a client's website theme, a freelancer keeping a booking script alive, a small business owner whose site needs a fix that the original developer is no longer around to make.\n\nThat third group is worth naming. If you have inherited a client's site and are expected to keep it running, Claude Code helps there, as long as you go in with the next section in mind.\n\n## Who it is not for\n\nIf your work is documents, spreadsheets, research summaries, client reports and email, Claude Code is the wrong shape. There is no codebase for it to read. Chapter 2 and Chapter 4 cover the tools built for that kind of work.\n\nAnd here is the honest part. Claude Code does not remove the need to understand what changed. It proposes edits and you approve them, which only protects you if you can read what is in front of you. If you cannot tell whether a change is safe, you are not reviewing, you are clicking yes.\n\nThat is fine on a practice project you can throw away. It is a real risk on a client's live storefront during a sale.\n\n## Set yourself up before the first session\n\nThree things make the difference between a useful tool and an expensive mistake.\n\n**Use version control.** Git tracks every change and lets you go back to how things were. Without it, an edit you did not understand is permanent.\n\n**Do not start on production.** Work on a copy of the site or a branch, not the thing customers are looking at right now.\n\n**Start small.** Ask it to explain a file before you ask it to change one. \"Walk me through what this file does and which other files use it\" is a good first task. You learn the codebase, and you learn how the tool talks, before anything is at stake.\n\n## What to take from this lesson\n\nClaude Code is a terminal-first assistant that reads and edits a real codebase, with a desktop app, a web surface, and editor extensions as alternative ways in. It is powerful because it acts, and it needs review for exactly the same reason.\n\nThe next lesson covers that review cycle in detail: how a task goes from your sentence to a committed change, and what you get to approve along the way."
+        },
+        {
+          "slug": "approve-as-you-go-loop",
+          "title": "The approve-as-you-go loop",
+          "duration_minutes": 9,
+          "content_mdx": "# The approve-as-you-go loop\n\nClaude Code does not disappear for twenty minutes and hand you a finished feature. It works in a loop, and you are inside the loop. Understanding that cycle is most of what separates people who trust the tool from people who get burned by it.\n\n## The cycle\n\n**You describe a task.** In plain sentences, in the session. \"The checkout total ignores the discount code. Find where the total is calculated and fix it.\"\n\n**It reads the codebase.** It opens the files it thinks are relevant, follows references between them, and builds a picture of how the thing works. You will see it doing this.\n\n**It proposes edits.** Not a description of an edit, but the actual change, shown as a before and after so you can see exactly which lines move.\n\n**You review and approve.** This is your step. You either accept the change, reject it, or say what is wrong with it.\n\n**It runs tests and commits.** Once the change is in, it can run your test suite to check nothing broke, and save the work as a commit with a message describing what changed.\n\nThen back to the top. Most real tasks go around this loop several times.\n\n## Reviewing is the job\n\nNew users treat the approval step as a formality, a speed bump between them and the result. It is the opposite. The approval step is the only place your judgment enters the work.\n\nRead the proposed change with two questions in mind. First: does this do what I asked? Second: does it do anything else? The second question catches more problems. A fix that also renames a variable used in four other files, or quietly changes a default, is technically an answer to your request and still a problem.\n\nIf a change is too large to read, that is information. It usually means the task you gave was too broad. Reject it and ask for the smallest version first.\n\n## Permission modes\n\nPermission modes control what needs your approval before it runs. That is the safety dial.\n\nA stricter mode means Claude Code stops and asks before touching files or running commands. A looser mode lets more happen without interrupting you. The right setting depends entirely on the stakes.\n\nOn a scratch project you built to learn on, a loose mode is fine, because the worst case is deleting something you did not care about. On a paying client's repository, keep approvals on, especially in your first weeks. The time you save by turning them off is small. The time you lose explaining an unexplained change to a client is not.\n\nA useful habit: match the permission mode to what you would be comfortable telling the client afterwards. If \"I let it run and I am not sure what it did\" would not go down well, keep approvals on.\n\n## Give it a task it can finish\n\nChapter 1 covered what a good brief contains. Two things from it matter especially here.\n\n**Scope it to one change.** \"Fix the discount calculation on checkout and add a test for it\" is a task. \"Clean up the codebase\" is not. There is no way to review the result, because there is no way to say what the result should have been.\n\n**Say how you will know it worked.** Point at the failing behaviour: what you did, what happened, what should have happened. That gives Claude Code something to verify against, and gives you something concrete to check when the diff appears.\n\n## When it goes wrong\n\nIt will sometimes propose a change that is wrong, or fix the symptom instead of the cause. The recovery is the same as in Chapter 1: do not just say \"no, try again.\" Say what is wrong.\n\n\"That hides the error instead of fixing it. The total is still calculated before the discount is applied\" gives it something to work with. \"Wrong\" does not.\n\nIf two or three rounds do not converge, stop. Ask it to explain the code path instead of fixing it. Often the misunderstanding is yours, and the explanation is worth more than another attempt.\n\n## The point of the loop\n\nApprove-as-you-go is slower per step and faster overall, because mistakes surface while they are still one change wide. That is the trade the design makes. Skip your half of it and you have an assistant editing your client's code with nobody reading."
+        },
+        {
+          "slug": "claude-md-skills-hooks-mcp",
+          "title": "CLAUDE.md, skills, hooks and MCP",
+          "duration_minutes": 10,
+          "content_mdx": "# CLAUDE.md, skills, hooks and MCP\n\nOut of the box, Claude Code starts every session knowing nothing about your project beyond what it can read in the files. Four pieces let you change that. They have intimidating names and simple jobs.\n\n## CLAUDE.md: written instructions about your project\n\nCLAUDE.md is a file you put in your project containing instructions for Claude about that project. Coding standards, how the folders are organised, what to check before committing, which parts of the code are fragile.\n\nIt is not a config file. It does not set switches or store machine settings. Those live in settings.json. CLAUDE.md is prose. You are writing a note to whoever works on this next, and Claude reads it at the start of a session.\n\nThink of it as onboarding a new team member. Anything you would find yourself repeating in every session belongs there:\n\n- \"Use British spelling in user-facing text.\"\n- \"Run the test suite before proposing a commit.\"\n- \"The payments folder is legacy. Ask before changing anything in it.\"\n- \"Client invoices are generated in PHP with peso amounts stored as integers in centavos.\"\n\nThat last kind of line is the highest value one. Project-specific facts that are not obvious from reading the code are exactly what a newcomer gets wrong, human or not.\n\nStart small. Five honest lines you actually follow beat two pages of aspirational rules.\n\n## Skills: reusable instructions in .claude/skills\n\nSkills are reusable instructions stored in a folder called `.claude/skills` in your project. Where CLAUDE.md is standing context that always applies, a skill is a procedure for a specific kind of job.\n\nIf you release a client's site every fortnight and the release involves the same eight steps in the same order, that is a skill. Written once, in the project, available in every session, and usable by teammates who clone the repository.\n\nThe test for whether something should be a skill is repetition. Have you explained this same sequence three times? Write it down where the tool can read it.\n\n## Hooks: event-driven automation\n\nHooks are automation that runs when something happens, rather than when you ask. An event occurs during a session, and the hook fires.\n\nThe difference from the first two matters. CLAUDE.md and skills are instructions. Claude reads them and acts accordingly, with the usual judgment involved. A hook is machinery. It runs on the event, every time, whether or not anyone remembered.\n\nThat makes hooks right for things that must be guaranteed rather than merely encouraged. \"Never let this happen without that\" is hook-shaped. \"Prefer this style\" is CLAUDE.md-shaped.\n\n## MCP: the connection to outside tools\n\nMCP connects Claude Code to tools and services outside your codebase. Your files are already visible to it. Everything else (an issue tracker, a database, a design tool, a documentation system) is not, until something bridges the gap. MCP is that bridge.\n\nWithout it, you paste ticket text into the session by hand. With it, Claude Code can read the ticket where it lives.\n\nYou do not need MCP on day one. It becomes worth setting up when you notice you are repeatedly copying information from another system into the session.\n\n## Slash commands, typed inside a session\n\nSlash commands are typed inside a running Claude Code session, not at your shell prompt. This trips up almost everyone once: you type `/help` into the terminal before starting `claude`, and the shell tells you there is no such command.\n\nStart the session first. Then:\n\n- `/help`: what you can do here\n- `/context`: what Claude currently has in view\n- `/memory`: the instructions it is carrying\n- `/skills`: the skills available in this project\n- `/mcp`: the outside connections\n- `/usage`: your usage\n- `/plugin`: plugins\n\nOf these, `/context` is the one to learn early. When output goes strange, the usual cause is that Claude is working from something different than you assumed, and `/context` shows you what it actually has.\n\n## Where to start\n\nDo them in order of payoff. Write a short CLAUDE.md in week one, since it is the piece that improves every session and takes ten minutes. Add a skill when you catch yourself repeating a procedure. Add a hook when something must never be skipped. Add MCP when the copy-pasting from another system gets old.\n\nDoing all four before you have used the tool for anything real is a way of avoiding the real work."
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A friend wants to try Claude Code but says she only ever works in a browser. What is the most accurate thing to tell her?",
+          "options": [
+            {
+              "id": "a",
+              "text": "It is primarily a command-line tool, though there is also a web surface"
+            },
+            {
+              "id": "b",
+              "text": "It runs only in a terminal, so a browser is really no help to her at all"
+            },
+            {
+              "id": "c",
+              "text": "It runs in the browser first, and the terminal command is the newer option"
+            },
+            {
+              "id": "d",
+              "text": "It runs as a browser extension that reads and edits files in your repository"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "tools",
+          "explanation": "Claude Code is primarily a command-line tool, run as the `claude` command in a terminal, but it is not terminal-only: there is also a desktop app, a web surface, and VS Code and JetBrains extensions. The terminal is the primary way in, not the only one, so \"only a terminal\" and \"browser first\" are both wrong."
+        },
+        {
+          "prompt": "A VA handles a client's reports, spreadsheets and inbox. She has heard Claude Code is the most capable tool and wants to start there. What should she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Claude Code, because agentic tools handle any kind of file work"
+            },
+            {
+              "id": "b",
+              "text": "claude.ai or Cowork, because the work is documents, not a codebase"
+            },
+            {
+              "id": "c",
+              "text": "Claude Code, since the terminal is where the serious work gets done"
+            },
+            {
+              "id": "d",
+              "text": "Nothing yet, since none of these tools touch documents or reports"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "judgment",
+          "explanation": "Claude Code acts on a codebase. If there is no codebase, its main strength does not apply. Document, spreadsheet and report work belongs on claude.ai or in Cowork. Picking a tool because it sounds more advanced, rather than because it matches the material, is the mistake here."
+        },
+        {
+          "prompt": "You ask Claude Code to fix a bug in a project. What is the normal order of what happens next?",
+          "options": [
+            {
+              "id": "a",
+              "text": "It commits the change, then reads the code, then shows you a diff"
+            },
+            {
+              "id": "b",
+              "text": "It writes a plan file, waits for tests, then edits without review"
+            },
+            {
+              "id": "c",
+              "text": "It reads the codebase, proposes edits, you review, then tests run"
+            },
+            {
+              "id": "d",
+              "text": "It runs the tests first, then edits whatever those tests flagged up"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "workflow",
+          "explanation": "The loop is: you describe the task, Claude reads the relevant files, proposes edits, you review and approve, and then it can run tests and commit. Committing before review would defeat the point of the loop, because your approval is what sits between a proposal and a change to your project."
+        },
+        {
+          "prompt": "It is your first week working inside a paying client's repository. How should you set permissions?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Turn approvals off so the work finishes before the client's deadline"
+            },
+            {
+              "id": "b",
+              "text": "Turn approvals off, then read the whole diff once at the very end"
+            },
+            {
+              "id": "c",
+              "text": "Keep approvals on only for tests, since edits are the safer part"
+            },
+            {
+              "id": "d",
+              "text": "Keep approvals on so you see each change before it touches files"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "judgment",
+          "explanation": "Permission modes control what needs your approval first, and the right setting depends on the stakes. Loose modes are reasonable on a scratch project; a client repository is exactly where you want to see changes as they are proposed. Reviewing one large diff at the end is harder, not faster, because problems are no longer one change wide."
+        },
+        {
+          "prompt": "Your team keeps repeating the same things every session: naming conventions, which folder is legacy, what to check before a commit. Where should that live?",
+          "options": [
+            {
+              "id": "a",
+              "text": "In CLAUDE.md, which holds written instructions about your project"
+            },
+            {
+              "id": "b",
+              "text": "In settings.json, the file that holds machine settings for the tool"
+            },
+            {
+              "id": "c",
+              "text": "In a hook, so the conventions fire whenever anyone saves a file"
+            },
+            {
+              "id": "d",
+              "text": "Pasted at the top of every new session, by every person, every time"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "tools",
+          "explanation": "CLAUDE.md is a file of instructions for Claude about your project: standards, structure, what to check before committing. It is not a config file; machine settings belong in settings.json. Hooks are for automation that must run on an event, not for standing guidance you want Claude to take into account."
+        },
+        {
+          "prompt": "Your tickets live in a separate service, and you are tired of pasting them into the session by hand. Which piece solves that?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A hook, which runs automation when an event happens in a session"
+            },
+            {
+              "id": "b",
+              "text": "MCP, which connects Claude Code to outside tools and services"
+            },
+            {
+              "id": "c",
+              "text": "CLAUDE.md, which is where you list the services your team uses"
+            },
+            {
+              "id": "d",
+              "text": "A permission mode, which decides what Claude reaches without asking"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "tools",
+          "explanation": "MCP is the connection between Claude Code and systems outside your codebase. Hooks automate on events inside a session; CLAUDE.md is prose instructions, not a connection; permission modes govern approval, not reach into other services. The signal that you need MCP is exactly this: repeated manual copying from another system."
+        },
+        {
+          "prompt": "Someone types /help at their shell prompt, before starting anything, and gets an error. What went wrong?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Slash commands only work in the VS Code and JetBrains extensions"
+            },
+            {
+              "id": "b",
+              "text": "/help is not a real command, so nothing was ever going to happen"
+            },
+            {
+              "id": "c",
+              "text": "Slash commands are typed inside a running session, not in the shell"
+            },
+            {
+              "id": "d",
+              "text": "The shell needs a plugin installed before slash commands will run"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "tools",
+          "explanation": "Slash commands such as /help, /context and /skills belong inside a running Claude Code session. At the shell prompt they are just unknown commands. Start the session first, then type them. /context in particular is worth learning early, because it shows what Claude actually has in view when results go strange."
+        },
+        {
+          "prompt": "Which request gives Claude Code the best chance of producing a change you can approve on the first read?",
+          "options": [
+            {
+              "id": "a",
+              "text": "\"Fix the bug on the checkout page, you know the one I mean\""
+            },
+            {
+              "id": "b",
+              "text": "\"Rewrite the whole app so the checkout page stops breaking sometimes\""
+            },
+            {
+              "id": "c",
+              "text": "\"Improve the code quality across the repository wherever you can\""
+            },
+            {
+              "id": "d",
+              "text": "\"The checkout total ignores the discount code; fix it and add a test\""
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "prompting",
+          "explanation": "A reviewable change needs a scoped task and a way to tell whether it worked. Naming the wrong behaviour gives Claude something to verify against and gives you something concrete to check in the diff. Vague or repository-wide requests produce changes too large to read, which quietly turns approval into clicking yes."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-4-claude-cowork",
+      "title": "Claude Cowork",
+      "description": "The agentic workspace for non-coding work: handing a task off with Dispatch, setting it up with Projects and Plugins, and deciding which of the three surfaces a job belongs to.",
+      "lessons": [
+        {
+          "slug": "handing-work-off-with-dispatch",
+          "title": "Handing work off with Dispatch",
+          "duration_minutes": 8,
+          "content_mdx": "# Handing work off with Dispatch\n\nClaude Cowork is an agentic workspace for work that is not code. Reports, spreadsheets, document review, analysis: the material that fills most of a working week for a VA, an office assistant, a freelancer or someone running a small business. It runs as a desktop app, with web and mobile as well, and it requires a paid plan.\n\nThat description sounds close to the chat assistant, and the tasks do overlap. The real difference is not what it can produce. It is who is holding the wheel while the work happens.\n\n## Chat steers, Cowork takes a hand-off\n\nOn claude.ai you are in the loop the whole time. You ask, you read, you correct, you ask again. Claude Code has its own version of the same thing: it proposes an edit, you approve it, it moves on.\n\nCowork works differently. You describe a piece of work and hand it over. Dispatch is the part that makes this concrete: it runs a task in the background, including while you are away. You set the job going and come back to it, rather than steering it a step at a time.\n\nIf your client is in another timezone, that gap is where the value sits. Files arrive at 6pm Sydney time. You brief the task before you sleep. The draft is waiting when you wake up, and nobody's morning was spent waiting for you.\n\n## A hand-off brief has to survive without you\n\nChapter 1 covered what a brief needs: the task, the reader, the format, the material, the constraints. All of it still applies. What changes is the cost of leaving something out.\n\nIn chat, a thin brief is cheap. The first answer comes back wrong, you say \"shorter, and write the caption in Taglish,\" and you are back on track in ten seconds. In a dispatched task there is nobody to say that. Whatever ambiguity you left behind gets resolved without you, quietly, in a direction you did not pick, and you find out an hour later.\n\nSo brief a dispatched task the way you would brief a colleague taking over while you sleep:\n\n- **The outcome, described as a finished thing.** \"A two-page summary the client can read,\" not \"look at these files.\"\n- **The material, actually attached.** Not \"the usual monthly export\", but the file itself.\n- **The rules that are not obvious.** Which currency, which spelling of the company name, whose name goes on the document, what must not appear in it.\n- **What to do at a fork.** This is the step people skip, and it matters more than tone guidance. \"If a receipt has no date, list it under Unclear at the end rather than guessing the month.\" Every fork you name is one guess you do not have to unpick later.\n- **What done looks like.** File type, length, the order of the sections, and where uncertainty gets recorded.\n\n## Read it properly when it comes back\n\nA finished draft has a way of looking authoritative, especially when it was produced while you slept. It is still a draft, and it is still yours.\n\nCheck the things you would check if a junior handed them to you. Do the numbers match the source files. Are names, dates and amounts traceable to something you can point at. Did it follow the fork rules, or did it quietly guess. Does it read like the person whose name is on it.\n\nTime spent running is not evidence of accuracy. A task that took an hour in the background is exactly as much your responsibility as a paragraph you got back in four seconds.\n\n## Start with work you already know how to check\n\nThe first thing you dispatch should not be something new. Pick a task you have done manually often enough to spot a wrong answer at a glance: the weekly sales roll-up, the same reconciliation you have done for six months, the applicant list you always sort the same way.\n\nYou are testing two things at once: whether the tool can do the job, and whether your brief was complete enough to be run without you. If the output is wrong, the brief is usually the reason, and you learn far more from that on a task whose right answer you already know.\n\nOnce one hand-off works cleanly, the next question is how to stop rewriting the same setup every week. That is what Projects are for."
+        },
+        {
+          "slug": "cowork-projects-and-plugins",
+          "title": "Projects and Plugins in Cowork",
+          "duration_minutes": 8,
+          "content_mdx": "# Projects and Plugins in Cowork\n\nThe first time you dispatch a task, you write the whole brief from scratch: what the client wants, how they like it laid out, which spelling of their company name is correct, which file the numbers live in. The second time, you write most of it again. By the fourth month you are retyping the same context and wondering why the output keeps drifting.\n\nCowork has Projects for exactly this. A project holds the context and materials a task needs, so a hand-off starts from a setup that is already correct instead of from an empty box.\n\n## What a project is actually for\n\nThink of it as the folder you would hand a new assistant on their first day, if you were going away for a week and could not answer questions.\n\nFor a recurring piece of client work, four things are worth having ready:\n\n- **Standing instructions.** How this client's documents are written: length, tone, currency, date format, whether the summary goes first or last, what they never want to see.\n- **The source material.** The exports, the price list, the contract, the brand guide: the files the work is actually built from.\n- **One accepted example.** Last month's report, the version the client approved without changes. An example of the finished shape does more work than a paragraph describing it.\n- **The boundaries.** What is out of scope, what needs to come back to you rather than being decided, what must not leave the document.\n\nIn chat, thin setup is survivable because you are there. In Cowork the run happens without you, so anything you cannot say in the moment has to be in place before the task starts.\n\n## One project per shape of work\n\nResist the single giant project holding everything you do. Split by the thing that comes out at the end: one project per client, or one per recurring deliverable. Two clients in the same industry will still have different rules about what they want, and a project that tries to serve both will produce work that half-fits each.\n\nThe payoff is consistency. If you handle social listings, the weekly report should have the same sections in the same order every week, whether you briefed it on Monday or your cousin briefed it while you were at a wedding. That sameness is what a client is actually paying for when they keep you on retainer.\n\n## Keep it current, or it will quote your old rates\n\nA project is a live workspace, not an archive. Stale material does not sit there harmlessly. It gets used. A superseded rate sheet becomes the rates in next month's proposal. An old brand guide brings back a tagline the client dropped last year.\n\nTwo habits keep this from happening. Put a date in the name of anything that changes on a schedule, so an old version is obvious. And when a client changes something (pricing, house style, the name of their product), update the project the same day, not the next time you notice the output looks wrong.\n\nOnly load material you are allowed to load. A client's files going into a tool is a decision about their data, not just yours. If your contract or your NDA has something to say about it, that comes first.\n\n## Plugins extend what it can do\n\nCowork also has Plugins. They extend what the workspace can do beyond what it handles on its own, which means the sensible way to approach them is to check what is available to you and what each one actually adds, rather than assuming a capability exists because it would be convenient.\n\nTwo things stay true whatever you add. A plugin extends reach, not judgment: it does not make a vague brief clear, and it does not decide what is worth sending to a client. And every new connection is a new place your work and your client's material can travel, so the confidentiality question gets asked again each time you turn one on.\n\n## The test of a good setup\n\nHere is the useful check. Could someone else (a teammate, or you on a bad day) open the project, dispatch the standing task, and get back something you would be willing to send?\n\nIf yes, you have built a workflow rather than a habit. If no, the gap between what is in the project and what is only in your head is exactly the part that keeps going wrong."
+        },
+        {
+          "slug": "choosing-your-surface",
+          "title": "Choosing your surface, and what stays yours",
+          "duration_minutes": 9,
+          "content_mdx": "# Choosing your surface, and what stays yours\n\nThree surfaces, three chapters. Claude on claude.ai, Claude Code, Claude Cowork. People pick between them by which one sounds most advanced, and end up in a terminal to write an email or in a chat window doing a job they could have handed off.\n\nPick by how the work runs instead. Three questions, in order.\n\n## Do you need to judge each step as it happens?\n\nIf the answer is yes, use chat on claude.ai. A delicate reply to an unhappy client, a cover letter you keep reshaping, a document you are thinking through rather than producing. These need you reading every line as it appears, changing your mind, pulling it back. That is a conversation, and the chat assistant is built for it. Projects, file uploads and Artifacts cover most of what that kind of work needs.\n\n## Is the work editing code on your machine?\n\nThen it is Claude Code. It reads a codebase, proposes changes, and you approve them as it goes. If nothing you are doing touches a repository, this is not your tool, and no amount of comfort with the terminal makes it the right one for a report.\n\n## Can you describe the whole job up front and be away while it runs?\n\nThen it is Cowork, on a paid plan. Non-coding work with a known shape and a known finish: the monthly report, the sixty applications scored against a rubric you already wrote, the spreadsheet you rebuild the same way every month. Dispatch it, go do something else, review what comes back.\n\nThese are not three rungs of a ladder, and Cowork is not \"Claude Code for non-coders.\" Claude Code works in an approve-as-you-go loop; Cowork takes a hand-off. Those are different working relationships, and the difference is the whole reason to choose between them.\n\n## Work moves between surfaces as it matures\n\nA new task usually belongs in chat, because you do not yet know the shape of a good answer. Do it there two or three times and pay attention to what you keep correcting. Those corrections are the brief.\n\nOnce the shape is stable and you can write down what done looks like, the same task is ready to become a Cowork project and a standing dispatch. The task did not get more advanced. You did. You now know it well enough to describe it completely.\n\n## What never moves to the machine\n\nEvery surface in this course produces work with your name on it. Three judgments stay with you no matter which one you used.\n\n**Is it true?** Names, numbers, dates, quotes, anything a client could check. A dispatched report is not more accurate for having run in the background for an hour. If a figure appears that you cannot trace to a source you can point at, you either find the source or cut the line. \"It came out of the tool\" is not a place to stand when a client asks where the number came from.\n\n**Will this land with this reader?** You know your client. You know that one prefers a two-line update, that another wants the reasoning shown, that a third reads only the first paragraph. You know when a factually correct sentence is going to cause a problem. That knowledge lives in you, not in the files.\n\n**Are you willing to sign it?** You are the one who sends it, invoices for it, and answers for it. That covers what goes out and what goes in: whether your client's documents are allowed into a tool at all, what your NDA says, and whether you are expected to disclose that AI was involved. Ask before you upload, not after.\n\n## Where this leaves you\n\nYou now have a full picture: how to write a brief that holds up, what the chat assistant does, what Claude Code does to a codebase, and what it means to hand non-coding work to Cowork and walk away.\n\nThe skill you are actually building is not any one of those tools. It is describing work precisely enough that someone else could do it, then checking the result honestly. That skill made you employable before any of this existed, and it is the part that keeps its value as the tools keep changing.\n\nStart with one task you already do every week. Write the brief properly. Run it on the surface that fits how the work runs. Then read the output the way your client would."
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A VA in Manila has to turn forty client emails into a weekly summary that is ready before the client's morning in Toronto. Which approach fits how that work runs?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Dispatch it in Cowork with the emails and the report format attached, overnight"
+            },
+            {
+              "id": "b",
+              "text": "Paste the emails into chat ten at a time and steer each summary as it appears"
+            },
+            {
+              "id": "c",
+              "text": "Open Claude Code on the mail export and approve each change as the batch proceeds"
+            },
+            {
+              "id": "d",
+              "text": "Dispatch it in Cowork with just the emails, and sort out the format afterwards"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "workflow",
+          "explanation": "The job has a known shape, all the material exists up front, and the deadline falls while you are asleep. That is exactly the case Dispatch was built for. Chat would work but keeps you at the keyboard for all forty. Claude Code is for editing a codebase, not for reading client mail."
+        },
+        {
+          "prompt": "Why does handing a task to Dispatch raise the standard your brief has to meet?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Background runs reject any new instruction that arrives after the task has started"
+            },
+            {
+              "id": "b",
+              "text": "You are not there to correct a wrong turn, so the brief has to do the steering"
+            },
+            {
+              "id": "c",
+              "text": "Background work is charged differently, so a shorter brief costs you a lot less"
+            },
+            {
+              "id": "d",
+              "text": "Cowork ignores every attached file unless the brief names each one of them"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "prompting",
+          "explanation": "In chat you fix a thin brief in seconds with a follow-up. In a hand-off, any ambiguity gets resolved without you and you only see the result at the end. Naming what to do at each fork (what counts as unclear, what to flag rather than guess) is the part that makes a brief survive on its own."
+        },
+        {
+          "prompt": "You produce the same client report every month. What is worth putting into the Cowork Project behind it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Only this month's raw numbers, since older material tends to confuse the run"
+            },
+            {
+              "id": "b",
+              "text": "A single line naming the client, which keeps the setup light and flexible"
+            },
+            {
+              "id": "c",
+              "text": "Standing instructions, the source files, and a past report the client accepted"
+            },
+            {
+              "id": "d",
+              "text": "The full chat history of every earlier conversation you had about this client"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "tools",
+          "explanation": "A project is where the context and materials for a hand-off live, so put in the things the run cannot ask you about: how this client's documents are written, the files the work is built from, and an example of the finished shape they already approved. Raw numbers alone leave out the rules; a bare name leaves out everything; a pile of old conversation is not the same as a curated setup."
+        },
+        {
+          "prompt": "A classmate says Cowork is basically \"Claude Code for non-coders.\" What is wrong with that?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nothing is wrong, since both read your files, propose edits, and wait for approval"
+            },
+            {
+              "id": "b",
+              "text": "Cowork only drafts text, while Claude Code alone can work with real files"
+            },
+            {
+              "id": "c",
+              "text": "Cowork also runs in a terminal, so the two differ mainly in what they cost"
+            },
+            {
+              "id": "d",
+              "text": "They run differently: Code approves as it goes, Cowork takes a hand-off"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "judgment",
+          "explanation": "The two tools are not the same product aimed at different audiences. Claude Code works in an approve-as-you-go loop over a codebase; Cowork receives a described task and works through it, including while you are away. Choosing between them is a question about the working relationship, not about how technical you are."
+        },
+        {
+          "prompt": "A freelancer's Cowork Project still holds two years of old briefs, a superseded rate sheet and abandoned drafts. What is the real risk?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Stale material gets treated as current, so old rates reappear in new work"
+            },
+            {
+              "id": "b",
+              "text": "Projects refuse material past a certain age and the dispatched run fails"
+            },
+            {
+              "id": "c",
+              "text": "Extra files force Dispatch into the foreground and it demands approvals"
+            },
+            {
+              "id": "d",
+              "text": "Cowork deletes anything it judges to be outdated without telling you first"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "judgment",
+          "explanation": "Anything sitting in a project is material the work can draw on, and old material does not announce itself as old. Keep dates in the names of things that change on a schedule, and update the project the day a client changes pricing or house style rather than after the wrong figure has gone out."
+        },
+        {
+          "prompt": "Which of these jobs is better kept in claude.ai chat than dispatched in Cowork?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The month-end spreadsheet you rebuild the same way every single month"
+            },
+            {
+              "id": "b",
+              "text": "A careful reply to an unhappy client, where you weigh each line"
+            },
+            {
+              "id": "c",
+              "text": "Scoring sixty applications against a rubric you have already written"
+            },
+            {
+              "id": "d",
+              "text": "Compiling a standing report from files you have already gathered"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "workflow",
+          "explanation": "Work where you change your mind as you read belongs in a conversation, because your judgment is applied line by line. The other three have a known shape and all their material up front, which is what makes them safe to hand off and review at the end."
+        },
+        {
+          "prompt": "How should you think about Plugins in Cowork?",
+          "options": [
+            {
+              "id": "a",
+              "text": "They replace the brief by working out the task from the project files"
+            },
+            {
+              "id": "b",
+              "text": "They are the plan tiers that decide how long a dispatched task may run"
+            },
+            {
+              "id": "c",
+              "text": "They extend what Cowork can do beyond what it handles on its own"
+            },
+            {
+              "id": "d",
+              "text": "They turn finished reports into slide decks for viewing on mobile"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "tools",
+          "explanation": "Plugins add capability; they do not add judgment. A vague brief stays vague, and nothing decides for you what is fit to send a client. Check what is actually available to you rather than assuming a capability exists, and treat each new connection as another place your client's material can travel."
+        },
+        {
+          "prompt": "A dispatched report comes back with a confident revenue figure for your client's second quarter that you cannot find in any of the source files. What do you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Send it as it is, since the run had the files and drew the number from them"
+            },
+            {
+              "id": "b",
+              "text": "Run the same task again and see whether the identical figure comes back"
+            },
+            {
+              "id": "c",
+              "text": "Add a note in your cover email saying one figure is unverified, then send"
+            },
+            {
+              "id": "d",
+              "text": "Trace the figure to a source you can name, or cut it before you send"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "judgment",
+          "explanation": "Time spent running in the background is not evidence of accuracy, and a repeated answer is not a verified one. Anything a client could check (names, dates, amounts, quotes) has to trace back to a source you can point at. A disclaimer does not fix a number you cannot stand behind."
+        }
+      ]
+    }
+  ],
+  "assignment": {
+    "title": "One Brief, Start to Finish",
+    "brief_mdx": "Take one real piece of text work you actually need done (a client report, a batch of product listings, a proposal, a week of customer replies, a set of class notes) and run it through everything this course covered. Submit one text document with six short parts. Keep the whole thing under about 900 words.\n\n1. **The job.** Two or three sentences: what the work is, who reads it, and what finished looks like.\n2. **The weak version.** The one-line prompt you would have typed before this course, and the first 100 words of what it returned. Trim it.\n3. **The real brief.** The full prompt you actually used (context, task, constraints, output shape) plus the material you handed over. If you attached or pasted a file, say what it was and why. If the prompt is longer than a screen, show your section labels.\n4. **One steer.** Name the single thing that was wrong with the first answer, paste the follow-up you sent to fix it, and say what changed. A follow-up, not a fresh start.\n5. **The finished output.** Up to 300 words of the final result.\n6. **Surface and judgment.** If you had to do this job every week, would you run it in a claude.ai chat, in Claude Code, or hand it to Cowork? Give one reason based on how the work runs. Then say what you would put in a Project so it starts right each time, and one decision in this job you would not let Claude make for you.\n\nEverything is text, with no uploads. Remove or replace real client names, contact details and anything confidential before you submit. Doing that properly is part of what is marked.",
+    "criteria": [
+      "The job is real and specific, with a named reader and a clear finished state, not a generic 'write content' exercise",
+      "The real brief contains all four parts and shows actual material handed over, and the weak version is genuinely the thinner prompt it replaced",
+      "The steer identifies one fault and corrects it in a follow-up, rather than re-running the same request and hoping for a better answer",
+      "The surface choice fits how the work actually runs. Claude Code is not chosen for non-code work, and Cowork is not described as an approve-every-step tool",
+      "The Project setup names the specific instructions or files that would go in it, and the judgment call is a real decision with a consequence attached",
+      "Client names and confidential details are removed, the final output is the learner's own run, and no Claude feature is claimed that does not exist"
+    ],
+    "min_words": 300
+  }
+}

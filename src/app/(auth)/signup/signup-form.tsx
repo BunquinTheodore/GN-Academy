@@ -149,8 +149,8 @@ export function SignupForm() {
                 className="mt-0.5"
               />
               <span>
-                Send me course updates and career tips by email. Optional — you
-                can turn this off any time.
+                Send me course updates and career tips by email. This is
+                optional, and you can turn it off any time.
               </span>
             </label>
           )}

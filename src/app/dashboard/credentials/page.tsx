@@ -19,7 +19,7 @@ export default async function CredentialsPage() {
       <div>
         <h1 className="font-display text-2xl font-semibold">My credentials</h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          Each one has a public verification page — put the code on your CV
+          Each one has a public verification page. Put the code on your CV
           and let employers check it themselves.
         </p>
       </div>
@@ -27,7 +27,7 @@ export default async function CredentialsPage() {
       {credentials.length === 0 ? (
         <div className="flex flex-col items-start gap-4 rounded-lg border border-dashed border-border p-8">
           <p className="text-muted-foreground">
-            No credentials yet. Finish a course and pass its exam — the free
+            No credentials yet. Finish a course and pass its exam. The free
             AI Foundations track is the fastest first one.
           </p>
           <Button asChild>

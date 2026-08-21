@@ -5,7 +5,7 @@ import { home } from "@/content/site";
 export const metadata: Metadata = {
   title: "How it works",
   description:
-    "From free AI Readiness Test to verified credential to employer visibility — how GN Academy works.",
+    "How GN Academy works, from free AI Readiness Test to verified credential to employer visibility.",
 };
 
 export default function HowItWorksPage() {

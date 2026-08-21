@@ -37,7 +37,9 @@ test.describe("funnel flow", () => {
     await expect(page).toHaveURL(/\/ai-test\/quiz/, { timeout: 30_000 });
 
     for (let i = 0; i < 15; i++) {
-      const radios = page.getByRole("radio");
+      // Scoped for the same reason as the certification journey: the theme
+      // toggle is a radiogroup, and nth(1) of an unscoped query is "Dark".
+      const radios = page.locator("fieldset").getByRole("radio");
       await expect(radios.first()).toBeVisible({ timeout: 15_000 });
       await radios.nth(1).click();
       const nextButton = page.getByRole("button", {
@@ -60,7 +62,7 @@ test.describe("funnel flow", () => {
     await expect(page.locator("#score-heading")).toBeVisible();
     await expect(page.getByText("Competency breakdown")).toBeVisible();
     await expect(
-      page.getByText("Your score is unverified — employers can't see it."),
+      page.getByText("Your score is unverified. Employers can't see it."),
     ).toBeVisible();
 
     // The visitor is now a lead.

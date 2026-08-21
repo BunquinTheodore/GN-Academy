@@ -62,8 +62,8 @@ export default async function EnrollPage({
                         <li key={channel.key}>
                           <span className="font-medium text-foreground">
                             {channel.label}
-                          </span>{" "}
-                          — {channel.accountName}
+                          </span>{": "}
+                          {channel.accountName}
                           <br />
                           <span className="font-mono text-foreground">
                             {channel.accountNumber}
@@ -96,11 +96,11 @@ export default async function EnrollPage({
                       {site.contactEmail}
                     </span>{" "}
                     for the GCash or Maya account to pay{" "}
-                    {formatPhp(cert.price_php)} into — the receiving details
+                    {formatPhp(cert.price_php)} into. The receiving details
                     are published with the first cohort.
                   </li>
                 )}
-                <li>Keep the receipt — copy its reference number.</li>
+                <li>Keep the receipt and copy its reference number.</li>
                 <li>Enter the reference number below.</li>
               </ol>
               <p className="mt-3">

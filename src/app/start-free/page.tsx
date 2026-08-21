@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { redirect } from "next/navigation";
+import { getSessionUser } from "@/lib/auth/session";
 import Link from "next/link";
 import { PageShell } from "@/components/site/page-shell";
 import { Button } from "@/components/ui/button";
@@ -6,16 +8,19 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Start free",
   description:
-    "Begin with the free AI Foundations certificate course — no payment, no catch.",
+    "Begin with the free AI Foundations certificate course. No payment, no catch.",
 };
 
-export default function StartFreePage() {
+export default async function StartFreePage() {
+  const user = await getSessionUser();
+  if (!user) redirect("/login?next=/start-free");
+
   return (
     <PageShell title="Start free">
       <p>
-        AI Foundations is a free certificate course covering the exact skills
-        the AI Readiness Test measures — prompting, tools, workflow, and
-        judgment — built for Filipino work contexts.
+        AI Foundations is a free certificate course built for Filipino work
+        contexts, covering the exact skills the AI Readiness Test measures:
+        prompting, tools, workflow, and judgment.
       </p>
       <div className="rounded-md border border-border bg-card p-4">
         <p className="text-sm">

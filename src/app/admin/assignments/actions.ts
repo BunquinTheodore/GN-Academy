@@ -47,7 +47,7 @@ export async function reviewAssignmentAction(
   if (decision !== "approve" && !parsed.data.note) {
     return {
       error:
-        "Write a note explaining what needs to change — it is the only feedback they get.",
+        "Write a note explaining what needs to change. It is the only feedback they get.",
     };
   }
 
@@ -119,7 +119,7 @@ export async function reviewAssignmentAction(
   } catch (e) {
     console.error("credential issue after approval failed", e);
     return {
-      ok: "Approved, but issuing the credential failed. Their submission is approved — retry from their record.",
+      ok: "Approved, but issuing the credential failed. Their submission is approved, so retry from their record.",
     };
   }
 }

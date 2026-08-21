@@ -40,7 +40,7 @@ export default async function BlogPage({
         </h1>
         <p className="mt-3 max-w-prose text-muted-foreground">
           What actually works when you&apos;re building AI skills for Filipino
-          work — written for people doing the job, not selling the hype.
+          work. Written for people doing the job, not selling the hype.
         </p>
 
         {categories.length > 0 && (

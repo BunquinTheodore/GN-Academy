@@ -36,7 +36,7 @@ export async function generateMetadata({
   return {
     title: `AI Readiness score: ${attempt.score}/100`,
     description:
-      "I took the free AI Readiness Test at GN Academy — 15 real work scenarios, scored across four competencies.",
+      "I took the free AI Readiness Test at GN Academy: 15 real work scenarios, scored across four competencies.",
     robots: { index: false, follow: true },
   };
 }
@@ -119,8 +119,8 @@ export default async function ResultsPage({
               </p>
               <p className="mt-1 font-medium">{weakest.label}</p>
               <p className="mt-1 text-sm text-muted-foreground">
-                This is the area employers weight most heavily — and the
-                fastest way to move your score.
+                This is the area employers weight most heavily. Fixing it is
+                the fastest way to move your score.
               </p>
             </div>
           )}

@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Bricolage_Grotesque } from "next/font/google";
 import { env } from "@/lib/env";
 import { site } from "@/content/site";
 import { AnalyticsScript } from "@/components/analytics-script";
+import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -26,7 +27,7 @@ const bricolage = Bricolage_Grotesque({
 export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_SITE_URL),
   title: {
-    default: "GN Academy — Learn. Prove. Get hired.",
+    default: "GN Academy: Learn. Prove. Get hired.",
     template: "%s · GN Academy",
   },
   description:
@@ -54,7 +55,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    // suppressHydrationWarning: next-themes sets the class on <html> before
+    // React hydrates, so the server and client markup differ by design here.
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${bricolage.variable} antialiased`}
       >
@@ -64,7 +67,7 @@ export default function RootLayout({
             __html: JSON.stringify(organizationJsonLd),
           }}
         />
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
         <AnalyticsScript />
       </body>
     </html>
