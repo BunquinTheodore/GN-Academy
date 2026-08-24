@@ -1,0 +1,1063 @@
+{
+  "slug": "basic-ai",
+  "title": "Basic AI",
+  "subtitle": "Start from zero, with nothing assumed",
+  "level": "foundation",
+  "category": "Foundations",
+  "format": "Self-paced online",
+  "summary": "The absolute beginner's course, for the person who has never used AI, or who opened a chatbot once and closed it again. Nine short lessons on what AI actually is, how to ask it for something you can use, where it fits in school, work and household admin, and what must never go in the box. Free, and the exam at the end issues a verifiable certificate.",
+  "description": "Nothing is assumed here. You will learn what you are actually talking to and why it can sound completely sure and still be wrong, how to ask for something in a way that gets a usable answer instead of a shrug, and how to use it on ordinary Filipino tasks: understanding a school memo or a bank letter, drafting a message to a client or a landlord, writing a listing, getting through government paperwork you have never done before. It also covers the part beginners are never told, which is what must never go into a chat box and how to check an answer before you act on it. Pass the free exam and you earn a verifiable certificate. The next rung up is AI Foundations Certificate, also free, which takes you into prompting properly, choosing between tools, and building a repeatable workflow. After that, AI Essentials for Work covers how these systems work and how to run them on real office tasks.",
+  "skills": [
+    "What AI is and is not",
+    "Plain-language requests",
+    "Using AI to understand documents",
+    "Everyday AI tasks",
+    "Personal data safety",
+    "Checking an answer before acting"
+  ],
+  "outcomes": [
+    "Explain in your own words what an AI chat assistant is doing when it answers you",
+    "Tell an answer that is safe to use from one that is only a starting point",
+    "Ask for something in a way that gets a usable answer, and steer it when the first answer is wrong",
+    "Use AI to understand documents and messages you receive, not just to write new ones",
+    "Name what must never be typed into a chat box, and check a number, date, name or rule against a real source before you act"
+  ],
+  "roles": [
+    "Anyone who has never used AI",
+    "Students and jobseekers",
+    "Online sellers and small business owners",
+    "Parents and household managers"
+  ],
+  "price_php": null,
+  "is_free": true,
+  "passing_score": 70,
+  "credential_prefix": "BAI",
+  "sort_order": -3,
+  "requires_assignment": false,
+  "modules": [
+    {
+      "slug": "chapter-1-what-you-are-actually-talking-to",
+      "title": "What you are actually talking to",
+      "description": "Enough of what this thing is to explain it to your tita, including why sounding sure and being right are two different things.",
+      "lessons": [
+        {
+          "slug": "what-it-is",
+          "title": "What AI actually is",
+          "duration_minutes": 7,
+          "content_mdx": "# What AI actually is\n\nYou have probably seen the box by now. It sits on a website or in an app, it says something like \"ask me anything,\" and when you type a sentence into it a tidy paragraph comes back, in whatever language you used, sounding like it was written by somebody who knew the subject.\n\nIf that felt strange the first time, that was the correct reaction. This lesson is about what is actually happening in there, in words you could repeat to your tita over merienda.\n\n## The plain version\n\nAn AI chat assistant is software that writes text which sounds like it fits.\n\nThink of the suggestion strip above your phone keyboard, the one offering you the next word while you type. It is not reading your mind. It has been fed a great deal of writing, and it offers what tends to follow. Now take that idea and grow it. It still works forward, a piece at a time, the way the keyboard strip does. What changes is the scale and the range: not the next word in a text message, but whole letters, lists, explanations and messages, produced from patterns in an enormous amount of writing.\n\nThat is the machine. It is very good at producing writing of the right shape. A complaint letter comes out shaped like a complaint letter. A list of requirements comes out shaped like a list of requirements. Whether the content sitting inside that shape is true is a separate question, and the machine is not the one answering it.\n\nOne sentence carries this whole course:\n\n**Nothing is true because the machine said it. Anything true in the answer either came from you, or has to be checked by you.**\n\nChapter 2 is the first half of that sentence. Chapter 3 is the second half.\n\n## Three things it is not\n\n**It is not a search engine.** When you search, you get a list of pages that real people wrote, and you choose which to open. When you ask an assistant, you get sentences composed on the spot, for you, that nobody has written before and nobody has read. There is no page sitting behind them for you to click into. Some tools can also look things up, and when that happens you may see links you can open. If you cannot see where an answer came from, treat it as written rather than found.\n\n**It is not a person who looked something up.** Nobody is on the other end. Nobody phoned the office, nobody read the memo, nobody paused and thought \"wait, better double-check that before I say it.\" The answer is friendly because friendly text is what fits there, not because someone took care with you.\n\n**It is not connected to your records.** This is the one that catches beginners hardest. It is not plugged into your school portal, your bank, your barangay hall, SSS, PhilHealth, LTO or your employer's HR system. Ask it whether your clearance has been released, whether your enrolment pushed through, or how much is left on your load, and it has no way to know. What it can still do is produce a sentence that sounds like an answer. That is worse than silence, because silence would have sent you to the registrar.\n\n## It also does not know your situation\n\nIt has never met you. It does not know that your landlord replies only on Viber, that your class has a Thursday deadline, or that the buyer you are chasing already paid half.\n\nSo when you type one short line and get back something bland that could have been written for anyone, nothing has gone wrong. You asked for a message about a repair; it gave you the most average message about a repair, because the average is all it had. The specifics have to come from you. Chapter 2 is entirely about supplying them.\n\n## Where you will actually meet it\n\nTwo shapes, mainly.\n\n- **A chat app.** A box you type into, on a website or as an app on your phone. You type, it answers, you can keep going in the same conversation.\n- **A feature inside something you already use.** A \"help me write,\" \"summarise this,\" or \"suggest a reply\" option inside an email app, a messaging app, a browser, an office document or your keyboard.\n\nThe second shape fools people. Because it lives inside your email, it feels like it must know your email. Assume instead that it is the same kind of machine wearing a different coat, with the same limits, unless the app clearly shows you what it read.\n\n## You can now say this out loud\n\n\"It is not looking anything up and it is not connected to my records. It writes an answer that sounds right. Whether it is right is my job.\"\n\nSay that to one person this week. Teaching it is how you find out you have it."
+        },
+        {
+          "slug": "why-it-sounds-certain",
+          "title": "Why it sounds certain either way",
+          "duration_minutes": 7,
+          "content_mdx": "# Why it sounds certain either way\n\nIf you remember one thing from this course, make it this: the tone of the answer tells you nothing about whether the answer is true.\n\nYou are used to failures announcing themselves. The ATM says insufficient funds. The page will not load. The online form turns a field red and refuses to submit. You are used to being warned.\n\nA chat assistant has nothing like that. When it is right and when it has invented the whole thing, the reply looks the same: same calm sentences, same neat numbering, same helpful closing line offering to explain further. There is no red text. Nothing on the screen separates the two.\n\n## What it looks like when it makes something up\n\nAling Norma needs a copy of her birth certificate for a passport appointment. She asks what she has to bring and what it will cost. Back comes a numbered list of documents, the name of an office, and an amount. It reads like something printed on a wall.\n\nSome of it may well be correct. None of it came from the agency. The machine was not reading a page. It was writing the kind of list that follows that kind of question, and a list like that has a very familiar shape.\n\nSecond one. Renz asks what his school requires for clearance before graduation. He gets five items, an office to go to, and a deadline. His school's actual rule was on a memo taped to the registrar's window, and it had a sixth item on it that costs three days to sort out.\n\nThis is not the machine lying. There is no intent in there and there is nothing to report to anybody. It is doing exactly what it does, which is write something that fits. Sometimes what fits is also what is true. That is precisely what makes it hard.\n\n## Run the test yourself. It takes five minutes.\n\nDo not take my word for any of this. Do this today.\n\n1. Pick a question with a definite answer, something ordinary you could check later. What documents does a barangay office ask for. What time does a branch open. What is the rule at your school about a dropped subject.\n2. Ask it in one conversation. Copy the answer into your notes.\n3. Start a completely new conversation. Do not mention the first one. Ask exactly the same question, word for word.\n4. Put the two answers side by side.\n\nSometimes they line up closely. Sometimes an item appears in one list and not the other, an amount moves, a name changes, a deadline shifts. Both were written in the same confident voice. Neither was read off a record.\n\nThen finish the test properly: go and check the real answer at the source, the office's own page or the office itself. Now you have seen with your own eyes which parts held and which parts were furniture. Run that test once and a tidy answer stops looking like a settled fact. It teaches the point better than this lesson does.\n\n## The trap everybody falls into first\n\nYou get an answer, something about it feels off, and you type: **are you sure?**\n\nIt is the natural next move and it feels like a check. It is not one.\n\nOne of two things happens. It apologises and hands you a different answer, or it restates the first answer with more assurance. Neither event is evidence. Nobody went to the registrar. You asked the same machine to write one more sentence, and now you have two sentences and exactly as much proof as you started with.\n\nWorse, it tends to move toward whatever you push it toward. You can talk it out of a right answer as easily as a wrong one, so its agreement tells you nothing about the world.\n\nThe check has to happen outside the box. Chapter 3 gives you the short version you can actually run.\n\n## This is not a reason to distrust everything\n\nPlenty of what it produces is fine, and it will save you real time. You are not being asked to become suspicious of every sentence.\n\nYou are being asked to drop one habit: reading confidence as proof. That habit is reasonable everywhere else. When a person tells you with certainty what a permit requires, their certainty came from somewhere: they went, they queued, they read the memo. Here it came from nowhere. It costs the machine nothing to sound sure, so it means nothing that it does.\n\n## What to hold on to\n\nIt sounds exactly the same when it is right and when it is inventing. Which means you never decide anything on the strength of how sure it sounded."
+        },
+        {
+          "slug": "what-people-get-wrong",
+          "title": "The questions everyone asks first",
+          "duration_minutes": 8,
+          "content_mdx": "# The questions everyone asks first\n\nThese are the questions that come up at the dinner table, in the family group chat, and in the tricycle queue whenever AI is mentioned. Here are honest answers, so you can hold your own in that conversation instead of nodding along.\n\n## Is it thinking? Is it alive?\n\nNo. It is software producing text.\n\nIt will write \"I understand how frustrating that must be\" because that sentence fits there, not because anything was understood. It has no wants, no stake in how your day goes, and nothing at risk if it is wrong.\n\nType \"please\" if you like. It costs nothing. Just do not expect politeness to buy you accuracy. The place this actually matters: people start treating it as a friend who knows them. It does not know you, it may not remember you tomorrow, and it will agree with you at the exact moment a friend would push back.\n\n## Does it remember me?\n\nInside one conversation, it can normally refer back to what you said earlier, which is why a back and forth works.\n\nBetween conversations, do not assume. Some tools keep notes about you across chats, some do not, and sometimes it is a setting you can change. It differs by tool and it does not stay the same.\n\nSo work with the safe assumption: a new conversation starts cold. If the answer was good because you explained your situation, be ready to explain it again. And never leave something important parked in a chat as though it were storage. Keep it in your own notes.\n\n## Is it listening to me all the time?\n\nWhat it sees is what you type, paste or upload into it. That is the doorway. It is not sitting in your phone recording your kitchen.\n\nBut \"not listening\" and \"private\" are two different things. Whatever you type goes to a company's computers. Chapter 3 covers what must never go in that box.\n\n## Is using it cheating?\n\nThat depends on a rule, and the rule does not belong to you or to the tool. It belongs to your teacher, your school, your employer or your client. Some teachers require you to declare it. Some ban it for one assignment and encourage it for another. Some workplaces have written a policy down. Others have not put anything on paper.\n\nSo ask, and ask before rather than after. \"Is it all right if I use AI to help me draft this, and do you want me to say so?\" is a short question that settles it before it becomes a problem.\n\nTwo honest observations, whatever the rule turns out to be. Using it to understand something you were given is a very different act from handing in something it produced with your name on it. And if you submit work you cannot explain, you are one follow-up question away from an uncomfortable silence.\n\n## Is it going to take my job?\n\nNobody can tell you what your industry looks like in five years, and anybody who gives you a precise figure is guessing in public.\n\nWhat can be said honestly is smaller. These tools do the typing part of work: the first draft, the tidying, the rewording, the sorting. They do not do the deciding, they do not carry the accountability, they do not hold the relationship with the client, and they do not show up. The realistic worry is not a machine replacing you. It is a person who can direct one of these and check its work being more useful than a person who cannot. That is a gap you can close, and closing it is what you are doing right now.\n\n## Does it cost money?\n\nSome tools are free to use. Some charge a monthly fee. Many do both: free access, with a cap on how much you can use in a stretch, and a paid tier without it.\n\nWhich tools sit where, what the caps are, and what the prices are all change often enough that any figure printed here would be stale before you read it. The tool's own page is the only place worth checking, and it is worth checking before you rely on something for a deadline.\n\nFor this course it does not matter. Everything taught here works on free access.\n\nOne thing to carry into chapter 3, though. Whether a tool is free has nothing to do with whether it is private. Paying does not buy you privacy, and free does not mean somebody is reading your chats. They are separate questions with separate answers, and chapter 3 gives you the assumption to work with.\n\n## You can now say this out loud\n\n\"It is software, not a mind. It does not know me, it is not connected to my records, and being free or paid has nothing to do with being private.\"\n\nThat is enough to hold your end of the conversation."
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Aling Norma is applying for a passport and needs a copy of her birth certificate. You ask a chat assistant what she has to bring and what it costs. Back comes a numbered list of documents, an office to go to, and an amount. Nothing on the screen shows where any of it came from. What is the honest way to read that answer?",
+          "options": [
+            {
+              "id": "a",
+              "text": "It is probably right, since it answered straight away and the list looks complete."
+            },
+            {
+              "id": "b",
+              "text": "It may be right or it may be invented, and the answer itself cannot tell you which."
+            },
+            {
+              "id": "c",
+              "text": "It is probably wrong, because these tools are not built to answer questions about offices."
+            },
+            {
+              "id": "d",
+              "text": "It was right when the tool was last updated, so only the amount is worth checking again."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "judgment",
+          "explanation": "A correct answer and an invented one arrive in the same calm, tidy format, so nothing about the reply separates them. Option d is the tempting one: it treats being out of date as the only way this can go wrong, when the list may never have matched any office at all. Read it as unchecked and get the real answer from PSA."
+        },
+        {
+          "prompt": "Jomar's enrolment was processed at the registrar last week and he wants to be sure it went through. He types into a chat assistant: \"Am I officially enrolled this semester?\" It replies that his enrolment appears to be complete and advises him to keep his receipt. What actually happened?",
+          "options": [
+            {
+              "id": "a",
+              "text": "It read his school's system, so the reply is fine unless the school updates records late."
+            },
+            {
+              "id": "b",
+              "text": "It matched his details against the school's records, which are simply a few days behind."
+            },
+            {
+              "id": "c",
+              "text": "It answered from the enrolment confirmation his school emailed him earlier this semester."
+            },
+            {
+              "id": "d",
+              "text": "It is not connected to his school at all, so it wrote something merely shaped like an answer."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "judgment",
+          "explanation": "A chat assistant is not plugged into your school portal, your bank or any government office. It cannot see his record, so it produced the kind of sentence that follows that kind of question. Options b and c both hand it a door it does not have: there is no records lookup behind that reply and there is no inbox behind it either. Giving it his student number or his school name would not change that, and the only place this gets settled is the registrar."
+        },
+        {
+          "prompt": "Tess asks the same question in two separate conversations, word for word: what a barangay office asks for when you request a certificate. The first answer lists four documents. The second lists five, and one of the two amounts is different. Three documents appear in both lists. What should she take from that?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Neither list is settled, and the three that appear on both lists are not confirmed either."
+            },
+            {
+              "id": "b",
+              "text": "The longer list is the safer one to bring, since carrying a spare document costs nothing."
+            },
+            {
+              "id": "c",
+              "text": "The three documents on both lists are confirmed, and only the other items need checking."
+            },
+            {
+              "id": "d",
+              "text": "The tool is behaving oddly, and a difference like that is worth reporting so it gets fixed."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "judgment",
+          "explanation": "Both answers were written on the spot rather than read off a record, so agreement between them is agreement between two guesses. Option c is the trap: repetition feels like confirmation and is not. The difference is useful for one thing only, which is showing her that neither answer was ever a record."
+        },
+        {
+          "prompt": "Your cousin Marvin trusts whatever the assistant tells him. His reason: \"It just searches the internet for you and puts the answer in one paragraph, so it is faster than opening ten tabs.\" What is actually going on when he gets that paragraph?",
+          "options": [
+            {
+              "id": "a",
+              "text": "That is roughly it, though what it reaches is a fixed set of pages saved when it was built."
+            },
+            {
+              "id": "b",
+              "text": "That is roughly it, which is why two people asking the same thing get the same paragraph."
+            },
+            {
+              "id": "c",
+              "text": "It writes the answer itself. Some tools can also look things up, and then you see links."
+            },
+            {
+              "id": "d",
+              "text": "It only ever repeats paragraphs that somebody wrote and put on the internet somewhere."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "judgment",
+          "explanation": "By default it composes sentences that fit your question rather than handing you pages someone wrote, so options a and d are both describing a lookup that is not happening. Some tools can also search, and when they do you may get links you can open. When you cannot see where an answer came from, treat it as written rather than found. Option b has a true observation attached to the wrong cause: two people can get the same paragraph because the question has one average answer, not because a page was fetched twice."
+        },
+        {
+          "prompt": "You have four small errands on a Tuesday evening and you want to know which one a chat assistant is genuinely the right tool for. Which is it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Finding out whether your barangay clearance is ready for pickup tomorrow morning at the hall."
+            },
+            {
+              "id": "b",
+              "text": "Checking how much of this month's electricity bill is still unpaid on your account."
+            },
+            {
+              "id": "c",
+              "text": "Turning the messy notes on your phone into a short, polite message you can send tonight."
+            },
+            {
+              "id": "d",
+              "text": "Finding out which pharmacies near your street are still open at this hour tonight."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "tools",
+          "explanation": "Three of these ask about a live record or a fact on the ground: your clearance, your account, what is open right now. It has no connection to any of them and will still produce an answer. The fourth uses your own material and asks it to reshape the text, which is what it is for."
+        },
+        {
+          "prompt": "Jenny's email app now offers a \"help me write\" button, and a suggested reply appears when she taps it. She decides this one is more reliable than the chat app her officemate uses, because it lives inside her email and can therefore see her account and her old messages. What should she assume instead?",
+          "options": [
+            {
+              "id": "a",
+              "text": "That it is the same kind of tool sitting in a different place, working under the same limits."
+            },
+            {
+              "id": "b",
+              "text": "That it is more careful with facts, because a company would not attach it to email otherwise."
+            },
+            {
+              "id": "c",
+              "text": "That it can do less than a chat app, since a small button cannot hold as much as a full tool."
+            },
+            {
+              "id": "d",
+              "text": "That it has read her inbox, so anything it says about her old messages can be relied on."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "tools",
+          "explanation": "Sitting inside an app you already use makes a feature feel connected to your account, and that feeling is not information. Unless the app shows you what it actually read, assume the same machine with the same limits. Where it does read your material, that is something to find out, not something to guess."
+        },
+        {
+          "prompt": "Mark types one line into the box: \"Write a message asking my landlord to fix something.\" What comes back is a polite, general message that could have been sent by anyone about anything. He decides the tool is overrated. What is the real explanation?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Short requests get short, thin answers, and longer requests get more detailed ones back."
+            },
+            {
+              "id": "b",
+              "text": "He did not ask it for detail, and detail is something you have to request by name."
+            },
+            {
+              "id": "c",
+              "text": "His wording was too plain, and it responds better to more formal, complete sentences."
+            },
+            {
+              "id": "d",
+              "text": "It knows nothing about his situation, so what came back is the average version of it."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "prompting",
+          "explanation": "It has never seen his unit, his leaking ceiling, his landlord or how long he has been waiting. With nothing specific to work from it produces the average, which is what he got. The missing ingredient is his situation, not more words and not better manners. Chapter 2 is about supplying it."
+        },
+        {
+          "prompt": "Ate Delia has settled into a routine at work. She asks her question, reads the answer, types \"are you sure?\", and forwards the answer to her team once the assistant stands by what it said. She has been doing this for a month and nobody has complained yet. What should you tell her about the routine?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nothing, as long as she also asks it to go back over any numbers before she forwards them."
+            },
+            {
+              "id": "b",
+              "text": "The follow-up is one more sentence from the same machine, so nothing has actually been checked."
+            },
+            {
+              "id": "c",
+              "text": "She should ask three times, because two matching answers are still too thin to rely on."
+            },
+            {
+              "id": "d",
+              "text": "She should forward it only when it cites a source, since a cited answer has already been checked."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "judgment",
+          "explanation": "Asking it to confirm itself keeps you inside the box. It may apologise and change its answer, or restate it more firmly, and neither event is evidence about the world. Option d is the near miss: where a tool does show you a link, that link is something for you to go and open, not proof that anybody checked anything on your behalf. A check has to happen somewhere the machine is not, which chapter 3 covers."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-2-asking-for-something-you-can-use",
+      "title": "Asking for something you can use",
+      "description": "Start with what lands in your inbox: paste the real thing and ask what it means. Then supply the three things it cannot guess, and steer the first draft instead of giving up on it.",
+      "lessons": [
+        {
+          "slug": "paste-the-real-thing",
+          "title": "Paste the real thing, and ask what it means",
+          "duration_minutes": 8,
+          "content_mdx": "# Paste the real thing, and ask what it means\n\nThe first useful thing to do with a chat assistant is not to write something. It is to understand something somebody handed you.\n\nA lot of the paper in your life arrives written for the convenience of the office that sent it: a school memo in three long paragraphs, a clause in a lending app agreement, a letter from an insurance company, an email in fast English from a client in another country. You are allowed to not understand it on the first read. What you are not allowed to do is guess and then act.\n\n## Describing it from memory throws the answer away\n\nJhen is in Grade 11 in Bacolod. A memo about clearance goes up in the class group chat and she reads it twice without getting any clearer. So she opens a chat assistant and types: *ano ang requirements for school clearance?*\n\nBack comes a tidy list. Library clearance, unreturned books, a form from the registrar. It looks right. It has nothing to do with her school, because her school's memo was never in the conversation. She asked a question about a piece of paper and did not show it the paper.\n\nThe memo is on her phone. It went up as a photo of the printed notice, so there is nothing to copy. Two routes work. If your chat assistant can take a photo and read it, that is the quick one: attach the picture and ask. If it cannot, type out the two or three sentences that carry the requirement and the date.\n\nEither way, chapter 3 has the rule about what comes off the page first: a photo carries every digit printed on it, including the ones you never meant to send.\n\nThen get the memo in front of it and ask *explain this in simple words, and tell me exactly what I have to submit and when.*\n\nNow the answer is about her memo. Every detail in it can be traced back to a line she can point at.\n\n## What to paste, and what to ask for\n\nAnything you received and have to act on:\n\n- A school or office memo\n- One clause from a contract, a lease, or a lending app agreement\n- A letter from a bank, an insurance company, or a government office\n- A long email in English from a foreign client or employer\n- A stretch of a group chat where something was decided while you were at work\n\nThe asks that earn their keep are plain:\n\n- Explain this in simple words.\n- What am I being asked to do? Give it to me as a list.\n- What are the dates in this, and which one is the deadline?\n- Which parts need a reply from me, and which are just information?\n- What does this paragraph mean for me if I miss a payment?\n\nThat last one is the reason people stop being scared of contracts.\n\n## Ask in the language you actually think in\n\nYou do not have to work in English. Paste an English letter and ask for it in Filipino: *pakipaliwanag mo ito sa Filipino, parang kausap mo lang ako.* Ask in Taglish, because that is how you talk. Ask for the hard terms one by one if the sentence is long.\n\nIt runs the other way too. Aling Norma understood the barangay notice perfectly well in Filipino, but she needed to explain the water interruption schedule to a foreign customer, so she pasted the notice and asked for a short English version she could send.\n\n## It only knows what you gave it\n\nMarilou pastes a letter from her insurance company and asks what the lapse clause means. It explains the clause well.\n\nThen she asks whether her payment last month was received. Here is where a beginner gets burned. It has no connection to her insurer, no record of her policy, and no way to look. What it does have is a strong sense of how such answers are usually worded, so it can produce a reassuring sentence with nothing behind it.\n\nThe line to hold is simple. Anything it tells you that was not in the text you pasted is back to guessing. If the answer mentions a requirement, an office, a fee or a reference number that appears nowhere in what you pasted, that detail came from nowhere and you cannot use it.\n\nIt can also just misread. That is a cheap problem, because the document is sitting right there. When it says the deadline is the 15th, search the letter for \"15\" before you plan your week around it.\n\n## Before you paste\n\nTake out account numbers and ID numbers that do not need explaining. A letter usually reads the same without them, and the full list of what must never go into the box is the next chapter's job. The working rule until then: paste your own documents, and stop before other people's details.\n\nTry this tonight on something already sitting in your phone. Pick the message you have been avoiding.\n"
+        },
+        {
+          "slug": "three-things-it-cannot-guess",
+          "title": "Tell it the three things it cannot guess",
+          "duration_minutes": 8,
+          "content_mdx": "# Tell it the three things it cannot guess\n\nYou have understood the letter. Now you have to answer it, and this is where beginners meet the flat, hollow reply that sounds like it was written for nobody.\n\nHere is why it happens. The machine has seen enormous quantities of messages shaped like the one you want. What it has never seen is your situation: who you are writing to, what has already happened, what you are willing to promise. Leave those out and it does not stop to ask. It fills the gap with the most average version, and the most average version is useless to you.\n\nSo supply the three things it cannot guess.\n\n## One: who it is for, and what you want from them\n\nNot \"a landlord\". Your landlord, the one you greet at the gate. Say who they are to you, how you normally talk to each other, and what you want to happen after they read it.\n\n## Two: what you already have\n\nThe facts only you hold. Dates. Amounts. What was already said, and by whom. What you can actually commit to.\n\nThis is the part people skip, because it feels like extra typing. It is also the only part the machine cannot produce for itself. Leave it out and you get a message with a hole in it. Either you fill the hole afterwards, or it fills the hole with something invented and you send that.\n\n## Three: what the finished thing should look like\n\nHow long. What language. Where you are sending it, because a Messenger message and a printed letter are not the same object.\n\n## The same request, twice\n\nRosalie rents a small unit in Antipolo. Her bedroom ceiling has been leaking since the typhoon.\n\n**What she typed first:** *Write a message to my landlord about a repair.*\n\nWhat came back was a formal English letter that opened with \"I am writing to inform you\", left a blank space for a date, and would have looked bizarre arriving on Messenger from a tenant her landlord sees twice a week.\n\n**What she typed instead:**\n\n*This is a Messenger message to my landlord, Tita Belen. We are friendly and we message in Taglish. The bedroom ceiling has been leaking since the typhoon last week. I already told her on the 3rd and she said she would send someone, but nobody has come. I want a repair date this week. I do not want to sound angry. Four or five sentences.*\n\nWho it is for, what she already has, what the finished thing should look like. One paragraph, typed once. The draft that came back was short, sounded like a person, mentioned the 3rd, and asked for a date. She changed two words and sent it.\n\n## The same shape, other errands\n\nKyle needs an extension on a paper. He types: this is an email to my instructor at a state university, respectful but not stiff, the paper is due Friday, I was on duty at the store Thursday and Friday, I am asking for Monday, I have never asked for an extension before, under 120 words.\n\nDan sells preloved shoes on Marketplace. A buyer agreed to a pickup at the terminal and then went quiet for three days. He types: this is a follow-up to a buyer who stopped replying, friendly and not desperate, offer Saturday morning or Sunday afternoon, three sentences, Taglish.\n\nVangie has to ask the barangay office about clearance. She types: this is a short chat message to our barangay office, in Filipino, polite, I work weekdays until six, I want to know which mornings they accept walk-ins.\n\nNone of those is a formula. Each is one paragraph of what only that person knows.\n\n## Say it the way you would tell a friend\n\nIf a friend were sending the message for you, you would tell them in a breath: *si Tita Belen ito, tumutulo yung kisame since last week, sinabi ko na noong 3rd, gusto ko lang malaman kung kailan sila pupunta.* That is already the three things. Type that.\n\nOrder does not matter. Neither does grammar. Nobody is grading your request, and the machine is not judging your English.\n\nOne caution before you go. Giving it your situation makes the writing fit you. It does not make anything true. If you hand it the wrong date, you get a polite message built around the wrong date.\n\nAnd the finished thing is not finished yet. The first draft often needs a change or two, and the next lesson is about that exact moment, because it is the moment where people give up.\n"
+        },
+        {
+          "slug": "fix-it-do-not-restart",
+          "title": "When the answer is wrong, fix it",
+          "duration_minutes": 7,
+          "content_mdx": "# When the answer is wrong, fix it\n\nFerdie asked for a message to a client who had gone quiet. What came back was three paragraphs of corporate English with a line about valuing our continued partnership. He closed the app and told his wife this AI thing is overrated.\n\nHe was one sentence away from something he could have sent.\n\n## A first answer is a first draft, not a verdict\n\nThe reflex is to read a bad draft as the machine's final word on the subject: this is what it can do, and it is not enough. It is not a verdict. It is a first attempt by something that cannot see your face and does not know what you meant.\n\nTreat it as a back and forth, not a vending machine. You ask, you look at what comes out, you say what is wrong with it, you look again. Two or three rounds is normal and costs a minute. A beginner who expects the first answer to be right quits early. A beginner who expects to steer walks away with something usable.\n\n## Stay in the conversation you are already in\n\nThis is the practical half of the lesson. When the draft is wrong, type the next thing in the same chat.\n\nThat conversation already holds the letter you pasted and the three things you told it about your situation. Open a fresh chat and all of it is gone, and you begin by retyping what you typed once already. That is how a five minute errand turns into twenty minutes and confirms the suspicion that this is more trouble than it is worth.\n\n## Say what is wrong in the words you would use to a person\n\nThere is no special vocabulary. Short and specific beats polite and vague. \"Make it better\" gives it nothing to aim at, so what comes back is a different draft rather than a better one.\n\nThings that work, exactly as typed:\n\n- \"Too long. Three sentences.\"\n- \"This is for my landlord, not a company. Make it sound like a normal message.\"\n- \"You put a date I never gave you. Take it out.\"\n- \"Filipino naman, hindi masyadong pormal.\"\n- \"Stop apologising in the first line. Start with the request.\"\n\nFerdie's fix, had he stayed, was one line: *too formal, this is a client I have worked with for two years, four sentences, ask whether the timeline moved.*\n\n## It will agree with you, and that is not verification\n\nHere is the trap on the other side of correcting.\n\nRowena's draft reply to an insurance letter contained a reference number she had never given it. She typed: \"that reference number is wrong.\" It apologised warmly and produced a different reference number, which was equally invented.\n\nIt agrees with pushback. That is worth saying twice, because agreement feels like being checked and is not. Tell it the deadline is the 20th when the letter plainly says the 15th, and it will apologise and rebuild the whole message around the 20th without a flicker of doubt. It has nothing to check against. It is not being dishonest and it is not being lazy. There is no record inside it to consult.\n\nSo hold this line: a correction can fix the writing, and it can never confirm a fact.\n\nWhen a draft contains a number, a date, a name or a reference you did not supply, do not correct it into a better guess. Take it out, or replace it with the real one off the letter in your hand. What you send is only ever as good as where you got it: the document, the office, the person. Doing that check properly is the last chapter of this course, and it is the habit everything so far has been building toward.\n\n## When two or three goes still are not right\n\nThat is information, not failure. It often means you know something you have not said out loud.\n\nGo back through the three. Does it still not know who this is for? Does it not have the amount, the date, the thing already agreed? Are you unhappy with the shape because you never said what shape you wanted?\n\nAdd the missing piece and ask once more. If it is still wrong after that, write it yourself and keep the draft beside you as raw material. That is not a defeat either. Staring at an empty box is the hardest part of writing anything, and you are no longer staring at an empty box.\n"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Rosalie's bedroom ceiling has been leaking since last week's typhoon. She told her landlord on the 3rd and nobody has come. She wants one Messenger message asking for a repair date this week, without sounding angry. Which request gets her something she can send?",
+          "options": [
+            {
+              "id": "a",
+              "text": "\"You are an expert negotiator with long experience in Philippine rental disputes. Write a firm but polite letter to a landlord about an urgent repair that has been ignored.\""
+            },
+            {
+              "id": "b",
+              "text": "\"Message to my landlord about the ceiling. Polite, short, not angry, and make sure it does not read like I am accusing her of ignoring me.\""
+            },
+            {
+              "id": "c",
+              "text": "\"Messenger to my landlord Tita Belen, we talk in Taglish. Ceiling leaking since the typhoon, told her on the 3rd, nobody came. I want a date this week. Four sentences.\""
+            },
+            {
+              "id": "d",
+              "text": "\"Write a landlord repair message that includes the date I reported it, how long the leak has been going on, and a request for a schedule. Fill in the details for me.\""
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "prompting",
+          "explanation": "It can write a repair message without you. What it cannot produce is who this person is to you, what already happened on the 3rd, and how long the thing should be. Option a spends its words on a character for the tool to play, which changes the style and hands it nothing it did not already have: the 3rd, Tita Belen and the length are all still missing. Option d asks it to fill in details only Rosalie holds, which is exactly how an invented date ends up in a message you send."
+        },
+        {
+          "prompt": "A memo about school clearance goes up in Jhen's class group chat. She reads it twice and is still unsure what she has to hand in. The memo is open on her phone. What gets her an answer she can act on?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Get the whole memo in front of it, and ask what exactly she has to submit and by when"
+            },
+            {
+              "id": "b",
+              "text": "Ask what the usual requirements are for school clearance here in the Philippines nowadays"
+            },
+            {
+              "id": "c",
+              "text": "Type out the parts of the memo she remembers, and ask what they mean for her"
+            },
+            {
+              "id": "d",
+              "text": "Ask what her school normally requires from Grade 11 students before clearance"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "prompting",
+          "explanation": "Options b and d ask about a school it has never seen, so the tidy list that comes back belongs to no real institution. Option c is closer, but it throws away the exact wording, and the exact wording is where the deadline and the requirements live. The document is right there."
+        },
+        {
+          "prompt": "Dan sells preloved shoes on Marketplace. He asked for a follow-up to a buyer who went quiet and got three paragraphs of formal English about valued customers. He wants something he would actually send on chat. What is the best next message?",
+          "options": [
+            {
+              "id": "a",
+              "text": "\"Make this better and more natural. It does not sound like me at all, and I would never write to a buyer like this.\""
+            },
+            {
+              "id": "b",
+              "text": "\"Are you sure this is the right tone for a Marketplace buyer here in the Philippines who has gone quiet on me?\""
+            },
+            {
+              "id": "c",
+              "text": "Open a new chat, send exactly the same request again, and keep whichever of the two drafts reads better"
+            },
+            {
+              "id": "d",
+              "text": "\"Too formal. This is a Marketplace buyer, not a company. Three sentences, Taglish, offer Saturday or Sunday.\""
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "prompting",
+          "explanation": "Naming the fault and the shape you want gives it something to aim at. \"Make it better\" produces a different draft rather than a better one, asking whether it is sure only invites agreement, and starting over in a new chat throws away everything it already knows about the sale."
+        },
+        {
+          "prompt": "Vangie wants to ask her barangay office which mornings they accept walk-ins for clearance. Her first draft came back as a long formal English letter with a heading and a signature block. Which missing piece best explains that result?",
+          "options": [
+            {
+              "id": "a",
+              "text": "She did not say that she is writing as a private citizen and not on behalf of a business"
+            },
+            {
+              "id": "b",
+              "text": "She never said what the finished thing should be: a short chat message, in Filipino"
+            },
+            {
+              "id": "c",
+              "text": "She did not ask it to be concise and to avoid stiff and overly corporate language"
+            },
+            {
+              "id": "d",
+              "text": "She did not give it enough background on what a barangay clearance is normally used for"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "prompting",
+          "explanation": "With no shape to aim at, it defaults to the most average version of a message to a government office, and that is a formal letter. Saying how long, what language and where you are sending it is the cheapest of the three things to supply and the one most often skipped."
+        },
+        {
+          "prompt": "Arnel pasted a letter from his bank into a chat and had it explained. Now he wants to draft the reply, which has to say he can settle in two instalments starting next payday. What should he do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Open a new chat and describe the bank letter from memory before asking for a reply"
+            },
+            {
+              "id": "b",
+              "text": "Carry on in the same chat, saying who the reply is for and what he can commit to"
+            },
+            {
+              "id": "c",
+              "text": "Open a new chat and ask for a professional reply to a bank about a payment arrangement"
+            },
+            {
+              "id": "d",
+              "text": "Ask it in the same chat to keep the letter on file, so he can pull it up again tomorrow"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "workflow",
+          "explanation": "The conversation already holds the letter and everything it worked out from it. Starting fresh means retyping what you typed once already, and describing the letter from memory drops the wording that mattered. Option d parks something he needs in a chat box and calls it storage. What a tool does or does not carry between conversations differs by tool and by setting, so the copy in his own notes is the one he can count on."
+        },
+        {
+          "prompt": "Liza was on shift while her subdivision group chat argued for 200 messages about the water interruption schedule and a new gate fee. She needs to know what was actually decided. What works?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ask what homeowner associations here normally decide about water interruption schedules and gate fees"
+            },
+            {
+              "id": "b",
+              "text": "Ask it to open her group chat and summarise everything the neighbours decided over the last two days"
+            },
+            {
+              "id": "c",
+              "text": "Copy the stretch of the thread where it was settled, and ask for the decisions and dates as a list"
+            },
+            {
+              "id": "d",
+              "text": "Ask for a message she can post asking the group to repeat what they decided while she was on shift"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "workflow",
+          "explanation": "A long thread you did not read is exactly the job this is good at, but only once the text is in front of it. It cannot reach into your chat app, and what associations usually decide is an answer about no real subdivision. Option d works eventually and costs a day."
+        },
+        {
+          "prompt": "Marilou pastes a letter from her insurance company and asks four things. Which one can the assistant not actually answer, however confident the reply looks?",
+          "options": [
+            {
+              "id": "a",
+              "text": "What the paragraph about a lapsed policy would mean for her if she misses a payment"
+            },
+            {
+              "id": "b",
+              "text": "Which dates appear in the letter, and which one is the deadline she is being given"
+            },
+            {
+              "id": "c",
+              "text": "What the letter is asking her to submit, set out as a short list she can read in Filipino"
+            },
+            {
+              "id": "d",
+              "text": "Whether the payment she made last month was received and posted to her policy account"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "tools",
+          "explanation": "The first three are all work on the text she pasted, which is what a chat assistant is genuinely good at. The fourth needs her insurer's records, and it has no connection to them. It will still produce a smooth, reassuring sentence, which is the dangerous part."
+        },
+        {
+          "prompt": "Rowena's draft reply to an insurance letter contains a reference number she never supplied. She types \"that reference number is wrong.\" It apologises and puts a different reference number in. What should she do now?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Take the number out, and use the one printed on her letter or leave it out entirely"
+            },
+            {
+              "id": "b",
+              "text": "Keep the corrected number, since it accepted the correction and fixed it right away"
+            },
+            {
+              "id": "c",
+              "text": "Ask where the second reference number came from, and decide from that answer"
+            },
+            {
+              "id": "d",
+              "text": "Tell it to stop inventing numbers, then have it check the whole draft for errors"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "judgment",
+          "explanation": "It agrees with pushback. That feels like being checked and is not: there is no record inside it to consult, so the second number is another guess wearing an apology. A correction can fix the writing and can never confirm a fact. The letter in her hand is the source."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-3-using-it-in-real-life-without-getting-burned",
+      "title": "Using it in real life without getting burned",
+      "description": "The two kinds of answer you get and what each is good for, the short list of what must never be typed into a chat box, and the check you run before you act on anything.",
+      "lessons": [
+        {
+          "slug": "where-it-fits",
+          "title": "Where it fits in an ordinary week",
+          "duration_minutes": 7,
+          "content_mdx": "# Where it fits in an ordinary week\n\nYou know what this thing is and you know how to ask it for something. What is left is knowing when to reach for it, and that is one sort, not a list of tricks.\n\n## Two buckets\n\nEvery answer you get from a chat assistant lands in one of two buckets.\n\n**Bucket one: usable after a read.** Everything in the answer came from you. You pasted the handout, the letter, the message thread, your own rough notes. The tool shortened it, explained it, translated it or turned it into a list. You can tell whether it did that well, because you already know what the original said.\n\n**Bucket two: a starting point and nothing else.** The answer contains something you did not put in. A fee. A date. A requirement. A rule. A name. A step in a process you have never done. That did not come from you, and you already know where it did come from.\n\nOne question sorts them: is there anything in this answer that I did not give it? If yes, that part does not leave the chat box until something outside the chat box agrees with it.\n\nNow the four places you will actually use it.\n\n## School\n\nKiel is in second year and has a four-page handout on the water cycle that he has read twice and still cannot hold. He pastes the whole handout and asks for ten questions on it with the answers at the bottom, then covers the answers and works through it. Bucket one. He pastes the one paragraph he could not follow and asks for it in Filipino, in simpler words. Bucket one.\n\nThen he asks which topics will come out in Friday's long test. Bucket two, and worse than bucket two: nobody outside his classroom knows that. The teacher knows. The class group chat knows. The tool will still answer.\n\n## The job hunt\n\nGrace has been out of work for eight months. She pastes the job posting and her own work history and asks for a cover letter aimed at that posting, in plain English, under two hundred words. What comes back is built from what she supplied, so it is bucket one, with one pass to make sure the company name and the job title match the posting exactly.\n\nShe also asks what that role usually pays. Bucket two. That number goes nowhere near a salary conversation until she has looked at postings for the same role herself.\n\n## Selling something\n\nJhoy sells preloved clothes on Facebook Marketplace. She types six untidy lines about a blazer, condition and measurements and flaws included, and asks for a listing description that is honest about the flaw. Bucket one. She asks what courier delivery to Davao costs. Bucket two, and the courier's own page settles it in a minute.\n\n## Household and government paperwork\n\nNanay Cora gets a notice from an office and cannot tell what she is being asked to do. She types out the sentences that matter and asks two things: what am I being asked to submit, and by when. As long as the answer is drawn from the text she gave it, that is bucket one, and for someone who dreads letters like that, it is the most useful thing in this course.\n\nThe moment she asks what else is usually required, she is in bucket two. That belongs to the office's own page or the office's own window.\n\n## Keep the one that worked\n\nJhoy has eleven more items to list this week. She does not start over eleven times. The request that produced a listing she liked is a request she keeps: she leaves it in her phone's notes, and each time she pastes it again with the next item's details swapped in. If a listing comes out wrong, she fixes that one in the same conversation rather than opening a new one.\n\nThat is the whole of workflow at this level. Not a system, not a library. Just this: when something works, do not retype it from scratch tomorrow.\n\n## Spend your first week in bucket one\n\nExplaining, shortening, translating, rewriting and testing yourself on material you already hold are where a beginner gets value immediately and cannot get badly burned. Bucket two is where people get burned, and the last lesson in this course is the check that stops it.\n\nFirst, though, there is a shorter and harder list: what must never be in the thing you paste.\n"
+        },
+        {
+          "slug": "what-never-goes-in",
+          "title": "What never goes in the box",
+          "duration_minutes": 7,
+          "content_mdx": "# What never goes in the box\n\nA tool being free tells you nothing about what happens to what you type into it. Free and private are two separate questions, and paying does not settle the second one either.\n\n## The working assumption\n\nYou do not have to work out any company's policy. Assume that what you type could be read by someone who is not you, and type accordingly. Anything you would not want repeated does not go in.\n\nPut it as a question if that is easier: would you read this out to the person standing behind you in the queue? That is roughly what pasting is.\n\n## The list\n\nNever type these into a chat assistant, on any tool, free or paid:\n\n- **Passwords, PINs, recovery codes, and one-time codes.** No task needs them.\n- **Card numbers, bank account numbers, e-wallet account details.**\n- **Government identifiers**: your driver's license number, your voter's ID, PhilHealth, SSS, TIN, PhilSys, passport.\n- **Medical information** with a name attached, including your own.\n- **Other people's details.** Your mother's clinic letter. A friend's address. A list of names and mobile numbers.\n\nScreenshots and photos count, and this is where the rule quietly breaks. A photo of a school ID, a payslip, or the front of a bank card carries every digit on it, and you did not type a single one of them. If the confusing part is one sentence, photograph that sentence or type it out, not the whole page.\n\n## Nobody needs your OTP, and a chat box is not an exception\n\nThe one-time code your bank texts you exists purely to prove you are you. There is no situation where a chat assistant needs it, no situation where a caller needs it, and no situation where a page that looks like your bank needs it. A request for one is the end of the conversation, whoever is asking.\n\n## Bad grammar is no longer how you spot a fake message\n\nYou probably learned to spot a scam text by its broken English and its strange spacing. That tell is gone. These tools write clean English and clean Filipino, and anyone can use them, including the person sending you a message about your account being locked.\n\nSo stop reading a message for its grammar and read it for what it asks you to do. Click this link. Confirm your details. Send the code. Pay a small fee to release something. Those are the tells now. Whatever the grammar looks like, a request for a code, a payment or your details is the thing that decides it.\n\n## Other people's information is not yours to hand over\n\nWhen your tita gives you her clinic letter to help her understand it, she gave it to you. She did not give it to a company overseas. The law that governs personal data here, the Data Privacy Act of 2012, is aimed at the schools, offices and companies that hold information about you, and the National Privacy Commission enforces it against them. It does not follow you into your own family's errands. But the principle underneath it is the one to carry: information that describes a person belongs to that person, and the decision to hand it to a company is theirs to make, not yours.\n\nDeleting the conversation afterwards changes nothing. The paste was the disclosure.\n\n## You can nearly always get the help without the risky part\n\nTwo moves cover most of it.\n\n**Cut it down.** You almost never need to paste a whole document to understand it. If one sentence in the letter is the confusing part, paste that sentence. Your account number, your address and your reference number are not needed to explain what a sentence means.\n\n**Change it.** Names become \"my aunt\" and \"the landlord\". Real amounts become invented amounts of the same size. If a draft message works with a placeholder in it, you type the real detail in yourself before you send it.\n\nNanay Cora's notice from the office shows both. She does not need to type her full name, her address or her reference number to find out what she is being asked to submit. She types the two paragraphs that state the requirement, and nothing else.\n\n## The rule you can say out loud\n\nIf it identifies you, identifies someone else, or unlocks something, it does not go in the box.\n\nThat is short enough to remember at eleven at night when you are tired, the letter is confusing, and pasting the whole thing would be easier. That is exactly the moment the rule is for.\n"
+        },
+        {
+          "slug": "check-before-you-act",
+          "title": "The check before you act",
+          "duration_minutes": 8,
+          "content_mdx": "# The check before you act\n\nThis whole course has been one sentence: nothing in an answer is true because the machine said it, so anything true either came from you or has to be checked by you. Here is the check, kept small enough that you will actually run it.\n\n## First, does this answer need checking at all?\n\nLook for four things in the answer. A number. A date. A name. A rule.\n\n- A number: a fee, an amount, a measurement, a count of anything.\n- A date: a deadline, an opening time, a processing period.\n- A name: a person, an office, a company, a form, a document title.\n- A rule: you need to bring this, you are entitled to that, this is required, this is not allowed.\n\nIf none of the four is there, you are usually holding your own material rearranged. Read it and get on with your day. If one of them is there and you did not put it there yourself, you are holding something to check.\n\n## Then, what does being wrong cost?\n\nOne question, and it decides how much of your afternoon this deserves: if this turns out to be wrong, what does it cost me?\n\nSometimes the honest answer is nothing. A wrong practice question wastes two minutes. Sometimes it is a wasted trip and a whole morning in a queue with the wrong documents. Sometimes it is money, a grade, a job, or the trust of someone who was counting on you to get it right.\n\nYou are not checking everything. You are checking the things where being wrong is expensive.\n\n## Where the real source actually is\n\nThis is the part beginners skip, so be specific about it. There are three real sources and all three are within reach.\n\n**The office's own page or the office's own window.** Not a Facebook post repeating the requirements. Not a blog listing them from two years ago. Not a comment from someone who went last March. Requirements and fees change, and the office that changes them is the one that publishes them. If nothing is published, the window, the hotline or the official page's message box is still the source. The chat assistant is not.\n\n**The document itself.** If the answer summarised something you pasted, the original is sitting right there on your screen. Search it for the date. Find the sentence. If the summary says something the document does not say, the document wins, every time, with no argument.\n\n**The person who actually knows.** The class adviser. The seller. The landlord. The HR contact named on the posting. The person who signed the letter. One message settles in five minutes what an hour of asking a chat box cannot settle at all.\n\nOne more thing worth knowing, and it is the one that catches careful people. An answer can be perfectly true somewhere else and wrong here. These tools were built on writing from everywhere, and far more of that writing describes life in other countries than describes life in yours. A notice period before you leave a job, a right to a refund, a tenant's protection, a tax deadline: each of those reads the same in calm, ordinary English whether it belongs to this country or another one. There is no accent on a wrong rule. For anything with a rule in it, a Philippine source is the only one that counts.\n\n## The five that always get checked\n\nMoney, health, law, immigration, and school deadlines. Not because the tool is uniquely bad at these, but because being wrong about them is slow and expensive to undo. An answer in any of those five is a lead to follow, never a fact to act on.\n\n## What does not count as checking\n\nAsking the tool whether it is sure is not a check, for the reason chapter 1 gave. Asking a second chat assistant is not a check either, because two tools can be confident about the same wrong thing, and then you feel better about it, which is worse than where you started.\n\nA check goes outside the tool. If it did not leave the chat, it did not happen.\n\n## What you can do now\n\nYou can explain to somebody what a chat assistant is doing when it answers. You can tell an answer that is safe to use from one that is only a starting point. You can ask for something in a way that gets a usable draft, and fix it when it comes back wrong. You can hand it a letter you dread and find out what it actually says. You know what never goes in the box, and you know where the real source lives.\n\nThat is enough to be useful and hard to burn. When you want more, AI Foundations Certificate is free too and picks up where this stops: prompting in more detail, and choosing between the different kinds of AI tool instead of assuming a chat box. After that, AI Essentials for Work covers how these systems actually work and how to put them on real office tasks.\n"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Kiel pastes four pages of his own lecture handout into a chat assistant and asks for ten practice questions on it. In the same conversation he then asks which topics will come out in Friday's long test. Both answers arrive looking equally organised and equally sure. What should he do with them?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Use the practice questions to review, and get the test coverage from his teacher or the class group chat."
+            },
+            {
+              "id": "b",
+              "text": "Use both answers, since the handout he pasted is the same material that the long test is going to cover anyway."
+            },
+            {
+              "id": "c",
+              "text": "Throw out both answers, because one unreliable answer means the rest of that conversation cannot be trusted either."
+            },
+            {
+              "id": "d",
+              "text": "Ask the assistant which of its two answers is the more reliable one, and then use whichever one it picks."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "workflow",
+          "explanation": "The practice questions were built from material Kiel supplied, so he can see whether they are any good. The test coverage came from nowhere he can check, and it is the kind of thing only his teacher knows. Option c is the over-correction: one answer arriving from nowhere does not spoil the questions he built out of his own handout. Option d asks the machine to grade its own two answers, which is one more sentence from the place both of them came from."
+        },
+        {
+          "prompt": "Beth has to submit her daughter's enrolment form and does not know the deadline. She asks a chat assistant and it answers with an exact date and no hesitation. The school's own announcement page and the class adviser's number are both on her phone. What order should she do things in?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Put the date the assistant gave in her calendar now, and confirm it with the adviser later on if she finds the time."
+            },
+            {
+              "id": "b",
+              "text": "Confirm the date with the school or the class adviser first, then use the assistant on the form itself."
+            },
+            {
+              "id": "c",
+              "text": "Ask the same question in a second conversation, and treat two matching dates as a confirmation."
+            },
+            {
+              "id": "d",
+              "text": "Submit today so the deadline stops mattering, and sort out anything missing when the school asks."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "workflow",
+          "explanation": "The AI step in this task is the form, not the deadline. A deadline is a date that came from nowhere she can check, and the two real sources for it are already open on her phone. Asking twice is the same source twice, and submitting blind does not help if the form needs something she has not prepared."
+        },
+        {
+          "prompt": "Your lola received a two-page letter from SSS about her pension and cannot follow it. You have the letter in front of you. She also wants to know whether this month's pension has been released, which the letter does not say. How do you split the work?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ask the assistant both questions, since it is reading a letter that SSS itself sent her."
+            },
+            {
+              "id": "b",
+              "text": "Ask the assistant about the pension first, and contact SSS only if the answer looks wrong."
+            },
+            {
+              "id": "c",
+              "text": "Contact SSS for both, because anything at all about a pension should come from SSS."
+            },
+            {
+              "id": "d",
+              "text": "Have the assistant explain the letter, and ask SSS whether the pension was released."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "tools",
+          "explanation": "Explaining text you paste in is what a chat assistant is genuinely good at. Whether one person's pension went out this month is a record SSS holds, and the assistant has no connection to it. Option b puts the tool first on the one part of the job it cannot do, and \"only if the answer looks wrong\" is no filter at all, because an invented answer looks exactly like a correct one. Going to SSS for both is not wrong so much as wasteful: it throws away the half of the job the tool does well, and lola still cannot read her letter while she waits."
+        },
+        {
+          "prompt": "A neighbour who volunteers at your barangay hands you a list of about two hundred residents, with names, addresses and mobile numbers, and asks you to paste it into a chat assistant so it comes back sorted by street. What do you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Paste it, since sorting a list is a harmless task and you will delete the conversation right after."
+            },
+            {
+              "id": "b",
+              "text": "Paste the names only, since a name on its own is not really personal information."
+            },
+            {
+              "id": "c",
+              "text": "Sort it in a spreadsheet instead, and tell him why the list should not be pasted."
+            },
+            {
+              "id": "d",
+              "text": "Ask the assistant first whether it is allowed to handle a resident list like this one."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "judgment",
+          "explanation": "Those residents gave their details to the barangay, not to a company overseas, and the decision to pass them on is not the neighbour's to make or yours. Deleting the conversation afterwards changes nothing, because the paste was the disclosure. Sorting is also exactly what a spreadsheet is for."
+        },
+        {
+          "prompt": "You are in the middle of asking a chat assistant to explain a letter from your bank when a text arrives with a one-time code from your bank, followed by a message saying a bank officer will call shortly to confirm it. What do you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Type the code into the chat and ask the assistant whether the whole thing looks legitimate to it."
+            },
+            {
+              "id": "b",
+              "text": "Give the code to the caller, but only after they can confirm your account details first."
+            },
+            {
+              "id": "c",
+              "text": "Reply to the text and ask who authorised the transaction, before the call comes through."
+            },
+            {
+              "id": "d",
+              "text": "Give the code to nobody at all, and call your bank on the number printed on your card."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "judgment",
+          "explanation": "A one-time code exists to prove you are you, so handing it to anyone defeats the only thing it does. A real caller from your bank never needs it, and a chat assistant never needs it either. Calling back on a number you already had, rather than one you were given, is what makes it a real check."
+        },
+        {
+          "prompt": "Your uncle forwards you a message saying his e-wallet account will be locked today unless he confirms his details through a link. It is written in clean Filipino with no typos and no odd spacing. He says it must be genuine, because scam messages are always badly written. What do you tell him?",
+          "options": [
+            {
+              "id": "a",
+              "text": "That clean writing does suggest it is genuine, but he should still confirm with the provider before he clicks anything."
+            },
+            {
+              "id": "b",
+              "text": "That anyone can produce clean Filipino now, so he should judge it by what it asks him to do."
+            },
+            {
+              "id": "c",
+              "text": "That he should reply and ask the sender to prove who they are before he decides anything."
+            },
+            {
+              "id": "d",
+              "text": "That he should paste it into a chat assistant and ask whether the message is a scam."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "judgment",
+          "explanation": "Broken grammar used to be a free warning and it is not one any more, because these tools write clean Filipino for anyone who asks. What has not changed is the shape of the request: a link, a deadline, confirm your details. A chat assistant can only read the words in the message, so it cannot tell you who actually sent it."
+        },
+        {
+          "prompt": "Jhoy sells preloved clothes online. Last week she gave a chat assistant her untidy notes on one blazer plus a line about the buyer she is aiming at, and got back a listing description she was happy with. Today she has eleven more items to list. What is the sensible move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Reuse the request that worked last week, swapping in each new item's details as she works through them."
+            },
+            {
+              "id": "b",
+              "text": "Paste the details of all eleven items at once and ask for the eleven listings in a single answer."
+            },
+            {
+              "id": "c",
+              "text": "Start a brand new conversation for each item, so the wording of one listing never leaks into another."
+            },
+            {
+              "id": "d",
+              "text": "Trust that next week's fresh chat will still have this week's wording, without saving it anywhere."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "workflow",
+          "explanation": "A request that worked is worth keeping. Reusing the wording and swapping the details is the whole of workflow at this level, and it beats retyping the job from scratch eleven times. Eleven at once leaves you eleven answers to untangle, and a fresh conversation each time throws away the thing that worked. Option d leaves the request somewhere she cannot see and cannot get back: whether a tool carries anything between conversations differs by tool and by setting, so the copy in her own notes is the one she can count on."
+        },
+        {
+          "prompt": "You have never applied for an NBI clearance. The official appointment page is open on your phone, and the instructions on it are long, dense and in English. Where does a chat assistant genuinely help here?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ask it to list the requirements and the fee from memory, which is quicker than reading the page."
+            },
+            {
+              "id": "b",
+              "text": "Ask it which branch will have the shortest queue on the day you are planning to go."
+            },
+            {
+              "id": "c",
+              "text": "Paste the page in and ask for it explained in Filipino, as a list of what to bring."
+            },
+            {
+              "id": "d",
+              "text": "Ask it to check whether your details are already on file from an earlier application."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "tools",
+          "explanation": "Turning a dense official page you pasted into plain Filipino is squarely what a chat assistant is for, and the facts stay the page's facts. Requirements and fees recited from memory are the kind of answer that sends you home from the queue. Queue lengths and your own records are things it has never had access to."
+        }
+      ]
+    }
+  ],
+  "final_exam": {
+    "title": "Basic AI final exam",
+    "passing_score": 70,
+    "max_attempts": 3,
+    "questions": [
+      {
+        "prompt": "You finished this course on a Sunday and you want to actually use a chat assistant this week. Four things are waiting: a handout you have to revise from, a lending app agreement you never understood, a barangay requirement you need to find out, and a client email in fast English you have to answer. Where does the week start?",
+        "options": [
+          {
+            "id": "a",
+            "text": "With the barangay requirement, since the assistant can list it out and save you the trip."
+          },
+          {
+            "id": "b",
+            "text": "With the three that work off paper you already hold, and the requirement at the barangay window."
+          },
+          {
+            "id": "c",
+            "text": "With all four on the same evening, since running one tool across everything is how a habit forms."
+          },
+          {
+            "id": "d",
+            "text": "With the client email alone, since a message going to somebody else is the one worth getting right."
+          }
+        ],
+        "correct_option_id": "b",
+        "competency": "workflow",
+        "explanation": "Three of these are your own material going in and coming back shorter, clearer or in another language, and you can judge the result by reading it against what you handed over. The fourth is a requirement you do not hold, which makes the assistant the wrong end of that errand however quickly it answers. A beginner's first week belongs in the bucket where being wrong costs nothing, and the barangay window is a short job you were going to do anyway."
+      },
+      {
+        "prompt": "Your scholarship application has been pending for weeks. Your blockmate tells you to just ask a chat assistant whether it was approved. What is the honest answer about what the assistant can do here?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It has no link to the school's records, so anything it tells you about your application is invented."
+          },
+          {
+            "id": "b",
+            "text": "It can check the status for you, as long as you give it your student number and the date you applied."
+          },
+          {
+            "id": "c",
+            "text": "It has no link to the school's records, so ask it what usually happens to applications like yours."
+          },
+          {
+            "id": "d",
+            "text": "It can check, but only for the schools that have signed up to share their records with it."
+          }
+        ],
+        "correct_option_id": "a",
+        "competency": "tools",
+        "explanation": "A chat assistant is not a records system and it is not connected to your school, your bank or your barangay. Ask it about your own file and it will still answer, because producing a plausible answer is the only thing it does. Handing it your student number does not open a door, it just puts your student number in a chat box. Option c is the one worth naming: what usually happens to applications like yours is a sentence about nobody, and planning around it is planning around nothing. For your own records the source is the registrar, not the chat box."
+      },
+      {
+        "prompt": "You pasted the two paragraphs of your lola's SSS letter that you could not follow, with her name and her number left out, and got an explanation you can use. Now you want a short reply she can send. The draft that comes back is three paragraphs of formal English. What do you type next?",
+        "options": [
+          {
+            "id": "a",
+            "text": "\"Too long and too stiff. Three sentences, plain Filipino, from a pensioner writing to SSS.\""
+          },
+          {
+            "id": "b",
+            "text": "\"Make this better. It does not sound like anything my lola would ever send to anybody.\""
+          },
+          {
+            "id": "c",
+            "text": "\"Here is her full name, her SSS number and her address, so you can write the reply properly.\""
+          },
+          {
+            "id": "d",
+            "text": "Open a fresh chat, paste the whole letter in this time, and ask for a reply in plain Filipino."
+          }
+        ],
+        "correct_option_id": "a",
+        "competency": "prompting",
+        "explanation": "Naming the fault and the shape you want gives it something to aim at, and the conversation already holds the paragraphs you pasted and the explanation it built from them. \"Make this better\" gives it nothing, so what comes back is a different draft rather than a better one. Option c fixes a writing problem by handing over the identifiers you were right to keep out, and not one of them was ever what made the draft stiff. Starting over throws the work away and pastes more than you needed to paste."
+      },
+      {
+        "prompt": "Your instructor's handout for a written assignment says nothing about AI either way. You want to use a chat assistant to help you draft it, and two classmates give you opposite advice about whether that is allowed. What settles it?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The tool's own page, since a rule about using it for schoolwork would have to be written down there."
+          },
+          {
+            "id": "b",
+            "text": "Nothing settles it, so use it and do not raise the subject unless somebody asks you about it."
+          },
+          {
+            "id": "c",
+            "text": "Your instructor, asked before you start: may you use it, and does she want you to say that you did."
+          },
+          {
+            "id": "d",
+            "text": "Your batch group chat, since whatever your year has settled on is the working rule for everybody."
+          }
+        ],
+        "correct_option_id": "c",
+        "competency": "workflow",
+        "explanation": "The rule about AI does not belong to you and it does not belong to the tool. It belongs to whoever is receiving the work: your teacher, your school, your employer, your client. Some require you to declare it, some ban it on one task and encourage it on the next, and silence in a handout is not permission. Ask beforehand, because the same question costs you nothing then and costs you a great deal once the work is in. And whatever the rule turns out to be, work you cannot explain is one follow-up question away from an uncomfortable silence."
+      },
+      {
+        "prompt": "Your mother needs a senior citizen ID and neither of you has done this before. You have a chat assistant open on your phone. What is the sensible order to do this in?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ask the assistant for the full requirements, gather everything it lists, then go to the OSCA desk."
+          },
+          {
+            "id": "b",
+            "text": "Ask the neighbour who got hers last year, bring exactly what she brought, and skip the desk altogether."
+          },
+          {
+            "id": "c",
+            "text": "Leave the assistant out of it, since paperwork neither of you has done before is beyond what it does."
+          },
+          {
+            "id": "d",
+            "text": "Get the requirements at your city hall's OSCA desk, then have the assistant turn them into a checklist."
+          }
+        ],
+        "correct_option_id": "d",
+        "competency": "tools",
+        "explanation": "Senior citizen IDs are handled by the Office for Senior Citizens Affairs at your city or municipal hall, and what it asks for varies by LGU and changes without announcement, so OSCA is the source. A neighbour who went last year is describing last year's list, which is the same problem in a friendlier voice. None of that makes the tool useless here: once you have the real list it is good at turning it into a checklist, explaining a form's wording, or drafting the letter you have to attach. Get the facts from the office that sets them, then use the tool where nothing has to be true beyond what you gave it."
+      },
+      {
+        "prompt": "You told a chat assistant that your rest day is Tuesday and asked it to draft a message proposing a swap with a workmate. What comes back is short, warm and sounds like you. Then you open your roster and your rest day is Wednesday. What is true about that draft?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The writing fits you and the day in it does not, so change the day and the rest of it stands."
+          },
+          {
+            "id": "b",
+            "text": "The whole draft is spoiled, because a message built around the wrong day cannot be repaired."
+          },
+          {
+            "id": "c",
+            "text": "The draft is fine as it came back, since the day inside it is the one you gave it yourself."
+          },
+          {
+            "id": "d",
+            "text": "It should have flagged the clash with your roster, so the draft proves the tool is not worth using."
+          }
+        ],
+        "correct_option_id": "a",
+        "competency": "prompting",
+        "explanation": "Telling it your situation is what made the message sound like you instead of like nobody. It does not check anything: it had no way to reach your roster and no reason to doubt what you typed, so a wrong date in gives you a polite message built around a wrong date out. The fix is small because only the fact was wrong. Option d blames the tool for the one thing it could not possibly have done, which is look up a roster it has never seen."
+      },
+      {
+        "prompt": "A letter from your bank uses words you have never seen and you cannot work out what it wants from you. You want a chat assistant to help. What gets you the most reliable explanation?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Describe the letter from memory and ask what banks tend to mean by a notice of that kind."
+          },
+          {
+            "id": "b",
+            "text": "Type in the part you cannot follow, with your account number left out, and ask what it wants."
+          },
+          {
+            "id": "c",
+            "text": "Type the whole letter in exactly as it is printed, account number included, so nothing is lost."
+          },
+          {
+            "id": "d",
+            "text": "Give it the bank's name and the date on the letter and ask it to pull the letter up and read it."
+          }
+        ],
+        "correct_option_id": "b",
+        "competency": "prompting",
+        "explanation": "The real wording is the difference between explaining your letter and describing letters in general, and working from memory drops the words you did not understand, which are the ones that matter. It also cannot fetch a letter from your bank. Option c is the one that catches careful readers: pasting more is not pasting better, and your account number is not part of what the sentence means, so it stays out. The limit that comes with all of this is that it can only work with what you gave it, so anything it adds beyond the pasted text is back to guessing."
+      },
+      {
+        "prompt": "In one afternoon a chat assistant gives you three things: practice questions built from a handout you pasted, the fee it says the barangay charges for a business clearance, and a shorter version of your own CV summary. You have twenty minutes before you go out. Where do the twenty minutes go?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The CV summary, since it is the one an employer will read and form an opinion from."
+          },
+          {
+            "id": "b",
+            "text": "The practice questions, since revising off a wrong question wastes a whole evening of study."
+          },
+          {
+            "id": "c",
+            "text": "The fee, since it is the only one of the three that came from somewhere you cannot see."
+          },
+          {
+            "id": "d",
+            "text": "All three in turn, since anything a chat assistant produces has to be checked the same way."
+          }
+        ],
+        "correct_option_id": "c",
+        "competency": "judgment",
+        "explanation": "Two of the three are your own material handed back to you, so checking them means reading them against the handout and the CV already in front of you, and that takes a minute each. The fee is the only figure in the afternoon that the tool supplied rather than reshaped, and being wrong about it costs you a trip and a morning in a queue. Checking is a dial and not a switch: you spend the time where being wrong is expensive, which is why option d sounds responsible and quietly eats your afternoon."
+      },
+      {
+        "prompt": "You spent an evening getting a chat assistant to help you work out the wording for your CV. The request you finally typed was the part that took the work, and you will need it again next month. What do you do before you close the app?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nothing, since the conversation will be sitting where you left it when you come back to it."
+          },
+          {
+            "id": "b",
+            "text": "Copy the request and the wording you settled on into your own notes, where you can find them."
+          },
+          {
+            "id": "c",
+            "text": "Ask the assistant to keep the request on file for you, and trust that it will still be holding it."
+          },
+          {
+            "id": "d",
+            "text": "Plan to open a fresh chat next month and describe from memory what you asked for tonight."
+          }
+        ],
+        "correct_option_id": "b",
+        "competency": "workflow",
+        "explanation": "The request is the asset here, not the answer, and it took you an evening to build. Whether a tool carries anything at all between conversations differs by tool and by setting and does not stay the same, so options a and c both park something you worked for somewhere you cannot see and cannot get back. Describing it from memory next month means rebuilding it badly. Your own notes cost you ten seconds tonight and are the one copy you control."
+      },
+      {
+        "prompt": "You pasted your barangay's notice and asked what it means. The reply lists two documents and a deadline of the 15th, and you can find all three in the notice yourself. It then adds that there is no fee for this and that you may submit at any barangay in the city. What still needs checking?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nothing, since every part of the reply traces back to the notice you pasted in yourself."
+          },
+          {
+            "id": "b",
+            "text": "The documents and the deadline, since a summary can misread a date it has been shown."
+          },
+          {
+            "id": "c",
+            "text": "The whole reply, since one detail that came from nowhere makes the rest of it unusable."
+          },
+          {
+            "id": "d",
+            "text": "The fee and where you can submit, since neither of those appears anywhere in the notice."
+          }
+        ],
+        "correct_option_id": "d",
+        "competency": "tools",
+        "explanation": "Sort the reply the way you sort any answer: which parts came from you, and which parts the tool supplied. The documents and the deadline are on the paper in your hand, so a glance settles them. The fee and the place are nowhere in the notice, which means they arrived the same way an invented answer arrives, and both are the kind of detail that costs you a trip. Option c is the over-correction: one detail coming from nowhere does not spoil the parts you can point at on the page."
+      },
+      {
+        "prompt": "A chat assistant tells you a permit renewal is due on the 20th. You reply that you were fairly sure it was the 30th. It apologises and agrees that the deadline is the 30th. What now?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Work to the 30th, since it corrected itself the moment it was given better information."
+          },
+          {
+            "id": "b",
+            "text": "Work to the 20th, because the first answer came before anybody had pushed it either way."
+          },
+          {
+            "id": "c",
+            "text": "Message the office, and work to the assistant's date if nobody has replied to you by Friday."
+          },
+          {
+            "id": "d",
+            "text": "Work to neither date, since it agrees with whatever you push back with. Ask the office."
+          }
+        ],
+        "correct_option_id": "d",
+        "competency": "judgment",
+        "explanation": "It tends to fold when you disagree with it, so its agreement is not confirmation, and neither is the answer that came before you disagreed. Option c is the near miss: going to the office is right, and then it hands the decision straight back to a date nobody ever checked the moment Friday arrives. If the office has not replied, you chase the office. A deadline is a number attached to money and time, which puts it firmly in the class of things you settle outside the chat."
+      },
+      {
+        "prompt": "Your mother hands you a letter from her doctor and asks what it means. It carries her full name, her PhilHealth number and her diagnosis. What do you type into the chat?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nothing at all, since anything from a doctor is off limits, so wait and ask her doctor yourself."
+          },
+          {
+            "id": "b",
+            "text": "Only the medical words you do not understand, with her name and her numbers left out of it."
+          },
+          {
+            "id": "c",
+            "text": "The letter with her name removed, keeping the number so you can ask about her coverage too."
+          },
+          {
+            "id": "d",
+            "text": "The whole letter, but only after telling the assistant to keep the contents confidential."
+          }
+        ],
+        "correct_option_id": "b",
+        "competency": "judgment",
+        "explanation": "Work on the assumption that anything you type could be read by someone who is not you, which means it is not yours to type when it belongs to another person. Her diagnosis and her PhilHealth number are hers. An instruction to keep it confidential is a sentence in a chat box, not a control. Option a is the opposite mistake and it costs her something real: you lose nothing by asking what a word means on its own, and she should not have to wait weeks for an appointment to find out. The letter itself is still a conversation to have with her doctor."
+      },
+      {
+        "prompt": "You ask a chat assistant how much notice you have to give before leaving your job. It answers in calm, ordinary English: a set number of weeks, in writing, with your final pay handed over on your last day. Nothing about it reads as strange. What is the specific risk here?",
+        "options": [
+          {
+            "id": "a",
+            "text": "That the answer has gone stale, so asking the same question again next month gives you a fresher rule."
+          },
+          {
+            "id": "b",
+            "text": "That the rule is right but partial, so it should be asked to list the exceptions to it as well."
+          },
+          {
+            "id": "c",
+            "text": "That a rule from another country reads exactly like a rule from this one, in the same calm English."
+          },
+          {
+            "id": "d",
+            "text": "That the answer is too short to be a real rule, so a longer version of it would be more reliable."
+          }
+        ],
+        "correct_option_id": "c",
+        "competency": "judgment",
+        "explanation": "These tools were built on writing from everywhere, and far more of that writing describes working life in other countries than describes working life here. A notice period and a final pay deadline are exactly the kind of thing that differs from one country to the next and arrives sounding identical either way. There is no accent on a wrong rule. The point is not which number is correct, it is that the chat box cannot be the thing that tells you: anything with a rule inside it needs a Philippine source, and for work that means DOLE or the contract you signed."
+      },
+      {
+        "prompt": "A message in clean, correct Filipino says your parcel is being held at the delivery hub and asks you to settle a small fee through a link. Nothing about the wording looks off. What settles whether it is real?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Open the courier's own app, or ring a number you looked up yourself, and check the parcel there."
+          },
+          {
+            "id": "b",
+            "text": "Ring the number printed inside the message and ask them to confirm the tracking number for you first."
+          },
+          {
+            "id": "c",
+            "text": "Paste the message into a chat assistant and go by whether it tells you the message is a scam."
+          },
+          {
+            "id": "d",
+            "text": "Judge it by the language, since a real courier writes far more carefully than a scammer does."
+          }
+        ],
+        "correct_option_id": "a",
+        "competency": "judgment",
+        "explanation": "Clean grammar used to be how you spotted a fake message and it is not any more, because these tools write clean English and Filipino for anyone who asks. Option b is the one that feels like a check and is not: a number printed inside the message is part of the message, so you are asking the sender to vouch for the sender. The assistant cannot help either, since it has never seen your account and knows nothing about your parcel, so its verdict is a guess in a confident voice. A real check runs through a channel you opened yourself."
+      },
+      {
+        "prompt": "You used a chat assistant to draft a message to your landlord. It reads well, and it states the date you moved in and the amount of your deposit, neither of which you ever told it. Your thumb is over send. What now?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Send it, since a landlord who sees the wrong figure will simply correct it in his reply."
+          },
+          {
+            "id": "b",
+            "text": "Ask the assistant where it got the date and the amount, and send it if the answer holds up."
+          },
+          {
+            "id": "c",
+            "text": "Replace the move-in date and the deposit with what your own contract says, then send it."
+          },
+          {
+            "id": "d",
+            "text": "Delete the draft and write the whole thing yourself, since one invented figure ruins all of it."
+          }
+        ],
+        "correct_option_id": "c",
+        "competency": "workflow",
+        "explanation": "Anything you did not supply, it produced, and a date and a peso amount are precisely the kind of detail that triggers a check. Your contract is the real source and it is in your drawer. Asking where the figures came from gets you another invented answer wearing an explanation. And deleting the draft throws away the part that was fine: the writing was never the problem, the two facts sitting inside it were."
+      }
+    ]
+  }
+}
