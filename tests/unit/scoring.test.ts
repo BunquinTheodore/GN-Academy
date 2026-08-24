@@ -91,8 +91,8 @@ describe("scoreAttempt", () => {
       questions,
       answersFor(questions, allButWorkflow),
     );
-    expect(result.weakest.key).toBe("workflow");
-    expect(result.weakest.score).toBe(0);
+    expect(result.weakest?.key).toBe("workflow");
+    expect(result.weakest?.score).toBe(0);
   });
 
   it("ignores answers to unknown questions", () => {
@@ -152,7 +152,9 @@ describe("assessments that cover only some competencies", () => {
       questionId: q.id,
       optionId: "a",
     }));
-    expect(scoreAttempt(judgmentOnly, answers).weakest.key).toBe("judgment");
+    expect(scoreAttempt(judgmentOnly, answers).weakest?.key).toBe(
+      "judgment",
+    );
   });
 
   it("weights two competencies against each other, not against all four", () => {
@@ -171,5 +173,143 @@ describe("assessments that cover only some competencies", () => {
       { questionId: "w2", optionId: "b" },
     ];
     expect(scoreAttempt(mixed, answers).overall).toBe(42);
+  });
+});
+
+describe("subjects beyond AI", () => {
+  /**
+   * The competency registry covers blockchain and finance too. A result must
+   * carry only what its assessment asked about: a finance credential that
+   * listed "Prompting & output quality" at 0 would be reporting a measurement
+   * that never happened.
+   */
+  function quiz(competency: string, count: number): ScorableQuestion[] {
+    return Array.from({ length: count }, (_, i) => ({
+      id: `${competency}-${i}`,
+      competency,
+      correct_option_id: "a",
+      points: 1,
+    }));
+  }
+
+  const blockchain = [
+    ...quiz("chain_basics", 2),
+    ...quiz("wallets_custody", 2),
+    ...quiz("risk_scams", 2),
+  ];
+
+  it("returns only the competencies a blockchain quiz asked about", () => {
+    const result = scoreAttempt(
+      blockchain,
+      blockchain.map((q) => ({ questionId: q.id, optionId: "a" })),
+    );
+    expect(result.competencies.map((c) => c.key).sort()).toEqual([
+      "chain_basics",
+      "risk_scams",
+      "wallets_custody",
+    ]);
+    expect(result.overall).toBe(100);
+  });
+
+  it("scores a partly right blockchain quiz on what it asked", () => {
+    // All of chain_basics and wallets_custody right, risk_scams wrong. The
+    // three weigh 25 each, so the score is 2/3 of the paper, not 2/12 of the
+    // registry.
+    const answers = blockchain.map((q) => ({
+      questionId: q.id,
+      optionId: q.competency === "risk_scams" ? "z" : "a",
+    }));
+    const result = scoreAttempt(blockchain, answers);
+    expect(result.overall).toBe(67);
+    expect(result.weakest?.key).toBe("risk_scams");
+  });
+
+  it("scores a perfect single-competency paper as 100, not as its weight", () => {
+    const budgeting = quiz("budgeting", 6);
+    const result = scoreAttempt(
+      budgeting,
+      budgeting.map((q) => ({ questionId: q.id, optionId: "a" })),
+    );
+    expect(result.overall).toBe(100);
+    expect(result.competencies).toHaveLength(1);
+    expect(result.competencies[0].weight).toBe(25);
+  });
+
+  it("drops a competency no question asked about, rather than reporting it as 0", () => {
+    const financeOnly = [...quiz("budgeting", 2), ...quiz("debt_credit", 2)];
+    const keys = scoreAttempt(financeOnly, []).competencies.map((c) => c.key);
+    expect(keys).toEqual(["budgeting", "debt_credit"]);
+    expect(keys).not.toContain("prompting");
+  });
+
+  it("has no weakest area when the paper asked nothing scorable", () => {
+    const unknownOnly: ScorableQuestion[] = [
+      { id: "u1", competency: "astrology", correct_option_id: "a", points: 1 },
+    ];
+    const result = scoreAttempt(unknownOnly, [
+      { questionId: "u1", optionId: "a" },
+    ]);
+    expect(result.competencies).toEqual([]);
+    expect(result.weakest).toBeNull();
+    expect(result.overall).toBe(0);
+  });
+});
+
+describe("the AI Readiness Test is unchanged by the wider registry", () => {
+  const questions = makeQuestions();
+
+  it("returns exactly the four AI rows, in order, with the same numbers", () => {
+    // 3/4 prompting, 2/4 tools, 4/4 workflow, 1/3 judgment.
+    const ids = new Set([
+      "prompting-0",
+      "prompting-1",
+      "prompting-2",
+      "tools-0",
+      "tools-1",
+      "workflow-0",
+      "workflow-1",
+      "workflow-2",
+      "workflow-3",
+      "judgment-0",
+    ]);
+    const result = scoreAttempt(questions, answersFor(questions, ids));
+    expect(result.competencies).toEqual([
+      {
+        key: "prompting",
+        label: "Prompting & output quality",
+        weight: 25,
+        correct: 3,
+        total: 4,
+        score: 75,
+      },
+      {
+        key: "tools",
+        label: "Tool fluency",
+        weight: 20,
+        correct: 2,
+        total: 4,
+        score: 50,
+      },
+      {
+        key: "workflow",
+        label: "Workflow integration",
+        weight: 35,
+        correct: 4,
+        total: 4,
+        score: 100,
+      },
+      {
+        key: "judgment",
+        label: "Judgment & verification",
+        weight: 20,
+        correct: 1,
+        total: 3,
+        score: 33,
+      },
+    ]);
+    // 75×25 + 50×20 + 100×35 + 33×20 over 100.
+    expect(result.overall).toBe(70);
+    expect(result.level).toBe("jobReady");
+    expect(result.weakest?.key).toBe("judgment");
   });
 });

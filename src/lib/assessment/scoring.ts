@@ -1,9 +1,5 @@
-import {
-  COMPETENCIES,
-  LEVELS,
-  type CompetencyKey,
-  type LevelKey,
-} from "@/content/ai-test";
+import { LEVELS, type LevelKey } from "@/content/ai-test";
+import { COMPETENCIES, type CompetencyKey } from "@/content/competencies";
 
 export type ScorableQuestion = {
   id: string;
@@ -26,7 +22,13 @@ export type CompetencyResult = {
 export type ScoreResult = {
   overall: number; // 0–100, weighted
   competencies: CompetencyResult[];
-  weakest: CompetencyResult;
+  /**
+   * Null only when the assessment asked nothing the registry recognises, which
+   * is a broken question set rather than a real result. Callers that print it
+   * have to say something else in that case; inventing a competency here would
+   * put a fabricated weakness on a results page and in an email.
+   */
+  weakest: CompetencyResult | null;
   level: LevelKey;
   levelLabel: string;
   recommendedPath: string;
@@ -72,22 +74,30 @@ export function scoreAttempt(
     }
   }
 
+  // Only the competencies this assessment actually asked about appear in the
+  // result at all. The registry spans every subject now, so returning a row
+  // per key would print "Wallets & custody: 0" on an AI result and persist
+  // that zero into attempts.competency_scores and from there into the
+  // credential. Filtering here rather than in each renderer keeps the stored
+  // row honest: it says what was measured and nothing else.
   const competencies: CompetencyResult[] = (
     Object.entries(COMPETENCIES) as [
       CompetencyKey,
       (typeof COMPETENCIES)[CompetencyKey],
     ][]
-  ).map(([key, def]) => {
-    const { correct, total } = perCompetency.get(key)!;
-    return {
-      key,
-      label: def.label,
-      weight: def.weight,
-      correct,
-      total,
-      score: total === 0 ? 0 : Math.round((correct / total) * 100),
-    };
-  });
+  )
+    .map(([key, def]) => {
+      const { correct, total } = perCompetency.get(key)!;
+      return {
+        key,
+        label: def.label,
+        weight: def.weight,
+        correct,
+        total,
+        score: total === 0 ? 0 : Math.round((correct / total) * 100),
+      };
+    })
+    .filter((c) => c.total > 0);
 
   // Only the competencies this assessment actually asked about count toward
   // the score. The weights were written for the AI Readiness Test, which
@@ -96,19 +106,22 @@ export function scoreAttempt(
   // questions score 20% for a perfect paper — permanently unpassable against a
   // 70% mark. Normalising over what was asked leaves the diagnostic's own
   // scoring identical, because there every competency is present.
-  const answered = competencies.filter((c) => c.total > 0);
-  const totalWeight = answered.reduce((sum, c) => sum + c.weight, 0);
+  const totalWeight = competencies.reduce((sum, c) => sum + c.weight, 0);
   const overall =
     totalWeight === 0
       ? 0
       : Math.round(
-          answered.reduce((sum, c) => sum + c.score * c.weight, 0) / totalWeight,
+          competencies.reduce((sum, c) => sum + c.score * c.weight, 0) /
+            totalWeight,
         );
 
   // Same reasoning: a competency the quiz never asked about is not a weakness.
-  const weakest = (answered.length > 0 ? answered : competencies).reduce(
-    (min, c) => (c.score < min.score ? c : min),
-  );
+  // With nothing asked there is no weakest area to name, and null says that
+  // rather than nominating an arbitrary registry key.
+  const weakest =
+    competencies.length > 0
+      ? competencies.reduce((min, c) => (c.score < min.score ? c : min))
+      : null;
 
   const level = levelForScore(overall);
 

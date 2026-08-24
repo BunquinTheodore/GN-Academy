@@ -3,30 +3,17 @@
  * editable here without touching the engine.
  */
 
-export const COMPETENCIES = {
-  prompting: {
-    label: "Prompting & output quality",
-    weight: 25,
-    measures: "Getting usable work out, not just conversation",
-  },
-  tools: {
-    label: "Tool fluency",
-    weight: 20,
-    measures: "Right tool for the job",
-  },
-  workflow: {
-    label: "Workflow integration",
-    weight: 35,
-    measures: "Building AI into how you actually work",
-  },
-  judgment: {
-    label: "Judgment & verification",
-    weight: 20,
-    measures: "Catching confident wrongness",
-  },
-} as const;
-
-export type CompetencyKey = keyof typeof COMPETENCIES;
+// The competencies live in the shared registry now that blockchain and
+// finance courses score against their own. The AI Readiness Test itself scores
+// over the AI four only (prompting, tools, workflow, judgment): its question
+// set never asks about anything else, and scoreAttempt reports only what an
+// assessment actually asked about. These re-exports keep the existing imports
+// working, and they carry the whole registry, not just the AI four.
+export {
+  COMPETENCIES,
+  type CompetencyKey,
+  type CompetencyDomain,
+} from "./competencies";
 
 export const LEVELS = {
   beginner: {

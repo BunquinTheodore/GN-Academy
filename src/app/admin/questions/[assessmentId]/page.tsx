@@ -7,7 +7,7 @@ import {
   getAssessmentById,
   listQuestionsForAdmin,
 } from "@/lib/db/assessments";
-import { COMPETENCIES } from "@/content/ai-test";
+import { COMPETENCIES, domainOf } from "@/content/competencies";
 import { AdminForm } from "@/components/admin/admin-form";
 import { CheckboxField, TextField } from "@/components/admin/field";
 import { saveAssessmentAction } from "../actions";
@@ -35,10 +35,26 @@ export default async function EditQuestionsPage({
   const questions = await listQuestionsForAdmin(assessmentId).catch(() => []);
 
   // The scoring engine only counts questions whose competency it knows about
-  // (§8), so the editor offers exactly those keys and nothing else.
+  // (§8), so the editor offers exactly those keys and nothing else. The
+  // dropdown stays the whole registry on purpose: a question filed under the
+  // wrong subject can only be moved back if the list still shows where it
+  // belongs.
   const competencies = Object.keys(COMPETENCIES);
 
-  const perCompetency = competencies.map((key) => ({
+  // Coverage is a different question. The registry now spans AI, blockchain
+  // and finance, so listing all twelve on an AI quiz would flag eight
+  // irrelevant rows as empty and bury the one gap that matters. Infer the
+  // subject from the questions already filed, and show everything only for a
+  // fresh set where there is nothing yet to infer from.
+  const domainsInUse = new Set(
+    questions.map((q) => domainOf(q.competency)).filter(Boolean),
+  );
+  const relevant =
+    domainsInUse.size > 0
+      ? competencies.filter((key) => domainsInUse.has(domainOf(key)))
+      : competencies;
+
+  const perCompetency = relevant.map((key) => ({
     key,
     count: questions.filter((q) => q.competency === key).length,
   }));
@@ -110,8 +126,10 @@ export default async function EditQuestionsPage({
       <section>
         <h2 className="font-display text-lg font-semibold">Coverage</h2>
         <p className="mt-1 max-w-prose text-sm text-muted-foreground">
-          A competency with no questions scores 0 for everyone, which drags
-          every result down. Keep each one stocked.
+          A competency with no questions is left out of the score entirely, so
+          it costs nobody marks. What it costs is the credential: it never
+          appears on the holder&apos;s breakdown, and an employer cannot tell
+          whether they can do it. Keep each one stocked.
         </p>
         <ul className="mt-3 flex flex-wrap gap-2">
           {perCompetency.map(({ key, count }) => (

@@ -97,7 +97,9 @@ export async function POST(
         react: WelcomeEmail({
           score: result.overall,
           levelLabel: result.levelLabel,
-          weakestLabel: result.weakest.label,
+          // Null only if the question set asked nothing scorable; the email
+          // then just drops the line rather than naming a made-up weakness.
+          weakestLabel: result.weakest?.label,
           resultsUrl: `${env.NEXT_PUBLIC_SITE_URL}/ai-test/results/${attempt.id}`,
         }),
       });

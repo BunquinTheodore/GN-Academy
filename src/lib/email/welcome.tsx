@@ -13,7 +13,7 @@ import {
 type WelcomeEmailProps = {
   score: number;
   levelLabel: string;
-  weakestLabel: string;
+  weakestLabel?: string;
   resultsUrl: string;
 };
 
@@ -46,8 +46,12 @@ export function WelcomeEmail({
           </Text>
           <Text style={{ color: "#101B2E", fontSize: 16 }}>
             Level: <strong>{levelLabel}</strong>
-            <br />
-            Weakest area: <strong>{weakestLabel}</strong>
+            {weakestLabel && (
+              <>
+                <br />
+                Weakest area: <strong>{weakestLabel}</strong>
+              </>
+            )}
           </Text>
           <Section>
             <Text style={{ color: "#5A6B82", fontSize: 14 }}>

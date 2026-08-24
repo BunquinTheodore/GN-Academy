@@ -180,6 +180,16 @@ async function competenciesFromAttempts(
     const scores = (attempt.competency_scores ?? []) as CompetencyResult[];
     for (const c of scores) {
       if (!c?.key || typeof c.score !== "number") continue;
+      // Attempts completed before scoreAttempt started filtering stored a row
+      // for every competency in the registry, including the ones the quiz never
+      // asked about, each sitting at score 0 with total 0. Averaging those in
+      // gives the credential a competency the learner was never tested on,
+      // scored 0, which reads to an employer as a failure rather than a
+      // silence. A learner who passed some chapters before this shipped and the
+      // rest after is exactly the case, and there is nothing in the data to
+      // flag it later. `total` is the honest discriminator: a competency with
+      // no questions behind it was not measured.
+      if (typeof c.total === "number" && c.total === 0) continue;
       const bucket = totals.get(c.key) ?? { label: c.label ?? c.key, sum: 0, n: 0 };
       bucket.sum += c.score;
       bucket.n += 1;
