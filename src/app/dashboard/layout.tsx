@@ -9,6 +9,7 @@ import { profileCompleteness } from "@/lib/dashboard/completeness";
 import { SidebarNav, type IconKey } from "@/components/dashboard/sidebar-nav";
 import { SignOutButton } from "@/components/sign-out-button";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { SessionKeepAlive } from "@/components/session-keep-alive";
 
 /**
  * The signed-in shell.
@@ -94,6 +95,12 @@ export default async function DashboardLayout({
 
   return (
     <div className="flex min-h-svh bg-background">
+      {/* Renders nothing. It slides the session cookie forward while somebody
+          is actually using the site, so a learner part way through a course is
+          not signed out mid-lesson on the fifth day. Mounted here rather than
+          in the root layout because a signed-out visitor has no session to
+          keep. */}
+      <SessionKeepAlive />
       {/* Persistent rail on desktop. On mobile it collapses to the top bar
           below, because a 240px sidebar on a 360px screen is not navigation. */}
       <aside className="sticky top-0 hidden h-svh w-64 shrink-0 flex-col border-r border-border bg-card lg:flex">

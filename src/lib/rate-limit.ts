@@ -33,6 +33,14 @@ export const RATE_LIMITS = {
   attemptCreate: { route: "attempt-create", max: 20, windowSeconds: 3600 },
   emailCapture: { route: "email-capture", max: 3, windowSeconds: 3600 },
   auth: { route: "auth", max: 10, windowSeconds: 900 },
+  // Its own bucket, deliberately, and this is the whole reason it exists.
+  // Keeping a signed-in session alive must never consume the budget that
+  // signing in needs. On mobile carrier NAT hundreds of people share one
+  // address, so a handful of learners reading a course in the background
+  // would otherwise exhaust `auth` and lock strangers out of logging in.
+  // A refresh is not an authentication attempt: it exchanges an ID token
+  // Firebase has already issued, so the limit only has to stop a loop.
+  sessionRefresh: { route: "session-refresh", max: 60, windowSeconds: 3600 },
   // Its own bucket, not emailCapture's: someone exercising a legal right
   // must never be blocked because a housemate on the same connection took
   // the free test three times (§14).
