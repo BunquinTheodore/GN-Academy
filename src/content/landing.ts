@@ -44,7 +44,11 @@ export const landing = {
       },
       {
         title: "A breakdown, not just a pass",
-        body: "Every credential shows how you scored across prompting, tool fluency, workflow and judgment. Two people who both passed are still distinguishable.",
+        // Do not name the four AI competencies here. The catalogue now spans
+        // blockchain and finance, which are scored on their own, so listing
+        // one course's competencies as though they were every course's makes
+        // the page wrong the moment somebody earns a different credential.
+        body: "Every credential shows how you scored on the skills that course assessed, not just whether you passed. Two people who both passed are still distinguishable.",
       },
       {
         title: "A profile employers browse",

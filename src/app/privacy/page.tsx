@@ -33,6 +33,16 @@ const sections = [
     ],
   },
   {
+    heading: "Cookies and local storage",
+    body: [
+      "We set two cookies and neither one is for advertising. Both are first-party, both are read only by this site, and neither is shared with anyone.",
+      "gn_session keeps you signed in. It holds a session token, not your password, it cannot be read by JavaScript, and it lasts five days. Using the site while signed in extends it, and signing out clears it immediately.",
+      "gn_anon is an anonymous identifier that lets you take the free AI Readiness Test and see your own result without creating an account. It is a random value with nothing personal in it, it cannot be read by JavaScript, and it lasts one year. If you later create an account, the attempt it points at can be linked to you.",
+      "We do not use advertising or third-party tracking cookies, which is why you are not asked to dismiss a cookie banner. Our analytics, when enabled, is a cookieless provider that counts page views without identifying you.",
+      "Your browser also stores a few things on this device. Firebase, our sign-in provider, keeps your signed-in user record and a refresh token so you are not asked to log in on every visit; that one is exchanged with Google, because Google is what checks it. Alongside it we store two preferences of our own: the light or dark theme you picked, and when to next extend your session. Those two never leave your browser. Signing out clears the sign-in record, and clearing your site data removes all of it.",
+    ],
+  },
+  {
     heading: "Who processes it",
     body: [
       "We use Google Firebase (authentication), Supabase (database and file storage, hosted in Singapore), Resend (transactional email), and our hosting provider. Each processes data only to provide its service to us.",

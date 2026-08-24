@@ -777,6 +777,29 @@ watching it fail:
 13. **Lighthouse readings on a loaded machine are worthless in absolute
     terms.** Measure a known control page in the same window and compare
     against it — the method that settled the Phase 3 gate.
+14. **`next/font` variables belong on `<html>`, not `<body>`.** `globals.css`
+    does `html { @apply font-sans }`, which resolves `var(--font-sans)` and
+    from there `var(--font-inter)`. Declared on `<body>`, those variables are
+    invisible to `<html>`: custom properties inherit down the tree and never
+    up. The declaration is then invalid, `<html>` falls back to the browser
+    default, and `<body>` inherits it. **The entire site rendered in Times New
+    Roman for months** and nobody spotted it, because headings use
+    `font-display` on elements *inside* `<body>` where `--font-bricolage` is
+    in scope, so the pages looked deliberate rather than broken. Confirm with
+    `getComputedStyle(document.body).fontFamily`, never by eye.
+15. **Teach `tailwind-merge` about every custom font size** in
+    `src/lib/utils.ts`. It does not read the Tailwind config, so an
+    unrecognised `text-*` is filed as a text *colour*: in
+    `cn("text-micro …", "text-white/70")` the two look like competing colours
+    and the size is dropped from the output entirely. It fails only where a
+    colour is also present, so the same token keeps working in a plain
+    `className` a few lines away.
+16. **Product-critical content must not depend on the motion bundle.**
+    `Reveal`/`Stagger` render at `opacity: 0` and wait for hydration plus an
+    IntersectionObserver. That is a fair trade on the landing page and a bad
+    one on the dashboard, where the course list is the whole reason somebody
+    signed in. Use the `rise-in` CSS keyframe (globals.css) there: no
+    JavaScript, no observer, and it cannot leave content stuck invisible.
 
 ---
 
