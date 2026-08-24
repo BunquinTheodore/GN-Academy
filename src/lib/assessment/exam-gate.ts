@@ -9,18 +9,15 @@ export type FinalExamGate = {
    */
   applies: boolean;
   ready: boolean;
+  /**
+   * Lessons not yet read. Reported even when `applies` is false, so a course
+   * that does not gate its exam can still warn someone about to spend an
+   * attempt on material they have not opened.
+   */
   lessonsLeft: number;
   quizzesLeft: number;
   /** What the learner still has to do, or null when the exam is open. */
   reason: string | null;
-};
-
-const OPEN: FinalExamGate = {
-  applies: false,
-  ready: true,
-  lessonsLeft: 0,
-  quizzesLeft: 0,
-  reason: null,
 };
 
 /**
@@ -47,13 +44,19 @@ export async function getFinalExamGate(
   certificationId: string,
 ): Promise<FinalExamGate> {
   const completion = await getCourseCompletion(userId, certificationId);
-  if (completion.quizzes.length === 0) return OPEN;
 
   const quizzesLeft = completion.quizzes.filter((q) => !q.passed).length;
   const lessonsLeft = Math.max(
     0,
     completion.lessonsTotal - completion.lessonsDone,
   );
+
+  // A course with no chapter quizzes is not gated, but the caller still wants
+  // to know how much of it is unread so it can warn rather than block. That
+  // count comes from the same read, so reporting it costs nothing.
+  if (completion.quizzes.length === 0) {
+    return { applies: false, ready: true, lessonsLeft, quizzesLeft: 0, reason: null };
+  }
   // Counting what is left rather than reading allLessonsDone, which is false
   // for a course with no lessons at all and would shut the exam with nothing
   // to tell the learner to go and do.

@@ -106,6 +106,13 @@ export default async function ExamPage({
       examTitle={exam.title}
       passingScore={exam.passing_score ?? 70}
       attemptsRemaining={exam.max_attempts - used}
+      // On a course with no chapter quizzes the exam has always been sittable
+      // from day one, and changing that would move the rules under learners
+      // already enrolled in the two courses it affects. So warn instead: the
+      // harm is spending one of three attempts without realising the course is
+      // still unread, and saying so out loud fixes that without shutting a door
+      // that has always been open.
+      unreadLessons={gate && !gate.applies ? gate.lessonsLeft : 0}
       questions={questions}
     />
   );

@@ -33,6 +33,12 @@ type ExamPlayerProps = {
   examTitle: string;
   passingScore: number;
   attemptsRemaining: number;
+  /**
+   * Lessons still unread, and only on a course whose exam is not gated. Those
+   * courses let anyone sit the exam immediately, which is deliberate and
+   * long-standing, so this warns rather than blocks.
+   */
+  unreadLessons?: number;
   questions: PublicQuestion[];
 };
 
@@ -52,6 +58,7 @@ export function ExamPlayer({
   examTitle,
   passingScore,
   attemptsRemaining,
+  unreadLessons = 0,
   questions,
 }: ExamPlayerProps) {
   const [phase, setPhase] = useState<"intro" | "quiz" | "submitting" | "done">(
@@ -136,6 +143,23 @@ export function ExamPlayer({
             </>
           )}
         </ul>
+        {/* Not a blocker. This exam has always been open from the first day
+            of the course, and closing it now would change the rules under
+            people already enrolled. What it costs someone is one of three
+            attempts spent on a course they have not read, and that is worth
+            saying plainly before they press the button. */}
+        {!isChapterQuiz && unreadLessons > 0 && (
+          <p className="rounded-md border border-verified/40 bg-verified/5 p-3 text-sm">
+            You still have {unreadLessons}{" "}
+            {unreadLessons === 1 ? "lesson" : "lessons"} unread. You can sit the
+            exam now, but it will use one of your {attemptsRemaining} remaining{" "}
+            {attemptsRemaining === 1 ? "attempt" : "attempts"} either way.{" "}
+            <Link href="/dashboard/courses" className="underline">
+              Read them first
+            </Link>
+            .
+          </p>
+        )}
         {error && (
           <p className="rounded-md border border-destructive/40 bg-destructive/5 p-3 text-sm">
             {error}
