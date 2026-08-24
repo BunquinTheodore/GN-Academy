@@ -6,12 +6,16 @@ import {
   getPublishedExamBySlug,
 } from "@/lib/db/exams";
 import { createAttempt } from "@/lib/db/attempts";
+import { getFinalExamGate } from "@/lib/assessment/exam-gate";
 import { clientIpFrom, hashIp } from "@/lib/rate-limit";
 import { site } from "@/content/site";
 
 const paramsSchema = z.object({ slug: z.string().min(1).max(100) });
 
-/** Start an exam attempt: requires an active enrollment and attempts left. */
+/**
+ * Start an exam attempt: requires an active enrollment, attempts left, and on a
+ * course that has chapter quizzes, the course actually finished.
+ */
 export async function POST(
   request: Request,
   context: { params: Promise<{ slug: string }> },
@@ -39,6 +43,18 @@ export async function POST(
           { error: "You need an active enrollment to take this exam." },
           { status: 403 },
         );
+      }
+
+      // On a course with chapter quizzes the exam is the end of the course, not
+      // a shortcut through it. Three attempts is the whole allowance, so a
+      // learner who jumps straight here burns one of them on material they have
+      // not read. Chapter quizzes are exempt (module_id set): they are what the
+      // gate asks for, so gating them would lock the course from the inside.
+      if (exam.module_id === null) {
+        const gate = await getFinalExamGate(user.uid, exam.certification_id);
+        if (gate.reason) {
+          return Response.json({ error: gate.reason }, { status: 403 });
+        }
       }
     }
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { getSessionUser } from "@/lib/auth/session";
+import { getFinalExamGate } from "@/lib/assessment/exam-gate";
 import { listEnrollmentsForUser } from "@/lib/db/enrollments";
 import {
   countCompletedAttempts,
@@ -40,6 +41,14 @@ export default async function AssessmentsPage() {
         cert: certById.get(exam.certification_id!),
         used: await countCompletedAttempts(user.uid, exam.id).catch(() => 0),
         best: await getBestAttempt(user.uid, exam.id).catch(() => null),
+        // Courses with chapter quizzes keep their exam shut until the course is
+        // done, and this card is where someone decides to open it. The server
+        // still refuses on its own; this is so nobody finds out by being
+        // refused. Exam-only courses come back with no reason and read as
+        // before.
+        gate: await getFinalExamGate(user.uid, exam.certification_id!).catch(
+          () => null,
+        ),
       })),
   );
 
@@ -65,7 +74,7 @@ export default async function AssessmentsPage() {
         </div>
       ) : (
         <div className="grid gap-5 md:grid-cols-2">
-          {available.map(({ exam, cert, used, best }) => {
+          {available.map(({ exam, cert, used, best, gate }) => {
             const attemptsLeft = exam.max_attempts - used;
             const passed = best?.passed === true;
             return (
@@ -100,18 +109,29 @@ export default async function AssessmentsPage() {
                         View my credential
                       </Link>
                     </Button>
-                  ) : attemptsLeft > 0 ? (
-                    <Button asChild size="sm">
-                      <Link href={`/dashboard/assessments/${exam.slug}`}>
-                        {used === 0 ? "Start the exam" : "Retake the exam"}
-                      </Link>
-                    </Button>
-                  ) : (
+                  ) : attemptsLeft <= 0 ? (
                     <p className="text-sm text-muted-foreground">
                       No attempts remaining. Email{" "}
                       {cert ? `us about ${cert.title}` : "us"} if you believe
                       this is wrong.
                     </p>
+                  ) : gate?.reason ? (
+                    <>
+                      <p className="text-sm text-muted-foreground">
+                        {gate.reason}
+                      </p>
+                      <Button asChild size="sm" variant="outline">
+                        <Link href="/dashboard/courses">
+                          Go back to the course
+                        </Link>
+                      </Button>
+                    </>
+                  ) : (
+                    <Button asChild size="sm">
+                      <Link href={`/dashboard/assessments/${exam.slug}`}>
+                        {used === 0 ? "Start the exam" : "Retake the exam"}
+                      </Link>
+                    </Button>
                   )}
                 </CardContent>
               </Card>

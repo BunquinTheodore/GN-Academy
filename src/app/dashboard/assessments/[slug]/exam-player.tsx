@@ -18,6 +18,14 @@ type ExamPlayerProps = {
    * reasonably reads "Passed" as "I have earned the certificate".
    */
   isChapterQuiz?: boolean;
+  /**
+   * The course's slug, and only on a course that ends in a reviewed
+   * assignment. Null on an exam course, which has no assignment page to link
+   * to. Chapter quizzes now sit on both shapes of course, so this is also what
+   * tells the result screen which ending to name: telling someone their
+   * certificate comes from an assignment, on a course that ends in an exam,
+   * sends them looking for a page that does not exist.
+   */
   courseSlug?: string | null;
   examSlug: string;
   examTitle: string;
@@ -103,11 +111,28 @@ export function ExamPlayer({
         <ul className="flex flex-col gap-1.5 text-sm text-muted-foreground">
           <li>· {questions.length} questions, one at a time</li>
           <li>· Pass mark: {passingScore}%</li>
-          <li>
-            · This uses one of your {attemptsRemaining} remaining attempts once
-            you submit
-          </li>
-          <li>· Pass and your credential is issued immediately</li>
+          {/* A chapter quiz and a final exam cost the learner completely
+              different things, and this screen used to describe the exam in
+              both cases. A chapter quiz is formative: it has 99 attempts and
+              issues nothing. Telling someone their credential rides on it, and
+              that they are burning one of three tries, makes a low-stakes check
+              read as the moment everything is decided. */}
+          {isChapterQuiz ? (
+            <>
+              <li>· Retake it as many times as you need</li>
+              <li>
+                · Passing unlocks the rest of the course. Nothing is issued here
+              </li>
+            </>
+          ) : (
+            <>
+              <li>
+                · This uses one of your {attemptsRemaining} remaining attempts
+                once you submit
+              </li>
+              <li>· Pass and your credential is issued immediately</li>
+            </>
+          )}
         </ul>
         {error && (
           <p className="rounded-md border border-destructive/40 bg-destructive/5 p-3 text-sm">
@@ -116,7 +141,7 @@ export function ExamPlayer({
         )}
         <div className="flex gap-3">
           <Button onClick={() => void start()} className="h-12">
-            Start the exam
+            {isChapterQuiz ? "Start the quiz" : "Start the exam"}
           </Button>
           <Button asChild variant="ghost" className="h-12">
             <Link href="/dashboard/assessments">Not yet</Link>
@@ -152,7 +177,9 @@ export function ExamPlayer({
                 ? "Retake it as many times as you like. This one is for learning, not for gatekeeping. Review the weak areas below first."
                 : "Review the lessons for your weakest areas below, then use another attempt when you're ready."
               : isChapterQuiz
-                ? "On to the next chapter. Your certificate comes from the final assignment, once all the chapters are done."
+                ? courseSlug
+                  ? "On to the next chapter. Your certificate comes from the final assignment, once all the chapters are done."
+                  : "On to the next chapter. Your certificate comes from the final exam, which opens once every chapter is done."
                 : result.credentialCode
                   ? "It's already publicly verifiable, and the code below is yours permanently."
                   : // A pass without a code means the credential already exists,

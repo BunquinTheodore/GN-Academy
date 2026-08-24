@@ -12,7 +12,10 @@ import {
   type Certification,
 } from "@/lib/db/certifications";
 import { getCompletedLessonIds } from "@/lib/db/progress";
-import { getCourseCompletion } from "@/lib/db/course-progress";
+import {
+  getCourseCompletion,
+  type CourseCompletion,
+} from "@/lib/db/course-progress";
 import { getAssignmentForCertification, getSubmission } from "@/lib/db/assignments";
 import { profileCompleteness } from "@/lib/dashboard/completeness";
 import { Badge } from "@/components/ui/badge";
@@ -127,13 +130,23 @@ export default async function DashboardPage() {
     }
 
     // Lessons finished. What comes next depends on the shape of the course.
+    //
+    // Quiz state is read for every course, not just assignment ones. Exam
+    // courses can carry chapter quizzes too, and the server refuses the exam
+    // until they are passed, so a card that skipped straight to "take the
+    // exam" was telling the learner something the gate would not honour.
+    //
+    // The two reads are independent of each other, and this page is
+    // force-dynamic, so a learner enrolled in several courses was paying for
+    // them one at a time.
+    const [completion, assignment] = await Promise.all([
+      getCourseCompletion(user.uid, cert.id).catch(() => null),
+      cert.requires_assignment
+        ? getAssignmentForCertification(cert.id).catch(() => null)
+        : null,
+    ]);
+
     if (cert.requires_assignment) {
-      // Independent of each other, and this page is force-dynamic, so a
-      // learner enrolled in several courses was paying for them one at a time.
-      const [completion, assignment] = await Promise.all([
-        getCourseCompletion(user.uid, cert.id).catch(() => null),
-        getAssignmentForCertification(cert.id).catch(() => null),
-      ]);
       const submission = assignment
         ? await getSubmission(assignment.id, user.uid).catch(() => null)
         : null;
@@ -177,41 +190,34 @@ export default async function DashboardPage() {
           href: `/dashboard/assignments/${cert.slug}`,
           cta: "View submission",
         });
-      } else if (completion && !completion.allQuizzesPassed) {
-        const remaining = completion.quizzes.filter((q) => !q.passed);
-        cards.push({
-          cert,
-          status: "Quizzes left",
-          tone: "secondary",
-          percent,
-          detail: `${remaining.length} chapter ${remaining.length === 1 ? "quiz" : "quizzes"} still to pass.`,
-          href: `/dashboard/assessments/${remaining[0]?.slug ?? ""}`,
-          cta: "Take the quiz",
-        });
       } else {
-        cards.push({
-          cert,
-          status: "Assignment ready",
-          tone: "secondary",
-          percent,
-          detail: "Every lesson read and every quiz passed. The assignment is open.",
-          href: `/dashboard/assignments/${cert.slug}`,
-          cta: "Start the assignment",
-        });
+        cards.push(
+          quizzesLeftCard(cert, percent, completion) ?? {
+            cert,
+            status: "Assignment ready",
+            tone: "secondary",
+            percent,
+            detail: "Every lesson read and every quiz passed. The assignment is open.",
+            href: `/dashboard/assignments/${cert.slug}`,
+            cta: "Start the assignment",
+          },
+        );
       }
       continue;
     }
 
-    cards.push({
-      cert,
-      status: "Exam ready",
-      tone: "secondary",
-      percent,
-      detail: "All lessons done. Pass the exam and your credential is issued.",
-      // The exam list takes no filter, so do not pretend it does.
-      href: "/dashboard/assessments",
-      cta: "Take the exam",
-    });
+    cards.push(
+      quizzesLeftCard(cert, percent, completion) ?? {
+        cert,
+        status: "Exam ready",
+        tone: "secondary",
+        percent,
+        detail: "All lessons done. Pass the exam and your credential is issued.",
+        // The exam list takes no filter, so do not pretend it does.
+        href: "/dashboard/assessments",
+        cta: "Take the exam",
+      },
+    );
   }
 
   const firstName = profile?.full_name?.trim().split(" ")[0];
@@ -334,6 +340,33 @@ export default async function DashboardPage() {
       </section>
     </div>
   );
+}
+
+/**
+ * The card for a course whose reading is done but whose chapter quizzes are
+ * not. Both shapes of course can reach this state, so the card is built once
+ * here and each ending falls back to its own when nothing is outstanding.
+ *
+ * Returns null when there is nothing left to pass, which is also the answer
+ * for a course with no chapter quizzes at all.
+ */
+function quizzesLeftCard(
+  cert: Certification,
+  percent: number,
+  completion: CourseCompletion | null,
+): CourseCard | null {
+  const remaining = completion?.quizzes.filter((q) => !q.passed) ?? [];
+  const next = remaining[0];
+  if (!next) return null;
+  return {
+    cert,
+    status: "Quizzes left",
+    tone: "secondary",
+    percent,
+    detail: `${remaining.length} chapter ${remaining.length === 1 ? "quiz" : "quizzes"} still to pass.`,
+    href: `/dashboard/assessments/${next.slug}`,
+    cta: "Take the quiz",
+  };
 }
 
 function Stat({

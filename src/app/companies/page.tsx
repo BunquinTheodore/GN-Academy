@@ -25,10 +25,9 @@ export default function CompaniesPage() {
       <p>
         That the holder passed a scored assessment built around real work
         scenarios, not definitions, at or above the certification&apos;s pass
-        mark. Each credential carries a per-competency breakdown: prompting
-        and output quality, tool fluency, workflow integration, and judgment
-        and verification. Two people who both passed are still
-        distinguishable.
+        mark. Each credential carries a per-competency breakdown of the skills
+        that certification actually assessed, and the verification page names
+        them. Two people who both passed are still distinguishable.
       </p>
 
       <h2 className="font-display text-lg font-semibold text-foreground">

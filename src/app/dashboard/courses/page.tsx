@@ -10,6 +10,7 @@ import {
 import { getCompletedLessonIds } from "@/lib/db/progress";
 import { getCredentialForUserAndCertification } from "@/lib/db/credentials";
 import { getCourseCompletion } from "@/lib/db/course-progress";
+import { listPublishedExams } from "@/lib/db/exams";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -21,11 +22,20 @@ export default async function CoursesPage() {
   const user = await getSessionUser();
   if (!user) redirect("/login?next=/dashboard/courses");
 
-  const [enrollments, certifications] = await Promise.all([
+  const [enrollments, certifications, exams] = await Promise.all([
     listEnrollmentsForUser(user.uid).catch(() => []),
     listPublishedCertifications().catch(() => []),
+    listPublishedExams().catch(() => []),
   ]);
   const certById = new Map(certifications.map((c) => [c.id, c]));
+  // One read for the whole page, so "take the exam" can point at the exam
+  // itself. A course with no published final exam is a real state, since an
+  // admin can unpublish one, so every use of this map falls back.
+  const examSlugByCertId = new Map(
+    exams.flatMap((exam) =>
+      exam.certification_id ? [[exam.certification_id, exam.slug] as const] : [],
+    ),
+  );
 
   const cards = await Promise.all(
     enrollments.map(async (enrollment) => {
@@ -39,9 +49,15 @@ export default async function CoursesPage() {
       const firstIncomplete = modules
         .flatMap((m) => m.lessons)
         .find((l) => !done.has(l.id));
-      // Assignment courses have chapter quizzes standing between the reading
-      // and the final submission, so the card has to show more than a bar.
-      const completion = cert.requires_assignment
+      // Chapter quizzes stand between the reading and whatever ends the course,
+      // an assignment for some courses and a final exam for others, so the card
+      // has to show more than a bar. A course with no chapter quizzes comes back
+      // with an empty quiz list and renders exactly as it did before. A card
+      // the learner cannot open yet shows a payment message and nothing else,
+      // so it does not pay for this read.
+      const isOpen =
+        enrollment.status !== "pending" && enrollment.status !== "rejected";
+      const completion = isOpen
         ? await getCourseCompletion(user.uid, cert.id).catch(() => null)
         : null;
       const credential =
@@ -54,7 +70,28 @@ export default async function CoursesPage() {
         lessonIds.length === 0
           ? 0
           : Math.round((done.size / lessonIds.length) * 100);
-      return { enrollment, cert, percent, firstIncomplete, credential, completion };
+      // The exam on a course with chapter quizzes will not open until these are
+      // passed, so the card sends the learner to the quiz rather than to a
+      // button that refuses them.
+      const nextQuiz = completion?.quizzes.find((q) => !q.passed) ?? null;
+      // Link to this course's own exam. This used to pass ?cert= to the exam
+      // list, which ignores the query string entirely, so the learner landed on
+      // every exam they are enrolled in and had to pick. The bare list is still
+      // the fallback when no published exam resolves.
+      const examSlug = examSlugByCertId.get(cert.id);
+      const examHref = examSlug
+        ? `/dashboard/assessments/${examSlug}`
+        : "/dashboard/assessments";
+      return {
+        enrollment,
+        cert,
+        percent,
+        firstIncomplete,
+        credential,
+        completion,
+        nextQuiz,
+        examHref,
+      };
     }),
   );
 
@@ -82,7 +119,16 @@ export default async function CoursesPage() {
       ) : (
         <div className="grid gap-5 md:grid-cols-2">
           {visible.map(
-            ({ enrollment, cert, percent, firstIncomplete, credential, completion }) => (
+            ({
+              enrollment,
+              cert,
+              percent,
+              firstIncomplete,
+              credential,
+              completion,
+              nextQuiz,
+              examHref,
+            }) => (
             <Card key={enrollment.id}>
               <CardHeader>
                 <div className="flex items-start justify-between gap-3">
@@ -169,19 +215,25 @@ export default async function CoursesPage() {
                             {percent === 0 ? "Start learning" : "Continue"}
                           </Link>
                         </Button>
+                      ) : nextQuiz ? (
+                        // One branch for both shapes of course, since an
+                        // outstanding chapter quiz is what stands in the way
+                        // either way. Sending the learner to the quiz beats
+                        // sending them to the ending that will refuse them.
+                        <Button asChild size="sm">
+                          <Link href={`/dashboard/assessments/${nextQuiz.slug}`}>
+                            Take the chapter quiz
+                          </Link>
+                        </Button>
                       ) : cert.requires_assignment ? (
                         <Button asChild size="sm">
                           <Link href={`/dashboard/assignments/${cert.slug}`}>
-                            {completion?.readyForAssignment
-                              ? "Go to the assignment"
-                              : "Finish the chapter quizzes"}
+                            Go to the assignment
                           </Link>
                         </Button>
                       ) : (
                         <Button asChild size="sm">
-                          <Link href={`/dashboard/assessments?cert=${cert.slug}`}>
-                            Take the exam
-                          </Link>
+                          <Link href={examHref}>Take the exam</Link>
                         </Button>
                       )}
                       {credential && (

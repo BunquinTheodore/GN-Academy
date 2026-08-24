@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { z } from "zod";
 import { getSessionUser } from "@/lib/auth/session";
+import { getFinalExamGate } from "@/lib/assessment/exam-gate";
 import { getPublicQuestions } from "@/lib/db/assessments";
 import { getCertificationById } from "@/lib/db/certifications";
 import { getEnrollment } from "@/lib/db/enrollments";
@@ -9,6 +11,7 @@ import {
   countCompletedAttempts,
   getPublishedExamBySlug,
 } from "@/lib/db/exams";
+import { Button } from "@/components/ui/button";
 import { ExamPlayer } from "./exam-player";
 
 export const metadata: Metadata = {
@@ -57,6 +60,30 @@ export default async function ExamPage({
 
   const used = await countCompletedAttempts(user.uid, exam.id).catch(() => 0);
   if (used >= exam.max_attempts) redirect("/dashboard/assessments");
+
+  // The gate that counts is in POST /api/exams/[slug]/attempts. This is the
+  // same answer given before the click, because offering someone a Start button
+  // that the server will refuse is worse than not offering it. Chapter quizzes
+  // (module_id set) are never gated: passing them is what opens the exam.
+  const gate =
+    exam.module_id === null && exam.certification_id
+      ? await getFinalExamGate(user.uid, exam.certification_id).catch(() => null)
+      : null;
+  if (gate?.reason) {
+    return (
+      <div className="mx-auto max-w-xl">
+        <h1 className="font-display text-2xl font-semibold">{exam.title}</h1>
+        <p className="mt-3 text-muted-foreground">{gate.reason}</p>
+        <p className="mt-2 text-sm text-muted-foreground">
+          The exam allows {exam.max_attempts} attempts, so it stays shut until
+          the course is behind you.
+        </p>
+        <Button asChild className="mt-5 h-12">
+          <Link href="/dashboard/courses">Back to the course</Link>
+        </Button>
+      </div>
+    );
+  }
 
   const questions = await getPublicQuestions(exam.id).catch(() => []);
   if (questions.length === 0) {

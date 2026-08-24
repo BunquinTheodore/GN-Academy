@@ -5,6 +5,8 @@ import type { Assessment } from "@/lib/db/assessments";
 
 export type Exam = Assessment & {
   certification_id: string | null;
+  /** Null on a final exam, set on a chapter quiz. It is what tells them apart. */
+  module_id: string | null;
   passing_score: number | null;
   max_attempts: number;
 };
@@ -13,7 +15,7 @@ export async function getPublishedExamBySlug(slug: string): Promise<Exam | null>
   const { data, error } = await supabaseAdmin()
     .from("assessments")
     .select(
-      "id, slug, title, type, question_count, is_published, certification_id, passing_score, max_attempts",
+      "id, slug, title, type, question_count, is_published, certification_id, module_id, passing_score, max_attempts",
     )
     .eq("slug", slug)
     .eq("is_published", true)
@@ -34,7 +36,7 @@ export async function listPublishedExams(): Promise<Exam[]> {
   const { data, error } = await supabaseAdmin()
     .from("assessments")
     .select(
-      "id, slug, title, type, question_count, is_published, certification_id, passing_score, max_attempts",
+      "id, slug, title, type, question_count, is_published, certification_id, module_id, passing_score, max_attempts",
     )
     .eq("is_published", true)
     .neq("type", "diagnostic")

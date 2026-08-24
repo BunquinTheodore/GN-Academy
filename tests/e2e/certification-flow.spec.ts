@@ -144,8 +144,9 @@ test.describe("certification journey", () => {
     await expect(page).toHaveURL(/\/dashboard\/courses/, { timeout: 30_000 });
 
     // 4. Take and pass the exam with the known-correct answers
+    // The course card links straight to this course's exam now, so there is no
+    // stop at the exam list in between.
     await page.getByRole("link", { name: "Take the exam" }).click();
-    await page.getByRole("link", { name: "Start the exam" }).click();
     await page.getByRole("button", { name: "Start the exam" }).click();
 
     const questionCount = correctTextByPrompt.size;
