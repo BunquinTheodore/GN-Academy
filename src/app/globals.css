@@ -7,10 +7,49 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-inter);
   --font-mono: var(--font-geist-mono);
   --font-display: var(--font-bricolage);
   --font-heading: var(--font-bricolage);
+
+  /*
+   * The type scale, moved up one step at the bottom end.
+   *
+   * Counted before changing anything: text-sm was used 221 times, text-xs 70,
+   * and text-base 14. The interface's real body size was 14px with 12px doing
+   * a lot of work, which is a step below comfortable reading and is what the
+   * client meant by the text being small. Redefining the scale fixes all 291
+   * sites at once; rewriting them by hand would have been a large diff and
+   * would have missed some.
+   *
+   * The large end is deliberately left alone above xl. Headings were never the
+   * problem, and pushing them further only makes pages louder.
+   *
+   * Line heights are part of the same fix. Perceived readability comes about
+   * as much from leading as from size, and Tailwind's defaults are tuned
+   * tighter than long-form reading wants.
+   */
+  --text-xs: 0.8125rem; /* 13px, was 12 */
+  --text-xs--line-height: 1.5;
+  --text-sm: 0.9375rem; /* 15px, was 14 */
+  --text-sm--line-height: 1.55;
+  --text-base: 1.0625rem; /* 17px, was 16 */
+  --text-base--line-height: 1.65;
+  --text-lg: 1.1875rem; /* 19px, was 18 */
+  --text-lg--line-height: 1.5;
+  --text-xl: 1.3125rem; /* 21px, was 20 */
+  --text-xl--line-height: 1.45;
+
+  /*
+   * Uppercase tracked labels: badges, eyebrows, the credential card's rubric.
+   * There were three magic numbers doing this job (0.6rem, 0.65rem,
+   * 0.6875rem), the smallest of which was 9.6px and sat on the credential
+   * card, which is the one artefact an employer looks at closely. Uppercase
+   * reads larger than its nominal size because there are no descenders, so
+   * 12px here is a small label rather than a small font.
+   */
+  --text-micro: 0.75rem;
+  --text-micro--line-height: 1.4;
   --color-brand: var(--brand);
   --color-brand-foreground: var(--brand-foreground);
   --color-brand-cyan: var(--brand-cyan);
@@ -166,5 +205,42 @@
   }
   html {
     @apply font-sans;
+  }
+}
+
+/*
+ * A CSS entrance, for content that must never depend on JavaScript.
+ *
+ * The motion vocabulary in src/components/motion is built on `motion/react`
+ * and `whileInView`, which means the element is server-rendered at opacity 0
+ * and only revealed once the motion bundle hydrates and an IntersectionObserver
+ * fires. That trade is fine on the landing page. It is not fine on the
+ * dashboard: the course list is the product's home screen, it used to be plain
+ * server-rendered HTML needing no JavaScript at all, and on the mobile-data
+ * connections this audience actually uses, a chunk that loads slowly or not at
+ * all would leave a heading sitting above an empty space.
+ *
+ * A keyframe animation needs no JavaScript, no hydration and no observer, and
+ * it cannot leave content stuck invisible. Stagger by setting animation-delay
+ * per item.
+ *
+ * The animation is declared only inside `prefers-reduced-motion: no-preference`.
+ * Someone who has asked for less motion gets no animation and no fill state,
+ * which is to say they simply get the content.
+ */
+@keyframes gn-rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .rise-in {
+    animation: gn-rise-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
   }
 }

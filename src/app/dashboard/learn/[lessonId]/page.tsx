@@ -77,7 +77,19 @@ export default async function LessonPage({
         </p>
       </div>
 
-      <article className="prose-headings:font-display mt-6 flex flex-col gap-4 [&_h1]:text-2xl [&_h1]:font-semibold [&_h2]:mt-4 [&_h2]:text-lg [&_h2]:font-semibold [&_h3]:font-semibold [&_li]:my-1 [&_ol]:list-decimal [&_ol]:pl-5 [&_p]:text-[0.95rem] [&_p]:leading-relaxed [&_ul]:list-disc [&_ul]:pl-5">
+      {/*
+        The reading surface. A lesson is about 700 words, so this is the one
+        place in the product where somebody reads for several minutes at a
+        stretch, and it was set at 0.95rem (15.2px) across a 672px column:
+        roughly 88 characters a line. Small type on a long line is the worst
+        combination there is for sustained reading, and it is what the client
+        was reacting to.
+
+        Now 17px on a 66-character measure, with the leading opened up. The
+        column stays 672px wide for the header and footer controls; only the
+        prose is narrowed, so the chrome does not shift.
+      */}
+      <article className="prose-headings:font-display mt-6 flex max-w-[66ch] flex-col gap-5 text-base [&_h1]:text-2xl [&_h1]:font-semibold [&_h2]:mt-3 [&_h2]:text-lg [&_h2]:font-semibold [&_h3]:font-semibold [&_li]:my-1.5 [&_ol]:list-decimal [&_ol]:pl-5 [&_p]:leading-[1.7] [&_ul]:list-disc [&_ul]:pl-5">
         {lesson.content_mdx ? (
           <MDXRemote source={lesson.content_mdx} />
         ) : (

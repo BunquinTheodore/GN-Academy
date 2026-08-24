@@ -202,7 +202,7 @@ export default async function EmployersPage({
                   <ul className="flex flex-wrap gap-1.5">
                     {person.credentials.map((c) => (
                       <li key={c.title}>
-                        <span className="inline-flex items-center gap-1 rounded-full bg-verified px-2.5 py-1 text-[0.65rem] font-semibold text-verified-foreground uppercase">
+                        <span className="inline-flex items-center gap-1 rounded-full bg-verified px-2.5 py-1 text-micro font-semibold text-verified-foreground uppercase">
                           <BadgeCheck className="size-3" aria-hidden />
                           {c.title}
                         </span>
