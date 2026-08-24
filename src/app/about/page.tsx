@@ -17,15 +17,14 @@ export default function AboutPage() {
       </p>
 
       <h2 className="font-display text-lg font-semibold text-foreground">
-        Part of GN Ventures
+        The network behind the credential
       </h2>
       <p>
-        GN Academy is the learning and certification arm of GN Ventures. That
-        matters for a practical reason rather than a branding one: GN Ventures
-        is a web3 community, and a community is a network of people who are
-        hiring. Passing an assessment here does not just produce a certificate.
-        It puts you in front of the companies and founders already inside that
-        network.
+        Learning here puts you inside a community, not just a course. GN
+        Academy is powered by GN Ventures, which is a web3 community, and a
+        community is a network of people who are hiring. Passing an assessment
+        here does not just produce a certificate. It puts you in front of the
+        companies and founders already inside that network.
       </p>
 
       <h2 className="font-display text-lg font-semibold text-foreground">

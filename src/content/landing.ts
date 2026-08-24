@@ -12,7 +12,6 @@
 
 export const landing = {
   hero: {
-    kicker: "Part of GN Ventures",
     heading: "Anyone can say they know AI. Almost nobody can prove it.",
     subheading:
       "GN Academy turns AI skills into a credential employers can check in seconds: a code, a public page, no screenshots to fake. Built for Filipino students, VAs, freelancers and jobseekers.",

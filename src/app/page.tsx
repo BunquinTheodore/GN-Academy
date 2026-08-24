@@ -36,26 +36,22 @@ export default async function HomePage() {
           <div className="mx-auto w-full max-w-6xl px-4 pt-16 pb-20 sm:pt-24">
             <div className="grid items-center gap-12 lg:grid-cols-2">
               <div className="max-w-xl">
+                {/* The hero leads with the headline. The GN Ventures
+                    attribution used to sit above it as a kicker and now lives
+                    in the footer instead. */}
                 <Reveal>
-                  <p className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 font-mono text-xs tracking-wider uppercase">
-                    <span className="size-1.5 rounded-full bg-brand" aria-hidden />
-                    {landing.hero.kicker}
-                  </p>
-                </Reveal>
-
-                <Reveal delay={0.06}>
-                  <h1 className="font-display mt-5 text-4xl leading-tight font-semibold text-balance sm:text-5xl">
+                  <h1 className="font-display text-4xl leading-tight font-semibold text-balance sm:text-5xl">
                     {landing.hero.heading}
                   </h1>
                 </Reveal>
 
-                <Reveal delay={0.12}>
+                <Reveal delay={0.06}>
                   <p className="mt-5 text-base text-muted-foreground sm:text-lg">
                     {landing.hero.subheading}
                   </p>
                 </Reveal>
 
-                <Reveal delay={0.18}>
+                <Reveal delay={0.12}>
                   <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                     {user ? (
                       <Button asChild size="lg" className="h-12">
@@ -88,7 +84,7 @@ export default async function HomePage() {
                 </Reveal>
 
                 {!user && (
-                  <Reveal delay={0.24}>
+                  <Reveal delay={0.18}>
                     <p className="mt-4 text-sm text-muted-foreground">
                       {landing.hero.note}
                     </p>

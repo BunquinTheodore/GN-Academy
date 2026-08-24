@@ -89,7 +89,8 @@ export const footer = {
       ],
     },
   ],
-  // TODO(blocked): sibling-of-MAZAL vs parent-brand wording — business
-  // decision, see BLOCKED.md before editing the About page.
-  legalLine: `© ${new Date().getFullYear()} GN Academy. All rights reserved.`,
+  // Decided 2026-08-25: GN Academy credits GN Ventures as "powered by", and
+  // it sits here rather than in the hero — the attribution is provenance a
+  // visitor can check later, not the first thing the page has to say.
+  legalLine: `© ${new Date().getFullYear()} GN Academy. All rights reserved. Powered by GN Ventures.`,
 } as const;
