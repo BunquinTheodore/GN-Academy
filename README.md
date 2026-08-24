@@ -20,7 +20,7 @@ do), `HANDOFF.md` (session-to-session narrative).
 
 ## 1. Status
 
-All six phases are on `main` as of 21 August 2026.
+All ten phases are on `main` as of 25 August 2026.
 
 | Phase | Scope | State |
 |---|---|---|
@@ -31,7 +31,9 @@ All six phases are on `main` as of 21 August 2026.
 | 5 — Talent layer | Public profiles, portfolio, employer directory | ✅ merged to `main` |
 | 6 — Hardening | Production bug fixes, audit fixes, configuration | ✅ merged to `main` |
 | 7 — Deploy | Live on Vercel, Firebase domains, workflows verified | ✅ merged to `main` |
-| 8 — Curriculum & UI | Chapter quizzes, reviewed assignments, four courses, gated catalogue, dashboard shell, theming | ✅ this session |
+| 8 — Curriculum & UI | Chapter quizzes, reviewed assignments, four courses, gated catalogue, dashboard shell, theming | ✅ merged to `main` |
+| 9 — Review pass | Nine defects found by `/code-review` over a 94-file diff, six fixed | ✅ merged to `main` |
+| 10 — Free basics | Three free exam courses (AI, blockchain, finance), embedded certificate type, the GN Ventures move, a content validator | ✅ this session |
 
 `main` is the complete product. Nothing the platform needs in order to
 *function* is missing; what remains before taking money is credentials,
@@ -43,12 +45,19 @@ content, and business decisions (§18 and `BLOCKED.md`).
 |---|---|
 | `npm run typecheck` | green |
 | `npm run lint` | green |
-| `npm run test` (21 unit tests) | green |
+| `npm run test` (93 unit tests) | green |
 | `npm run build` | green |
-| `npm run test:e2e` with `E2E_AUTH=1` | **64 of 64**, no flakes, 2.2 min |
+| `npx tsx scripts/validate-courses.ts` | pass, 245 questions across 7 course files |
+| `npm run test:e2e` with `E2E_AUTH=1` | **not re-run since phase 9**, which was 68 passing with one known flake |
 
-Everything is green and committed. Migrations 0001–0006 are applied to the
-live database and recorded in `schema_migrations`.
+Migrations 0001 to 0008 are applied to the live database and recorded in
+`schema_migrations`. The catalogue is nine published courses: five that end in
+an auto-scored exam, four that end in a reviewed assignment.
+
+**The e2e suite has not been run against the free basics.** Phase 10 changed the
+exam gate, both dashboard cards and the certificate route, and the suite needs
+live credentials, so treat it as unproven rather than passing until somebody
+runs it.
 
 ---
 
@@ -142,6 +151,7 @@ Analytics stays completely off — no third-party bytes shipped — unless
 | `npm run test:e2e` | Playwright; live flows skip unless `E2E_AUTH=1` |
 | `npm run make-admin -- <email>` | Sets the `admin` custom claim (user must have signed up first) |
 | `npx tsx scripts/apply-migrations.ts [--seed]` | Applies pending migrations, optionally seeds |
+| `npx tsx scripts/validate-courses.ts [slug]` | Checks `supabase/courses/*.json` against the §21 authoring rules and prints the measured statistics. Touches no database, needs no credentials |
 | `npx tsx scripts/seed-courses.ts [slug]` | Loads `supabase/courses/*.json`. Add `--replace-questions` to overwrite question sets (discards `/admin` edits) |
 | `npx tsx scripts/refresh-seed-content.ts [--write]` | Re-applies `seed.sql` text to rows that already exist. Dry run by default |
 
@@ -674,7 +684,7 @@ code.
 | 3 | Sign up on the live site, then `npm run make-admin -- <email>` | User |
 | 4 | Verify the Resend sending domain (SPF + DKIM) | User |
 | 5 | Legal review of `/privacy` and `/terms`; NPC registration decision | User |
-| 6 | GN Academy ↔ MAZAL / GN Club brand relationship (unblocks the About page) | User |
+| 6 | ~~GN Academy ↔ MAZAL / GN Club brand relationship~~ — **decided: GN Academy leads, "Powered by GN Ventures" in the footer** | ✅ |
 | 7 | Production hosting + domain — note that Vercel Hobby prohibits commercial use | User |
 | 8 | Cookieless analytics account → `NEXT_PUBLIC_ANALYTICS_*` | User |
 | 9 | Course content beyond the seeded lessons; video lessons (`lessons.video_url` already exists) | Either |
@@ -783,17 +793,21 @@ watching it fail:
 
 ---
 
-## 21. Courses, chapter quizzes and reviewed assignments
+## 21. Courses, chapter quizzes, final exams and reviewed assignments
 
 There are two shapes of course, and they end differently.
 
-**Exam courses** (the original two: AI Foundations, Certified AI Virtual
-Assistant) end in one final exam. Passing it issues the credential
-automatically. `certifications.requires_assignment` is false.
+**Exam courses** end in one final exam. Passing it issues the credential
+automatically, with nobody in the loop. `certifications.requires_assignment` is
+false, and the final exam is the assessment on the certification whose
+`module_id` is null — that null is the whole marker, so a chapter quiz can never
+be mistaken for the thing that issues a credential. The two courses seeded from
+`seed.sql` (AI Foundations, Certified AI Virtual Assistant) are this shape, and
+so is any course file carrying a `final_exam` block.
 
-**Assignment courses** (the four newer ones) have a quiz attached to each
-chapter and end in a written assignment that a human reads. The credential is
-released when a reviewer approves it, not when a score crosses a line.
+**Assignment courses** have a quiz attached to each chapter and end in a written
+assignment that a human reads. The credential is released when a reviewer
+approves it, not when a score crosses a line.
 
 ### The learner's path through an assignment course
 
@@ -809,6 +823,10 @@ released when a reviewer approves it, not when a score crosses a line.
    requires a written note, since it is the only feedback the learner gets.
 6. Approval issues the credential and emails it.
 
+An exam course runs the same first three steps, then swaps 4 to 6 for a single
+final exam: pass it and the credential is issued and emailed on the spot. The
+chapter quizzes stay formative there too.
+
 ### Where a credential can be issued
 
 `src/lib/credentials/issue.ts` — `maybeIssueCredential()` — and nowhere else.
@@ -823,6 +841,20 @@ competency breakdown is computed from the learner's best attempt at each
 chapter quiz. A credential with no breakdown is worth noticeably less to the
 employer reading it.
 
+### Where a course sits in the catalogue
+
+`certifications.sort_order`, ascending, and nothing else. The three free basics
+are **-3, -2 and -1** so they lead, followed by AI Foundations at 0, CAVA at 1,
+and the four paid course files at 2 to 5.
+
+Negative numbers look odd, and the alternative was worse. Renumbering the whole
+catalogue means changing AI Foundations and CAVA, which are seeded by
+`supabase/seed.sql` with `on conflict (slug) do nothing`: their rows would never
+have moved in production. The file would have claimed one order, the live
+catalogue would have shown another, and nothing would have failed to say so.
+Courses seeded from `supabase/courses/*.json` do not have that problem, because
+`seed-courses.ts` upserts them.
+
 ### Course content lives in files
 
 `supabase/courses/*.json` is the authored source. Load it with:
@@ -832,10 +864,31 @@ npx tsx scripts/seed-courses.ts                 # every course
 npx tsx scripts/seed-courses.ts ai-essentials   # one
 ```
 
+A course file describes either shape:
+
+- **Assignment course.** Leave `requires_assignment` out (it defaults to true,
+  which is why the four existing files needed no edit when exam courses
+  arrived) and carry an `assignment` block: `title`, `brief_mdx`, `criteria`,
+  `min_words`.
+- **Exam course.** Set `"requires_assignment": false` and carry a `final_exam`
+  block: `title`, `questions`, and optionally `slug` (defaults to
+  `{course-slug}-final-exam`), `passing_score` (defaults to the course's) and
+  `max_attempts` (defaults to 3, unlike a chapter quiz's 99 — this one issues
+  the credential). It is seeded with `module_id` null and `type` `knowledge`.
+
+Chapter quizzes work the same either way. A file that claims one shape and
+carries the other is **rejected before anything is written**, and so is a
+`final_exam` with no questions: a half-seeded course reads as finished to the
+learner and can never release their credential, which is a support thread and a
+refund rather than a console line.
+
 Idempotent and deliberately conservative. Courses, chapters and lesson text are
-refreshed on every run; **quiz questions are inserted only when a chapter quiz
-has none**, so an admin's edits in `/admin` survive a reseed. Nothing is ever
-deleted. Chapters are matched on `slug` and lessons on `(module_id, slug)`.
+refreshed on every run; **questions are inserted only when their assessment has
+none**, chapter quiz and final exam alike, so an admin's edits in `/admin`
+survive a reseed. Both go through the same code path on purpose, because a
+divergence between them is what scores a learner's in-flight attempt as zero.
+Nothing is ever deleted. Chapters are matched on `slug` and lessons on
+`(module_id, slug)`.
 
 > Chapters are matched on slug for a reason. They used to be matched on title,
 > and renaming a chapter then inserted a *second* module and re-created its
@@ -860,6 +913,46 @@ draft that broke it:
    nothing. That would hollow out the credential the whole product rests on.
    Measured on what shipped: correct-is-longest in about 11% of questions,
    below the 25% that guessing would give.
+
+### The gate that enforces them
+
+```
+npx tsx scripts/validate-courses.ts                 # every course file
+npx tsx scripts/validate-courses.ts ai-essentials   # one
+```
+
+Reads `supabase/courses/*.json` and `supabase/seed.sql`, touches no database
+and needs no credentials, and exits non-zero on a hard failure. The rules live
+in `src/lib/courses/content-checks.ts`, which
+`tests/unit/course-content.test.ts` imports as well, so `npm run verify`
+enforces exactly what the script prints. The script is only the report.
+
+**Hard failures.** Every field `seed-courses.ts` reads, present and the right
+type, for both course shapes. Slugs unique within a file and across files;
+`credential_prefix` unique across the course files and against the prefixes
+`seed.sql` already owns (CAVA, AIF). Every question: four options with ids a,
+b, c, d, a `correct_option_id` that is one of them, an explanation, and a
+competency that exists in `src/content/competencies.ts`. One assessment draws
+on one domain's competencies, since a finance question scored against
+`prompting` puts a competency on the credential the course never taught. No em
+dashes. No duplicate question prompt within an assessment, no repeated option
+text within a question. Then the measured limits: correct-is-longest above
+25% per course or overall, any single letter above 40% of a course's answer
+key, or uneven option lengths in more than a fifth of a course's questions.
+
+**Warnings, printed with the number so a human can judge.** The full
+answer-key distribution per assessment and per course, the correct-is-longest
+rate, lesson word counts per lesson and per course, the individual questions
+whose longest option is more than 1.8x the shortest, and a scan for possible
+invented statistics (percentages, "X out of Y", "most", "studies show", "half
+of all") with the surrounding sentence for every hit. That last one never
+fails: two of the courses teach *about* invented statistics and have to quote
+one to do it, and a lesson about a 15% off promo has to be able to say 15%. It
+prints every hit so nobody can say they did not see them.
+
+The summary table prints on a green run too. That is the point: the answer-key
+distribution is the number the credential's worth rests on, so it should be
+readable without first breaking something.
 
 ---
 

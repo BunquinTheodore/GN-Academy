@@ -1,6 +1,6 @@
 # GN Academy: Session Handoff
 
-**Written:** 22 August 2026
+**Written:** 25 August 2026 (previous session: 22 August)
 
 `README.md` is the complete reference for this codebase: stack, setup, env
 vars, auth model, database schema, route map, security, testing, launch
@@ -21,15 +21,24 @@ to Vercel, so a push to `main` builds and promotes to production by itself.**
 Nothing has to be deployed by hand; check `npx vercel ls` after a push rather
 than assuming either way.
 
-`npm run verify` is green. The e2e suite is 68 passing, with one known flake:
-the certification journey occasionally times out moving between lessons under
-full concurrency and passes on retry. The cause is written up in
-`src/app/api/lessons/[lessonId]/complete/route.ts`. Treat a red run there as
-unproven, not as broken.
+`npm run verify` is green: 93 unit tests, typecheck, lint and build.
+`npx tsx scripts/validate-courses.ts` passes over 245 questions in 7 files.
 
-Migrations 0001 to 0008 are applied to production. The catalogue is six
-published courses: two that end in an exam, four that end in a reviewed
-assignment.
+**The e2e suite has not been run this session.** It was 68 passing at the end of
+phase 9, with one known flake: the certification journey occasionally times out
+moving between lessons under full concurrency and passes on retry, and the cause
+is written up in `src/app/api/lessons/[lessonId]/complete/route.ts`. Phase 10
+changed the exam gate, both dashboard cards, the exam intro copy and the
+certificate route, so treat the suite as unproven until it is run rather than
+assuming it still passes. Treat a red run there as unproven, not as broken.
+
+Migrations 0001 to 0008 are applied to production. **No migration was needed
+this session.** The catalogue is nine published courses: five that end in an
+auto-scored exam, four that end in a reviewed assignment.
+
+**The three new courses are not in the live database yet.** They exist as files
+in `supabase/courses/` and nothing has been seeded. Run
+`npx tsx scripts/seed-courses.ts` to publish them.
 
 The product loop works end to end: a stranger reads the landing page, creates
 an account, sees the catalogue, enrols, reads a course, passes a quiz per
@@ -38,7 +47,33 @@ issues with a public verification page.
 
 ---
 
-## 2. What this session added
+## 2. What this session added (25 August)
+
+### Three free courses, and the shape that lets them exist
+
+Basic AI, Basic Blockchain and Basic Finance: 3 chapters of 3 lessons, 24 quiz
+questions and a 15-question final exam each, about 23,300 words. They are free
+and they end in an **auto-scored exam**, so passing issues the credential with
+nobody in the loop, which is the only shape that works for free courses at
+volume. `seed-courses.ts` grew a `final_exam` block and an optional
+`assignment` to support it, `/api/exams/[slug]/attempts` gates the exam on the
+chapter quizzes, and a twelve-key competency registry means a finance credential
+no longer has to print "Prompting and output quality".
+
+Read PROGRESS.md phase 10 for the full list, including what the review passes
+caught and what was deliberately left.
+
+### The certificate reads as a serif because it was never embedding a font
+
+`StandardFonts.Helvetica` embeds a *reference* to a base-14 font. A viewer with
+no Helvetica substitutes, often with a serif, which is exactly what the client
+saw. Enlarging the text alone would not have fixed it. Bricolage Grotesque and
+Inter are now embedded as static instances through `@pdf-lib/fontkit`. Static,
+not the Google Fonts copies: those are variable fonts, and pdf-lib embeds the
+default 400 weight from one without complaining, so a bold heading quietly
+would not have been bold.
+
+### What this session added (22 August)
 
 ### Chapter quizzes and reviewed assignments
 
@@ -197,6 +232,70 @@ loop itself: a learner in five courses still pays roughly five sequential
 refactor rather than a tidy-up.
 
 ---
+
+### AI Essentials for Work 4.1 and 4.2 now repeat Basic AI
+
+An adversarial review of `basic-ai.json` found that chapter 3's two closing
+lessons and AI Essentials for Work chapter 4's first two lessons teach the same
+material, in places sentence for sentence. Basic AI's copies were rewritten in
+this pass (the screenshots paragraph is now the household case, the "would you
+email this to a stranger" framing is now the queue, the government-identifier
+list was reordered, and lesson 3.3's third real source was renamed), so the
+verbatim collisions are gone.
+
+The structural problem is not. A learner who finishes the free course and then
+pays ₱1,499 for AI Essentials still meets two lessons whose content they have
+already read, only phrased differently. The free course is the one a beginner
+needs, so the fix belongs on the paid side: AIE 4.1 should move up from "here
+are three real sources" to checking work somebody else will be paid for
+(recomputing figures, quotes and citations, what to do when you cannot verify),
+and AIE 4.2 should move up from a never-paste list to client data, NDAs,
+acceptable-use policies and the conversation you have with an employer before
+you paste anything. Both already gesture at that material; neither leads with
+it.
+
+### The correct-is-shortest check is a warning on three other course files
+
+`src/lib/courses/content-checks.ts` now measures `correctIsShortest` alongside
+`correctIsLongest`, because a Basic AI draft reached 48.7% on the shortest
+direction while measuring 2.6% on the longest one, and the shortest option alone
+cleared the pass line on one of its chapter quizzes. It hard-fails at 40% and
+warns above 25%.
+
+It warns, today, on two of the four paid courses that predate this work:
+`ai-essentials-for-work` at 28.1% and `prompt-engineering-with-claude` at 37.5%.
+All three new courses finished under the line (Basic AI 5.1%, Basic Blockchain
+15.4%, Basic Finance 20.5%). The two that warn need the same rebalancing Basic
+AI had: lengthen the keyed option or trim the distractors, never move the key.
+Once they are under 25%, `MAX_CORRECT_IS_SHORTEST` should come down to meet
+`MAX_CORRECT_IS_LONGEST` at 0.25 so both directions fail at the same line.
+
+### A credential-issuing exam serves the same questions in the same order
+
+`src/lib/assessment` has no shuffle anywhere: questions and options come back in
+`sort_order` and are rendered in that order. A chapter quiz allows 99 retakes
+and a final exam allows 3, so a repeat taker on attempt two is working against a
+fixed question order, a fixed option order and a fixed answer key. Basic AI's
+exam key was reordered in this pass because questions 1 to 4 and 9 to 12 carried
+the identical permutation, but that is a patch on the content, not a fix. The
+engine should shuffle option order per attempt, and the answer key should be
+stored against option ids rather than positions so that shuffling stays safe.
+
+### The three free basics sort first, on negative sort_order
+
+`basic-ai`, `basic-blockchain` and `basic-finance` are `sort_order` -3, -2 and
+-1. Everything already in the catalogue keeps the number it has: AI Foundations
+0, CAVA 1, and the four paid course files 2 to 5. The catalogue orders on
+`sort_order` alone, so the free basics lead, AI Foundations follows as the next
+rung, and the paid tracks come after it.
+
+An earlier pass in this session renumbered the whole catalogue instead, moving
+AI Foundations to 1 and CAVA to 2 in `supabase/seed.sql`. That was reverted, and
+the reason is worth keeping: `seed.sql` inserts certifications `on conflict
+(slug) do nothing`, so those two rows would never have changed in production.
+The file would have claimed one order and the live catalogue would have shown
+another, with nothing failing to reveal it. Negative numbers are slightly odd to
+read; a file that silently disagrees with the database is worse.
 
 ## 5. Session-start ritual
 

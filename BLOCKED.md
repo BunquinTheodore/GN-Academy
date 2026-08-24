@@ -44,9 +44,13 @@ nowhere to send the money yet.
 ## 4. Legal review of /privacy and /terms (unchanged)
 Drafts are live and marked as drafts. NPC registration decision still yours.
 
-## 5. About-page brand wording (unchanged)
-GN Academy vs MAZAL/GN Club relationship — business decision; About page stays
-generic until decided.
+## 5. About-page brand wording (RESOLVED 2026-08-25)
+Decided by the client: GN Academy leads on its own name. The GN Ventures
+attribution came off the landing hero and now reads "Powered by GN Ventures"
+in the footer legal line (`src/content/site.ts`). The About page keeps the
+argument that the GN Ventures community is a hiring network, under the heading
+"The network behind the credential", but no longer opens on parent-brand
+framing. MAZAL / GN Club naming is still unused anywhere in the product.
 
 ---
 Resolved 2026-08-18: Firebase web config ✓ · Firebase service account ✓
