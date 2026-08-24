@@ -8,6 +8,8 @@ import type { PublicQuestion } from "@/lib/db/assessments";
 import type { CompetencyResult } from "@/lib/assessment/scoring";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
+import { CountUp } from "@/components/motion/count-up";
+import { Stagger, StaggerItem } from "@/components/motion/reveal";
 
 type ExamPlayerProps = {
   /** Free-track exams are the §13 top-of-funnel conversion, counted separately. */
@@ -159,7 +161,14 @@ export function ExamPlayer({
             {examTitle}
           </p>
           <div className="mt-3 flex items-baseline gap-3">
-            <p className="font-mono text-6xl font-semibold">{result.score}</p>
+            {/* The number this whole screen exists for. It used to arrive
+                fully formed the instant the page rendered; counting it up
+                gives the result a beat. The value is decided on the server
+                long before this runs, so nothing here can change it. */}
+            <CountUp
+              to={result.score}
+              className="font-mono text-6xl font-semibold"
+            />
             <p className="font-mono text-xl text-muted-foreground">/100</p>
           </div>
           <h1 className="font-display mt-3 text-xl font-semibold">
@@ -189,21 +198,25 @@ export function ExamPlayer({
           </p>
         </div>
 
-        <div className="flex flex-col gap-2 rounded-lg border border-border bg-card p-5">
+        <Stagger
+          className="flex flex-col gap-2 rounded-lg border border-border bg-card p-5"
+          delay={0.35}
+          step={0.07}
+        >
           {/* A quiz that asked nothing about tool fluency has not measured it,
               and showing it as 0 reads as a failure rather than a silence. */}
           {result.competencies
             .filter((c) => c.total > 0)
             .map((c) => (
-              <div
+              <StaggerItem
                 key={c.key}
                 className="flex items-baseline justify-between text-sm"
               >
                 <span>{c.label}</span>
                 <span className="font-mono text-muted-foreground">{c.score}</span>
-              </div>
+              </StaggerItem>
             ))}
-        </div>
+        </Stagger>
 
         {result.passed && result.credentialCode ? (
           <div className="flex flex-col gap-3">

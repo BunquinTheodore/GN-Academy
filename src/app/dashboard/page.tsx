@@ -294,11 +294,24 @@ export default async function DashboardPage() {
             </Button>
           </div>
         ) : (
+          /* The dashboard is the first thing a learner sees after signing in
+             and it appeared all at once, fully formed. Staggering the cards
+             gives the eye somewhere to start.
+
+             Deliberately CSS (`rise-in` in globals.css) rather than the
+             motion/react vocabulary the landing page uses. That one renders at
+             opacity 0 and waits for hydration plus an IntersectionObserver,
+             which is an acceptable trade on a marketing page and not on the
+             product's home screen: this list is what a learner signed in to
+             see, and it should not be able to go missing because a JavaScript
+             chunk was slow on mobile data. Keeping it CSS also keeps these as
+             <article> elements rather than motion's divs. */
           <div className="mt-4 grid gap-4 lg:grid-cols-2">
-            {cards.map((card) => (
+            {cards.map((card, i) => (
               <article
                 key={card.cert.id}
-                className="flex flex-col gap-3 rounded-lg border border-border bg-card p-5"
+                className="rise-in flex h-full flex-col gap-3 rounded-lg border border-border bg-card p-5"
+                style={{ animationDelay: `${Math.min(i, 6) * 60}ms` }}
               >
                 <div className="flex flex-wrap items-center gap-2">
                   <Badge variant="outline" className="capitalize">
