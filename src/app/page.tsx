@@ -298,7 +298,7 @@ export default async function HomePage() {
         </section>
 
         {/* ── The problem ──────────────────────────────────────────────── */}
-        <section className="border-b border-border bg-card/60 backdrop-blur-[2px]">
+        <section className="overflow-x-clip border-b border-border bg-card/60 backdrop-blur-[2px]">
           <div className="mx-auto w-full max-w-6xl px-4 py-16">
             <Reveal>
               <TypeHeading
@@ -310,19 +310,28 @@ export default async function HomePage() {
               </p>
             </Reveal>
 
-            <Stagger className="mt-10 grid gap-6 sm:grid-cols-2" delay={0.1}>
-              {landing.problem.points.map((point) => (
-                <StaggerItem
+            {/* Two cards, one from each side. The pair is "For you" and "For
+                employers", which is the section's whole argument: the same
+                sentence failing two different people. Bringing them in from
+                opposite edges to sit side by side says that before the copy
+                does. */}
+            <div className="mt-10 grid gap-6 sm:grid-cols-2">
+              {landing.problem.points.map((point, i) => (
+                <div
                   key={point.title}
-                  className="rounded-lg border border-border bg-background/70 p-5 backdrop-blur-sm"
+                  className={cn(
+                    "slide-far rounded-lg border border-border bg-background/70 p-5 backdrop-blur-sm",
+                    i === 0 ? "slide-in-left" : "slide-in-right",
+                  )}
+                  style={{ animationDelay: "0.08s" }}
                 >
                   <h3 className="font-medium">{point.title}</h3>
                   <p className="mt-2 text-sm text-muted-foreground">
                     {point.body}
                   </p>
-                </StaggerItem>
+                </div>
               ))}
-            </Stagger>
+            </div>
           </div>
         </section>
 
@@ -335,14 +344,16 @@ export default async function HomePage() {
               />
           </Reveal>
 
-          {/* The four start pulled toward the centre and separate into their
-              places as the section is scrolled through. Left column comes from
-              the right, right column from the left, so the set opens outwards. */}
+          {/* The four come in from the outside edges and settle into the grid
+              as the section is scrolled through: left column from the left,
+              right column from the right. Scroll-linked rather than fired
+              once, so they visibly travel while the reader moves instead of
+              playing an animation at them. */}
           <div className="mt-10 grid gap-6 md:grid-cols-2">
             {landing.offer.items.map((item, i) => (
               <ConvergeCard
                 key={item.title}
-                fromX={i % 2 === 0 ? 120 : -120}
+                fromX={i % 2 === 0 ? -140 : 140}
                 fromY={i < 2 ? 40 : -40}
                 className="flex gap-4 rounded-lg border border-border bg-card/50 p-5 backdrop-blur-sm"
               >
@@ -429,7 +440,7 @@ export default async function HomePage() {
         </section>
 
         {/* ── How it works ─────────────────────────────────────────────── */}
-        <section className="border-y border-border bg-card/60 backdrop-blur-[2px]">
+        <section className="overflow-x-clip border-y border-border bg-card/60 backdrop-blur-[2px]">
           <div className="mx-auto w-full max-w-6xl px-4 py-16">
             <Reveal>
               <TypeHeading
@@ -438,15 +449,24 @@ export default async function HomePage() {
               />
             </Reveal>
 
-            {/* Right to left, one after another. Not a Stagger: these are
-                plain CSS so the three steps are readable with no JavaScript,
-                and the delay carries the sequence instead of an observer. */}
+            {/* Outside in: Learn from the left, Get hired from the right, and
+                Prove rising between them. All three used to come from the same
+                side, which read as one block sliding rather than as three
+                stages arriving. Plain CSS, so the steps are readable with no
+                JavaScript and the delay carries the sequence instead of an
+                observer. */}
             <div className="mt-10 grid gap-8 sm:grid-cols-3">
               {landing.ladder.steps.map((step, i) => (
                 <div
                   key={step.title}
-                  className="slide-in-right"
-                  style={{ animationDelay: `${(i * 0.14).toFixed(2)}s` }}
+                  className={
+                    i === 0
+                      ? "slide-far slide-in-left"
+                      : i === 1
+                        ? "rise-in"
+                        : "slide-far slide-in-right"
+                  }
+                  style={{ animationDelay: `${(i * 0.12).toFixed(2)}s` }}
                 >
                   {/* Ticks like the stats band. Two digits, so it counts
                       through 01 rather than flashing straight to it. */}
@@ -495,7 +515,7 @@ export default async function HomePage() {
               return (
                 <div
                   key={item.title}
-                  className={cn("h-full", entrance)}
+                  className={cn("slide-far h-full", entrance)}
                   style={{
                     animationDelay: `${(Math.floor(i / 3) * 0.12).toFixed(2)}s`,
                   }}
@@ -534,7 +554,7 @@ export default async function HomePage() {
         </section>
 
         {/* ── Employers ────────────────────────────────────────────────── */}
-        <section className="border-y border-border bg-card/60 backdrop-blur-[2px]">
+        <section className="overflow-x-clip border-y border-border bg-card/60 backdrop-blur-[2px]">
           <div className="mx-auto w-full max-w-6xl px-4 py-16">
             <Reveal className="max-w-2xl">
               <ShieldCheck className="size-6 text-primary" aria-hidden />

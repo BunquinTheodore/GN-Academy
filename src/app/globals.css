@@ -325,7 +325,7 @@
 @keyframes gn-slide-left {
   from {
     opacity: 0;
-    transform: translate3d(28px, 0, 0);
+    transform: translate3d(var(--gn-slide, 28px), 0, 0);
   }
   to {
     opacity: 1;
@@ -340,6 +340,25 @@
 }
 
 /*
+ * How far a side entrance travels, as a custom property so a section can ask
+ * for more without a second keyframe.
+ *
+ * The default of 28px is right for a step in a row of three, which is mostly
+ * text and reads as settling. A card is a heavier object with a visible border,
+ * and at 28px, under a tenth of its own width, it looks like it wobbled rather
+ * than arrived. `slide-far` gives those the travel to read as coming from the
+ * side.
+ *
+ * It is capped well short of the viewport on purpose. Content that flies in
+ * from off-screen reads as a slideshow, and a translate wide enough to leave
+ * the container also puts a horizontal scrollbar on the page while it plays,
+ * which is why the sections using this also clip their overflow.
+ */
+.slide-far {
+  --gn-slide: 64px;
+}
+
+/*
  * The mirror of gn-slide-left, for grids that come in from both sides.
  *
  * "What we teach" is a three-column grid, and the columns arrive from
@@ -351,7 +370,7 @@
 @keyframes gn-slide-right {
   from {
     opacity: 0;
-    transform: translate3d(-28px, 0, 0);
+    transform: translate3d(calc(var(--gn-slide, 28px) * -1), 0, 0);
   }
   to {
     opacity: 1;
