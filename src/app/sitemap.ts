@@ -10,6 +10,7 @@ const STATIC_ROUTES: { path: string; priority: number }[] = [
   { path: "/ai-test", priority: 0.9 },
   { path: "/verify", priority: 0.8 },
   { path: "/how-it-works", priority: 0.7 },
+  { path: "/faq", priority: 0.6 },
   { path: "/blog", priority: 0.7 },
   { path: "/employers", priority: 0.6 },
   { path: "/companies", priority: 0.5 },

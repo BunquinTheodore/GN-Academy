@@ -244,3 +244,123 @@
     animation: gn-rise-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
   }
 }
+
+/*
+ * The marquee, in CSS rather than JavaScript.
+ *
+ * Three reasons it is not a motion animation. `animation-play-state` can pause
+ * it on hover, so somebody who notices an item can stop and read it, which a
+ * JS-driven transform cannot do without re-rendering. It runs off the main
+ * thread, so it does not compete with scrolling on a mid-range phone. And it
+ * needs no JavaScript at all, so it cannot leave a half-rendered row behind if
+ * a chunk fails.
+ *
+ * The track holds two identical copies and travels exactly -50%: at the end of
+ * a cycle the second copy sits precisely where the first began, so the seam is
+ * invisible.
+ */
+@keyframes gn-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.gn-marquee {
+  animation: gn-marquee var(--gn-marquee-duration, 38s) linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gn-marquee {
+    animation: none;
+  }
+}
+
+/*
+ * Word-by-word heading reveal, in CSS.
+ *
+ * This was a motion/react stagger, and on the landing page's h1 that was a
+ * mistake: motion writes the initial `opacity: 0` into the server-rendered
+ * markup, so the most important sentence on the site stayed invisible until
+ * hydration finished. On a slow connection that is a blank hero, and if the
+ * bundle never arrives it is a permanently blank hero.
+ *
+ * A keyframe cannot fail that way. It also runs off the main thread, which
+ * matters more here than anywhere else on the page: the hero is animating
+ * several things at once on hardware that may be doing well to scroll.
+ *
+ * Stagger by setting `animation-delay` per word.
+ */
+@keyframes gn-word-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.45em);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .gn-word {
+    animation: gn-word-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+}
+
+/*
+ * Slide in from the right. Used by the "How it works" steps, where the
+ * left-to-right reading order of the three stages is the point, so bringing
+ * them in from the right lands each one into its place in the sequence.
+ *
+ * `translate3d` rather than `translateX` to keep it on its own compositor
+ * layer, and only 28px of travel: content that flies in from off-screen reads
+ * as a slideshow, and on a narrow viewport a large translate also causes a
+ * horizontal scrollbar while it plays.
+ */
+@keyframes gn-slide-left {
+  from {
+    opacity: 0;
+    transform: translate3d(28px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .slide-in-right {
+    animation: gn-slide-left 0.62s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+}
+
+/*
+ * The mirror of gn-slide-left, for grids that come in from both sides.
+ *
+ * "What we teach" is a three-column grid, and the columns arrive from
+ * different directions: the left column from the left, the right column from
+ * the right, and the middle simply rises. The grid assembles towards its own
+ * centre, which is a great deal calmer than seven cards all sliding the same
+ * way, and it makes the three columns legible as columns while it plays.
+ */
+@keyframes gn-slide-right {
+  from {
+    opacity: 0;
+    transform: translate3d(-28px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .slide-in-left {
+    animation: gn-slide-right 0.62s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+}

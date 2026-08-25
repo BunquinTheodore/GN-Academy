@@ -18,6 +18,7 @@ export const site = {
 export const nav = {
   links: [
     { label: "How it works", href: "/how-it-works" },
+    { label: "Questions", href: "/faq" },
     { label: "For employers", href: "/employers" },
     { label: "Verify a credential", href: "/verify" },
   ],

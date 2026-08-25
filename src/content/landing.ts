@@ -18,6 +18,38 @@ export const landing = {
     primary: { label: "Create your free account", href: "/signup" },
     secondary: { label: "Already a member? Sign in", href: "/login" },
     note: "Free to join. Courses open once you are inside.",
+    /**
+     * The pills floating over the hero image. Every one of them is a fact
+     * about how the product works, not a mood word. A page arguing that
+     * unverifiable claims are worthless cannot decorate itself with
+     * "Practical Learning".
+     */
+    pills: [
+      "Checked in five seconds",
+      "A public page, not a PDF",
+      "Free to start",
+    ],
+  },
+
+  /**
+   * The catalogue, counted.
+   *
+   * These are real figures read from the database, and they are here instead
+   * of the student counts and partner logos a template would put in this slot.
+   * GN Academy has not run its first cohort, so there is no honest number of
+   * learners to print, and printing a dishonest one on this page in particular
+   * would refute the whole argument the page is making. Re-count before
+   * editing: `npx tsx scripts/count-catalogue.ts`.
+   */
+  stats: {
+    heading: "What is actually in there",
+    items: [
+      { value: "9", label: "Courses published" },
+      { value: "89", label: "Lessons written" },
+      { value: "278", label: "Assessment questions" },
+      { value: "4", label: "Free from the start" },
+    ],
+    note: "Counted from the live catalogue, not rounded up.",
   },
 
   problem: {
@@ -79,15 +111,63 @@ export const landing = {
     ],
   },
 
+  /**
+   * The subjects, as a grid.
+   *
+   * Nothing here is a link. The catalogue sits behind the login, and
+   * `tests/e2e/public-pages.spec.ts` asserts this page never links into it:
+   * listing a URL that answers with a redirect wastes the visitor's click and
+   * the crawler's budget. The grid says what exists; the account is the door.
+   *
+   * `free` marks the subjects somebody can finish without paying, because that
+   * is the single most useful thing a stranger reading this can learn.
+   */
   tracks: {
     heading: "What we teach",
-    body: "Certification tracks covering the AI work people are actually paid for. The full catalogue, curriculum and pricing are inside your account.",
+    body: "Nine certification tracks covering the work people are actually paid for. Four of them are free all the way to the credential. The full curriculum and pricing are inside your account.",
     items: [
-      "Understanding AI properly, and using it as a working tool in any job",
-      "AI-assisted virtual assistance and client operations",
-      "AI-powered digital marketing",
-      "Social media management with AI in the loop",
-      "Prompt engineering with Claude, Claude Code and Cowork",
+      {
+        icon: "foundations",
+        title: "AI foundations",
+        body: "What a language model is doing, why it is confidently wrong, and how to brief it so the answer is usable.",
+        free: true,
+      },
+      {
+        icon: "blockchain",
+        title: "Blockchain basics",
+        body: "How a chain works in plain language, what a wallet really holds, and how to recognise the scams built on top of it.",
+        free: true,
+      },
+      {
+        icon: "finance",
+        title: "Personal finance",
+        body: "What you earn after deductions, what interest costs you in both directions, and how the scams aimed at this audience are built.",
+        free: true,
+      },
+      {
+        icon: "assistance",
+        title: "Virtual assistance",
+        body: "Running client operations with AI in the loop, and knowing when not to trust what it hands you.",
+        free: false,
+      },
+      {
+        icon: "marketing",
+        title: "Digital marketing",
+        body: "Briefs, campaigns and copy with AI doing the drafting and you doing the deciding.",
+        free: false,
+      },
+      {
+        icon: "social",
+        title: "Social media",
+        body: "Planning, writing and scheduling a real account, with the parts AI is good at kept separate from the parts it is not.",
+        free: false,
+      },
+      {
+        icon: "prompting",
+        title: "Prompt engineering",
+        body: "Getting work out of Claude that you would otherwise have done by hand, and checking it before it goes anywhere.",
+        free: false,
+      },
     ],
   },
 
