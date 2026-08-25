@@ -3,13 +3,17 @@ import {
   ArrowRight,
   BadgeCheck,
   Blocks,
-  Check,
   BookOpen,
+  Briefcase,
+  Check,
+  FileText,
   Headset,
   Megaphone,
+  MessageSquare,
+  Palette,
   ShieldCheck,
-  Share2,
-  Terminal,
+  ShoppingBag,
+  Table2,
   Wallet,
 } from "lucide-react";
 import { landing } from "@/content/landing";
@@ -60,12 +64,17 @@ const ON_INK_PRIMARY =
  */
 const TRACK_ICONS = {
   foundations: BookOpen,
-  blockchain: Blocks,
+  safety: ShieldCheck,
   finance: Wallet,
+  freelancing: Briefcase,
+  careers: FileText,
+  blockchain: Blocks,
   assistance: Headset,
+  communication: MessageSquare,
   marketing: Megaphone,
-  social: Share2,
-  prompting: Terminal,
+  design: Palette,
+  commerce: ShoppingBag,
+  admin: Table2,
 } as const;
 
 /**
