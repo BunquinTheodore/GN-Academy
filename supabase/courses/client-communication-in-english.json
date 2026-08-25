@@ -1,0 +1,930 @@
+{
+  "slug": "client-communication-in-english",
+  "title": "Client Communication in English",
+  "subtitle": "Write to foreign clients without sounding apologetic",
+  "level": "professional",
+  "category": "Communication",
+  "format": "Self-paced online",
+  "summary": "The writing side of freelancing with foreign clients: the update nobody has to chase, saying no to extra work, sending bad news the day you learn it, asking a question that actually gets answered, and handling a client who is unhappy. Twelve lessons on what your English is being judged on, which is not your grammar.",
+  "description": "This is not a grammar course. This course assumes your English already works well enough to do the job; what costs you clients is register and structure. Filipino freelancers writing to clients in the US, Australia, the UK and Europe lose money in two directions: politeness that reads as unreliability, and a client's blunt reply that reads as anger when it is not. You start by learning what a client is actually reading for, which is whether they can predict you and whether they have to chase you. Then you build the routine messages that make a client relax: the standing update, the question that gets one clear answer, the recap that turns a verbal instruction into a written record. Then the hard ones: refusing extra work by naming what it changes, sending a delay message the day you know rather than the day it lands, and talking about money without shrinking. The last chapter covers repair and renewal: answering an unhappy client, owning a mistake in one sentence instead of five paragraphs, and the messages that bring the next project. Every lesson is written for a Filipino freelancer with foreign clients. You finish with a set of message shapes you can reuse across clients and trades.",
+  "skills": [
+    "Status updates and reporting rhythm",
+    "Tone calibration with foreign clients",
+    "Scope pushback in writing",
+    "Bad news and delay messages",
+    "Questions that get answered",
+    "Money and rate conversations in writing",
+    "Complaint handling and client renewal"
+  ],
+  "outcomes": [
+    "Send a weekly update in a fixed shape so a client never has to ask where things are",
+    "Refuse or renegotiate extra work by naming what it changes, instead of absorbing it silently",
+    "Send bad news the day you learn it, with the fix and the decision the client has to make",
+    "Ask one question that gets one answer, instead of a wall of questions that gets none",
+    "Answer an unhappy client without grovelling and without going quiet, and keep the relationship"
+  ],
+  "roles": [
+    "Virtual assistants and freelancers with foreign clients",
+    "Remote jobseekers applying to overseas roles",
+    "Customer support and BPO staff moving into freelance work",
+    "Anyone whose client work lives in email, Slack and chat"
+  ],
+  "price_php": 1499,
+  "is_free": false,
+  "passing_score": 70,
+  "credential_prefix": "CCE",
+  "sort_order": 6,
+  "requires_assignment": true,
+  "modules": [
+    {
+      "slug": "chapter-1-what-the-client-actually-hears",
+      "title": "What the client actually hears",
+      "description": "The diagnosis before any technique: what a foreign client is really reading for, why politeness that works here reads as unreliability there, how to tell a blunt instruction apart from actual criticism, and the message shape that gets read to the end.",
+      "lessons": [
+        {
+          "slug": "what-competence-sounds-like",
+          "title": "What competence sounds like in writing",
+          "content_mdx": "# What competence sounds like in writing\n\nTwo messages reach the same client on the same Tuesday morning.\n\nRamon writes: \"Hi Sir, sorry to disturb. I hope you are doing well. I just wanted to ask kindly if maybe the deadline for the report could possibly be moved a little, if that is okay with you? Sorry again for the trouble. Thank you so much po.\"\n\nBea writes: \"Hi Dan, the report needs one more day. I can send it Thursday morning your time instead of Wednesday. Nothing else in the project moves. If Wednesday is hard for you, say so and I will drop the competitor section to make it.\"\n\nSame request. Same courtesy underneath. Roughly the same English. One of those two people is easier to work with, and it is not the one who apologised twice.\n\n## What a client is reading for\n\nWhen your message arrives, a client is answering three questions, whether or not they could name them.\n\n**Can I predict this person?** Do things arrive when they said, in the shape they said, or do I find out at the end?\n\n**Will I have to chase them?** If I go quiet for a week, will I still know where this project is?\n\n**Did they answer what I asked?** I sent one question. Is the answer in here, and can I find it without reading twice?\n\nNotice what is not on that list. Vocabulary is not on it. Grammar is not on it. A sentence like \"I will send it Thursday morning\" survives a missing article and still does its job. A flawless paragraph that never names a day does not do its job at all, however correct it is.\n\nThat is the argument this whole course rests on. It assumes your English already works well enough to do the job. What it fixes is register and structure, and both are fixable in the next message you send.\n\n## The apologetic register\n\nHere is what it looks like in the wild. Read your own sent folder afterwards and see how much of it you recognise.\n\n- Opening with an apology instead of information: \"Sorry for the trouble\" before the client knows what the trouble is.\n- Asking permission to speak: \"I just wanted to ask if maybe it would be possible to...\"\n- Hedging until the sentence evaporates: \"possibly\", \"a little\", \"if that is okay\", \"I will try my best\".\n- Promising effort instead of a date. \"I will do my best to finish soon\" gives a client nothing to plan around.\n- Apologising for a reply that was not late.\n\nEach of those does something you did not intend. A reader who has to hunt through three sentences to find the actual request has been handed work, not information. And a message that opens braced for failure invites the reader to start looking for the failure.\n\nNone of this is about being humble. Humility is fine. The problem is that on a page, shrinking and uncertainty look identical.\n\n## The four swaps\n\n**Replace apology with information.** Instead of \"So sorry for the delay in my reply\", write \"Here is where the tracker stands.\" If you genuinely were late and it mattered, one sentence covers it: \"Apologies for the slow reply, I was on the migration all day. Here is where it landed.\"\n\n**Replace hedging with a date or a number you can keep.** Not \"I will try to have it soon\" but \"Thursday, end of my day.\" Not \"it might take a while\" but \"two working days once I have the logins.\" That rule has teeth in the other direction too: never name a date you are not willing to be held to.\n\n**Anchor every date to their clock, not yours.** End of day is a different Tuesday in Manila and in Melbourne, and the one your client will hold you to is the one on their calendar. Write Thursday morning your time, or before you start on Thursday. It costs three words, and it takes away a whole class of deadlines that were met in Manila and missed in Melbourne.\n\n**Replace \"I hope this is okay\" with \"here is what I did and why.\"** Aileen, a VA in Davao, used to send drafts with \"I hope this is what you wanted, sorry if not.\" She now sends: \"I went with the shorter headline because the long one broke on mobile. Say the word and I will switch it back.\" Same draft, same person. She stopped asking to be forgiven for working.\n\n## Warmth is not what you are cutting\n\nThere is a bad version of this lesson where you read it and turn cold. Do not.\n\nGreeting people by name stays. Thanking someone who actually did something stays. Noticing that a client mentioned a sick parent stays. Filipino courtesy is not a liability, and no client is asking you to become a robot.\n\nWhat goes is the shrinking: the pre-emptive sorry, the permission-asking, the hedge wrapped around a commitment you were about to make anyway. Warm and clear is a real combination, and it is the one you are aiming at.\n\n## Before the next lesson\n\nOpen your sent messages and read the last five you wrote to a client. Count the apologies. Circle every sentence that promises effort instead of a date. Then rewrite one of those messages: keep the greeting, cut the shrinking, and put the answer in the first line.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "tone-misread-both-ways",
+          "title": "Tone that gets misread in both directions",
+          "content_mdx": "# Tone that gets misread in both directions\n\nKaye, a VA in Iloilo, spent a Sunday night convinced she was about to be fired. Her client in Melbourne had answered a long, careful message with one word: \"Fine.\" She reread it until midnight. On Monday he sent her a new project.\n\nThat same client had been telling a friend he could never get a straight answer out of Kaye about whether she could take on more hours.\n\nTwo misreadings, one working relationship, and both people thought they were being perfectly polite.\n\n## Direction one: courtesy that arrives as evasion\n\nFilipino professional politeness protects the other person from an awkward moment. That instinct is worth keeping. What it does inside a business message in English is quietly remove the information.\n\n**The refusal that never refuses.** \"I will try.\" \"Let me see.\" \"Maybe next week.\" \"I will check my schedule.\" In a Philippine office these are understood. To a client who takes words at face value, they are a soft yes, and he plans around them. When the thing does not arrive, he does not think she was being polite. He thinks she said she would.\n\nIf the answer is no, use the word no. \"I cannot take that on this week. I can start it Monday.\" That is not rude. It is the most useful thing you can hand a person who is trying to plan.\n\n**Silence where a no belongs.** Not replying at all to a request you cannot meet is the strongest version of the same problem. Silence is never read as a refusal. It is read as an unknown, and unknowns are what make a client anxious.\n\n**Fossilised business English.** \"Kindly revert.\" \"For your kind consideration.\" \"Please be informed.\" \"Please be guided accordingly.\" Nobody should feel bad for using the English they were taught, and none of these is an error. But they belong to a formal letter tradition, and a client typing to you from a phone between meetings is not writing in that tradition. The gap makes you sound like a form instead of a person. \"Let me know\" does everything \"kindly revert\" does, and sounds like someone he can talk to.\n\n**Po and opo carried into English.** With a Filipino client they cost nothing. With a client who does not speak Tagalog, the word cannot land, because he has no idea what work it is doing. Respect then has to be carried by things he can read: his name, a clear answer, and work that arrives.\n\n**A smiley doing a sentence's job.** A smiley softening \"the deadline moved\" is being asked to carry a concession, an apology and a reassurance all at once. Write the sentence instead.\n\n**Apology inflation.** Sorry for the delay, sorry for the trouble, sorry for the many questions, sorry again. One of those is nothing. Four in one message change what the message is about: it stops being about the work and becomes about your discomfort, which the client now has to manage on top of his own week.\n\n## Direction two: bluntness that is not anger\n\nNow the other side, and this is the one that costs Filipino freelancers sleep.\n\nA client writes \"No, do it this way.\" Or \"Fine.\" Or a reply with no greeting, no thanks and no sign-off, from the same person who wrote three warm paragraphs last week.\n\nBefore you build a story out of it, run one test. Read it again and ask: is there a criticism of me in here, or only an instruction about the work? \"No, do it this way\" carries no criticism. It carries a decision.\n\nPeople compress when they are busy, and the softeners go first, because they are the part carrying the least information. A one-word reply can simply mean the person was walking into a meeting. That is a fact about their afternoon, not a verdict on you.\n\nWhat you do next matters more than what you felt. Reply at the size the message deserves. Answer a five-word instruction with three paragraphs of apology and you have turned a two-second correction into an event, and now your client has a situation to handle that he did not have before.\n\n## Long writers and fragment writers\n\nSome clients write essays. Some send six fragments in a row and expect the same back. Match the length and the speed, because that is what makes you easy to read. Do not match the slang, the sarcasm or the swearing. Borrowed informality lands badly when it is not yours.\n\n## The only safe way to hold any of this\n\nSomewhere you will read that Americans are direct, that Germans are blunt, that the British never say what they mean. Treat every one of those sentences as a hypothesis about the single person you are working with, never as a fact about a country. Your client is one individual with a job, a mood and a writing habit, and the evidence for how she communicates is already sitting in your inbox.\n\nSo read the evidence. How long are her messages? Does she greet you? Does she answer at night? Then ask her outright in the first week: \"How do you want to hear from me, and what would you rather I just decide on my own?\" That one question replaces every article you will ever read about her nationality.\n\n## Before the next lesson\n\nFind the last client message that unsettled you. Underline only the parts that are about the work. Then write the reply you would have sent if you had read nothing but the underlined parts.\n",
+          "duration_minutes": 9
+        },
+        {
+          "slug": "the-shape-of-a-message-that-gets-read",
+          "title": "The shape of a message that gets read",
+          "content_mdx": "# The shape of a message that gets read\n\nMiguel, a developer in Cagayan de Oro, sent his client a message on a Wednesday afternoon. Four hundred words: what he had tried, why the first approach failed, what he read, what he decided, what he still needed. Real work, honestly reported.\n\nThe client replied: \"so is it done?\"\n\nThe information was all in there. It was in paragraph three.\n\n## Answer first, reasons after\n\nPut the answer, the decision or the ask in the first line. Everything that explains it goes underneath.\n\nThis feels backwards if you were taught to build toward a conclusion. In a client message the conclusion goes on top, because your reader may get one line before something interrupts her, and the person who reads only that line should still walk away correctly informed.\n\nBefore: \"I looked into the plugin conflict and tried three different versions, and after going through the logs I found the caching layer was the real issue, so the site will be ready tomorrow.\"\n\nAfter: \"The site will be ready tomorrow. It was a caching conflict, not the plugin. Detail below if you want it.\"\n\nSame facts. In the second one the client can stop after eight words and still know the thing she needed to know.\n\n## One message, one job\n\nA message that does three jobs gets one reply, and you do not get to choose which one.\n\nSo split by job. A decision the client has to make goes in its own message, because it needs a reply and you want to be able to see whether it got one. Things she only needs to know can travel together. Four small questions can share a message. A decision and a progress report should not, because the progress report gives her somewhere comfortable to stop reading.\n\n## The subject line names the decision, not the topic\n\n\"Website\" is a topic. So is \"Update\". So is \"Quick question\".\n\nA subject line here has one job: tell a person scanning an inbox what will be required of them, and by when. \"Need your pick between two homepage photos by Friday.\" \"Invoice attached, no action needed.\" \"Blocked on the API key, cannot continue Monday without it.\"\n\nThis is not about writing a subject line that earns an open from a stranger. That is marketing copy and it belongs to a different course. This is about someone who already works with you being able to sort you in two seconds.\n\n## Make it survive a phone screen\n\nAssume the first read happens on a phone, walking.\n\nShort paragraphs, one idea each, with a blank line between them. Options as a list, each one labelled so it can be pointed at: \"Option A: keep the original photo, no extra cost, ready Friday.\" Bold once in a message or not at all, because bolding four things bolds nothing.\n\nNever a wall of text. Never a telegram either: a message so clipped that the client has to write back asking what you mean has cost you a round trip and a day.\n\n## What goes in writing, and what does not\n\nIn writing: anything carrying a date, a number, a scope or a commitment. If being misremembered on it would hurt, it is written.\n\nOn a call or in a short screen recording: something visual that would take four paragraphs to describe, or a disagreement that two written rounds have not moved. Text is good at record and bad at tone under pressure.\n\nAnd the rule that joins them: anything decided out loud gets written down afterwards, by you, the same day. You will build that recap properly in the next chapter. For now hold the habit only: a call is not finished until a message summarising it exists.\n\nOne message this course does not cover: the first one you send to a stranger who has not hired you yet. A reply to a job post, a cold email, a follow-up after a discovery call. That is a different craft with a different reader, and it belongs to Freelancing Fundamentals. Everything here assumes somebody has already said yes.\n\n## When the message is not an email\n\nA good part of your client writing lands in a chat window instead: Slack, WhatsApp, Messenger, the message box inside a platform. Everything above still holds. What changes is how it gets read.\n\nA chat client answers in fragments. You send four things and get back \"ok\", then six minutes later, \"wait which one\". The answer is not to write less. It is to make each part separable.\n\nSo put one idea per message, and send them as separate messages rather than as one block with line breaks inside it. Then the client can answer the part they have an answer for and come back to the rest, instead of parking all of it until they have time for the whole thing. Number them when there is more than one: \"1 of 3\" tells someone scanning on a phone how much is coming.\n\nPut a decision in its own message, on its own line, with nothing after it. A question at the bottom of a long fragment is the one that gets missed, and then you have waited a day for an answer nobody knew you needed.\n\nAnd when a chat thread settles something with a date, a number or a scope in it, move it. Paste the agreed line into email or the shared doc the same day, so it sits somewhere that does not scroll. A month later nobody can find what was agreed in chat, and the person who loses that argument is the one who did the work.\n\n## Before the next lesson\n\nTake the longest message you sent a client this month and rewrite it as one first line plus three short paragraphs. Then check it: if she read only the first line and nothing else, would she have the answer?\n",
+          "duration_minutes": 9
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Paolo has been building a client's landing page for four days and has sent nothing in that time. On Thursday his client Nathan messages: \"Hey, where are we on the landing page?\" Which opening line should Paolo's reply start with?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The landing page goes to you Monday morning. Two sections are finished and the pricing block is being built now."
+            },
+            {
+              "id": "b",
+              "text": "Sorry for the silence since Monday. I know you have been waiting and I should have sent you something days ago."
+            },
+            {
+              "id": "c",
+              "text": "Hi Nathan, hope the week is going well over there. Sending a quick update on the landing page ahead of Friday."
+            },
+            {
+              "id": "d",
+              "text": "I am working as fast as I can on the landing page and I will have it over to you as soon as it is ready."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "professional_communication",
+          "explanation": "Nathan asked one question: where are we. The answer is a date and a status, and it belongs in the first line where he will actually meet it. Option b opens with an apology before Nathan has been told anything, so he reads a whole sentence to discover he still does not know. Option c spends the opening on pleasantries and then only promises an update rather than giving one. Option d is the effort promise: as soon as it is ready is not a date, and a client cannot plan around it. Paolo can still be warm, and should be, but courtesy goes after the answer, not in front of it."
+        },
+        {
+          "prompt": "Grace sends two design options with a short recommendation. Her client, who has written her long friendly messages for a month, replies in full: \"No. Option B. Move on.\" There is no greeting and nothing else. What should Grace do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ask him whether something is wrong, since this reply is much colder than every other message he has sent her."
+            },
+            {
+              "id": "b",
+              "text": "Apologise for pushing the wrong option, explain her reasoning in full, and promise to be more careful next time."
+            },
+            {
+              "id": "c",
+              "text": "Build option B, reply in one line saying it is under way and when it will land, then carry on with her week."
+            },
+            {
+              "id": "d",
+              "text": "Leave it overnight so he can cool down first, then send a warmer message the next morning to reset things."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "professional_communication",
+          "explanation": "Read the message for what it contains rather than what it lacks. There is no criticism of Grace in it. There is a decision and an instruction, from someone who was probably typing while walking. The right size of reply matches the size of the message. Option a hands him an emotional errand he did not ask for. Option b turns a two-second correction into an incident and invites him to manage her feelings. Option d is worse than it looks: going quiet for a day after a client makes a decision is the thing that actually creates a problem, because now he does not know whether the work has started."
+        },
+        {
+          "prompt": "Joel has to tell a client that this month's report will use last quarter's figures, because the current quarter is not closed. He has drafted four paragraphs: how the reporting cycle works, the risk of using older figures, his decision to use last quarter and label it clearly, and a thank you. What should he do before sending?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Send it as it stands, because the client needs the background first or the decision will not make sense to him."
+            },
+            {
+              "id": "b",
+              "text": "Move the decision up to the first line and keep all of the background below it for the client who wants it."
+            },
+            {
+              "id": "c",
+              "text": "Cut it down to the decision on its own, since background is what makes a client stop reading a message."
+            },
+            {
+              "id": "d",
+              "text": "Ask for a call instead, because a judgement call about which figures to use is too involved for a message."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "professional_communication",
+          "explanation": "Answer first, reasons after. A client who reads one line gets the decision; a client with two minutes scrolls down and gets the reasoning. Nothing is lost by reordering and a great deal is lost by burying. Option a assumes the client will read as far as paragraph three, which is the assumption that got Joel here. Option c overcorrects into a telegram and costs a round trip when the client writes back asking why. Option d moves a written, checkable decision into a call where it leaves no record, and it is exactly the sort of thing that has to be written down afterwards anyway."
+        },
+        {
+          "prompt": "Errol sends his client one message containing a progress note, a question about which pricing tier to feature, and a request for the brand font files. The client replies only about the fonts. This is the third time it has happened. What is the fix?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Send the very same message again the next morning, since a client who answers part of it has only skimmed it."
+            },
+            {
+              "id": "b",
+              "text": "Keep the three items in one message but number them, so the client can see there are three things to answer."
+            },
+            {
+              "id": "c",
+              "text": "Put the pricing question at the top of the message and bold it, so it is the first thing he sees on opening."
+            },
+            {
+              "id": "d",
+              "text": "Send the decision he needs as its own message, and keep the progress note and the file request separate."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "delivery_reliability",
+          "explanation": "A message doing three jobs gets one reply, and the client chooses which job, usually the easiest one. One message, one job: a decision travels alone so that a missing reply is visible instead of hidden inside a thread that technically got answered. Option a repeats the same structure and gets the same result. Option b makes the three items countable and changes nothing else, because the progress note is still sitting there as a comfortable place to stop reading. Option c helps for one message and stops helping the moment you bold two things."
+        },
+        {
+          "prompt": "Vince works with a client who runs everything through chat and answers in fragments. He has a progress note to give, a blocked item to flag, and one decision he needs on the banner size. How should he send it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Three separate messages, with the decision on its own and nothing after it, numbered so he sees what is coming."
+            },
+            {
+              "id": "b",
+              "text": "One message with all three things in it, split by line breaks, so the whole picture arrives in a single place."
+            },
+            {
+              "id": "c",
+              "text": "One message with the decision at the bottom, after the progress note, so the client has the context first."
+            },
+            {
+              "id": "d",
+              "text": "The progress note now, and the blocked item and the decision tomorrow, so he is not filling up the chat window."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "professional_communication",
+          "explanation": "A client in a chat window answers the part they have an answer for and leaves the rest, so make each part separable and let them do exactly that. The decision travels on its own with nothing after it, because a question at the bottom of a long fragment is the one that gets missed. Option b arrives as one block and gets one reply, which is the same failure the line breaks were meant to solve. Option c buries the decision under the news. Option d holds a decision back for a day for a tidiness nobody asked for, and the blocked item ages while it waits."
+        },
+        {
+          "prompt": "Rico's monthly package covers blog posts and the newsletter. His client messages: \"Does the package include the Instagram graphics, or is that separate?\" Which reply is best?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Thanks for asking! Let me go over my notes on what we agreed and I will come back to you on this shortly."
+            },
+            {
+              "id": "b",
+              "text": "Separate. The package covers the blog posts and the newsletter, so the graphics would be their own piece."
+            },
+            {
+              "id": "c",
+              "text": "The package was built around a monthly writing load, and graphics sit outside that, so they are separate."
+            },
+            {
+              "id": "d",
+              "text": "I would be very happy to include them if it helps you, I really do not want this to become a problem for us."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "scoping_and_pricing",
+          "explanation": "The client asked a yes or no question about scope and deserves the yes or no in the first word, followed by what the package does cover so the boundary is visible instead of implied. Option c carries exactly the same fact as option b and is still the weaker message, because the answer arrives at the end, after a clause about how the package was built. A client reading on a phone meets the reasoning first and the answer last. Option a delays a fact Rico already knows, which reads as disorganised or as buying time to work out how to say no. Option d gives the work away to avoid a moment of friction, and does it so apologetically that the client learns the scope moves whenever he asks."
+        },
+        {
+          "prompt": "Before her first message to a new client in Berlin, Trisha reads a blog post saying German clients are blunt and dislike small talk, so she drafts a message with no greeting and no sign-off. The client's own messages so far have been long, warm and full of questions. What has gone wrong?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nothing yet. Matching the writing conventions of a client's country is the safest opening move you can make."
+            },
+            {
+              "id": "b",
+              "text": "She should keep the blunt style but add a greeting, since a greeting is expected in business email everywhere."
+            },
+            {
+              "id": "c",
+              "text": "She should write in her own natural style and ignore how he writes, because copying anyone always reads as fake."
+            },
+            {
+              "id": "d",
+              "text": "She swapped a claim about a whole country for the evidence in front of her, which is how this client actually writes."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "professional_communication",
+          "explanation": "Any sentence that begins with a nationality is a hypothesis about one person at best, and Trisha has an inbox full of direct evidence about how this particular person writes. Match the individual, not the article. Option a treats a generalisation as a rule and has her write coldly to someone who writes warmly. Option b patches the surface while keeping the same broken method underneath. Option c overshoots the other way: matching a client's length and pace is not imitation, it is making yourself easy for that person to read, and it stops well short of borrowing their slang."
+        },
+        {
+          "prompt": "Nika needs her client to choose between two homepage photos by Friday, or the launch slips to the following week. She is sending an email. Which subject line does the job?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Homepage update, plus a few other things from this week"
+            },
+            {
+              "id": "b",
+              "text": "Quick question whenever you have a moment, no rush at all"
+            },
+            {
+              "id": "c",
+              "text": "Need your pick between two homepage photos, Friday deadline"
+            },
+            {
+              "id": "d",
+              "text": "URGENT: homepage photos, please respond immediately"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "professional_communication",
+          "explanation": "A subject line written to someone who already works with you should say what is required and by when, so it can be sorted in two seconds from a phone. Option c does both. Option a names a topic and buries the decision behind other things. Option b actively tells the client it can wait, which is the opposite of true and is the sentence Nika will regret on Friday. Option d shouts without saying what is needed, and an urgency marker stops working the second time you use one, so keep it for something that cannot be described."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-2-the-update-nobody-has-to-chase",
+      "title": "The update nobody has to chase",
+      "description": "The routine messages that make a client relax: a standing update in a fixed shape, a question built so it can be answered in one line, and a recap that turns something said out loud into a written record.",
+      "lessons": [
+        {
+          "slug": "the-standing-update",
+          "title": "The standing update",
+          "content_mdx": "# The standing update\n\nMarilou does admin support from Naga for a client in Melbourne. Her first month went well. She cleared every task, fixed two things nobody asked her to fix, and said almost nothing. On the last Friday the client wrote: \"Just checking, everything okay on your end?\"\n\nNothing was wrong. She had simply been quiet, and he had spent a week filling the silence himself.\n\nThat is the whole problem. A client who cannot see you cannot tell the difference between a freelancer who is busy and one who has gone. Silence is never read as everything is fine. It reads as unknown, and unknown is the state a client hires someone to remove.\n\n## Fixed day, fixed shape, sent first\n\nOne habit fixes it. A short update, on the same day every week, in the same shape, sent before anyone asks.\n\nFour headings do the work.\n\n- **Done.** What is finished, and where they can see it.\n- **In progress.** What you are on now, and the day it lands.\n- **Waiting on.** What is blocked, and whose desk it is sitting on. Name the person.\n- **Next.** What you pick up when the current thing is finished.\n\nOn a week where something went wrong, one line goes between Done and In progress: what happened. It is part of the shape, not an addition to it.\n\nThe shape matters more than the wording. A client who gets the same headings every week stops reading for reassurance and starts reading for changes. You become predictable, and predictable is the product.\n\n## The week that went badly\n\nDennis builds websites from Baguio. One week his main project moved nowhere: two days lost to a family emergency, and the product photos he had asked for never arrived. His instinct was to skip the update and send a bigger one next week, once he had something to show.\n\nSkipping is exactly the wrong move. The update on a bad week is the one that buys you trust, because it is the only one that costs you something to send.\n\nWhat he sent:\n\n> Update, week of the 14th.\n> **Done:** nothing shipped this week.\n> **What happened:** I lost two days to a family emergency, and the product photos I asked for on the 9th have not arrived, so the gallery is still blocked.\n> **In progress:** back on the gallery today. It can be finished Thursday if the photos land by Tuesday.\n> **Waiting on:** the photos, with you since the 9th.\n> **Next:** pricing page.\n\nNo apology tour. No excuse buried in paragraph four. What happened, what it changed, what he needs. His client finished that message knowing more than he did before it, and knowing that part of the delay was his own.\n\n## What an update is not\n\n- **Not a diary of your hours.** \"Spent three hours on research\" tells a client nothing about whether anything is finished. Report status, not effort.\n- **Not an essay.** If it does not survive on a phone screen, cut it. Two screens of scrolling is a document, not a status report.\n- **Not a place to bury bad news.** A slipped date does not go in the middle of a cheerful list. Sending that one on its own is the next chapter's work.\n- **Not a task list with no status.** \"Gallery, pricing page, contact form\" is a list. \"Gallery done, pricing page Thursday, contact form blocked on your copy\" is an update.\n\n## Set the rhythm in week one\n\nDo not perform the update. Agree it. In your first week, say it plainly:\n\n> I send a written update every Friday morning, four lines, no call needed. Does Friday work, or is Monday more useful to you?\n\nTwo things happen. The update becomes something the client expects rather than something you are doing to prove yourself. And you find out how this particular client wants to be kept informed instead of guessing, which is the only reliable way to know it.\n\nThen keep the day even on quiet weeks. A one-line update costs you a minute and keeps the habit alive for the week you actually need it.\n\n## Where the lines come from\n\nThis course teaches the message. The system that makes those four lines true on the day you write them, a board you keep current across several clients, is project operations work and belongs to another course. If you run one or two clients, a running note on your phone that you add to as you finish things is enough.\n\nThe rule is only this: never assemble Friday's update from memory on Friday morning. You will forget the blocked item, which is the one line the client needed.\n\n## Do this now\n\nWrite your next update in the four headings before Friday arrives. Send it whether or not the week went well.\n",
+          "duration_minutes": 9
+        },
+        {
+          "slug": "a-question-that-gets-an-answer",
+          "title": "A question that gets an answer",
+          "content_mdx": "# A question that gets an answer\n\nJoy, a VA in Cavite, sent her London client this on a Tuesday afternoon:\n\n> Hi! Quick questions po. Do you want the newsletter to go out Thursday or Friday? Also should I use the new logo or the old one? And do you have the discount code yet? For the header image, do you prefer the beach photo or the office one, or should I look for something else? Also let me know your thoughts on the subject line. Thank you!\n\nFour days, no reply. The client was not ignoring her. He opened it on his phone, saw a pile of decisions, decided it needed a proper sit-down, and got on with his day.\n\n## Why questions go unanswered\n\nThree reasons, and all three belong to the sender.\n\n**It arrives as a wall.** Five questions in one message is not five times more likely to be answered. It is one task that now looks large.\n\n**It asks the client to do your thinking.** \"What do you want the header image to be?\" hands the whole problem back. \"Which of these two?\" hands over a decision.\n\n**It carries no date.** A question with no deadline attached can be answered any time, which in practice means later.\n\n## The build\n\nOne message, one decision. Then four parts.\n\n1. **The decision, in the first line.** Name it. \"One decision needed on the newsletter send date.\"\n2. **Only the context that changes the answer.** Not the history. The two or three facts that matter.\n3. **Options, with your recommendation.** Two or three, each with its consequence attached, and say which one you would pick and why. You are the specialist. Recommending is the job, not overstepping.\n4. **A default and a date.** What you will do if you hear nothing, and by when.\n\nThat last part is what makes the message easy to leave alone. You have removed the risk of not replying, so a reply stops being an obligation and becomes a correction, which is a far smaller thing to sit down and do.\n\nJoy's message, rebuilt:\n\n> Newsletter send date, one decision. Thursday reaches people before the weekend. Friday clashes with your webinar invite going out the same morning, so I would go Thursday. If I have not heard from you by Wednesday 5pm your time, I will schedule it for Thursday and confirm once it is queued.\n\nThe other four questions get batched into a separate message, or she answers them herself.\n\n## Batch, and do not drip\n\nDo not send a client four separate questions across one afternoon. Collect the small ones, send them once, number them, and write each so it can be answered in a word.\n\nAnd answer what you can yourself. If the brand colours are in the folder they handed you, do not ask what the brand colours are. A client who has to look things up on your behalf is doing your job. Where you had to make a call, say so in the update: \"I used the blue from the logo file. Tell me if there is a newer brand sheet.\"\n\n## Asking for access without three rounds\n\nRequests for logins, files and permissions turn into a week of back and forth because they arrive vague. Ask in one shot:\n\n> I need read access to the analytics account for the main site, sent to this email address. It is for the traffic section of the monthly report. Once you add me I will confirm I can see it, and I will not need anything else from you on this.\n\nName the exact thing, the exact account it should go to, what it is for, and what happens once you have it. If a client keeps offering to send you a password instead, ask to be added as a user, which is safer for both of you.\n\n## Chasing without nagging\n\nA question that has gone quiet gets one short chase, and the chase repeats the decision rather than the complaint:\n\n> Following up on the send date. Still fine to go Thursday unless you tell me otherwise by 5pm.\n\nNo \"just checking in\", no \"sorry to bother you\", and nothing about how long you have been waiting. That last one reads as a grievance and gets you a defensive reply instead of an answer.\n\nIf it stalls again and the date is close, change the channel. A chat message when the email died, or a call request naming the single decision. Moving channels is not escalation, it is a different door.\n\nAnd every standing update ends by restating whatever is still sitting with the client. A question they never answered should never quietly vanish from the record.\n\n## Do this now\n\nTake the last question you sent a client. Rewrite it as one decision, two options, your recommendation, and a date you will proceed without them.\n",
+          "duration_minutes": 9
+        },
+        {
+          "slug": "confirming-what-you-heard",
+          "title": "Confirming what you heard",
+          "content_mdx": "# Confirming what you heard\n\nRonnie takes a call with a California client at ten at night, Manila time. The client talks fast for twenty minutes, changes direction twice, and finishes with \"cool, so you'll get that over to me next week?\" Ronnie says \"Noted, will do.\"\n\nNine days later the client asks where the second version is. Ronnie did not know there was a second version.\n\n## Noted is the most expensive word you use\n\n\"Noted.\" \"Sure thing.\" \"Copy.\" \"Okay po.\" A thumbs up. All of them say the same thing, which is that sound arrived. None of them says what you understood. They feel efficient, and they quietly move the entire risk of a misunderstanding onto you, because the client now believes you agreed to whatever was in his head.\n\nReplace it with a recap. After any call, voice note, or fast instruction in chat, send back what you took away, in writing, the same day.\n\n## The shape\n\n> From our call just now, here is what I have.\n> **What I understood:** the landing page copy gets rewritten for the new offer, and you want a second, shorter headline version to test against it.\n> **What I will do:** both versions in the shared doc by Wednesday.\n> **What I need from you:** the new pricing. If it does not arrive by Tuesday I will use the figures on the current page.\n> Tell me by tomorrow morning if I have any of this wrong.\n\nFour minutes of typing. It is what stops the argument you would otherwise be having three weeks from now.\n\nThe invitation to correct is not weakness. It gives the client a cheap way to fix a small error today instead of an expensive one later, and it makes the record shared rather than something you imposed on them.\n\n## Saying you did not understand\n\nYou will not catch everything, especially on a bad line with a fast talker, and pretending otherwise is how the wrong thing gets built. There is nothing embarrassing about this:\n\n> I did not catch the part about the reporting. Could you put that one in writing so I get it exactly right?\n\nNotice what it does not do. It does not apologise, it does not blame your English, and it does not blame the client's audio. It names the piece and asks for it in the format you need. Retyping one instruction costs a client far less than a wrong deliverable does, and asking is a reasonable thing to do.\n\nIf a client habitually gives instructions in voice notes, ask once: \"Voice notes are fine for context. For anything with a date or a number in it, could you send a line of text too?\"\n\n## When you understood it and disagree\n\nConfirm first, object once, then let them decide.\n\n> Understood, we lead with the discount on the homepage. One flag before I build it: that block is where the free trial button currently sits, so the trial link moves below the fold. I am happy either way. Which do you want?\n\nYou have recorded the instruction, named the consequence in one sentence, and handed the decision back. You are not arguing, and you are not silently building something you believe is wrong. If they hold their position, build it. Your recap already shows you raised it.\n\n## When they change their mind\n\nThey will, and sometimes they will remember the old instruction as something they never gave. This is the exact situation the recap exists for, and how you use it decides whether the relationship survives it.\n\nDo not produce it like a receipt. Never write \"as per my email of the 3rd.\" Write:\n\n> No problem, I can switch to the short headline. So we are on the same page: my note from the 3rd had the long version as the one to build, which is what is in the doc now. Redoing it moves delivery to Friday instead of Wednesday.\n\nSame facts, no accusation, and the cost stated instead of swallowed. Where the change is bigger than a redo, the next chapter has the wording for what it changes.\n\nOne boundary. These records are a working habit, not a legal instrument. Their value is that two people end the week remembering the same week. Nothing here is advice about contracts, and nothing here is a claim about what any message would do in a dispute.\n\n## Do this now\n\nAfter your next call or voice note, send the four-part recap the same day, and close it with the day by which a correction has to reach you.\n",
+          "duration_minutes": 9
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Neneng keeps the books for a cafe group from Antipolo. This week she recorded nothing new: three days went to a family emergency, and the receipts she asked for at the start of the month have still not arrived. Her weekly update is due Friday morning. What should she send?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The usual Friday update, saying nothing was posted, why, what she still needs, and when the ledger catches up."
+            },
+            {
+              "id": "b",
+              "text": "Nothing this Friday, then a fuller update next week once there is finished work she can actually show him."
+            },
+            {
+              "id": "c",
+              "text": "A message apologising for the lost days and offering to work the weekend at no charge to make the time back."
+            },
+            {
+              "id": "d",
+              "text": "The usual update with the ledger and the March reconciliation listed as in progress, and the lost days left out."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "delivery_reliability",
+          "explanation": "The update on a bad week is the one that buys trust, because it is the only one that costs something to send. Skipping it leaves the client to imagine the reason, and silence is never read as everything is fine. A long apology puts the attention on Neneng instead of on the receipts she needs, and free weekend work turns a shared delay into her debt. The last option is the one that ends relationships: the client finds out on the due date."
+        },
+        {
+          "prompt": "Joy has to schedule a newsletter today and needs one decision from her London client. She also has three smaller questions that can wait until next week. What goes in the message she sends now?",
+          "options": [
+            {
+              "id": "a",
+              "text": "All four questions in one numbered list, so the client can work through them in a single sitting."
+            },
+            {
+              "id": "b",
+              "text": "The send date, plus a note that three more questions are coming later once he has replied to this first one."
+            },
+            {
+              "id": "c",
+              "text": "The send date only, with two options, her recommendation, and what she does if nothing lands by five today."
+            },
+            {
+              "id": "d",
+              "text": "A request for a short call, since four open items are faster to settle out loud than in a long written thread."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "professional_communication",
+          "explanation": "One message, one decision, with a default attached. The default is what makes it easy to leave alone, and it has to fall before the moment she is forced to act. Batching is right for small questions, but not when one of them is urgent and the other three drag it into a sit-down job. Announcing that more questions are coming adds weight without adding information. A call to settle a two-option decision costs the client more time than the decision is worth, and leaves nothing in writing."
+        },
+        {
+          "prompt": "Ronnie ends a late call with his US client, who talked for half an hour and changed direction twice. Ronnie is clear on the main deliverable and lost one part about how the reporting should work. What does he do next?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Reply with a thumbs up tonight, start the work tomorrow, and ask about the reporting when he reaches it."
+            },
+            {
+              "id": "b",
+              "text": "Wait for a written brief, since the client called the meeting and set the direction the work should take."
+            },
+            {
+              "id": "c",
+              "text": "Listen back to his own recording of the call in the morning and rebuild the brief from it before replying."
+            },
+            {
+              "id": "d",
+              "text": "Send a recap tonight: what he understood, what he will do, what he needs, and when to correct him."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "delivery_reliability",
+          "explanation": "The recap is the cheapest insurance in freelancing, and the same-day version is the one that works, because the client can still remember what he said. A thumbs up records only that sound arrived, and moves the whole risk of a misunderstanding onto Ronnie. Waiting for a brief that may never come burns the week. The recording helps him write the recap but is not a substitute for it: the point is that the client sees and confirms the version Ronnie is building from."
+        },
+        {
+          "prompt": "Riza runs email support for a Melbourne client and needs one decision from him to unblock a deliverable due Friday. She emailed the question on Monday. It is Wednesday, there is no reply, and no safe default exists on this one.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Resend the same email on Thursday with the subject line changed, since the first one probably went unread."
+            },
+            {
+              "id": "b",
+              "text": "Chase once in a different channel, restating the one decision and what Friday looks like if it lands today."
+            },
+            {
+              "id": "c",
+              "text": "Send a longer email explaining what the delay is costing and that she has now been waiting since Monday."
+            },
+            {
+              "id": "d",
+              "text": "Wait until Friday, deliver everything else, and note in the update that this item was blocked on his answer."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "delivery_reliability",
+          "explanation": "One short chase that repeats the decision, and a move to a channel where he actually reads things, because the email is evidently not reaching him. A new subject line on the same email in the same inbox is the same message in the same place. Waiting until Friday is technically defensible and commercially terrible: the client learns on the due date that his own silence broke the date. The grievance email invites a defensive reply instead of a decision."
+        },
+        {
+          "prompt": "Aldrin needs access to a client's analytics to build the monthly report. His last two access requests each turned into a week of back and forth. Which message ends it in one round?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ask whether the client would rather add him directly or have Aldrin walk him through the steps on a call."
+            },
+            {
+              "id": "b",
+              "text": "Ask the client to send over the analytics login details whenever he gets a spare moment in the coming week."
+            },
+            {
+              "id": "c",
+              "text": "Name the exact account and access level, the email to send it to, what it is for, and when he needs it."
+            },
+            {
+              "id": "d",
+              "text": "Ask for admin access to the analytics account, since admin removes any chance of a second request later."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "professional_communication",
+          "explanation": "Access requests stall because they arrive vague, so the client does not know what to click or where to send it. Naming the account, the level, the destination address and the deadline leaves one action. Asking for login details invites a shared password, which is worse for both of you than being added as a user. Offering the client a choice adds a decision he did not want. Asking for admin when read access would do enlarges the request and gives him a reason to think about it, which is how it ends up parked."
+        },
+        {
+          "prompt": "On a call about the new brochure, Perla's client says in passing, \"and while you're in there, can you sort out the email signatures for the team too?\" Perla does not respond to it on the call. What goes in her recap that evening?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The signatures as a separate item, not started, with a question about whether they join this month's work."
+            },
+            {
+              "id": "b",
+              "text": "Nothing about the signatures. It was a passing remark, and writing it down makes it look bigger than it was."
+            },
+            {
+              "id": "c",
+              "text": "The signatures added to what she will deliver this week, since she heard it clearly and did not object then."
+            },
+            {
+              "id": "d",
+              "text": "A line saying the signatures fall outside scope and cannot be touched until a new agreement is signed by both."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "scoping_and_pricing",
+          "explanation": "The recap's job is to make an out-loud remark visible so it can be decided rather than assumed. Listing the signatures separately, unstarted, with one question attached, does that without refusing anything. Leaving them out means the two of you carry different versions of the week. Folding them into this week's deliverables is how work gets absorbed silently and how a date slips. The flat refusal answers a question nobody has asked yet, and the wording of that answer is the next chapter's subject."
+        },
+        {
+          "prompt": "Four freelancers send their Friday update to the same client. Which one leaves the client with nothing to chase and nothing to guess at?",
+          "options": [
+            {
+              "id": "a",
+              "text": "\"Made good progress on the site this week, mostly on the gallery, and I will keep you posted as things move.\""
+            },
+            {
+              "id": "b",
+              "text": "\"Gallery live. Pricing page Thursday. Contact form blocked on your copy. Next: blog template. Still need photos.\""
+            },
+            {
+              "id": "c",
+              "text": "\"This week: gallery page, pricing page, contact form. Next week: blog template, testimonials, footer links.\""
+            },
+            {
+              "id": "d",
+              "text": "\"All good on my end and nothing blocking me, so let me know if you need anything else before the weekend.\""
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "delivery_reliability",
+          "explanation": "Every item carries a status, a date or an owner, and the one thing sitting with the client is named. That is an update. Good progress and keep you posted describe effort, not state, and leave the client to ask. A bare list of page names looks organised but says nothing about what is finished or what is stuck. All good with nothing blocking me is the most expensive of the four, because it closes the question and the client stops looking until something breaks."
+        },
+        {
+          "prompt": "Dexter's client says the thumbnail was always meant to use the product shot, and asks why the lifestyle photo is in the file. Dexter's recap from the 3rd, which the client never corrected, says the lifestyle photo. What does Dexter write?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Agree to switch and say nothing about the recap, since correcting a client on a small point is not worth it."
+            },
+            {
+              "id": "b",
+              "text": "Quote the recap line back with its date and ask him to confirm he is changing what was agreed."
+            },
+            {
+              "id": "c",
+              "text": "Explain in detail how the misunderstanding happened, so the same thing does not recur on the next round."
+            },
+            {
+              "id": "d",
+              "text": "Agree to switch, note plainly what his recap said, and give the new date the redo pushes delivery to."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "professional_communication",
+          "explanation": "Say yes, put the record in the sentence without accusation, and state what it costs in time. That keeps the relationship and stops the same swap happening free every week. Staying quiet feels gracious and teaches the client that changes are free and instant, which is how a week disappears. Producing the recap as evidence and asking him to admit a change turns a small correction into a dispute. A detailed post-mortem on a headline is more words than the problem deserves."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-3-saying-no-and-talking-about-money",
+      "title": "Saying no, and talking about money",
+      "description": "The messages that are hardest to send: the extra request that was never agreed, the delay you can see coming, and the price conversation. Wording only. What the work is worth is decided elsewhere.",
+      "lessons": [
+        {
+          "slug": "the-extra-request",
+          "title": "The extra request that was never agreed",
+          "content_mdx": "# The extra request that was never agreed\n\nJhoanna runs the inbox and calendar for a client in the UK. On a Thursday afternoon a message lands: \"While you're in there, can you also clean up the contact list? Shouldn't take long.\"\n\nNothing about that message is hostile. The client is not testing her. He genuinely does not know that cleaning up the contact list is two days of work, because he has never done it. That is scope creep in its ordinary form. It is a person who cannot see the size of the thing they just asked for.\n\n## How it actually arrives\n\nAlmost never as a formal request. It arrives as a screenshot with no words. As one small thing. As a quick favour. As a question in a call that has become a task by the end of the sentence. Sometimes it arrives wrapped in praise: \"You did such a good job on the deck, could you also do the one for Tuesday?\"\n\nThe tell is not the tone. The tell is that you are being asked for something that was not in what you agreed to do.\n\n## Two bad moves\n\n**The flat no.** \"That is outside our scope.\" True, cheap, and it makes a client feel told off for asking what seemed like a reasonable question. A client rarely knows where the edge of the scope sits, and it is not their job to.\n\n**The silent yes.** You absorb it, then the next one. Nothing is said, so nothing is visible, and by the third month you are doing noticeably more work for the same money and resenting somebody who has no idea. This is the worse of the two, because it punishes you as well.\n\n## The third move: yes, and here is what it changes\n\nAgree in principle, then name what it changes: in time, in cost, or in what gets dropped instead. You are not refusing. You are showing the client a price tag they could not see, then handing them the decision.\n\n> Happy to do the contact list. It is about two days of work, so either it goes in after the September reports and pushes those back a week, or we treat it as a separate piece. Which would you prefer?\n\nThree things are working there. It opens with yes. It states the size as a fact rather than a complaint. It ends with a choice that belongs to the client, so it cannot be read as a demand.\n\n## Wording that accuses nobody\n\nKeep every sentence about the work, never about the person's behaviour. \"That was not in our agreement\" points at them. \"That sits outside what we scoped, so here is what adding it would mean\" points at the work.\n\nShapes worth keeping:\n\n- \"Yes, and here is what it moves.\"\n- \"I can do that this week if the newsletter waits until next. Your call.\"\n- \"That is a different piece of work from the one we agreed. Want me to price it separately?\"\n- \"Before I start: is this replacing the report, or in addition to it?\"\n\nAnd one to delete from your vocabulary: never write \"no problem\" about something that is a problem.\n\n## Absorbing, out loud\n\nSome requests really are small and you should just do them. Goodwill is real, and a five minute favour buys more than it costs.\n\nAbsorb it, then make it visible in one line in your next update. \"Also fixed the two broken links on the About page, not billed, took ten minutes.\" That turns invisible free work into something the client can see, and establishes without any argument that these things have a size.\n\n## When the pattern is the problem\n\nA run of small requests is not several problems. It is one problem, and raising each one separately makes you look petty while nothing changes.\n\nRaise the pattern once, in writing, as a proposal a reasonable person can say yes to.\n\n> Over the last month there have been a run of small extras on top of the retainer. Each one is fine on its own, but together they are taking up the part of the week the reports used to have. Could we either add a fixed block of hours for ad hoc requests, or agree that anything over half an hour gets confirmed first?\n\nThat is a proposal, not a grievance. A client can answer it in one line.\n\n## Where this lesson stops\n\nThis lesson owns the sentences. What the extra work is actually worth, and how to price it against the scope you agreed, belongs to Freelancing Fundamentals. Writing the change into the plan and working out which date moves belongs to Project and Client Operations. Your job here is narrower and it is enough: the client learns what their request costs before they confirm it.\n\n## Before the next lesson\n\nFind the last extra request you absorbed without saying so. Write the one line you would have added to your next update to make it visible, then use that line on the next one that arrives.\n",
+          "duration_minutes": 9
+        },
+        {
+          "slug": "bad-news-early",
+          "title": "Bad news, early",
+          "content_mdx": "# Bad news, early\n\nMarlon builds websites from Davao. On a Monday he opened the client's product file and found the data in a format his import would not read. Fixing it by hand was the better part of a week. The launch was Friday.\n\nHe said nothing. He told himself he could still make it, and he nearly did. On Thursday night he knew he could not, and he sent the message on Friday morning.\n\nThe delay was a few days. The damage was not the few days. It was that his client had spent the week telling her own team, and a partner, that Friday was happening.\n\n## Timing beats wording\n\nRewrite that Friday message any way you like. Make it warm, make it professional, apologise beautifully. It still lands as a broken promise, because it arrived on the day the promise was due.\n\nSend the same news on Monday and it is not a broken promise at all. It is a problem the two of you are managing together, with four working days in hand before anyone outside has to be told. Same delay. Completely different relationship.\n\nSo the rule is about the calendar, not about your English: **the day you can see the delay is the day you send the message.** Not the day you are certain. The day you can see it.\n\nOne boundary before the wording. Spotting the slip before it lands, from the signals in your own plan and your own record of timings, is Project and Client Operations' subject. This lesson starts at the moment you can see it, and it owns the message.\n\n## The four parts\n\n1. **What happened**, in one sentence. Not the investigation, the conclusion.\n2. **What it means for their date.** A new date, or an honest \"I will have a date for you by Wednesday.\"\n3. **What you are already doing** about it.\n4. **What you need them to decide**, if anything.\n\n> The product file is in a format the import cannot read, so it has to be rebuilt by hand. That moves launch from Friday to the following Wednesday. I have started the rebuild and I am doing the payment pages in parallel so nothing else slips. If Friday is fixed for you, we can launch on Friday with the six main products only and add the rest the week after. Tell me which you would rather have and I will plan around it.\n\nNothing there is an apology and nothing is a defence. It is a status, a date, an action and a question.\n\n## What not to do\n\n- **Do not bury it.** A delay tucked into paragraph four of a cheerful update reads as concealment the moment the client notices.\n- **Do not open with \"just checking in\".** You are not checking in. Say the thing in the first line.\n- **Do not promise a recovery you cannot make.** \"I will still hit Friday\" bought Marlon four days and cost him the client's trust. A date you meet is worth more than a date they wanted.\n- **Do not go quiet to think about it.** The hours you spend composing are hours the client could have spent deciding.\n\n## Holding a date the client does not like\n\nSometimes the honest new date is worse than what they want to hear, and they push back. Hold it, without hardening.\n\n> I understand the pressure on your side. Wednesday is the date I can actually meet. If Friday matters more than completeness, the version I can give you on Friday is the six main products with the rest following. Both are real options. What I cannot do is promise the full set on Friday.\n\nYou are not being difficult. You are refusing to sell them a second broken promise on the same project.\n\n## The fear that keeps the message in drafts\n\nThe fear is that saying it early makes you look incompetent. Test that against what the client actually loses. It is not the days. It is the chance to react: to warn her own boss, to move a launch, to reorder her week. The surprise is the part that made her look bad, and the surprise is the part you control.\n\nEarly disclosure hands them time, options and a chance to look organised. Late disclosure hands them an ambush. The freelancer who says \"this will slip, here is the plan\" on Monday reads as someone watching their work closely. That is what competence looks like from outside.\n\n## The smaller version: the estimate that was wrong\n\nNot every piece of bad news is a missed deadline. Sometimes you said three days, and by the first afternoon you can see it is six.\n\nSay so that afternoon, plainly, with the corrected number and one sentence of cause. \"The sheet has far more duplicate rows than the sample showed, so this is closer to six days than three. Do you want the full clean, or the priority columns only inside the original three?\"\n\nA wrong estimate corrected on day one is a revision. The same correction on day three is a surprise, and on day four it is an excuse. The estimate was never the promise. Keeping the client's picture accurate is the promise.\n\n## Do this now\n\nLook at what you are working on now and name the earliest date you could have seen a slip coming. Write the four-part message for it today, even if you never send it.\n",
+          "duration_minutes": 9
+        },
+        {
+          "slug": "talking-about-money-in-english",
+          "title": "Talking about money in English",
+          "content_mdx": "# Talking about money in English\n\nPlainly, before anything else: this lesson does not help you decide what to charge. What your work is worth, and how to build a number from your own costs, are Freelancing Fundamentals' subject. This lesson is wording and timing only. The number is yours.\n\nMoney is where the shrinking is worst. The sentence gets longer, an apology appears at the front, and the number drifts to the end where it can be skimmed past. That reads as uncertainty about the number itself, and uncertainty opens a negotiation you never intended to open.\n\n## Send a quote as a statement\n\nA quote is information, not a request for permission. Number early, scope attached, then stop.\n\n> Redesign of the six product pages: [your figure], invoiced in two parts, the first on start. Includes two rounds of changes. Does not include photography or the writing. I can start Monday if you confirm by Thursday.\n\nThe long paragraph explaining why you are worth it is the part that invites a haggle, because a case can be argued with. A number with a scope attached is just a fact. If they want the reasoning, they will ask.\n\n## When they ask you to lower it\n\nTwo things can move: the price, or the work. Move the work.\n\n> I can do that number for four pages with one round of changes. The full six page version stays at [your figure].\n\nThat keeps your rate intact and gives them a real choice. Discount the same scope and you have taught this client that your first number is decorative, so every future quote opens as a negotiation.\n\nIf you are simply holding: \"That is my rate for this scope. I completely understand if the budget is not there this time.\" Then stop typing. The pause after is not rudeness, and filling it is how people talk themselves down.\n\n## Turning down work that pays too little\n\nNever insult the budget. The person with nothing this quarter may have a real budget next quarter, and they remember who was decent about it.\n\n> Thanks for thinking of me. At that budget I would not be able to do the work properly, so I would rather not take it on than give you a thin version. If the budget changes later, send it over and I will make room.\n\nDoor open, no lecture, no counter-offer nobody asked for.\n\n## Raising your rate with a client you already have\n\nDeciding to raise it is a commercial decision, and how to arrive at the new number belongs to Freelancing Fundamentals. The message is three lines: notice, the new figure, the date it starts.\n\n> From the January invoices my rate for this work goes to [your figure]. Everything else stays the same. Wanted to give you plenty of notice so it is not a surprise.\n\nNo apology. No essay about your costs. No offer to discuss it unless they raise it. Send it when nothing is on fire, never in the middle of a deadline and never attached to a complaint.\n\n## Asking about a payment that has not arrived\n\nThe first ask is not a confrontation. Write it as though it were an oversight. If it is one, you have made it easy to fix. If it is not, you have lost nothing and the second ask is still there.\n\n> Hi Ana, the March invoice was due last Friday and I do not think it has come through. Can you let me know when it is scheduled?\n\nNamed, dated, one question, no apology for asking. Never open with \"sorry to bother you\", and never write \"no rush\", because it is not true and the client will believe you.\n\nThe second ask, a week later, keeps the same manners and adds a consequence you will actually apply.\n\n> Still nothing on the March invoice. I will hold the April work until it clears, which I would rather not do, so let me know if something is stuck on your side.\n\nOne condition on that last sentence. Write it only if pausing work is something you agreed at the start and are willing to actually do. A consequence you announce and then do not apply teaches the client that your dates are decoration, and a stoppage you never agreed to can put you in the wrong on your own terms, or on a platform's.\n\nHow far that ladder goes, whether you have the right to pause at all, and what happens after are decisions covered in Freelancing Fundamentals. What this lesson gives you is the sentence for each rung, which is the part that stalls people.\n\n## Where a figure would help you\n\nSooner or later a real number matters: what a transfer costs you, what an exchange rate does to a quote, what you owe and when. Do not take those from a lesson, a forum post or a friend. Look them up at the source on the day you need them, from the provider's own page or the agency itself, and write down the date you checked.\n\nFees, rates and filing rules change. A confident wrong number in an email to a client is not a style problem. It is your money.\n\n## Do this now\n\nTake your last quote and cut everything that came before the number. Read what is left, and see whether anything you deleted was doing real work.\n",
+          "duration_minutes": 9
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Bles handles the product listings for a homewares seller in Cebu on a monthly retainer. On a Thursday he asks her to also write FAQ copy for the whole catalogue, calling it quick. She estimates it at three full days. Which reply protects both the scope and the relationship?",
+          "options": [
+            {
+              "id": "a",
+              "text": "\"Happy to do this. It is three days of work, so either the listings move a week or we add it separately.\""
+            },
+            {
+              "id": "b",
+              "text": "\"This falls outside the scope we agreed at the start, so I cannot include it in this month's retainer.\""
+            },
+            {
+              "id": "c",
+              "text": "\"Sure, no problem at all, I will find a way to fit this in somewhere this week alongside the listings.\""
+            },
+            {
+              "id": "d",
+              "text": "\"Let me see what I can do with this one, and I will try my best to get to it before the end of the month.\""
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "scoping_and_pricing",
+          "explanation": "Agree in principle, then name what it changes and hand the choice back. The client cannot see that the task is three days, so showing him the cost is information rather than a refusal. The flat no makes a reasonable question feel like a mistake. The silent yes buries three days of unpaid work where nobody will ever see it. Trying her best names no size, no date and no decision, so the request simply stays open."
+        },
+        {
+          "prompt": "On Monday, Grace opens a client's bank statements for the quarter and finds they are photo scans rather than exports, so every line has to be keyed in by hand. That puts Friday's management accounts out of reach. She thinks she might still recover some of it over the weekend. What should she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Keep going and send an update on Thursday, once she knows for certain whether Friday is achievable or not."
+            },
+            {
+              "id": "b",
+              "text": "Add a line about the risk to Friday's regular update, kept light so the client is not alarmed too early."
+            },
+            {
+              "id": "c",
+              "text": "Message him on Monday with what she found, the new date, and a choice between partial accounts and a later set."
+            },
+            {
+              "id": "d",
+              "text": "Work through the weekend first, then tell him on Monday with the problem fixed and the date recovered."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "delivery_reliability",
+          "explanation": "The day you can see the delay is the day you send the message. On Monday the client still has time to warn his own people and to choose, so it stays a shared problem. By Thursday the same news is a broken promise, and inside Friday's update it reads as concealment. Fixing it silently over the weekend gambles his week on a recovery she cannot guarantee, and if it fails he finds out with no time left at all."
+        },
+        {
+          "prompt": "Emman quotes a gym in Pasig for a batch of twelve short videos. The client replies that he likes the work but has about two thirds of that to spend, and asks whether Emman can bring the number down. Which response holds the rate without ending the conversation?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Lower the figure to keep the client, and make up the difference by working faster through the later videos."
+            },
+            {
+              "id": "b",
+              "text": "Offer eight videos with one round of changes at that budget, and keep the twelve at the figure he quoted."
+            },
+            {
+              "id": "c",
+              "text": "Send a detailed breakdown of how the figure was reached, so the client can see the value he is getting for it."
+            },
+            {
+              "id": "d",
+              "text": "Reply that the quoted price is final, and that he does not negotiate on rates once a quote has gone out."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "scoping_and_pricing",
+          "explanation": "Two things can move, the price or the work, and moving the work is what keeps your rate intact. The client gets a genuine choice instead of a wall. Discounting the same scope teaches him that the first number was decorative, so every future quote opens as a negotiation. A long justification is a case, and a case can be argued line by line. The flat refusal is defensible and socially expensive over a budget question anyone might ask."
+        },
+        {
+          "prompt": "Over a month, Lianne's retainer client has sent a steady drip of small extra tasks. Each one alone is minor. Together they have eaten the part of her week that the monthly reports used to occupy. How should she raise it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Reply to the next small request by pointing out that this keeps happening and is becoming hard to sustain."
+            },
+            {
+              "id": "b",
+              "text": "Keep absorbing them, while noting in each update that the task was extra, and wait for the client to notice."
+            },
+            {
+              "id": "c",
+              "text": "Say nothing until renewal, then raise the retainer figure without explaining what the increase is actually for."
+            },
+            {
+              "id": "d",
+              "text": "Send one message describing the pattern and proposing two ways to handle ad hoc requests from here on."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "professional_communication",
+          "explanation": "A run of small requests is one problem, not several, so raise it once and make it easy to agree to. Two workable options turn a grievance into a proposal a client can answer in a line. Attaching it to the next request makes one small task carry a month of accumulated feeling. Silent absorption plus hints leaves the client to solve a problem nobody has told him about. A raised figure with no reason attached looks arbitrary and invites the argument she was avoiding."
+        },
+        {
+          "prompt": "An inquiry arrives with a budget far below what the work would take. The company is well known in her industry and Kris would like to work with them eventually. What is the best reply?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Take it at their budget anyway, since a paying client now often leads to better paid work later on."
+            },
+            {
+              "id": "b",
+              "text": "Send the full quote with no comment on the budget, and let them work out for themselves that it is short."
+            },
+            {
+              "id": "c",
+              "text": "Explain that the budget is unrealistic for work of this kind and that they should reconsider what they set."
+            },
+            {
+              "id": "d",
+              "text": "Say what she would need to do it properly, decline for now, and invite them back when the budget grows."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "scoping_and_pricing",
+          "explanation": "Decline the number, not the person, and leave the door visibly open. That is the version they remember next quarter, when the budget is real. Taking underpriced work sets the rate they will expect forever and fills the calendar a good client would have needed. A silent full quote reads as ignoring what they just told you. Telling a stranger their budget is unrealistic makes them feel corrected, which costs you the future conversation for nothing."
+        },
+        {
+          "prompt": "Lorna quoted two days to turn a client's workshop notes into a slide deck. On the first morning she finds the notes are photographs of a whiteboard rather than a document, and can see the job is closer to four days. What should she do about the estimate?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Work the two days, hand over the slides she has finished, and explain the rest during the handover call."
+            },
+            {
+              "id": "b",
+              "text": "Tell the client that morning, with the revised estimate and a smaller option inside the original two days."
+            },
+            {
+              "id": "c",
+              "text": "Absorb the extra days without saying anything about it, since she gave the estimate and should stand behind it."
+            },
+            {
+              "id": "d",
+              "text": "Wait until the second day, when she can give the new estimate with a lot more confidence behind the number."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "delivery_reliability",
+          "explanation": "A wrong estimate corrected on the first morning is a revision. The same correction on the last day is a surprise, and after the deadline it sounds like an excuse. Offering a shorter deck inside the original two days gives the client a decision instead of a bill. Delivering half a job and explaining at handover moves the shock to the worst possible moment. Silently absorbing two days hides a change he would have wanted to weigh, and trains him to expect that size for that price."
+        },
+        {
+          "prompt": "An invoice passed its due date last Friday. The client has always been pleasant, pays eventually, and is clearly busy. Bernard needs the money this month. What should the first message look like?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Name the invoice and the date it was due, and ask when the payment is scheduled. One question, no apology."
+            },
+            {
+              "id": "b",
+              "text": "Open by apologising for the bother, mention the invoice, and add that there is no rush on it at all."
+            },
+            {
+              "id": "c",
+              "text": "Wait another two weeks, since chasing a good client over a single late invoice risks a working relationship."
+            },
+            {
+              "id": "d",
+              "text": "Say that all further work is on hold until the outstanding invoice has been settled in full on their side."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "professional_communication",
+          "explanation": "The first ask is written as though it were an oversight, which costs nothing if it turns out not to be. Naming the invoice and the due date and asking one answerable question makes it easy for a busy person to act on. Apologising and saying no rush tells them, accurately, that this can wait, so it does. Waiting longer teaches the client that your dates are soft. Announcing a work stoppage is a second-ask move, and only where a pause was agreed at the start, so using it first turns an administrative miss into a confrontation."
+        },
+        {
+          "prompt": "Tin has worked with the same client for two years and has decided her rate for this work needs to go up. The relationship is good and nothing is currently on fire. How should she send it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A long message setting out rising costs, the new skills she has added, and the extras she absorbs each month."
+            },
+            {
+              "id": "b",
+              "text": "Mention it in passing on their next call, then let the new figure appear on the invoice that follows it."
+            },
+            {
+              "id": "c",
+              "text": "A short note with the new rate and the date it takes effect, sent with enough notice for them to plan."
+            },
+            {
+              "id": "d",
+              "text": "A short note with the new rate, effective immediately, since a long notice period only invites a negotiation."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "scoping_and_pricing",
+          "explanation": "Notice, the figure, the start date, and nothing else. It reads as a business fact and gives the client time to budget, which is what stops it becoming an argument. The long justification is a case the client can dispute point by point. A passing mention on a call is not notice, and a figure that appears unannounced on an invoice feels like a trick. Effective immediately is not notice either, and it removes the one thing that keeps an increase from turning into a negotiation, which is time for the client to plan around it."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-4-complaints-mistakes-and-what-comes-next",
+      "title": "Complaints, mistakes, and what comes next",
+      "description": "Repair and renewal. Answering a client who is unhappy, owning a mistake in one sentence rather than five paragraphs, and the messages after a project ends that decide whether there is another one.",
+      "lessons": [
+        {
+          "slug": "answering-an-unhappy-client",
+          "title": "Answering an unhappy client",
+          "content_mdx": "# Answering an unhappy client\n\nA message lands at eleven at night. It is from your client and it is not friendly. Your stomach drops, you read it four times, and by the fourth reading you have written a reply in your head that is three paragraphs of apology and one paragraph of explanation.\n\nPut that reply away. This lesson is the one you send instead.\n\nFirst, the boundary. This is the private complaint aimed at you, about your work, where your own reputation is what is at stake. It is not a public comment thread on a client's page. Answering an angry stranger in front of an audience, while speaking as somebody else's brand, is a different job with different rules, and it belongs to AI Social Media Management.\n\n## Read for the ask, not the tone\n\nAn unhappy message carries two things: what happened, and how it was described. Separate them before you type anything.\n\nRhea, a VA in Bacolod, gets this from her client in Melbourne:\n\n> I have asked twice now for the weekly report and it is still not in the folder. This is exactly the kind of thing that makes me wonder whether this arrangement is working.\n\nThe tone puts the whole arrangement in question. The ask is: put the report in the folder. The ask is smaller than the tone, because a person writes at the temperature of the moment they are in, not at the temperature of the problem.\n\nWrite the ask down in one line before you reply. Rhea's line: last week's report is not where he expects it. Everything else in that message is weather.\n\n## The shape of the reply\n\nFour parts, in this order.\n\n**Acknowledge the specific thing.** Not the feeling. \"Sorry you feel that way\" turns one complaint into two, because it tells the reader you have decided their reaction is the problem. Name the actual event: \"You asked twice and it was not there. That is on me.\"\n\n**Say what you will do and when.** A date, not an intention. \"The report is in the folder before you start tomorrow, and from now on it goes up every Friday before I sign off.\"\n\n**Ask one question at the outside, and only if you cannot act without the answer.** Rhea does not need to ask anything. If she genuinely did not know which folder he meant, that is the one question, and it goes at the end.\n\n**Stop.** A long reply reads as an argument even when every sentence in it is true. Short is not curt here. Short is confident.\n\n## Four ways this goes wrong\n\n**You go quiet for a day to calm down.** Silence after a complaint leaves the client guessing, and the guesses are not generous. Send one line as soon as you see it, whatever the hour, and name when the real reply lands: \"Reading this properly. Full reply by nine tomorrow morning your time.\" Then reply by nine. The holding line is what buys you the night. Naming the hour is what makes it a promise rather than a delay.\n\n**You over-apologise.** Past one apology you have handed the client a second job, which is managing your feelings. A client who ends up reassuring you is doing emotional work on top of paying for the job.\n\n**You argue point by point.** Answering all five of their sentences turns the exchange into a debate you can only win by making them wrong. Answer the ask. Correct a factual error once, briefly, and only if it changes what happens next.\n\n**You copy someone in.** Adding the agency owner or a second contact to win the point converts a fixable annoyance into a formal event with witnesses. Bring in another person only when you need a decision that person owns.\n\n## When the complaint is not fair\n\nSometimes you are being asked to redo work that matches what was agreed, or to absorb a failure that came from something the client controlled. Declining is allowed, and it sounds like this: name what was agreed, name what you can do, and offer the paid route for the rest.\n\n> The revision rounds in the scope are used up. I can do this round as an add-on at my usual rate, or hold it for the next batch. Tell me which you prefer.\n\nNo accusation, no defence of your honour, and a decision the client can make in one line.\n\n## When to leave the thread\n\nMove to a call when the same misunderstanding survives two rounds of writing, when the client's messages are getting shorter and colder, or when you need to hear a tone you cannot read on a screen. Keep the call short. End it by saying you will send a recap.\n\nThen send the recap the same day: what you agreed, what you will do, the date. The call repaired the relationship. The recap is what stops the same argument arriving again next month.\n\n## Do this now\n\nTake the last client message that upset you. Write the ask on one line. Then write the four-part reply against that line and nothing else.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "when-you-were-wrong",
+          "title": "When you were actually wrong",
+          "content_mdx": "# When you were actually wrong\n\nSometimes the complaint is correct. You missed it, you broke it, you sent the wrong file to the wrong list. This lesson is the message you send then, and it is shorter than you think it should be.\n\n## One sentence, then the fix, then stop\n\nThe apology that works has three parts and no fourth.\n\n> I sent Tuesday's newsletter to the whole list instead of the lapsed segment. I have paused the follow-up sequence so nothing else goes out, and the corrected send will be ready for your approval before your Wednesday morning, your time. I will send you the segment rules I am working from so you can check I have them right.\n\nOwnership first: one sentence, active voice, you as the subject. \"The email went out to the wrong list\" is not ownership. \"I sent it to the wrong list\" is.\n\nThen the fix and the date. Then the thing that stops it repeating, if there is one.\n\nThen stop. No paragraph about how badly you feel. Bad feelings are real, and they are not information the client can use.\n\n## Why your reason does not go in the message\n\nYour connection died. There was a brownout. Traffic on EDSA took three hours out of your day. Someone at home was sick. Every one of those can be completely true, and none of them belongs in the body of this message, because a reason sitting next to a mistake reads as a bid to have the mistake excused, whatever you intended.\n\nSeparate a reason from a cause. A cause the client needs in order to decide something goes in, in one clause: \"The export failed silently, so I have added a check at the end of the run.\" That is useful to them. \"My internet has been terrible all week\" is not, because there is nothing they can do with it.\n\nThere is one exception, and it is about capacity rather than about this mistake. If something in your life is going to affect the next two weeks of work, that is its own message, sent on purpose, saying what you can still commit to. It is not a footnote to an apology.\n\n## What to offer\n\nOffer the fix. Offer the date. If the mistake cost the client something concrete, offer the specific thing that restores it: the redo, the extra pass, the hours you will not bill.\n\nDo not volunteer a discount before anyone asks for one, and do not offer to work free for an unnamed stretch of time. A large unprompted offer tells the client the mistake was bigger than they had understood, and it sets the price of every future mistake.\n\n## Stop apologising on a schedule\n\nYou apologise once, properly. Then you do the work.\n\nThe temptation over the following weeks is to keep referring back to it. \"Again, so sorry about the newsletter.\" Every mention reopens something the client had already filed away, and asks them to reassure you again. After the first apology, let the fix be the apology.\n\nWhat does belong in those weeks is short-term over-communication with an end date you say out loud: \"For the next three sends I will ping you before each one goes out, then we can go back to the normal Friday update.\" Naming the end date is what makes it read as a repair rather than as a permanent state of anxiety.\n\n## The disclosure call\n\nThe harder judgment is not how to apologise. It is whether to say anything at all.\n\nFix quietly: a typo you catch before the client sees it, a wrong file you replace within minutes, a formula you corrected while the number was still yours alone. Work in progress does not need a bulletin.\n\nDisclose even when nobody would have noticed: anything that leaves the client holding something untrue, anything touching money, anything a third party has already seen, anything that will look like concealment when it surfaces later.\n\nOne question decides it. If this comes out in a month, does it look like a mistake, or does it look like a cover-up? A wrong figure in a report you already sent gets disclosed even if the client will never recompute it, because on the day they do recompute it you stop being a person who erred and become a person who knew.\n\nMarisol, a bookkeeping VA in Dumaguete, found she had filed a client's supplier payments under the wrong heading for a whole month. Nobody had asked. She sent one line naming the error, one line on the fix and the date it would be done, and one line on the check she had added. She does not know what the client thought of it. What she knows is that the correction was hers to make, and that it was never going to get cheaper than it was that morning.\n\n## Do this now\n\nWrite your last mistake as one sentence with you as the subject. Then delete the reason.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "the-messages-that-bring-the-next-job",
+          "title": "The messages that bring the next job",
+          "content_mdx": "# The messages that bring the next job\n\nA project ends. You send \"thank you so much, it was a pleasure working with you,\" and then nothing. Four months later you are pitching strangers again, while a client who liked your work has quietly hired somebody else, because you never told them you were available.\n\nThe end of a project is a writing problem, and it is the cheapest one in this course to fix.\n\n## The handover message\n\nSend it the day you deliver, not the week after.\n\nWhat a handover has to contain, and the order the files and the account access move in, is Project and Client Operations' subject. This is the message that carries it, and two of its lines are pure wording.\n\n**What you will still answer, and for how long.** \"I will answer anything about this handover for the next two weeks at no charge.\" Naming the window is what stops a year of unpaid support requests, and it also stops the client feeling dropped. Help with no end date on it is not generosity. It is an invoice neither of you can see.\n\n**What comes next, if anything.** One line: \"If you want me to run the monthly refresh, tell me by the end of the month and I will hold the slot.\"\n\nThat last line is the difference between a project that ends and a client who continues. It is not a pitch. It is a door left open with a handle on it.\n\n## The check-in to a quiet client\n\nThree months of silence, and you want to ask whether there is work. The instinct is to open by apologising for disturbing them, which announces that you consider yourself a nuisance before they have decided anything.\n\nBe specific instead. A check-in works when it carries something.\n\n> Hi Ram, the product pages we rewrote in March are due for their seasonal update, and I have capacity in the first half of next month. Want me to take a pass? If the timing is wrong, no problem, I will check back after the holidays.\n\nSpecific work, specific timing, an easy no. Send it once, note the date you sent it, and let it rest. What you never send: \"Just checking in!\" with nothing attached.\n\n## Asking for a testimonial\n\nPeople agree to help and then do not, because you handed them homework. Remove the homework. Name the specific work, say where it goes, and offer to draft something they can change.\n\n> Would you be willing to leave two or three lines about the inventory tracker for my profile? Happy to draft something you can edit or rewrite completely.\n\nWhen to ask, and how to describe the next client you want, are Project and Client Operations' subject. The wording is what this lesson owns: a named piece of work, a length, and an offer to write the first version yourself.\n\n## The client who ended badly\n\nSome engagements end on a missed date, an argument, or a month where you were not good. Those clients are the ones nobody ever writes to, which is exactly why a message from you is worth something.\n\nWrite it once and keep it short. Name the thing without excavating it, report what changed, and ask for nothing.\n\n> Hi Dana, the reporting was late twice at the end of last year and I know that made your month harder. I moved that work to a fixed Friday slot and it has held since. If you ever want another pair of hands on it, I am here. Either way, no reply needed.\n\nIt names the actual failure, so she does not have to wonder whether you noticed. It reports a change rather than an intention, which is the only kind of apology worth anything a year late. And it closes the exit, so reading it costs her nothing. Do not attach a rate or a calendar link: a pitch from the person who let you down reads as though the apology was only the wrapper.\n\n## When they ask for a discount to renew\n\nRenewal is where a client asks for a lower number, because your work is already in hand and the leverage feels like theirs. The answer is the one from chapter 3: move the work, not the rate.\n\n> I would rather not drop the rate for the same scope. What I can do is take the weekly report to fortnightly, which brings the monthly figure to about where you want it. The other option is that everything stays as it is. Both work for me.\n\nNo wounded paragraph, no threat to leave, two real options. If they hold at a number you cannot work for, say so plainly and name your last date.\n\n## Ending it on purpose\n\nIf a rate change is due, it goes out on its own and ahead of the invoice that carries it, never attached to it. The wording is in chapter 3.\n\nEnding a client relationship on purpose is the message freelancers avoid until avoiding it turns into ghosting. Name the last date you will work, hand everything over, and say nothing about why unless there is something the client can act on.\n\n> I am winding down this type of work, and my last week with you will be the week of the fifteenth. Everything is in the handover doc, including the two recurring tasks and where the templates live. Happy to answer questions from whoever picks it up.\n\nNotice what is not in it. No grievances, no account of what they did, no invitation to talk you out of it. A reason the client cannot act on is a parting shot dressed as feedback, and it is the part they will remember and repeat.\n\nGive more notice than feels comfortable, and put it in writing before you say it on a call. A client told in March can hire in April. And protect the person who comes after you: your replacement reads that handover, and the client remembers whether the freelancer who left them left them a mess.\n\n## Do this now\n\nPick one client whose project ended and who never heard from you again. Write the specific check-in for them, with the work named and the timing named. Send it or do not, but write it.\n",
+          "duration_minutes": 9
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Rhea, a VA in Bacolod, opens this at eleven at night from her client in Melbourne: \"I've asked twice now about the invoice run and it still has not gone out. This is exactly the kind of thing that makes me wonder whether this arrangement is working.\" She checks and he is right, she forgot it. Which reply should she send?",
+          "options": [
+            {
+              "id": "a",
+              "text": "You asked twice and it did not go out. That is on me. The invoices go before you start tomorrow, and the run moves to a fixed Friday slot."
+            },
+            {
+              "id": "b",
+              "text": "I am so sorry you feel that way about how this has been going. I never meant to make you feel unsupported, and I promise I will do much better."
+            },
+            {
+              "id": "c",
+              "text": "Apologies for the delay. To explain, I did have the invoices ready, but the billing tool has been unreliable all week, which I did flag earlier."
+            },
+            {
+              "id": "d",
+              "text": "Sorry about that! Let me look into what happened over the last two weeks and I will come back to you once I work out where it went."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "professional_communication",
+          "explanation": "The ask is smaller than the tone: get the invoices out. Option a names the specific event, takes ownership, and gives a time the client can hold her to, anchored to his morning rather than to her night. Option b answers the feeling instead of the event, which is the reply that turns one complaint into two. Option c is a reason placed next to a mistake, which reads as a bid to be excused. Option d promises to investigate something Rhea already knows the answer to."
+        },
+        {
+          "prompt": "Ben, a freelance designer in Cebu, gets a long unhappy message from a client at four in the afternoon. Reading it makes his hands shake and he knows anything he writes right now will be five paragraphs of apology. What should he do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Reply immediately with a full apology and a promise to fix it, before checking what actually happened."
+            },
+            {
+              "id": "b",
+              "text": "Wait until morning, when he can answer calmly and the client will be awake to read it anyway."
+            },
+            {
+              "id": "c",
+              "text": "Send one line now naming the hour the full reply will land, then send the full reply at that hour."
+            },
+            {
+              "id": "d",
+              "text": "Forward the thread to the agency owner who introduced them, so somebody senior can settle the client down."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "professional_communication",
+          "explanation": "Silence after a complaint leaves the client guessing, and the guesses are not generous, so the overnight gap in option b costs more than the calm it buys. What buys the calm without the silence is a holding line with an hour named in it: the client stops guessing, and Ben still gets the time he needs. Option a sends an apology before Ben knows what he is apologising for. Option d converts an annoyance into a formal event with witnesses. A holding line only works if the real reply arrives at the hour it promised."
+        },
+        {
+          "prompt": "Kim's scope with a Sydney client included a set number of revision rounds. They are used up, and the client has just sent a fourth round of changes with no mention of the limit. What should Kim write?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Do the revision without mentioning it, since arguing over one round is not worth risking a good client for."
+            },
+            {
+              "id": "b",
+              "text": "Say the agreed rounds are used up, offer this round as an add-on at her usual rate or in the next batch, and let the client pick."
+            },
+            {
+              "id": "c",
+              "text": "Explain in detail how each earlier round was used up, listing every change the client requested and the date on which each one arrived."
+            },
+            {
+              "id": "d",
+              "text": "Decline the request and point out that the scope was agreed in writing before any of the work on the project started."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "scoping_and_pricing",
+          "explanation": "Declining is allowed, and it works when it names what was agreed, names what you can do, and hands back a decision. Option a makes the limit invisible, so the fifth round arrives too. Option c relitigates history the client did not dispute. Option d refuses without offering a route, which leaves the client stuck and looking for someone else."
+        },
+        {
+          "prompt": "Two weeks after sending a monthly report, Joan finds a figure in it was calculated on the wrong column. The client has not queried it and probably never will. Nothing in the client's decisions has changed because of it. What should she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Fix it quietly in the next report, since correcting a figure nobody queried only draws attention to a mistake that caused no harm at all."
+            },
+            {
+              "id": "b",
+              "text": "Mention it at the bottom of the next weekly update, under the other items, so it is on the record without becoming the headline of the week."
+            },
+            {
+              "id": "c",
+              "text": "Wait to see whether the client raises it, and keep a clear explanation ready to send in case they ever do."
+            },
+            {
+              "id": "d",
+              "text": "Tell them today in one line, give the corrected figure, and name the check she has added so it cannot happen again."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "delivery_reliability",
+          "explanation": "The test is what it looks like if it surfaces in a month. The client is holding a number that is not true, so this is disclosed even though nobody would have noticed. Options a and c both rely on it never coming up, and on the day it does she stops being a person who erred and becomes a person who knew. Option b buries a wrong figure under routine items."
+        },
+        {
+          "prompt": "A brownout in Iloilo cost Arvin an afternoon and he missed a delivery time he had promised. The work will now land the next morning. He is writing the message. What goes in it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Own the miss in one sentence, name the exact time the work will now land, and keep the brownout out of the message entirely."
+            },
+            {
+              "id": "b",
+              "text": "Explain the brownout early so the client understands the cause was outside his control, then give the new time."
+            },
+            {
+              "id": "c",
+              "text": "Apologise at length, describe the power situation in detail, and offer to take something off the invoice to make up for it."
+            },
+            {
+              "id": "d",
+              "text": "Send the work late with no comment, on the grounds that a short delay nobody has asked about needs no announcement."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "professional_communication",
+          "explanation": "The brownout is true and it is still not information the client can use, so next to the mistake it reads as a bid to be excused. Option c adds an unprompted discount, which tells the client the mistake was bigger than they thought and prices every future one. Option d is the silence that turns a small slip into a trust problem."
+        },
+        {
+          "prompt": "Three months after redesigning the menus for a bakery in Iloilo, Fatima wants more work from them. They parted on good terms and she has capacity next month. Which message should she send?",
+          "options": [
+            {
+              "id": "a",
+              "text": "\"Hi Nel! Just checking in and hoping all is well over there. Let me know if you need anything at all, anytime.\""
+            },
+            {
+              "id": "b",
+              "text": "\"Hi Nel, sorry to bother you. I know you are busy. If you ever have spare work I would really appreciate it.\""
+            },
+            {
+              "id": "c",
+              "text": "\"Hi Nel, the menus need a Christmas version and I have capacity next month. Want a pass? No problem if not.\""
+            },
+            {
+              "id": "d",
+              "text": "\"Hi Nel, work has been quiet on my side this quarter, so I wanted to ask whether there is anything you could send my way.\""
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "finding_work",
+          "explanation": "A check-in works when it carries something: specific work, specific timing, and an easy no. Option a gives Nel nothing to react to. Option b opens by announcing she considers herself a nuisance. Option d makes her situation the reason to hire her, which asks the client to do her a favour rather than to buy something useful."
+        },
+        {
+          "prompt": "Marj is writing the handover message on a website build. She wants to stay genuinely helpful without being on call for a year. Which line does that?",
+          "options": [
+            {
+              "id": "a",
+              "text": "\"Message me any time at all if something comes up with the site. I am always happy to help you out.\""
+            },
+            {
+              "id": "b",
+              "text": "\"Any support after today is chargeable, so send over whatever comes up and I will quote it for you first.\""
+            },
+            {
+              "id": "c",
+              "text": "\"Everything you need is in the handover document, so you should not run into anything at all after today.\""
+            },
+            {
+              "id": "d",
+              "text": "\"I will answer anything about this handover free for two weeks. After that it is a job we can price.\""
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "professional_communication",
+          "explanation": "Naming the window is what stops a year of unpaid support requests, and it also stops the client feeling dropped. Option a sounds generous and is an invoice neither of you can see, because it has no end and no price on it. Option b puts a meter on the client the day they take delivery, which reads as the door closing behind the invoice. Option c is a prediction nobody can make about somebody else's website, and it is the sentence they will quote back the first time something breaks."
+        },
+        {
+          "prompt": "Charmaine is winding down VA work to take a full-time job. One client is left, and she runs two recurring tasks nobody else in that business knows how to do. How should she close it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Tell the client she is leaving and offer to keep running the two recurring tasks free until they replace her."
+            },
+            {
+              "id": "b",
+              "text": "Name her last working date now, hand over the two recurring tasks and the templates, and offer to answer whoever replaces her."
+            },
+            {
+              "id": "c",
+              "text": "Tell the client she is leaving and explain in full why the arrangement stopped working for her, so they can do better with the next VA."
+            },
+            {
+              "id": "d",
+              "text": "Finish out the month, then send a short goodbye saying it was a pleasure, without going into recurring tasks nobody has asked about."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "finding_work",
+          "explanation": "Ending on purpose means a last date, a real handover, and no commentary the client cannot act on. Option a ends the arrangement and then does not end it: an unpaid commitment with no last date on it is how a wind-down turns into another six months, and the tasks stay undocumented the whole time. Option c hands over a critique instead of instructions. Option d leaves two undocumented tasks to fail after she is gone, and the client remembers who left them the mess."
+        }
+      ]
+    }
+  ],
+  "assignment": {
+    "title": "Five messages, one bad week",
+    "brief_mdx": "You write five real messages to one client, against the week described below. The week is fixed. The work is yours.\n\n**Set your own three lines first.** Open your submission with what you do for this client, what you are currently delivering, and the day you send your weekly update. Use your own trade, whether that is design, admin, bookkeeping, writing, video or support. If you have no client yet, use the work you are training for and a client you can picture.\n\n**The week.** The engagement has been running for a couple of months. The client runs a small business in another country, writes in short lines, and rarely uses a greeting. Then:\n\n- **Tuesday.** The client sends a screenshot and one sentence: \"Can you do this one too? Should be quick.\" It is real work, it was never in what you agreed, and it is not quick.\n- **Wednesday morning.** You can see that the main thing due Friday will not be ready until the middle of next week. Part of that is your own misjudgment. Part of it is a file you asked them for last week and still do not have.\n- **Wednesday afternoon.** You hit a decision you cannot make for them. There are two ways to finish the remaining piece: one faster and thinner, one slower and complete.\n- **Thursday.** The client replies to something you delivered a week ago. They say it was not what they asked for, they fixed it themselves, and they want to know why they had to find that out on their own.\n- **Friday.** Your update is due, and this was a week where almost nothing got finished.\n\n**Write the five messages, in the order they are sent.** Label each with its day. Roughly 800 to 1,000 words in total, so none of them is long. Write them as the client would receive them, not as a description of what you would say.\n\n1. **Tuesday, the extra request.** Answer \"can you do this one too\" so that both the relationship and the scope survive. Name what the request changes: the date, the cost, or what gets dropped instead. Do not quote a figure. If cost is the honest answer, say that it changes the cost and that you will send the number separately.\n2. **Wednesday, the delay.** Sent the day you see it, not on Friday. What happened, what it does to their date, what you are already doing about it, and what they need to decide.\n3. **Wednesday, the question.** One message, one decision, answerable in a line. Give only the context needed to choose, name your recommendation, and name the default you will proceed with if you have not heard back by a day you state.\n4. **Thursday, the complaint.** Reply to the unhappy message. Acknowledge the specific thing that went wrong. Say what you will do and by when. Ask at most one clarifying question. Keep it short.\n5. **Friday, the update.** The standing update for a week that went badly: what is done, what is in progress, what is blocked and who it is waiting on, what is next. It comes last on purpose. Nothing in it may be the first time the client hears bad news, and nothing in it may be padded to look busier than the week was.\n\n**Then a closing note, four or five lines.** Quote the most apologetic sentence you wrote in your own first draft, then the sentence you replaced it with, and say in one line what changed.\n\nPlain text or Markdown. Change or remove real client names and business details before you submit. Do not state a rate, a fee, a platform commission, a tax rule or a named app screen anywhere in this: if an honest message needs a number you do not have, say you will confirm it and send it.",
+    "criteria": [
+      "All seven parts are present against one situation: the three setup lines, five separate messages labelled with the day they are sent, and the closing note. The same project, deliverable and dates run through all five messages",
+      "Every message opens with the answer or the point in its first line rather than an apology, a wind-up or a greeting paragraph, asks the client for one thing at most, and states no rate, fee, platform commission, tax rule or named app screen the learner would have to invent",
+      "The Friday update carries the bad week in a fixed shape: what is done, what is in progress, what is blocked and who it is waiting on, what is next. It hides nothing, repeats nothing as news that was already sent earlier in the week, and is short enough to read on a phone",
+      "The Tuesday reply names what the extra request changes in time, in cost, or in what gets dropped instead, and leaves the client a decision to make. It is neither a flat refusal nor a silent yes",
+      "The Wednesday delay message is sent on Wednesday and says what happened, what it does to the client's date, and what the client has to decide. It is not buried inside other news and it promises no recovery the writer could not actually make",
+      "The Wednesday question can be answered in one line: one decision, only the context needed to make it, a named recommendation, and a default with a stated day that falls before the writer is forced to act",
+      "The Thursday reply acknowledges the specific complaint, gives a remedy with a date, and neither grovels nor argues point by point"
+    ],
+    "min_words": 320
+  }
+}

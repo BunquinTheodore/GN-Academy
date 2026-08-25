@@ -1,0 +1,929 @@
+{
+  "slug": "canva-and-visual-content",
+  "title": "Canva and Visual Content",
+  "subtitle": "Make it look deliberate, wherever it lands",
+  "level": "professional",
+  "category": "Design",
+  "format": "Self-paced online",
+  "summary": "Design for people who were never taught design. Twelve lessons on deciding what a graphic has to say, ordering it so the right thing gets read first, choosing type and colour and spacing you can defend, working to a brand at volume, sizing for the exact place it will be seen, and using AI image tools without lying to anybody.",
+  "description": "This course is for Filipino VAs, freelancers, sellers and jobseekers who are already the person who makes the graphics, or who want to be. It teaches decisions rather than menus. Everything in it works in Canva, in Adobe Express, in Figma or in a free editor on a borrowed laptop, and nothing depends on where a particular button sits this month. It teaches the principles that decide whether visual work reads as deliberate or as thrown together: what the piece has to say and to whom, what gets read first, type that does not fight itself, a palette you can defend, and spacing that stops looking amateur. Then it teaches the part that turns a skill into a service: capturing a brand from a client who has no brand documents, building templates so the second and tenth asset take minutes, handling revisions without losing the file, sizing for a feed placement or a tarpaulin or a marketplace listing, and checking the work on a real phone before it goes out. The last lesson is about AI image tools, what they are genuinely good at, what they wreck, and the line between using one and misleading somebody with one. You finish with one small set of real assets and a written account of every decision in it.",
+  "skills": [
+    "Visual hierarchy and layout",
+    "Type selection and pairing",
+    "Colour palettes and contrast checking",
+    "Brand kits and template systems",
+    "Handling design feedback and revisions",
+    "Sizing and formats for screen and print",
+    "Honest use of AI image tools"
+  ],
+  "outcomes": [
+    "Write a four-line brief for a graphic and name its one job before opening any tool",
+    "Order a layout so a scrolling person reads the right thing first, second and third",
+    "Choose a type pairing and a three-role palette you can justify out loud, and test contrast instead of trusting your eye",
+    "Turn one approved design into a template set and produce a week of assets from it without redesigning anything",
+    "Size a piece for the exact place it will appear, and say when an AI image is fine and when it is dishonest"
+  ],
+  "roles": [
+    "Graphic design VA",
+    "Social media manager and content creator",
+    "Online seller and small business owner",
+    "Freelance designer starting out"
+  ],
+  "price_php": 1499,
+  "is_free": false,
+  "passing_score": 70,
+  "credential_prefix": "CVC",
+  "sort_order": 10,
+  "requires_assignment": true,
+  "modules": [
+    {
+      "slug": "chapter-1-what-the-graphic-is-for",
+      "title": "What the graphic is for",
+      "description": "Before any visual decision: the one thing this piece has to say, who it is aimed at, and what happens next. Then the ordering that decides what a person reads first while scrolling past, and how much text belongs on the image at all.",
+      "lessons": [
+        {
+          "slug": "the-brief-for-one-graphic",
+          "title": "The brief for one graphic",
+          "duration_minutes": 7,
+          "content_mdx": "# The brief for one graphic\n\nA client messages you at 9pm: \"Gawan mo nga ng poster para sa sale namin, nice lang ha.\" That is not a brief. That is a mood.\n\nOpen a design tool now and you will spend two hours on something that comes back with \"hmm, parang kulang\". Neither of you will be able to say what is wrong, because neither of you ever said what right looked like.\n\nFour lines fix this. Get them before you open anything.\n\n## A note on tools\n\nThis course does not walk you through menus, because menus get renamed and the principle underneath them does not. Everything here works in Canva, in Adobe Express, in Figma, or in a free editor on a borrowed laptop, and the assignment is marked on your decisions rather than on which tool made the file.\n\n## The four lines\n\n**Who this is for.** Not \"everyone\". Ate Weng's milk tea shop in Bacolod sells to students from the two schools down the road, and to office staff who order in bulk for meetings. Those are two different graphics, and pretending otherwise is how you get one that works on nobody.\n\n**The one thing it has to say.** One. Written as a sentence, not a topic. \"Anniversary\" is a topic. \"Buy one take one on all milk tea, Friday only, dine-in at the Lacson branch\" is a message you can design.\n\n**What you want them to do next.** Walk in. Message the page. Click. Save the date. Show the graphic at the counter. If nobody can say what happens next, the piece has no ending, and you will feel that when you try to lay it out.\n\n**Where it will be seen.** A feed on somebody's phone, a tarpaulin over a storefront, a poster taped beside the register, a thumbnail in a marketplace listing. This one decides the shape, the size of the type, and how much text can live on the piece at all. It is also the line people skip.\n\nFour lines. Two minutes to ask. They pay for themselves the first time they stop a rewrite.\n\n## Two messages carry none\n\nDr. Yumul's dental clinic in Davao sends you three things at once. The second branch opens in September. There is a promo on cleaning. They are hiring an assistant. She wants all of it on one graphic, \"para isang post na lang\".\n\nSay no to that, kindly, and say why: a piece carrying three messages has no first thing. Someone glancing at it sees a wall, and none of the three lands. Then ask the question that actually moves it forward: \"Which one has to go out first?\"\n\nYou will nearly always get a straight answer. The client does have a priority. Nobody had asked her for it.\n\nThree messages is three pieces. That is more work, it is the honest answer, and it sells better when you frame it as three chances to be seen instead of one crowded one.\n\n## Get the non-negotiables up front\n\nThe thing that wrecks a finished layout is the detail that arrives after it is finished. Ask for all of it while you are asking the four lines:\n\n- dates and times, spelled out the way they should appear\n- branch, address, landmark\n- price, and what it includes\n- cutoff or deadline\n- contact: which number, which page, which handle\n- logo files, and any line the client is required to carry\n\nIf the graphic will carry a price, a discount, a raffle or a claim about what a product does, ask the client to confirm in writing that it is a claim they are cleared to make. Sales promotions such as raffles and discount periods, and claims about health, safety or what a product does to a person, are regulated in the Philippines, and some of them have to be cleared with a government agency before they run. Which ones, with whom, and by when is not something to take from a course, and it is not a design decision either. The business is the one making the claim, so their accountant, their lawyer, or the agency's own current guidance is where that answer lives. Your job is the record. Get the confirmation in writing, keep it in the client folder beside the file, and do not put an unconfirmed claim on a graphic.\n\n## Write the brief back in one message\n\nBefore you design, send it back and ask for a yes. Not a form. Four lines and a list:\n\n> Ok po, para sure tayo bago ako mag-design:\n> For: students near the Lacson branch\n> Message: buy one take one on all milk tea, Friday 12 September only, dine-in\n> Action: walk in and show this at the counter\n> Where: page post, plus a tarp for the storefront\n> On the graphic: date, branch, dine-in only, store hours, page name\n> Tama po ba lahat?\n\nThat message does three jobs. It catches the wrong assumption while it is still free to fix. It gets the required details out of her head and into writing. And when \"pwede bang isama rin yung new flavors\" arrives later, you have something to point at that is not just your opinion.\n\nClients rarely object to this. It reads as competence, not as difficulty.\n\n## Do this before the next lesson\n\nPick one real business you could plausibly work for, and use it for the whole course. Write the four lines for one graphic it actually needs this month, then write the non-negotiable list underneath. If you cannot fill a line, that is the question you would be sending the client tonight.\n"
+        },
+        {
+          "slug": "what-gets-read-first",
+          "title": "What gets read first",
+          "duration_minutes": 7,
+          "content_mdx": "# What gets read first\n\nKuya Bert is opening a barbershop in Antipolo and wants an opening-day graphic. He sends you the shop name, the logo, the words GRAND OPENING, the date, the address, the free hot towel offer, his number, the opening hours, a tagline, and his handle.\n\nTen things. If all ten are loud, none of them is.\n\nHierarchy is not a style. It is a ranking you do on purpose, before you make anything look nice.\n\n## Rank the list\n\nWrite every element on the piece in a list. Put a 1, a 2 and a 3 against three of them. Everything else is a 4.\n\nFor Bert: 1 is GRAND OPENING SATURDAY. 2 is the shop name. 3 is the address. Everything else is fourth.\n\nFourth is a real rank, not a punishment. It means present, readable when somebody goes looking for it, and never competing. The opening hours have to be on there. The opening hours do not have to shout.\n\nIf you cannot pick a first, go back to the brief. The one message from lesson one is what your first element carries. When the ranking will not resolve, it is usually because the piece is still trying to carry two messages.\n\n## The four levers\n\nRank is created by four things, and only four.\n\n**Size.** Bigger reads sooner. The bluntest lever, and the one beginners reach for first.\n\n**Weight.** Bold against regular, heavy against light. Weight separates without eating space, which is why it is the lever that rescues a crowded layout.\n\n**Position.** Where a thing sits, and what sits next to it. An element with room around it outranks a bigger element crammed against three others.\n\n**Colour.** One element in the accent, everything else in the neutral. Colour is the most fragile lever, because it stops working the moment three things share the accent.\n\nThe amateur signature is using all four at once on everything. Big and bold and centred and orange, applied to six elements, produces a graphic where nothing leads and the client says \"parang magulo\" without being able to say why.\n\n## Demote instead of promote\n\nA beginner whose headline is not leading makes the headline bigger. Then it does not fit, so they shrink the margins, and now the piece is worse in two ways.\n\nThe canvas is finite. The cheaper move is to make everything else quieter: drop the second and third elements a couple of sizes, take the bold off the fourth-rank text, pull the address out of the accent colour and into grey. The headline leads because the room around it emptied out, not because it grew.\n\n## Two checks that take ten seconds\n\n**The squint test.** Squint at the design until the detail disappears. Whatever still separates from the mush is your first element. If two things survive equally, you have two firsts, which is the same as none.\n\n**The arm's length test.** Hold the phone out at arm's length, or step back from the printed proof. Read it the way a person walking past it would. What you read without deciding to is what the piece actually leads with.\n\nBoth tests work by removing the thing that ruins your judgement, which is that you have been inside this file for an hour and already know what it says.\n\n## Everything bold is nothing bold\n\n\"Bold mo lahat para mabasa\" is a common instruction, and it defeats itself. Bold is a comparison. It only means something against something lighter. A graphic where every line is bold has spent the lever and got nothing back for it.\n\nThe same is true of all caps, and of the accent colour. Each of them works by contrast with whatever sits beside it.\n\n## Busy is a ranking problem\n\nWhen a client says the tarpaulin looks magulo, they are almost never asking for better taste. They are looking at nine elements at equal strength and feeling the absence of a first thing.\n\nThe fix is not a new background, a new font or a nicer photo. The fix is the list: rank the nine, keep three at full strength, and quiet the other six. The same elements, in the same layout, start reading as deliberate.\n\n## Do this before the next lesson\n\nTake the graphic you briefed in lesson one. List every element that has to appear on it. Rank three, mark the rest fourth, and write one sentence for each of the three naming the lever you will use to give it that rank. If your answer for all three is \"make it bigger\", you have three firsts and no ranking.\n"
+        },
+        {
+          "slug": "how-much-text-belongs-on-it",
+          "title": "How much text belongs on it",
+          "duration_minutes": 7,
+          "content_mdx": "# How much text belongs on it\n\nThe graphic is never carrying the message alone. There is a caption under it, or body copy beside it, or a page it links to, or a person standing at the counter. Deciding how much text belongs on the image is really deciding the division of labour between the picture and the words around it.\n\nThe default split: the graphic carries the hook and the essentials somebody needs in order to act. Everything else lives in the words around it.\n\nNone of this is a rule you apply once. It changes by piece, and what changes it is where the piece will be read.\n\n## It depends entirely on where it lands\n\n**A feed graphic on a phone.** The reader is moving and did not ask to see this. Hook plus one essential, and the rest goes in the caption. A price list crammed into a feed graphic is a document pretending to be a post.\n\n**The first panel of a carousel.** That panel is the whole decision. It is not an introduction to the good part, it is the thing that decides whether the good part gets opened. Give it one message and nothing else.\n\n**A menu, a price list or a rate card.** Reading is the point. Here more text is correct, and cutting it would be vandalism. Your job flips from reducing to ordering: group the items, keep the prices aligned so somebody can run down a column.\n\n**A tarpaulin over a road.** Fewer words than anything else you will ever make. The name, one message, one way to get in touch. The reader is on a jeep and gets a moment. Every extra line steals size from the lines that matter.\n\n**A resume header.** Your name, the role you are applying for, one line of what you do, and how to reach you. The rest of the page is the document.\n\nSame skill, five different amounts of text, decided by the place rather than by taste.\n\n## Fitting the required stuff without wrecking the ranking\n\nLesson one told you to collect the non-negotiables up front. Now they all have to fit, and the ranking from lesson two has to survive them. Three moves, in this order.\n\n**Group.** Address, number and hours are one block, not three elements. Sitting together at one size, they read as a single item ranked fourth. Scattered around the edges, they read as three competitors.\n\n**Cut words, not type size.** \"For inquiries, please feel free to contact us at\" is a pile of nothing in front of a phone number. Trim the sentence and the type stays legible.\n\n**Add a panel or a back.** A second carousel panel, the reverse of a flyer, the caption. The information is not being dropped. It is being moved to where reading it is possible.\n\nShrinking the type until everything fits is the move that looks like it solved the problem. It did not. It produced a piece where the required information is technically present and nobody can read it, which is worse than leaving it off, because now you believe it is handled.\n\n## The list problem\n\nAn ukay seller in Cebu drops fourteen items on a Saturday and wants all fourteen on one feed graphic, with sizes and prices.\n\nFourteen rows on a feed graphic is a spreadsheet screenshot with better fonts. Splitting it into two graphics of seven does not fix it either, because the problem was never the count. A feed graphic is being asked to do a catalogue's job.\n\nThe version that works: the graphic carries the drop and one hook, and the item list goes into the caption or into panels behind the first one.\n\n## Rules you half remember\n\nSomebody will tell you a platform penalises images with too much text on them, and quote a figure they heard years ago. Rules like that get introduced, changed and retired, and the copy living in a teammate's head is often several years out of date.\n\nDo not design around a number you cannot source. Open the platform's own current help pages, read what it says today, then decide the amount of text from where the piece will be read. That habit outlasts any particular rule.\n\n## The only test that settles it\n\nLook at the piece at the size it will actually appear, not zoomed to fill your laptop. Chapter four turns that into a proper habit. Here the question is narrower and it is about quantity: at real size, can you read the line?\n\nIf you cannot, that is not a small type problem. It is a piece carrying more text than its place allows, and the fix sits upstream, in what you agreed the graphic would say.\n\n## Do this before the next lesson\n\nTake your ranked list from lesson two. Mark each element as either on the graphic or in the words around it. Then write the caption line for anything you moved off, so you can see for yourself that nothing was lost, only relocated.\n"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A milk tea shop owner messages you at 9pm: \"Gawan mo nga ng poster para sa anniversary sale namin, nice lang ha.\" She wants it tomorrow. What is the strongest first move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ask her the four lines: who it is for, the one message, what they should do, and where it will be seen."
+            },
+            {
+              "id": "b",
+              "text": "Draft three poster options in different styles tonight so she can pick the direction she likes tomorrow."
+            },
+            {
+              "id": "c",
+              "text": "Start from last year's anniversary poster and change the dates, since that format was already approved once."
+            },
+            {
+              "id": "d",
+              "text": "Ask which colours and fonts she likes so the poster matches the look of the page she already posts on."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "message_craft",
+          "explanation": "\"Nice lang\" is a mood, not a brief. Styles, last year's format and colour preferences are all decisions you cannot make yet, because none of them survives learning that this one is aimed at office bulk orders rather than students. Two minutes of questions now is what stops the rewrite tomorrow."
+        },
+        {
+          "prompt": "A dental clinic in Davao asks for one graphic covering three things: the second branch opening, a promo on cleaning, and a job opening for an assistant. \"Para isang post na lang.\" What do you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Put all three on it but rank them, so the branch opening reads first and the other two follow below it."
+            },
+            {
+              "id": "b",
+              "text": "Design the promo only, since that is the one that brings money in, and leave the other two for her to raise."
+            },
+            {
+              "id": "c",
+              "text": "Tell her that three messages need three separate pieces, and ask her which one has to go out first."
+            },
+            {
+              "id": "d",
+              "text": "Build one graphic split into three equal panels, so each of the three announcements gets the same room."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "message_craft",
+          "explanation": "A piece carrying three messages has no first thing, and ranking them or panelling them does not change that: the reader still meets a wall. Asking which goes out first surfaces a priority the client already has, and turns one crowded post into three that can each land."
+        },
+        {
+          "prompt": "You finish an opening-day graphic for a barbershop and send it. The owner replies: \"Pahabol, isama mo yung address, contact number, at opening hours.\" What is the right read on this?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Shrink the headline and the date a little so the three new lines fit without changing the layout's shape."
+            },
+            {
+              "id": "b",
+              "text": "Rebuild the layout around the three new lines, since details that arrive late are usually the important ones."
+            },
+            {
+              "id": "c",
+              "text": "Ask him to pick one of the three to keep, because the design was already approved the way it stands."
+            },
+            {
+              "id": "d",
+              "text": "Fit them now as one grouped fourth-rank block, and collect the non-negotiables in the brief next time."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "message_craft",
+          "explanation": "Address, number and hours belong on the piece, so refusing them and promoting them are both wrong. Shrinking the elements you already ranked to make room for fourth-rank detail spends the ranking to solve a fitting problem. Grouped, the three lines become one low-ranked block the layout can absorb. The real lesson is upstream: a detail that arrives after the layout is finished is a detail nobody asked for at the start."
+        },
+        {
+          "prompt": "A tarpaulin carries the shop name, the offer and the date. All three are bold, all three are in the accent orange, and all three are within a size of each other. The client says the offer should lead. The canvas is full, so nothing can grow. What do you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Move the offer to the optical centre of the tarpaulin and leave every size, weight and colour as it is."
+            },
+            {
+              "id": "b",
+              "text": "Take the bold and the orange off both the name and the date, and set them a clear size below the offer."
+            },
+            {
+              "id": "c",
+              "text": "Put the offer in a second accent colour so it separates from the name and the date sitting around it."
+            },
+            {
+              "id": "d",
+              "text": "Set the name and the date in a condensed face so they take less width and the offer reads as larger."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "visual_craft",
+          "explanation": "Rank is made by size, weight, position and colour, and three of those four are already spent on everything. On a full canvas you buy rank by demoting, not by promoting. Moving the offer changes position while its competitors stay just as loud, a second accent colour is a fourth voice in a piece that already has too many, and a condensed face changes width rather than rank."
+        },
+        {
+          "prompt": "You have finished an enrolment graphic for a review centre in Baguio and you have been inside the file for an hour. Before you send it, how do you check that the ranking works?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Squint at it until the detail goes, and see which element still separates from the rest."
+            },
+            {
+              "id": "b",
+              "text": "Ask a friend to read every line on it out loud and time how long it takes them to finish."
+            },
+            {
+              "id": "c",
+              "text": "Zoom it to full width on your laptop and read each line carefully from the top down."
+            },
+            {
+              "id": "d",
+              "text": "Put it beside a competing review centre's graphic and check that yours is the louder of the two."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "visual_craft",
+          "explanation": "An hour in the file means you already know what it says, which is the knowledge the test has to take away. Squinting, or holding it at arm's length, shows what separates once detail is gone. Reading it carefully proves nothing, because somebody scrolling past will not do that."
+        },
+        {
+          "prompt": "A client says the tarpaulin design looks too busy but cannot say why. There are nine elements on it, all at similar size and weight, in a layout you are otherwise happy with. What do you change?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Lighten the background so that the nine elements have something calmer to sit on top of."
+            },
+            {
+              "id": "b",
+              "text": "Cut the palette to two colours, since a busy look normally comes from too many colours at once."
+            },
+            {
+              "id": "c",
+              "text": "Rank the nine, keep three of them at full strength, and then shrink or lighten the other six."
+            },
+            {
+              "id": "d",
+              "text": "Delete the four elements you judge least important and send it back for the client to approve."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "visual_craft",
+          "explanation": "Busy is usually a ranking problem wearing a taste costume: nine things at equal strength leave the reader with no first thing. Backgrounds and palettes are not what is competing here, and deleting content the client asked for solves your problem by creating hers."
+        },
+        {
+          "prompt": "An ukay seller drops fourteen items on Saturday and wants one feed graphic listing every item with its size and its price. What do you propose instead?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Fit all fourteen by reducing the type size until every line and price fits inside the frame."
+            },
+            {
+              "id": "b",
+              "text": "Put the drop and one hook on the graphic, and move the item list to the caption or later panels."
+            },
+            {
+              "id": "c",
+              "text": "Split the fourteen across two graphics of seven each, so that neither one is as crowded to read."
+            },
+            {
+              "id": "d",
+              "text": "Keep the list but drop the sizes, since buyers ask about sizes in the messages anyway."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "message_craft",
+          "explanation": "A feed graphic is being asked to do a catalogue's job, and halving the count leaves the same job. Shrinking type makes the information technically present and practically unreadable. The graphic carries the hook, and the list goes where reading a list is possible."
+        },
+        {
+          "prompt": "One milk tea promo has to go out as a feed post, as the first panel of a carousel, and as a printed price list on the counter. The client wants the same words on all three. What do you tell her?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Match all three so the campaign reads as one set, with the shortest version setting the length for the rest."
+            },
+            {
+              "id": "b",
+              "text": "The printed list sets the length, since it is the one a customer reads standing still and with time to spare."
+            },
+            {
+              "id": "c",
+              "text": "Keep the words identical on all three and change only the type size, so each piece stays readable where it lands."
+            },
+            {
+              "id": "d",
+              "text": "The place decides it: hook plus one essential in the feed, one message on the panel, full detail on the list."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "platform_fluency",
+          "explanation": "How much text belongs on a piece is decided by where it is read, not by consistency across a set. A feed graphic meets somebody moving who did not ask to see it. A first carousel panel has one job, which is getting the panel behind it opened. A price list is read standing still, where more text is correct and cutting it would be vandalism. Matching the three, in either direction, forces two of them to carry an amount of text their place will not take."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-2-type-colour-and-space",
+      "title": "Type, colour, and space",
+      "description": "The three levers that separate deliberate work from decorated work, each explained so a non-designer can apply it on purpose: type that does not fight itself, a palette with roles you can defend out loud, and space, alignment and the crop treated as decisions rather than leftovers.",
+      "lessons": [
+        {
+          "slug": "type-that-does-not-fight-itself",
+          "title": "Type that does not fight itself",
+          "duration_minutes": 8,
+          "content_mdx": "# Type that does not fight itself\n\nAileen makes graphics for an optical shop in Iloilo. Her posters are not ugly. The photos are fine, the logo is fine, the words are correct. They are just slightly off, and nobody at the shop can say why.\n\nIt is the type. Four faces, all shouting, none of them clearly in charge. Type is the lever a non-designer notices last and the one that gives the work away first.\n\n## Two typefaces is a convention, and it has a reason\n\nYou have heard \"never use more than two fonts.\" Treat that as a working convention of the craft rather than a measured law, because the reason underneath it is the part that helps you.\n\nEvery typeface you add is another voice. A voice earns its place only when it is doing a different job. A face chosen to be seen and a face chosen to be read are two jobs, and the contrast between them is useful to a reader. A third face is rarely a third job. It is decoration, and it flattens the ranking you built in chapter 1.\n\nThe stronger answer is often one family used at several weights. Nena runs a lechon manok stall in Angeles and her weekly price card is set in a single family: heavy for the headline, regular for the items, light for the small print at the bottom. One voice, three volumes. Nothing fights, and Nena can rebuild the card in minutes because there is only one decision to remember.\n\nWhen you do pair two faces, pair them for contrast of role, not similarity. Two faces that are almost the same read as a mistake. Two that are obviously different read as a decision.\n\n## Make the size steps visible\n\nHierarchy only exists if a reader can see it without effort. A headline that is only a little larger than the line beneath it reads as the same rank, so the eye gets no instruction and the top of the piece turns into a wall.\n\nPick three steps and make the jumps obvious: the thing that must be read first, the thing that supports it, and the small stuff. Stand back from the screen. If you cannot tell the steps apart from a metre away, they are not steps.\n\n## Set the floor at the size it will actually be seen\n\nYou are working zoomed in on a laptop. Your reader is not. Before you approve any text, view the piece at the size it will appear, and if it is going on paper, print it.\n\nTwo things break at real size. Body text too small to read in a scrolling feed, and lines that run so long the reader loses their place coming back to the left edge. Shorter lines are easier to read. So is a little more space between lines than the software hands you by default, especially for anything set light or laid over a photo.\n\n## Caps, scripts and condensed faces\n\nAll caps is fine for a short label, one word, or a headline of a few words. It is a poor choice for a sentence. Readers get far less practice with long stretches of capitals than with ordinary mixed case, and it slows them down. If a sentence needs to be louder, buy that with size or weight rather than with caps.\n\nScript faces work on one word set large. They fail on a phone number, an address, or a price list, which is exactly the content someone has to copy down correctly.\n\nCondensed faces exist to fit more words into a narrow column, so they are the right answer for a menu or a tall banner. They are the wrong answer when the piece is read from across a road.\n\n## Type over a photo\n\nText on a photo is where readability goes to die. Three treatments that work: place the text over a calm area of the image and crop for that space, darken the image or a band behind the text, or lay the text on a solid shape. What does not work is a thin light face floating over a busy picture, however good it looks at full zoom.\n\n## Fonts carry licences\n\nA font is a product with terms attached, and those terms differ by font and by use. Personal against commercial. Screen against print. Whether it may be embedded in a file you hand a client. How many people may install it. A font being free to download tells you nothing about what you may do with it, and \"I found it on Google\" is not a licence.\n\nThe professional habit is small. For every font in a client's kit, record where it came from and what its licence page said on the day you took it, and keep that note in the client folder beside the files. When the client later orders ten thousand flyers, that note is the difference between a question and a problem.\n\n## Do this before the next lesson\n\nOpen the graphic you ranked in chapter 1 and count the typefaces on it. If there are more than two, name the job each one is doing, then set every face that is not doing its own job in the family that carries your body text. Finish by writing down, for each font left in the file, where you got it and what its licence page said today.\n"
+        },
+        {
+          "slug": "a-palette-you-can-defend",
+          "title": "A palette you can defend",
+          "duration_minutes": 8,
+          "content_mdx": "# A palette you can defend\n\nKuya Dennis runs a hardware store in Malolos and wants weekly promo graphics. He has no brand document. He has a signboard, a delivery tricycle, and one instruction: \"gawin mong maganda.\"\n\nYou need a palette you can explain in a sentence, because a palette you cannot explain is one you will keep changing.\n\n## Three roles, not a mood board\n\nSkip the sixty swatches. Give every colour a job.\n\n- **Dominant.** The colour the piece is mostly made of, usually the background or the large areas. It sets the temperature and it has to be quiet enough to read on.\n- **Supporting.** Text, panels, secondary blocks. It has to work with the dominant colour without competing with it.\n- **Accent.** One colour that appears rarely and means something. The button, the price, the date, the one thing you want remembered.\n\nThe accent works because it is rare. The moment you also use it for a heading, a border and a background, it stops pointing at anything. If everything is highlighted, nothing is.\n\nAdd neutrals as you need them: a near-black for text, a near-white or a light grey for space. Neutrals are not one of the three roles. They are the floor the roles stand on.\n\n## When the client has nothing written down\n\nPull the palette out of what already exists. Open the cleanest logo file anybody has at full size and take the colour values from it directly rather than matching by eye. Sample from the middle of a flat area, never near an edge, because compression shifts the pixels where two colours meet. If the only file is a small compressed one, treat the value you get as a proposal to confirm with the client rather than as the brand colour. If the logo is a single colour, take the second from a product photo or from the physical thing: the paint on Dennis's signboard, the packaging he stocks, the panel on his delivery tricycle.\n\nThen write the three roles down, apply them to one sample, and send both to the client in one message. Getting a yes on a palette once is cheaper than defending a colour on every asset for a year.\n\n## Check contrast, do not trust your eye\n\nYour eye adapts. You have been looking at the same screen for an hour, brightness up, room lit, file zoomed to fill the display. Under those conditions pale grey on white looks perfectly readable.\n\nRun every text and background pair through a contrast checker instead. Search for one: several free ones run in a browser, you paste in the two colour codes, and it hands back a ratio and a pass or a fail. They score against the published web accessibility guidelines, known as WCAG, and what counts as a pass depends on how large and how heavy the text is, so read the tool's verdict for your own text size rather than carrying a number around in your head. Check the obvious pairs and the ones you forget, which are text sitting on the accent colour and text sitting over the darkened part of a photo. Note down which checker you used, because the assignment asks you to name it.\n\nThen think about the real conditions. A colour that is comfortable on your laptop can disappear on a phone held outdoors at noon, on a cheap screen, or on a screen dimmed to save battery.\n\n## Colour carries meaning only if you keep it still\n\nInside one piece, colour can do real work. The discounted price in the accent, the old price in the neutral. Across a set, that meaning survives only if you never move it. If the accent means \"this is the offer\" on Monday, it cannot mean \"this is a decorative line\" on Thursday. Write the rule into the palette note so the next asset does not quietly break it.\n\n## Never let colour be the only signal\n\nSome of your readers do not see colour differences the way you do. Others are holding a copy that came out of a photocopier in greyscale, or reading in glare that flattens everything.\n\nSo if colour is telling the reader something, tell them a second way as well: a word, an icon, a position, a change in weight. \"The items in red are sold out\" fails for a real part of your audience. The words \"sold out\" printed on the item do not.\n\n## About colour psychology\n\nBlue means trust. Red creates urgency. Green means fresh. These are conventions inside a market, not laws of the mind, and they are not the same in every market or every category.\n\nIt is fine to use a convention. It is also fine to say out loud that it is one: \"I went green because the other fresh produce sellers in this town are green, and I did not want you read as something else.\" That sentence is defensible, and a client can argue with it on the merits. \"Blue builds trust\" is not defensible, and the client who asks you why will get an answer you cannot support.\n\nDefensible is the whole standard here. For each of your three roles you should be able to say where the colour came from, what job it does, and what you checked. Three sentences. If you cannot produce them, you picked by mood, and mood changes every time somebody new looks at the file.\n\n## Do this before the next lesson\n\nWrite your three roles down as colour codes: dominant, supporting, accent. Give each one a sentence saying where the colour came from and what job it does. Then run every text and background pair in your piece through a contrast checker and note the pair that failed, because there is nearly always one, and it is nearly always the small print.\n"
+        },
+        {
+          "slug": "space-alignment-and-the-crop",
+          "title": "Space, alignment, and the crop",
+          "duration_minutes": 8,
+          "content_mdx": "# Space, alignment, and the crop\n\nPut two posters for the same barbershop side by side. Same photo, same words, same colours. One reads as a business. The other reads as a favour somebody did on their phone.\n\nThe difference is almost never taste. It is spacing.\n\n## Decide the margin once, then keep it\n\nPick how much clear space runs around the edge of the piece, and hold it on every side and on every asset in the set. A margin you set once is a decision. A margin you eyeball per piece is a wobble a reader feels without being able to name it.\n\nGenerous margins make a piece feel calm and considered. Tight margins feel urgent and cheap, which is sometimes exactly right for a clearance poster. Either is a legitimate choice. Inconsistent is not a choice at all.\n\n## Group by distance\n\nThe rule that does the most work in layout for the least effort: things that belong together sit close together, and things that do not get space between them.\n\nJhun's barbershop poster carries a service list, opening hours and a phone number. If the gap between \"Haircut\" and its price is the same as the gap between the service list and the opening hours, the reader has to work out by hand which price belongs to what. Tighten the gaps inside each group, open the gaps between groups, and the reader sorts it without noticing they did anything.\n\nThis is also the honest answer to \"masyadong madami.\" Usually there is not too much on the piece. There are just no groups.\n\n## Align to shared edges\n\nPick an edge and commit to it. Text that starts at the same left edge all the way down looks deliberate even when everything else about the piece is plain.\n\nCentring is not wrong, but centring everything is the common tell, because centred text has no shared edge to anchor to and every line ends up floating a little differently from the one above it.\n\nMixed alignment is where the work gives itself away: a centred headline over left-aligned body over a phone number pushed to the right. Choose one alignment for the piece, and break it once, on purpose, if at all.\n\n## Repeat the same spacing values\n\nDo not nudge by eye. Choose a small set of spacing values, say a tight gap, a normal gap and a wide gap, and use only those. Same for margins. Same for the space under every heading.\n\nTwo things follow. The piece looks systematic, because it is. And when you build the next nine assets you are reusing decisions instead of making them again, which is the difference between an hour and an afternoon.\n\n## Crop for the subject and the breathing room\n\nA crop is a decision about what the picture is of. Two failures show up constantly.\n\nThe first is cutting a person at a joint or across the top of the head, which reads as an accident. Crop through the body rather than at the neck, wrist or ankle, and leave space above the head unless you are going in tight deliberately.\n\nThe second is the product crop. Too tight and a customer cannot tell what they are buying. Too loose and the product is a speck in a cluttered room. Marilou sells pancit by the bilao in Marikina: the crop has to show the whole bilao and enough of the table to give it scale, and nothing else that competes for attention.\n\nLeave room where the piece will be written into. If a photo sits behind a headline, crop it so there is a calm area exactly where that headline lands.\n\n## The last pass, and it is the cheapest one you have\n\nWhen the piece looks finished, run one pass in which you are allowed to change nothing except spacing and alignment. No new colours, no new type, no new elements. Set a timer if you have to.\n\nLook for edges that nearly line up and do not. Gaps that are nearly equal and are not. A group that has drifted closer to the wrong neighbour. A margin tighter on one side than the other. Something centred by eye rather than actually centred.\n\nFix those and stop. For a beginner this pass buys more perceived quality than any other five minutes available to you, because uneven spacing is what a stranger reads as carelessness, and carelessness is what they transfer onto the business paying for the poster.\n\nThen look at it once more at real size, and send it.\n\n## Do this before the next lesson\n\nRun the spacing pass on your own piece and write down every change you made. Nothing but spacing and alignment is allowed on that list. If the list comes back empty, you have not looked hard enough at the edges that nearly line up and the gaps that are nearly equal.\n"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Aileen is laying out a promo for an optical shop in Iloilo. The headline is in a script face, the body copy is in a second decorative face, and she has just added a third face for the date because the first two looked repetitive together. The piece reads as messy. What fixes the cause?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Keep all three faces and push them further apart, so that they never sit directly beside one another on the page."
+            },
+            {
+              "id": "b",
+              "text": "Set all three of the faces at the same size, so that no single one of them dominates the layout."
+            },
+            {
+              "id": "c",
+              "text": "Use one clear face for the text people have to read and one for the headline, each doing a different job."
+            },
+            {
+              "id": "d",
+              "text": "Set the whole piece in the script face, so that at least everything on it is speaking with one voice."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "visual_craft",
+          "explanation": "Holding to two typefaces is a convention rather than a law, but the reason behind it is sound: a face earns its place by doing a different job, and a third face is usually decoration. Equal sizes and extra space do not remove the extra voices, and setting everything in a script destroys the readability of the body copy."
+        },
+        {
+          "prompt": "Nena's lechon manok price card has a headline, a line of supporting text and a list of items. She set the headline slightly larger than the supporting line. Customers say the top of the card reads as one block with no obvious place to start. What should she change?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Make the whole card larger, so that every line printed on it becomes easier to read from a distance away."
+            },
+            {
+              "id": "b",
+              "text": "Widen the jump between the steps, so the difference in rank is visible to a reader without any effort."
+            },
+            {
+              "id": "c",
+              "text": "Put the headline in a different colour and leave the two type sizes exactly where they are right now."
+            },
+            {
+              "id": "d",
+              "text": "Set the supporting line in italic, so that a reader can tell the two lines apart at a single glance."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "visual_craft",
+          "explanation": "Hierarchy exists only when a reader can see it without working for it, and a size step that is nearly invisible is not a step. Scaling the whole card keeps the same weak relationship, and a colour change or an italic adds another signal without fixing the ranking the size was supposed to carry."
+        },
+        {
+          "prompt": "Kuya Dennis's hardware store palette uses a strong orange as the accent. You have used that orange for the headline, the border, the icons and the sale price, because it is his brand colour. The sale price no longer stands out at all. What is going wrong?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The orange is fighting the photo behind it, so the photo needs darkening until the sale price reads."
+            },
+            {
+              "id": "b",
+              "text": "The palette is one colour short, and a fourth would give the sale price somewhere of its own."
+            },
+            {
+              "id": "c",
+              "text": "The orange is too saturated for print, and a softer version of the same colour would sit better here."
+            },
+            {
+              "id": "d",
+              "text": "The accent is now on everything, so it points at nothing, and the price should be where it lands."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "visual_craft",
+          "explanation": "An accent works because it is rare. Spend it on four things in one piece and it stops meaning anything, which is why the price stopped standing out. The fix is subtraction rather than a fourth colour: pull the orange off the heading, the border and the icons, and let the price be the one place it appears."
+        },
+        {
+          "prompt": "You approve a light grey caption over a white panel while looking at the file zoomed to fit your laptop screen at full brightness. The client comes back saying his customers are messaging him because they cannot read that line on their phones. What did your review miss?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The pair was never run through a contrast checker, or looked at on a real phone at its real size."
+            },
+            {
+              "id": "b",
+              "text": "The grey should have been the brand's supporting colour, which would have matched the rest of the set."
+            },
+            {
+              "id": "c",
+              "text": "The caption belongs in the post's text field rather than being set as type on the image itself."
+            },
+            {
+              "id": "d",
+              "text": "The file was exported at the wrong quality, and exporting it again at a higher setting would fix this."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "platform_fluency",
+          "explanation": "Your eye adapts to a bright screen in a lit room, so pale grey passes a review it should fail. A contrast checker answers the question your eye cannot, and viewing the piece at the size and on the device it will be seen on catches what the checker does not, including glare and a screen dimmed to save battery."
+        },
+        {
+          "prompt": "A printing shop in Naga marks unavailable paper sizes on its counter price list by colouring those rows red. The owner photocopies the list in black and white for the counter, and staff keep quoting sizes that are out of stock. What is the design fault underneath this?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The list is too long for one page, and the unavailable sizes belong on a second sheet."
+            },
+            {
+              "id": "b",
+              "text": "Red was the wrong colour to pick here, and a darker shade would have survived the photocopier better."
+            },
+            {
+              "id": "c",
+              "text": "The list should be reprinted in full colour each week, so the counter copy always matches the master."
+            },
+            {
+              "id": "d",
+              "text": "Colour is the only thing carrying that message, so anybody not seeing it receives no signal at all."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "visual_craft",
+          "explanation": "Colour may reinforce a message but it must never be the only thing carrying it, because greyscale copies, glare and colour vision differences all strip it out. Add something that survives without colour, such as the words sold out printed on the row, or the row struck through."
+        },
+        {
+          "prompt": "Jhun's barbershop poster lists five services with their prices, then the opening hours, then a phone number. Every gap on the poster is the same size. Customers keep asking at the door which price goes with which service. What do you change first?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Tighten the gaps inside each group and open the gaps between groups, so the sets become obvious."
+            },
+            {
+              "id": "b",
+              "text": "Add a rule under the poster's heading so a reader can see where the service list begins."
+            },
+            {
+              "id": "c",
+              "text": "Cut the poster down to the three best selling services, so there is less for a customer to read."
+            },
+            {
+              "id": "d",
+              "text": "Set every price in bold, so they are easier to pick out from the service names sitting beside them."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "visual_craft",
+          "explanation": "Equal gaps everywhere tell a reader nothing about what belongs to what, so they have to pair the prices by hand. Proximity does that work for free. A rule under the heading and bold prices both add ink to a layout whose grouping is still wrong, and cutting the services throws away information the shop needs on the poster."
+        },
+        {
+          "prompt": "You downloaded a headline font for a client's flyer and the layout is approved. The client now wants ten thousand copies printed and a shopfront sticker using the same face. What is the right move before anything goes to the printer?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Convert the headline to outlines, so the printer never has to install that font on their machine."
+            },
+            {
+              "id": "b",
+              "text": "Send the font file over to the printer with the artwork, so their output matches the proof you saw."
+            },
+            {
+              "id": "c",
+              "text": "Check the licence attached to that specific font, and record where it came from and what it allows."
+            },
+            {
+              "id": "d",
+              "text": "Swap the headline to a font already inside your design tool, since anything in there is safe to use."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "production_workflow",
+          "explanation": "Fonts are products with terms, and the terms differ by font and by use, so a print run and signage are exactly when it matters. Outlining and sending the file are production steps that grant you no rights. Assuming a tool's bundled fonts are cleared for every use is a guess: read the licence for the font you are using and keep the note in the client folder."
+        },
+        {
+          "prompt": "Your client looks at a finished graphic announcing his second branch's opening date and says the bottom looks empty, so please add the full branch list and a QR code down there. The one job of this piece is the opening date. What do you say?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Add both, since the client asked, and shrink the date a little so that everything fits on the piece."
+            },
+            {
+              "id": "b",
+              "text": "Say the space is what makes the date read first, and put the branch list in the caption instead."
+            },
+            {
+              "id": "c",
+              "text": "Fill the space with a photo of the storefront, so it looks deliberate without adding a new message."
+            },
+            {
+              "id": "d",
+              "text": "Add the QR code only, because it is smaller and will disturb the existing layout far less."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "message_craft",
+          "explanation": "Empty space at the bottom is not a fault to be patched. It is what lets the one message land. Filling it with a second message, or with a photo, costs the date the rank you gave it. Say what the space is doing, and move the branch list to the caption or a second panel where it can actually be read."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-3-working-to-a-brand-at-volume",
+      "title": "Working to a brand, at volume",
+      "description": "The move from making one nice graphic to running visual output for somebody else: capturing a brand that was never written down, building templates so the tenth asset takes minutes, and surviving revisions with the files and the relationship intact.",
+      "lessons": [
+        {
+          "slug": "capturing-a-brand-with-no-brand",
+          "title": "Capturing a brand when there isn't one",
+          "duration_minutes": 8,
+          "content_mdx": "# Capturing a brand when there isn't one\n\nEverything up to here has been about one graphic: what it has to say, what gets read first, and the type, colour and spacing that make it read that way. From here the subject changes. You are not making a graphic any more. You are running somebody else's visual output, where the tenth asset has to look like it came from the same place as the first, and it has to take you minutes instead of an afternoon. That is a system, and a system starts with knowing what the brand actually is.\n\nThis lesson is the visual side only: logo, colour, type, photos. How a brand sounds, what words it uses and refuses, is a different document and belongs to the marketing and social media courses.\n\n## What a usable kit holds\n\nFive things. Nobody at this size needs a fifty page manual.\n\n**Logo files.** The cleanest and largest version anybody has. A version that survives on a dark background. The clear space, meaning the empty margin around the logo that no other element enters. And the size below which it stops being readable, which you find by printing it small and looking at it.\n\n**The palette, with roles.** Dominant, supporting, accent, written as colour codes rather than as \"yung blue nila\". The codes are the point. \"Blue\" is an argument. A code is a fact.\n\n**The type set.** Which typeface carries headlines, which carries body text, and the sizes and weights each role uses.\n\n**How photos are treated.** Their own photos or stock. Shot on white or shot in the shop. Filtered or untouched. Cropped tight or with room around the subject.\n\n**A short do-not list.** Do not stretch the logo. Do not sit it on a busy photo. Do not use the maroon from before they repainted.\n\n## Building one from what already exists\n\nAsk for the brand guide first. When the reply is a laughing emoji, you build the kit by audit.\n\nRhea takes on Mabini Dental in Iloilo. There is no document, so she collects what the clinic has already put in front of people: the last few months of posts, the tarpaulin at the gate, the signage, the appointment card, the receipt, the sticker on the door, the flyer from the barangay health fair. Everything goes into one folder as files rather than as screenshots of screenshots, because you cannot sample a colour reliably out of a photo of a screen.\n\nThen she sorts it into what repeats and what was a one-off. Three different blues turn up, because three different people made the material across four years. That is not a palette. That is a history.\n\nHere is the move that separates a professional from somebody guessing. She does not pick one quietly. She writes back: these are the three blues currently in use, here is where each one appears, this is the one I recommend and why, please confirm which is the brand blue. The client answers in a sentence, and the answer is now on record.\n\n## The logo that arrived as a screenshot\n\nExpect this one. The only file anybody can find is a small JPEG with a white box behind it, forwarded from a printing shop years ago. Do not build on it and hope.\n\nAsk in this order. Whoever designed it. Whoever printed the tarpaulin, since a printing shop may still have the job file. Whoever sent the first email, since the original may still be sitting in an inbox. Ask for the editable file rather than \"a bigger copy\". The word to use is vector. A vector file, usually .ai, .eps, .svg, or a PDF made from one, stores the logo as shapes rather than as pixels, so it stays sharp on a sticker and on a tarpaulin alike. A JPEG or a PNG stores pixels, and enlarging pixels only gives you bigger pixels. Ask for the vector by name, and if the only file anybody has is a JPEG, say so in writing.\n\nIf nothing exists, say so in writing and treat redrawing the logo as its own job with its own price, not as something you absorb into a poster. And never quietly redraw a logo and hand it back as though it were the same one. Now two versions exist, the printer has the other, and the client cannot tell you which is which.\n\n## Get it agreed before you build\n\nPut the kit in one message or on one page: the codes, the type set, the logo rules, the do-not list. Then add one line. Unless you tell me otherwise, I will build everything on this.\n\nThat sentence is what later feedback has to argue against. Without it, \"hindi siya feel na amin\" is unanswerable and you rebuild for free. With it, the conversation becomes a specific change to a specific agreed decision, which is a conversation you can actually finish.\n\n## Do this before the next lesson\n\nBuild the five-part kit for the business you have been using, out of what they have already posted and printed. Codes, type set, photo treatment, logo rules, do-not list, in one message. Mark every line you had to guess at, and turn each guess into a question you would send them tonight.\n"
+        },
+        {
+          "slug": "templates-and-the-second-one",
+          "title": "Templates, and making the second one fast",
+          "duration_minutes": 8,
+          "content_mdx": "# Templates, and making the second one fast\n\nThe first asset is design. The second is production. If the second one takes as long as the first, you have not built anything. You have made two posters.\n\n## Decide what is fixed before you build anything\n\nTake the approved design and walk it element by element, marking each one fixed or variable.\n\nFixed is everything that must not move between assets: the margin, the logo's position and size, the headline's typeface, weight and colour, the accent bar, the footer with the contact line.\n\nVariable is the short list that changes per asset: the headline words, the photo, the date, the badge.\n\nIf your variable list is long, you do not have a template. You have a design you are going to redraw every week.\n\nOne rule keeps a template alive. Build every variable slot for its worst case, not its best. A headline box designed around \"SALE\" breaks the first time the client sends \"Extended hanggang Sunday, all sizes available\". Size the slot for the longest headline likely to appear, then check that a short one still looks deliberate in it instead of floating. The template's job is to make a bad week's copy look fine without you rebuilding anything.\n\n## Build a small set, not one\n\nTwo or three layouts will carry a small business's week.\n\n- An announcement: one line and a date.\n- A product or service: a photo, a name, a detail.\n- Text only: a quote, a list, a reminder.\n\nAll of them keep the same margins, the same type set and the same logo placement, so they read as a family even though the layouts differ. That family resemblance is the thing the client is paying you for.\n\nDesign tools in this class have somewhere to store a client's colours and fonts, and the feature is generally called a brand kit, so you are not retyping codes. Whether it sits behind a paid tier and how many brands it holds both move, so check the tool's own plan page rather than a course. The principle outlives the feature: decide the values once, then stop deciding them.\n\n## Names that still make sense in a year\n\nThe template saves you the design. The naming saves you the search.\n\nDate first so folders sort themselves, then the client, then what the piece is, then the version.\n\n`2026-03-14-mabinidental-fbpost-braces-v2`\n\nLowercase, no spaces, dates written year first.\n\nThree folders per client is enough. One for working files, one for what was exported and sent, one for raw material: the logo, the photos, and a plain text note recording where every asset came from and under what licence. That note matters. Chapter 2 said to record where a font came from and what its licence allowed, and the same is true of every photo, icon and template you place. On the day somebody asks the client where an image came from, your note is the answer.\n\nThe test: could a stranger who replaced you tomorrow find the file for the March braces post in under a minute? If not, the scheme is decoration.\n\n## Exporting a batch\n\nArvin makes weekly graphics for a pet supply store in Cabanatuan. He exported fourteen assets, checked the previews, sent them. Six came out with the promo badge sitting behind the photo instead of in front of it. The preview had lied, and he found out from the client.\n\nTwo production rules come out of that, and they are the only ones this lesson owns.\n\nDecide the export settings for a destination once, while you are fresh, and write them into the template so every asset going there gets the same ones. Which format goes where is chapter 4's subject.\n\nThen never judge a batch on the preview panel. The check that belongs between the export and the send is one list, it lives in chapter 4 lesson 2, and it is the same list whether you are sending one asset or fourteen. Run it on every file in the batch, not on the first one and a hope.\n\n## On working in blocks\n\nMaking a week of assets in one sitting beats making one a day, and the argument for that belongs to the social media course. The production point that belongs here is narrower. Build and approve the template before the batch, never during it. Changing a fixed element halfway through means re-exporting everything you had already finished.\n\n## Do this before the next lesson\n\nTake your approved piece and mark every element fixed or variable. If the variable list runs past four or five things, what you have is a design you will redraw rather than a template. Then rename the file the way this lesson names files, and put it in the three folders.\n"
+        },
+        {
+          "slug": "revisions-without-chaos",
+          "title": "Revisions without chaos",
+          "duration_minutes": 9,
+          "content_mdx": "# Revisions without chaos\n\nThe design is finished. What happens next is admin, and admin without a system is where the money on a job quietly goes.\n\n## One place, or you will lose a comment\n\nFeedback arrives from four directions at once: two comments in Messenger, a voice note on Viber, a screenshot with red circles by email, and a remark somebody made in the group chat. You will miss one, and the client will not experience that as a lost message. They will experience it as you not listening.\n\nPick one channel at the start and say so. Send all design feedback in this one thread and I will work from it. When feedback lands somewhere else anyway, do not act on it there. Copy it into the thread in their own words, then reply that you are adding it to the list. Never work from a comment you cannot point back to.\n\nThen number the comments.\n\n1. Bigger price\n2. Use the tiled photo\n3. Remove the second phone number\n\nAnd reply against the numbers: 1 done, 2 done, 3 done and it left a gap so I moved the address up, tell me if you want it back. Numbers turn a mood into a list, and a list can be finished. A round with no edges never closes.\n\n## What \"make it pop\" is actually saying\n\nIt is not a design instruction. It is a symptom, and three different things sit underneath it.\n\n**It is not standing out.** A ranking problem. Something is competing with the element that should be read first.\n\n**It is not on brand.** It does not look like the rest of their material and they cannot name why.\n\n**It is not what they pictured.** They had an image in their head, never described it, and yours is not it.\n\nYou cannot tell which from the phrase, so ask something a non-designer can answer. The next section is how. One thing worth checking first: sometimes \"pop\" means somebody else has looked at it. Ask who else is reviewing the work and get that person into the thread, because relaying opinions through a middle person burns rounds.\n\nThe reply that costs you is \"sige po, I will make it pop\", followed by guessing. That is a round spent, and the version after it is another guess.\n\n## Ask for a reading, not a verdict\n\n\"Ano po sa tingin ninyo?\" invites a verdict, and a verdict is not a note. That question is where \"ang ganda naman\" and \"make it pop\" both come from.\n\nAsk two questions instead. What do you see first? What did you want to see first? A client who answers \"the price is not the first thing I see\" has handed you a ranking change you can make in four minutes. A client who answers \"maganda\" has handed you nothing, and you find that out in round three. If neither question lands, ask her to show you one thing, from anywhere, that has the feeling she is after. An example beats an adjective.\n\n## Show the change, do not describe it\n\nSend round two as a pair: the before and the after, in that order, in one message. Not because the client forgot round one, but because somebody who cannot see the change they asked for assumes it was not made, and the next message is \"parang ganun pa rin\".\n\nAsk for feedback the same way. A screenshot with an arrow drawn on it beats a paragraph describing where on the poster the problem is, because two people describing a position in words will disagree about which line they meant.\n\n## Versions, and the file called final\n\n`v3-final-final-new2` is a filing problem wearing a joke.\n\nOne rule. The version number goes up every time a file leaves your computer. v1, v2, v3. It never gets a word attached to it. The approved version is copied into the exports folder, and that copy is what \"final\" means.\n\nKeep the working file for the approved version intact. When the client comes back in June wanting the same piece with a new date, you open v3, save it as v4 and change one line. That is a short job instead of an evening, and it exists only because you overwrote nothing.\n\n## Cheap changes and expensive ones\n\nYour template already sorted these, and knowing which is which turns a guess into an answer.\n\nVariable things are cheap: the words, the photo, the date, the badge, which colour role an element carries. The template was built to swap them, so they cost minutes on the tenth asset as much as on the first.\n\nFixed things are expensive, and they are expensive across the whole set: the margin, the ranking, the logo's position, where the contact line lives. Move one and every asset already finished disagrees with it. Nine pieces with the contact line at the bottom and five with it at the top is not a family, it is two half sets.\n\nSo sort the request before you answer it. Variable, say yes and do it. Fixed, and the honest answer is that it changes every piece already made, so ask whether it can wait for the next batch. That is why chapter 3 lesson 2 told you to approve the template before a batch and never during one.\n\n## Where the rest of this lives\n\nTwo things come up in every revision and belong to other courses. How many rounds are included, what counts as a round, and what a change is worth is the freelancing course. The handover at the end of an engagement, and who ends up owning what, is project and client operations. Neither is a design decision, and both are worth reading before you take on a retainer.\n\n## Do this before the next lesson\n\nWrite the two sentences you will send at the start of your next job. One naming the single place design feedback goes. One naming the two questions you will ask when you send a draft, so what comes back is a reading rather than a verdict. They are short, you will send them for years, and writing them now means you are not drafting them in the middle of an argument.\n"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Rhea is building a brand kit for Mabini Dental in Iloilo, which has no brand document anywhere. Auditing four years of posts, tarpaulins and appointment cards, she finds three different blues all still in use. What does she do with them?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Take the blue from the clinic's Facebook cover photo, since the cover is the most visible thing the clinic owns."
+            },
+            {
+              "id": "b",
+              "text": "Use the blue from the most recent tarpaulin, since that is the direction the clinic was already heading in."
+            },
+            {
+              "id": "c",
+              "text": "List the three blues and where each of them appears, recommend one of them, and ask the client to confirm."
+            },
+            {
+              "id": "d",
+              "text": "Keep all three as the palette, since these are the colours the clinic's patients have been seeing across four years."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "production_workflow",
+          "explanation": "Three blues is a history, not a palette, and quietly choosing one means the first person who disagrees is arguing with a decision you never showed them. Naming the options, recommending one and getting a sentence back takes one message and gives every later graphic something to stand on. Sampling the cover or the newest piece is still guessing, and carrying all three forward is the problem rather than the fix."
+        },
+        {
+          "prompt": "The only logo file your client can find is a small JPEG with a white box behind it, forwarded from a printing shop years ago. The first graphic is due on Friday. What is the professional move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ask the designer, the printer and the original email for the editable file, and if nobody has it, quote a redraw."
+            },
+            {
+              "id": "b",
+              "text": "Enlarge and sharpen the file inside your tool, since a little softness stops mattering once a piece is printed."
+            },
+            {
+              "id": "c",
+              "text": "Redraw the logo yourself as closely as you can and use your version from here on, so Friday is not held up."
+            },
+            {
+              "id": "d",
+              "text": "Use it as it is and put a white background behind every graphic you send, so the box around the logo never shows against a colour."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "production_workflow",
+          "explanation": "Enlarging a small image cannot put detail back, and a white background behind everything hands the client a design constraint they never agreed to. Redrawing it quietly is worse: two versions of their logo now exist, the printer holds the other one, and nobody can tell which is which. Chase the editable file from the people who might still have it, and if it is genuinely gone, a redraw is its own job with its own price."
+        },
+        {
+          "prompt": "Jhoana is building a weekly promo template for a furniture shop in Tarlac. She designed it around the sample headline SALE and it looks clean. What should she do before calling the template finished?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Set the headline size fresh every week, so each headline gets a size that fits the exact words it has."
+            },
+            {
+              "id": "b",
+              "text": "Ask the client to keep every headline near the length of the sample, so the template never breaks."
+            },
+            {
+              "id": "c",
+              "text": "Approve it as it is and deal with the long headlines by shrinking the type on the weeks that need it."
+            },
+            {
+              "id": "d",
+              "text": "Size the slot for the longest headline likely to appear, then check a short one still looks deliberate."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "production_workflow",
+          "explanation": "A template earns its keep by surviving the worst copy the client will send, not the sample you designed against. Sizing for the long headline and then checking the short one still sits well means neither week costs you a redesign. Resizing weekly or shrinking type each time is the redesign, done in instalments, and asking a furniture shop to write to your character count will last about two weeks."
+        },
+        {
+          "prompt": "Ten months into a retainer, a client asks Jhoana to reuse the braces post from March with a new date. Her client folder holds forty files with names like final, final2 and pang-FB. What naming would have made this a one minute job?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Name each file after the campaign it belonged to, so a campaign's assets sit together in the list."
+            },
+            {
+              "id": "b",
+              "text": "Date first in year-month-day order, then the client, then what the piece is, then the version number."
+            },
+            {
+              "id": "c",
+              "text": "Keep one folder per month and let the folder carry the date, so the file names themselves stay short."
+            },
+            {
+              "id": "d",
+              "text": "Name each file after the platform it was posted to, since that is what the client asks for by name."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "production_workflow",
+          "explanation": "The test is whether a stranger who replaced you tomorrow could find the March braces post in under a minute. Year first makes the folder sort itself, and the client, the piece and the version make a row readable without opening anything. Campaign names, month folders and platform names all depend on remembering something, which is the thing that just failed."
+        },
+        {
+          "prompt": "You send a milk tea shop owner a finished promo graphic built on the kit you both agreed. She replies with two words: make it pop. What is the most useful next message?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ask what she sees first, what she wanted to see first, and whether it looks like the rest of their material."
+            },
+            {
+              "id": "b",
+              "text": "Ask whether the budget covers a photoshoot, since flat usually comes from the photo rather than the layout."
+            },
+            {
+              "id": "c",
+              "text": "Send three quick versions with different treatments and ask her to pick whichever one feels closest to right."
+            },
+            {
+              "id": "d",
+              "text": "Make the headline bigger and the colours brighter, since that is what the phrase usually means."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "message_craft",
+          "explanation": "Make it pop is a symptom with three possible causes: the wrong thing is being read first, it does not look like their other material, or she pictured something she never described. Those three questions separate them in one message. Asking about a photoshoot asks after a cause nobody has established, three blind versions is three guesses dressed up as a choice, and bigger and brighter spends a round on a diagnosis that was never made."
+        },
+        {
+          "prompt": "Arvin is nine assets into a batch of fourteen when the client asks to move the contact line from the footer to the top of every piece. What is the honest reply?",
+          "options": [
+            {
+              "id": "a",
+              "text": "It only affects what is not built yet, so move it now and leave the nine already exported alone."
+            },
+            {
+              "id": "b",
+              "text": "It is a small change, so do it on the five remaining and match the other nine on the next batch."
+            },
+            {
+              "id": "c",
+              "text": "It is a revision rather than a new brief, so absorb it and quietly re-export the nine already sent."
+            },
+            {
+              "id": "d",
+              "text": "It changes a fixed element, so all nine are redone: ask whether it can wait for next week's batch."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "production_workflow",
+          "explanation": "A fixed element is fixed across the set, so it moves everywhere or the set stops reading as a family. Leaving the nine alone, or doing it on the remaining five only, ships two half sets. Re-exporting nine quietly hides work that is worth naming out loud. This is why you build and approve a template before a batch, never during one."
+        },
+        {
+          "prompt": "You send round two of a promo graphic. The only change the client asked for was the price reading first, and you made it. She replies: parang ganun pa rin. What should have gone with the file?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A written note listing the elements you changed and the sizes you moved them to, so the edit is on record."
+            },
+            {
+              "id": "b",
+              "text": "The before and the after together in one message, in that order, so the change is visible at a glance."
+            },
+            {
+              "id": "c",
+              "text": "Three versions of the new layout, so she can see the range and pick whichever one reads strongest."
+            },
+            {
+              "id": "d",
+              "text": "The working file as well as the export, so she can compare the two rounds for herself, side by side."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "message_craft",
+          "explanation": "Somebody who cannot see the change assumes it was not made, and prose describing an edit is not seeing it. The before and the after in one message settles that in a second. A written list asks her to hold two layouts in her head, three versions hands her the deciding you were paid for, and a working file asks her to open a design tool to answer you."
+        },
+        {
+          "prompt": "The agreed kit sets one typeface for headlines, one for body text, and an accent colour used rarely. A staff member posts a graphic in a third font with the accent colour filling the whole background. The client asks what you think.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Add the third font to the kit, since it is already in use and matching what exists matters more than the original choice."
+            },
+            {
+              "id": "b",
+              "text": "Leave it alone, since a staff post is not your work and the client can post what she likes."
+            },
+            {
+              "id": "c",
+              "text": "Rebuild it on the template, show her both versions, and name the two kit decisions the staff version breaks."
+            },
+            {
+              "id": "d",
+              "text": "Keep the background and change only the headline font, since the accent colour is a brand colour either way."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "visual_craft",
+          "explanation": "An accent colour works because it is rare, so filling a background with it spends the one colour that was meant to mean something, and a third typeface leaves a reader no way to tell a headline from body text. Showing the rebuild next to it turns a taste argument into two named decisions she already approved. Adopting the font rewards the accident, and keeping the background keeps the more damaging of the two problems."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-4-where-it-lands-and-what-you-sign",
+      "title": "Where it lands, and what you put your name on",
+      "description": "The last two things standing between a good-looking file and work that holds up: the piece has to survive the exact place it appears, and it has to be honest. Sizing and safe areas, checking on the device it will be seen on, and the judgment call on AI images.",
+      "lessons": [
+        {
+          "slug": "sizing-for-the-place",
+          "title": "Sizing for the place it will be seen",
+          "duration_minutes": 8,
+          "content_mdx": "# Sizing for the place it will be seen\n\nYou have a template set now. The next thing that decides whether the work holds up is not taste. It is the frame the piece lands in, and the fact that you do not control it.\n\n## Ratio is the decision\n\nThink in shapes, not numbers. Tall, square, wide, and the long thin banner. A placement wants one of those shapes, and the same idea has to be rebuilt for each one rather than stretched into it.\n\nKaye designs a promo for a milk tea shop in Bacolod. The square version fits four lines of type and the cup photo side by side. The tall version cannot: the cup goes up, the type goes under it, one line gets cut because it was never essential, and the ranking from chapter 1 gets decided again for the new shape.\n\nStretching is the tell. A stretched logo is a wrong logo, and a stretched face is a fat or thin version of a real person. Padding is the quieter version of the same mistake: a square floating between two brand-coloured bars, sitting in a frame built for something taller.\n\nYour template set already carries the fixed parts. Rebuilding a shape should mean placing known elements again, not designing from nothing.\n\n## Where the numbers come from, and it is never a course\n\nThe exact pixel size, the file size ceiling and the accepted formats for any placement change, and they change without telling you. So build the lookup into the job.\n\nBefore you design, open the platform's own specification page, or ask the printer, and write today's answer into the project folder with the date you checked it. When you come back next quarter, check again. A spec sheet you saved last year is a guess wearing a uniform.\n\nHold this flat: any number you did not look up yourself is somebody's memory, including yours.\n\n## Safe areas\n\nSomething will sit on top of your edges. A profile bubble, a caption overlay, a play button, a crop in a grid preview, a price strip on a listing card. Which thing, and how much, is not yours to decide and does not stay the same.\n\nThe defence is a habit, not a measurement. Keep everything that matters away from the outer band of the canvas. Put a translucent rectangle over that band as a guide layer in your template, design inside it, and switch the layer off before you export.\n\nThen confirm it in the live placement. Post it to a private account, or open the client's last post in the same spot, and look at what actually got covered.\n\n## When it leaves the screen\n\nPrint is where the reflex rule fails. Designers repeat 300 dpi for everything, and it is a rule of thumb built for something read at arm's length. A tarpaulin read from across a road is not that, and a printer may want something else entirely. Viewing distance decides how much detail the piece needs, and the printer decides what file they can actually accept.\n\nSo ask the printer, in writing, before you design. Their finished size, how much extra image they want beyond the trim, which they will call the bleed, the file type they want, how they handle colour, and whether they want type converted to outlines. Get it as a message, not over the phone, so you can re-read it and hand it to the next printer.\n\nJayson does a tarpaulin for a fun run in Los Banos. The shop replies with their own sheet, he designs to it, and he asks for one small proof piece before the full run. The proof costs a little. Reprinting a tarp with the date sitting in the trim costs more, and the run is on Sunday.\n\nTest at real scale before you send: print one section at full size on whatever paper you have, tape it up, and walk to the distance a real reader will stand at.\n\n## Formats by destination\n\nPick by where it is going, not by what your tool offers first.\n\n- Photographs on screen: JPEG. It throws away detail you will not see in order to make the file small, which is the right trade for a photograph and the wrong one for a hard edge.\n- Hard edges, type, flat colour, or anything needing a transparent background: PNG. It keeps every pixel, so the file is larger and the edges stay clean.\n- Anything going to a printer: whatever their sheet says, which is usually PDF.\n- Your working file: keep it, layered, named the way chapter 3 named it.\n\nFile formats are published standards and they do not get quietly renamed the way a menu does, so those four are worth learning by name. What does move is which of them a particular placement or printer will accept, and that is the part you look up.\n\nThen run the check that belongs between the export and the send. It is the next lesson, and it opens by opening the exported file itself rather than trusting the preview beside the export button.\n\n## Do this before the next lesson\n\nPick the screen placement your piece is going to and open that platform's own specification page. Write today's answer into the project folder with the date you checked it. Then message a real printer about the physical piece and keep the reply. Note where both answers came from, because the assignment asks you for the source rather than the number.\n"
+        },
+        {
+          "slug": "the-phone-test",
+          "title": "The phone test",
+          "duration_minutes": 7,
+          "content_mdx": "# The phone test\n\nEverything you have made so far was judged at the size you made it, on the screen you made it on. Nobody else will ever see it that way.\n\n## Look at it where it will be looked at\n\nSend the exported file to yourself. Open it on a phone, held the way people hold phones, at the size the piece will really appear, and do not pinch to zoom. If you have to zoom to read it, so does the reader, and the reader will not.\n\nThen shrink it further, to the size of a thumbnail in a grid or a list of results. Something survives that, usually one element. It should be the element you ranked first back in chapter 1. If what survives is the decorative swoosh and not the offer, the ranking failed at the size that counts.\n\nYour desk is the kindest room the piece will ever be in. Sunlight, an older and dimmer screen, and the re-encoding a platform does to whatever you upload hit a still exactly as they hit a video, and the short-form video course works through them. The short version: judge the uploaded file in the live placement, not the file on your desktop.\n\n## Dark mode and the logo that disappears\n\nA logo saved as black on a transparent background vanishes on a dark card. A white one vanishes on a light one.\n\nWhere you do not control the background, which is anywhere your logo gets reused by somebody else, supply both: one version that works on light, one that works on dark, or one sitting on its own solid shape. Test it by dropping the file on a black rectangle and a white rectangle before you hand it over.\n\n## When the colour comes out\n\nSomebody will photocopy your price list, print it on a mono office printer, or read it in glare that flattens everything. Chapter 2 said never to let colour be the only signal. Here is where you check that you did not: take the saturation to nothing and see whether anything you were relying on colour to say has gone silent.\n\nIf the piece is going on paper, print one section at full size, tape it up, and read it from where a real reader will stand. That is the proof that catches type set for a laptop and read from across a road.\n\n## Text a screen reader cannot reach\n\nType baked into a picture is part of the picture. A screen reader cannot read it out, and a person browsing with images off gets nothing.\n\nSo anything essential also has to exist as real text somewhere: the caption, the post body, or the page around the image. The date, the venue, the deadline, how to order, who to contact. That is also where a person on a weak connection finds it.\n\nThen write the alt text. Do not spend the opening on \"image of\" or \"graphic showing\", which tells a listener nothing they did not already know. Naming the kind of piece earns its place when it changes what they expect, which is why \"Poster:\" is worth four characters and \"Image of a poster:\" is not. Describe what the image is there to do, in one sentence a person could act on. For a fun run poster: \"Poster: Los Banos fun run, Sunday morning start at the town plaza, registration open until Friday.\" When the whole piece is words, the alt text is those words.\n\n## The check before every send\n\nThis is the list, and it is the only one in the course. Chapter 3 sent you here for it. Same list for one asset and for a batch of fourteen, run in this order.\n\n1. Open the exported file itself, not the preview panel. Missing fonts, hidden layers, white boxes and transparent backgrounds that turned black show themselves here and nowhere else.\n2. Check the piece against your fixed list: margin, logo, contact line, and nothing important sitting out in the outer band.\n3. Look at it on a phone at real size, with no zoom.\n4. Shrink it to thumbnail size. Is the first thing still first?\n5. Read every word out loud, the phone number digit by digit, checked against the client's own message and not your memory of it. Typos survive being looked at and die on being said.\n6. If the background is not yours, view it on light and on dark. If it is going on paper, look at the printed proof from reading distance.\n7. Confirm the essential information also exists as text outside the image, and write the alt text.\n8. Send it with one line saying what it is and where it goes.\n\nRowena laid out a poster for a dental clinic in Cabanatuan with the schedule in thin light grey, because it looked calm on her laptop. On a phone in a tricycle the schedule was not there at all. The check would have caught it in under a minute.\n\n## Then hand it to someone who has not seen it\n\nYou have been inside this file long enough that your eye fills in type too small to read and words half hidden behind a photo.\n\nGive the phone to somebody else, say nothing, and ask two questions. What is this about, and what does it want you to do? If they name something other than the element you ranked first, your ranking is wrong, not their eyesight. Fix the piece rather than explaining it.\n\n## Do this before the next lesson\n\nRun the check on your own piece, on a real phone, and write down what it caught. Then hand the phone to somebody who has not seen the file, say nothing, and ask the two questions. Whatever they name first is what your piece actually leads with, whatever you intended.\n"
+        },
+        {
+          "slug": "ai-images-honestly",
+          "title": "AI images, honestly",
+          "duration_minutes": 8,
+          "content_mdx": "# AI images, honestly\n\nImage generation and AI editing now sit inside the same tools you already use. That makes the technical question easy and the professional question harder. Two things decide it: what these tools are genuinely good at, and what you would be willing to say out loud that you used one for.\n\nPrompt writing itself belongs to the prompt engineering course. This lesson is about judgment.\n\n## What they are good at, as categories\n\n- Backgrounds and texture, where nothing in the picture is a claim.\n- Quick variations of a layout idea, so you can pick a direction before committing.\n- Removing an object that should not be in the frame, or extending a background so a real photo fits a new shape.\n- Cleaning up a usable photo the client sent from a group chat.\n- Rough mockups inside an internal draft, labelled as mockups.\n\nThe thread running through those: the image is decoration, or it is a working draft nobody will treat as evidence.\n\n## What they wreck\n\n- Hands, teeth, and the edges of a group of people.\n- Text inside an image. Signage, packaging, a menu, anything with words in it.\n- Logos. A generated logo is a smeared impression of logos it has seen.\n- Real people's faces, including a small AI touch-up of a staff photo.\n- Any product a customer will actually receive.\n\nOne rule covers that last item and saves you a great deal of trouble: if a customer will hold the real thing next to the picture, do not generate the picture.\n\n## The honesty line\n\nThis is the part of the lesson worth keeping.\n\nNever generate an image that says something happened. A photo of the product, the storefront, the team, a before and after, a face attached to a testimonial, a queue of customers, a packed event, an award, a certificate. Those are not decoration. They are evidence, and inventing evidence is lying, whatever the tool is called.\n\nA printing shop in Marikina asks Nico for a shot of customers lining up outside, for their anniversary post. There was no line. A generated queue is a claim about demand, and inventing recognisable faces outside a real storefront is worse than the claim. What Nico offers instead: shoot the actual shop on a good afternoon, or drop the crowd photo entirely and let type and colour carry the anniversary offer.\n\nWhere the graphic carries a claim of its own, such as a discount, a health or beauty result, or a comparison with a competitor, chapter 1 already told you the move: get the client's written confirmation that it is a claim they are cleared to make, and keep the message. That confirmation matters more here than anywhere else in the course, because a generated image sitting under an unchecked claim is two inventions stacked on one another.\n\n## Disclosure has two audiences\n\n**The client, always.** Every asset carrying generated or AI-edited content gets named in your handover: what was generated, what was edited and how, and which images are real photographs. Ask first, in writing, whether AI generation is allowed on their account at all. Some brands say no, some of their own customers say no, and finding that out after publishing is the expensive order.\n\n**The audience, when the image could be mistaken for a record.** A generated texture behind type needs no label. A person, a place, a product or a result does. And a label does not rescue a dishonest image: writing \"AI generated\" under a fake queue does not make the queue true.\n\nSay it plainly to the client. \"I can generate the background. I will not generate a photo of your product. Send me one shot on a plain table near a window and I will handle the rest.\"\n\n## What you never upload\n\n- Confidential client material: unreleased designs, price lists, contracts, anything under an agreement.\n- A customer's photo, or any private person's face, including a testimonial screenshot with a name on it.\n- A staff photo without written permission from the person in it.\n- Anything you would be uncomfortable seeing in a competitor's advertisement.\n\nWhether a vendor stores or learns from what you upload differs by product and by account tier, and it changes. Reading the current terms for the specific tool you are using is part of the job.\n\n## Rights are unsettled, so ask the questions first\n\nNobody can tell you today what a generated image is worth as property, and the answer differs by vendor and by country. That is not a reason to avoid the tools. It is a reason to ask three questions before generated work goes anywhere paid.\n\nWhat do this tool's current terms say about commercial use on this account? What does the client's own agreement say about AI content? Can I state on the record exactly what was generated?\n\nIf you cannot answer all three, it does not go on paid work.\n\n## Do this before the assignment\n\nWrite your disclosure now, before you make anything: what you generated, what you AI-edited and how, what is a real photograph, and one thing you refused to generate along with the reason you refused. If putting an image into that list makes you uneasy, the list is doing its job, and that image is the one to replace.\n"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Kaye has an approved square graphic for a milk tea shop in Bacolod. At 9pm the client asks for the same promo in the tall placement as well, needed tomorrow. Kaye already has the brand template set built. What does she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Stretch the square file to the taller shape, since the elements and the brand colours all stay where the client approved them."
+            },
+            {
+              "id": "b",
+              "text": "Rebuild the idea in the tall shape using the template, re-ranking the elements and dropping a line that was never essential."
+            },
+            {
+              "id": "c",
+              "text": "Centre the square inside the tall frame and fill the space above and below it with a band in the shop's main brand colour."
+            },
+            {
+              "id": "d",
+              "text": "Export the square again at the largest size the tool offers, so the placement has enough detail to crop the graphic itself."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "platform_fluency",
+          "explanation": "A different shape is a different layout, not the same file resized. Stretching distorts the logo and the cup; padding with bars reads as a square somebody could not be bothered to rebuild; a bigger export does not change the shape. The template exists so that rebuilding means placing known parts again, which is a short job."
+        },
+        {
+          "prompt": "Jayson is designing a tarpaulin for a fun run in Los Banos. He has last year's tarp file, which was printed by a different shop, and the design is due tomorrow. What is the first move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Reuse last year's setup, since tarpaulin printing is standard enough that one shop's file will work at another shop."
+            },
+            {
+              "id": "b",
+              "text": "Set the file to the finished size at 300 dpi, the figure designers repeat for print, then send it to the shop."
+            },
+            {
+              "id": "c",
+              "text": "Design it at screen size first for client approval, then ask the printer to scale the approved file up for the run."
+            },
+            {
+              "id": "d",
+              "text": "Message the new printer for their own current requirements, keep the reply, and then design to exactly what it says."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "platform_fluency",
+          "explanation": "Every printer has its own sheet: finished size, bleed beyond the trim, file type, colour handling, outlines. Last year's file encodes another shop's answers. 300 dpi is a rule of thumb built for something read at arm's length, not for a tarpaulin read from across a road, so the printer's own sheet decides. Ask, in writing, before designing."
+        },
+        {
+          "prompt": "Lorena puts the branch address and the promo cut-off date along the very bottom edge of a square graphic, because that strip of the photo is the emptiest part of the layout. What is the problem?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The outer band of a graphic gets covered by overlays and trimmed by crops, so essential details do not survive it."
+            },
+            {
+              "id": "b",
+              "text": "Details like an address and a date should sit at the top left instead, because that is where a reader's eye starts."
+            },
+            {
+              "id": "c",
+              "text": "An address and a date are fourth-rank detail, so they belong at a size small enough not to compete with the offer."
+            },
+            {
+              "id": "d",
+              "text": "Nothing, as long as the type is large enough to stay readable at the size the graphic will appear in the feed."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "platform_fluency",
+          "explanation": "Buttons, captions, profile bubbles and grid crops all eat the edges, and what they eat changes without warning. Keep essential content inside a safe-area guide and check the live placement yourself. Sizing the detail down is right and is not the fault here, and the top-left claim is a convention people repeat rather than a measured rule. The date does also need to exist as real text outside the image, as the next lesson says, and it still belongs on the graphic, because somebody who screenshots the post keeps only the image."
+        },
+        {
+          "prompt": "Aileen finishes a jobs-fair poster, views it in her design tool at fit-to-screen on a laptop, likes it, and sends it. What step did she skip that this chapter treats as non-negotiable?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Zooming to double size on the laptop so she can confirm the photo and the logo are both sharp enough to publish."
+            },
+            {
+              "id": "b",
+              "text": "Asking the client to review it on their own device before anything is published, since it is their poster in the end."
+            },
+            {
+              "id": "c",
+              "text": "Opening the exported file on a phone at real size with no zoom, then shrinking it to thumbnail to see what survives."
+            },
+            {
+              "id": "d",
+              "text": "Checking the tool's built-in preview panel for the placement she chose, which shows how the design will be displayed."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "platform_fluency",
+          "explanation": "A preview panel and a fit-to-screen laptop view are both kinder than reality. The check is the exported file, on a phone, at the size a reader gets, with no zoom, then shrunk to thumbnail to confirm the first-ranked element still leads. Client review is useful, but it is not a substitute for your own."
+        },
+        {
+          "prompt": "Rowena's clinic poster carries the whole weekly schedule as type inside the image, and it reads perfectly on a phone. A patient who uses a screen reader messages the page asking what the schedule is. What should have been done differently?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The schedule should also exist as real text in the caption or on the page, with alt text saying what the image is for."
+            },
+            {
+              "id": "b",
+              "text": "The schedule should have been trimmed to three lines, since graphics carrying a lot of text get shown to fewer people."
+            },
+            {
+              "id": "c",
+              "text": "Schedules change often, so the details belong in the caption where they are easier to edit after posting."
+            },
+            {
+              "id": "d",
+              "text": "The schedule type should have been set larger than the headline, since legible on a laptop is not legible on a phone."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "platform_fluency",
+          "explanation": "Type baked into a picture is part of the picture, so a screen reader and a browser with images off both get nothing from it. The fix is not to cut the schedule off the graphic: put the date, venue, deadline and contact in the caption or on the page as well, and write alt text describing what the image is for. The reach claim about text-heavy images is not something you can confirm, and the type was already legible, so size was not the fault."
+        },
+        {
+          "prompt": "A printing shop in Marikina asks Nico for an anniversary post showing customers lining up outside their store. There was no line. What does Nico do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Build the queue from stock photos of people rather than generating it, since stock images are licensed."
+            },
+            {
+              "id": "b",
+              "text": "Shoot the real shop, or drop the crowd entirely and let type and colour carry the anniversary offer instead."
+            },
+            {
+              "id": "c",
+              "text": "Generate the queue and add an AI-generated label in the corner, which makes the use disclosed and so honest."
+            },
+            {
+              "id": "d",
+              "text": "Shoot the shop on its busiest afternoon and generate a crowd behind it, so only the background is invented."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "message_craft",
+          "explanation": "A queue of customers says something happened. It did not, so the image is a claim about demand, and no label rescues it: writing AI generated under an invented queue documents the claim rather than removing it. Generating only the crowd, or hiring licensed strangers to stand in it, invents the same event with tidier paperwork. Shoot the real thing, or let type and colour carry the offer."
+        },
+        {
+          "prompt": "Dianne's client wants a generated photo of the product on a plain background for a marketplace listing. The product is a real bag the buyer will receive in the post. Where is the line?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Generate it, since the listing already carries a written description of the actual bag's size and material."
+            },
+            {
+              "id": "b",
+              "text": "Publish a generated photo and a phone snap of the real bag together, so a buyer can compare the two."
+            },
+            {
+              "id": "c",
+              "text": "Ask the client to check the generated version against the real bag, then publish whichever one she approves."
+            },
+            {
+              "id": "d",
+              "text": "Shoot the real bag and use AI only to clean the background, because the buyer will hold the thing itself."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "message_craft",
+          "explanation": "If a customer will hold the real thing next to the picture, do not generate the picture. A listing photo is the buyer's evidence of what arrives, and a written description, a client's approval, or an honest second photo sitting beside it do not turn an invented product shot into a record. Shoot the bag on a table near a window and let the tool clean up the background."
+        },
+        {
+          "prompt": "Rina delivers twelve assets. On three of them she used background removal and generated a texture behind the type; the rest use the client's own photos. What does the handover carry?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A general line saying some AI editing tools were used in production, which covers the batch without listing assets."
+            },
+            {
+              "id": "b",
+              "text": "Nothing on this, since the client reviewed and approved all twelve visuals before they were exported and delivered."
+            },
+            {
+              "id": "c",
+              "text": "A per-asset note of what was generated, what was AI-edited and how, and which images are the client's real photos."
+            },
+            {
+              "id": "d",
+              "text": "A note on the generated texture only, because removing a background edits a real photo rather than inventing one."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "production_workflow",
+          "explanation": "Disclosure to the client is per asset and specific, so they can answer for the work later without asking you. A vague batch line is not usable, approval of the look is not agreement about method, and background removal is still an edit the client may need to know about when the photo is reused elsewhere."
+        }
+      ]
+    }
+  ],
+  "assignment": {
+    "title": "One idea, three places it lands",
+    "brief_mdx": "Pick one real Philippine small business you could plausibly work with: a milk tea shop, a barbershop, a dental clinic, an online thrift seller, the printing shop down the street. Look at what they already post and what they already print. Then build one small asset set from a single idea, and write up every decision inside it.\n\n**What you make: three pieces, one idea.**\n\n1. One graphic in the shape that business uses for its main screen placement.\n2. One vertical version of the same idea, rebuilt rather than stretched.\n3. One piece that leaves the screen: a tarpaulin, a flyer, a printed price list or a menu.\n\nPut all three behind one publicly viewable link and paste that link in the link field. Open it yourself in a private browser window first. A reviewer with no account has to be able to see the files, and a link that asks them to request access is a failed submission.\n\nThe visuals are not marked on polish. The writing is the graded part.\n\n**What you write: roughly 700 to 900 words.**\n\n1. **The brief.** Four lines: who this is for, the one thing it has to say, what you want them to do, and where it will be seen. Then state the one message in a single sentence.\n2. **The ranking.** What gets read first, second and third, and which of size, weight, position or colour you used to make that happen. Name what you pushed down to fourth.\n3. **Type and colour.** Your type pairing and the reason for it. Your three colour roles: dominant, supporting, and an accent that appears rarely, plus what the accent means when it shows up. Then state that you checked text against background with a contrast checker instead of trusting your eye, and name the checker you used.\n4. **The rebuild.** What changed between the screen shape and the vertical version, and why. Name the crop or safe-area risk that drove the change. If nothing changed, you padded it, and this section fails.\n5. **Where you looked it up.** Name the source you used for the current spec of the screen placement, and the source of the printer's requirements for the physical piece, each with the date you checked it. Name the source, do not copy the number into your write-up. Any figure printed in a course is stale the month after.\n6. **The template plan.** What stays fixed and what changes for the next ten assets, plus the file naming you would use so this client, or whoever replaces you, can find a file a year from now.\n7. **AI disclosure.** Exactly what was generated or AI-edited, exactly what was not, and one thing you deliberately refused to generate, with the reason you refused.\n\n**Two rules for the assets themselves.**\n\nPut no price, promo, discount, opening time or claim on a graphic unless the business has already published it. If you use one, say in your write-up where you found it. Invented details about a real business fail the submission outright. If the layout needs a price to make sense, use one the business has already published, or leave an obvious placeholder.\n\nCheck each piece at the size it will really be seen. The screen pieces on a phone, held the way a person holds a phone. The physical piece printed, or at least viewed at the distance it will be read from. Anything essential you cannot read there is not finished yet.",
+    "criteria": [
+      "The link opens for a reviewer with no account and holds three pieces built from one idea: the screen shape, the vertical, and one piece that leaves the screen, with the essential information on each legible at the size it would actually be seen",
+      "The vertical is rebuilt rather than stretched or padded, and the write-up names the crop or safe-area risk that drove what changed",
+      "The four-line brief is present, the one message is stated in one sentence, and the write-up names what is read first, second and third and which of size, weight, position or colour achieved that ranking",
+      "The type pairing and all three colour roles each carry a reason, and the learner states that contrast was checked with a named contrast checker rather than by eye",
+      "The screen placement spec and the printer requirements are each credited to a named source with the date it was checked, and every price, promo, time or claim on the assets is traced to something the business itself published, with nothing invented",
+      "The AI disclosure names what was generated or AI-edited, what was not, and one thing deliberately not generated with a reason, and the template plan names what stays fixed, what changes for the next ten assets, and the file naming"
+    ],
+    "min_words": 500
+  }
+}

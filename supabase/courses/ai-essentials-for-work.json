@@ -89,11 +89,11 @@
           "options": [
             {
               "id": "a",
-              "text": "Summarising a forty-message email thread you pasted in, with the original still in front of you."
+              "text": "Getting the current price of a paid Canva plan so you can put a figure into next month's budget."
             },
             {
               "id": "b",
-              "text": "Getting the current price of a paid Canva plan so you can put a figure into next month's budget."
+              "text": "Summarising a forty-message email thread you pasted in, with the original still in front of you."
             },
             {
               "id": "c",
@@ -104,7 +104,7 @@
               "text": "Getting the deadline for a government filing this quarter so that your team can plan the work around it."
             }
           ],
-          "correct_option_id": "a",
+          "correct_option_id": "b",
           "competency": "judgment",
           "explanation": "You supplied the material, so the model is only reshaping text you can see and compare against. Prices, named studies and deadlines all need the model to be the source of the facts, which is where it invents."
         },
@@ -113,22 +113,22 @@
           "options": [
             {
               "id": "a",
-              "text": "The second answer is the better one, because the tool had built up more context by the time you asked again."
+              "text": "Neither answer is more authoritative: both are fresh predictions, so the fact still needs an outside source."
             },
             {
               "id": "b",
-              "text": "Something has gone wrong inside the tool, and an inconsistency like this is worth reporting to support as a bug."
+              "text": "The second answer is the better one, because the tool had built up more context by the time you asked again."
             },
             {
               "id": "c",
-              "text": "Whichever answer carries more detail is the reliable one, since detail shows it drew on more of its training."
+              "text": "Something has gone wrong inside the tool, and an inconsistency like this is worth reporting to support as a bug."
             },
             {
               "id": "d",
-              "text": "Neither answer is more authoritative: both are fresh predictions, so the fact still needs an outside source."
+              "text": "Whichever answer carries more detail is the reliable one, since detail shows it drew on more of its training."
             }
           ],
-          "correct_option_id": "d",
+          "correct_option_id": "a",
           "competency": "tools",
           "explanation": "A model generates each answer fresh rather than retrieving a stored one, so variation between chats is normal and tells you nothing about which is correct. Extra detail is not evidence either: specifics are cheap for a model to produce."
         },
@@ -145,14 +145,14 @@
             },
             {
               "id": "c",
-              "text": "Pasting the actual policy text into the chat and asking it to rewrite that in plain English."
+              "text": "Asking what the standard leave policy is for companies in your industry, then adapting it yourself."
             },
             {
               "id": "d",
-              "text": "Asking what the standard leave policy is for companies in your industry, then adapting it yourself."
+              "text": "Pasting the actual policy text into the chat and asking it to rewrite that in plain English."
             }
           ],
-          "correct_option_id": "c",
+          "correct_option_id": "d",
           "competency": "judgment",
           "explanation": "Weak tasks become strong when you supply the material, because the model is then only reshaping something you can check line by line. Instructions to be accurate give it no information it did not already have, and an industry-standard answer is not your policy."
         },
@@ -161,11 +161,11 @@
           "options": [
             {
               "id": "a",
-              "text": "Type your sales and costs into the chat and ask it to work out the profit and write the update for you."
+              "text": "Work the figures out in Google Sheets yourself, then paste the totals in and ask it to write the update."
             },
             {
               "id": "b",
-              "text": "Work the figures out in Google Sheets yourself, then paste the totals in and ask it to write the update."
+              "text": "Type your sales and costs into the chat and ask it to work out the profit and write the update for you."
             },
             {
               "id": "c",
@@ -176,7 +176,7 @@
               "text": "Ask it for the profit, then ask it to go back over its own arithmetic before you use the number anywhere."
             }
           ],
-          "correct_option_id": "b",
+          "correct_option_id": "a",
           "competency": "workflow",
           "explanation": "Plain chat predicts text rather than calculating, so real arithmetic belongs in a spreadsheet; the writing is the part the model is actually strong at. Asking it to re-check its own maths just produces another prediction."
         },
@@ -209,22 +209,22 @@
           "options": [
             {
               "id": "a",
-              "text": "You cannot tell from the reply alone whether anything was looked up, so a change that recent stays unconfirmed."
-            },
-            {
-              "id": "b",
               "text": "Detail with no citations usually means it recalled the change from training rather than going to look it up."
             },
             {
-              "id": "c",
+              "id": "b",
               "text": "The tool would have told you if it did not know, so a confident tone with no hedging means the answer is current."
+            },
+            {
+              "id": "c",
+              "text": "You cannot tell from the reply alone whether anything was looked up, so a change that recent stays unconfirmed."
             },
             {
               "id": "d",
               "text": "It is likely right in outline, with only the finer details from last month a little out of date and easily corrected."
             }
           ],
-          "correct_option_id": "a",
+          "correct_option_id": "c",
           "competency": "tools",
           "explanation": "Training happened once, up to a fixed date, and the model does not feel time passing, so anything recent is a gap it can fill fluently. Some tools do search the web or read a file you hand them, but that is a separate feature sitting on top of the model, and the reply on its own does not tell you which happened."
         },
@@ -284,22 +284,22 @@
           "options": [
             {
               "id": "a",
-              "text": "Tell it to act as an expert social media copywriter with years of Philippine retail experience"
+              "text": "Supply the real sale details: the discount, the dates, the platform, which product to highlight"
             },
             {
               "id": "b",
-              "text": "Ask it to be more creative and less generic, and to avoid stock promotional phrasing"
+              "text": "Tell it to act as an expert social media copywriter with years of Philippine retail experience"
             },
             {
               "id": "c",
-              "text": "Supply the real sale details: the discount, the dates, the platform, which product to highlight"
+              "text": "Ask it to be more creative and less generic, and to avoid stock promotional phrasing"
             },
             {
               "id": "d",
               "text": "Resubmit the same prompt a few times and pick the best of the results you get"
             }
           ],
-          "correct_option_id": "c",
+          "correct_option_id": "a",
           "competency": "prompting",
           "explanation": "Invented details appear when you ask a question only you have the answer to. Supplying the actual task details removes the gap the model was filling with guesses. Role instructions and creativity requests change the styling, not the facts."
         },
@@ -308,22 +308,22 @@
           "options": [
             {
               "id": "a",
-              "text": "Three recent captions she published, with the line \"match this voice, here is the new product\""
-            },
-            {
-              "id": "b",
               "text": "The full two-year archive of her captions, so the model can see the voice at its full range"
             },
             {
-              "id": "c",
+              "id": "b",
               "text": "The tone section of the brand guide, and ask it to follow the adjectives that are listed there"
             },
             {
-              "id": "d",
+              "id": "c",
               "text": "A careful description of the voice that you wrote yourself after reading through the archive"
+            },
+            {
+              "id": "d",
+              "text": "Three recent captions she published, with the line \"match this voice, here is the new product\""
             }
           ],
-          "correct_option_id": "a",
+          "correct_option_id": "d",
           "competency": "prompting",
           "explanation": "A short set of real samples is the cheapest way to carry a voice. Two or three is about the ceiling: a full archive spans years of drift and the samples start pulling against each other. The brand guide's tone section and your own summary are both descriptions, and adjectives mean different things to different readers."
         },
@@ -336,18 +336,18 @@
             },
             {
               "id": "b",
-              "text": "The original number was right, since a model only changes its answer when it is pushed"
+              "text": "Nothing about accuracy: it answered your doubt, so the figure still needs checking against the source"
             },
             {
               "id": "c",
-              "text": "The chat has gone stale, and the fix is to move the draft into a fresh window"
+              "text": "The original number was right, since a model only changes its answer when it is pushed"
             },
             {
               "id": "d",
-              "text": "Nothing about accuracy: it answered your doubt, so the figure still needs checking against the source"
+              "text": "The chat has gone stale, and the fix is to move the draft into a fresh window"
             }
           ],
-          "correct_option_id": "d",
+          "correct_option_id": "b",
           "competency": "judgment",
           "explanation": "The apology and the new number are a response to your doubt, not evidence that anything was verified. Some tools can genuinely look something up mid-conversation, but only if they actually go and look. With no source or quote in the reply, treat the new number as another guess and check it yourself."
         },
@@ -360,18 +360,18 @@
             },
             {
               "id": "b",
-              "text": "Send all three corrections in one message, so the next version arrives with everything fixed at once"
+              "text": "Correct the date first, say to keep the rest unchanged, then handle the others in later turns"
             },
             {
               "id": "c",
-              "text": "Correct the date first, say to keep the rest unchanged, then handle the others in later turns"
+              "text": "Send all three corrections in one message, so the next version arrives with everything fixed at once"
             },
             {
               "id": "d",
               "text": "Start a fresh chat with a longer brief that folds the three corrections in from the beginning"
             }
           ],
-          "correct_option_id": "c",
+          "correct_option_id": "b",
           "competency": "prompting",
           "explanation": "Stacked corrections tend to come back partly applied, with something that was already fine now broken. Work in passes (facts first, then structure, then tone) and say what to keep, because what comes back is usually a fresh draft rather than your draft with one line changed."
         },
@@ -384,18 +384,18 @@
             },
             {
               "id": "b",
-              "text": "Copy the best version out, start a fresh chat, and paste it in with a clean brief"
-            },
-            {
-              "id": "c",
               "text": "Ask the model to summarise the conversation so far so that it holds on to the agreed rules"
             },
             {
-              "id": "d",
+              "id": "c",
               "text": "Ask it to explain why it keeps making the mistake, then correct the reason it gives you"
+            },
+            {
+              "id": "d",
+              "text": "Copy the best version out, start a fresh chat, and paste it in with a clean brief"
             }
           ],
-          "correct_option_id": "b",
+          "correct_option_id": "d",
           "competency": "workflow",
           "explanation": "A long chat carries all your rejected drafts and contradicting instructions as context, and the model treats every part of it as relevant. Firmness does not clear that, and neither does a summary that stays in the same window. Moving the best draft out keeps the progress and drops the mess."
         },
@@ -404,22 +404,22 @@
           "options": [
             {
               "id": "a",
-              "text": "The current refund section only, plus a line saying who the summary is for"
-            },
-            {
-              "id": "b",
               "text": "Both refund sections, so the model can see the full history of the policy"
             },
             {
-              "id": "c",
+              "id": "b",
               "text": "The refund section and the leave chapter, since both come from the same handbook"
+            },
+            {
+              "id": "c",
+              "text": "The current refund section only, plus a line saying who the summary is for"
             },
             {
               "id": "d",
               "text": "Nothing from the file: describe the current policy from memory in the prompt"
             }
           ],
-          "correct_option_id": "a",
+          "correct_option_id": "c",
           "competency": "tools",
           "explanation": "Two versions of the same rule in one window give the model no way to know which one won, and it usually will not ask, so it may summarise the policy that no longer applies. Unrelated chapters pull the answer sideways, and working from memory throws away the material that made the answer specific."
         },
@@ -428,22 +428,22 @@
           "options": [
             {
               "id": "a",
-              "text": "Context about the client, the audience, and where the caption is going to be posted"
+              "text": "The output format: how many options, how long, and no commentary on the choices"
             },
             {
               "id": "b",
-              "text": "Constraints on tone and vocabulary, such as no hard selling and no emoji in the opening"
+              "text": "Context about the client, the audience, and where the caption is going to be posted"
             },
             {
               "id": "c",
-              "text": "A stronger opening instruction, such as telling it to act as a professional copywriter first"
+              "text": "Constraints on tone and vocabulary, such as no hard selling and no emoji in the opening"
             },
             {
               "id": "d",
-              "text": "The output format: how many options, how long, and no commentary on the choices"
+              "text": "A stronger opening instruction, such as telling it to act as a professional copywriter first"
             }
           ],
-          "correct_option_id": "d",
+          "correct_option_id": "a",
           "competency": "prompting",
           "explanation": "\"Some ideas\" is not a number and not a shape. Format decides what actually lands on your screen: how many items, how long, and what to leave out. Stating it saves you the cleanup and makes the options comparable to each other."
         },
@@ -456,18 +456,18 @@
             },
             {
               "id": "b",
-              "text": "The reply will be fluent but miss the specifics only the thread holds: what was promised, and when"
+              "text": "The prompt will be too long, and the extra detail will push the reply into vague, unfocused rambling"
             },
             {
               "id": "c",
-              "text": "The prompt will be too long, and the extra detail will push the reply into vague, unfocused rambling"
+              "text": "The reply will be fluent but miss the specifics only the thread holds: what was promised, and when"
             },
             {
               "id": "d",
               "text": "The reply will take the customer's side and concede more than your client has actually agreed to"
             }
           ],
-          "correct_option_id": "b",
+          "correct_option_id": "c",
           "competency": "prompting",
           "explanation": "Careful wording cannot supply facts the model does not have. Pasting the real thread gives it the commitments, the dates, and the way you have been writing to this person, which is what makes a reply usable instead of generic."
         }
@@ -575,22 +575,22 @@
           "options": [
             {
               "id": "a",
-              "text": "Write a done sentence fixing format, count and length, and list the inputs each run."
-            },
-            {
-              "id": "b",
               "text": "Switch to a different AI tool and settle on whichever one gives the steadiest output."
             },
             {
-              "id": "c",
+              "id": "b",
               "text": "Write a longer, more detailed prompt each week describing that week's campaign and products."
+            },
+            {
+              "id": "c",
+              "text": "Write a done sentence fixing format, count and length, and list the inputs each run."
             },
             {
               "id": "d",
               "text": "Generate three versions each week and pick whichever one comes closest to what you wanted."
             }
           ],
-          "correct_option_id": "a",
+          "correct_option_id": "c",
           "competency": "workflow",
           "explanation": "The same shape of result every week comes from defining the finished output and the fixed inputs up front. Writing a fresh prompt or picking the best of three still leaves you re-deciding the format on every run, which is where the drift comes from."
         },
@@ -599,11 +599,11 @@
           "options": [
             {
               "id": "a",
-              "text": "Number them in the order you created them, with the newest ones kept at the top."
+              "text": "Name each one by the job, who it is for, and what comes out of it."
             },
             {
               "id": "b",
-              "text": "Name each one by the job, who it is for, and what comes out of it."
+              "text": "Number them in the order you created them, with the newest ones kept at the top."
             },
             {
               "id": "c",
@@ -614,7 +614,7 @@
               "text": "Name each one after the tool you wrote it for, such as ChatGPT or Canva."
             }
           ],
-          "correct_option_id": "b",
+          "correct_option_id": "a",
           "competency": "prompting",
           "explanation": "When you are rushing you search for the finished thing you need, not the technique, the tool, or the date you saved it. A name like \"Weekly captions, Shopee client, 5 posts of 2 lines\" matches the way you will look for it. \"Caption prompt 2\" does not."
         },
@@ -627,18 +627,18 @@
             },
             {
               "id": "b",
-              "text": "Start a fresh chat each week so the tool does not pick up habits from earlier messages."
+              "text": "Add a no-emoji rule to the saved prompt, and note the date you changed it."
             },
             {
               "id": "c",
-              "text": "Add a no-emoji rule to the saved prompt, and note the date you changed it."
+              "text": "Start a fresh chat each week so the tool does not pick up habits from earlier messages."
             },
             {
               "id": "d",
               "text": "Try a different AI tool, since this one has clearly changed the way it writes."
             }
           ],
-          "correct_option_id": "c",
+          "correct_option_id": "b",
           "competency": "prompting",
           "explanation": "Fix the prompt, not the output. Any edit you make every single time is a missing instruction, and putting it into the brief means you never do that edit again. The dated line underneath is what lets you roll the change back if it makes things worse."
         },

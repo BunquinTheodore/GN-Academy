@@ -70,18 +70,18 @@
             },
             {
               "id": "b",
-              "text": "It is a form of digital money that governments cannot trace, invented so that people could pay each other privately."
+              "text": "It is a shared record many computers keep identical copies of, where entries are added in batches and never edited."
             },
             {
               "id": "c",
-              "text": "It is a shared record many computers keep identical copies of, where entries are added in batches and never edited."
+              "text": "It is a form of digital money that governments cannot trace, invented so that people could pay each other privately."
             },
             {
               "id": "d",
               "text": "It is one company's database opened up to the public, so that any customer can check their own balance at any time."
             }
           ],
-          "correct_option_id": "c",
+          "correct_option_id": "b",
           "competency": "chain_basics",
           "explanation": "A blockchain is a record, not an account and not a currency. The two things that make it unusual are that many separate computers hold the same copy, and that entries are added in batches rather than edited. Privacy is not what it is for, and an opened-up company database still has one owner who can rewrite it."
         },
@@ -146,14 +146,14 @@
             },
             {
               "id": "c",
-              "text": "Ask him to send the payment a second time with a higher fee so it confirms, then hand the phone over."
+              "text": "Wait for confirmations, because a pending transfer can still fail to be picked up and is not payment."
             },
             {
               "id": "d",
-              "text": "Wait for confirmations, because a pending transfer can still fail to be picked up and is not payment."
+              "text": "Ask him to send the payment a second time with a higher fee so it confirms, then hand the phone over."
             }
           ],
-          "correct_option_id": "d",
+          "correct_option_id": "c",
           "competency": "chain_basics",
           "explanation": "Being visible in the queue only means the transaction was announced. Until it is in a block it can sit there and never be picked up, and a correct address and a correct amount do not change that, so checking those is not the check that matters here. Sending again does not speed anything up and risks paying twice. How many confirmations to wait for is her decision as the person handing over goods."
         },
@@ -162,11 +162,11 @@
           "options": [
             {
               "id": "a",
-              "text": "Entries can be edited by the developers who maintain the software, though only with a documented reason for it."
+              "text": "Entries are added and never edited, and rewriting an old one needs the network itself to accept the new version."
             },
             {
               "id": "b",
-              "text": "Entries are added and never edited, and rewriting an old one needs the network itself to accept the new version."
+              "text": "Entries can be edited by the developers who maintain the software, though only with a documented reason for it."
             },
             {
               "id": "c",
@@ -177,7 +177,7 @@
               "text": "Entries are permanent on a large network and temporary on a small one, which is the real difference between them."
             }
           ],
-          "correct_option_id": "b",
+          "correct_option_id": "a",
           "competency": "chain_basics",
           "explanation": "Nothing is edited: new entries are added on top. Rewriting history is not forbidden by magic, it is made expensive, because you would have to pay again the cost of every block above the one you changed and then convince the network to prefer your version. On a large, widely spread network that does not happen. On a small one it is a genuine risk, which is a difference of degree rather than of kind."
         },
@@ -234,22 +234,22 @@
           "options": [
             {
               "id": "a",
-              "text": "It was recorded on the network he actually used, so it sits at that address there rather than where it was expected."
-            },
-            {
-              "id": "b",
               "text": "It is still travelling, and will appear on the correct network once those two networks finish syncing with each other."
             },
             {
-              "id": "c",
+              "id": "b",
               "text": "It failed on arrival, so the amount will return to his own address automatically once the transaction times out."
             },
             {
-              "id": "d",
+              "id": "c",
               "text": "It was converted at the point of arrival, which is why his friend will receive a slightly different amount from it."
+            },
+            {
+              "id": "d",
+              "text": "It was recorded on the network he actually used, so it sits at that address there rather than where it was expected."
             }
           ],
-          "correct_option_id": "a",
+          "correct_option_id": "d",
           "competency": "chain_basics",
           "explanation": "Each network keeps its own record and knows nothing about the others. A valid signature on the wrong network produces a perfectly good entry in the wrong ledger, so nothing failed and nothing is in transit. Whether it can be recovered depends on whether anyone controls that address on that network and is willing to help."
         }
@@ -708,18 +708,18 @@
           },
           {
             "id": "b",
-            "text": "Nobody can reverse it, so the only route left is asking the person who received it to send it back."
+            "text": "Nobody can reverse it, so he should have the wallet's support desk freeze the receiving address instead."
           },
           {
             "id": "c",
-            "text": "Nobody can reverse it, so he should have the wallet's support desk freeze the receiving address instead."
+            "text": "Nobody can reverse it, so the only route left is asking the person who received it to send it back."
           },
           {
             "id": "d",
             "text": "The receiving side can be told to refuse it, which sends the amount back to the address it came from."
           }
         ],
-        "correct_option_id": "b",
+        "correct_option_id": "c",
         "competency": "chain_basics",
         "explanation": "A confirmed transaction is a settled entry that many computers already hold. There is no operator with a reversal button, no chargeback, and no branch to walk into with a valid ID. Nothing freezes an address either: a wallet is software he used, not a party to the network, and a transfer is not something the receiving side approves or declines. What is left is a request to a human being, and if that address belongs to a stranger you have no leverage at all. This is why you check the whole address and the whole amount before you sign, not after."
       },
@@ -804,18 +804,18 @@
           },
           {
             "id": "b",
-            "text": "The chain shows the token entries only, and whether the pesos exist is a claim it cannot check."
-          },
-          {
-            "id": "c",
             "text": "The chain cannot confirm it, so count the supply instead and match it against the stated backing."
           },
           {
-            "id": "d",
+            "id": "c",
             "text": "The supply is public, and a supply anyone can count is what makes a one for one claim verifiable."
+          },
+          {
+            "id": "d",
+            "text": "The chain shows the token entries only, and whether the pesos exist is a claim it cannot check."
           }
         ],
-        "correct_option_id": "b",
+        "correct_option_id": "d",
         "competency": "chain_basics",
         "explanation": "A token is a record somebody issued, and it means something only if somebody off the chain honours it. The chain can tell you how many units exist and where they moved. It cannot look inside a bank account and it cannot make anyone hand over pesos, so counting the supply tells you only what was issued: it is one half of a sum whose other half is not on the chain at all. Anything described as backed is a promise made by a company, and the promise is worth what that company is worth."
       },
@@ -824,22 +824,22 @@
         "options": [
           {
             "id": "a",
-            "text": "It fails both ways: one copy, and it travels in the purse she carries every day."
-          },
-          {
-            "id": "b",
             "text": "Little, since paper is offline and carrying it is what keeps it out of a cloud account."
           },
           {
-            "id": "c",
+            "id": "b",
             "text": "It fails both ways, so a photo of the sheet kept on her phone would close the gap."
           },
           {
-            "id": "d",
+            "id": "c",
             "text": "Only the loss half, so a copy typed into a note in her email would close the gap."
+          },
+          {
+            "id": "d",
+            "text": "It fails both ways: one copy, and it travels in the purse she carries every day."
           }
         ],
-        "correct_option_id": "a",
+        "correct_option_id": "d",
         "competency": "wallets_custody",
         "explanation": "A backup has to survive two opposite events: somebody finding it, and it disappearing. One copy in a bag that travels handles neither, so naming both failures is only half the work and the remedy is the other half. A photo syncs to a cloud account on its own, and a note in email puts the wallet behind one password, so both of those answer the loss half by widening the theft half. Copies in more than one place she controls handle both, and paper stays the right material. Then there is the part nobody wants to raise: if she dies and nobody can find that sheet, the outcome is the same as the sheet burning."
       },
@@ -848,22 +848,22 @@
         "options": [
           {
             "id": "a",
-            "text": "Because it holds the keys, the pause protects users during heavy traffic, so the move is to wait."
+            "text": "While it holds the keys, what you have is a claim on that company rather than holdings you control."
           },
           {
             "id": "b",
-            "text": "Since your holdings sit at your own address, they stay visible on the chain right through the pause."
+            "text": "Because it holds the keys, the pause protects users during heavy traffic, so the move is to wait."
           },
           {
             "id": "c",
-            "text": "While it holds the keys, what you have is a claim on that company rather than holdings you control."
+            "text": "Since your holdings sit at your own address, they stay visible on the chain right through the pause."
           },
           {
             "id": "d",
             "text": "Because the notice is public it is a commitment, so the balance is protected whatever happens next."
           }
         ],
-        "correct_option_id": "c",
+        "correct_option_id": "a",
         "competency": "wallets_custody",
         "explanation": "This is chapter 1 and chapter 2 meeting. If the platform holds the keys there is no address of yours to look at: your balance is a number inside that company's own system, and what you hold is a claim against it. The claim survives only as long as the company does, so a pause is where the difference stops being theoretical rather than a sign of heavy traffic. A line saying funds are safe is written by the party you would be making the claim against, and it is not insurance."
       },
@@ -872,22 +872,22 @@
         "options": [
           {
             "id": "a",
-            "text": "Moving it to keys he holds himself takes the company out, and leaves nothing worse behind it."
+            "text": "Each choice trades one risk for another, and deciding to hold none of it is also a real answer."
           },
           {
             "id": "b",
-            "text": "Leaving it where it is passes the risk to a registered platform, which is what registration is for."
+            "text": "Moving it to keys he holds himself takes the company out, and leaves nothing worse behind it."
           },
           {
             "id": "c",
-            "text": "Each choice trades one risk for another, so the sensible default is to split it evenly across both."
+            "text": "Leaving it where it is passes the risk to a registered platform, which is what registration is for."
           },
           {
             "id": "d",
-            "text": "Each choice trades one risk for another, and deciding to hold none of it is also a real answer."
+            "text": "Each choice trades one risk for another, so the sensible default is to split it evenly across both."
           }
         ],
-        "correct_option_id": "d",
+        "correct_option_id": "a",
         "competency": "wallets_custody",
         "explanation": "Both directions cost something and neither one is the safe option. Leave the keys with a platform and you get help when you fumble, along with the risk that the company freezes, fails or is breached. Hold them yourself and no company can lose them for you, but every mistake is now yours alone and permanent. Splitting is a real arrangement for someone who has decided to hold crypto, and it is not a default: it hands him both failure modes at once for an amount he did not ask for. There is a third answer this course will not talk anyone out of: holding none is a position, and finishing this course and staying out is a legitimate result. This is education, not investment advice."
       },
@@ -896,22 +896,22 @@
         "options": [
           {
             "id": "a",
-            "text": "Anyone who ties that one address to you can then read everything it has ever done."
-          },
-          {
-            "id": "b",
             "text": "An address stays private in practice, since it is a long string with no name on it."
           },
           {
-            "id": "c",
+            "id": "b",
             "text": "The risk is that an earlier payer could send from it, which is why addresses get retired."
+          },
+          {
+            "id": "c",
+            "text": "Anyone who ties that one address to you can then read everything it has ever done."
           },
           {
             "id": "d",
             "text": "There is none, because entries stop being readable once a transfer is old enough."
           }
         ],
-        "correct_option_id": "a",
+        "correct_option_id": "c",
         "competency": "chain_basics",
         "explanation": "A public chain is pseudonymous, not anonymous. The address hides your name until one thing connects it to you, and after that it hides nothing, backwards through the whole history: what you were paid, by whom, and where it went next. Nobody can spend from it without your key, so theft is not the risk here. Being read is, which is why some people keep separate addresses for separate payers."
       },
@@ -924,18 +924,18 @@
           },
           {
             "id": "b",
-            "text": "No wallet and no support desk ever needs that phrase, so typing it hands the whole wallet over."
-          },
-          {
-            "id": "c",
             "text": "Do not enter it. Reply to the SMS and continue only if a person answers with your account details."
           },
           {
-            "id": "d",
+            "id": "c",
             "text": "Enter it, since restoring protection does not move any funds out of the wallet by itself."
+          },
+          {
+            "id": "d",
+            "text": "No wallet and no support desk ever needs that phrase, so typing it hands the whole wallet over."
           }
         ],
-        "correct_option_id": "b",
+        "correct_option_id": "d",
         "competency": "risk_scams",
         "explanation": "Treat every request for a recovery phrase as fraud, with no exceptions, including one that arrives looking exactly right. Refusing to type it is the start and not the finish: a domain, a logo and a page design are the cheapest parts of the operation to copy, so a matching domain proves nothing, and a message you did not ask for cannot be verified by replying to it. The phrase hands over the wallet rather than one payment, which is why nothing about the balance makes typing it safer. If you want to know whether anything is wrong, close the message and open the app yourself."
       },
@@ -944,22 +944,22 @@
         "options": [
           {
             "id": "a",
-            "text": "Signing costs a small fee and moves no funds, so the worst outcome is losing that fee."
+            "text": "One signature can hand a site standing permission to move whatever that wallet holds later on."
           },
           {
             "id": "b",
-            "text": "Do not sign from your main wallet. Sign from a second device, since a drain reaches only that device."
+            "text": "Signing costs a small fee and moves no funds, so the worst outcome is losing that fee."
           },
           {
             "id": "c",
-            "text": "An unexpected token is harmless, so claim it and move the proceeds out straight afterwards."
+            "text": "Do not sign from your main wallet. Sign from a second device, since a drain reaches only that device."
           },
           {
             "id": "d",
-            "text": "One signature can hand a site standing permission to move whatever that wallet holds later on."
+            "text": "An unexpected token is harmless, so claim it and move the proceeds out straight afterwards."
           }
         ],
-        "correct_option_id": "d",
+        "correct_option_id": "a",
         "competency": "risk_scams",
         "explanation": "You are not being asked to send anything, which is exactly why it works. You are being asked to grant permission, and permission stays granted after you close the tab. A second device does not help, because the permission is attached to the address rather than to the phone or laptop that signed for it, and the same keys reach the same address from anywhere. The wallet can be emptied minutes later or weeks later, and because the draining transfer carries your own signature it looks entirely ordinary on the chain. Taking a permission back needs another transaction and another fee. Nothing that arrives unasked in a wallet is worth the tap it takes to claim it."
       },
@@ -968,11 +968,11 @@
         "options": [
           {
             "id": "a",
-            "text": "Both fees are the same crime, so report it and treat anyone wanting money up front as the second wave."
+            "text": "Pay the recovery fee only, since it is small against the balance and the first fee is gone regardless."
           },
           {
             "id": "b",
-            "text": "Pay the recovery fee only, since it is small against the balance and the first fee is gone regardless."
+            "text": "Both fees are the same crime, so report it and treat anyone wanting money up front as the second wave."
           },
           {
             "id": "c",
@@ -983,7 +983,7 @@
             "text": "Pay nothing more, and ask the platform to reverse the release fee on the chain instead."
           }
         ],
-        "correct_option_id": "a",
+        "correct_option_id": "b",
         "competency": "risk_scams",
         "explanation": "Money that will not come out until you put more in is not stuck, it is gone, and the fee was the actual product. The offer that follows a public post about a loss is the same crime finding him a second time, because somebody who has lost money and said so is the cheapest lead there is. Asking for payment on results sounds careful and changes nothing: nobody can move a confirmed entry, so there is no work to be paid for either way. Nor can the platform reverse anything on the chain, since a confirmed transfer is settled and the platform is not the network. What is worth doing is writing down the transaction and the addresses, screenshotting everything before it is deleted, reporting the entity to the SEC, and filing with the PNP Anti-Cybercrime Group or the NBI Cybercrime Division."
       },
@@ -996,18 +996,18 @@
           },
           {
             "id": "b",
-            "text": "Nothing whatever, because a register only lists the firms that applied for it and paid the fee."
+            "text": "That the firm carries a registered firm's obligations, and nothing at all about a fixed return."
           },
           {
             "id": "c",
-            "text": "The safety of the deposit, since a registered firm has to cover client money the way a bank does."
+            "text": "Nothing whatever, because a register only lists the firms that applied for it and paid the fee."
           },
           {
             "id": "d",
-            "text": "That the firm carries a registered firm's obligations, and nothing at all about a fixed return."
+            "text": "The safety of the deposit, since a registered firm has to cover client money the way a bank does."
           }
         ],
-        "correct_option_id": "d",
+        "correct_option_id": "b",
         "competency": "risk_scams",
         "explanation": "Checking on the regulator's own site was the right move, and it answers a narrower question than it feels like it answers. Registration means a firm is on a register and carries the obligations that come with being on it. It is not a rating, not an endorsement of anything the firm sells, and not a statement that your money is safe there, so it is not nothing either. Registered firms can still be poor places to keep money and can still fail. Two regulators publish material here, the BSP and the SEC, and the line between them has moved before, so ask which one registered the firm and check that one. A fixed monthly return is the claim to look at now, and crypto is not covered the way a PDIC-insured peso deposit is."
       },
@@ -1044,18 +1044,18 @@
           },
           {
             "id": "b",
-            "text": "Yes fully, since an entry on the chain establishes that the box is the genuine article."
+            "text": "Yes in shape, though the record is only ever as honest as whoever scans the first box in."
           },
           {
             "id": "c",
-            "text": "Yes in shape, though the record is only ever as honest as whoever scans the first box in."
+            "text": "Yes fully, since an entry on the chain establishes that the box is the genuine article."
           },
           {
             "id": "d",
             "text": "Yes, provided every buyer runs a node, which is the part that makes an entry trustworthy."
           }
         ],
-        "correct_option_id": "c",
+        "correct_option_id": "b",
         "competency": "chain_applications",
         "explanation": "Several companies who do not answer to each other, sharing one history that none of them can quietly rewrite, is one of the honest uses. The limit is the one from chapter 1. A chain cannot check whether what was written into it is true, so if a counterfeit box is scanned in at the start, or a real code is copied onto a second box, the chain now carries a permanent and verifiable record of a lie. Ask who writes the first entry, and what stops them writing a false one."
       }

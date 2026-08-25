@@ -1,0 +1,929 @@
+{
+  "slug": "project-and-client-operations",
+  "title": "Project and Client Operations",
+  "subtitle": "Agree the work, plan it, run it, close it out",
+  "level": "professional",
+  "category": "Operations",
+  "format": "Self-paced online",
+  "summary": "The operating system for a freelancer or VA running several clients at once. You learn to turn a vague request into a written scope, break that scope into pieces with dates you can actually keep, run a status system that survives a busy week, handle change requests without eating them, say early when something is going to slip, and close a project so cleanly it brings back more work. Twelve lessons built around the way client work really goes wrong, which is quietly and in the gaps between messages.",
+  "description": "You have outgrown the notes app. Two clients was memory. Four is a system, and the difference shows up first as a missed date you did not see coming, then as a client who starts asking for updates before you send them. This course is that system. It starts before the work exists, at the intake conversation, because that is where the trouble gets in, and ends after delivery, at the handover and the close-out message that turns a finished job into the next one. In between: scope on one page with the exclusions written down, a plan made of pieces you can finish and check, a working date on every piece and a client-facing date on every deliverable instead of one hopeful date, a status vocabulary with real definitions, a weekly update the client stops having to ask for, a reply to a change request that neither refuses nor absorbs it, and the early signals that tell you a project is in trouble while there is still time to say so. Nothing here needs a paid tool. The whole thing runs on a shared document if that is what you have.",
+  "skills": [
+    "Client intake and qualifying",
+    "Written scoping and exclusions",
+    "Work breakdown and sequencing",
+    "Estimating and capacity planning",
+    "Status tracking and weekly rhythm",
+    "Client updates and escalation",
+    "Change requests, handover and close-out"
+  ],
+  "outcomes": [
+    "Turn a vague client request into a one page scope carrying deliverables, exclusions, client dependencies, assumptions and a written definition of done, and get it confirmed before you start",
+    "Break agreed work into pieces that can be finished and checked, estimate them from your own record of how long things actually took, and give every piece a working date and every deliverable the date the client is told",
+    "Lay every client's committed work on one calendar and answer honestly what you can carry before you agree to a new job",
+    "Run a status system with defined states and a fixed weekly reset, and send a client update they stop having to ask for",
+    "Answer a change request with what it moves rather than a flat yes or no, raise a slipping date early with options, and close a project with a handover and an ask that brings back more work"
+  ],
+  "roles": [
+    "Virtual assistant",
+    "Freelancer running several clients",
+    "Online business manager or client operations lead",
+    "Agency or team coordinator"
+  ],
+  "price_php": 1499,
+  "is_free": false,
+  "passing_score": 70,
+  "credential_prefix": "PCO",
+  "sort_order": 13,
+  "requires_assignment": true,
+  "modules": [
+    {
+      "slug": "chapter-1-agreeing-what-the-work-actually-is",
+      "title": "Agreeing what the work actually is",
+      "description": "The day a project is agreed is the day much of its trouble is decided. This chapter is the intake conversation, the one page scope that comes out of it, and the written definition of done that decides who gets to say the job is finished.",
+      "lessons": [
+        {
+          "slug": "the-intake-conversation",
+          "title": "The intake conversation, and what it is for",
+          "content_mdx": "# The intake conversation, and what it is for\n\nRhea runs three clients from a spare room in Bacolod. A message lands on a Tuesday night: \"Hi Rhea, saw your page. Do you handle social media? Our clinic needs help, medyo magulo kasi ngayon. Can you send your rates?\"\n\nThat message carries one fact and hides four. The fact is that somebody wants help. Hidden are what the clinic wants to be different afterwards, who is allowed to say the work is finished, what already exists that you will inherit, and why whatever they tried before stopped.\n\nAnswering with a price now is guessing, and a guess you put in writing is a number you get held to. The intake conversation is what happens instead.\n\n## It is a filter, and it runs both ways\n\nAn intake call is not a sales pitch. You are finding out three things: whether the work is real, whether it fits inside a normal week alongside what you already owe other clients, and whether this is someone you can hold a written agreement with. The client is deciding too, and being visibly the person who asks the useful questions does more for you than any pitch.\n\nA short call, or a round of messages if a call is not going to happen. Write the answers down while they talk. The next lesson turns them into a page.\n\n## The questions that surface work nobody mentioned\n\n**What has to be different when this is finished?** Not \"manage our page\". Something you could check afterwards. \"We stop missing enquiries that come in at night\" is checkable. \"More engagement\" is not, and the space between those two is where a project quietly grows.\n\n**Who else has to say yes?** Ask for a name and a role, not a yes or no. \"Just me\" from someone who then forwards every draft to a doctor who never appears in the thread is the answer that costs you dearest later, and it is always discovered late.\n\n**What exists already?** An account set up by a nephew who has since moved to Dubai. A half-migrated spreadsheet. A previous VA's folder nobody can open. Inherited material is work, and it is work you do for free unless you find it now.\n\n**What happens to this after I hand it over?** If the answer is that you keep running it, you are discussing a retainer. If it is that the receptionist takes over, you have just discovered that a walkthrough and a written guide are part of the job.\n\n**What was tried before, and why did it stop?** The answer tells you what the client believes went wrong. Sometimes it is honest. Sometimes it quietly tells you that the last person also could not get an approval out of them.\n\n**Where did the date come from?** A date tied to a clinic anniversary or a mall opening is real and immovable. A date somebody picked because it sounded soon is negotiable. You cannot tell which one you are looking at unless you ask.\n\n## Reading the signals\n\nA painful project announces itself during intake.\n\nNobody can name the approver. The deadline was set by a person who is not in the conversation. The request grows while you are still asking about it, so a page audit becomes a page audit plus a logo plus a booking form. The client describes the result only as a feeling: professional, clean, malinis tingnan. Somebody says \"we can figure out the details as we go\", which sounds cooperative and means you will be figuring them out alone, unpaid, at eleven at night.\n\nOne signal is a note to yourself. Two or more and the job needs everything written down tighter than usual before you touch it, or it needs declining.\n\n## Saying no so the door stays open\n\nPaolo, a bookkeeper in Cebu, gets asked to clean up two years of records before a deadline he can already see he cannot hit alongside his existing clients. He replies the same day. He names what he understood the job to be. He says plainly that he cannot take it in that window. He gives one useful thing for free, which is to start by pulling the bank statements for the whole period whoever ends up doing it. He says when he would have room.\n\nNothing in that reply is an apology, an excuse or a maybe. A fast, warm no gets remembered as competence, and the referral arrives later. A slow no, or a yes you regret in week two, gets remembered as something else.\n\nIntake ends with a decision you make on purpose: this is worth writing down, or it is not.\n",
+          "duration_minutes": 9
+        },
+        {
+          "slug": "the-scope-on-one-page",
+          "title": "The scope on one page",
+          "content_mdx": "# The scope on one page\n\nRhea has her intake answers in a notebook. Now they have to become one page that she and Cielo can both hold to.\n\nIf you have taken Freelancing Fundamentals you have already written deliverables, exclusions and rounds of changes onto a page in order to quote it. This lesson is the same page seen from the other side, the side that decides whether your dates survive, so it spends its time on the three parts that do that: dependencies that name a person and a date and a consequence, assumptions somebody could prove false, and keeping one copy.\n\nThe page is not a quote. What the work costs, and how you arrive at a number, belongs to Freelancing Fundamentals.\n\nThe page has six parts: the deliverables, the exclusions, how many rounds of changes are included, the things you need from the client, the things you are assuming, and the approval line the next lesson deals with.\n\n## Deliverables are objects, not activities\n\nWrite each deliverable as a thing somebody could receive. Not \"manage the page\" but twelve captions with their posting dates. If a line cannot be handed over, it is an activity, and an activity has no finish line in it.\n\n## The exclusions list is the part that works\n\nYour deliverables tell the client what they get. Only the exclusions tell them what they do not, and that is where every awkward conversation in month two starts. So write down the things a reasonable person might have assumed were included.\n\nFor the clinic: photography is not included and the photos come from the clinic, replying to comments and messages is not included, boosting posts is not included and neither is the spend behind it, and nothing is produced for a second branch until the branches are confirmed.\n\nNone of that is generic. It comes out of the intake conversation, mostly out of the things the client mentioned in passing that you did not include. An exclusion read in week one is information. The same fact in week six, after the client has told the doctor it was covered, is a dispute.\n\n## Changes are countable\n\nSay how many rounds of changes are included, and say what a round is: one consolidated set of comments per deliverable, sent in one message. Then say what happens after that. A further round is a change request, and chapter four is where handling one lives. Without a number, changes have no edge, and unlimited tinkering is the piece of scope that eats the job.\n\n## Dependencies have a thing, a person and a date\n\n\"Brand assets\" is not a dependency. It is a wish.\n\n\"The logo files and the two clinic photos, from Cielo, in a shared folder I can open without requesting access, by Friday\" is a dependency. It has an object, an owner and a date, and any one of the three missing makes it untrackable. Leave the person off and the item belongs to \"the client\", which is nobody. Leave the date off and it is due whenever you next get anxious about it.\n\nList every one of them. Access to the page. The list of services with correct spelling. The receptionist's availability for a half hour walkthrough. Approval on the first batch before you build the rest.\n\nThen write the consequence beside each one, before anything is late: if the photos arrive after Friday, the first batch moves by the same number of days. Written in advance, that sentence is a plan and the client agreed to it. Written after the photos are late, the identical sentence is an argument you are having on a Monday.\n\n## Assumptions are statements someone could prove false\n\nHere is the test. Could the client tell me tomorrow that this is wrong? If nobody could ever contradict it, it is not an assumption, it is padding.\n\n\"We will do our best to deliver on time\" fails the test. Nobody can contradict it and it commits nothing.\n\nFor Rhea's clinic, these pass: the content is in English only. There is one branch. Feedback comes back in one consolidated message rather than in replies trickling through the week. The photos are of the clinic's own staff and stock images are not wanted. Each of those, if it turns out to be false, changes how long the work takes.\n\nThat is the whole point of writing them. When an assumption fails, you are not arguing about what was implied. You have a written statement, the client can see it was the basis of the dates, and the conversation becomes what moves rather than whose fault it is.\n\n## Keep it to one page, and keep one copy\n\nPut a date at the top. Then the work in a sentence or two, the deliverables, the exclusions, the number of rounds, the dependency list, the assumptions, and the approval line the next lesson deals with. That fits on a page, and a page gets read.\n\nThen keep one copy. Scope that lives scattered across a chat thread belongs to whoever has the better memory, and on a bad month that is the client. If the whole arrangement runs through Messenger or Viber, the page is one message you can scroll back to. Pin it if the thread allows it.\n\nWhen something changes, you send the changed page again with a new date on it. You do not correct it in a reply three days later, because a reply does not replace the version the client is still working from.\n\n## What the page is actually for\n\nIt is not paperwork and it is not a defence. It is the input to everything after this.\n\nThe pieces you break the work into come off this page. The dates you commit to are only defensible because the dependency list is on it. The status board's waiting-on-client column is this dependency list, still alive, weeks later. And when a change request arrives later in the project, this is the thing it gets measured against, which is the only way anyone can tell that it is a change at all.\n\nRhea's version for the clinic ran to eleven lines. She sent it as a message at nine that night. Cielo replied the next morning with a correction, that there are two branches and not one, which was worth finding out before Rhea had planned a month of content for the wrong number of locations.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "what-done-looks-like",
+          "title": "What done looks like, in writing",
+          "content_mdx": "# What done looks like, in writing\n\nRhea sends the finished set of captions on a Thursday. Cielo replies: \"Thanks! Pero pwede kayang mas warm yung tone?\" Then, on Monday, could the clinic's landline be added to all of them. Then, the following week, the doctor has seen them and wants the promo ones removed.\n\nNone of that is unreasonable behaviour. It happens because nobody wrote down what finished meant, so finished is whatever the last person to speak thinks it is.\n\n## Done is a condition, not a feeling\n\nFor every deliverable, write the state it has to be in and where it has to be. Not \"captions\" but: twelve captions in the shared sheet, each with its posting date and the filename of the image it goes with, proofread, using the doctors' correct titles.\n\nThat is a condition somebody can check. Two people reading it would agree on whether it has been met, which is the only real test of a definition of done.\n\nDo this for each deliverable, not for the project as a whole. A project-level \"client is happy\" is not a condition, it is a mood, and moods are not deliverable.\n\n## Name one approver\n\nOne person can say the work is finished. Others may comment. One decides.\n\nAsk during intake and write the name into the page. When the client says the doctor, the office manager and the doctor's wife all have to approve, do not argue and do not agree to three sign-offs either. Ask one question: when the three of you disagree, who decides? There is always an answer. Write that name down as the approver and the other two as people whose comments get collected before it goes to them.\n\nIf someone new appears after approval with fresh feedback, that is not a failure of the page. That is a change request. What the page bought you is the ability to tell that it is a change.\n\n## When the standard is a feeling\n\nClients say professional, clean, modern, warm. None of those are testable, and asking someone to define professional makes them feel examined.\n\nConvert it instead. Ask for two things they would be happy with and one they would not, and what specifically is wrong with the one. Ask what the clinic should never sound like. Then write their own words into the definition of done: sounds like the clinic and not like a mall promo, no shouting punctuation, the doctors named with their titles, no stock photos of foreigners in scrubs.\n\nYou have not made the client define professional. You have taken their examples and turned them into a line you can both check the work against.\n\n## Sending it for confirmation\n\nPlain language. No legal costume, no \"the aforementioned deliverables\", because that reads as distrust and invites the client to send it to someone who reads contracts for a living.\n\nThe message is short. Here is what I understood the work to be. Here is what I need from you and when. Here is what I am assuming. Cielo approves, and I will collect comments from the doctor before sending anything to her. If that matches, reply confirmed and I start Monday.\n\nThe last sentence matters. You asked a closed question with a named next action, so the reply either confirms or corrects. A message ending in \"let me know your thoughts\" gets a thoughtful silence.\n\n## The thumbs up\n\nA thumbs up on a message that contains the whole thing is a confirmation you can point back to. A thumbs up on \"sent you the scope, have a look\" is a receipt that the message arrived, and nothing else.\n\nSo put the substance in the message you want reacted to, rather than behind a link. If you still only get a reaction on something vague, restate the one line that matters and ask a closed question about it: just to confirm before I start, you are the approver and the photos come by Friday, is that right?\n\nAnd when the client says all this is not needed, magtiwala na lang tayo, agree with them warmly and send the page anyway. It is not there because you distrust each other. It is there so that in week five neither of you has to rely on remembering a Tuesday night conversation.\n",
+          "duration_minutes": 9
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Cielo tells Rhea to start with an audit of the clinic's page and says the rest can be figured out as they go along. Rhea wants the work. What does she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Take the audit as its own small job, write down what it produces and what it does not, and treat anything after it as work still to be agreed."
+            },
+            {
+              "id": "b",
+              "text": "Start the audit right away to build trust, keeping a private list of the extra things she notices so she can raise all of them together."
+            },
+            {
+              "id": "c",
+              "text": "Ask Cielo to describe the whole engagement in detail first, and hold off on starting anything at all until the full picture has been written down."
+            },
+            {
+              "id": "d",
+              "text": "Take the audit and add a general line saying that further work will be charged separately, which covers whatever the clinic decides to ask for next."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "scoping_and_pricing",
+          "explanation": "An audit with a written end point is finishable, because chapter one's page says what it produces and what it does not, and that makes everything after it visibly a separate decision rather than a slide. Starting without that end point means the extra things she notices have nowhere to be recorded as extra. Refusing to start until the whole engagement is mapped loses work that was real, and a vague line about further charges settles nothing when the request actually arrives."
+        },
+        {
+          "prompt": "On the intake call Cielo says she is the only one Rhea needs to deal with. Twice in the same call she also says she will run it past Doc first. What should Rhea do before anything else?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Note it as a small risk and proceed with Cielo, since she is the one who made contact and is clearly the person running this project day to day."
+            },
+            {
+              "id": "b",
+              "text": "Ask for the doctor's name and whether he is the one who approves, then write whichever answer she gets into the page before the work begins."
+            },
+            {
+              "id": "c",
+              "text": "Ask Cielo to bring the doctor onto the next call, and hold the start of the project until the two of them have been heard from directly."
+            },
+            {
+              "id": "d",
+              "text": "Add an extra round of revisions to the plan, so there is room absorbed in advance for the changes the doctor is likely to ask for at the end."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "scoping_and_pricing",
+          "explanation": "A contact who keeps mentioning someone else is telling you where the real approval sits. You do not need the doctor in the room, and demanding it can stall a job that would have been fine. You need the name and a written answer to who decides. Absorbing the problem into extra revisions pays for the confusion out of your own hours and still leaves nobody accountable for saying finished."
+        },
+        {
+          "prompt": "Paolo is asked to clean up two years of records before a deadline he can see he cannot hit alongside his current clients. He does not want to burn the contact. What is the best reply?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Say he is checking his schedule and will confirm within the week, which buys time in case one of his current clients goes quiet and frees him up."
+            },
+            {
+              "id": "b",
+              "text": "Quote a figure high enough that he would be willing to work the weekends for it, and let the client decide whether the deadline is worth that to them."
+            },
+            {
+              "id": "c",
+              "text": "Take it and start immediately, since a rush job for a new client is exactly the kind of favour that turns into a long relationship afterwards."
+            },
+            {
+              "id": "d",
+              "text": "Reply the same day: what he understood the job to be, that he cannot hit that date, one useful pointer given for free, and when he would have room."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "finding_work",
+          "explanation": "A fast, warm no reads as competence and keeps you on the list for the next job. Going quiet while you hope your schedule changes wastes the client's week and yours. Pricing a job so high that it hurts is still a yes to work you cannot deliver, and taking a rush job you can already see you will miss buys one project and loses the relationship it was supposed to build."
+        },
+        {
+          "prompt": "Rhea is writing the client dependency list for the clinic. Which line will still be usable three weeks from now, when something has not arrived and she needs to say so?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Cielo sends the logo files and the clinic photos as early in the schedule as she can manage, so that the first batch is not held up."
+            },
+            {
+              "id": "b",
+              "text": "Cielo sends the logo files and two clinic photos by Friday, in a folder Rhea can open. If they land late, the first batch moves."
+            },
+            {
+              "id": "c",
+              "text": "Cielo sends the brand assets by Friday, and Rhea sends her a written reminder every Monday until each outstanding item arrives."
+            },
+            {
+              "id": "d",
+              "text": "Cielo sends the logo files and two clinic photos by Friday, and both sides accept that late materials may affect the dates."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "scoping_and_pricing",
+          "explanation": "A dependency needs an object, a named person and a date, and the consequence written before anything is late. Only one line here carries all four. The weekly reminder looks like the most organised line on the list and quietly makes the delay Rhea's job to manage. As early as she can manage has no date, so nobody can be late for it. And a general acceptance that lateness may affect dates never says which date moves or by how much, which is the sentence you actually need in week three."
+        },
+        {
+          "prompt": "Rhea is filling in the assumptions section of her one page scope for the clinic. Which of these belongs there rather than in one of the other sections?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Cielo sends the logo files and two clinic photos by Friday, in a folder Rhea can open without requesting access."
+            },
+            {
+              "id": "b",
+              "text": "Twelve captions in the shared sheet, each one carrying its posting date and the filename of the image it goes with."
+            },
+            {
+              "id": "c",
+              "text": "Photography is not included, and the photos used in the content are supplied by the clinic rather than shot by Rhea."
+            },
+            {
+              "id": "d",
+              "text": "Feedback on each batch comes back from Cielo in one consolidated message rather than in replies through the week."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "scoping_and_pricing",
+          "explanation": "An assumption is a statement the client could look at and call wrong, and if it turns out wrong the work genuinely takes longer. Consolidated feedback is exactly that. The other three are all correct lines on the page and all belong under other headings: the photos by Friday are a dependency, with an owner and a date; the captions in the sheet are a deliverable; photography being out of scope is an exclusion. Filing them as assumptions is how a one page scope stops being readable."
+        },
+        {
+          "prompt": "Rhea sends a message saying she has attached the scope and asks Cielo to have a look. Cielo reacts with a thumbs up and says nothing else. What should Rhea do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Treat the reaction as approval and begin, since Cielo has clearly seen the document and a thumbs up from a client is how agreement usually looks."
+            },
+            {
+              "id": "b",
+              "text": "Wait for a proper written reply before starting, and send a follow up in a few days if the clinic has still not responded to the document she sent."
+            },
+            {
+              "id": "c",
+              "text": "Post the substance of the scope in the thread itself, then ask one closed question: you approve and the photos come by Friday, shall I start Monday?"
+            },
+            {
+              "id": "d",
+              "text": "Send a short contract instead, so there is something signed on file and the clinic understands that the scope is a serious document and not a formality."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "professional_communication",
+          "explanation": "A reaction confirms that a message arrived. It confirms agreement only when the message it sits on contains the thing being agreed, so put the substance in the thread rather than behind an attachment and ask something that can only be answered yes or no. Waiting silently costs you the week, and escalating to a contract over a thumbs up reads as distrust for a problem that was really about where you put the words."
+        },
+        {
+          "prompt": "Cielo says the captions need to sound more professional. She cannot say what that means, and looks uncomfortable when Rhea asks her to define it. What should Rhea do next?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ask for two examples she would be happy with and one she would not, and what is wrong with that one, then write her words into the definition of done."
+            },
+            {
+              "id": "b",
+              "text": "Write three versions of each caption in different tones and let Cielo pick her favourite, which shows the range available without needing a definition."
+            },
+            {
+              "id": "c",
+              "text": "Explain what professional writing means for a clinic audience, since Rhea is the specialist here and part of the job is guiding a client's taste."
+            },
+            {
+              "id": "d",
+              "text": "Note professional as the agreed tone in the scope and move on, then adjust as feedback arrives, since tone is a thing people settle by working together."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "professional_communication",
+          "explanation": "Clients cannot define a feeling on demand, but they can always point at examples. Their words about a specific example become a testable line in the definition of done. Producing three versions of everything triples your work and teaches you nothing durable, lecturing a client on taste puts you on the wrong side of the table, and recording professional as the standard just delays the same argument to delivery day."
+        },
+        {
+          "prompt": "The clinic tells Rhea that the doctor, the office manager and the doctor's wife all need to approve the content before it goes out. How should she write the approval line?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Name all three as approvers, and plan to send each batch to the group thread so nothing goes out until every one of them has replied to it."
+            },
+            {
+              "id": "b",
+              "text": "Name the office manager as approver since she is the day to day contact, and let her be the one who manages the other two behind the scenes."
+            },
+            {
+              "id": "c",
+              "text": "Ask who decides when the three disagree, name that person as approver, and note the other two as comments she collects before it goes across."
+            },
+            {
+              "id": "d",
+              "text": "Leave approval open for now and see how the first batch goes, since the real decision maker in a small clinic tends to reveal himself quickly."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "professional_communication",
+          "explanation": "Three approvers means no approver, because nobody carries the decision when they disagree. Asking who breaks a tie is a normal question and there is always an answer. Choosing the contact yourself is a guess that fails the first time the doctor overrules her, and leaving it open means the first batch is where you find out, which is the expensive place to find out."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-2-turning-scope-into-dates-you-can-keep",
+      "title": "Turning scope into dates you can keep",
+      "description": "A scope is not a plan. This chapter turns agreed work into pieces small enough to finish, dates built from your own record rather than optimism, and an honest answer to the only capacity question that matters: can you take this on given everything you already owe.",
+      "lessons": [
+        {
+          "slug": "breaking-work-into-pieces",
+          "title": "Breaking the job into pieces you can finish",
+          "content_mdx": "# Breaking the job into pieces you can finish\n\nRhea does VA work from Bacolod. A client in Silay who sells handwoven bags hires her to \"set up the online store.\" She writes that in her planner as one line with a date four weeks out.\n\nThree weeks later she cannot tell anyone whether she is nearly done or barely started. Not because she has been lazy. Because \"set up the online store\" has no inside. There is nothing in it to be finished.\n\nA scope says what the work is. A plan says what you are doing on Thursday, and whether Thursday is going well. Turning one into the other is this lesson.\n\n## What counts as a piece\n\nThree tests, and a piece has to pass all three.\n\n**It produces something.** Not \"work on the product photos.\" Twelve product photos edited and uploaded. A piece that produces nothing has no finish line in it, so it can only be abandoned.\n\n**Someone else can tell it is done.** Not you, from memory. Anyone looking at the output can see the state it is in. If the only way to know is to ask you, you do not have a piece, you have a feeling about a piece.\n\n**It fits inside about two working days.** Anything longer and you lose your early warning. A piece that runs a week can be four days late before it starts to look late, and by then the four days are gone.\n\nRhea's one line becomes six: product list and prices confirmed, twelve photos edited and uploaded, product pages written, shipping options set up, payment connected and tested with one real order, a short walkthrough recorded for the client's staff.\n\nSix things that can be ticked. On Thursday she knows which one she is on.\n\n## Splitting the ones that are still too big\n\n\"Write the product pages\" for forty products is not two days, so it is not a piece yet. Split it by the thing that repeats. First three pages written and approved as the pattern, then the rest in batches.\n\nThat first batch of three is doing two jobs. It produces three pages, and it tells you how long a page actually takes you, which is what the next lesson is built on.\n\nThe other way to split is by verb. Draft, review, revise, publish. Four small pieces where you had one vague one, and each of them can be pointed at.\n\nThere is a floor to this. If something takes twenty minutes, it is not a piece, it is a step inside one. A plan with sixty lines is a plan you will stop updating by the second week, and a plan nobody updates is worse than no plan, because it lies to you with a straight face.\n\n## Order, and what blocks what\n\nPut every piece on its own line and ask one question of each: what has to be finished before this can start?\n\nPhotos cannot be edited before the photos exist. Product pages cannot be written before the prices are settled. Payment cannot be tested before there is something to buy.\n\nMark the blockers, and mark which kind each one is, because they behave completely differently.\n\n**Blocked by you.** Something else on your own list has to finish first. Annoying, but it is yours. You can move it.\n\n**Blocked by the client.** The photos, the logins, the approval on the first three pages, the answer to a question you asked on Monday. You do not control any of these, and these are the ones that eat schedules whole.\n\nWrite a person's name against every client blocker, not a company. \"Waiting on Marketing\" waits forever. \"Waiting on Ate Dolores for the price sheet\" has someone to follow up with.\n\n## Start where everything else waits\n\nNow look for the piece with the longest queue behind it.\n\nIn Rhea's plan that is the price confirmation. Photos, pages, shipping and testing all sit behind it. It is also the smallest thing on the list and it belongs to somebody else, which is exactly why it is easy to leave until Wednesday.\n\nSo the rule falls out on its own. The pieces other pieces wait behind go first, and the ones that belong to the client go first of all. If Rhea sends the price sheet on day one and it comes back on day nine, she has lost eight working days she cannot get back. If she sends it on day one and it comes back on day two, she has a project.\n\nDo this ordering before you promise anything. It tells you which parts of this job are actually yours to control, and that is the whole difference between a date you can keep and a date you can only hope for.\n\n## Do this now\n\nTake a job you are running right now. Write out its pieces until every one passes the three tests. Draw the blockers. Put a name and a needed-by date on every line that is waiting on the client.",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "estimating-from-your-own-record",
+          "title": "Estimating from your own record, not from hope",
+          "content_mdx": "# Estimating from your own record, not from hope\n\nJoel does bookkeeping catch-up work from Davao. A client asks how long it will take to sort eleven months of unreconciled records. He says three weeks, because three weeks sounds like a serious answer. It takes seven.\n\nAsk him afterwards what went wrong and he can tell you exactly: the bank statements came as phone photos, one month at a time, and half his hours went into typing. Ask him beforehand and he has nothing to say, because he had never written down how long the last catch-up took him either.\n\nThat is the whole problem. Not that his estimate was optimistic. That it was not an estimate at all. It was a number he produced under social pressure while a client waited on a call.\n\n## Keep a record of your own timings\n\nStart a timing log today. Date, client, piece, time started, time finished, and one short note on what made it slow.\n\nThis is not a productivity system and it does not need a tool. A sheet works. A notebook works. The only requirement is that you fill it in near the time, because reconstructing your week on Friday produces fiction.\n\nGive it a month and you can answer questions you currently guess at. How long does one product page take me. How long is a monthly reconciliation for a client with two accounts. How long does a first draft of anything take, as opposed to how long it takes after the client's comments come back.\n\nThe note column ends up being the valuable one. \"Waited on logins.\" \"Photos arrived in a chat thread and I saved them one at a time.\" \"First one for this client, still learning their template.\" Those notes are what turn a slow week into a thing you can plan around next time, instead of a thing that just happens to you again.\n\n## Work time and calendar time are two different questions\n\nSix hours of work is not one day. Your day has a client call in it, a thread you have to answer, an errand, a power cut, a delivery you have to be home for. And you have other clients, which is the subject of the next lesson.\n\nSo estimate twice, in this order.\n\nFirst, how many working hours is this piece, taken from your record. That is a fact about the work.\n\nSecond, how many of those hours actually exist between today and the date, given everything else you already owe. That is a fact about your life, and it is the one people skip.\n\nConfusing the two is how a two-day task lands on Friday of the following week. Track for a fortnight how many hours of real client work your day holds. The number is smaller than you expect, and it is yours, not an average you can borrow from someone else.\n\n## A working date on the piece, a client date on the deliverable\n\nEvery piece gets a working date, which is when you intend to finish it. The client is given a date for the deliverable those pieces add up to, not for each piece, and that is where the cushion lives.\n\nPut the cushion at the end of the stage, visible, as its own line, so you can see what is real and what is spare.\n\nPad twenty pieces a little and tell nobody, including yourself, and you can no longer read your own plan. When a client asks whether the launch can be pulled forward, you have no idea what is real and what is cushion. One deliberate cushion at the end of a stage is something you can spend on purpose. Twenty hidden ones are just fog.\n\nThere is a second reason. Padding you can explain is a plan. Padding you cannot explain sounds like what it is. A person who cannot say why a piece takes six days rather than four sounds like they are guessing, and clients hear it.\n\n## Write the dependency into the date\n\nNever write \"product pages delivered on the 14th\" when the pages need the client's approval on the pattern first.\n\nWrite it like this instead: \"Product pages delivered three working days after your sign-off on the first three, which we need from you by the 5th.\"\n\nLonger and uglier, and it survives contact with reality. When the sign-off arrives on the 11th, nobody has an argument about the 14th, because the 14th was never the promise. The date moved by itself, in public, according to a rule both of you already agreed to.\n\nIt also does something a reminder cannot. It makes the cost of a client's delay visible before the delay happens, which is what actually gets the approval sent on time.\n\n## Say what the date is a date for\n\nA date without a condition attached is two different promises in two heads. Delivered on the 20th, in what state? Draft for review, or the finished thing? Chapter 1 settled what done means for each deliverable. Carry that word onto the date, so \"delivered\" cannot quietly change meaning while nobody is looking.\n\n## Do this now\n\nOpen your timing log and add the last three things you finished, from memory, marked as estimates. Then log everything properly from today. Take the deliverable you are working towards, give each of its pieces a working date, give the deliverable the date the client is told, and put the difference between them at the end as its own line.",
+          "duration_minutes": 9
+        },
+        {
+          "slug": "how-much-you-can-actually-carry",
+          "title": "How much work you can actually carry",
+          "content_mdx": "# How much work you can actually carry\n\nKaye runs three clients out of Quezon City. A monthly social media retainer, a website content build, and an online store setup with a launch date the client has already announced to her customers.\n\nA fourth client asks for a small landing page, sometime next month. Good client, pays without being chased, easy to work with. Kaye says yes on a Tuesday afternoon feeling entirely capable.\n\nNext month she is late for two people who did nothing wrong.\n\nNothing about that yes was unreasonable on its own. That is what makes capacity difficult. Every single job fits. Only the pile does not, and the pile is the thing nobody is looking at when the question gets asked.\n\n## One calendar with everything on it\n\nPut every committed piece from every client onto one view of the weeks ahead. Not one board per client. You already have those, and they are useless for this, because a client's board cannot see your other three clients.\n\nYou are not looking for a full week. You are looking for a week that is full twice.\n\nKaye's, laid out: the retainer content batch falls in the first week of every month, always. The website build has a client approval milestone on the 12th, and her own work resumes the day after it lands. The store launches on the 25th, which means testing from the 20th and no slack anywhere near it. The landing page has no date on it at all, which is precisely why it felt small when she was asked.\n\nWritten down, the collision is obvious. It was equally obvious on Tuesday. It just was not written down on Tuesday.\n\n## Retainer work loses quietly\n\nRepeating work looks like nothing on a calendar. It has no deadline drama attached, so it gets pushed by whichever project is shouting, and it can be pushed several times before anyone notices.\n\nBlock the retainer hours first, before you lay in any project work, and treat them as spent. A retainer that keeps losing to louder projects is a retainer that you will lose properly in a few months, and it was the predictable income.\n\n## Commit to a start date instead of a delivery date\n\nWhen the queue is full, you can still offer something honest, and it is not a delivery date.\n\n\"I can start this on the 3rd. I will confirm the delivery date the week before I begin, once I have looked at the material.\"\n\nA start date is a promise about your own calendar, which you control completely. A delivery date is a promise about work you have not examined yet, made from behind a queue you have not finished. One of those you can keep on purpose.\n\nA start date is a real place in a real queue, and it is the one thing you can promise from behind a queue you have not finished. Set it against the alternative you would otherwise be offering, which is a delivery date you have to move twice.\n\n## When a good client asks for a week you have already sold\n\nTwo bad answers first. Do not say you are too busy and leave it there, because that is a closed door with nothing behind it. And do not say yes while privately planning to work the weekend. The weekend is not capacity. The weekend is what you spend when an estimate turns out wrong, and you are about to need it for something else.\n\nSay what you actually have. There are three honest shapes and one of them usually fits.\n\nThe same thing, later. A smaller version of it, now. Or the start date now and delivery after your current commitment clears.\n\nKaye's reply, once she looks at her calendar: \"I cannot get the landing page done before the 25th without putting your launch at risk. Two options. I start it on the 26th and have it with you by the 3rd, or I write the copy this week and build it after the 25th. Which is more useful to you?\"\n\nShe has not refused, apologised at length, or invented a reason. She has shown the client a real constraint and handed them the decision. That conversation is about the work. \"Sorry, I am swamped\" is a conversation about her.\n\n## The job you can start but cannot finish\n\nHere is the yes that catches experienced people. Not the job that lands in a week you can see is full. The job whose first stage fits neatly into next week, and whose later stages land in a month you have not thought about yet.\n\nThe first stage goes well. The client is pleased. Then two months later you are the person who let them down at the end, on the part that mattered.\n\nSo before accepting anything with stages, look at the month the job finishes in, not the month it starts in. If that month is already carrying a launch and a retainer batch, you have not found spare capacity. You have found a debt with a delay on it.\n\n## Do this now\n\nBuild the one calendar. Every client, every committed piece, the next eight weeks. Then look at the last job you said yes to and find the week where it collides with something.",
+          "duration_minutes": 8
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Nico is planning a product description rewrite for a client in Cebu. His plan has one line on it: \"Improve the product descriptions, 4th to the 15th.\" There are forty products. What is the first thing wrong with this line, and what fixes it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nobody can see the state it is in, so he should split it into a first batch of three approved as the pattern, then the rest in later batches."
+            },
+            {
+              "id": "b",
+              "text": "There is nothing in the plan to check against, so he should add a short daily note recording how many descriptions he got through that day."
+            },
+            {
+              "id": "c",
+              "text": "The eleven days are optimistic for forty products, so he should push the end date out and build the plan from a length he can actually hold to."
+            },
+            {
+              "id": "d",
+              "text": "The line does not say what finished means, so he should attach the agreed definition of done for descriptions and keep it as a single line."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "delivery_reliability",
+          "explanation": "A piece has to produce something, be visibly done to somebody other than you, and fit inside about two working days. This line fails all three, which is why on the 12th neither Nico nor the client can say whether it is going well. A longer date and a daily note both leave the line unfinishable. Attaching the definition of done is worth doing and still leaves him with eleven days of invisible progress. Splitting it gives him a pattern he can get approved early and batches he can tick off."
+        },
+        {
+          "prompt": "Bea has kept a timing log for six months. It says a monthly reconciliation for a two-account client runs around five hours, and the note column says \"waited on statements\" in three of those months. A new client with three accounts wants a delivery date every month. What does she commit to?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The slowest of her six logged months, used as the estimate here, so that the date still holds in a month when everything goes wrong at once."
+            },
+            {
+              "id": "b",
+              "text": "The same delivery date she already gives her other clients, since one promise she repeats across every client is far simpler to keep track of."
+            },
+            {
+              "id": "c",
+              "text": "The hours from her log scaled up for the third account, with delivery dated from the day the statements land rather than from month end."
+            },
+            {
+              "id": "d",
+              "text": "The hours from her log, promised as a fixed day of the month, and she chases this client for the statements harder than the others."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "delivery_reliability",
+          "explanation": "Her log gives her two things: how long the work takes, and what made it late. Ignoring the second is how the same delay happens again. Waiting on statements is a client dependency, so the date has to hang off the statements arriving, not off the calendar. Quoting her slowest month buries the real cause under padding she cannot explain, and chasing harder is a plan that depends on her energy rather than on the arrangement."
+        },
+        {
+          "prompt": "Rhea's product pages need the client's sign-off on the first three before she writes the remaining thirty-seven. She has worked out that the writing takes three working days once she has that sign-off. How should the delivery date appear in the plan the client sees?",
+          "options": [
+            {
+              "id": "a",
+              "text": "As the 14th in the plan, with a reminder set for the 4th so that the client's sign-off comes back to her in good time for that date to hold."
+            },
+            {
+              "id": "b",
+              "text": "As the 14th, with a private note to herself that she will move the date quietly if the sign-off has not come back to her by the 5th."
+            },
+            {
+              "id": "c",
+              "text": "Left blank until the sign-off arrives, so that no date is ever promised twice and nothing has to be renegotiated later on."
+            },
+            {
+              "id": "d",
+              "text": "As three working days after the client's sign-off on the first three pages, with the date that sign-off is needed by named beside it."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "delivery_reliability",
+          "explanation": "A date that secretly depends on the client is a date you will be blamed for. Written as a rule instead, it moves by itself when their sign-off is late, in public, by an amount both sides agreed to in advance. Reminders and private notes leave the 14th standing as the promise. Leaving the date blank looks careful and reads to a client as a freelancer who will not commit to anything."
+        },
+        {
+          "prompt": "Rhea's plan for the store has six pieces. The price confirmation is the smallest, takes the client about twenty minutes, and the photos, the pages, the shipping setup and the testing all sit behind it. She has a free day tomorrow. What should she do with it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Draft the price sheet herself from the client's old list, so that the four pieces behind it can start without waiting."
+            },
+            {
+              "id": "b",
+              "text": "Send the price sheet to the client first thing, then spend the rest of the day on whichever piece is not behind it."
+            },
+            {
+              "id": "c",
+              "text": "Start on the photos, since they are the biggest piece in the plan and the only one entirely hers to control."
+            },
+            {
+              "id": "d",
+              "text": "Hold the price sheet and send it later in the week with her other questions, so the client gets one message not three."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "delivery_reliability",
+          "explanation": "The piece with the longest queue behind it goes first, and it goes first of all when the next move belongs to the client. Twenty minutes of their time can cost Rhea a week if it leaves on Wednesday and comes back the following Monday. Guessing the prices from an old list is the one that feels productive and can produce forty pages she has to redo. The photos are real work with nothing waiting behind them, which makes them the right way to spend the day once the price sheet has gone. Batching the questions into one tidy message reads well and starts the clock late."
+        },
+        {
+          "prompt": "Marvin's plan says \"brand guide delivered on the 20th.\" On the 20th he sends a draft for the client to review. The client had cleared their afternoon to hand the final files to their printer. Nobody lied. What was missing from the plan?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A second date, a week after the 20th, for the final files, so everyone could see the 20th was only a step on the way to the real handover."
+            },
+            {
+              "id": "b",
+              "text": "The condition attached to the date, so that the 20th was named as the review draft in the same words the agreed definition of done uses."
+            },
+            {
+              "id": "c",
+              "text": "A note on the line saying that the 20th assumes the client sends no more than one consolidated round of comments back to him on the draft."
+            },
+            {
+              "id": "d",
+              "text": "A message from Marvin on the 19th walking the client through exactly what would be in the delivery the next day and what would not be."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "scoping_and_pricing",
+          "explanation": "Delivered is not one thing. It means draft to one person and final files to the other, and a date with no condition on it lets both readings live side by side until the day arrives. The fix belongs on the date itself, in the words the scope already agreed. A second date helps only once the first one says what it is. The message on the 19th rescues this instance and leaves every other date in the plan carrying the same fault."
+        },
+        {
+          "prompt": "A client offers Divina a three-stage website job. Stage one is light and lands next week, which is quiet. Stages two and three fall in a month that already holds a product launch and her retainer content batch. The client wants an answer today. What should she do first?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Accept it, because stage one clearly fits, and re-plan the two later stages once she has seen how quickly stage one actually goes for her."
+            },
+            {
+              "id": "b",
+              "text": "Accept the whole job and put a visible cushion at the end of stage three, since that is the end of the work and the point of highest risk."
+            },
+            {
+              "id": "c",
+              "text": "Accept it and move her retainer batch a week later that month, since repeating work has no hard deadline attached to a given week."
+            },
+            {
+              "id": "d",
+              "text": "Look at the month stage three lands in before agreeing to any of it, and commit only to as much of the job as that month can really carry."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "scoping_and_pricing",
+          "explanation": "The dangerous yes is not the one for a week you can see is full. It is the job whose first stage fits and whose last stage lands in a month nobody has looked at. Deliver stage one well and you have not avoided the problem, you have made it worse, because now the client is committed too. A cushion at the end does not create hours that are already sold, and moving the retainer is how a retainer gets lost for good."
+        },
+        {
+          "prompt": "A client who pays on time and never haggles asks Kaye for a landing page in a week she has already committed to a store launch. She wants to keep this client. What does she send back?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The constraint and two shapes that would work, a later start or a smaller version now, and a question about which of them is more useful."
+            },
+            {
+              "id": "b",
+              "text": "A yes, with a private plan to make up the hours across the weekend, because a client this good is worth protecting from her scheduling."
+            },
+            {
+              "id": "c",
+              "text": "A note that she is fully booked that week and that they are very welcome to come back to her with this once the next quarter starts."
+            },
+            {
+              "id": "d",
+              "text": "A yes to a reduced version of the page, without mentioning the launch, so the client is not left worrying about how loaded she already is."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "professional_communication",
+          "explanation": "Naming the constraint and offering shapes keeps the conversation about the work, and the client gets to decide, which is what they wanted anyway. Working the weekend spends the thing she will need when an estimate goes wrong, and it teaches the client that her calendar is infinite. Fully booked with nothing behind it is a closed door. Shrinking the job silently means the client never learns why, so they ask for the same week again."
+        },
+        {
+          "prompt": "Ellen quotes eight working days for a first draft. The client replies that their previous freelancer did the same thing in four, and asks why hers takes twice as long. Her eight days are real, and two of them are spent waiting on the client's own photos. How does she answer?",
+          "options": [
+            {
+              "id": "a",
+              "text": "She holds the eight days and tells them her process is more careful and thorough than whatever the previous freelancer was doing."
+            },
+            {
+              "id": "b",
+              "text": "She offers six days as a compromise, since the size of the gap between the two figures is plainly the thing that is bothering the client."
+            },
+            {
+              "id": "c",
+              "text": "She shows what the eight days are made of, piece by piece, including the two that are spent waiting on photos the client has to send."
+            },
+            {
+              "id": "d",
+              "text": "She explains that she builds extra time into every estimate she gives, because client work rarely goes exactly to plan for anyone involved."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "professional_communication",
+          "explanation": "An estimate you can take apart in front of somebody is a plan. One you cannot is a guess, and it sounds like one. Broken out, two of the eight days turn out to belong to the client, which changes the conversation entirely. Claiming to be more thorough is an unprovable comparison. Dropping to six proves the number was negotiable. Admitting to invisible padding on every estimate teaches the client to discount every date she gives them."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-3-a-status-system-you-will-actually-maintain",
+      "title": "A status system you will actually maintain",
+      "description": "The system that fails is the one that is elaborate on the day you build it. This chapter is the smallest arrangement that answers where everything stands, the status words that carry information, the fixed weekly reset that keeps them true, and the fields a client update is read straight off.",
+      "lessons": [
+        {
+          "slug": "one-place-per-client",
+          "title": "One place per client, one view across all of them",
+          "content_mdx": "# One place per client, one view across all of them\n\nMarilou runs four clients from Iloilo: a monthly social retainer for a dental clinic, product uploads for a furniture seller, inbox and calendar work for a client in Sydney, and a small bookkeeping catch up. Her notes app holds every task. It is genuinely a complete list.\n\nIt still failed her. The furniture uploads had not moved for nine days because nobody had sent the product photos, and nothing in that list said so. The item was there. The fact that mattered was not.\n\n## The question the system has to answer in ten seconds\n\nYou do not need an arrangement that tracks everything. You need one that answers three questions the moment somebody asks, including when the somebody is you at 11pm:\n\n- What is due next, and for whom?\n- What is sitting with someone else, and since when?\n- What has not moved in a week?\n\nIf your current setup cannot answer those without you opening five chat threads, it is not a system. It is a memory aid, and memory is the thing that stopped working when you took the fourth client.\n\n## Why the notes app failed\n\nThe reason is specific. A note holds an item. It does not hold a **state**, a **date**, or an **owner of the next move**. So Marilou's list can be complete and still not say that the uploads have not moved since the 6th, that the next move belongs to the seller, and that she has been carrying the delay as though it were hers.\n\nChapter 2 left you with pieces, a sequence, a working date on every piece and a client-facing date on every deliverable. That is the content. This chapter is where it lives and how it stays true.\n\n## Two views, and you need both\n\n**One place per client.** Everything for that client's job: the pieces from your breakdown, their state, the date you work to, the client-facing date of the deliverable each one sits behind, and what each one is waiting on. This is the view you open when that client messages.\n\n**One list you own that spans every client.** Every committed piece across all of them, with its client-facing date and its state. Nobody gives you this one for free, and it is the one that earns its keep, because collisions never appear inside a single client's board. Marilou's Thursday looked fine on each of her four boards. Only on the combined list did she see three deliverables landing in the same afternoon.\n\nKeep the cross-client list short so you will keep it at all. Piece, client, state, client-facing date, whose move it is. That is enough to spot a collision. Detail lives in the client's own place.\n\n## What each row has to carry\n\nWhatever you build it in, each piece needs six things. Anything less and you are back to a list of items.\n\n1. The piece, named as an output rather than an activity. \"Draft the five service pages\" beats \"website stuff\".\n2. The deliverable it belongs to, so you can say where a whole thing stands without adding up in your head.\n3. Its state, from a fixed set of words. That is the next lesson.\n4. Whose move it is next, by name, not by role.\n5. The date you work to, and the client-facing date of the deliverable it belongs to.\n6. When it last changed. A piece untouched for a week is the earliest warning you get, and it costs nothing to capture.\n\n## Choose the tool by the bad day, not the good one\n\nThe system you build on a quiet Sunday gets judged on a Thursday when a client is upset, your niece is sick, and the power is out in your barangay. So the only useful question about a tool is this: will you still update it in under a minute, on your phone, on mobile data?\n\nA shared spreadsheet you actually maintain beats an elaborate board you abandon. Anything with more setup than that has to earn its keep, and tool features change under you anyway, so build the arrangement first and let the tool be whatever holds it.\n\nTwo rules that save arguments later. Keep your working view separate from anything the client can see, because your working view carries your real estimates, your buffers and other clients' names. And build it so one piece is updated in one move. If a change has to be made in three places, two of them will be wrong by Friday.\n\n## Do this now\n\nTake your busiest client. List their remaining pieces with the six fields above. Then start the cross-client list and add every committed piece from every other client to it. If that turns up one collision in the next fortnight, the hour has already paid for itself.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "a-status-that-means-something",
+          "title": "A status that means something",
+          "content_mdx": "# A status that means something\n\nKuya Ramil does bookkeeping catch up work for a construction supplier in Cavite. Halfway through, three months of bank statements had not arrived. On his board that job sat in progress for week after week, next to everything else he was carrying, and in progress was true of all of them and useful about none.\n\n## In progress is where information goes to die\n\nOpen any stalled project and you will find the same row of tasks all marked in progress. It is technically true of every one of them and useless about all of them. Which one is being worked on today? Which one has been sitting since you asked a question and got nothing back? The label does not say, so you have to remember which is which, and remembering is exactly the job you were trying to hand to a board.\n\nA status is worth having only if two people would sort the same task the same way. That takes a fixed set of words and a written definition for each.\n\n## Five states, and what each one means\n\nUse these until you have a specific reason not to. Write the definitions down once, in the same place as your board, so a status cannot quietly drift.\n\n- **Not started.** Agreed, sequenced, and nothing has been done. Nobody is blocked. It simply has not begun.\n- **In progress.** You are working on it now or this week, and the next move is yours. If you cannot name the next thing you would do on it, it does not belong here.\n- **Waiting on client.** The next move belongs to someone on their side and you cannot proceed without it. Carries a name and a date, always.\n- **In review.** You have handed it over and it is being checked against the condition you agreed. The work is finished, the judgement is not.\n- **Done.** It met the agreed condition and the named approver said so. Not \"I sent it\". Not \"they replied thanks\".\n\nWaiting on client and in review both mean the next move is theirs. The line between them is whether more of your work follows. In review means the piece is finished and is being judged against the agreed condition, and nothing more comes from you unless it comes back changed. Waiting on client means you are stopped part way through and will pick the same piece back up. If you cannot tell which, record it as waiting on client, because that is the state that carries a name and a date.\n\nNotice what the definitions do. They make a state a fact about the world rather than a feeling about the work. Notice also that the set is small. Every state you add is another judgement call, and boards die of judgement calls.\n\n## Waiting on client is the most valuable state you own\n\nRamil's stalled catch up was never his slowness. His board said in progress, so it read as slowness, to the client and after a while to him.\n\nTwo fields fix that. Every waiting item carries **who** it waits on, by name, and **since when**. Not \"waiting on client\", which is a shrug. \"Waiting on Ate Cristy, statements for the three months, since the 6th.\"\n\nThat habit does four things at once. It saves you re-reading a thread to work out whose turn it is. It shows you which waits are old enough to chase. It hands you the exact content of one line in your weekly update. And months later, when somebody asks why the job ran long, the record already exists and you are not arguing from memory.\n\n## The weekly reset\n\nA board is not true because you built it well. It is true because you touch it on a schedule.\n\nPick one short slot a week, same day, same time. Go down every item on the cross-client list and do four things:\n\n1. Move anything whose state changed.\n2. Flag anything that has not moved in a week and decide what happens to it.\n3. Check every waiting item against its date and decide whether it needs chasing.\n4. Look at every working date that has already passed, and either change the date or change the plan. A blown date you have not moved is a lie you are telling yourself.\n\nThe reset is short by design. If it runs an hour, either your board carries too much or you are catching up on a week of not touching it. Both are fixable, and both get worse if you skip a week.\n\n## Wording a status for a client's eyes\n\nYour internal words are for you. When a state reaches the client, drop the label and write the fact in one line, without blame and without a story: the item, its condition, and if it is waiting, what was asked for and when.\n\nHow to phrase client messages generally is the client communication course's subject, and that is where to go for the sentences. What this course gives you is the raw material those sentences are made of, which is a status that was true when you wrote it.\n\n## Do this now\n\nWrite the five definitions in your own words, then re-sort every open item into them. The items that resist sorting are the ones nobody ever defined well enough to finish.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "what-goes-into-the-update",
+          "title": "What goes into the update, and where it comes from",
+          "content_mdx": "# What goes into the update, and where it comes from\n\nBea runs three clients and loses most of an afternoon every week to their updates. Not to writing them. To scrolling back through Viber threads and her sent mail, working out what actually happened, because the only place her week exists is in the messages it was made of.\n\n## The update is an output, not a writing session\n\nThat afternoon is not a writing problem. It is that the board was not true, so she is doing the reset and the update at the same time, under time pressure, from memory.\n\nDone properly it runs the other way. The reset makes the board true. The update is then read off the board in minutes, because every line of it already exists somewhere in the system you built in the last two lessons.\n\n## Five lines, and the field each one comes from\n\nA useful update answers five things. Here is where each one lives.\n\nIf you took Client Communication in English, these are the four headings from that course, Done, In progress, Waiting on and Next, read off a board instead of written from memory, with one line added. The fifth line is the one a board makes possible and memory does not: any client-facing date that moved.\n\n**Done.** Every piece that moved into done since the last update. Not what you worked on. What crossed the line and was accepted by the named approver.\n\n**In progress.** The items where the next move is yours. Keep it to the pieces the client would recognise as their deliverables, not your internal sub-steps.\n\n**Waiting on.** Every waiting item, with the name and the date it started waiting. This is why that state carries two fields. Without them you write \"still waiting on your feedback\", which is a nag. With them you write a fact.\n\n**Next.** The not started pieces with the nearest working dates, so nothing you are about to begin arrives as a surprise.\n\n**Any client-facing date that changed.** Client-facing dates only, and only if one moved. Your internal working dates move constantly and are nobody else's business.\n\n## The field that makes the last line possible\n\nA board that only knows the present cannot produce that fifth line, because the old date was overwritten and is gone.\n\nYour board already carries when each item last changed, from lesson one. Name that field properly: **when the item entered its current state**. That is what lets you say how long something has been waiting, and it is what surfaces the piece that has been in progress for eleven days with nothing to show for it.\n\nThen add one more. **The original client-facing date, kept beside the current one.** The moment a date moves, the board knows that it moved and by how much, and you can see it without trusting your memory of what you promised in March.\n\nJen builds websites for clinics in Davao and keeps the original client-facing date beside the current one on every deliverable. When a client asked in month three why launch had drifted, she did not defend herself. She read out the four pieces whose dates had moved and what each one was waiting on at the time. Two were hers. Two were approvals that had sat for over a week. That conversation took five minutes and ended in a decision instead of an argument.\n\n## The fixed day is there for the board, not only the client\n\nSending on the same day each week is usually explained as a courtesy, and it is one. But it has a second job that matters more to you: it puts a deadline on the reset. A board with no deadline decays. A board that has to produce a truthful update on Wednesday gets made true on Wednesday.\n\nWhich is also why you send on a thin week. A week where little moved is not an empty update. It has waiting items with dates on them, pieces that have not moved, and dates that may need to change. That is exactly the week the client learns the most from, and exactly the week freelancers go quiet.\n\n## Never hold it for good news\n\nThe strongest pull in this whole system is the urge to wait. The design is nearly approved, the slipped date might be recovered by Friday, so you hold the update until you can report a win.\n\nWhat the client experiences is silence, then a surprise. The surprise lands worse than the news would have, because now they also know you knew earlier and said nothing. What they should have received is what was true on Wednesday, including the date that moved. Raising a slip properly, with options and an ask, is chapter 4.\n\n## Keep what you sent\n\nSave each update where you can find it, in one thread or one folder. It becomes a dated record of when the client was told what, and that record settles a lot of disagreements before they turn into disagreements. It costs you nothing except not deleting things.\n\n## Do this now\n\nTake your board and mark, beside each of the five lines above, the exact field the line would be read from. Bea's afternoon disappears the week she can do that for all five. Any line you cannot source is a field your board is missing.\n",
+          "duration_minutes": 8
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Marilou keeps a separate board for each of her four clients and updates all of them faithfully. On Monday she realised three deliverables for three different clients were all promised for the same Thursday. Each board had looked fine on its own. What is missing from her arrangement?",
+          "options": [
+            {
+              "id": "a",
+              "text": "One list she owns carrying every committed piece across all four clients with its client-facing date"
+            },
+            {
+              "id": "b",
+              "text": "A colour code on each board marking the urgent deliverables so that the tight weeks stand out early"
+            },
+            {
+              "id": "c",
+              "text": "A message to each of the four clients asking them to confirm which deliverables they treat as urgent"
+            },
+            {
+              "id": "d",
+              "text": "A morning routine where she opens each of the four client boards and reads down the coming fortnight"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "delivery_reliability",
+          "explanation": "A collision between clients cannot appear inside one client's board, because no board knows about the others. Only a list that spans every client shows it. Colour codes and a daily read of four boards still leave you comparing in your head, and asking clients to rank their own work hands your capacity problem to people who cannot see it."
+        },
+        {
+          "prompt": "Ella built an elaborate board with custom fields, subtasks and automations for her three clients. It worked beautifully for a fortnight. Then a busy stretch hit, she stopped touching it, and now it is two weeks stale and she trusts her chat threads more. What should she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Block a long catch-up session every Friday to bring the elaborate board back up to date before the weekend"
+            },
+            {
+              "id": "b",
+              "text": "Go back to the notes app, since a plain list of tasks is clearly the thing she will actually keep on top of"
+            },
+            {
+              "id": "c",
+              "text": "Rebuild it smaller, so that any one piece can be updated in one move from her phone in well under a minute"
+            },
+            {
+              "id": "d",
+              "text": "Give each client access so they can update the pieces that are sitting on their side of the work themselves"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "delivery_reliability",
+          "explanation": "Choose the tool by the bad day, not the good one. If an update costs more than a few seconds you will stop exactly in the week you most need the board. The notes app is the wrong direction, because it holds items but not states, dates or owners. Clients will not maintain your system, and a weekly catch-up leaves the board false for six days out of seven."
+        },
+        {
+          "prompt": "A page of website copy on Jen's board is marked in progress. She finished the draft nine days ago and sent it to the client's marketing head for approval, and there has been no reply. Jen will resume the moment it comes back. How should the piece be recorded?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Moved to waiting on client, naming the marketing head and the date the draft went across for her approval"
+            },
+            {
+              "id": "b",
+              "text": "Moved to in review, since the draft she was asked for is finished and the marketing head is now judging it"
+            },
+            {
+              "id": "c",
+              "text": "Marked done, because the drafting she was responsible for is genuinely finished and is now out of her hands"
+            },
+            {
+              "id": "d",
+              "text": "Kept in progress with a note added in the description saying the draft was sent and is awaiting approval"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "delivery_reliability",
+          "explanation": "A state has to say whose move it is, and both waiting on client and in review say it is theirs. In review is for a piece that is finished and only being judged. Jen resumes this page the moment the approval lands, so more of her work follows, and the state that says so, with a name and a date on it, is waiting on client. Done is false, since nobody has accepted it. A note buried in a description is invisible when you scan the board, and in progress claims the next move is hers."
+        },
+        {
+          "prompt": "Kuya Ramil's board shows a bookkeeping piece as waiting on client: Ate Cristy, three months of bank statements, since the 6th. He is writing the client-facing status line for that piece in this week's update. What should the line say?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nothing about it, because naming a delay the client caused reads as blame and sours a working relationship"
+            },
+            {
+              "id": "b",
+              "text": "That the three months of statements were requested on the 6th and the reconciliation begins once they arrive"
+            },
+            {
+              "id": "c",
+              "text": "That the reconciliation is still pending on their end and he cannot move forward until somebody sends the files"
+            },
+            {
+              "id": "d",
+              "text": "A short paragraph explaining how the missing statements have affected his schedule and the rest of the catch up"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "professional_communication",
+          "explanation": "The client-facing version of a state is a fact: what was asked for, when, and what happens once it arrives. Leaving it out hides the one thing only they can fix. Pending on your end is a nag carrying no information. A paragraph about the damage to your schedule turns their decision into a complaint about you, which makes it easier to ignore."
+        },
+        {
+          "prompt": "Kim's weekly reset is a short slot every Friday afternoon. This Friday she is behind on a deliverable, and the slot is the obvious thing to sacrifice, since she already knows roughly where everything stands. What is the strongest move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Skip it this week and run one longer combined reset next Friday, when the late deliverable is off her plate"
+            },
+            {
+              "id": "b",
+              "text": "Run the reset for the client whose deliverable is late, since her other two clients are quiet at the moment"
+            },
+            {
+              "id": "c",
+              "text": "Move the reset permanently to Monday morning, when the week is empty and nothing competes for the slot"
+            },
+            {
+              "id": "d",
+              "text": "Run it anyway in short form: change the states that moved, re-date what slipped, flag what has not moved"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "delivery_reliability",
+          "explanation": "Roughly knowing where things stand is the condition the reset exists to replace, and it decays fastest in the weeks you are too busy to check. Skipping compounds, because next week's reset then carries a fortnight of drift. Doing one client leaves the cross-client view false. Moving the day is defensible in principle, but decide that in a calm week, not as a dodge on a bad Friday."
+        },
+        {
+          "prompt": "It is Wednesday, Ana's fixed update day for an Australian client. Almost nothing moved this week: two approvals she is waiting on have not come back, and one piece has now sat untouched for eight days behind them. What should she send?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nothing this week, since an update with no progress in it only advertises that the project has not moved at all"
+            },
+            {
+              "id": "b",
+              "text": "The update on Wednesday, naming both approvals, the dates they were sent, and the piece now held up behind them"
+            },
+            {
+              "id": "c",
+              "text": "An apology explaining why the week was slow, what she has been dealing with, and how she plans to catch up next week"
+            },
+            {
+              "id": "d",
+              "text": "A short holding note now, then the real update on Friday once at least one of the two approvals has come back in"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "professional_communication",
+          "explanation": "A thin week is not an empty update. Waiting items with dates, and a piece stalled behind them, are the most useful thing this client could read, because the fix belongs to them. Silence reads as a stalled project. An apology takes responsibility for a delay that is not hers and buries the ask. A holding note plus a later update is two messages doing one message's job."
+        },
+        {
+          "prompt": "Writing three client updates costs Bea most of an afternoon every week, because she reconstructs each week by scrolling back through Viber threads and her sent email. Her board is accurate about the state every piece is currently in. What is missing from it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A note from each of her three clients saying which parts of the work they want to hear about in a given week"
+            },
+            {
+              "id": "b",
+              "text": "A running draft of each client's update that she adds a line to whenever something happens during the week"
+            },
+            {
+              "id": "c",
+              "text": "A shorter update format, so that she is not obliged to reconstruct a whole week of detail for each client"
+            },
+            {
+              "id": "d",
+              "text": "The date each piece entered its current state, named as such, and the original client-facing date beside it"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "delivery_reliability",
+          "explanation": "Bea is reconstructing history because her board holds only the present. The field she already has, when a piece last changed, is the entry date under a vaguer name, and named properly it tells her how long something has been waiting or stuck. Keeping the original client-facing date beside the current one gives her the line about what changed. A running draft is a second system to maintain, and it is the first thing dropped in a busy week. Shortening the update or asking clients what to include does not fix where the facts come from."
+        },
+        {
+          "prompt": "Wednesday is Paolo's update day. He can already tell the store setup will miss the date the client was given, though a hard weekend might partly recover it and he expects to know by Friday. What goes into Wednesday's update?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nothing about the date yet, since flagging a slip he may still recover would worry the client for no good reason"
+            },
+            {
+              "id": "b",
+              "text": "The usual update, sent on Friday rather than Wednesday, so that the date he gives them is one he is confident about"
+            },
+            {
+              "id": "c",
+              "text": "The client-facing date that changed, stated on Wednesday with the rest of what the board says is true this week"
+            },
+            {
+              "id": "d",
+              "text": "A line saying the schedule is under review and that he will confirm a revised delivery date early the next week"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "professional_communication",
+          "explanation": "Any client-facing date that moved is a line in the update, and Wednesday's update reports what was true on Wednesday. Holding it for good news turns a slip into a surprise, and the client also learns you knew earlier. Under review is a way of saying nothing while sounding organised. Moving the send day so the news is nicer teaches the client to stop trusting the day."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-4-changes-trouble-and-the-handover",
+      "title": "Changes, trouble, and the handover",
+      "description": "Nothing runs to plan, so the last chapter is the three moments that decide how a project is remembered: the request that was not in scope, the date you can already tell will slip, and the handover that either ends the relationship or starts the next job.",
+      "lessons": [
+        {
+          "slug": "when-the-client-asks-for-something-new",
+          "title": "When the client asks for something new",
+          "content_mdx": "# When the client asks for something new\n\nAte Mila runs the online store for a skincare seller in Quezon City. Two weeks into a store setup, a message arrives at nine in the evening: \"While you're in there, can you also add a size chart to every product?\"\n\nShe has three honest answers available and one dishonest one. The dishonest one is saying yes at nine in the evening and finding out on Thursday what it cost her.\n\n## First decide whether it is even a change\n\nA clarification makes an agreed piece clearer. A change adds work, replaces work, or makes you redo work that was finished.\n\nThe test is your plan, not the tone of the message. Open your piece list and ask one question: does anything on it have to be added, made longer, or done again? If nothing moves, it is a clarification. Answer it and carry on. Asking which of two agreed layouts you meant is a clarification. Adding a size chart to forty products is not, however small each one is on its own.\n\nDo not decide this from memory. A request that felt tiny in a chat window looks different once you are looking at the pieces it touches.\n\n## Name what it moves before you name anything else\n\nOpen the plan and find every piece the request lands on. New pieces, longer pieces, finished pieces that now need redoing. Add up the working days. Then follow the sequence forward and find the date that moves as a result.\n\nThat last one is the fact the client actually needs. \"That adds about a day\" tells them nothing they can act on. \"That moves the launch review from Tuesday the 14th to Thursday the 16th\" gives them something to decide about.\n\n## The three shapes an answer can take\n\nEvery change reply is one of three arrangements, and none of them is a plain yes with nothing moving.\n\nAdd it and move a date. Swap it for something already agreed, keeping the date. Park it for a second phase once this one closes.\n\nYour job is to lay out the choice and let the client pick. How that reply is worded, so it reads as helpful rather than as a refusal, is the client communication course's subject. What the change is worth and how you charge for it belongs to the freelancing course. What belongs here is the record and the date.\n\n## The change note\n\nKeep one short log per client, sitting with that client's plan. Six columns: date asked, what was asked, what it moves, the options you offered, what was decided, date decided.\n\nAppend to it, never overwrite it. That log is the reason you can answer \"when did we agree that\" in a sentence, instead of scrolling a chat thread for twenty minutes.\n\nNothing starts until the decided line has a date in it. A yes in a chat thread counts. A yes on a call does not, until you have sent the one paragraph summary and they have answered it. Put the whole change in that message, the way chapter one put the whole scope in the message you wanted reacted to, and end it with a question that can only be answered yes or no.\n\n## Where the collision actually lands\n\nThe change note lives with that client's work. The date it moves lands somewhere else, on the one list you keep across every client.\n\nMila's size chart adds two working days to the skincare store. Those two days sit inside the week she already promised a Cavite client their content calendar. The size chart conversation is not finished until she has looked at that week. This is the failure that gets called disorganised later, and it is not disorganisation. It is a change agreed inside one client's world by someone who forgot they live in four.\n\n## The small favour that arrives five times\n\nSometimes absorbing something is the right call. It genuinely takes ten minutes, the client has been easy to work with, and the conversation would cost more than the task.\n\nAbsorb it. Then write it in the log anyway, with the decided line reading \"absorbed, no date moved\".\n\nTwo reasons. The fifth time the same favour arrives, you are not arguing from a feeling that you are being taken advantage of, you are reading a list back. And when the arrangement comes up for renewal, that list is the only evidence any of it happened. Goodwill nobody wrote down is goodwill nobody remembers.\n\nA change nobody put a date against was not agreed. It was mentioned.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "saying-it-early",
+          "title": "Saying a date will slip, early",
+          "content_mdx": "# Saying a date will slip, early\n\nRowena took a bookkeeping catch up for a hardware store in Cebu: eight months of unrecorded transactions, agreed at six weeks. In week four she told the client it would be late. By then there was nothing left to decide. There was an apology, and a client rearranging something on their end that they could have rearranged a month earlier.\n\nThe information that the project was in trouble already existed in week one. She just did not treat it as information.\n\n## The signals are all boring\n\nNone of these look like an emergency. That is exactly why they get past you.\n\n- An approval or an answer is past the date you gave it.\n- Something you need from the client has not arrived, and you have quietly stopped asking for it.\n- The first piece you finished took far longer than your own record of timings said it would.\n- A piece has been sitting in progress for several days with nothing you could hand to anyone.\n- You have stopped opening that client's board.\n\nThe last one is the most reliable and the least comfortable. Avoiding a board is a decision your hands make before you make it. When you notice you are avoiding one, that is the client to look at first.\n\n## Week one has options. Week four has an apology.\n\nEarly, a slip is a choice between things: cut a deliverable, move a date, change the order, chase an approval harder. Late, every one of those has expired and the only thing left is the date going past.\n\nSo the reason to raise it early is not honesty as a virtue. It is that early is when the client can still do something, and a client who was handed a choice remembers the project differently from a client who was handed news.\n\n## What the message contains\n\nFour parts, in this order.\n\n**What happened.** One sentence. No story, no build up.\n\n**What it affects.** Name the deliverable and the date. Not \"the timeline\". A client cannot decide anything about a timeline.\n\n**Two options.** Both real, both things you would actually do.\n\n**What you need from them, and by when.** A decision is a task with a date, like anything else.\n\nNo apology paragraph. One line of regret if the cause was yours, then get to the options. Three paragraphs of sorry asks the client to manage your feelings on top of their own problem, and it reads as somebody who thinks the apology is the deliverable.\n\nTwo options means two. \"Move the date or I work faster\" is one option and a promise you should not make. Real pairs look like this: the full agreed set on a later date, or a reduced set on the agreed date. Or: the piece they need for their launch first, and the rest two weeks after.\n\n## When the delay is theirs\n\nState the dependency and the date it was due, then stop. No blame sentence. The date does the work, and adding a line about how long you have been waiting turns a fact into an accusation the client now has to defend against.\n\nThen give them the arithmetic. Delivery becomes a set number of working days after the statements arrive, so the date moves with them rather than with you. That sentence is far easier to write when the dependency was already on the plan with a date attached, which is why chapter two put it there.\n\n## When you do not know yet how bad it is\n\nRaise the signal anyway, with a date for the answer.\n\n\"The first section took longer than I planned for. I am re-estimating the rest today and will send you either a revised end date or confirmation that the current one holds, by Thursday.\"\n\nThat message costs you nothing and buys you the right to send the second one.\n\n## After the decision\n\nWhatever gets agreed, write it back in one short message and then re-date the board. Cut deliverables come off the piece list. Remaining pieces get their new dates. The status of everything affected changes.\n\nA recovery agreed in a conversation and never written into the plan stops being true within about a week. Then you are running the old plan while the client is remembering a different one, and the next surprise is worse than this one.\n\nGoing quiet is the single move with no upside in it. A client who has not heard from you fills the silence with the worst version, and the worst version is always worse than whatever is actually happening.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "the-handover-and-what-comes-after",
+          "title": "The handover, and the work it brings back",
+          "content_mdx": "# The handover, and the work it brings back\n\nEnding a project badly costs you more than running one badly. A client who had a rough eight weeks and a clean ending will hire you again. A client who had a smooth eight weeks and then spent a month chasing you for a file will not, and will say so when somebody asks about you.\n\n## A handover is a transfer, not a delivery\n\nSending the files is the part everyone does. Four things make it an actual handover.\n\n**Final deliverables where the client can find them.** In their storage, owned by them, named so a stranger could pick the right file. Not a link into your drive that you might reorganise next year.\n\n**Access and ownership out of your accounts.** List every account and tool the job touched: the store, the courier account, the scheduling tool, the analytics, the shared mailbox, the domain. For each one, either the client already owned it and you had access, or you opened it and it now has to sit with them rather than with you. Move the ownership where the account allows it, take yourself off where the job is finished, and write down what you no longer hold.\n\nNot every account can be moved. A payment or merchant account is usually registered against the business's own documents, so it cannot be signed over: the client opens theirs and you come off yours. Check what the specific account allows rather than assuming, and treat an account that cannot move as its own line in the handover.\n\nAccount security is a subject of its own and this is not it. The point here is narrower: a project is not closed while a client's business depends on your email address continuing to exist.\n\n**A short walkthrough for anything they operate themselves.** A recorded screen walk of the thing they will actually do every week, or a page of numbered steps. Short is a requirement, not a style preference. Nobody watches forty minutes.\n\n**Loose ends named.** Everything you know is unfinished, imperfect, or waiting on somebody else, written in a list with who holds it. A loose end you name is a professional's note. The same loose end discovered in March is a complaint.\n\n## The close out message\n\nThe close out message confirms the job is finished against the definition of done you agreed at the start, back in chapter one. That is what it is for. It lists what was delivered against what was agreed, names the loose ends and who owns each one, states what access moved, and asks the named approver to confirm.\n\nThat confirmation is the thing that ends a project. Without it, projects do not end, they fade. A faded project is one a client can reopen six weeks later on the grounds that nobody ever said it was finished.\n\n## Your own review, before anything else\n\nHalf an hour, alone, with the plan open. Four questions.\n\nWhich estimates were wrong, and by how much? Put the real timings into your record, so the next job you quote is built on a bigger sample than this one was.\n\nWhich piece ate the time? There is usually one, and it is usually not the one you were worried about.\n\nWhat did you do that was never in the scope? Each of those is a line in the next scope's exclusions, written in the words the client used.\n\nWhat did the client do that slowed things down? That is a client dependency you write differently next time, with a date attached and a note on what happens when it is late.\n\nThis half hour is where the next project gets easier. It is also the part nobody does, because the job is finished and finished feels like the reward.\n\n## The ask, made once\n\nThe moment the client confirms the work is done is the highest point of their opinion of you, and it does not stay there. Three things, one message, right then.\n\n**The testimonial.** Ask for a sentence about something specific. A client asked for \"a few words\" writes something generic that helps nobody. A client asked \"would you write a line about how the weekly updates worked for you\" writes something a stranger can actually use.\n\n**The referral.** Name the shape of the business you want next. \"If you know another clinic still taking bookings by hand\" is answerable. \"Anyone who needs a VA\" is not a question, it is a shrug, and it gets a shrug back.\n\n**The next piece of work.** Either the thing you noticed while you were inside their business, or a standing arrangement to keep running what you just built.\n\nAsk once, then stop. A second ask two weeks later reads as pressure and costs you the referral you had already earned. Put the client on a list with the date instead, and go back when you have something specific to say to them. Building that list out into your next clients is Freelancing Fundamentals' job.\n\nWhat this course claims is smaller. The project you close cleanly is the one still available to come back to.\n",
+          "duration_minutes": 9
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Joel is writing website content for an inn in Baguio. The agreed scope is English copy for twenty room pages. In week three the owner messages: \"Small tweak lang, can we have the room descriptions in Tagalog too?\" What is Joel's first move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Reply that it is a small addition he is glad to help with, then fit it in around the dates already agreed."
+            },
+            {
+              "id": "b",
+              "text": "Explain that translation was never part of the agreed scope, and that a separate piece of work would be needed."
+            },
+            {
+              "id": "c",
+              "text": "Open his own piece list, work out what the request adds or repeats, and find which date it moves as a result."
+            },
+            {
+              "id": "d",
+              "text": "Do the two best selling rooms in Tagalog as a goodwill gesture, and see whether the owner asks for the rest."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "scoping_and_pricing",
+          "explanation": "You cannot answer a change request from memory of a chat thread. Twenty pages in a second language is new output, so the plan tells you what it adds and which date moves, and that is the fact the client needs in order to choose. Agreeing first and fitting it in later is how a date slips without anyone deciding it should. Refusing outright skips the choice the client is entitled to. Doing two rooms free sets the price of the other eighteen at nothing."
+        },
+        {
+          "prompt": "Marife agrees a change with a Davao client that adds two working days to their project, and writes it into that client's change log with the new delivery date. What still has to happen before the change is really absorbed?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The two days have to be laid onto the one list that spans every client, against the week they now sit in."
+            },
+            {
+              "id": "b",
+              "text": "The original scope document should be reissued with the new deliverable and the revised date written into it."
+            },
+            {
+              "id": "c",
+              "text": "The client should confirm the new delivery date in writing so the agreement is recorded on their side too."
+            },
+            {
+              "id": "d",
+              "text": "The change log should record how long the extra work actually took, so that her future estimates improve."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "delivery_reliability",
+          "explanation": "Collisions never show up inside one client's board. Two days added in Davao land in a week that may already be sold to somebody else, and that is the failure that gets called disorganised two months later. Reissuing the whole scope is process for its own sake when a change note does the job. The client agreeing is already in the question. Logging the real duration is worth doing afterwards, but it protects the next project rather than this one."
+        },
+        {
+          "prompt": "Rowena is in week two of a bookkeeping catch up. Two months of bank statements she asked for have not arrived, and the agreed end date now depends on them. What should her message to the client contain?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A note that the statements are still outstanding, an apology for the slippage, and a promise to work weekends."
+            },
+            {
+              "id": "b",
+              "text": "A short update saying the work is moving along, holding the bad news until she knows how late it will be."
+            },
+            {
+              "id": "c",
+              "text": "A request for the statements today, with a warning that the end date will move if they do not arrive soon."
+            },
+            {
+              "id": "d",
+              "text": "The missing item, the date it was due, the date now at risk, two real options, and when she needs an answer."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "professional_communication",
+          "explanation": "An escalation has four parts: what happened, what it affects, two options, and what you need by when. Anything less leaves the client holding a problem with no decision to make. Promising weekends buys quiet with your own time and is a promise you should not make. Waiting until you know how bad it is spends the week in which options still exist. A warning with no options and no new date reads as pressure and gives the client nothing to choose between."
+        },
+        {
+          "prompt": "In week one of a six week project, the first piece Kenneth finished took nearly three times as long as his record of timings said it would. Nothing else has been started yet. What should he do now?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Add an hour of buffer to each remaining piece, quietly, and hold on to the end date he already gave the client."
+            },
+            {
+              "id": "b",
+              "text": "Re-estimate the pieces that are left against what that first one actually took, and see if the end date holds."
+            },
+            {
+              "id": "c",
+              "text": "Carry on and see whether the next two pieces land closer to plan before he reacts to a single bad week."
+            },
+            {
+              "id": "d",
+              "text": "Tell the client straight away that the project will be late and that a revised end date is being worked out."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "delivery_reliability",
+          "explanation": "One piece running long in week one is data about the whole estimate, not bad luck. Re-estimating costs an hour and tells you whether there is anything to raise at all. Waiting for two more data points spends the part of the project where options are cheap. Padding you cannot explain hides the problem from yourself as well as from the client. Announcing lateness before re-estimating raises alarm with nothing to decide, and the date may still hold."
+        },
+        {
+          "prompt": "A client Mila has worked with for a year asks her to add one line of copy to a product page. It really is ten minutes, nothing in the plan moves because of it, and she decides to do it. What else should she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Write it into that client's change log anyway, with the decided line reading absorbed and no date moved."
+            },
+            {
+              "id": "b",
+              "text": "Send the change note first, with the options and the date it would move, and start once the client picks one."
+            },
+            {
+              "id": "c",
+              "text": "Do it and say nothing, since logging a ten minute favour is more admin than the favour was ever work."
+            },
+            {
+              "id": "d",
+              "text": "Do it and note in the next weekly update that it fell outside the agreed scope and was done at no charge."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "scoping_and_pricing",
+          "explanation": "Absorbing something small is often the right call, and the log entry is what turns it from a leak into a decision. The fifth time the same favour arrives you are reading a list back rather than arguing from a feeling, and at renewal that list is the only evidence any of it happened. Running the full change note over ten minutes costs both of you more than the task. Saying nothing leaves you with goodwill nobody wrote down, which is goodwill nobody remembers. Announcing it in the update invoices a gift and still leaves no record you can use later."
+        },
+        {
+          "prompt": "Danilo finishes an online store setup for a Pampanga seller. The store admin and the courier account were opened under his own email. The payment account is registered to the seller's own business documents and Danilo was added to it as a user. What does his handover have to do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Move all three of the accounts into her name, and confirm in writing that every one of the transfers has gone through."
+            },
+            {
+              "id": "b",
+              "text": "Send her the login details for each of the three accounts, so she can sign in to any of them when she needs to."
+            },
+            {
+              "id": "c",
+              "text": "Move the two accounts he opened and stay on the payment account, since he is carrying on with monthly support work."
+            },
+            {
+              "id": "d",
+              "text": "Move the store and courier accounts to her name, come off the payment account, and note what he no longer holds."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "delivery_reliability",
+          "explanation": "A handover is a transfer, not a delivery, and the client's business must not depend on your email address. But an account registered against her own documents cannot be signed over to her, because it is already hers, so the move there is Danilo coming off it. Transferring all three is not something he can do. Handing over logins to accounts still registered to him leaves him holding recovery access to her store. Staying on the payment account is a separate agreement, not a reason to keep a foot in her money."
+        },
+        {
+          "prompt": "Bea's client has just confirmed the work is finished and said it went really well. She wants more work out of this relationship. What is the strongest move right now?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Add the client to a mailing list and stay visible, so they think of her when something new comes up later."
+            },
+            {
+              "id": "b",
+              "text": "Ask in one message for a testimonial about a specific part of the job, a referral, and the next piece of work."
+            },
+            {
+              "id": "c",
+              "text": "Ask for the testimonial now, and leave the referral and any further work for a follow up in about a month."
+            },
+            {
+              "id": "d",
+              "text": "Send the final invoice and let the work speak for itself, since asking for things this soon can look a bit pushy."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "finding_work",
+          "explanation": "The confirmation message is the highest point of the client's opinion of you and it does not stay there. Ask once, for all three, while it is high. Splitting the ask means the second one arrives a month later into a colder room and reads as pressure. A mailing list is not an ask. Letting the work speak for itself means the client thinks warmly of you and does nothing, because nobody told them what to do."
+        },
+        {
+          "prompt": "Ramon asks a happy client for a referral at close out. The client replies \"Sure, I'll keep you in mind,\" and nothing ever comes of it. What would have made that easier to act on?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Offering a discount to anyone the client sends his way, so there is something in the introduction for them too."
+            },
+            {
+              "id": "b",
+              "text": "Sending a written summary of the work first, so the client had something concrete to forward to a business."
+            },
+            {
+              "id": "c",
+              "text": "Naming the kind of business he wants next and asking whether anybody the client knows fits that description."
+            },
+            {
+              "id": "d",
+              "text": "Following up two weeks later, since a busy client needs a reminder before an introduction actually happens."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "finding_work",
+          "explanation": "Keep you in mind is what a vague ask earns. A specific one, naming the shape of business you want, turns the request into a question the client can search their memory for and answer yes or no to. A summary document gives them something to forward but still no idea who to forward it to. A discount makes the introduction feel transactional. Following up turns a favour you asked for into pressure, and costs you the goodwill you were relying on."
+        }
+      ]
+    }
+  ],
+  "assignment": {
+    "title": "The operating pack for one client engagement",
+    "brief_mdx": "Pick one client engagement you could plausibly run and build the whole operating pack for it. Real is better than invented. A monthly social media retainer, a bookkeeping catch up, a website content build, an ecommerce store setup, an inbox and calendar retainer: any of these works, as long as the deliverables are things a person could actually hand over. Then submit the pack as text, in seven parts. Expect around a thousand words. Seven parts done properly do not fit in less, and a pack that fits in less has been written in generalities.\n\nEverything below is about **your** engagement. A pack that would fit any client fits none, and a reviewer can tell in a minute.\n\n1. **The engagement on one page.** Who the client is and what they asked for. Then the deliverables listed as things that can be handed over, the exclusions, what the client has to supply and by when, the assumptions you are planning against, and how many rounds of changes are included.\n2. **What done looks like.** For each deliverable, the condition it has to be in before you call it finished, and the name of the one person allowed to say so. If the client's standard is currently a feeling, write the test you would replace it with.\n3. **The plan.** Break the work into pieces, each with an output someone else could check and none running longer than about two working days. Put them in order, mark what blocks what, and mark the pieces blocked by the client rather than by you. Give every piece the date you work to. Give every deliverable the date the client is told, and show the cushion between them as its own line rather than hidden inside the pieces. Under the plan, in a few lines, say where your estimates came from. A job you have done before, a piece you timed, a stated guess: name it honestly for each.\n4. **The status system.** Your states and the written definition of each, so that a task lands in the same state whoever sorts it. Where the work lives, and where the client's view of it lives. The fixed weekly reset: which day, and what you touch when you sit down to it.\n5. **The week something slipped.** Write out one weekly update in full, for a week in which one date moved. Every line in it must trace back to an item on your board and its state, and the moved client-facing date is one of those lines. Then write the escalation message that goes with it, separately, as chapter 4 has it: what happened, what it affects, two real options, and what you need from the client by when.\n6. **The change request.** Write the request the way a client would actually send it, in a chat message or an email. Then write your reply: what you understand is being asked, what it moves in time and in scope, and the choice you are putting to them. Finish with the one line you would add to your plan and the date that changes because of it.\n7. **Handover and close-out.** The checklist you would run at the end, covering where the final deliverables live, which accesses and ownerships move out of your accounts and into theirs, which of them cannot be transferred at all so that you come off them instead, what needs a short walkthrough because the client has to operate it, and the loose ends you are naming rather than leaving. Then the close-out message: confirming the job is finished against your own definition of done from part 2, and the ask, made once.\n\nText only, no uploads and no design work. Change the client's name and any detail that identifies them.\n\nOne hard rule for the whole pack: no money figures and no invented facts. Write \"the agreed fee\" rather than an amount, and if a deadline comes from a government office, a platform or a payment provider, say the reader has to check the current one at the source rather than putting a number in. You are being marked on the arrangement, not on numbers you would have to make up.",
+    "criteria": [
+      "Every deliverable carries a written condition for done and the name of one person allowed to say it is finished, and no deliverable is left with a feeling such as 'looks good' as its only test",
+      "Every piece in the plan has an output another person could check and a place in the sequence with its blockers marked, every piece carries a working date and every deliverable a client-facing date with the cushion between them shown as its own line, the source of each estimate is named honestly rather than left as a round number, and no fee, rate, percentage, platform charge or official deadline is invented anywhere in the pack",
+      "The exclusions, assumptions and client dependencies are specific to this engagement rather than generic, and each dependency carries an owner and a date so the schedule shows where it waits on the client",
+      "The status states are defined tightly enough that two people sorting the same task would land on the same state, the waiting state records whose turn it is and since when, and a fixed weekly reset day is named",
+      "The weekly update traces line by line to items and states on the board and states the moved date plainly rather than softening or holding it, and the separate escalation message carries what happened, what it affects, two real options and a dated ask",
+      "The change reply names what the request moves in time and in scope and offers a choice instead of a flat yes or no, and the handover moves access and ownership out of the learner's own accounts rather than only listing files"
+    ],
+    "min_words": 900
+  }
+}

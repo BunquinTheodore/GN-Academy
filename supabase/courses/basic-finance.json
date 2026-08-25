@@ -66,22 +66,22 @@
           "options": [
             {
               "id": "a",
-              "text": "The ₱18,000 is gross pay. Mandatory contributions and withholding tax come out of it, and the bottom figure is her net."
-            },
-            {
-              "id": "b",
               "text": "The company is holding back part of her pay while she is on probation, and will release the difference once she is regular."
             },
             {
-              "id": "c",
+              "id": "b",
               "text": "Payroll has set its own deductions on her salary, so she can ask them to lift the charges until she is settled in the job."
+            },
+            {
+              "id": "c",
+              "text": "The ₱18,000 is gross pay. Mandatory contributions and withholding tax come out of it, and the bottom figure is her net."
             },
             {
               "id": "d",
               "text": "A first payslip runs short when the cut-off lands mid-month, so the missing amount will correct itself on the next payday."
             }
           ],
-          "correct_option_id": "a",
+          "correct_option_id": "c",
           "competency": "budgeting",
           "explanation": "Gross is the offer, net is the money. Between them sit mandatory contributions to SSS, PhilHealth and Pag-IBIG, withholding tax that your employer remits for you, and anything the employer deducts on top such as a salary advance or a member loan. None of that is optional and none of it is a mistake. A probationary salary is not held back in part and released later, and a payslip that covers a short first cut-off says so on its period line rather than leaving you to guess at it. What Mika should do is name every line, and ask payroll about any line she cannot name. For the current rates and ceilings, the agencies themselves are the only source worth trusting."
         },
@@ -94,18 +94,18 @@
             },
             {
               "id": "b",
-              "text": "Decide now what each part of it is for, write the amounts down, and move every one of them on the day that it lands."
+              "text": "Wait until it lands before deciding anything, since the exact amount is not certain until payroll has computed it."
             },
             {
               "id": "c",
-              "text": "Wait until it lands before deciding anything, since the exact amount is not certain until payroll has computed it."
+              "text": "Decide now what each part of it is for, write the amounts down, and move every one of them on the day that it lands."
             },
             {
               "id": "d",
               "text": "Put the whole thing into the household budget in December and see what is still there when January starts."
             }
           ],
-          "correct_option_id": "b",
+          "correct_option_id": "c",
           "competency": "budgeting",
           "explanation": "Thirteenth month pay is required by law for covered rank-and-file employees, so it is not a bonus anyone decides to grant. DOLE is where to check who is covered and how it is computed. The danger is not that it fails to arrive, it is that it arrives with no name attached, and money with no name gets spent. Tuition dates and January fares are known in advance, which makes them budget lines rather than surprises."
         },
@@ -122,14 +122,14 @@
             },
             {
               "id": "c",
-              "text": "It costs her the truth about her year: other months bring the same kind of cost under another name, so a quiet baseline breaks on a loud month."
+              "text": "Only time. She should track two more months first, then plan against the average of the three so no single one distorts it."
             },
             {
               "id": "d",
-              "text": "Only time. She should track two more months first, then plan against the average of the three so no single one distorts it."
+              "text": "It costs her the truth about her year: other months bring the same kind of cost under another name, so a quiet baseline breaks on a loud month."
             }
           ],
-          "correct_option_id": "c",
+          "correct_option_id": "d",
           "competency": "budgeting",
           "explanation": "There is no typical month, there are only months where the irregular cost has a different name: a fiesta, a hospital visit, a birthday, a repair. Waiting four weeks for a quiet one buys her a cleaner-looking number and a budget that works right up until real life shows up. Subtracting the one-offs and averaging three months are both better than throwing the evidence away, but they hide the same thing, which is that irregular costs deserve a line of their own."
         },
@@ -142,18 +142,18 @@
             },
             {
               "id": "b",
-              "text": "The loan repayment. It is taken off before he ever sees the money, so it never got the chance to be part of a plan."
+              "text": "The delivery. He chose it again on each of those late shifts, and it is the line his own daily decisions move."
             },
             {
               "id": "c",
-              "text": "The internet plan. He signed it before the late shifts started, so it no longer matches the way he actually lives now."
+              "text": "The loan repayment. It is taken off before he ever sees the money, so it never got the chance to be part of a plan."
             },
             {
               "id": "d",
-              "text": "The delivery. He chose it again on each of those late shifts, and it is the line his own daily decisions move."
+              "text": "The internet plan. He signed it before the late shifts started, so it no longer matches the way he actually lives now."
             }
           ],
-          "correct_option_id": "d",
+          "correct_option_id": "b",
           "competency": "budgeting",
           "explanation": "A fixed cost was agreed once and changes only through one deliberate decision: moving, downgrading, renegotiating, cancelling. Rent and the internet plan can change that way, but not this week and not by trying harder. The delivery total was assembled from a dozen separate choices made while tired, which is exactly what makes it the line he can move now. Fixed does not mean permanent, it means it is not this month's argument."
         },
@@ -190,18 +190,18 @@
             },
             {
               "id": "b",
-              "text": "Move a set share into a separate account she does not spend from, and take the rates, forms and deadlines to an accountant."
-            },
-            {
-              "id": "c",
               "text": "Budget the full amount now and pay what is owed later out of whatever she happens to be earning when the deadline arrives."
             },
             {
-              "id": "d",
+              "id": "c",
               "text": "Treat it as clear income, since nothing was deducted from it and no employer filed anything for her this month."
+            },
+            {
+              "id": "d",
+              "text": "Move a set share into a separate account she does not spend from, and take the rates, forms and deadlines to an accountant."
             }
           ],
-          "correct_option_id": "b",
+          "correct_option_id": "d",
           "competency": "budgeting",
           "explanation": "An employee's tax and contributions leave before the money is ever visible. A freelancer's do not, so the money looks spendable for weeks before the bill exists. Splitting it on arrival is the only version of this that survives a slow month. Tracking it in your head fails the first time a client pays late. What share to set aside, how to register and which deadlines apply are questions for BIR or an accountant who can see her actual situation."
         },
@@ -214,18 +214,18 @@
             },
             {
               "id": "b",
-              "text": "A separate savings goal for the laptop she will need when her current one gives up, which is coming one way or another."
+              "text": "Staying in the account she pays herself from, so that a thin month still pays her the same amount on the same date."
             },
             {
               "id": "c",
-              "text": "Staying in the account she pays herself from, so that a thin month still pays her the same amount on the same date."
+              "text": "A separate savings goal for the laptop she will need when her current one gives up, which is coming one way or another."
             },
             {
               "id": "d",
               "text": "Paying some of next month's fixed costs early where a provider takes it, so a thin month has fewer bills waiting inside it."
             }
           ],
-          "correct_option_id": "c",
+          "correct_option_id": "b",
           "competency": "budgeting",
           "explanation": "On an income that moves, the first job of a surplus is to make your own pay predictable: a fat month funding a thin one is the entire point of the holding account. Sending more home is real generosity and the laptop is a real cost, but both are safer once your salary is not in question. Paying bills early is not wrong, it just converts flexible money into money you can no longer redirect. How large this buffer should get, and why it comes before anything else, is the next chapter."
         },
@@ -234,22 +234,22 @@
           "options": [
             {
               "id": "a",
-              "text": "Borrow the ₱5,500 from the app. The amount is small, the money arrives today, and one instalment is not worth losing a semester over."
+              "text": "Ask the school what its options are on the date she is short, and start setting the instalment aside monthly from this month on."
             },
             {
               "id": "b",
-              "text": "Cut what she sends home this month and quietly make it up next month, so the tuition gets covered without any borrowing at all."
+              "text": "Borrow the ₱5,500 from the app. The amount is small, the money arrives today, and one instalment is not worth losing a semester over."
             },
             {
               "id": "c",
-              "text": "Wait until Friday in case the client pays, then decide on the day whether the app or the family is the better route to take."
+              "text": "Cut what she sends home this month and quietly make it up next month, so the tuition gets covered without any borrowing at all."
             },
             {
               "id": "d",
-              "text": "Ask the school what its options are on the date she is short, and start setting the instalment aside monthly from this month on."
+              "text": "Wait until Friday in case the client pays, then decide on the day whether the app or the family is the better route to take."
             }
           ],
-          "correct_option_id": "d",
+          "correct_option_id": "a",
           "competency": "debt_credit",
           "explanation": "The date was published in June, which makes this a fixed cost that could have been funded in monthly pieces, not an emergency. Borrowing for a cost you knew about means paying more for the same tuition, and chapter two turns that into a figure you can compare. Cutting the money home without saying so moves the shortfall onto people who never agreed to carry it. Waiting until Friday just removes the options you still have today."
         }

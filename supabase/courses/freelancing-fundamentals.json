@@ -1,0 +1,1064 @@
+{
+  "slug": "freelancing-fundamentals",
+  "title": "Freelancing Fundamentals",
+  "subtitle": "Get the client, agree the terms, get paid",
+  "level": "foundation",
+  "category": "Freelancing",
+  "format": "Self-paced online",
+  "summary": "A free course on how freelance work starts and stays alive: where a first client comes from, how to pin down what the job is, how to arrive at a number and say it, what goes in writing before you start, and how to invoice, chase, and handle the client who goes quiet or keeps adding. Nine lessons, written for someone who has never freelanced or has taken a few gigs and been burned.",
+  "description": "Most people do not lose freelance money because they are bad at the work. They lose it in the gap around the work: a job that was never written down, a rate picked by guessing, a deliverable sent with no invoice behind it, a client who stopped replying. This course covers that gap. You start with the part that has to happen before anything else, which is being findable by somebody who has budget and being chosen when they compare you to four other people. Then the middle, which decides whether the job is profitable: pinning down exactly what you are delivering, what you are not, how many rounds of changes are included, and what the client owes you before you can start, then building a rate out of your own numbers instead of copying a figure from a Facebook group, then putting the whole agreement in writing even when nobody signs anything. The last chapter is delivery and money: running a job so the client is never wondering where it is, sending an invoice that can actually be paid, following up on late payment in steps rather than in one angry message, and the three ways a client relationship comes apart, which are scope creep, silence, and the ending. No rate cards, no platform fee tables, no tax figures. Those change, and a wrong one costs you real money. What you get instead is the arrangement, the questions to ask, and the habit of checking the current number yourself before you rely on it.",
+  "skills": [
+    "Defining a service somebody can buy",
+    "Finding clients and writing the first message",
+    "Scoping work in writing",
+    "Setting and defending a rate",
+    "Written agreements and payment terms",
+    "Invoicing and chasing late payment",
+    "Handling scope creep and silent clients"
+  ],
+  "outcomes": [
+    "Name the one service you sell, in the words a client would use when asking for it",
+    "Send an application or first message that answers what was asked and shows proof, instead of describing yourself",
+    "Turn a vague request into a written scope: deliverables, exclusions, revision rounds, dates, and what the client owes you",
+    "Build a rate from your own cost floor and unbilled hours, say the number without apologising, and answer a push back on price",
+    "Invoice so it can be paid, follow up on late payment in proportionate steps, and price a change request instead of absorbing it"
+  ],
+  "roles": [
+    "First-time freelancers",
+    "Virtual assistants and online workers",
+    "Students and fresh graduates taking side work",
+    "Jobseekers between roles"
+  ],
+  "price_php": null,
+  "is_free": true,
+  "passing_score": 70,
+  "credential_prefix": "FLF",
+  "sort_order": -6,
+  "requires_assignment": false,
+  "modules": [
+    {
+      "slug": "chapter-1-getting-in-front-of-someone-who-will-pay",
+      "title": "Getting in front of someone who will pay you",
+      "description": "Nobody hires a general helper. The first client comes from being a specific, findable answer to a problem somebody already has, and from a first message that answers what was asked instead of describing you.",
+      "lessons": [
+        {
+          "slug": "what-you-actually-sell",
+          "title": "What you are actually selling",
+          "content_mdx": "# What you are actually selling\n\nTwo people apply for the same job on the same morning.\n\nJoanna writes that she is hardworking, a fast learner, willing to be trained, and open to any kind of task. Reymart writes that he builds and runs weekly product listings for small online sellers, and links to five listings he built for a bag shop in Divisoria.\n\nReymart is not better at the work. He is easier to buy.\n\n## Nobody hires a general helper\n\nA client with money to spend has a problem in front of them, and they describe it in their own words. Our listings look messy. Nobody answers our emails. Our menu photos are from 2019.\n\nThey are not looking for a person who can do anything. They are looking for the answer to that sentence. When your description is a pile of adjectives, the client has to do the work of matching you to their problem, and they will not bother. Somebody further down the list already did it for them.\n\nSo the first move in freelancing is not learning another skill. It is naming the one you already have in a way somebody can buy.\n\n## Say it in the buyer's words, with a boundary around it\n\nA service somebody can buy has three parts.\n\n**Who it is for.** Not everyone. \"Small online sellers.\" \"Clinics with one receptionist.\" \"Coaches who take bookings over chat.\"\n\n**What they get.** Something that can be handed over and looked at. Not \"social media help\", but \"twelve captioned posts a month, ready to schedule\". Not \"admin support\", but \"your inbox sorted every morning and a short list of what needs your reply\".\n\n**Roughly how long it takes.** You do not need a precise figure yet. You need to know whether this is a two-hour job or a two-week one, because you are going to price it later, and you cannot price a shape you have never held.\n\nTest it by saying it out loud as one sentence. I do this, for these people, and what they get is that. If you cannot finish the sentence, you are not ready to message anyone yet.\n\n## Why \"I do admin, design, writing and video\" fails twice\n\nIt fails first as positioning. Four services on one line read as four half-services, and a client comparing you against somebody who does only the thing they need has an easy decision to make.\n\nIt fails again as pricing, which is the part beginners do not see coming. A rate is built out of how long a specific job takes you and how many times you have done it. When your offer is \"anything\", every job is your first job, every estimate is a guess, and the guess will be low. Chapter 2 is about arriving at a number, and it needs a service with edges to work on.\n\nYou are allowed to be able to do four things. You are choosing which one goes at the front.\n\n## Choosing it when nobody has paid you yet\n\nPick where two circles overlap: what you can already do to a standard you would show a stranger, and what you can produce evidence of this week.\n\nEvidence is where people stall, because they are waiting for a client to give them permission. You do not need one.\n\nBuild one piece of work against one real business that never hired you. Kaye wanted to shoot menu photos for small food places. She walked into a carinderia in Antipolo she passes every day, bought lunch, photographed it properly at home, and rebuilt their three worst menu images. She sent the shop the files with no invoice and no pitch attached. Whether or not they used them, she now owns a sample about a real business with a real problem, instead of a practice file about nothing.\n\nThe other route is one small finished piece of real work for someone you know: your tita's tutorial centre, a cousin's sari-sari store page. Small and finished beats large and imagined.\n\n## What proof looks like\n\nFour things, every time. The artefact itself. What the situation was. What you did. What changed.\n\n\"Rebuilt three menu images for a carinderia, using their own dishes, shot at home in daylight\" is proof. \"Creative and detail-oriented\" is an adjective.\n\nGathering your full inventory of evidence, and turning it into a portfolio a stranger can browse, belongs to the resume and portfolio course. What you need here is one piece, aimed at one kind of buyer, so that your sentence has something standing behind it.\n\n## Before the next lesson\n\nWrite your sentence: what you do, who for, and what they get. Then name the one business you will build your sample against, and the date you will finish it.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "where-the-work-comes-from",
+          "title": "Where the work actually comes from",
+          "content_mdx": "# Where the work actually comes from\n\nWork reaches a freelancer by four routes. Each one costs you something different, and the route that is easiest to start on is the one that keeps the least of you.\n\n## The four routes\n\n**Freelance marketplaces.** You build a profile, buyers post jobs, you send proposals. What you get is buyers who have already decided to hire somebody. What you pay is competition, because your proposal lands beside many others, often from people in other countries working from a different cost floor. You also pay a cut: marketplaces take a share of the money before it reaches you, and some also charge for the ability to apply. Those amounts differ by platform and they change, so read the platform's own fee page before you decide what a job is worth to you, and read it again when something looks different.\n\n**Direct outreach.** You choose businesses that visibly have the problem you solve, and you contact them. Nobody is bidding against you, because there is no post. What you pay is patience, since you are talking to people who were not shopping. This is the slowest route to start and the strongest one to own. The relationship is yours and nothing sits between you and the money.\n\n**Referrals.** Somebody who has seen your work tells somebody else. There is no competition and the trust arrives before you do. What you pay is that you cannot start here. Referrals are an output of finished work, which is why chapter 3 spends its time on delivery.\n\n**Communities and groups.** Facebook groups, chat groups, alumni and parish networks, industry pages where a business owner types \"anyone here who can do this?\" out loud. Free to join, uneven in quality, and the currency is being visibly useful before you are needed rather than being fastest to comment \"PM sent po\".\n\n## The marketplace trap\n\nMarketplaces are a sensible place to start. They put buyers in front of you before anybody knows your name.\n\nThey are a weak place to stay if every job ends when the job ends. The platform owns the buyer, sets the terms, takes its share, and can change any of that without asking you. A freelancer who works a marketplace for a year and finishes with no repeat client and no referral has bought a year of income and built nothing underneath it.\n\nSo treat a first job as an introduction rather than a transaction. Deliver so well that a second one is obvious, which is chapter 3's whole subject, and follow whatever the platform's own rules say about contact and about continuing work outside it. Breaking those rules to dodge a fee is a bad trade. Read the current terms on the platform itself rather than a screenshot someone posted in a group chat.\n\n## Be findable in one place, properly\n\nHalf-finished profiles scattered across six sites lose to one finished profile in one place. Finished means the service sentence from the last lesson sits at the top, one or two pieces of proof are visible without anyone asking, what you charge or how you charge is stated where the platform allows it, and there is a way to contact you that works.\n\nChoose the route you will work for the next month and the one place you will be findable in. Then actually finish it.\n\n## Reading a job post before you spend an hour on it\n\nSigns it is real and funded: a described outcome rather than a job title, such as \"our weekly newsletter built and sent every Tuesday\". A budget or a range. Dates. A client who answers questions when applicants ask them.\n\nSigns to be careful: no outcome, no number anywhere, no reply to a direct question, and a description that would fit any freelancer alive.\n\n## Three warnings that belong to the agreement\n\nThese are not about your nerves. They are about whether a workable agreement exists at all.\n\n**You are asked to pay to start.** A training fee, an equipment deposit, a processing charge, a placement fee, refundable or otherwise. Basic Finance already holds that rule flat, that an employer pays you and you do not pay an employer whatever the fee is called, and it covers the shapes the offer arrives in. What matters here is narrower: work that charges you for the privilege of doing it is not an agreement you can scope or price, so there is nothing in it for this course to teach you to write down. A platform charging you to use it is a different thing, because it is a published cost on a fee page you can read and decide about before you sign up. A person offering you a job and asking you for money before it starts has no fee page.\n\n**The unpaid test is the actual deliverable.** A short exercise invented for the purpose is normal. Being asked to produce the thing that ships on Friday, before anything is agreed, is not a test. Telling one from the other, and the four questions to ask when you cannot, is the resume and portfolio course's subject. What belongs here is what it means for the agreement: work that ships has a price and a date, or it is not work, and the counter is to offer a small paid first piece.\n\n**Pressure to leave the platform before anything is agreed.** Someone who wants your details and your time moved somewhere unrecorded, urgently, before scope or payment is written down, is removing the record rather than saving a fee.\n\nTwo sibling courses take the other angles on that last one. A fake recruiter collecting your ID photos and bank details belongs to the online safety course. A buyer pushing a seller off-platform to escape payment protection belongs to the online selling course. Here it is an agreement problem, and chapter 2 is where you learn to write the agreement.\n\n## What you can now do\n\nOpen the last two job posts you were going to apply to and mark, for each, whether an outcome, a number, a date and a poster who answers questions are actually there. Apply to the one that carries more of them, and leave the other where it is.\n",
+          "duration_minutes": 9
+        },
+        {
+          "slug": "the-message-that-gets-a-reply",
+          "title": "The message that gets a reply",
+          "content_mdx": "# The message that gets a reply\n\nPicture the person reading it. They posted a job, or they opened an email they were not expecting, and they have a business to run. They are not evaluating you. They are deciding whether this message deserves more attention than the next one in the pile.\n\nEverything below follows from that.\n\nOne boundary first. This lesson is about the message you send to a client: a proposal on a marketplace, or a cold email to a business. Applying to an employer for a job, with a CV and an application form, is a different craft and it lives in the resume and portfolio course.\n\n## The shape\n\nFive parts, in this order.\n\n**Their problem, in their words.** Open on them, not on you. \"You are posting every day and the captions are eating your whole morning.\" A client should recognise their own situation in your first line.\n\n**What you would do about it.** One or two sentences of an actual approach, specific enough that it could turn out to be wrong. This is the part that separates you from everyone who wrote \"I can help you with this.\"\n\n**One piece of proof.** The most relevant sample you have, linked so it opens without anyone requesting access. One. A list of five dilutes the one that mattered.\n\n**What they asked for.** Availability, a start date, a rate or a range if the post asked for one, and anything else the post specified.\n\n**One question.** A real one that shows you read the post. \"Are the product photos existing, or is shooting them part of this?\"\n\nThen stop. No closing paragraph about your dedication.\n\n## What kills it\n\n**A wall about you.** Where you studied, your work ethic, your commitment to excellence. The client has not agreed to care about you yet.\n\n**A template carrying the last client's name.** It happens because you are sending forty of them. Eight messages that are actually read beat forty that are not.\n\n**Every tool you have ever opened.** A list of fourteen tools tells the client you are guessing which one they wanted.\n\n**Need used as a reason to hire you.** \"I really need this job.\" \"Please give me a chance, I am new.\" It is honest and it is human, and it moves the decision onto pity, where you lose to whoever talked about the client's problem instead. Your situation is real. It is not an argument.\n\n## The buried instruction\n\nClients hide a small instruction inside a post to find out who read it. Start your message with the word mango. Name your favourite film. Put the word peso in the subject line.\n\nAnswer it, in the first line, with no comment about how clever the trick was. Skipping it is the cheapest way there is to be filtered out, and leading with your credentials instead does not rescue you, because the instruction was the credential being tested.\n\nAnswer everything else that was asked as well, including the boring parts. A post that asks for three things and gets two back has already told the client what working with you will be like.\n\n## When you have no relevant sample\n\nDo not apologise, and do not send something unrelated.\n\nMarlon wanted a first client for email work. A wholesale supplier in Bulacan posted for someone to run their promo emails. He rewrote one of the emails sitting in their public newsletter archive, sent both versions side by side, and said what he changed and why. It took him an hour. He was the only applicant who had touched their actual material.\n\nThat is not free work. It is one deliberate piece, aimed at one buyer, that you chose to make and could have sent to nobody. It is not the same as being handed the live deliverable before anything is agreed, which is the thing the last lesson told you to refuse.\n\n## Following up\n\nOnce.\n\nYou choose the interval, you state it in the original message, and then you keep to it. \"If it is easier, I will follow up on Thursday.\"\n\nA follow-up is three lines. What you sent. One new and useful thing, such as a second sample or something you noticed about their site. A clean exit: \"If the timing is wrong, no problem, I will leave it here.\" Then leave it there. Messaging a stranger every morning costs you the client you might have had from them six months later.\n\n## When they reply\n\nThe reply is not the job. It is a conversation in which you find out what the job actually is, and that conversation is where beginners lose money, because they agree to a price before they know what they agreed to do.\n\nBring questions. What exactly is being delivered, and how many. By when. What they need to give you, and when it arrives. Who decides it is finished.\n\nThat is chapter 2, and it is where the money is decided.\n\n## What you can now do\n\nTake a post you were going to apply to and write the five parts: their problem in their words, what you would do, one linked sample, everything the post asked for, and one real question. Delete whatever is left over, and name in the message the day you will follow up.\n",
+          "duration_minutes": 8
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Danica can make basic graphics, write captions and cut short clips. She is writing the top line of her freelance profile and wants a client to be able to act on it. Which line does that?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Creative and hardworking freelancer, fast learner, open to any kind of task."
+            },
+            {
+              "id": "b",
+              "text": "Graphics, captions, video editing, data entry and admin support, at flexible rates for new clients."
+            },
+            {
+              "id": "c",
+              "text": "I build a month of captioned posts for small food businesses, delivered ready to schedule."
+            },
+            {
+              "id": "d",
+              "text": "Available immediately for any creative project, any industry, short or long term, competitive rates."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "finding_work",
+          "explanation": "A client arrives with a problem already worded in their own head, and they are looking for the sentence that answers it. Danica's third line names who it is for, what they get, and roughly the size of it, so a food seller reading it knows in one line whether to click. The other three make the client do the matching, and a client will not. The long skill list is the worst of them, because it fails twice: four services read as four half-services, and a rate is built out of a job you have done before, so an offer of anything makes every job your first job and every estimate a guess. Flexible and competitive rates say nothing except that you will go lower."
+        },
+        {
+          "prompt": "Elmer wants a sample he can show, and no client has ever paid him. He has two free days this week and no brief from anybody. What is the best use of those two days?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Rebuild something real for a business he could actually serve, and record what the situation was and what he changed."
+            },
+            {
+              "id": "b",
+              "text": "Work free for a month for the first business that agrees to it, so that he can describe himself as experienced afterwards."
+            },
+            {
+              "id": "c",
+              "text": "Take a short course and put the certificate up, since a sample means little until somebody has paid him for one."
+            },
+            {
+              "id": "d",
+              "text": "Practise on invented brands until he has ten pieces, then start applying once the collection looks full enough."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "finding_work",
+          "explanation": "You do not need a client's permission to make proof. One piece of work aimed at one real business, with the situation, what you did and what changed written beside it, is evidence about a real problem. A folder of invented brands is a practice file about nothing, and a certificate says you attended, not that you can do the work. Working free for a month is the expensive version of the same mistake: it buys one testimonial at the price of a month, and it teaches the client that your time costs nothing. Gathering your whole inventory of evidence into a browsable portfolio is the resume and portfolio course's job. Here you need one piece, aimed at one kind of buyer."
+        },
+        {
+          "prompt": "Jenny has time for one careful proposal today. Post A asks for a VA who is hardworking and flexible, states a monthly budget, and says to start immediately. It does not say what the VA would actually do. Post B asks for weekly supplier invoices logged and chased, starting next month. It names no budget, but the poster has answered two applicants' questions in the comments. Which does she write to?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Post A, because a stated budget is the one signal proving somebody has money already set aside to spend."
+            },
+            {
+              "id": "b",
+              "text": "Post A today and Post B tomorrow, since the funded one is worth reaching before the slot is filled."
+            },
+            {
+              "id": "c",
+              "text": "Neither today. Ask both posters for the half that is missing, and write to whichever of them answers."
+            },
+            {
+              "id": "d",
+              "text": "Post B, because a described outcome and a poster who answers questions beat a number attached to no job."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "finding_work",
+          "explanation": "A budget on an undescribed job tells you what somebody will spend, not what they want done, so anything you send back is a guess you can be held to. Post B gives you the outcome, which is the thing a proposal is actually written about, and a poster answering applicants in public has shown they are present and will answer you too. The missing budget on B is a question, and it is a question you can ask inside the message you were going to send anyway. Writing to both spends the hour that made the one careful proposal careful. Asking both and waiting hands your day to whoever replies first rather than to the post that is worth the work."
+        },
+        {
+          "prompt": "Ronnie gets a marketplace message about a logo job. Before scope or price has been discussed, the client asks him to move to a personal chat app, says it is easier that way, and wants to start today. No work has been done yet. What should he do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Move over now and settle the scope there, since a client who finds the platform awkward is not the problem."
+            },
+            {
+              "id": "b",
+              "text": "Refuse any channel but the marketplace, because a client who asks to leave it has told him what they are."
+            },
+            {
+              "id": "c",
+              "text": "Agree the scope, the price and the payment points in writing first, then decide the channel under the rules."
+            },
+            {
+              "id": "d",
+              "text": "Move over, but ask for the whole fee before starting, since nothing at all protects the payment on the other side."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "finding_work",
+          "explanation": "The problem is not the app, it is the order. Once scope, price and payment points exist in writing, moving the conversation is a preference. Before they exist, moving it removes the only record of what was agreed, and the urgency about moving is the part worth reading. Settle the agreement where you are, then follow whatever the platform's own current rules say about contact and about continuing work outside it, because breaking those to dodge a fee is a bad trade. Refusing every channel outright loses clients who simply prefer chat. Asking for the whole fee up front is a bigger ask than this needs and still leaves him working from nothing written down."
+        },
+        {
+          "prompt": "Trina has spent a year on one marketplace. The jobs are steady and small, each one ends when it ends, and she has no repeat client and no referral. Her income is flat and she wants to know what to fix. What is the real problem?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Every job ended as a transaction, so a year of work has built no relationship of her own underneath it."
+            },
+            {
+              "id": "b",
+              "text": "Her rates sit too low for that marketplace, and one large increase will filter her toward more serious buyers."
+            },
+            {
+              "id": "c",
+              "text": "She is on the wrong marketplace, and putting her profile on two or three others would widen the pool of buyers."
+            },
+            {
+              "id": "d",
+              "text": "She has not applied to enough posts, so a much larger number of proposals a day is the fix."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "finding_work",
+          "explanation": "A marketplace is a sensible place to start and a weak place to stay. It owns the buyer, sets the terms, and takes its share before the money reaches you, and it can change any of that without asking you. What makes a second year different from the first is repeat work and referrals, and both of those come out of delivery, which is chapter 3. Spreading half-finished profiles across more platforms multiplies the same problem, and more proposals a day is simply more of the thing that has not been compounding. Raising a rate may well be right eventually, but that is a chapter 2 decision and it does not answer why nothing carries forward."
+        },
+        {
+          "prompt": "Elaine has half-built profiles on four freelance sites, a Facebook page with three posts on it, and a portfolio link that asks strangers to request access. She has two evenings this week. What is the best use of them?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Start a fifth profile on a newer site with less competition, and come back to the other four next month instead."
+            },
+            {
+              "id": "b",
+              "text": "Finish one profile properly: the service sentence, proof that opens without a request, and how she charges."
+            },
+            {
+              "id": "c",
+              "text": "Open the portfolio link to anyone who has the address, and put that link on all four of the profiles."
+            },
+            {
+              "id": "d",
+              "text": "Post to the Facebook page every day for two weeks, and add the page link to every profile she has."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "finding_work",
+          "explanation": "One finished profile in one place beats four half-finished ones, because a stranger who lands on any of the four is deciding from what is in front of them. Finished has a shape: the service sentence at the top, one or two pieces of proof visible without anyone asking for access, what you charge or how you charge where the platform allows it, and contact that works. Opening the portfolio link is part of that rather than the whole of it, since a working link on an empty profile still leaves the profile empty. A fifth profile multiplies the problem she already has. Daily posting fills a page nobody has a reason to visit yet."
+        },
+        {
+          "prompt": "A job post ends with a line saying to start your message with the word mango. Aldrin has strong samples and a relevant degree, and he thinks the instruction is a gimmick. How should he open the message?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Lead with his degree and experience, then work mango in near the end so it still shows he read it."
+            },
+            {
+              "id": "b",
+              "text": "Start with mango, then their problem, then one relevant sample and the question he wants answered."
+            },
+            {
+              "id": "c",
+              "text": "Skip it, because a serious client judges the work, and a word game is not what he would be hired for."
+            },
+            {
+              "id": "d",
+              "text": "Put mango in the subject line only, and use the message itself for a full account of his background."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "professional_communication",
+          "explanation": "The instruction is the filter. Answering it first, with no commentary about how clever it was, costs one word and proves the only thing being tested, which is whether you read what was in front of you. Burying it at the end, or parking it in the subject line while the message itself is about you, misses twice, because a wall about yourself is the other thing that gets a message closed. Skipping it is the cheapest way there is to be sorted out of the pile, and strong samples cannot rescue a message nobody opened. The order that works is their problem, what you would do, your most relevant proof, what they asked for, and one real question."
+        },
+        {
+          "prompt": "Marlon sent a proposal on Monday and said in it that he would follow up on Thursday. It is Thursday afternoon and the client has not replied at all. What should he send?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nothing at all. Following up reads as desperate, and a client who wants him will come back on their own."
+            },
+            {
+              "id": "b",
+              "text": "A short note now, then another next Thursday, and one more the Thursday after if nothing comes back."
+            },
+            {
+              "id": "c",
+              "text": "A note asking only whether the role is still open, with nothing added, so it stays short and easy to answer."
+            },
+            {
+              "id": "d",
+              "text": "A short note: what he sent, one new and useful thing, and a clean exit if the timing is wrong for them."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "professional_communication",
+          "explanation": "He said Thursday, so Thursday is when he writes. Choosing the interval yourself and stating it up front turns a chase into a kept commitment, which is the first thing a client ever learns about how you work. The follow-up carries one new and useful thing so it is worth opening, and a clean exit so silence stays comfortable for both of you. A note with nothing new in it asks the client to do all the work of the exchange. A standing weekly cadence keeps you in an inbox you were not invited back into, and it is the exit that makes a single follow-up welcome. Saying nothing is not restraint, it is leaving a decision unmade because of a story you told yourself about how it looks."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-2-agreeing-the-work-and-the-price",
+      "title": "Agreeing what the work is and what it costs",
+      "description": "The middle of the job is decided before it starts. What is being delivered, what is not, how many rounds of changes, what the client owes you, when money moves, and all of it in writing that both of you can point at later.",
+      "lessons": [
+        {
+          "slug": "scoping-before-quoting",
+          "title": "Pin the work down before you quote",
+          "content_mdx": "# Pin the work down before you quote\n\nMarilou does virtual assistant work from Iloilo. A message arrives: \"Hi, how much for social media management for my milk tea shop?\"\n\nShe could answer that in ten seconds. Whatever she says becomes the number she is held to, for a job neither of them has described yet. One shop wants three posts a week on one page. Another wants daily posts on three platforms, a reply to every comment, and a report at the end of the month. Same seven words, completely different jobs.\n\nYou cannot price what you have not defined. A number given before scoping is not a price. It is a guess with your name on it.\n\n## The questions that turn a request into a countable job\n\nAsk these before you say anything about money. On a call, in a message, in a form you send over. It does not matter which, as long as the answers come back in writing.\n\n**What exactly is delivered, and how many?** Not \"social media management\". Twelve captions a month, twelve matching graphics, posted to one Facebook page.\n\n**What does done look like?** For a caption, done is posted. For a logo, done is the files in the formats they can actually open and use. Say which formats.\n\n**What do you need from them, and by when?** Photos, logins, product prices, the brand colours. Name the date you need each one.\n\n**What happens to your delivery date if their material arrives late?** Decide this now, while everyone is calm and friendly. The sensible answer is usually that your date moves by however long you waited.\n\n**How many rounds of changes are included, and what counts as a round?** One round is one consolidated set of comments, sent once. Six separate messages over four days is not one round, and if you do not write that down, it will be.\n\n**What is not included?** This is the one that saves you.\n\nOne thing this lesson deliberately leaves alone: the formal sign-off, meaning who is allowed to approve a deliverable and on what conditions. That matters once you are running several clients at once, and the client operations course owns it.\n\n## The exclusion list protects you more than the inclusion list\n\nEverything you listed as delivered is a promise you made. Everything you did not list is an argument waiting to happen, because they assumed it was in there and you assumed it was not.\n\nDante builds websites in Davao. His scope says five pages, built on the client's existing theme, with text and photos supplied by the client. Then his exclusions say: not included are writing the text, sourcing or licensing photos, setting up the domain and hosting, uploading products, and training staff to use it.\n\nNot one of those lines cost him anything to write. Each one is a conversation he now gets to have before he has already done the work for free.\n\n## Size it by walking through it, not by feel\n\n\"That will take about a week\" is a feeling. Write out the actual steps instead and put a time against each one.\n\nJoan writes product descriptions in Baguio. Asked for eight of them, she does one first: read the brief, look at the item, draft, cut it back, check it against the client's tone, format it. She times herself doing exactly that, then multiplies by eight.\n\nThen she adds the parts that always happen and never appear in anybody's estimate:\n\n- the briefing call, and the messages before and after it\n- reading the feedback and applying the changes\n- the admin, meaning the quote, the invoice and the follow up\n\nThat is the real size of the job. If the number that comes out frightens you, the number was always that. You were simply not counting it.\n\n## The first job with a new client is the loosest\n\nYou do not know yet how they give feedback, how fast they reply, or whether \"make it pop\" is going to arrive four separate times. They do not know yet whether you deliver at all.\n\nSo make the first piece small and paid. One landing page rather than the whole site. One month of posts rather than a six-month retainer. A small job that goes well converts into a big one on far better terms, because by then you both know the shape of the work. A big job with an unknown client is how a bad month turns into a bad quarter.\n\n## What you can now do\n\nTake any vague request sitting in your inbox and turn it into a written list: deliverables with counts, exclusions, revision rounds, and what the client owes you and when. That list is the thing you put a price on in the next lesson. Anything on it you cannot answer yet is a question to ask, not a reason to discount.",
+          "duration_minutes": 7
+        },
+        {
+          "slug": "building-a-rate",
+          "title": "Where your number comes from",
+          "content_mdx": "# Where your number comes from\n\nEverybody wants to be handed a rate. Nobody can hand you one honestly, because your number is built out of your costs, your hours and your obligations, and no one else carries yours.\n\nWhat follows is arithmetic you can run tonight.\n\n## Start from what you need, not from what other people charge\n\nAngeline keeps books for small businesses in Bacolod. Her arithmetic goes like this.\n\n**What she needs in a month.** Household, transport, food, phone and internet come to ₱26,000. Then the things a freelancer carries that a salaried bookkeeper does not. A laptop that has to be replaced eventually, a backup connection for when the main one dies, and the weeks between clients are amounts she can estimate, so she puts a figure against them and adds it in: ₱8,000 a month. Her monthly target is ₱34,000.\n\nHer contributions and taxes do not belong in that column at all. They move with what she bills rather than with what she spends, so they are not a cost she can name in advance and add up. They sit on top of the rate as a share of every peso invoiced, not as a line in her costs.\n\nOn those contributions and taxes: a registered freelancer has filing and contribution obligations on a schedule, and the current rules, amounts and deadlines live on the BIR, SSS, PhilHealth and Pag-IBIG sites themselves. Look them up at the source rather than trusting a figure from a Facebook group, or from here.\n\n**How many hours she can actually bill.** Angeline works five days a week. She does not bill five days a week. Briefing calls, chasing clients for bank statements, her own invoicing, the gaps between jobs: call it four billable hours a day rather than eight. That is twenty billable hours a week, roughly eighty-eight a month.\n\n**Her floor.** ₱34,000 divided by 88 hours is a little under ₱400 an hour. Below that line she is working at a loss and calling it a business.\n\nThat is her floor before contributions and tax. Whatever share those take of what she bills goes on top of it, which is why a rate set exactly at the floor is a rate set below it. What that share is for you depends on how you are registered and what you earn, and it is published by the offices that run it. Look it up before you quote, not after.\n\nThose figures are Angeline's, invented so the arithmetic is visible. Yours will be different. The method will not.\n\nA floor is not a price. It is the line you now know you are standing on.\n\n## Three shapes, and when each fits\n\n**By the hour.** Simple, easy to explain, and it punishes you for getting good. Ryan edits podcast episodes in Quezon City. An episode used to take him five hours. It now takes two, because he built a template and learned his shortcuts. Billing by the hour, his reward for that improvement is a pay cut.\n\n**By the deliverable.** One price for one finished thing. The client weighs it against what the thing is worth to them rather than against your speed, and every hour you save stays yours. Move to this shape as soon as you can size a job reliably.\n\n**A monthly retainer.** For work that repeats: a set amount of output every month for a set fee. Write down what a month contains, or a retainer quietly becomes unlimited.\n\n## Say the number, then stop talking\n\nState it plainly. \"For that scope the fee is [your number], with part of it before I start.\"\n\nThen stop. Do not apologise for it. Do not add \"but I can adjust\". Do not offer a discount nobody asked for. The silence after a price always feels longer to the person who said it than to the person hearing it.\n\n## When they say it is too expensive\n\nYou have three moves.\n\n**Hold.** \"I understand. That is my rate for this scope.\"\n\n**Reduce the scope to fit the budget.** \"With that budget I can do eight descriptions instead of twelve.\" The price moved because the work moved. That is honest, and the client can see the trade.\n\n**Decline.** Some jobs are not worth doing at any number you would take, and saying so early is cheaper for both of you than discovering it in month three. Haggling itself is not the signal. A small business owner spending money they can feel will push, and pushing twice is ordinary. What is worth weighing is a client who has pushed the price twice and asked nothing at all about what the work involves, because that is a preview of how the job will run.\n\nThe move that is not on the list is dropping the price while the work stays the same. Do that once and you have taught that client what your work is worth. Every job after it starts from the lower figure.\n\n## Raising it with an existing client\n\nTwo decisions, and both are yours. First, what the new number is: rebuild it from today's arithmetic rather than adding a bit to the old one. Second, the date it takes effect, far enough ahead that the client can plan around it. Price a brand new client at your real number straight away, because no stranger should inherit the rate you set two years ago.\n\nHow that message is worded is the client communication course's subject. The decision behind it is this one's.\n\n## What you can now do\n\nWork out your own monthly target, your own honest billable hours, and divide. That is your floor. Now take the scoped job from the last lesson, size it in hours, and price it as one deliverable at a figure comfortably above the floor.",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "putting-it-in-writing",
+          "title": "Putting it in writing",
+          "content_mdx": "# Putting it in writing\n\nAn agreement is not really about court. It is about memory.\n\nSix weeks from now you and your client will remember the same conversation differently, and both of you will be completely sincere. Terms in writing mean neither of you has to win that argument. You open the email instead.\n\n## What has to exist in writing before you start\n\nNot a fifteen-page contract. A list, agreed by both of you, that covers:\n\n**Who the parties are.** Your name and business name, theirs, and the person you will actually be dealing with day to day.\n\n**The deliverables and the exclusions.** Straight out of the last two lessons, with counts.\n\n**The dates, and what the client owes you.** Their material, their approvals, their logins, each with a date against it, and what happens to your delivery date when those arrive late.\n\n**The price, and what triggers each payment.** Not only the total. Say what has to happen before each part of it falls due.\n\n**The revision rounds, and what a change costs.** How many are included, and the plain statement that work beyond them is quoted separately rather than absorbed.\n\n**Who owns the finished work, and when.** Agree it out loud: ownership passes on full payment, or on delivery, or you keep it and license its use. What you must not do is leave it unsaid and assume your version.\n\n**Confidential material.** What you will not repeat, and whether you may show the work in your portfolio. Ask about the portfolio, because \"no\" is a normal answer and finding out afterwards is worse.\n\n**How either side ends it.** Notice, what is owed for work already done, and what gets handed over on the way out.\n\nIf you can only get some of this agreed before the work starts, get the money first: the deliverables, the payment triggers and the dates. Ownership and confidentiality can be settled in the same thread a day later. A missing payment trigger costs you this month. A missing ownership line costs you at handover.\n\n## Payment terms are risk control, not rudeness\n\nThese are arrangements freelancers use. Each one is something the two of you agree and write down, not a rule that exists somewhere waiting to be quoted:\n\n- part of the fee before work starts\n- payment split across stages on a longer job, each stage tied to something visible being delivered\n- final files released on final payment\n\nNikki illustrates children's books from Cavite. She takes part of the fee before she opens a file, and the layered artwork goes over on the balance. Nobody has ever refused her. The clients who would have refused are exactly who the arrangement exists for.\n\nIf you are already mid-job with nothing agreed, you can still raise it. Say what you have finished, propose that part of the fee is settled before you carry on, and put the rest of the terms in the same message.\n\n## The email that counts as a record\n\nYou do not need a signature to have a record.\n\nAfter the call, Marilou sends the milk tea shop this: \"Hi Ma'am, confirming what we agreed: twelve captions and twelve graphics a month, posted to the Facebook page, two revision rounds included, product photos from you by the 25th of the month before, [your figure] a month with part of it up front. Please confirm this is correct.\"\n\nWhen \"Yes, correct\" comes back, both of you are holding a dated record of the same job.\n\nWhat is not a record: a voice call nobody wrote up, a promise buried in a chat thread neither of you can find three months later, and \"but we discussed it\".\n\n## When the client sends their own contract\n\nRead all of it, including the pages after the signature block. Then:\n\n- Ask about anything you do not understand. \"What does this clause mean in practice?\" is a normal professional question, and a client who is irritated by it has told you something useful.\n- Never sign a scope you have not seen. If the contract refers to an annex, a brief or a statement of work, read that document too.\n- Watch for open-ended terms: unlimited revisions, work owned before payment, no way for you to end it.\n- Ask for a change where you need one. A contract someone sends you is an opening position, not a verdict.\n\n## Where this lesson stops\n\nThis is not legal advice, and this course cannot give any. Whether an agreement needs notarising, whether an emailed confirmation binds anybody, and what routes exist if it all goes wrong are questions for a lawyer, and the requirements change over time. When a job is large enough that the answer matters, pay for an hour of a lawyer's time. It costs less than the job does.\n\n## What you can now do\n\nWrite the confirmation email for a job you are about to start: deliverables, exclusions, dates, price and payment triggers, revision rounds, ownership, and how either side ends it. Send it, and get \"yes, correct\" back before you begin.",
+          "duration_minutes": 7
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "A message reaches Cherry, who keeps books for small shops: \"Hi, how much to handle our books?\" She has never spoken to this person before. What should she send back?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Questions first: how many accounts, how many transactions a month, who supplies the records, and what they need."
+            },
+            {
+              "id": "b",
+              "text": "Her usual monthly figure right away, because a fast reply shows she is responsive and the details can follow after."
+            },
+            {
+              "id": "c",
+              "text": "A deliberately low figure to secure the shop ahead of anyone else, then a higher one once she sees the work."
+            },
+            {
+              "id": "d",
+              "text": "A very wide range now, with a note that the real figure depends on details she will collect from them later on."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "scoping_and_pricing",
+          "explanation": "Those six words could describe one shop with a shoebox of receipts, or three outlets with staff payouts and a supplier ledger behind them. A figure sent before the job is described is a guess she will be held to. A wide range is the same guess with more room to be dragged downward, and an opening low figure teaches the client what the work is worth before she has learned anything about it. Questions cost her nothing and are what a professional sounds like."
+        },
+        {
+          "prompt": "Ferdie agreed to build a four-part onboarding email sequence for a training centre, delivered in three weeks. The written scope named the four emails and the fee and nothing else. The centre sent its course details in week three and is now on the fourth round of changes. What was missing from that scope?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A larger fee at the start, and a charge for every week the project runs on past the agreed three weeks."
+            },
+            {
+              "id": "b",
+              "text": "A clause letting him leave the project, and a limit on how long a round of feedback can run for."
+            },
+            {
+              "id": "c",
+              "text": "A line making the three weeks an estimate, and a note that dates move whenever the work grows."
+            },
+            {
+              "id": "d",
+              "text": "A revision-round limit, a date for the centre's material, and what a late handover does to the date."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "scoping_and_pricing",
+          "explanation": "Both problems come from one omission: the scope described what Ferdie owed and never described what the centre owed. A revision-round limit caps the changes, a date for the material makes the delay visible, and a line moving the delivery date when the handover is late means the slipped deadline is not silently his fault. A bigger fee with a weekly late charge covers this job and no other, and it prices a delay rather than preventing it. An exit clause and a feedback window are both real terms, and neither of them tells the centre when its own material is due. Calling the date an estimate protects nobody and tells the client that dates here do not mean much."
+        },
+        {
+          "prompt": "Sheryl is asked to design six social media templates for a gym. She has built one before, for a friend, and has no real idea what six of them takes. How should she size the job?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Copy the figure a friend charged for a similar set of templates, since that friend has already done the work."
+            },
+            {
+              "id": "b",
+              "text": "Build one template end to end, time herself doing it, multiply by six, then add briefing, revisions and admin."
+            },
+            {
+              "id": "c",
+              "text": "Add a large safety margin on top of a rough guess, so that an overrun cannot hurt her whatever the job becomes."
+            },
+            {
+              "id": "d",
+              "text": "Quote by the hour instead, so that however long the job turns out to take, the clock keeps her covered for it."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "scoping_and_pricing",
+          "explanation": "Sizing means walking through the work, not feeling your way around it. Timing one real unit gives Sheryl a number she can defend, and the briefing, revisions and admin are the parts that always happen and never make it into an estimate. Her friend's figure came out of her friend's speed and situation. A padded guess is still a guess, and it is usually padded in the wrong place. Hourly does not size the job at all, it just moves the surprise onto the invoice."
+        },
+        {
+          "prompt": "Lito builds monthly report decks for a property agency and bills by the hour. He built a template, and the deck that used to take him six hours now takes two. His income has dropped. What should he change?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nothing. Bill the two hours and accept the drop, since a client paying by the hour is only paying for time worked."
+            },
+            {
+              "id": "b",
+              "text": "Keep billing hourly, and quote a minimum number of hours per deck so a fast month cannot fall below what it is worth."
+            },
+            {
+              "id": "c",
+              "text": "Move to a price per finished deck, set at a figure he is happy with, so that the speed he earned belongs to him."
+            },
+            {
+              "id": "d",
+              "text": "Keep billing hourly and raise his rate each time he gets faster, so that the total per deck stays where it was."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "scoping_and_pricing",
+          "explanation": "Hourly billing charges for time, so getting better at the work cuts your pay. A price per deck is weighed against what a finished deck is worth to the agency rather than against Lito's speed, and every hour he saves after that is his. A minimum-hours floor is hourly billing arguing with itself, and the first thing the agency will ask is what the minimum is for. Ratcheting the hourly rate to hold the same total is a deliverable price wearing a disguise, and it forces an awkward conversation every few months instead of one clean change now. Accepting the drop means the days he spent building the template were a pay cut he paid for himself."
+        },
+        {
+          "prompt": "Grace quoted a monthly figure to keep a small restaurant's books. The owner replies that it is too expensive. Grace built that figure from her own costs and billable hours and is comfortable with it. What are her real options?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Hold the figure, or offer a smaller version of the job that fits the budget he has, or decline the work politely."
+            },
+            {
+              "id": "b",
+              "text": "Cut the figure by a fifth while keeping the same monthly work, so the owner can see she is willing to be reasonable."
+            },
+            {
+              "id": "c",
+              "text": "Explain why the rate is fair and how much experience sits behind it, then repeat the same figure to him."
+            },
+            {
+              "id": "d",
+              "text": "Take the lower figure for three months as a trial, then move him up to the full rate once he sees the value."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "scoping_and_pricing",
+          "explanation": "Price and scope move together, or neither moves. Holding, shrinking the job to fit the money, and declining are all honest positions. Cutting the fee while the work stays the same teaches the client what her work is worth, and every later job starts from the lower number. The trial rate is that same discount with a date on it, and the conversation about ending it is harder than the one she is avoiding now. Justifying the rate at length reads as nerves and invites more pushing."
+        },
+        {
+          "prompt": "Karen agreed a logo and packaging job over the phone with Tita Baby, a family friend who runs a bakery in Bulacan. The scope, the fee and the deadline were all discussed on the call. Tita Baby says there is no need for papers between family. What should Karen do before starting?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ask her to sign a formal contract before starting, since a job taken on without one is not worth the risk to her."
+            },
+            {
+              "id": "b",
+              "text": "Send a short email setting out what was agreed and ask Tita Baby to reply confirming that it is correct."
+            },
+            {
+              "id": "c",
+              "text": "Write up her own detailed notes of the call and keep them safely, in case there is a disagreement later on."
+            },
+            {
+              "id": "d",
+              "text": "Start the work and raise the terms in writing later, once there is something finished to point at."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "professional_communication",
+          "explanation": "Writing it down is about shared memory, not a courtroom. A confirmation email that gets a \"yes, correct\" back is a dated record both of them hold, and it costs nothing socially because it reads as being organised rather than as being suspicious. Karen's private notes record only her version, which is exactly the thing in dispute. Terms produced after the work has started are the hardest to agree. Demanding a signed contract from a family friend is likely to sour the job it was meant to protect."
+        },
+        {
+          "prompt": "An agency sends Miguel a six-page contract for video editing work. One clause gives the agency ownership of all materials produced, which he does not fully understand, and another line mentions revisions until the client is satisfied. What is the professional move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Sign it, because an established agency with a proper contract department is unlikely to ever use it against a freelancer."
+            },
+            {
+              "id": "b",
+              "text": "Sign it now to keep the job, and note privately which clauses he will push back on with the next client instead."
+            },
+            {
+              "id": "c",
+              "text": "Take it to a lawyer before replying at all, since one clause is about ownership and he does not fully understand it."
+            },
+            {
+              "id": "d",
+              "text": "Reply asking what those two clauses would mean in practice, and propose wording for both that he is comfortable with."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "professional_communication",
+          "explanation": "A contract someone sends you is an opening position, not a verdict. Asking what a clause means in practice is a normal question, and proposing wording shows he read it and still wants the job. Revisions until satisfied is an open-ended promise no fee can cover, so it has to be pinned down now. Signing something he does not understand hands the agency both the argument and his working files, and noting it for the next client leaves this one unfixed. Paid legal advice is the right move when a job is large enough that the answer matters, and it is worth knowing that. On an editing contract it spends money and a week on a question the agency will answer in a reply."
+        },
+        {
+          "prompt": "Belen agreed a fee for a set of wedding invitation designs. Nothing was said about payment timing, and she has now finished roughly half the drafts. She has no money in hand and no written terms. What should she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Finish everything and send the full set over first, then ask for payment, because raising money halfway through looks distrustful."
+            },
+            {
+              "id": "b",
+              "text": "Stop work straight away and tell the client that nothing further will be sent until the whole fee has been settled in full."
+            },
+            {
+              "id": "c",
+              "text": "Message now proposing that part of the fee is settled before she continues, and confirm the remaining terms in the same message."
+            },
+            {
+              "id": "d",
+              "text": "Carry on as agreed and simply ask for money up front from her next client, treating this job as a lesson learned."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "scoping_and_pricing",
+          "explanation": "Payment terms are an arrangement, so they can still be proposed mid-job, and the moment she has finished work to point at is the moment she has the most standing to raise it. Folding the rest of the terms into the same message closes the whole gap at once. Delivering everything first leaves her holding all of the risk. Demanding the full fee before any delivery is a bigger ask than she needs and invites a fight. Saying nothing means this job runs on hope right to the end."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-3-delivering-invoicing-and-when-it-goes-wrong",
+      "title": "Delivering, invoicing, and the three ways it goes wrong",
+      "description": "The agreement only matters if you run the job against it. Deliver so nobody has to ask, invoice so it can be paid, and know the proportionate move when the work keeps growing, the client goes quiet, or it is time to end.",
+      "lessons": [
+        {
+          "slug": "delivering-what-you-promised",
+          "title": "Delivering what you promised",
+          "content_mdx": "# Delivering what you promised\n\nA client hires you a second time for reasons that have little to do with talent. They hire you again because the first job cost them no attention. They knew what was coming, it arrived when you said it would, and it was usable the moment they opened it.\n\nReliability is also the only real defence you have when a client is unhappy. If you can point at what was agreed, what you sent and when you sent it, a disagreement stays a disagreement about the work. Without that record it becomes your word against theirs, and the person holding the money wins that one.\n\n## Start the job on purpose\n\nThe first hour of a job decides how the rest of it goes.\n\nConfirm the scope in writing, in the words you settled in chapter 2: what you are delivering, what you are not, how many rounds of changes are included, and the dates. Confirm what the client owes you and when, because a job cannot start on the promise of files.\n\nThen collect the inputs before you begin. Brand files, logins, the actual copy, the product samples, the name of the person who approves the work. If half of it is missing, say so on day one and say what the missing half does to the date. A deadline you accepted while still waiting for a file is a deadline you agreed to miss.\n\nThen tell the client what you will send and when. One line is enough. A short progress note at a point you both agreed removes the anxious check-ins before they start, and how to word that note belongs to the client communication course rather than to this one.\n\n## Hand over so it can be used\n\nSending a file is not the same as handing over work.\n\nRowena edits product photos for a bag seller in Cebu. On her first job she sent forty files still named by her camera. The client spent an evening working out which was which, then asked for the whole set again, renamed. That evening was free work Rowena did twice.\n\nSend the agreed format. Name the files so that a stranger opening the folder can tell what each one is. Put them somewhere the client can reach without requesting access. Add a short note: what is included, what changed since the last version, and what the client does next.\n\nIf the work needs something from the client, say what it is. Not \"let me know.\"\n\n## When you are going to miss a date\n\nSay so before the date, not after it.\n\nMarvin writes a monthly newsletter for a dental clinic in Marikina. One Wednesday he could see that Friday was gone. He wrote that morning: the draft would land Sunday, the reason was one sentence, and he gave the reason once. The clinic moved its send. Nothing else happened.\n\nThe version that ends relationships is silence until Monday, after the client has spent Friday afternoon and a whole weekend wondering. A missed date is a scheduling problem. A missed date the client discovered on their own is a trust problem, and better work later does not repair it.\n\nGive a new date you can actually hit, then hit it. Missing once is normal.\n\nA second miss on the same job is different in kind, because the client has stopped weighing a date and started weighing whether any date from you is real. A third date from the same source does not answer that. What does is shrinking the promise. Cut the next delivery down to a piece you can certainly hand over, send it on the day you said, and agree the remainder as its own commitment with its own date. One small kept promise restores more than one large hopeful one. Then look at whether you have taken on more than you can carry, because two misses on one job is usually an answer to that question rather than a run of bad luck.\n\n## Feedback, and work that comes back\n\nSome of what you send comes back. Read it once, then sort it before you reply.\n\nThere are two piles. In the first, the client is saying the work does not match what was agreed: wrong size, a missing item, a fact that is wrong, a file that will not open. That is yours to fix, inside the revision rounds, without argument and without a defence of your process.\n\nIn the second, the client is asking for something different from what was agreed. New pages, a new direction, a fifth version after two rounds. That is not feedback. That is a change, and the last lesson of this chapter is about what to do with it.\n\nSorting a message into those two piles before you answer is what keeps you from arguing about a genuine mistake, or from absorbing a new project for nothing.\n\n## Keep your own record\n\nOne place, updated as you go: what was agreed, what you sent, the date you sent it, and what the client approved.\n\nA folder and a running note are enough when you have one or two clients. Running several clients at once needs a system, and that system is the client operations course.\n\nYou will reach for this record twice. Once when somebody asks what happened six weeks ago, and once when an invoice has not been paid and the record is the thing that makes that conversation short.\n\n## What you can now do\n\nFor the job you are running now, write the four lines: what was agreed, what you have sent, the date you sent it, what they approved. Put them somewhere you will find them again, because that is the file you will reach for twice.\n",
+          "duration_minutes": 7
+        },
+        {
+          "slug": "getting-paid",
+          "title": "Sending the invoice and getting paid",
+          "content_mdx": "# Sending the invoice and getting paid\n\nDelivering and being paid are two separate events, and the gap between them is where new freelancers lose money quietly. The work went out, the client said thank you, and then nothing was ever billed, or it was billed to somebody whose job is not paying anybody.\n\n## What makes an invoice payable\n\nAn invoice is not a request for a favour. It is a document the client's finance side can act on without asking you a question first, which means three things have to be true of it. It carries a number both of you can refer to later, rather than \"the invoice\". It describes the work in the same words as the agreement, so it can be matched against what was approved. And it names the due date you agreed and exactly how to pay you, account details and payment reference included. Anything the payer has to email you about is a delay you built yourself.\n\nThe full anatomy of an invoice, what a receipt is as against the document a registered seller has to issue, and how to run a numbering sequence that never collides are the bookkeeping course's subject. What this lesson owes you is the part that is about the client rather than about the paperwork, which is who you send it to and what you do when it is not paid.\n\n## Send it to the person who pays\n\nThe person who briefed you may not be the person who pays you.\n\nJoy edits podcast audio for a small firm in Ortigas. Her first invoice sat with the marketing officer who hired her for three weeks. There was no malice in it. Paying suppliers simply was not that person's job, and nobody told her it had arrived.\n\nAsk at the start, while everyone is friendly: who should the invoice go to, and what do they need on it? Some clients want a reference number of their own. Some need it before a particular day to make that month's payment run. Ask once, write down the answer, and the next twelve invoices are easy.\n\nThen invoice on the schedule you agreed rather than when you happen to remember. If the agreement says part on signing, part at the halfway point and the balance on delivery, send each one on the day it falls due.\n\n## The ladder\n\nLate payment gets a rising, unemotional response. Every rung is dated and specific, and every rung assumes the last one simply was not seen.\n\n1. Near the due date, a short reminder: invoice number, amount, due date, payment details again.\n2. After the due date, a firmer note with the invoice attached again, stating that it is now overdue and asking for a payment date.\n3. Then a message that names the consequence, such as further work pausing on a stated date until the invoice is settled. Only write this if you agreed it and intend to do it.\n4. Then a decision, which is not a message at all: does this client get any more of your time?\n\nEvery rung stays calm. One angry message feels excellent for about a minute, ends the relationship without producing money, and hands the client something to talk about instead of their bill. The sentences for each rung are the client communication course's subject. The decision behind them is yours.\n\nIf you agreed that work pauses when payment stops, pause. A term you never enforce is a term you do not have.\n\n## Keep the money record\n\nTwo columns will do at the start: what you invoiced, and what actually arrived. Invoice number, client, amount, date sent, date paid.\n\nThat record answers the one question you cannot answer from memory, which is who owes you what today. It is also what you hand to anybody helping you sort out a real dispute later.\n\n## What this lesson will not tell you\n\nRegistration, the documents a registered seller has to issue, and tax obligations all exist for freelancers here, and what applies to you depends on how you are registered and what you earn. These rules change.\n\nSo this lesson names none of them. No form numbers, no thresholds, no rates, no filing dates. Whatever a course, a Facebook group or a chatbot tells you about those is worth nothing next to the BIR's own site, and the same holds for business name registration with DTI and for SSS, PhilHealth and Pag-IBIG. Look them up at the source, on the day you need them.\n\nThe same rule covers the rails your money travels on. Fees, transfer times and limits for banks, e-wallets and remittance services all change, so check the provider's current schedule yourself before you promise a client anything about how payment will arrive.\n\n## What you can now do\n\nWrite the invoice for the job you are on now. Before you send it, ask the client two things: who it should go to, and what they need on it. Then put the invoice number, the amount and the date you sent it into your money record on the same day, and leave the paid column empty until it is not.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "creep-silence-and-the-exit",
+          "title": "Scope creep, silence, and the exit",
+          "content_mdx": "# Scope creep, silence, and the exit\n\nThree things end freelance jobs badly. The work quietly grows, the client goes quiet, or the relationship reaches its end and nobody handles the ending. Each one has a proportionate move, and none of the moves is a feeling.\n\n## The work that grows\n\nScope creep never arrives as a demand. It arrives as \"while you're at it\" and \"quick lang.\" Each request is small, each one is easy to say yes to, and the fifth one is a project you are doing for free.\n\nThe answer is not refusing and it is not absorbing. It is naming.\n\nRowena agreed twelve edited photos with two rounds of changes. After the second round the client asked for four more shots, a different crop for a banner, and a version with the price laid over it. Her reply did three things. It named what sat outside the agreed twelve, it gave a price for that extra work, and it gave a date the extra work would be ready. The client took two of the three items and dropped the other. Nobody was insulted.\n\nThe reference point is the scope you wrote in chapter 2, not your patience. That is what the exclusions list was for. Without it you are arguing about memory, and memory arguments go to whoever sounds more certain.\n\nWhen a client says it was always included, do not call them a liar and do not fold. Quote the line from the agreement, say what you understood the job to be, and offer the extra as priced work with a date. If the agreement turns out to be genuinely vague, that is a lesson about your next scope, and the cheapest ending is often to do the small thing once and tighten the wording before the next job.\n\nWriting those sentences well is the client communication course's subject. Tracking changes across several clients at once is the client operations course's. What belongs here is the money: a change has a price and a date, or it is not a change, it is a gift.\n\n## The client who goes quiet\n\nThere is a real difference between a busy client and a stalled one. A busy client answers late and still moves the work forward. A stalled client has stopped, and your job is sitting in the middle of their silence with your hours already spent.\n\nDecide a follow up cadence and say it out loud instead of messaging daily. Something like: a note now, another in a few days, and if there is still nothing after that, the work pauses and you will pick it back up when they are ready. Then do exactly that.\n\nWhere you stop matters. Get the work to a clean point, write down what is finished and what is waiting on them, and send that as a dated note. It protects you twice. The client cannot later say nothing was delivered, and you can restart without reconstructing where you were.\n\nThis is what the up front payment and the paused work term were written for. If part of the fee arrived before you started, a stalled client costs you time but not the whole job. If nothing arrived, you have just learned why that arrangement exists, and you write it into the next agreement.\n\nA client who goes quiet after delivery but before paying is a different case. That is not a stall. That is a late invoice, and it goes up the ladder from the previous lesson.\n\n## Ending it\n\nSome clients cost more than they pay. Late every time, three chases per invoice, a new emergency every weekend, a scope that moves the moment you look away. You do not have to fire anybody dramatically. You have to stop taking new work from them.\n\nThe clean version is short and forward looking. You are not able to take on new work from a stated date, you will finish what is already committed, and you wish them well. No list of grievances. A client you end well still refers people to you. A client you end badly talks about you in the same groups where your next job is sitting.\n\nYou will also be ended sometimes, for reasons that have nothing to do with you. Budgets get cut and staff change. When it happens, deliver what is committed, invoice what is owed, and ask for two things while the goodwill is still warm: a short testimonial, and permission to show the work in your portfolio.\n\nIf a client genuinely does not pay, keep your records, understand that formal routes exist, and get advice from somebody qualified before you use one. Nothing in this course is legal advice. A freelancer with a downloaded demand letter and no advice is not a plan.\n\n## What actually keeps you in business\n\nThe freelancer who lasts is not the one who never meets a bad client. Everybody meets them.\n\nIt is the one whose scope was written down, whose invoices went out on the agreed day, and whose record of what was sent survives the argument. That is the whole difference between a bad client being survivable and a bad client being expensive.\n\n## What you can now do\n\nName the client you have been absorbing changes for. Write out their next request as a change with a price and a date against it, and send that instead of doing it.\n",
+          "duration_minutes": 8
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Vilma owes a restaurant its month of captions on the 28th. On the 25th she can already see that the 28th will not happen. What should she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Work through the weekend and send them on the 30th with a long apology attached."
+            },
+            {
+              "id": "b",
+              "text": "Send half the captions on the 28th so that the agreed date is technically met."
+            },
+            {
+              "id": "c",
+              "text": "Tell the restaurant on the 25th that the 30th is the new date, and say why once."
+            },
+            {
+              "id": "d",
+              "text": "Say nothing yet, because a two day slip might still close up on its own."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "delivery_reliability",
+          "explanation": "A missed date is a scheduling problem. A missed date the client finds out about on their own is a trust problem, and better work later does not repair it. Telling the restaurant on the 25th lets them plan their own month around it, which is the thing they actually need. Sending half on the day buys the date and spends the credibility of every delivery after it, and waiting to see whether the slip closes up only shortens the warning the client gets."
+        },
+        {
+          "prompt": "Bea writes eight product descriptions for a hardware supplier, with one round of changes agreed. The round has been used. The client now asks for two more descriptions and a shorter version of each for the shop sign. What should she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Do the two extra descriptions now and charge only for the sign versions, since two more is a small ask."
+            },
+            {
+              "id": "b",
+              "text": "Refuse both and point at the agreement, since the one round of changes was used up already."
+            },
+            {
+              "id": "c",
+              "text": "Do all of it now and raise her price for this client the next time they book anything."
+            },
+            {
+              "id": "d",
+              "text": "Quote both of them as a change, with a price and a date, set against the eight that were agreed."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "scoping_and_pricing",
+          "explanation": "Naming the request as a change is the move that is neither refusing nor absorbing. It uses the scope as the reference point instead of your patience, and it leaves the client a real choice: pay for both, or drop one. Splitting them, doing the descriptions free and charging only for the sign versions, prices half the change and teaches the client where the free half is. Absorbing all of it teaches them the agreed eight meant nothing, and a flat refusal spends goodwill you did not have to spend. Raising the price silently next time punishes them for something they were never told about."
+        },
+        {
+          "prompt": "Ester sent her invoice to Bernard, the operations lead who briefed the job. Three weeks later nothing has been paid and Bernard has not mentioned it at all. What should she do next?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Follow up with Bernard and ask him to walk it over to whoever pays suppliers."
+            },
+            {
+              "id": "b",
+              "text": "Ask Bernard who processes payments, send the invoice there, and keep him copied in."
+            },
+            {
+              "id": "c",
+              "text": "Wait another two weeks before chasing, since three weeks is not unusual for a small firm."
+            },
+            {
+              "id": "d",
+              "text": "Assume finance will find it eventually and start the next piece for the firm."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "professional_communication",
+          "explanation": "An invoice sitting with the person who briefed you is not necessarily malice. Paying suppliers is simply not their job. Routing it to the payer while keeping your contact copied fixes this invoice and tells you who to bill next time, which is a question worth asking at the start of any engagement. Asking Bernard to walk it over keeps the invoice moving through the one person who has already not moved it, and it costs another week to find that out. Waiting longer may well match how the firm pays, and you will still be waiting without knowing who is holding it. Starting more work grows the amount you are owed."
+        },
+        {
+          "prompt": "An invoice is two weeks past the due date you both agreed. You sent one short reminder near the due date and have heard nothing back since. What is the next move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Phone the client instead, since a conversation moves faster than another email will."
+            },
+            {
+              "id": "b",
+              "text": "Attach the invoice again, say it is now overdue, and ask them for a payment date."
+            },
+            {
+              "id": "c",
+              "text": "Offer to cut the amount if they settle this week, since some money beats none at all."
+            },
+            {
+              "id": "d",
+              "text": "Send the same reminder again unchanged, in case the first one was simply missed."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "delivery_reliability",
+          "explanation": "The chase works as a ladder, and each rung is calm, dated and specific. Rung two attaches the invoice again, states plainly that it is overdue, and asks for a date, which gives the client one thing to answer and gives you a commitment you can quote back at rung three. A phone call can help and nothing said on it is dated or attached to the invoice, so you would be writing it down afterwards anyway. Repeating the same reminder word for word treats the second message as the first and hands the client nothing new to act on. Discounting teaches the client that waiting is profitable, and it is a rung you cannot climb back down from."
+        },
+        {
+          "prompt": "Aiza took part of her fee up front and has delivered half the work. The client has not answered for ten days, and two follow ups have gone unanswered. What should she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Pause at a clean point and send her a dated note on what is done and outstanding."
+            },
+            {
+              "id": "b",
+              "text": "Finish the rest of the work anyway and invoice the balance once she is done."
+            },
+            {
+              "id": "c",
+              "text": "Keep working on the parts that need nothing from the client, and invoice for those."
+            },
+            {
+              "id": "d",
+              "text": "Send the finished half now so the client has something in hand while they decide."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "delivery_reliability",
+          "explanation": "A stalled client is not a reason to keep spending hours, and it is not a reason to disappear either. Stopping at a clean point caps what you have at risk, and the dated note gives you a record that the work was delivered and that the delay sits on their side. Finishing everything grows your exposure to a client who may not come back. Carrying on with the parts that need nothing from them is the same exposure with a better excuse, and invoicing for pieces nobody agreed to split out invites an argument about what the job even was. Sending the finished half without the note leaves work delivered and nothing written down about where it stopped."
+        },
+        {
+          "prompt": "A client insists a second landing page was always part of the deal. Your written scope lists one page, and it names the second page in the exclusions. What do you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Give in this once, since arguing about one page costs more than building it."
+            },
+            {
+              "id": "b",
+              "text": "Offer to build it at half price, since the two of you plainly read the scope differently."
+            },
+            {
+              "id": "c",
+              "text": "Build it now and add the charge to the final invoice without raising it first."
+            },
+            {
+              "id": "d",
+              "text": "Quote the line from the scope and offer that page as priced work with a date."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "professional_communication",
+          "explanation": "The exclusions list exists for exactly this moment, and quoting it is not an accusation. It moves the conversation from whose memory is better to what was written, then gives the client a way forward that costs them money rather than costing you a weekend. Splitting the difference at half price is generous, and it concedes that a written scope is negotiable, which is the one thing you were relying on it not to be. Building it silently and billing later produces an invoice dispute at the worst possible moment, which is when you want to be paid."
+        },
+        {
+          "prompt": "A client always pays, but never before the third chase. He has just offered you another project on exactly the same terms as the last one. What do you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Take it on the same terms, since a client who pays late still beats no work."
+            },
+            {
+              "id": "b",
+              "text": "Decline and tell him plainly that his payment record is the reason you refuse."
+            },
+            {
+              "id": "c",
+              "text": "Take it only if part of the fee comes up front and payment dates are written."
+            },
+            {
+              "id": "d",
+              "text": "Take it and quietly raise the price to cover the hours you spend chasing him."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "delivery_reliability",
+          "explanation": "A client who pays late is not automatically a client to drop, but repeating the arrangement that produced three chases guarantees three more. Changing the terms is the proportionate move: money up front, dated payment points, and a pause you have said you will use. Accepting the old terms keeps the cost, a blunt refusal burns a referral you could have kept, and a silent markup hides your reasoning from the one person who could fix the behaviour."
+        },
+        {
+          "prompt": "Rico has finished a set of social media graphics for a coffee shop in Davao and is about to send them across to the owner. What does handing over properly look like?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Send the agreed format, clearly named, with a short note on what is included."
+            },
+            {
+              "id": "b",
+              "text": "Share his working folder so the client can pick whatever they want out of it."
+            },
+            {
+              "id": "c",
+              "text": "Send the files and offer to walk the owner through them on a call this week."
+            },
+            {
+              "id": "d",
+              "text": "Send them in his own format and convert it later if the client asks him to."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "delivery_reliability",
+          "explanation": "Handing over means the client can use the work without doing any of yours. Agreed format, names a stranger can read, and a short note on what is included and what happens next is the whole habit, and it is what stops a second unpaid evening of renaming and re-exporting. A walkthrough call is a good thing to offer and a poor substitute for it, because the folder still has to make sense the week after the call. A working folder pushes the sorting onto the client, and your own format means a conversion round nobody budgeted for."
+        }
+      ]
+    }
+  ],
+  "final_exam": {
+    "title": "Freelancing Fundamentals final exam",
+    "passing_score": 70,
+    "max_attempts": 3,
+    "questions": [
+      {
+        "prompt": "Nine months on a freelance marketplace. You have finished eleven small jobs, every one of them for a different buyer, and your income has not moved. You want the next nine months to look different. What actually changes it?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Go back to the eleven buyers whose work you finished, ask about repeat work and referrals, and build the relationship the marketplace was only a doorway to."
+          },
+          {
+            "id": "b",
+            "text": "Apply to more posts every day from a saved template, since the number of applications you send is the only lever a marketplace really hands you."
+          },
+          {
+            "id": "c",
+            "text": "Sign up on two more marketplaces so the same profile is working in three places at once, which puts your name in front of far more buyers."
+          },
+          {
+            "id": "d",
+            "text": "Price yourself under the other applicants for a while, so that a buyer sitting there comparing you against four other people has one obvious reason to pick you."
+          }
+        ],
+        "correct_option_id": "a",
+        "competency": "finding_work",
+        "explanation": "A marketplace is the easiest place to start and the weakest place to build, because the buyer is the platform's relationship and not yours. Eleven finished jobs is eleven people who have already paid you and already know your work, which is the cheapest lead you will ever have, and nobody asked them. More applications and more platforms is doing the same weak thing in more places. Pricing under everybody teaches buyers what your work is worth and leaves you no room when the volume finally arrives."
+      },
+      {
+        "prompt": "Your application said you could start that day and have the whole thing finished in three days. You wrote that before you had seen the brief. The client hires you, and the brief that arrives is roughly twice the job you had pictured. What do you do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Before you start, write to say what the three days was based on, what the brief actually contains, and the date and price the real job needs. Ask them to confirm."
+          },
+          {
+            "id": "b",
+            "text": "Take the extra hours out of your evenings and hit the three days anyway, because the date came out of your own mouth and missing the first one you ever gave would end this."
+          },
+          {
+            "id": "c",
+            "text": "Begin now and raise the size of the job on the third day, when the delivery is visibly not going to land and both of you can see the gap for yourselves."
+          },
+          {
+            "id": "d",
+            "text": "Ask for more money to cover the extra work but keep the three days as promised, since the date is what won you the job and they planned their week on it."
+          }
+        ],
+        "correct_option_id": "a",
+        "competency": "professional_communication",
+        "explanation": "A number given before scoping is a guess you will be held to, and the moment to correct it is before any work exists, when it is still a scoping conversation rather than an excuse. Say what the estimate assumed, what the brief turned out to contain, and what the real job needs. Working nights to protect a bad estimate hides the problem and prices your next quote off the same wrong basis. Raising it on the third day is the same message delivered when the client can no longer plan around it. Charging more for a job you have not resized is agreeing to fail on time for a slightly better fee."
+      },
+      {
+        "prompt": "A client you worked for once comes back with 'same as last time, same price'. Last time was agreed across a chat thread over about a week, and nothing was ever written down in one place. What do you do first?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Write out what you think 'same as last time' means as a list of deliverables and exclusions, send it over, and ask them to confirm it before you quote anything."
+          },
+          {
+            "id": "b",
+            "text": "Quote the figure you charged before, since they were happy with the work and reopening the price is the quickest way to lose a client who came back on their own."
+          },
+          {
+            "id": "c",
+            "text": "Quote the old figure with a quiet margin on top, because a repeat job always grows a little and the margin covers that without you having a conversation about it."
+          },
+          {
+            "id": "d",
+            "text": "Ask for part of the fee up front this time, since the first job went through fine and a deposit is the one piece of protection you did not have on it."
+          }
+        ],
+        "correct_option_id": "a",
+        "competency": "scoping_and_pricing",
+        "explanation": "You cannot repeat a job neither of you can point at. 'Same as last time' is two different memories of a chat thread, and the second job is where they quietly diverge. Writing the list is quick, it costs the client nothing to confirm, and it turns an unscoped repeat into something you can price and later defend. The price is not the first question here. A margin added silently is a guess about growth you have not defined, and it leaves you arguing about a number rather than about the work. A deposit is worth agreeing too, but a deposit against an undefined job still leaves you delivering something they can call wrong."
+      },
+      {
+        "prompt": "Marites quoted her last three jobs at an hourly figure she was happy with, and every one came out worse than she expected. Going back through her calendar, the briefing calls, the revision rounds and the chasing were about as much time as the work itself, and none of it was billed. What should she change?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Put the briefing calls and the chasing on the invoice at the same hourly figure, so the hours that were disappearing on her are finally being paid for."
+          },
+          {
+            "id": "b",
+            "text": "Raise the hourly figure until those three jobs would have come out roughly where she wanted them, and then quote that new figure on everything she takes on from now on, old clients included."
+          },
+          {
+            "id": "c",
+            "text": "Price the deliverable instead, sized by walking through every step including briefing, revisions and admin, so the parts nobody pays for by the hour sit inside the number."
+          },
+          {
+            "id": "d",
+            "text": "Get faster at the work itself, since the billed hours are the part she controls and every hour she saves on them goes straight into what she keeps."
+          }
+        ],
+        "correct_option_id": "c",
+        "competency": "scoping_and_pricing",
+        "explanation": "Size a job by walking through it rather than by feel, and the walk has to include the invisible parts, because briefing, revisions and chasing happen on every job and are exactly what an hourly quote leaves outside. A deliverable price carries them without asking the client to agree that a phone call is billable, which a client has every reason to resist. Raising the hourly figure keeps the same hole and just makes it more expensive per hour, so a job with heavy revisions still loses. Getting faster actively punishes her under hourly pricing, which is the argument against it. Bill the clock and you are paid for slowness."
+      },
+      {
+        "prompt": "Your written agreement says the client sends the product photos by the fifth and you deliver by the fifteenth. It is the ninth, no photos have arrived, and the client has said nothing about them. What do you do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Hold the fifteenth and build everything you can around placeholders, then drop the real photos into the finished layouts whenever the client eventually turns them up."
+          },
+          {
+            "id": "b",
+            "text": "Write today, say the photos are four days late, and state the new delivery date that the agreement's own terms produce. Ask them to confirm the new date."
+          },
+          {
+            "id": "c",
+            "text": "Wait a little longer. Chasing a client for their own material looks anxious, and the fifteenth is still far enough out for the photos to arrive in time."
+          },
+          {
+            "id": "d",
+            "text": "Deliver on the fifteenth with whatever you have been given, invoice the full amount as agreed, and treat the missing photos as the client's problem rather than yours."
+          }
+        ],
+        "correct_option_id": "b",
+        "competency": "delivery_reliability",
+        "explanation": "The reason you write down what the client owes you and by when is so that a late input has a stated consequence instead of an argument. Use it while there is still time to plan around it. Placeholders mean you do the layout twice and the second pass lands after the deadline anyway. Waiting turns their slip into your missed date, since the client will remember the fifteenth and not the fifth. Delivering something incomplete and invoicing in full is how a scope dispute starts, and you will be arguing about it from the weaker position of having already sent the work."
+      },
+      {
+        "prompt": "Three weeks after you delivered, a client writes that they never received the final version and that this is why the invoice is unpaid. You did send it, to the address they gave you, on the day you said you would. What do you do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Resend the files straight away and apologise for all of the confusion, since arguing about who sent what to whom is never worth the goodwill that it burns on the way through."
+          },
+          {
+            "id": "b",
+            "text": "Resend it only once the invoice is settled, since the terms you agreed put final files on final payment, and a copy of the work already went across to them once."
+          },
+          {
+            "id": "c",
+            "text": "Ask them to check with whoever briefed the job, because the work was sent as agreed and the loss almost certainly happened somewhere on their side of it."
+          },
+          {
+            "id": "d",
+            "text": "Resend it, with the date of the original delivery and the note that went with it, because a dated record of what you sent settles this in a single message."
+          }
+        ],
+        "correct_option_id": "d",
+        "competency": "delivery_reliability",
+        "explanation": "Keeping your own record of what was sent and when is not paperwork, it is the thing that turns a payment stall into a five minute conversation. Resend and date it in the same breath, without accusation, and the invoice is back on the table. A bare apology concedes a fact that is not true and invites the same delay next time. Final files on final payment is a real term and it governs the first release, not a second copy of something already delivered, so holding this one back hands them the argument they were looking for. Telling them to go and look on their own side puts the burden on the person you want to pay you, and it does not produce the file."
+      },
+      {
+        "prompt": "A client is refusing the final payment on the grounds that the work is not what was discussed. There is no written scope. There is a long chat thread, and the thread does contain their original request. What is the first move?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Tell them you will be taking this further unless the invoice is settled by the end of this week, because a firm position taken early is what moves a client who has already decided to stall."
+          },
+          {
+            "id": "b",
+            "text": "Go back through the thread, then send one email setting out what you understood the job to be and what you delivered, and ask them to confirm it or say exactly what is missing."
+          },
+          {
+            "id": "c",
+            "text": "Offer to redo the work at no charge, since a second pass costs you less than an unpaid invoice does and it keeps a working relationship alive out of it."
+          },
+          {
+            "id": "d",
+            "text": "Take whatever partial amount they are willing to offer and move on, treating the shortfall as what the lesson about working without a written scope cost you."
+          }
+        ],
+        "correct_option_id": "b",
+        "competency": "scoping_and_pricing",
+        "explanation": "The chat thread is the only record either of you has, so the first move is to turn it into one written statement of the job and put it in front of them. Either they confirm it, which gives you the scope you never had, or they name what is missing, which gives you something specific to answer instead of a feeling. Threatening to escalate before you have established what was agreed spends the relationship and produces nothing, and what any formal route would actually involve is a question for a lawyer rather than for you in the moment. Redoing it free rewards the vagueness. Accepting a partial payment in silence settles the invoice and teaches you nothing you can use on the next client."
+      },
+      {
+        "prompt": "You sent the invoice on the agreed date, a short reminder when it fell due, then a firmer one with the invoice attached again. The client replied \"sorry, will process next week\". Next week has been and gone and nothing has arrived. Your written terms say further work pauses if an invoice goes unsettled. What does your next message do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Restates the amount and the original due date, and asks once more for a payment date, since the last note may simply not have been read."
+          },
+          {
+            "id": "b",
+            "text": "Says nothing more. You have chased three times, and a fourth message only makes staying silent cheaper and easier for them to keep doing."
+          },
+          {
+            "id": "c",
+            "text": "Names the date they gave you, states that further work is now paused until the invoice is settled, and gives the date that pause starts."
+          },
+          {
+            "id": "d",
+            "text": "Offers to split the invoice in two so they can settle part of it now and the balance at the end of the month, which is money actually moving."
+          }
+        ],
+        "correct_option_id": "c",
+        "competency": "professional_communication",
+        "explanation": "Each rung of the ladder does something the last one did not, and this rung names a consequence you can actually carry out, which is only true because you agreed it in writing before the work started. Quote their own commitment back, say what happens next, and put a date on it, because a consequence with no date is a mood. Asking again for a payment date is rung two, and you have already had a date from them and watched it pass, so repeating it tells them the ladder has no rungs left. Splitting the invoice rewrites the terms in their favour immediately after a broken promise, which is the moment you have least reason to. Going silent hands them the outcome they were already drifting towards, and a term you never enforce is a term you do not have."
+      },
+      {
+        "prompt": "Someone posts in a Facebook group for local business owners asking for help with an online store that has gone slow. Twenty comments underneath already say 'PM sent' and 'interested po'. You can genuinely do the work. What gets you picked?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A public reply naming the first thing you would check and why, with one link to something close to it you have done, then a short message."
+          },
+          {
+            "id": "b",
+            "text": "A message sent before anybody else gets there, since the first name in the inbox is the one a busy poster actually opens and reads."
+          },
+          {
+            "id": "c",
+            "text": "A comment offering to do the first fix at no charge, so they can see what your work is like before deciding to spend anything at all."
+          },
+          {
+            "id": "d",
+            "text": "A comment listing every platform and tool you have ever worked with, so that whatever their store happens to run on, they can see you cover it."
+          }
+        ],
+        "correct_option_id": "a",
+        "competency": "finding_work",
+        "explanation": "Twenty identical comments have told the poster nothing except that twenty people want work. One sentence of diagnosis says you understood the problem, and one relevant sample proves it, and both are visible to everyone else reading the thread rather than buried in a private message. Speed only wins against people doing the same thing you are. Free work here is the actual deliverable, which is the arrangement to refuse. A list of every tool you have touched reads as nobody's specialist and gives the poster nothing to act on."
+      },
+      {
+        "prompt": "You have no paying clients yet. Two things are on the table. A page with a large following wants free graphics for a month, credited to you. A bakery down the road will pay a modest amount to fix one thing that is costing them orders. Which do you take?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The page. A month of visible work in front of a large audience is the fastest route to being found by the kind of people who can afford to pay you."
+          },
+          {
+            "id": "b",
+            "text": "Both. The page builds the audience while the bakery brings in money, and at this stage you cannot really afford to turn any work away at all."
+          },
+          {
+            "id": "c",
+            "text": "The bakery. A paid piece with a before and after gives you a client who can refer you and proof that something actually changed for a business."
+          },
+          {
+            "id": "d",
+            "text": "Neither yet. Keep applying until a paid job at your full rate turns up, because early cheap work sets the price you will be stuck charging later."
+          }
+        ],
+        "correct_option_id": "c",
+        "competency": "finding_work",
+        "explanation": "Proof is an artefact plus what the situation was, what you did and what changed. The bakery gives you all four and a person who can be asked for a referral. The page gives you a credit line and an audience that is not buying anything, and a month of unpaid deliverables is the arrangement to be careful of, not a portfolio strategy. Taking both means the free month eats the hours the paid job needed. Waiting for a full rate job you have no evidence to win is how people stay at nothing for a year, and one small paid piece does not fix your price forever, because you set the next number yourself."
+      },
+      {
+        "prompt": "You already moved one delivery date on this job, with notice and a reason, and the client took it well. The new date is Friday. It is Tuesday and you now know Friday is not going to happen either. What do you do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Move the date a second time with the same notice and the same explanation you used before, since the client accepted that process without complaint the first time."
+          },
+          {
+            "id": "b",
+            "text": "Send what exists on Friday without flagging the gaps in it, so the date is met on paper and the missing pieces follow quietly over the weekend after."
+          },
+          {
+            "id": "c",
+            "text": "Point out that their approvals have been coming back slowly, so they can see this second slip is not really the same kind of problem as the first one was."
+          },
+          {
+            "id": "d",
+            "text": "Tell them today, and rather than naming a third date, cut Friday's delivery down to a piece that is genuinely finished and agree the rest separately."
+          }
+        ],
+        "correct_option_id": "d",
+        "competency": "delivery_reliability",
+        "explanation": "Missing once is a slipped date. Missing twice is a client wondering whether any date you give is real, so a third date from the same source does not restore anything. Reduce what you promise until it is something you can certainly hand over, deliver that on the day you said, and treat the remainder as its own commitment. Sending incomplete work without saying so is worse than being late, because now they cannot trust the delivery either. Their slow approvals may well be true and may move the date under what you agreed, but leading with it on your second miss reads as a defence rather than a plan, and it still leaves them with no work."
+      },
+      {
+        "prompt": "Your agreement lists the finished graphics as the deliverable, with the balance due on delivery. The deposit is paid and the work is done. Before the balance moves, the client asks you to send the editable working files as well. What do you do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Send them along with the finished files. They cost you nothing to attach, and refusing a small ask over a technicality turns a repeat client into a one off."
+          },
+          {
+            "id": "b",
+            "text": "Deliver exactly what the agreement lists, say the working files were not part of it, and offer them as a separate item with a price and terms of their own."
+          },
+          {
+            "id": "c",
+            "text": "Refuse and tell them the working files are yours to keep. They are the reason a client comes back to you instead of handing the job to somebody cheaper."
+          },
+          {
+            "id": "d",
+            "text": "Send them once the balance has cleared. They are asking for something they will end up getting anyway, and the timing is the part you actually control here."
+          }
+        ],
+        "correct_option_id": "b",
+        "competency": "scoping_and_pricing",
+        "explanation": "This is a change request arriving as a favour, and the scope document is what tells you so. Name it, price it, and let the client decide, which is neither refusing nor absorbing. Handing them over free rewrites the deal after the fact and sets what the next client expects. A flat refusal with no offer sounds like you are protecting yourself rather than describing what was bought. Waiting for the balance and then sending them anyway concedes that they were included all along, and you have given away a priceable item for nothing. Who owns which files and from when is something to write down before work starts, not to work out at handover."
+      },
+      {
+        "prompt": "A client pays late every single time and keeps adding work that was never agreed. You have decided you are not taking their next job. They message asking what you can start for them in September. What do you write?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A full account of what went wrong on each job so they understand the reason, and a chance to fix it before you make the decision a final one."
+          },
+          {
+            "id": "b",
+            "text": "A quote much higher than your usual figure, so that they either pay properly for the trouble they cause you or decline it themselves and save you the message."
+          },
+          {
+            "id": "c",
+            "text": "That you are not able to take on new work for them, that you have enjoyed working together, and that you will finish and hand over anything still open."
+          },
+          {
+            "id": "d",
+            "text": "That you are fully booked until further notice, so the door closes without anybody having to hear a decision they might want to argue about."
+          }
+        ],
+        "correct_option_id": "c",
+        "competency": "professional_communication",
+        "explanation": "Ending it is a decision you have already made, so the message only has to be short, warm and final. A client you decline cleanly still refers people, and the person who briefs you today runs somewhere else next year. The itemised account invites a negotiation you do not want and reads as a complaint, since you are not asking them to change. A punitive quote risks them saying yes, which leaves you doing the work you decided against at a price you set out of irritation. Fully booked is the softest version and it is the one that is not final: it hands them a reason to ask again in October, and you will spend this same afternoon twice."
+      },
+      {
+        "prompt": "You and the client have agreed the deliverables, the exclusions, the two revision rounds, the dates and a total fee, all in an email they replied to with \"yes, correct\". Nothing else is written anywhere. Which of these gaps will cost you money on this job first?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A line saying what is added to the fee if payment is late, so that the client has a reason to settle the invoice rather than sit on it for as long as suits them."
+          },
+          {
+            "id": "b",
+            "text": "What triggers each payment and by when it is due, because a total with no payment points attached to it is a number and not yet an arrangement about money."
+          },
+          {
+            "id": "c",
+            "text": "Who owns the finished work once it has been paid for, since ownership is the item that produces the argument long after the job itself has been closed."
+          },
+          {
+            "id": "d",
+            "text": "A signature on a proper contract document, because a thread of emails is not the kind of record that either side can sensibly rely on once there is a dispute."
+          }
+        ],
+        "correct_option_id": "b",
+        "competency": "scoping_and_pricing",
+        "explanation": "All four are worth having. Payment is the one whose absence costs you this month: a fee with no trigger and no due date means there is no moment at which you are owed anything, so there is nothing to chase and nothing to pause. Money before work starts, milestones on a longer job and final files on payment are arrangements you propose and write down, not rules that exist on their own. Ownership sits on the same required list and it bites at handover rather than this month, which is why chapter 2 tells you to get the money terms agreed first and settle ownership in the same thread a day later. A charge for late payment is not something to invent for yourself. A confirmed email is a real record of what two people agreed, which is what an agreement is mainly for, and what would hold up anywhere formal is a question for a lawyer."
+      },
+      {
+        "prompt": "Your invoice carries your name, the client's company name, a total, and your bank details. It describes the work as 'design services'. Two weeks pass with nothing, and then somebody in their finance team emails asking what the charge is actually for. What went wrong?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nothing went wrong with it. Two weeks of quiet is just a client who has not got round to it, and what this needs is a reminder rather than a rebuilt invoice."
+          },
+          {
+            "id": "b",
+            "text": "It should have shown the deposit paid and the running balance, so anybody opening the file can see the whole history of the job in one place."
+          },
+          {
+            "id": "c",
+            "text": "It reached the wrong desk. Finance never sees the brief, so an invoice has to be explained by whoever asked for the work rather than read on its own terms."
+          },
+          {
+            "id": "d",
+            "text": "It had no number to refer to, no due date, and it described the work in words that appear nowhere in the agreement finance would be checking it against."
+          }
+        ],
+        "correct_option_id": "d",
+        "competency": "delivery_reliability",
+        "explanation": "An invoice has to be payable by somebody who was not in any of your conversations. That means a number they can quote back, the due date that was agreed, and a description in the same words as the agreement so it can be matched against what was approved. 'Design services' matches nothing and stalls at the first desk it reaches. A payment history is useful but is not what stopped this one. And finance reading it on its own is the normal case rather than a mistake, which is why you ask early who pays and what they need on the document."
+      }
+    ]
+  }
+}

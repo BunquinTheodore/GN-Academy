@@ -966,12 +966,30 @@ key, or uneven option lengths in more than a fifth of a course's questions.
 **Warnings, printed with the number so a human can judge.** The full
 answer-key distribution per assessment and per course, the correct-is-longest
 rate, lesson word counts per lesson and per course, the individual questions
-whose longest option is more than 1.8x the shortest, and a scan for possible
-invented statistics (percentages, "X out of Y", "most", "studies show", "half
-of all") with the surrounding sentence for every hit. That last one never
+whose longest option is more than 1.8x the shortest, patterns in an answer key
+that a distribution cannot see, and a scan for possible invented statistics
+(percentages, "X out of Y", "most", "studies show", "half of all", peso
+amounts) with the surrounding sentence for every hit. That last one never
 fails: two of the courses teach *about* invented statistics and have to quote
 one to do it, and a lesson about a 15% off promo has to be able to say 15%. It
 prints every hit so nobody can say they did not see them.
+
+The statistic scan reads **the whole file, not lesson bodies only**: the
+`description`, `summary` and `subtitle`, every skill and outcome, each chapter
+description, every question prompt, option and explanation, and the assignment
+brief and its criteria, each hit labelled with the field it came from. It used
+to read lesson bodies alone, and a course shipped a review with "Most online
+shops in the Philippines…" sitting in `description`, which is the field that
+renders on the public sales page, while the gate printed zero hits.
+
+The answer-key patterns are the other thing a summary row hides. A key of
+a, b, c, d, d, c, b, a is four letters, two of each, and nothing above the
+single-letter share, and it is also solvable: notice the run and you can
+deduce the rest without reading them. So the gate warns on a monotone run of
+three or more consecutive answers and on a key that reads the same backwards.
+Warnings, not failures. A run of three turns up by chance, and the fix is
+reordering options inside a question, which an author should do on purpose
+rather than to quiet a script.
 
 The summary table prints on a green run too. That is the point: the answer-key
 distribution is the number the credential's worth rests on, so it should be

@@ -69,18 +69,18 @@
             },
             {
               "id": "b",
-              "text": "It may be right or it may be invented, and the answer itself cannot tell you which."
+              "text": "It is probably wrong, because these tools are not built to answer questions about offices."
             },
             {
               "id": "c",
-              "text": "It is probably wrong, because these tools are not built to answer questions about offices."
+              "text": "It may be right or it may be invented, and the answer itself cannot tell you which."
             },
             {
               "id": "d",
               "text": "It was right when the tool was last updated, so only the amount is worth checking again."
             }
           ],
-          "correct_option_id": "b",
+          "correct_option_id": "c",
           "competency": "judgment",
           "explanation": "A correct answer and an invented one arrive in the same calm, tidy format, so nothing about the reply separates them. Option d is the tempting one: it treats being out of date as the only way this can go wrong, when the list may never have matched any office at all. Read it as unchecked and get the real answer from PSA."
         },
@@ -113,11 +113,11 @@
           "options": [
             {
               "id": "a",
-              "text": "Neither list is settled, and the three that appear on both lists are not confirmed either."
+              "text": "The longer list is the safer one to bring, since carrying a spare document costs nothing."
             },
             {
               "id": "b",
-              "text": "The longer list is the safer one to bring, since carrying a spare document costs nothing."
+              "text": "Neither list is settled, and the three that appear on both lists are not confirmed either."
             },
             {
               "id": "c",
@@ -128,7 +128,7 @@
               "text": "The tool is behaving oddly, and a difference like that is worth reporting so it gets fixed."
             }
           ],
-          "correct_option_id": "a",
+          "correct_option_id": "b",
           "competency": "judgment",
           "explanation": "Both answers were written on the spot rather than read off a record, so agreement between them is agreement between two guesses. Option c is the trap: repetition feels like confirmation and is not. The difference is useful for one thing only, which is showing her that neither answer was ever a record."
         },
@@ -141,18 +141,18 @@
             },
             {
               "id": "b",
-              "text": "That is roughly it, which is why two people asking the same thing get the same paragraph."
+              "text": "It writes the answer itself. Some tools can also look things up, and then you see links."
             },
             {
               "id": "c",
-              "text": "It writes the answer itself. Some tools can also look things up, and then you see links."
+              "text": "That is roughly it, which is why two people asking the same thing get the same paragraph."
             },
             {
               "id": "d",
               "text": "It only ever repeats paragraphs that somebody wrote and put on the internet somewhere."
             }
           ],
-          "correct_option_id": "c",
+          "correct_option_id": "b",
           "competency": "judgment",
           "explanation": "By default it composes sentences that fit your question rather than handing you pages someone wrote, so options a and d are both describing a lookup that is not happening. Some tools can also search, and when they do you may get links you can open. When you cannot see where an answer came from, treat it as written rather than found. Option b has a true observation attached to the wrong cause: two people can get the same paragraph because the question has one average answer, not because a page was fetched twice."
         },
@@ -161,22 +161,22 @@
           "options": [
             {
               "id": "a",
-              "text": "Finding out whether your barangay clearance is ready for pickup tomorrow morning at the hall."
+              "text": "Turning the messy notes on your phone into a short, polite message you can send tonight."
             },
             {
               "id": "b",
-              "text": "Checking how much of this month's electricity bill is still unpaid on your account."
+              "text": "Finding out whether your barangay clearance is ready for pickup tomorrow morning at the hall."
             },
             {
               "id": "c",
-              "text": "Turning the messy notes on your phone into a short, polite message you can send tonight."
+              "text": "Checking how much of this month's electricity bill is still unpaid on your account."
             },
             {
               "id": "d",
               "text": "Finding out which pharmacies near your street are still open at this hour tonight."
             }
           ],
-          "correct_option_id": "c",
+          "correct_option_id": "a",
           "competency": "tools",
           "explanation": "Three of these ask about a live record or a fact on the ground: your clearance, your account, what is open right now. It has no connection to any of them and will still produce an answer. The fourth uses your own material and asks it to reshape the text, which is what it is for."
         },
@@ -185,22 +185,22 @@
           "options": [
             {
               "id": "a",
-              "text": "That it is the same kind of tool sitting in a different place, working under the same limits."
-            },
-            {
-              "id": "b",
               "text": "That it is more careful with facts, because a company would not attach it to email otherwise."
             },
             {
-              "id": "c",
+              "id": "b",
               "text": "That it can do less than a chat app, since a small button cannot hold as much as a full tool."
             },
             {
-              "id": "d",
+              "id": "c",
               "text": "That it has read her inbox, so anything it says about her old messages can be relied on."
+            },
+            {
+              "id": "d",
+              "text": "That it is the same kind of tool sitting in a different place, working under the same limits."
             }
           ],
-          "correct_option_id": "a",
+          "correct_option_id": "d",
           "competency": "tools",
           "explanation": "Sitting inside an app you already use makes a feature feel connected to your account, and that feeling is not information. Unless the app shows you what it actually read, assume the same machine with the same limits. Where it does read your material, that is something to find out, not something to guess."
         },
@@ -209,22 +209,22 @@
           "options": [
             {
               "id": "a",
-              "text": "Short requests get short, thin answers, and longer requests get more detailed ones back."
+              "text": "It knows nothing about his situation, so what came back is the average version of it."
             },
             {
               "id": "b",
-              "text": "He did not ask it for detail, and detail is something you have to request by name."
+              "text": "Short requests get short, thin answers, and longer requests get more detailed ones back."
             },
             {
               "id": "c",
-              "text": "His wording was too plain, and it responds better to more formal, complete sentences."
+              "text": "He did not ask it for detail, and detail is something you have to request by name."
             },
             {
               "id": "d",
-              "text": "It knows nothing about his situation, so what came back is the average version of it."
+              "text": "His wording was too plain, and it responds better to more formal, complete sentences."
             }
           ],
-          "correct_option_id": "d",
+          "correct_option_id": "a",
           "competency": "prompting",
           "explanation": "It has never seen his unit, his leaking ceiling, his landlord or how long he has been waiting. With nothing specific to work from it produces the average, which is what he got. The missing ingredient is his situation, not more words and not better manners. Chapter 2 is about supplying it."
         },
@@ -237,18 +237,18 @@
             },
             {
               "id": "b",
-              "text": "The follow-up is one more sentence from the same machine, so nothing has actually been checked."
+              "text": "She should ask three times, because two matching answers are still too thin to rely on."
             },
             {
               "id": "c",
-              "text": "She should ask three times, because two matching answers are still too thin to rely on."
+              "text": "The follow-up is one more sentence from the same machine, so nothing has actually been checked."
             },
             {
               "id": "d",
               "text": "She should forward it only when it cites a source, since a cited answer has already been checked."
             }
           ],
-          "correct_option_id": "b",
+          "correct_option_id": "c",
           "competency": "judgment",
           "explanation": "Asking it to confirm itself keeps you inside the box. It may apologise and change its answer, or restate it more firmly, and neither event is evidence about the world. Option d is the near miss: where a tool does show you a link, that link is something for you to go and open, not proof that anybody checked anything on your behalf. A check has to happen somewhere the machine is not, which chapter 3 covers."
         }
@@ -360,18 +360,18 @@
             },
             {
               "id": "b",
-              "text": "She never said what the finished thing should be: a short chat message, in Filipino"
+              "text": "She did not ask it to be concise and to avoid stiff and overly corporate language"
             },
             {
               "id": "c",
-              "text": "She did not ask it to be concise and to avoid stiff and overly corporate language"
+              "text": "She never said what the finished thing should be: a short chat message, in Filipino"
             },
             {
               "id": "d",
               "text": "She did not give it enough background on what a barangay clearance is normally used for"
             }
           ],
-          "correct_option_id": "b",
+          "correct_option_id": "c",
           "competency": "prompting",
           "explanation": "With no shape to aim at, it defaults to the most average version of a message to a government office, and that is a formal letter. Saying how long, what language and where you are sending it is the cheapest of the three things to supply and the one most often skipped."
         },
@@ -384,18 +384,18 @@
             },
             {
               "id": "b",
-              "text": "Carry on in the same chat, saying who the reply is for and what he can commit to"
-            },
-            {
-              "id": "c",
               "text": "Open a new chat and ask for a professional reply to a bank about a payment arrangement"
             },
             {
-              "id": "d",
+              "id": "c",
               "text": "Ask it in the same chat to keep the letter on file, so he can pull it up again tomorrow"
+            },
+            {
+              "id": "d",
+              "text": "Carry on in the same chat, saying who the reply is for and what he can commit to"
             }
           ],
-          "correct_option_id": "b",
+          "correct_option_id": "d",
           "competency": "workflow",
           "explanation": "The conversation already holds the letter and everything it worked out from it. Starting fresh means retyping what you typed once already, and describing the letter from memory drops the wording that mattered. Option d parks something he needs in a chat box and calls it storage. What a tool does or does not carry between conversations differs by tool and by setting, so the copy in his own notes is the one he can count on."
         },
@@ -408,18 +408,18 @@
             },
             {
               "id": "b",
-              "text": "Ask it to open her group chat and summarise everything the neighbours decided over the last two days"
+              "text": "Copy the stretch of the thread where it was settled, and ask for the decisions and dates as a list"
             },
             {
               "id": "c",
-              "text": "Copy the stretch of the thread where it was settled, and ask for the decisions and dates as a list"
+              "text": "Ask it to open her group chat and summarise everything the neighbours decided over the last two days"
             },
             {
               "id": "d",
               "text": "Ask for a message she can post asking the group to repeat what they decided while she was on shift"
             }
           ],
-          "correct_option_id": "c",
+          "correct_option_id": "b",
           "competency": "workflow",
           "explanation": "A long thread you did not read is exactly the job this is good at, but only once the text is in front of it. It cannot reach into your chat app, and what associations usually decide is an answer about no real subdivision. Option d works eventually and costs a day."
         },
@@ -432,18 +432,18 @@
             },
             {
               "id": "b",
-              "text": "Which dates appear in the letter, and which one is the deadline she is being given"
+              "text": "Whether the payment she made last month was received and posted to her policy account"
             },
             {
               "id": "c",
-              "text": "What the letter is asking her to submit, set out as a short list she can read in Filipino"
+              "text": "Which dates appear in the letter, and which one is the deadline she is being given"
             },
             {
               "id": "d",
-              "text": "Whether the payment she made last month was received and posted to her policy account"
+              "text": "What the letter is asking her to submit, set out as a short list she can read in Filipino"
             }
           ],
-          "correct_option_id": "d",
+          "correct_option_id": "b",
           "competency": "tools",
           "explanation": "The first three are all work on the text she pasted, which is what a chat assistant is genuinely good at. The fourth needs her insurer's records, and it has no connection to them. It will still produce a smooth, reassuring sentence, which is the dangerous part."
         },
@@ -727,22 +727,22 @@
         "options": [
           {
             "id": "a",
-            "text": "It has no link to the school's records, so anything it tells you about your application is invented."
-          },
-          {
-            "id": "b",
             "text": "It can check the status for you, as long as you give it your student number and the date you applied."
           },
           {
-            "id": "c",
+            "id": "b",
             "text": "It has no link to the school's records, so ask it what usually happens to applications like yours."
           },
           {
-            "id": "d",
+            "id": "c",
             "text": "It can check, but only for the schools that have signed up to share their records with it."
+          },
+          {
+            "id": "d",
+            "text": "It has no link to the school's records, so anything it tells you about your application is invented."
           }
         ],
-        "correct_option_id": "a",
+        "correct_option_id": "d",
         "competency": "tools",
         "explanation": "A chat assistant is not a records system and it is not connected to your school, your bank or your barangay. Ask it about your own file and it will still answer, because producing a plausible answer is the only thing it does. Handing it your student number does not open a door, it just puts your student number in a chat box. Option c is the one worth naming: what usually happens to applications like yours is a sentence about nobody, and planning around it is planning around nothing. For your own records the source is the registrar, not the chat box."
       },
@@ -751,22 +751,22 @@
         "options": [
           {
             "id": "a",
-            "text": "\"Too long and too stiff. Three sentences, plain Filipino, from a pensioner writing to SSS.\""
-          },
-          {
-            "id": "b",
             "text": "\"Make this better. It does not sound like anything my lola would ever send to anybody.\""
           },
           {
-            "id": "c",
+            "id": "b",
             "text": "\"Here is her full name, her SSS number and her address, so you can write the reply properly.\""
+          },
+          {
+            "id": "c",
+            "text": "\"Too long and too stiff. Three sentences, plain Filipino, from a pensioner writing to SSS.\""
           },
           {
             "id": "d",
             "text": "Open a fresh chat, paste the whole letter in this time, and ask for a reply in plain Filipino."
           }
         ],
-        "correct_option_id": "a",
+        "correct_option_id": "c",
         "competency": "prompting",
         "explanation": "Naming the fault and the shape you want gives it something to aim at, and the conversation already holds the paragraphs you pasted and the explanation it built from them. \"Make this better\" gives it nothing, so what comes back is a different draft rather than a better one. Option c fixes a writing problem by handing over the identifiers you were right to keep out, and not one of them was ever what made the draft stiff. Starting over throws the work away and pastes more than you needed to paste."
       },
@@ -775,22 +775,22 @@
         "options": [
           {
             "id": "a",
-            "text": "The tool's own page, since a rule about using it for schoolwork would have to be written down there."
+            "text": "Your instructor, asked before you start: may you use it, and does she want you to say that you did."
           },
           {
             "id": "b",
-            "text": "Nothing settles it, so use it and do not raise the subject unless somebody asks you about it."
+            "text": "The tool's own page, since a rule about using it for schoolwork would have to be written down there."
           },
           {
             "id": "c",
-            "text": "Your instructor, asked before you start: may you use it, and does she want you to say that you did."
+            "text": "Nothing settles it, so use it and do not raise the subject unless somebody asks you about it."
           },
           {
             "id": "d",
             "text": "Your batch group chat, since whatever your year has settled on is the working rule for everybody."
           }
         ],
-        "correct_option_id": "c",
+        "correct_option_id": "a",
         "competency": "workflow",
         "explanation": "The rule about AI does not belong to you and it does not belong to the tool. It belongs to whoever is receiving the work: your teacher, your school, your employer, your client. Some require you to declare it, some ban it on one task and encourage it on the next, and silence in a handout is not permission. Ask beforehand, because the same question costs you nothing then and costs you a great deal once the work is in. And whatever the rule turns out to be, work you cannot explain is one follow-up question away from an uncomfortable silence."
       },
@@ -807,14 +807,14 @@
           },
           {
             "id": "c",
-            "text": "Leave the assistant out of it, since paperwork neither of you has done before is beyond what it does."
+            "text": "Get the requirements at your city hall's OSCA desk, then have the assistant turn them into a checklist."
           },
           {
             "id": "d",
-            "text": "Get the requirements at your city hall's OSCA desk, then have the assistant turn them into a checklist."
+            "text": "Leave the assistant out of it, since paperwork neither of you has done before is beyond what it does."
           }
         ],
-        "correct_option_id": "d",
+        "correct_option_id": "c",
         "competency": "tools",
         "explanation": "Senior citizen IDs are handled by the Office for Senior Citizens Affairs at your city or municipal hall, and what it asks for varies by LGU and changes without announcement, so OSCA is the source. A neighbour who went last year is describing last year's list, which is the same problem in a friendlier voice. None of that makes the tool useless here: once you have the real list it is good at turning it into a checklist, explaining a form's wording, or drafting the letter you have to attach. Get the facts from the office that sets them, then use the tool where nothing has to be true beyond what you gave it."
       },
@@ -823,22 +823,22 @@
         "options": [
           {
             "id": "a",
-            "text": "The writing fits you and the day in it does not, so change the day and the rest of it stands."
-          },
-          {
-            "id": "b",
             "text": "The whole draft is spoiled, because a message built around the wrong day cannot be repaired."
           },
           {
-            "id": "c",
+            "id": "b",
             "text": "The draft is fine as it came back, since the day inside it is the one you gave it yourself."
           },
           {
-            "id": "d",
+            "id": "c",
             "text": "It should have flagged the clash with your roster, so the draft proves the tool is not worth using."
+          },
+          {
+            "id": "d",
+            "text": "The writing fits you and the day in it does not, so change the day and the rest of it stands."
           }
         ],
-        "correct_option_id": "a",
+        "correct_option_id": "d",
         "competency": "prompting",
         "explanation": "Telling it your situation is what made the message sound like you instead of like nobody. It does not check anything: it had no way to reach your roster and no reason to doubt what you typed, so a wrong date in gives you a polite message built around a wrong date out. The fix is small because only the fact was wrong. Option d blames the tool for the one thing it could not possibly have done, which is look up a roster it has never seen."
       },
@@ -871,22 +871,22 @@
         "options": [
           {
             "id": "a",
-            "text": "The CV summary, since it is the one an employer will read and form an opinion from."
+            "text": "The fee, since it is the only one of the three that came from somewhere you cannot see."
           },
           {
             "id": "b",
-            "text": "The practice questions, since revising off a wrong question wastes a whole evening of study."
+            "text": "The CV summary, since it is the one an employer will read and form an opinion from."
           },
           {
             "id": "c",
-            "text": "The fee, since it is the only one of the three that came from somewhere you cannot see."
+            "text": "The practice questions, since revising off a wrong question wastes a whole evening of study."
           },
           {
             "id": "d",
             "text": "All three in turn, since anything a chat assistant produces has to be checked the same way."
           }
         ],
-        "correct_option_id": "c",
+        "correct_option_id": "a",
         "competency": "judgment",
         "explanation": "Two of the three are your own material handed back to you, so checking them means reading them against the handout and the CV already in front of you, and that takes a minute each. The fee is the only figure in the afternoon that the tool supplied rather than reshaped, and being wrong about it costs you a trip and a morning in a queue. Checking is a dial and not a switch: you spend the time where being wrong is expensive, which is why option d sounds responsible and quietly eats your afternoon."
       },
@@ -895,11 +895,11 @@
         "options": [
           {
             "id": "a",
-            "text": "Nothing, since the conversation will be sitting where you left it when you come back to it."
+            "text": "Copy the request and the wording you settled on into your own notes, where you can find them."
           },
           {
             "id": "b",
-            "text": "Copy the request and the wording you settled on into your own notes, where you can find them."
+            "text": "Nothing, since the conversation will be sitting where you left it when you come back to it."
           },
           {
             "id": "c",
@@ -910,7 +910,7 @@
             "text": "Plan to open a fresh chat next month and describe from memory what you asked for tonight."
           }
         ],
-        "correct_option_id": "b",
+        "correct_option_id": "a",
         "competency": "workflow",
         "explanation": "The request is the asset here, not the answer, and it took you an evening to build. Whether a tool carries anything at all between conversations differs by tool and by setting and does not stay the same, so options a and c both park something you worked for somewhere you cannot see and cannot get back. Describing it from memory next month means rebuilding it badly. Your own notes cost you ten seconds tonight and are the one copy you control."
       },
@@ -947,18 +947,18 @@
           },
           {
             "id": "b",
-            "text": "Work to the 20th, because the first answer came before anybody had pushed it either way."
+            "text": "Work to neither date, since it agrees with whatever you push back with. Ask the office."
           },
           {
             "id": "c",
-            "text": "Message the office, and work to the assistant's date if nobody has replied to you by Friday."
+            "text": "Work to the 20th, because the first answer came before anybody had pushed it either way."
           },
           {
             "id": "d",
-            "text": "Work to neither date, since it agrees with whatever you push back with. Ask the office."
+            "text": "Message the office, and work to the assistant's date if nobody has replied to you by Friday."
           }
         ],
-        "correct_option_id": "d",
+        "correct_option_id": "b",
         "competency": "judgment",
         "explanation": "It tends to fold when you disagree with it, so its agreement is not confirmation, and neither is the answer that came before you disagreed. Option c is the near miss: going to the office is right, and then it hands the decision straight back to a date nobody ever checked the moment Friday arrives. If the office has not replied, you chase the office. A deadline is a number attached to money and time, which puts it firmly in the class of things you settle outside the chat."
       },
@@ -971,18 +971,18 @@
           },
           {
             "id": "b",
-            "text": "Only the medical words you do not understand, with her name and her numbers left out of it."
+            "text": "The letter with her name removed, keeping the number so you can ask about her coverage too."
           },
           {
             "id": "c",
-            "text": "The letter with her name removed, keeping the number so you can ask about her coverage too."
+            "text": "Only the medical words you do not understand, with her name and her numbers left out of it."
           },
           {
             "id": "d",
             "text": "The whole letter, but only after telling the assistant to keep the contents confidential."
           }
         ],
-        "correct_option_id": "b",
+        "correct_option_id": "c",
         "competency": "judgment",
         "explanation": "Work on the assumption that anything you type could be read by someone who is not you, which means it is not yours to type when it belongs to another person. Her diagnosis and her PhilHealth number are hers. An instruction to keep it confidential is a sentence in a chat box, not a control. Option a is the opposite mistake and it costs her something real: you lose nothing by asking what a word means on its own, and she should not have to wait weeks for an appointment to find out. The letter itself is still a conversation to have with her doctor."
       },
@@ -1043,18 +1043,18 @@
           },
           {
             "id": "b",
-            "text": "Ask the assistant where it got the date and the amount, and send it if the answer holds up."
+            "text": "Replace the move-in date and the deposit with what your own contract says, then send it."
           },
           {
             "id": "c",
-            "text": "Replace the move-in date and the deposit with what your own contract says, then send it."
+            "text": "Ask the assistant where it got the date and the amount, and send it if the answer holds up."
           },
           {
             "id": "d",
             "text": "Delete the draft and write the whole thing yourself, since one invented figure ruins all of it."
           }
         ],
-        "correct_option_id": "c",
+        "correct_option_id": "b",
         "competency": "workflow",
         "explanation": "Anything you did not supply, it produced, and a date and a peso amount are precisely the kind of detail that triggers a check. Your contract is the real source and it is in your drawer. Asking where the figures came from gets you another invented answer wearing an explanation. And deleting the draft throws away the part that was fine: the writing was never the problem, the two facts sitting inside it were."
       }

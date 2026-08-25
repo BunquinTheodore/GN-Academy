@@ -1,0 +1,929 @@
+{
+  "slug": "spreadsheets-and-data-with-ai",
+  "title": "Spreadsheets and Data with AI",
+  "subtitle": "Structure it first, then let AI help you work it",
+  "level": "professional",
+  "category": "Business admin",
+  "format": "Self-paced online",
+  "summary": "Practical spreadsheet work for people who keep records other people rely on: a sales log, an expense tracker, a client hours sheet. Structure the data so a formula can read it, answer questions with the handful of functions the work rests on, clean a broken export, summarise it, chart it, and use AI to write and explain formulas without ever trusting it to do the arithmetic.",
+  "description": "This course is for anyone who keeps a sheet other people rely on: a sales log, an expense tracker, a client hours sheet. It does not start with formulas. It starts with the arrangement, because a total that has to read across twelve monthly tabs and past a grey TOTAL row is not a total. You will rebuild a pile of records into a table a formula can read, answer the questions a client actually asks with conditional totals and lookups that fail loudly instead of quietly, clean a broken export while keeping the proof that nothing was lost, and summarise it with a pivot and one chart that answers one written question. The last chapter draws the line that matters on a spreadsheet. Ask AI for a formula, which you can test. Never ask it for a number, because the sheet is the thing that adds and a chat reply is text shaped like a total. Every example is a Philippine record, every figure inside one is invented and labelled as invented, and anything set by rule, from a retention period to a filing deadline, is sent to the source rather than stated here. You finish able to hand somebody a figure and say exactly where it came from.",
+  "skills": [
+    "Structuring data as a table",
+    "Conditional totals and counts",
+    "Lookups between sheets",
+    "Cleaning an export",
+    "Pivot summaries",
+    "Charts that answer one question",
+    "AI-assisted formula writing and checking"
+  ],
+  "outcomes": [
+    "Turn a pile of records into a table with one row per thing that happened and columns a formula can read",
+    "Answer a real question with conditional totals and a lookup, and explain where the number came from",
+    "Clean a messy export without destroying the original, and show that nothing was lost",
+    "Summarise with a pivot and build one chart that answers one written question",
+    "Get AI to write and explain formulas, then check the result before the number leaves your hands"
+  ],
+  "roles": [
+    "Virtual assistants and freelancers",
+    "Admin and office staff",
+    "Small business owners",
+    "Students and jobseekers"
+  ],
+  "price_php": 1499,
+  "is_free": false,
+  "passing_score": 70,
+  "credential_prefix": "SDA",
+  "sort_order": 9,
+  "requires_assignment": true,
+  "modules": [
+    {
+      "slug": "chapter-1-data-you-can-actually-use",
+      "title": "Data you can actually use",
+      "description": "Nothing later in this course works on a sheet that is a picture of a table rather than a table. One row per thing that happened, one kind of value per column, and a raw copy you never type over.",
+      "lessons": [
+        {
+          "slug": "one-row-per-thing-that-happened",
+          "title": "One row per thing that happened",
+          "content_mdx": "# One row per thing that happened\n\nThe sheet Jeric inherited looked organised, and that was the problem. Rhea sells baking supplies online from Bacolod, and she had kept her sales in one file since she started. Twelve tabs, one per month. A merged title across the top of each one. A blank row between weeks. A grey TOTAL row at the bottom of every week, and notes like \"paid half, balance next week\" typed into the amount column.\n\nIt was neat. It was also a printout that happened to be stored in a spreadsheet.\n\nJeric's first job was to answer one question from Rhea: who are our biggest customers. He could not answer it. Not because the information was missing, but because of how it was arranged.\n\n## A table is not a printout\n\nA printout is arranged for a human eye. Headings, spacing, a total where you want to look. A table is arranged for a machine that reads straight down a column and does not know what grey means.\n\nThe rule is short. One row per thing that happened. One kind of value per column. One header row at the top, with nothing above it and nothing that looks like it further down.\n\nA row is one event: one sale, one expense, one block of hours worked. It carries a date, an amount, and every field you might later want to group by. That last part is the one people get wrong. If you will ever ask \"how much from this customer,\" the customer has to be a column. If you will ever ask \"how much last March,\" the date has to be a real date in a column, not a fact you can only recover from which tab the row happens to be sitting on.\n\n## The three sheets this course runs on\n\n**Sales log.** Date, reference number, customer, item, quantity, unit price, amount, payment method, status.\n\n**Expense tracker.** Date, reference number, supplier, description, category, amount, paid from, notes.\n\n**Client hours sheet.** Date, client, project, task, hours, billable, rate reference, invoice number.\n\nNine or ten columns each. Nothing clever. Notice that every one of them has somewhere for prose to live, because prose has to live somewhere, and the somewhere is never the amount column.\n\n## What breaks a table\n\n- A totals row sitting inside the data. When you later add up the amount column, the sheet adds every sale once, then adds the totals row too, and your year comes out roughly double. Sorting drags that grey row into the middle of March.\n- Blank spacer rows put in to make it breathe. They cut the block in half as far as the sheet is concerned.\n- Merged header cells, and a header spread across two rows. A column can only have one name.\n- A heading repeated halfway down, so the word \"Amount\" turns up inside the amount column.\n- Notes typed into a number column, which turns the whole column into text.\n- A separate tab per month.\n\n## Add a column, not a sheet\n\nA tab per month feels tidy. It makes every question a twelve part job, and it makes a question about the whole year close to unanswerable. The same is true of a tab per client, a tab per platform, a file per quarter.\n\nThe general move: when you are about to create a new sheet because some records differ in one way, add a column that records that way instead. Month is already inside the date. Platform is a column. Client is a column. One sheet, more columns, and the split you wanted becomes something you ask for later rather than something you built in and cannot undo.\n\n## What became possible\n\nJeric rebuilt Rhea's file into one sheet with one row per sale. He unmerged the titles, deleted the spacer rows, moved the notes out of the amount column into a notes column and a status column, and threw away every grey TOTAL row, because a total is something you compute and never something you store.\n\nThe rebuild took an afternoon and taught him nothing new about the business. Everything after it got shorter. Sales by customer became one question instead of twelve. So did sales by month, sales by item, and how much was still unpaid. When Rhea added a second selling channel later, that was one new column, not a new set of tabs.\n\nThat is the whole trade. One afternoon of restructuring buys you every question you have not thought of yet.\n\n## Do this now\n\nOpen the messiest sheet you have. Write one sentence saying what one row of it is meant to be. If you cannot write that sentence, that is the whole job sitting in front of you.\n",
+          "duration_minutes": 9
+        },
+        {
+          "slug": "columns-that-behave",
+          "title": "Columns that behave",
+          "content_mdx": "# Columns that behave\n\nMarilou keeps the expense tracker for her husband's aircon servicing business in Cainta. She sorted it by date to find a supplier payment, and January landed after October. Nothing was corrupt and nobody had typed anything wrong. Her dates were text that looked like dates, and text sorts alphabetically.\n\nA column that is lying to you does not announce it. It behaves perfectly until the day you ask it to do something.\n\n## One kind of value, one column\n\nEvery column holds one kind of thing: a date, a number, a short label, or free text. Once a column holds two kinds, every formula that touches it becomes a guess.\n\n## Dates that are actually dates\n\nA real date is a value your sheet understands. Text that reads 03/15/2026 is a string of characters that happens to contain digits.\n\nTwo tells. Sort the column: real dates come out in time order, text comes out in alphabetical order, which is how January lands after October. Change the display format: a real date redraws itself, text sits there exactly as typed.\n\nBefore you enter a single date into a new file, calibrate. Type a date whose day is past the twelfth, such as the twenty fifth, and look at how your tool displays it back to you. That tells you which order it is reading, which depends on the settings on that machine and that account rather than on anything universal. Then enter every date in the file the same way.\n\n## Amounts as plain numbers\n\nStore 1250.5. Let the cell's formatting show the peso sign, the thousands separator and the two decimal places. The symbol and the commas are how the number is displayed, not part of the number.\n\nType the peso sign or the comma inside the cell yourself and you risk handing the sheet a piece of text. Text will not add up, and it will not tell you it is not adding up. It just quietly sits out of every total you compute.\n\nDecide one convention for money going out and write it down. Either every expense is stored positive and the direction lives in a separate column, or refunds and reversals are stored negative. Either works. Both in the same column does not.\n\n## Values that only look like numbers\n\nA mobile number, a TIN, an order reference, a barangay code: these are labels. They are made of digits and they are not quantities. Store them as text, so the leading zero on 0917 survives, and so a long reference is not quietly rewritten into scientific notation.\n\nThe test takes a second. Would adding two of these values together mean anything at all? Add two mobile numbers and you get nonsense. It is text.\n\n## One unit per column\n\nA cell holding \"3.5 hrs\" is not a number. Neither is \"1h 45m\". Pick one unit, put it in the header, and store the bare figure: a column headed Hours (decimal) holding 3.5 and 1.75.\n\nHours, rate and peso total are three columns, not one. Hours is what happened. Rate is what was agreed. The total is arithmetic, and chapter 2 is where you make that arithmetic defensible.\n\n## Categories from a short fixed list\n\nFree text in a category column is where an hour of your life goes. Load, Cell load, Cellphone load and Globe load are four categories to a spreadsheet and one category to you. Keep the allowed list on its own tab, keep it short enough to remember, and add to it deliberately rather than in the middle of typing.\n\nTo audit a category column you inherited, sort it and read down the distinct values. The strays sit right next to their correct twins.\n\n## Split the combined field\n\nA cell reading \"Rhea / Bakery reels\" is two facts wearing one coat. Client and project are separate columns. The rule of thumb: if you would ever want to group by only one half of it, it is two columns.\n\n## The tells, in the order they show up\n\nType a number you know is a number into an empty cell and see which edge of the cell it sits against. Do the same with a word. Now you know your tool's default alignment for each. A value sitting on the text side inside a column of numbers is a text number.\n\nThe rest follow the same shape. A column that will not add. A column that adds to zero. A date column that sorts alphabetically. A leading zero that vanished. A count of the column that comes back lower than the number of rows you can see on the screen.\n\nWhen you find one, fix the column, not the cell. One bad cell is almost always a habit that produced a hundred.\n\n## Do this now\n\nType a number into one empty cell and a word into another, and note which edge each one sits against. Now run down the amount column of a sheet you keep and find the values sitting on the wrong side.\n",
+          "duration_minutes": 10
+        },
+        {
+          "slug": "raw-working-output",
+          "title": "Raw, working, output",
+          "content_mdx": "# Raw, working, output\n\nIn July a client asked Jeric where one figure in the March summary had come from. He opened the file. The March sheet had been cleaned, corrected, re-sorted and added to for four months. There was no version of March as it had arrived, so there was nothing he could show her except the same number again, which is not evidence. It is the same claim repeated louder.\n\nNothing had been done dishonestly. The file simply had no memory.\n\n## Three layers, one file\n\n**Raw.** The export exactly as it arrived, or the entries exactly as first written. You never type over this. Not to fix a spelling, not to delete an obviously junk row.\n\n**Working.** A copy of raw, where cleaning happens and formulas live. Everything you do here is done to a copy, which means everything you do here can be undone and, more to the point, compared.\n\n**Output.** What somebody else reads: the summary, the invoice backup, the report. It is produced from working, and it holds no figure that was typed in by hand.\n\nChapter 3 is about the cleaning itself. The layering has to exist before the cleaning starts, because an edit made directly on raw data cannot be undone and cannot be explained. Once you have typed over the export there is no earlier truth to compare against, and \"I fixed it\" is not a record of anything.\n\nKeeping the raw copy costs one tab and one minute. Not keeping it costs you the only conversation that matters.\n\n## A short data dictionary\n\nOne tab, one line per column, saying what that column holds and in what unit. Above the lines, one sentence saying what a single row is.\n\nFor Rhea's sales log that sentence is: one row is one item sold to one customer on one date. Then the lines under it. Date is the date the order was placed, not the date it shipped. Amount is quantity times unit price, in pesos, before shipping. Status is one of Paid, Partial or Unpaid. Reference is the order number from the platform.\n\nTen minutes of writing. It is the difference between a sheet somebody else can pick up and a sheet that only works while you are awake and answering messages.\n\n## Names and dates on files\n\nDate first in the filename, year then month then day, so sales-log-raw-2026-03-31 sits next to sales-log-raw-2026-04-30 in the right order forever. Keep last month's file rather than saving over it, and never final2 or FINAL-latest. Some tools keep a version history for you, and how far back that goes is a thing to check in your own tool rather than assume.\n\n## The reference column\n\nEvery row that carries an amount should carry the number of the document behind it: the official receipt, the invoice, the transaction reference, the platform order number. That is what lets somebody walk from the figure to the document that produced it, and it is the walk this whole course is arranged around.\n\n## What you can still defend months later\n\nFour tests decide whether a figure survives a challenge, and two of them are the spreadsheet's job. You can check both in a minute. The raw version still exists, untouched. Any change made since is visible, with a note saying what changed and why.\n\nThe other two are about the record rather than the file: whether it was written near the time it happened, and whether it points at a document that exists. Bookkeeping Basics for Freelancers works through all four properly and this course assumes it.\n\n## Keeping it, and for how long\n\nRecords that support a filing have to be kept, and there is a required period. That period, the acceptable form, and whether a spreadsheet stands on its own or has to be backed by something else are real questions with real answers, and they are not this course's to state. They are set by rule, they change, and a figure taken from a lesson written at some point in the past is exactly how somebody ends up short.\n\nGet the current answer from BIR directly, from your Revenue District Office, or from a bookkeeper who works with businesses like yours. Then do the thing hardly anyone does: write the answer on your dictionary tab, with the date you got it and who told you. In two years you will not remember, and the note will tell you both what you were told and how stale it has become.\n\n## Do this now\n\nDuplicate the last export somebody sent you and put the download date in the copy's name. Then write the first line of its dictionary tab: one sentence saying what a single row is.\n",
+          "duration_minutes": 10
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Jeric takes over a small shop's sales file. It has twelve tabs, one per month, each with a merged title across the top, blank rows between weeks and a grey TOTAL row at the bottom of every week. The owner wants to know which customers spent the biggest amounts this year. What is the right first move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Sort every tab by customer so each customer's rows sit together, then read the twelve blocks off the screen and total them."
+            },
+            {
+              "id": "b",
+              "text": "Keep the twelve tabs and add a thirteenth summary tab where he types each month's TOTAL figure across by hand at the end of the month."
+            },
+            {
+              "id": "c",
+              "text": "Rebuild it as one sheet with one row per sale, where the month is readable from a real date column and no totals sit inside the data."
+            },
+            {
+              "id": "d",
+              "text": "Ask the owner to send the receipts again so he can start from the source documents instead of touching the file she already keeps."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "admin_tooling",
+          "explanation": "The question is about the whole year and the file is built as twelve printouts, so no amount of sorting or summarising fixes it. Rebuilding to one row per sale puts the month back inside the date column, which turns month, customer, item and status into things you ask for later rather than things the file's shape decides for you. Copying totals across by hand adds a number nobody can trace back. Going back to the receipts throws away records the owner already kept."
+        },
+        {
+          "prompt": "Marilou's expense tracker runs down one long sheet, with a grey row reading TOTAL after each month's block of entries. She adds up the whole amount column to get the year, and the figure comes out at roughly twice what the business actually spent. What is happening?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The monthly TOTAL rows sit inside the amount column, so every expense is added once and then again inside a total."
+            },
+            {
+              "id": "b",
+              "text": "The January block was pasted in below December when she built the sheet, so that month is being counted at both ends of the year."
+            },
+            {
+              "id": "c",
+              "text": "The blank spacer rows she left between the months are being read as zeros, and a long run of zeros throws the total out."
+            },
+            {
+              "id": "d",
+              "text": "Some amounts were typed with a peso sign in front, so they are text, and the sheet counts those rows as well as the numbers."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "working_with_numbers",
+          "explanation": "A total stored inside the data is just another number in the column, so any later sum adds it alongside the rows it summarises. That is where the doubling comes from, and it is why a totals row belongs outside the data or, better, nowhere at all: a total is computed, not stored. Blank rows contribute nothing to a sum. A block pasted in the wrong place is still counted once. Amounts stored as text get skipped by a sum, which makes a total too small rather than too large."
+        },
+        {
+          "prompt": "A VA pastes a customer list from a client's selling platform, where the numbers are shown in full with the leading zero, into a fresh sheet. The mobile numbers arrive as 9171234567 instead of 09171234567, and that column is used to send order updates. What should she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Set the column to hold text, then paste the numbers in again from the source, because a mobile number is a label and not a quantity."
+            },
+            {
+              "id": "b",
+              "text": "Build the missing zero back on in a spare column with a formula, and use that second column whenever she sends the updates out."
+            },
+            {
+              "id": "c",
+              "text": "Widen the column and change its number format to show eleven digits, since the leading zero is only being hidden by the display."
+            },
+            {
+              "id": "d",
+              "text": "Leave it as it is, because anyone reading a Philippine mobile number knows a zero belongs in front and can put it back when dialling."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "admin_tooling",
+          "explanation": "The zero was not hidden, it was thrown away, because the column was treated as a quantity and a leading zero carries no value in a number. The fix is at the column: tell the sheet the column is text, then bring the data in again from the source. Patching it with a formula assumes every entry is an eleven digit Philippine mobile, which breaks on a landline or a foreign number. And a phone list gets read by people in a hurry, so a known defect left in it becomes a message sent to the wrong person."
+        },
+        {
+          "prompt": "In her sales log, Rhea has typed \"1200 (paid half, balance next week)\" into the amount cell for one order. The sheet now refuses to add that column up at all. How should that row be recorded instead?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Keep the note inside the amount cell but colour that cell differently, so anyone reading the sheet can see the sale is not settled yet."
+            },
+            {
+              "id": "b",
+              "text": "Split it into two rows of six hundred each, one marked paid and one marked unpaid, so the amount column matches the cash received."
+            },
+            {
+              "id": "c",
+              "text": "Leave the amount column for notes like this one and keep a second, cleaner column beside it holding only the figures a formula reads."
+            },
+            {
+              "id": "d",
+              "text": "Put 1200 in the amount column on its own, and carry the rest of what that cell said in a status column and a notes column, where prose lives."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "admin_tooling",
+          "explanation": "One kind of value per column. The amount of the sale is 1200 whether or not all of it has been paid, so 1200 is what the amount column holds, and the payment situation becomes a status value plus a line of prose. Colouring the cell tells a formula nothing. Splitting the sale into two rows breaks one row per thing that happened and quietly turns one order into two. Keeping a dirty column and a clean column side by side gives you two versions of the truth and no way to know which one anybody used."
+        },
+        {
+          "prompt": "In July a client queries one line in the March summary Jeric sent her. He wants to show her where that figure came from rather than just repeating it. What lets him do that?",
+          "options": [
+            {
+              "id": "a",
+              "text": "He runs the summary again from the working sheet, and if the number comes out the same he tells her it has been confirmed."
+            },
+            {
+              "id": "b",
+              "text": "The row carries the order reference, so he opens the untouched March export, finds that row, and pulls up the document behind it."
+            },
+            {
+              "id": "c",
+              "text": "He opens the file's version history to see who changed what during March, and sends her the earliest version of the sheet he can find."
+            },
+            {
+              "id": "d",
+              "text": "He rebuilds March from the bank statement instead, since money that actually moved is stronger evidence than a row in a spreadsheet."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "record_keeping",
+          "explanation": "Traceability is a reference number plus a raw copy that still exists. With both, any figure walks back to the document that produced it, and that walk is what the client is actually asking for. Recomputing from the same working sheet proves only that the sheet agrees with itself. Version history varies by tool and was never designed to answer this. A bank statement shows money moving but not what it was for, so rebuilding March from it invents a second set of records to disagree with the first."
+        },
+        {
+          "prompt": "A VA downloads a CSV export from a client's selling platform, opens it, deletes two junk rows above the headers, corrects four misspelled customer names, saves over the file, and works from it all month. What was the mistake?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nothing was lost here, since an export is produced by the platform and can be downloaded again exactly as it first came."
+            },
+            {
+              "id": "b",
+              "text": "She should have made the same fixes but marked every changed cell in a different colour, so a later reader can see what she touched."
+            },
+            {
+              "id": "c",
+              "text": "She should have worked on a copy and left the export untouched, so that the cleaned sheet could still be compared back against it."
+            },
+            {
+              "id": "d",
+              "text": "She should have removed the junk rows only, since correcting a customer's name is a change that needs the client to approve it first."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "record_keeping",
+          "explanation": "Raw is the layer you never type over, and the reason is comparison rather than tidiness. With the export intact you can show that the cleaned sheet has the same row count and the same total, and that the four names are the only differences. Assuming you can download it again is a bet on somebody else's system. Colouring cells records that something changed but not what it was before. The name fixes are reasonable work; doing them on a copy is what makes them defensible."
+        },
+        {
+          "prompt": "Rhea asks Jeric how long she needs to keep the receipts and the spreadsheets behind them. \"A few years, di ba?\" she says, already reaching for the box under the counter. What should he tell her?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The obligation exists and the period is set by rule, so get the current answer from BIR or a bookkeeper and write it down with the date."
+            },
+            {
+              "id": "b",
+              "text": "Keep everything indefinitely and the question never arises, since storage costs her nothing and the box is already under the counter."
+            },
+            {
+              "id": "c",
+              "text": "She is probably close enough, so keep to the period she already has in mind and only check it if somebody ever asks."
+            },
+            {
+              "id": "d",
+              "text": "The period applies to registered businesses only, so as an online seller she can keep whatever she personally finds useful and drop the rest."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "compliance_ph",
+          "explanation": "There is a required retention period, and it is not a number to take from a course, a forum, or a confident friend, because these things change and getting it wrong is expensive in exactly the situation where you need the records. The figure in her head may be well short, and this course does not correct it with a second number, because the only one that binds her is the current one at the source. Say the obligation exists, send her to BIR, her Revenue District Office or a bookkeeper for the current figure, and write the answer, the date and the source on the dictionary tab. Guessing high is not free either, since a pile nobody can search is not a record."
+        },
+        {
+          "prompt": "Jeric goes on leave and hands the client hours sheet to a colleague. It has a column headed Rate, one headed Amt, and one headed Type holding values like S, B and NB. The colleague messages him twice on day one. What should have been in the file?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A comment on each header cell explaining what the codes in that column mean, so the note sits where the reader is already looking."
+            },
+            {
+              "id": "b",
+              "text": "A handover message to the colleague listing what every code stands for, since it is the person who needs the explanation and not the file."
+            },
+            {
+              "id": "c",
+              "text": "Longer column headings that spell out each code in full, so that nothing anywhere in the sheet needs explaining in a second place."
+            },
+            {
+              "id": "d",
+              "text": "A dictionary tab carrying one line per column saying what it holds, sitting above one sentence saying what a single row represents."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "record_keeping",
+          "explanation": "A data dictionary is a tab, not a favour you do for one colleague once. One line per column, living in the file and travelling with the file, plus the sentence everything else depends on: what one row is. Cell comments are easy to miss, get stripped when a sheet is exported, and cannot say what a row means. A handover message is gone by the second week. Headings long enough to define every code make the sheet unreadable and still leave nowhere to say that Date means the date the work was done."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-2-the-functions-the-work-rests-on",
+      "title": "The functions the work rests on",
+      "description": "A small set of functions answers the questions a sales log, an expense tracker or an hours sheet is actually asked. The skill is knowing which question you are asking, and referencing the data so the answer does not quietly break next month.",
+      "lessons": [
+        {
+          "slug": "totals-counts-and-conditions",
+          "title": "Totals, counts, and conditions",
+          "content_mdx": "# Totals, counts, and conditions\n\nJeric keeps his own client hours sheet alongside the files he manages for other people. One row is one block of work: date, client, project, task, hours, billable, rate reference, invoice number.\n\nOn the fifth of every month the same question arrives in three different shapes. How many hours did you bill us last month? How many of those were on the migration? How many separate sessions was that?\n\nEvery one of them is a total or a count with a condition hanging off it. That is the bulk of the job.\n\n## Write the question in words first\n\nBefore you touch a formula, write the sentence you are answering. Put it in a spare cell above the working area: \"Total billable hours, client LOP-01, July only.\"\n\nThe sentence tells you three things. What you are adding up, which is hours. What you are filtering on, which is client, month and billable. And what every row must carry for that filter to work at all.\n\nIf the sentence names something your columns do not hold, stop and fix the columns. No formula will pull a month out of a date you typed as text.\n\n## Plain first, then the conditional forms\n\nSUM adds a range of numbers. COUNT tells you how many cells in a range hold a number. COUNTA tells you how many are not empty, whatever is sitting in them. AVERAGE adds and divides.\n\nOn their own those four answer almost nothing, because a real question usually carries a condition: this client, this month, this category, this status. The conditional forms take the same range plus a rule.\n\n- **One condition.** SUMIF takes the range to test, the rule, and the range to add. Total the hours column where the client column reads LOP-01.\n- **Several conditions.** SUMIFS adds the same hours, but only where the client matches, the date falls on or after the first of July, and the date falls on or before the thirty first.\n- **Counting instead of adding.** COUNTIF and COUNTIFS take the same rules and return how many rows matched.\n\nOne practical note. If your sheet refuses the comma between arguments, your locale is set to use semicolons. Type the separator your own tool accepts. The shape of the formula does not change.\n\n## Counting numbers is not counting rows\n\nRhea's sales log came out of her selling platform as an export. COUNT on the amount column returned zero. COUNTA on the same range returned every row.\n\nNothing was missing. The amounts had arrived as text that looks like numbers, so there was no number in the range for COUNT to find. That column will also sum to zero, quietly, with no warning anywhere.\n\nThe gap between COUNT and COUNTA is the cheapest test you own. Run both on any column somebody handed you. If COUNT sits far below COUNTA, the column is text and nothing built on it can be trusted. Converting it is chapter three's work. Knowing before you quote a figure is this lesson's.\n\n## A blank is not always a zero\n\nMarilou added a delivery charge column to her expense tracker. It sits blank on the rows where she collected the parts from the supplier herself.\n\nAVERAGE skips blanks entirely, so what it returns is the average charge across deliveries, not across purchases. Neither figure is wrong. They answer different questions, and only you know which one was asked.\n\nDecide what a blank means in this column before you average it, and write the decision on the data dictionary tab. If blank genuinely means zero, put the zero in.\n\n## A range that still works next month\n\nA formula reading rows 2 to 240 is right today and wrong the moment somebody types row 241. Two ways out. Point at the whole column, so anything added underneath is included. Or turn the block into a named table, if your tool offers one, so the range grows as rows arrive. Check what yours calls that.\n\nWhichever you use, keep the totals off the data. A total sitting inside the range gets added to itself the next time the range grows.\n\n## Read it back as a sentence\n\nWhen the formula returns something, say it aloud in words and compare it with the sentence you wrote at the start. \"Add the hours column where the client is LOP-01, billable is yes, and the date is in July.\"\n\nIf the two sentences differ, the number is wrong even when it looks reasonable. This catches the ordinary faults: a rule pointing at the wrong column, a date range ending on the thirtieth of a thirty one day month, a client code carrying a trailing space.\n\n## What you can now do\n\nTake a question somebody actually asked about a sales log or an hours sheet, write it as one sentence, build the conditional total or count that answers it, and say in plain words which rows the formula counted and which it left out.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "lookups-that-do-not-lie",
+          "title": "Lookups that do not lie",
+          "content_mdx": "# Lookups that do not lie\n\nJeric's hours sheet carries a rate reference on every row and no rate. The rates live on a separate tab, one row per client. To invoice, he needs each row's rate sitting beside its hours.\n\nTyping them in by hand works. It works right until a rate changes and he misses two rows out of three hundred, and then it has been wrong for a month and nobody knows.\n\nA lookup does the fetching: take the key on this row, find it in the reference table, bring back a value from the same row over there.\n\n## The four things a lookup needs\n\nWhatever your tool calls the function, you supply the same four things. The key you are looking for. Where to look for it. Which value to bring back once it is found. Whether the match has to be exact.\n\nSome tools let you supply a fifth: what to return when nothing matches.\n\nFunction names for this differ between products, between versions of the same product, and sometimes between the desktop and the browser version. Open your own tool's function list under lookup and use what is actually there. The four things above are the same in all of them.\n\n## Match on a code, never on a name\n\nJeric has two clients called Santos: Ana Santos Catering in Tagum, and R. Santos Hardware in Panabo. A lookup on the surname finds the first Santos row it meets and returns that rate. Nothing about the result looks wrong. It is simply the other client's money.\n\nNames break in ways codes cannot. A trailing space. Inc with a full stop and Inc without. Ma. and Maria. A middle initial somebody added in June.\n\nSo assign a short code once, when the client is first taken on, write it into the rate reference column at the moment each record is created, and match on that. LOP-01 either matches or it does not.\n\n## Exact matching, and the trap next to it\n\nLookup functions commonly offer a second mode. Instead of the exact key, it finds the closest key below the one you asked for. It exists for banded lookups: tiers, brackets, grade bands.\n\nDepending on the tool, that mode may be the default or may sit one argument away from it, and it expects the reference table to be sorted before it behaves at all. If you did not choose it deliberately it hands you a neighbouring row and says nothing, because a near miss and a hit look identical in the cell.\n\nSet exact matching every time. Leave it only when you can say out loud why a band is what you want.\n\n## A gap you can see beats a number you cannot\n\nWhen there is no match, some tools return an error and some return whatever you told them to return.\n\nDo not tell it to return zero. Zero adds silently into every total below it, and a client with no rate then leaves no mark anywhere. Blank does the same thing.\n\nReturn something loud instead. The text NO RATE cannot be summed, so it stops you at the total rather than at the invoice. Filter that column for it before anything leaves your hands. A visible gap costs five minutes. A silently wrong rate costs a conversation with a client you would rather keep.\n\n## One row per key, and prove it\n\nThe reference table gets its own tab. One row per key, no duplicates, keys that never change once issued, no spacer rows through the middle of it.\n\nMarilou's supplier tab brings a category across into her expense tracker. When one supplier was appearing under the wrong category, the formula was not the problem. That supplier had been entered twice, months apart, with two different categories, and the lookup was returning whichever row it reached first.\n\nSo check before you trust it. Next to the key column, count how many times each key appears in that same column, using a conditional count. Sort that helper column highest first. Anything above one is a fault to fix now, not after the invoices go out. Run the check again every time somebody adds rows to the reference tab, because that is when duplicates arrive.\n\n## What a lookup does not solve\n\nA lookup brings back what the reference table says today. If a client's rate changed part way through the month, every historical row quietly takes the new figure the next time the sheet recalculates.\n\nThat is the next lesson's problem, and it is the one that costs real money.\n\n## What you can now do\n\nPull a rate or a category across from a reference tab using an exact match on a code you assigned, make an unmatched row announce itself instead of returning zero, and prove the reference table holds no duplicate keys before you rely on a single figure it produced.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "arithmetic-you-can-defend",
+          "title": "Arithmetic you can defend",
+          "content_mdx": "# Arithmetic you can defend\n\nEvery figure in this lesson is invented so the arithmetic is visible. The method is the part to keep.\n\n## Fill down, and what has to stay still\n\nJeric parks his rate in a spare cell off to the side of the data, K1, adds a new column I for the peso total, writes I2 as that row's hours times K1, and drags it down two hundred rows.\n\nRow 2 is right. Every row under it reads zero.\n\nA reference slides when a formula is copied. Dragging down turned K1 into K2, then K3, then K4, all of them empty. To hold a reference still, pin it with dollar signs. That is what $K$1 means: stay on column K, row 1, wherever this formula is copied to.\n\nThe tell is a column of zeros, or a total that looks light. The check takes ten seconds. Click the formula on the last filled row and read what it actually points at. Do that before you invoice, every time you fill a new column down.\n\n## A rate that changes part way through\n\nOne of Jeric's clients agrees a higher rate starting the sixteenth. The tempting move is to open K1 and type the new number.\n\nThat rewrites history. Every hour logged in the first half of the month is now priced at the new rate, and the invoice he already sent no longer matches his own sheet. He cannot explain the difference, because the old figure is gone.\n\nTwo honest options. Add a rate column to the hours sheet and stamp each row with the rate that applied on the day the work happened. Or add a row to the rate tab with an effective-from date, and look up the rate that was in force on that row's date.\n\nEither way an old row keeps its old number. The rule underneath both: never edit a cell whose previous value is printed on a document you have already sent.\n\n## Percentages are division wearing a costume\n\n**Share of a total.** Marilou wants each expense category as a share of the month. That is the category total divided by the grand total, with the grand total pinned so it does not slide as she fills down. In this made up month, materials of ₱42,000 against a total of ₱120,000 gives 0.35.\n\n**Change between two periods.** This period minus last period, divided by last period. Rhea's invented July of ₱96,000 against an invented June of ₱80,000 is ₱16,000 divided by ₱80,000, or 0.20. A negative answer means down, and it should stay negative.\n\nIf last period was zero there is no percentage. It went from nothing to something. Say that in words rather than showing a figure your reader cannot interpret.\n\nPercent formatting displays a stored 0.35 as 35 percent. It does not turn a typed 35 into a share. Type the division, not the display.\n\n## Rounding, and where the centavos go\n\nThree billing lines, each hours times rate, each landing with a tail past two decimal places. Round every line to centavos and add them up, and you can finish a centavo or two away from rounding the total at the end. Both are defensible. They are different numbers.\n\nPick one rule and hold to it: round at the point where the figure becomes money on a document, and let everything upstream carry full precision.\n\nKnow as well that formatting a cell to two decimals changes only what you see. The stored value keeps its tail and still adds the long way, which is exactly how a total ends up disagreeing with the column of numbers printed above it. If you need a value genuinely rounded, round it with a formula.\n\n## The two checks that catch the ordinary mistakes\n\n**Cross-foot it.** Lay the summary out with clients down the side and weeks across the top. Add a total column on the right and a total row along the bottom. Add up the row totals, then add up the column totals. They must agree. When they do not, a range has missed a row or a column, and you have found the fault in seconds instead of hearing about it from a client.\n\n**Recompute one row by hand.** Take a row at random, not the first one, and work it out on paper. Hours times rate, minus whatever comes off, and compare. The first row is usually the one you built the formula against, so it agrees with itself and proves nothing.\n\nThose two checks come back later in this course, unchanged, as the checks you run on a formula an AI tool wrote for you.\n\n## What you can now do\n\nFill a rate calculation down a column without it sliding, keep a mid-period rate change out of figures you already sent, compute a share and a change without a formatting trick, and prove a summary adds up in both directions before anybody else sees it.\n",
+          "duration_minutes": 9
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "One of Jeric's clients agreed a higher hourly rate starting the sixteenth. He opened the single rate cell his whole hours sheet points at, typed the new figure, and now the first half of the month no longer matches the invoice he already sent. What should he have done instead?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Stamp every row with the rate that applied on the date that work happened, so old rows keep old figures"
+            },
+            {
+              "id": "b",
+              "text": "Adjust the first half's logged hours down until the sheet's total lands back on the invoice he sent"
+            },
+            {
+              "id": "c",
+              "text": "Round the month's total to the nearest peso, which absorbs a difference this small without any rewrite"
+            },
+            {
+              "id": "d",
+              "text": "Start a second hours sheet on the sixteenth, so that each sheet only ever holds one rate from top to bottom"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "working_with_numbers",
+          "explanation": "Editing the rate cell rewrote history. Hours logged before the change are now priced at the new rate, and the figure on the sent invoice cannot be reproduced from the sheet. The fix is to make the rate part of the record, either as a rate column stamped per row or as a dated rate on the reference tab. A second sheet splits one month across two files and breaks every later total, and adjusting hours falsifies the record to hide the problem."
+        },
+        {
+          "prompt": "Rhea's sales log arrives as an export from her selling platform. COUNT on the amount column returns 0, COUNTA on the same range returns 240, and every row visibly shows an amount. What has she just learned about that column?",
+          "options": [
+            {
+              "id": "a",
+              "text": "COUNT only reads a column formatted as currency, so she needs to apply peso formatting to it first"
+            },
+            {
+              "id": "b",
+              "text": "COUNT skips the header row, and this export repeated its header part way down the sheet as well"
+            },
+            {
+              "id": "c",
+              "text": "The range in her COUNT stops above the first row of data, so it is testing a block of empty cells"
+            },
+            {
+              "id": "d",
+              "text": "The amounts arrived as text, so there is no number in that range to count or to add"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "admin_tooling",
+          "explanation": "COUNT counts numbers. COUNTA counts anything that is not empty. A large gap between the two is the standard tell that a column of digits is text, and that column will sum to zero without warning. Formatting does not convert text into numbers, and a range pointed at the wrong rows would have driven COUNTA to zero as well."
+        },
+        {
+          "prompt": "Marilou's supplier tab holds one row per supplier and feeds a category across into her expense tracker. One supplier's expenses are coming back under the wrong category. Before she changes a single formula, what should she check first?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Whether the tracker gained more rows this month than last, which would explain a shifted result"
+            },
+            {
+              "id": "b",
+              "text": "Whether she sorted the tracker after filling the formulas down, since sorting reorders the results"
+            },
+            {
+              "id": "c",
+              "text": "Whether the category wording on the supplier tab is spelled the way her tracker's column spells it"
+            },
+            {
+              "id": "d",
+              "text": "Whether that supplier appears more than once on the supplier tab, using a count on the key column"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "record_keeping",
+          "explanation": "A lookup returns the first row whose key matches, so a supplier entered twice returns whichever of the two rows it meets first, and which one that is can change when somebody sorts the tab. Counting each key against its own column and sorting the count highest first finds every duplicate in one pass. The other checks are worth doing later, but none of them explains a result that looks completely normal in the cell."
+        },
+        {
+          "prompt": "Jeric fills a formula down 200 rows. Each row should be that row's hours times the single rate held in cell K1, off to the side of the data. Row 2 is correct and every row below it reads zero. What is the most likely cause?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The formula was copied rather than dragged, and copying will not carry a formula into the rows below"
+            },
+            {
+              "id": "b",
+              "text": "The reference to K1 was never pinned, so each copied row points one cell further down an empty column"
+            },
+            {
+              "id": "c",
+              "text": "The rate in K1 is formatted as currency, so the multiplication returns a value the column cannot show"
+            },
+            {
+              "id": "d",
+              "text": "The hours column below row 2 is stored as text, which multiplies out to zero on every row after it"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "working_with_numbers",
+          "explanation": "An unpinned reference slides as the formula is copied. K1 becomes K2, then K3, and the rest of that column is empty. Pinning it as $K$1 holds it in place. Hours stored as text would raise an error or refuse to multiply rather than produce a clean run of zeros, and currency formatting only changes the display. The habit that catches this is clicking the last filled row and reading what its formula actually points at."
+        },
+        {
+          "prompt": "A client asks Jeric how many separate work sessions he logged on the migration project in July. Not the hours: the number of sessions. Which shape of formula answers exactly that question?",
+          "options": [
+            {
+              "id": "a",
+              "text": "An average of the hours column, filtered to the migration project, times the number of days in July"
+            },
+            {
+              "id": "b",
+              "text": "A sum with conditions on the project column and on the date range, run across the hours column itself"
+            },
+            {
+              "id": "c",
+              "text": "A count with conditions on the project column and on the date range, run across the rows of the log"
+            },
+            {
+              "id": "d",
+              "text": "A count of the filled cells in the hours column, which returns every session he has logged in that sheet"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "admin_tooling",
+          "explanation": "One row is one session, so the question is a count of the rows matching two conditions, not a total of hours. The conditional sum answers the question he was asked last month rather than this one. Counting filled cells returns every session for every client since the sheet began, because it carries no conditions at all."
+        },
+        {
+          "prompt": "Jeric adds a new client to his hours sheet and forgets to add them to the rate tab. His lookup is set to return 0 whenever there is no match. Why is that a poor choice on a sheet that produces invoices?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Zero pushes the peso column into text format, and the sheet's later totals then stop adding correctly"
+            },
+            {
+              "id": "b",
+              "text": "Zero is a valid rate for pro bono work, so the column can no longer be sorted into a sensible order"
+            },
+            {
+              "id": "c",
+              "text": "Zero adds silently into every total below it, so an unbilled client leaves no visible trace anywhere in the sheet"
+            },
+            {
+              "id": "d",
+              "text": "Zero has to be hunted down and typed over by hand on each affected row, which is slow on a long sheet"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "admin_tooling",
+          "explanation": "A wrong figure that stops you is cheap, and one that adds up neatly is not. Returning something unsummable, such as the text NO RATE, breaks the total and sends you looking, so the gap is found before an invoice goes out rather than after. A returned zero changes no formatting, and the cost is not the typing: it is that nothing ever sends you looking. It simply disappears into the sum."
+        },
+        {
+          "prompt": "Marilou leaves the delivery charge column blank on the rows where she collected the parts herself. AVERAGE over that column returns a figure noticeably higher than she expected across the month. What is the honest way to handle it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Fill each blank with a zero, so the column holds a value on every row and the average uses them all"
+            },
+            {
+              "id": "b",
+              "text": "Decide whether a blank here means a zero charge or no delivery, then average only the rows that apply"
+            },
+            {
+              "id": "c",
+              "text": "Leave it exactly as it is, since AVERAGE skips blanks and the figure it returned is the charge per purchase"
+            },
+            {
+              "id": "d",
+              "text": "Average the delivery charge column across the whole year instead, so one month's mix stops distorting it"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "working_with_numbers",
+          "explanation": "AVERAGE ignores blanks, so what came back is the average charge across delivered orders. That is a real answer to a different question. Filling in zeros answers a charge-per-purchase question, which may well be the one she wants, but only once she has decided which question she is asking and written that decision down. Widening the window to a year averages a different set of months and still never says what a blank in the column means."
+        },
+        {
+          "prompt": "Rhea's monthly summary has customers down the side and weeks across the top, with a total row and a total column. Adding up the row totals gives one figure. Adding up the column totals gives a figure a few hundred pesos apart. What does that gap tell her?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The two directions round differently, and a gap of this size is normal in peso work of this kind"
+            },
+            {
+              "id": "b",
+              "text": "One of the two total formulas covers a range that is missing a row or a column of the actual data"
+            },
+            {
+              "id": "c",
+              "text": "The sheet is due a recalculation, because a total built out of other totals refreshes on a delay"
+            },
+            {
+              "id": "d",
+              "text": "A customer's weekly figures went in as text, which the row totals leave out and the column totals include"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "working_with_numbers",
+          "explanation": "The same numbers added in two directions have to agree, which is what makes cross-footing worth the minute it takes. A disagreement means a range does not cover what you think it covers, and comparing the two totals points you at the row or column that was missed. Rounding cannot produce a gap of hundreds of pesos, and text figures would be skipped in both directions equally rather than in only one."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-3-messy-data-in-a-real-answer-out",
+      "title": "Messy data in, a real answer out",
+      "description": "Data arrives from somewhere else and it arrives broken. Clean it without destroying the original, summarise it with a pivot that answers one stated question, and draw the one chart that makes the answer obvious.",
+      "lessons": [
+        {
+          "slug": "cleaning-an-export-without-losing-it",
+          "title": "Cleaning an export without losing it",
+          "content_mdx": "# Cleaning an export without losing it\n\nMarissa runs the back office for a small skincare seller in Bacolod. Once a month she downloads the shop's sales export and turns it into a figure the owner can act on. The file that arrives has never once been ready to use.\n\nThe first row is the shop's name, not a header. The real headers are spread over two rows, so \"Order\" sits above \"Date\" and neither is a column name on its own. Customer names carry trailing spaces you cannot see. Amounts came through as text with a peso sign and a comma typed inside the cell, so nothing sums. Four rows in the middle look repeated, and she does not yet know whether that is a fault in the export or two customers who each bought twice that afternoon.\n\nNone of that means the export is bad. Cleaning is the work.\n\n## Copy the raw sheet before you touch anything\n\nChapter 1 set the three layers up: raw, working, output. This is the month they earn their keep.\n\nDuplicate the downloaded tab. Call one of them raw, with the download date in the name, and do every fix on the copy.\n\nThis is not tidiness. A month later the owner asks why the sheet says one figure and the dashboard says another. If Marissa cleaned in place, she cannot answer, because the version she would need to compare against no longer exists. Downloading again does not rescue her: the shop has taken orders since, so the new file is a different file, and it still does not tell her what she changed.\n\n## Keep a fix log\n\nOne line per change, on a tab of its own: what was wrong, what you did, how many rows it touched, and the date. It reads like this.\n\n- Trailing spaces in Customer, trimmed, 96 rows, 14 August.\n- Amounts held as text with peso signs and commas, symbols stripped and the column converted to numbers, whole column, 14 August.\n- Three spellings of Perez Beauty Bar standardised to one, 31 rows, 14 August.\n\nThe log costs a few minutes. It is the only thing that later lets anyone, including you, tell a fix from a mistake.\n\n## Count the rows before and after\n\nWrite down the row count of the raw copy. Write it down again when you finish. If the two numbers differ, your log has to account for the difference, line by line, and the arithmetic has to work.\n\nA cleaned sheet with fewer rows than the export and no explanation is not clean. It is smaller, and nobody can say what left it.\n\n## The techniques, by what they do\n\nEvery spreadsheet tool can do these. What each one is called, and where it sits in the menus, differs between tools, versions and language settings, so look for the behaviour in the tool in front of you rather than a name you read somewhere.\n\n- **Trimming** strips spaces from the ends of a text value. Do it before you compare or group anything, because a name with a trailing space is a different name to a formula.\n- **Splitting a column** pulls \"Ilagan / website copy\" into a client column and a project column, so you can group by either.\n- **Find and replace** turns several spellings into one. Run one spelling at a time and read the count of replacements it reports, because a careless replace edits things you never looked at.\n- **Sorting** pushes the strangest values to the top and the bottom. A negative amount, a date in the wrong year and an empty customer all surface in seconds.\n- **Filtering** lets you see one problem at a time. Filter to blank amounts, fix those, clear the filter, move to the next problem.\n\nWork one breakage at a time across the whole column, not one row at a time down the sheet. Row by row is where a fix log quietly dies.\n\n## Decide what a duplicate is before you delete one\n\nRepeated rows are where a cleaner does real damage. Two rows carrying the same customer, the same date and the same amount can be one sale imported twice, or a customer who bought the same item twice that afternoon. The sheet cannot tell you which.\n\nSo write the rule first, for this file. In a sales export that carries a transaction reference, a duplicate is two rows sharing that reference, and nothing weaker counts. In a client hours sheet with no reference at all, the honest move is to ask the person who kept it before you touch anything.\n\nThen mark rather than delete. Add a column, flag the suspects, and exclude the flagged rows from your totals with a condition. A deletion is a decision nobody can inspect afterwards. A flag is one they can.\n\nMarissa's file ends as three tabs: raw, working, and the fix log. When somebody challenges her figure, she can walk it back to the row, and back to the file the row arrived in.\n\n## Do this now\n\nDuplicate the last export you were sent, date the copy, and open a fix log tab with one line on it: the row count you started with, and today's date.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "a-pivot-answers-one-question",
+          "title": "A pivot answers one question",
+          "content_mdx": "# A pivot answers one question\n\nDennis does admin support for three clients in Davao and keeps a client hours sheet: one row per block of work, carrying the date, the client, the project, the hours and who did them. It has grown past a thousand rows. Somebody asks how much time went to Sandoval Dental in July.\n\nHe can filter and read the total off the bottom. He does that once. Then he does it for August, then for the other two clients, then again when the question turns into hours by project. That is the point where a pivot earns its place.\n\n## Write the question as a sentence first\n\nBefore touching anything, write it out: \"Hours by client by month, for the first half of the year.\"\n\nThen read your own sentence back. Hours is the thing being added up. Client and month are what the rows get grouped by. The half year is a filter. Every pivot you will ever build is those three parts, and the sentence is where you find them.\n\nQuestions that work in that shape: sales by product by week. Expenses by category for one client. Hours by staff member by month.\n\nA request that fails the test: \"a summary of the sheet.\" That is not a question, and no pivot answers it.\n\n## What a pivot is doing\n\nGrouping rows, then adding up a column. That is all.\n\nEvery row whose client is Sandoval Dental and whose date falls in July goes into one bucket, and the hours in that bucket are added. The answer is computed from the rows rather than typed by you, so when a row is corrected or a week is added, the summary moves with it. That is the difference between a pivot and a total you typed into a cell. One of them is still true next month.\n\nRows and columns are what you group by. Values are what you add up. If you catch yourself dragging hours into the rows, the question in your head was not the one you wrote down.\n\n## One question, one pivot\n\nThe temptation is to keep adding. Client down the side, month across the top, then project as a second grouping, then a filter for one staff member, and now nobody can say what the table shows, including you.\n\nBuild a second pivot instead. They cost nothing. Two clean summaries that each answer one written sentence beat one summary that answers a question nobody asked.\n\n## Check it against the source\n\nA pivot looks authoritative in a way a typed total never does. Check it anyway, every time, once.\n\nTotal the source column plainly, with nothing grouped and no filter, across exactly the range the pivot reads. Set that beside the pivot's grand total. They should agree to the centavo.\n\nWhen they do not, look at the data before you look at the pivot. The usual causes are all data:\n\n- Some values in the column are text rather than numbers, so they were skipped and counted as nothing.\n- The pivot's range stops short of the rows somebody added last week.\n- Blanks in the grouping column sent rows into a group with no name, which is easy to miss at the bottom of a long table.\n\nEach of those is a data problem wearing a pivot's clothes. Fix it in the working sheet, then refresh.\n\nAnd a match is not a full pass. It proves the pivot read the column you pointed it at. It does not prove the rows belong to the period you meant, so check the earliest and latest dates inside your range as well. Dennis's July figure once came out high because a row dated last July sat inside the range, and both totals agreed with each other perfectly.\n\n## A pivot over dirty data is worse than no pivot\n\nThis is why the cleaning comes first.\n\nIf Bautista Wellness appears three ways in the client column, the pivot does not warn you. It reports three clients, each with a tidy total, in the same clean type as everything else. Dennis sends the owner a summary showing a client at a fraction of the hours she actually bought, and nothing on the page looks wrong.\n\nThe pivot did its job. It grouped what was in front of it. Grouping is only as good as the spelling underneath it, and the polish hides the mess rather than revealing it.\n\nSo before you group anything, sort the client column and read the distinct names. Sort the category column and read those. It takes a minute, and it is the minute that keeps the summary honest.\n\n## Do this now\n\nTake a sheet you already keep and write the pivot question as one sentence, naming what gets added up, what it gets grouped by, and what the filter is. If the sentence will not come out, you have found the problem before you built anything.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "one-chart-one-question",
+          "title": "One chart, one question",
+          "content_mdx": "# One chart, one question\n\nKaye keeps the expense tracker for a small logistics outfit in Cebu. The owner asked for \"a chart of our expenses\" for the monthly meeting. She built one: twelve months, six categories stacked, a second line for headcount, all in the company colours.\n\nNobody in the meeting could say what it showed. It was not a badly drawn chart. It was several charts pretending to be one.\n\n## The question comes first, then the chart\n\nDecide what single sentence the picture has to answer, and write that sentence down. Then choose the shape that answers it.\n\nThree shapes cover the questions an operations sheet gets asked.\n\n**Change over time.** \"Did fuel spend go up between January and June?\" Time along the bottom, the measure up the side, one line or one column series carrying it. One measure, unless a second genuinely belongs beside it.\n\n**Comparison between categories.** \"Which client took the most hours last month?\" Bars, sorted from largest to smallest, labels readable without turning your head. The sorting is what makes the comparison instant.\n\n**Share of a whole.** \"How much of the spend is fuel?\" This is the one that pulls everybody towards a pie. A pie with three slices says less than a two-row table, and a pie with nine slices says nothing at all. Write the shares as a short table with the total underneath, and the reader gets the answer and the underlying figures in one look.\n\n## A chart carrying two questions answers neither\n\nKaye's chart tried to show the category mix, the movement across the year, and a relationship with headcount. Any one of those is a chart. The three together is a shape the reader has to decode instead of read.\n\nSplit it. Fuel by month as a line. The category mix for the latest month as a short table. If the headcount relationship matters, that is a third picture, and it is probably a sentence.\n\n## Labels are not decoration\n\nA chart that leaves the room without labels becomes whatever the reader assumes it is.\n\nAnything you hand over carries four things: what the vertical axis measures and in what units, what the horizontal axis is, a title that states the question the chart answers, and the period covered. \"Fuel spend by month, pesos, January to June\" is a title. \"Expenses\" is not.\n\nIf the axis is rounded to thousands, say so on the axis. A reader who takes 40 to mean forty pesos rather than forty thousand is not being careless. Nobody told them.\n\n## What a chart owes a client report\n\nBeside the chart, in small type, put three things: the sheet it came from, the date range of the data, and the date you made it.\n\nThree months from now that image will be sitting in an email thread with no file attached to it. Whoever opens it needs to see that it covers January to June and was built in July, or they will read it as current and act on it. This is the same discipline as a reference number on a row. A figure that cannot be walked back to the sheet behind it is a figure you will end up defending from memory.\n\n## Cut anything that carries no information\n\nGradients, drop shadows, three-dimensional depth, a photo behind the bars, gridlines at every small step, a legend for a single series. Each one costs the reader time and returns nothing.\n\nAsk it of every element on the chart: if I removed this, would the reader lose an answer? If not, remove it.\n\n## When a table beats any chart\n\nTwo numbers with a comparison between them do not need a picture. \"Fuel in January, ₱48,000. Fuel in June, ₱61,000.\" Those are figures invented for this example, and a chart of two values is decoration wrapped around a sentence.\n\nExact figures that the reader will copy into something else belong in a table too. A chart is for shape: rising, falling, this bar taller than the rest, this month unlike the others. When the reader needs the number itself, hand them the number.\n\nKaye rebuilt hers as one line chart with a labelled axis and a four-row table, both marked with the source sheet and the date range. The meeting made the decision it had been circling for a month, and when the owner asked where a figure came from, Kaye could answer in one sentence.\n\n## Do this now\n\nOpen the last chart you sent anybody. Write down the one question it was meant to answer, then check whether the title says that question and whether the axis says its units. Fix whichever of the two is missing.\n",
+          "duration_minutes": 8
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Marissa cleaned her client's sales export on the downloaded tab itself, then sent the owner a monthly total. Three weeks later the owner says the figure does not match the shop dashboard. Where does that leave Marissa?",
+          "options": [
+            {
+              "id": "a",
+              "text": "In reasonable shape, since the file is still open and she can step back through every edit she made."
+            },
+            {
+              "id": "b",
+              "text": "Rebuilding formulas, since they now read edited cells and have to be redone before she can compare."
+            },
+            {
+              "id": "c",
+              "text": "Slightly delayed, because downloading the export again today settles the difference in minutes."
+            },
+            {
+              "id": "d",
+              "text": "With no way to show what the export said on arrival, and no record of which fix moved the total."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "record_keeping",
+          "explanation": "Cleaning in place destroys the two things a challenged figure needs: the untouched arrival copy, and a log of what changed. Undo does not survive a closed file and is not a record anybody else can read. Downloading again gives her a different file, because the shop has taken orders since. Broken formulas would be the smaller problem, and are not what the owner is asking about."
+        },
+        {
+          "prompt": "Dennis hands a colleague a cleaned copy of a sales export. The raw file had 1,412 rows and the cleaned sheet has 1,388. There is no fix log anywhere in the file. What should the colleague do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Work from the cleaned sheet, since a small number of dropped rows will not move a monthly total."
+            },
+            {
+              "id": "b",
+              "text": "Ask Dennis to account for the missing rows, and rebuild from the raw copy if he cannot say why."
+            },
+            {
+              "id": "c",
+              "text": "Compare the two grand totals, and treat a match as proof that nothing important was removed."
+            },
+            {
+              "id": "d",
+              "text": "Delete the cleaned sheet and clean the raw copy again, so only his own edits are in the file."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "record_keeping",
+          "explanation": "A row count that fell with nothing explaining it is the whole reason a fix log exists. Ask first, because Dennis may have a good reason he simply did not write down. Cleaning again immediately throws away work that may be correct and still does not say what happened. Matching totals prove only that the removed rows summed to nothing, which is what a deleted blank looks like and also what a deleted unpaid order looks like."
+        },
+        {
+          "prompt": "An export of Marissa's sales has rows that look repeated. She deletes every row sharing a customer, a date and an amount with another row. The owner later finds two genuine same-day purchases missing. What should she have done?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Written down what counts as a duplicate in this file first, then flagged the suspects rather than deleting them."
+            },
+            {
+              "id": "b",
+              "text": "Sorted by customer first, and deleted only the repeats that ended up sitting next to each other."
+            },
+            {
+              "id": "c",
+              "text": "Checked the row count before and after, which would have shown her the deletion had gone too far."
+            },
+            {
+              "id": "d",
+              "text": "Deleted the repeats as she did, but kept a copy of the removed rows on a separate tab of the file."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "admin_tooling",
+          "explanation": "Same customer, same day, same amount is not a duplicate. It is a customer who bought twice. In a file carrying a transaction reference, a duplicate is two rows sharing that reference, and nothing weaker counts. Flagging keeps the decision visible and reversible. Sorting makes repeats adjacent, it does not make them duplicates. A row count says how many rows left, never which ones deserved to. Keeping the removed rows elsewhere is better than nothing but still applies the wrong rule."
+        },
+        {
+          "prompt": "Dennis's pivot of hours by client shows Bautista Wellness three times, each with its own total, because the client column holds three spellings. The sheet carries no client code. What is the fix?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Standardise the spelling in the working sheet, log the change with a row count, then refresh the pivot."
+            },
+            {
+              "id": "b",
+              "text": "Group the three rows inside the pivot itself, which leaves the source exactly as the export sent it."
+            },
+            {
+              "id": "c",
+              "text": "Add the three totals together in the report, with a note under the table saying they are one client."
+            },
+            {
+              "id": "d",
+              "text": "Filter the pivot to the spelling used in the client's own contract, since that is the version that is correct."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "admin_tooling",
+          "explanation": "The pivot is reporting what is in the column, so the column is what has to change, on the working copy, with the row count logged. Adding the totals by hand works once and breaks the moment anyone refreshes or a fourth spelling arrives. Grouping inside the pivot hides the problem and leaves every other summary built on that column wrong. Filtering to one spelling drops the hours recorded under the other two, which is the client's billable time going missing."
+        },
+        {
+          "prompt": "Kaye's pivot of expenses by category comes back with a grand total lower than a plain total of the same amount column over the same rows. Where does she look first?",
+          "options": [
+            {
+              "id": "a",
+              "text": "At the pivot setup, since a grand total disagreeing with the column means it adds the wrong field."
+            },
+            {
+              "id": "b",
+              "text": "At the rounding, since a pivot rounds each group to the peso before adding them into a grand total."
+            },
+            {
+              "id": "c",
+              "text": "At the data, for amounts sitting as text and for rows outside the range the pivot reads."
+            },
+            {
+              "id": "d",
+              "text": "At neither yet, since a plain total counts blank rows the pivot has correctly left out of its groups."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "working_with_numbers",
+          "explanation": "A gap of this shape is a data problem wearing a pivot's clothes. The two usual causes are amounts stored as text, which get skipped and counted as nothing, and a range that stops short of rows somebody added later. Fix them in the working sheet and refresh. A pivot adding the wrong field would give a total unrelated to the column rather than one slightly under it. Pivots do not silently round groups, and a blank adds nothing to a plain total either."
+        },
+        {
+          "prompt": "Dennis checks his pivot's grand total against a plain total of the hours column and they agree exactly. The July figure he is about to send is still too high. What did that match fail to prove?",
+          "options": [
+            {
+              "id": "a",
+              "text": "That the hours column holds no blanks, since a blank would have pulled the two totals apart."
+            },
+            {
+              "id": "b",
+              "text": "That every session was logged in decimal hours, since 1h 45m in a cell would add on one side only."
+            },
+            {
+              "id": "c",
+              "text": "That the pivot's range reaches the last row, since a range stopping short would leave its total lower."
+            },
+            {
+              "id": "d",
+              "text": "That every row in the range belongs to July, which only a look at the earliest and latest dates shows."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "working_with_numbers",
+          "explanation": "Both totals read the same rows, so both happily include a row dated last July if one is sitting in the range. The reconciliation checks the adding, not the selecting, so read the earliest and latest date inside the range before you trust the period. Blanks and text values are skipped on both sides equally, so neither pulls the two figures apart, and both would push a figure down rather than up. A range that stops short of the data is one of the few faults the match does catch, because the two totals would then differ."
+        },
+        {
+          "prompt": "Kaye is about to email a client a column chart titled Expenses. The vertical axis runs to 60 with no units on it, and the bottom axis reads Jan to Jun. What has to change before it goes?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Units on the axis and the source noted beside it, since the title and the month labels already say what it covers."
+            },
+            {
+              "id": "b",
+              "text": "A title stating the question, units on the vertical axis, and the period and source written beside it."
+            },
+            {
+              "id": "c",
+              "text": "Only the title, since a client reading their own expense chart can infer the units from the scale used."
+            },
+            {
+              "id": "d",
+              "text": "Nothing on the chart, as long as the covering email states the period, the source and the units."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "admin_tooling",
+          "explanation": "An axis running to 60 could be pesos, thousands of pesos or deliveries, and a reader who guesses wrong is not being careless. Expenses is a subject, not a question, so the title has to say what the chart answers. The email is the weakest place to carry any of it, because the image gets forwarded, screenshotted and reopened months later with no email attached to it. Units and a source still leave a chart titled Expenses, which names a subject rather than the question it answers."
+        },
+        {
+          "prompt": "The owner asks Kaye two things for one slide: whether fuel spend is rising, and which expense category takes the largest share of the month. What should she put on the slide?",
+          "options": [
+            {
+              "id": "a",
+              "text": "One stacked column chart by month, which carries the movement and the category mix in a single picture."
+            },
+            {
+              "id": "b",
+              "text": "One pie of the category shares, with a line under it saying which way fuel has moved since January."
+            },
+            {
+              "id": "c",
+              "text": "A line of fuel by month, and a short table of category shares beside it, each under its own heading."
+            },
+            {
+              "id": "d",
+              "text": "One combined chart with fuel drawn as a line and the category totals as columns on a second axis."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "admin_tooling",
+          "explanation": "Two questions, so two pictures, each labelled with the question it answers. A share of a whole reads better as a short table than as a pie, because the reader gets the ranking and the actual figures at once. A stacked column asks the reader to compare segment heights that do not share a baseline, which is how a rising category can look flat. A second axis lets two unrelated measures be scaled until they appear related, and the reader has no way to tell."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-4-ai-on-the-sheet-and-the-checking-it-cannot-do",
+      "title": "AI on the sheet, and the checking it cannot do",
+      "description": "AI is genuinely useful for writing and explaining formulas and genuinely unreliable as a calculator. This chapter draws that line, sets the checks that catch a wrong figure before it leaves your hands, and says what must never be pasted into a chat box at all.",
+      "lessons": [
+        {
+          "slug": "ask-for-the-formula-not-the-answer",
+          "title": "Ask for the formula, not the answer",
+          "content_mdx": "# Ask for the formula, not the answer\n\nTwo requests, one minute apart, on the same sheet.\n\n**Request one.** Marivic copies 240 rows out of her client hours sheet, pastes them into a chat window and types: \"total the Hours column.\" A number comes back in seconds, tidily formatted, inside a confident sentence.\n\n**Request two.** She types instead: \"I am in Google Sheets. One row is one work session. Column D is Hours, stored as a plain number. Data runs from row 2 to row 241 and I add rows every week. Give me a formula that totals Hours for client CL-004 only, where the client code sits in column B. Explain each part.\"\n\nThe second request hands her something she can test on rows whose answer she already knows. The first hands her something she can only believe.\n\nThat is the move this chapter rests on. Ask for the thing that computes, never for the thing that resembles a computation.\n\n## Why the pasted column is the wrong request\n\nA chat reply is text. Some tools do run real code on what you paste and some only write the sentence a total would appear in, and which one you are talking to is not something the reply tells you. Even when the arithmetic was genuinely done, nothing in the reply says so, and nobody opening your sheet next month can see where the figure came from.\n\nThe failure is quiet, which is what makes it dangerous. A total that missed four rows does not come back flagged. It arrives with two decimal places and a confident sentence around it.\n\nThe sheet is the calculator. It already holds the data, it adds the same way every time, and when three more sessions go in next week the formula picks them up while a pasted answer stays frozen at the moment you pasted.\n\n## What a formula request has to carry\n\nYou already know how to write a brief. These are the parts specific to a sheet.\n\n**Which tool you are in.** Excel and Google Sheets do not offer the same functions, and what exists differs between versions of the same product. Say which one you are in, and be ready to be handed a function your copy does not have. When that happens, ask for a version built from older, plainer functions.\n\n**What one row represents.** One sale, one expense, one session. Everything the formula does downstream depends on this and it is the part people leave out.\n\n**The exact headers and where they sit.** Not \"the amount column\". \"Column F, header Amount, plain number, no currency typed in the cell.\"\n\n**The range, and whether it grows.** A formula written for rows 2 to 241 quietly ignores row 242.\n\n**What should happen at the edges.** No match found. A blank cell. Text sitting where a number should be. If you do not say, the model decides for you, and it picks something, often a zero standing in for \"I do not know\", and it does not tell you it chose.\n\n## Ask for three things in one reply\n\n**The formula.**\n\n**An explanation of each part.** Not \"this sums by client.\" Which argument is the range, which is the condition, what the pinning does. If you cannot read a formula back as a sentence, you cannot maintain it and you cannot answer for it.\n\n**What would break it.** Ask straight out: \"what would make this return a wrong number rather than an error?\" The answers worth having are specific. A client code with a trailing space. A row pasted below the range. Hours stored as text.\n\n## The formula somebody else left behind\n\nThe VA before you has gone. You open her sales log and column K holds ninety characters of nested functions, and the figure it produces goes to a client every month.\n\nDo not edit it. Paste it, say which tool you are in, describe what the sheet holds, and ask what it does step by step and what it assumes about the data. Then check that explanation against two rows you can work out yourself.\n\nThis is the safest thing AI does on a spreadsheet: reading something that already exists back to you in words. Even a partly wrong explanation gives you named parts to test instead of a wall of brackets, and once you can say what the formula does, you can decide whether it stays.\n\n## The one thing not to do\n\nDo not use a chat as a calculator. Not for a total, not for a percentage, not for \"roughly how much is this.\"\n\nAnd if you have already pasted a column and asked for the total, the fix is not to ask the model to check its work. That produces a second confident paragraph, not a second calculation. Put the numbers back in the sheet and total them where the adding happens.\n\n## Do this now\n\nWrite the request, and do not send it yet. Name the tool you are in, say what one row is, list the headers with their column letters, give the range, and say what should happen at a blank. Read it back and see how much of it you had to go and look up.\n",
+          "duration_minutes": 9
+        },
+        {
+          "slug": "checking-what-looks-right",
+          "title": "Checking what looks right",
+          "content_mdx": "# Checking what looks right\n\nA wrong figure in a spreadsheet does not look wrong. It sits in the same font, in the same column, with the same two decimal places as the correct figure beside it. The screen is never going to tell you. The only thing that catches it is a check you decided to run.\n\nHere is the order to run them in. The whole sequence takes a few minutes, and it is the difference between a number you sent and a number you can defend.\n\n## 1. Test it where you already know the answer\n\nBefore a new formula is trusted anywhere, point it at rows whose answer you already hold. If you know client CL-004 had four sessions in July, run the formula for CL-004 in July. If it says three, you have learned that now instead of after the invoice went out.\n\nChoose your test rows on purpose. One ordinary row. One at the edge of the range, the first of the month or the last row of data. One awkward row: a blank, a zero, a cancelled session. A formula that survives the awkward row is worth more than one that sailed through five easy ones.\n\n## 2. Recompute a row by hand\n\nPaper, phone calculator, whatever is nearest. Take one row, work the arithmetic yourself, compare.\n\nThis is the same check chapter 2 asked for, and it is here for the same reason: it is the one step in the whole process where a human being does the sum. Its partner from that chapter belongs here too. Add the row totals down the side, add the column totals across the bottom, and see whether the two agree. When they do not, something in the middle is being counted twice or not counted at all.\n\nTwo checks, both cheap. Between them they catch the errors that actually reach a client.\n\n## 3. Reconcile against the source\n\nYour formula produced a figure for one client. Now total the whole Amount column plainly, with no conditions, and produce the same figure for every other client. Do the parts add up to the whole?\n\nWhen they do not, the cause is usually the data rather than the formula. A row carrying a client code nobody assigned. An amount stored as text, which adds as nothing. Four spellings of one client where you expected one. That is a chapter 3 problem arriving late, and far better found here than in front of the client.\n\n## 4. Count the rows\n\nBefore a change, write down how many rows the sheet has. After the change, count again. If the number moved and you did not mean it to, stop and find out why.\n\nThis matters when a formula arrives with a helpful suggestion attached: remove the duplicates first, filter out the blanks, delete the junk at the bottom. Every one of those is a row count event, and a row that vanishes quietly is the hardest thing on this list to notice later.\n\n## 5. Bounds checks\n\nAsk three questions of the finished column. The answer should be obvious every time.\n\n**Can this be negative?** Hours worked cannot be. If a negative appears, a subtraction is running backwards or a refund has landed in a column that does not expect one.\n\n**Can a part be larger than its whole?** One client's hours cannot exceed total hours. One category cannot exceed the month.\n\n**Does every date fall inside the period?** A June summary containing a May date means the range is wrong, or the date column is part text and the sort quietly lied to you.\n\n## The formula you cannot read\n\nThis one overrides the others. If you cannot say in ordinary words what a formula does, do not keep it, however well it behaves on the rows you tested.\n\n\"It adds column F wherever column B matches the client code in this row, and shows a blank when there is no match\" is readable. Ninety characters of brackets you accepted because the total looked about right is not. The rows you tested are not the rows that will break it, and on the day it breaks the number will still look exactly like a number.\n\nIf the explanation you were handed is too dense to say out loud, ask for it again in plainer parts, or split the formula across two columns so each step is visible. A longer sheet you understand beats a clever one you do not.\n\n## Why the chapter exists at all\n\nA wrong figure does not stay in the sheet.\n\nIt becomes the amount on a client's invoice, and you are the one asking for the difference back. It becomes a line in somebody's pay, which is a conversation with a person who was counting on that number. It becomes part of the record behind a filing, where the correction costs somebody's paid time and the sheet is what everyone opens first.\n\nNone of that is dramatic. It is simply expensive, and all of it is prevented by the few minutes above.\n\n## Do this now\n\nTake a formula already sitting in a sheet you keep and run check 2 on it. One row, worked out by hand, and not the first one.\n",
+          "duration_minutes": 9
+        },
+        {
+          "slug": "what-goes-in-the-box",
+          "title": "What goes in the box",
+          "content_mdx": "# What goes in the box\n\nThink about what is actually sitting in the sheets you work on. A client hours sheet carries names and rates. An order export carries mobile numbers and delivery addresses. A payroll tab carries TINs, bank account numbers and what every person in that company earns.\n\nA spreadsheet is often the densest personal data anybody hands you all year, and a chat window has no idea what is in it.\n\n## The general rule is not new\n\nAI Essentials for Work holds the full list of what never goes into a chatbot, and it applies here with nothing added: government ID numbers, bank details, other people's personal data, anything unreleased. Read it if you have not. Pasting is sending to an outside company, and deleting the chat afterwards does not un-send anything.\n\nWhat this lesson adds is the spreadsheet move, because a spreadsheet question is unusually easy to ask without the data.\n\n## Ask about the shape, not the contents\n\nA formula does not need anybody's name. It needs the layout.\n\nSo build a fake sheet. Five rows is plenty. Same headers, same column order, same data types, invented contents.\n\n```\nClient   | Date       | Hours | Rate | Amount\nClient A | 2026-03-02 | 3     | 500  | 1500\nClient A | 2026-03-04 | 2.5   | 500  | 1250\nClient B | 2026-03-04 | 4     | 650  | 2600\nClient B | 2026-03-09 |       | 650  |\nClient A | 2026-03-11 | 1     | 500  | 500\n```\n\nThose rates are invented so the example has something in the cells. Yours will look nothing like them, and that is the point.\n\nThen ask: \"Column C is Hours as a number, column D is a rate, one row is one session, and some sessions have a blank in Hours because the timesheet was not filled in. In Google Sheets, write me a formula that totals Amount for Client A in March, and tell me what it does with the blank.\"\n\nYou get the same formula you would have got by uploading the real file, because it is the same question. What you did not do is hand a stranger twenty-two people's pay.\n\nPut the awkward rows in on purpose. One blank. One client code with a trailing space. One row that should be excluded. Those are the rows a formula has to survive, and inventing them takes less time than describing them.\n\n## The client's file is not yours to upload\n\nEven when nothing in it looks sensitive, you hold that file to do a job, not to pass it on. Your service agreement may say so directly, in a confidentiality clause you signed at onboarding and have not opened since. Go and read the clause before you decide, not afterwards.\n\nIf you genuinely cannot reduce a question to a shape, ask the client in writing and keep the reply. Being the person who asked first is a far better position than being the person asked about it later.\n\n## The privacy obligation sits on you\n\nIf you hold information that describes other people, obligations follow, and they do not disappear because you work alone from a bedroom. Which of them reach you depends on what you hold and why. What applies to your situation, and what you have to do about it, is a question for the National Privacy Commission, whose guidance is published and free to read.\n\nDo not ask a chatbot this. It is exactly the category where a tidy, confident, wrong answer is most likely and most expensive, and where the real answer is a search away at the source.\n\n## The same rule on the record side\n\nYour sheet is not the filing. It supports the filing.\n\nEverything in this course points one way: keep records solid enough that when something has to be filed, or a bookkeeper asks a question, or a client queries an amount, the answer is a figure you can walk back to the document behind it. What must be filed, on which form, by when and by whom is not in this course and is not in a chat window either. That is bir.gov.ph, your RDO, or a bookkeeper you pay. Those rules change, and nobody tells the model when they do.\n\n## Where the line sits\n\nA chat reply containing a total is text that resembles a total. It came out of a system built to write convincing sentences. A spreadsheet is a system built to add. Keep each doing the thing it is for.\n\nAsk the chat for instructions you can test. Run them in the sheet. Check the result against rows you already know. Then put your name on the figure, and not before.\n\nThe formula can be drafted by anyone. The number is yours.\n\n## Do this now\n\nBuild the fake sheet before you need it. Five rows, the same headers and column order as the file you actually work on, invented contents, one blank and one code with a trailing space. Keep it in a file of its own so the next question costs you nothing.\n",
+          "duration_minutes": 9
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Grace does admin for a construction supplier in Iloilo. The owner sends her the payroll tab: twenty-two employees, full names, mobile numbers, TINs, bank account numbers and monthly pay. She needs a formula for net pay after deductions, and she is about to paste the tab into a chat window. What should she do instead?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ask using five invented rows carrying the same headers, then run the returned formula on the real tab herself."
+            },
+            {
+              "id": "b",
+              "text": "Ask the owner for written permission first, then paste the whole tab so the formula fits the real columns."
+            },
+            {
+              "id": "c",
+              "text": "Skip the formula and work the twenty-two net pay figures out by hand, since asking at all risks the file leaving her machine."
+            },
+            {
+              "id": "d",
+              "text": "Screenshot the payroll tab and attach the image instead, since an image is not a file the tool can keep."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "compliance_ph",
+          "explanation": "A formula needs the layout, not the contents: which column holds what, what one row means, and what to do at the edges. Five invented rows carry all of that and nobody's salary. A screenshot sends the same twenty-two people's pay, in a picture rather than a file. Working every figure out by hand throws away help she could have had safely and leaves nothing that still works next month. Permission from the owner is worth having but is a separate question from whether the data has to leave at all. Philippine privacy obligations sit on whoever holds other people's personal information, and the National Privacy Commission is where you check what applies to you."
+        },
+        {
+          "prompt": "Ronnel keeps the expense tracker for a small printing shop in Cagayan de Oro. He asks a chatbot when the shop's next quarterly return is due and which form to use. The answer arrives at once, with a specific date, a form number and no hedging at all. What should he do with it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Check it against a bookkeeping blog that lists this year's deadlines, and use the date once the two agree."
+            },
+            {
+              "id": "b",
+              "text": "Ask the same question again in a fresh chat and accept the answer once the two replies agree with each other."
+            },
+            {
+              "id": "c",
+              "text": "Treat it as unconfirmed, check the BIR's own site or his RDO, and set the calendar entry from what he finds."
+            },
+            {
+              "id": "d",
+              "text": "Plan the month around it now and confirm it nearer the time, since the date only matters on the day itself."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "compliance_ph",
+          "explanation": "A confident date is not a checked date, two chats agreeing is one habit repeated rather than a second source, and a blog is somebody's summary of the rule, sometimes accurate and sometimes a year out of date. Deadlines, form numbers and thresholds get changed by legislation and by new issuances, so the current version lives at the source: bir.gov.ph, his RDO, or a bookkeeper he pays. His sheet supports the filing. It does not decide the rule."
+        },
+        {
+          "prompt": "Aileen holds a client's order file: six hundred rows of customer names, mobile numbers, addresses and order totals. Her service agreement has a confidentiality clause she signed at onboarding and has not read since. She wants help writing a lookup, and plans to upload the file and delete the chat afterwards. What is the sound move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Upload it and delete the chat afterwards, since nothing of the client's is left behind once it is gone."
+            },
+            {
+              "id": "b",
+              "text": "Re-read that clause and ask the client in writing, and meanwhile use five invented rows for the formula."
+            },
+            {
+              "id": "c",
+              "text": "Upload it with the name column removed, since order numbers and amounts do not identify anybody by themselves."
+            },
+            {
+              "id": "d",
+              "text": "Type twenty of the real rows into the chat by hand, since typing them is not the same as uploading the file."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "compliance_ph",
+          "explanation": "Deleting a chat does not un-send it, because the file left her machine the moment it was uploaded. Typing the rows in by hand sends exactly the same customer details, one keystroke at a time. A mobile number and an address identify a person on their own, so dropping the name column changes little. The clause she signed may already answer this, which is why it gets read before the decision rather than after one. Meanwhile the lookup can be written against five invented rows with the same headers and run on the real file at her end."
+        },
+        {
+          "prompt": "Marlon inherits a sales log. Column K holds ninety characters of nested functions and produces the commission figure emailed to the client every month. Nobody left on the team can say what it does. What should he do first?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Paste it into a chat, ask for a shorter formula that returns the same number, and swap the new one in."
+            },
+            {
+              "id": "b",
+              "text": "Ask AI what it does step by step, then test that against three rows he can work out himself."
+            },
+            {
+              "id": "c",
+              "text": "Replace it with a hand total each month until somebody who understands the original becomes available."
+            },
+            {
+              "id": "d",
+              "text": "Leave it and keep sending the figure, since it has produced a sensible number every month so far."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "record_keeping",
+          "explanation": "Reading an existing formula back to you in words is the safest thing AI does on a spreadsheet, and even a partly wrong explanation gives him named parts to test instead of a wall of brackets. Asking for a shorter formula that returns the same number swaps one thing he cannot read for another, on the cell that produces a client's figure. Sending a figure nobody understands is the situation he is trying to get out of, and totalling it by hand every month is the running cost of never finding out. Testing the explanation against rows he can work out himself is what turns it into evidence."
+        },
+        {
+          "prompt": "Jhoanna asked for a formula and got one that returns the right total on every row she has checked. There is one part of it she cannot explain, and she does not want to look slow by asking again. The figure it produces goes straight into a monthly invoice. What should she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Total the invoice by hand alongside it each month, so the sheet is only ever a cross-check on her figure."
+            },
+            {
+              "id": "b",
+              "text": "Rewrite it herself from what she thinks it should compute, and use her version once the totals agree."
+            },
+            {
+              "id": "c",
+              "text": "Test it against twenty more rows, and treat twenty clean passes as enough to keep a formula she cannot read."
+            },
+            {
+              "id": "d",
+              "text": "Get the part she cannot explain rewritten in plainer terms, and keep only a formula she can say out loud."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "record_keeping",
+          "explanation": "Working on the rows you tested is exactly what a wrong formula also does, and the rows nobody tested are the ones that eventually pay somebody. Twenty more clean passes change nothing about that, because she still cannot say what the formula does at an edge she has not met. Rewriting it from what she thinks it should do leaves her holding two figures and no way to choose between them. Recomputing by hand every month is the running cost of keeping something unreadable. A figure that leaves your hands is one you have to be able to explain, so the formula behind it has to be one you can say in words."
+        },
+        {
+          "prompt": "Bea pastes a hundred and eighty expense amounts into a chat window and asks for the total. Back comes a figure to two decimal places, inside a neat sentence. It is going into the month's summary for the client. What should she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Total the column in the sheet instead, since the sheet is the only place the addition actually happens."
+            },
+            {
+              "id": "b",
+              "text": "Ask the chat to check its own total, and use the figure once the second answer matches the first one."
+            },
+            {
+              "id": "c",
+              "text": "Add ten of the rows herself, and take the chat's figure if her ten land inside the range she expected."
+            },
+            {
+              "id": "d",
+              "text": "Add all hundred and eighty on a calculator and send her own figure, since a person adding them is safest."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "working_with_numbers",
+          "explanation": "A chat reply is text shaped like a total. It can land on the right figure, and nothing in the reply tells you whether this was one of those times. Asking it to check itself produces a second confident paragraph, not a second calculation. Ten rows checked says nothing about the other hundred and seventy. Adding all hundred and eighty on a calculator is a real calculation and a poor one: it is slow, it is easy to slip a row, and it has to be done again from scratch next month. The sheet already holds the numbers, adds them the same way every time, and keeps working when more rows arrive."
+        },
+        {
+          "prompt": "Rico asked AI for a formula that averages hours per session for one client, got back a total divided by a count of rows, checked it against the three rows sitting at the top of the sheet, and sent the figure to the client. Hundreds of rows down, sessions with a blank in the Hours column are being counted as zero, and the average he sent was low. Which check would have caught it before it left?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Reading the formula back as a sentence, which would have named the rows it was quietly leaving out."
+            },
+            {
+              "id": "b",
+              "text": "Asking the same tool to review its own formula and confirm it handles every case in the sheet."
+            },
+            {
+              "id": "c",
+              "text": "Comparing the sheet's row count before and after, which would have flagged the rows that were skipped."
+            },
+            {
+              "id": "d",
+              "text": "Testing it on rows chosen on purpose, including an awkward one: a blank, a zero, or a row at the edge of the range."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "working_with_numbers",
+          "explanation": "The rows at the top of a sheet are the rows the formula was built against, so they agree with it and prove nothing. Test rows get picked on purpose: one ordinary, one at the edge of the range, and one awkward, which here is the blank the formula had never met. Reading it back would have told him it divides by every row, and it still would not have shown him a blank he had never met in the rows he tested. A tool reviewing its own output gives a second confident paragraph, not a second test. And the row count never moved, because nothing was added or deleted."
+        },
+        {
+          "prompt": "Angel wants a formula that brings each client's hourly rate across from a Rates sheet into her hours sheet. Her request so far reads, in full: give me a lookup formula for Google Sheets. What is the most useful thing to add to it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "How many rows each sheet holds and how often she adds to them, since the range is what breaks a lookup."
+            },
+            {
+              "id": "b",
+              "text": "Both sheets pasted in full, so the tool can see the real data and build the formula around what it finds."
+            },
+            {
+              "id": "c",
+              "text": "What one row is, the headers and their column letters, and what to show when a code has no match at all."
+            },
+            {
+              "id": "d",
+              "text": "A request for the newest lookup function, since a newer one handles more situations than an older one."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "admin_tooling",
+          "explanation": "A lookup's behaviour depends on things only she can supply: what a row represents, where each header sits, and what should appear when a code has no matching row. Row counts and how fast a sheet grows matter for the range and answer none of those. Pasting both sheets sends client names and rates to an outside company for a question that only needed the layout. And a function being newer says nothing about whether her copy has it, which is why the tool you are in belongs in the request rather than a demand for the latest thing."
+        }
+      ]
+    }
+  ],
+  "assignment": {
+    "title": "One sheet you can defend",
+    "brief_mdx": "Rebuild one real sheet. Pick a sales log, an expense tracker or a client hours sheet: one you actually keep, one you inherited, or one you could plausibly be handed tomorrow. Work it the way this course works it, then submit the write-up as text. No file uploads. Aim for roughly 800 to 1,000 words.\n\n1. **The sheet's job.** One sentence on what the sheet is for. One sentence saying what one row represents.\n2. **The columns.** Every column, with its type (date, number, text, category) and a one-line data dictionary entry saying what it holds. Say which columns you added or split out of a combined field, and why.\n3. **What was wrong.** What was actually broken in the version you started from, or in the export you were handed: a tab per month, a totals row sitting inside the data, peso signs typed into the amount cells, one client spelled four ways, dates that will not sort, a note parked in the amount column. Name what you found, not a general list of what can go wrong.\n4. **The fix log.** One line per change: what was wrong, what you did, how many rows it touched. Give the row count before and after, and account for any difference. If the count dropped, say what you deleted and how you decided it was a duplicate.\n5. **Three formulas.** Paste each one as text. Under each, one plain sentence saying what it does, and one specific thing that would break it. Use a conditional total, a lookup, and one formula of your choice.\n6. **One pivot.** Write the question as a sentence first. Then paste the summary as a small table. Then say how you checked its grand total against a plain total of the source column, and what you would have done if the two had not matched.\n7. **One chart, in words.** No image needed. Give the question it answers, the chart type, why that type and not another, and the labels it carries: what the axis measures, the units, the period covered, the source sheet.\n8. **One AI exchange.** Paste what you asked and what came back, verbatim. You are asking for a formula, not for an answer. Then give the check you ran on it: tested on rows where you already knew the answer, one row recomputed by hand, or the total reconciled against the source. Then name at least one thing the AI got wrong, or that you could not confirm.\n9. **What you took out.** What you removed or replaced before pasting anything into an AI tool, and why.\n\nFour things decide the mark as much as the content. Your raw data stays untouched, so say where the raw copy sits and confirm nothing was typed over it. Every figure you show has to be walkable back to a row, a formula or a document reference. No real client names, mobile numbers, addresses, tax identification numbers or bank details anywhere in the submission: use Client A, Client B and invented amounts, and say the amounts are invented. If your example needs a rate, use one you were given or one you invent and label as invented. Nothing here asks you to state what anyone charges, what a platform takes, or what any agency requires.",
+    "criteria": [
+      "Part 1 states what one row represents, and the column list in part 2 matches that definition: every column carries a type and a one-line description, with amounts as plain numbers, dates stored as dates, and categories drawn from a short fixed list rather than free text",
+      "The fix log gives a row count before and after with any difference accounted for, and the submission says where the untouched raw copy sits. A sheet edited directly over the original fails",
+      "All three formulas are pasted as text, each with a plain-language explanation of what it does and one specific condition that would break it, rather than a general description of the function",
+      "The pivot sits under the one written question it answers and its grand total is reconciled against a plain total of the source column, and the chart section names the question, the type, the reason for that type, and the axis, units, period and source labels it carries",
+      "The AI exchange is pasted verbatim, shows a formula being requested rather than an answer, and reports both the check that was run on it and at least one thing the AI got wrong or that could not be confirmed. An AI answer accepted without a check fails",
+      "No real client names, mobile numbers, addresses, tax identification numbers or bank details appear anywhere in the submission, part 9 says what was removed or replaced before anything went into an AI tool, and every figure shown can be traced back to a row, a formula or a stated document reference"
+    ],
+    "min_words": 700
+  }
+}

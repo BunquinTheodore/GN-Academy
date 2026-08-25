@@ -138,6 +138,8 @@ export type AssessmentStats = {
   label: string;
   questions: number;
   key: Record<OptionId, number>;
+  /** The answers in order, "bdacbacd". Distribution cannot see a pattern. */
+  keySequence: string;
 };
 
 export type CourseStats = {
@@ -819,6 +821,18 @@ export function checkNoEmDashes(loaded: LoadedCourse): Finding[] {
  * "most" deliberately skips the superlative ("the most useful thing"), which
  * is not a quantity claim at all. What is left is "most people", "most of the
  * work": vague quantities a reader hears as a measurement.
+ *
+ * "peso amount" is here because a review of Freelancing Fundamentals found
+ * nine peso figures attached to named job types (a fee for a five-page
+ * website, a monthly rate for a restaurant's books) sitting unmarked in a
+ * lesson body and in four quiz stems, while this scan reported zero hits. A
+ * beginner with no other reference point reads those as what the work goes
+ * for, which is a rate card the course had promised not to print, and for a
+ * Philippine catalogue that teaches pricing and tax it is the highest-risk
+ * number class there is. Like every other pattern here it only prints: a
+ * worked example legitimately needs figures. What it buys is that a reviewer
+ * sees each one and confirms it carries an "invented so the arithmetic is
+ * visible" marker or a bracketed placeholder.
  */
 const STATISTIC_PATTERNS: { name: string; re: RegExp }[] = [
   { name: "percentage", re: /\b\d+(?:\.\d+)?\s*%|\b\d+(?:\.\d+)?\s+percent\b/i },
@@ -831,6 +845,7 @@ const STATISTIC_PATTERNS: { name: string; re: RegExp }[] = [
   { name: "research says", re: /\bresearch\s+(?:says|shows|showed|found|suggests)\b/i },
   { name: "half of all", re: /\bhalf of (?:all|them|the|these|those|us|people)\b/i },
   { name: "most", re: /(?<!\b(?:the|at|its|your|our|their|his|her)\s)\bmost\b/i },
+  { name: "peso amount", re: /₱\s?\d|\bPHP\s?\d|\b\d[\d,]*\s*(?:pesos|php)\b/i },
 ];
 
 /** Splits prose into sentences well enough to quote one back at an author. */
@@ -892,6 +907,14 @@ export function measure(loaded: LoadedCourse): CourseStats {
 
   for (const assessment of assessmentsOf(course)) {
     const key = emptyKey();
+    assessment.questions.forEach((q, qi) => {
+      // Question text is scanned too, not only lessons. The review that added
+      // the peso pattern found four of the nine figures in quiz stems, where a
+      // lessons-only scan cannot see them.
+      const where = `${assessment.label}, question ${qi + 1}`;
+      stats.statisticHits.push(...scanForStatistics(where, q.prompt));
+      for (const o of q.options) stats.statisticHits.push(...scanForStatistics(where, o.text));
+    });
     for (const q of assessment.questions) {
       stats.questions++;
       if (isOptionId(q.correct_option_id)) {
@@ -910,7 +933,12 @@ export function measure(loaded: LoadedCourse): CourseStats {
       if (correctIsShortest(q)) stats.correctIsShortest++;
       if (optionSpread(q) > OPTION_SPREAD_RATIO) stats.wideSpread++;
     }
-    stats.assessments.push({ label: assessment.label, questions: assessment.questions.length, key });
+    stats.assessments.push({
+      label: assessment.label,
+      questions: assessment.questions.length,
+      key,
+      keySequence: assessment.questions.map((q) => q.correct_option_id).join(""),
+    });
   }
 
   const modules = Array.isArray(course.modules) ? course.modules : [];
@@ -932,7 +960,89 @@ export function measure(loaded: LoadedCourse): CourseStats {
     });
   });
 
+  // Everything else the seeder writes and a human reads. A review of Online
+  // Selling found "Most online shops in the Philippines are run by one
+  // person..." sitting in `description`, which renders on the public sales
+  // page, while this scan printed zero hits: the call site read lesson bodies
+  // and question text and stopped there. Rule 1 is the rule with money
+  // attached, so the scan now covers the whole file, and each hit carries a
+  // label naming the field it came from so it can be found and fixed.
+  const prose: [string, unknown][] = [
+    ["subtitle", course.subtitle],
+    ["summary", course.summary],
+    ["description", course.description],
+  ];
+  const push = (label: string, value: unknown) => prose.push([label, value]);
+  if (Array.isArray(course.skills)) course.skills.forEach((s, i) => push(`skill ${i + 1}`, s));
+  if (Array.isArray(course.outcomes)) course.outcomes.forEach((s, i) => push(`outcome ${i + 1}`, s));
+  modules.forEach((rawModule, mi) => {
+    const mod = asRecord(rawModule);
+    if (mod) push(`chapter ${mi + 1} description`, mod.description);
+  });
+  for (const assessment of assessmentsOf(course)) {
+    assessment.questions.forEach((q, qi) => {
+      push(`${assessment.label}, question ${qi + 1} explanation`, q.explanation);
+    });
+  }
+  const assignment = asRecord(course.assignment);
+  if (assignment) {
+    push("assignment brief", assignment.brief_mdx);
+    if (Array.isArray(assignment.criteria)) {
+      assignment.criteria.forEach((s, i) => push(`assignment criterion ${i + 1}`, s));
+    }
+  }
+  for (const [where, value] of prose) {
+    if (typeof value === "string") stats.statisticHits.push(...scanForStatistics(where, value));
+  }
+
   return stats;
+}
+
+/**
+ * Patterns in an answer key that no share-of-letters number can see.
+ *
+ * A key of a, b, c, d, d, c, b, a passes every distribution check ever written
+ * for this file: four letters, two of each, nothing above the single-letter
+ * share. It is also solvable. A learner who notices the run after the fourth
+ * question can deduce the remaining four without reading them, and that is the
+ * whole credential for that chapter.
+ *
+ * Two shapes are reported. A monotone run is three or more consecutive answers
+ * marching in one direction (a, b, c or d, c, b), which hands the learner the
+ * next one. A palindrome is a key that reads the same backwards, which hands
+ * them the whole second half. Both are warnings and not failures: a run of
+ * three turns up by chance often enough that failing on it would be noise, and
+ * the fix is reordering options inside a question, which an author should do
+ * deliberately rather than to get a script to go quiet.
+ */
+export function keyPatterns(sequence: string): string[] {
+  const out: string[] = [];
+  const index = (ch: string) => (OPTION_IDS as readonly string[]).indexOf(ch);
+  let runStart = 0;
+  let direction = 0;
+  const report = (start: number, end: number) => {
+    if (end - start + 1 >= 3) {
+      out.push(
+        `questions ${start + 1} to ${end + 1} answer "${sequence.slice(start, end + 1)}" in order, a run a learner can carry forward`,
+      );
+    }
+  };
+  for (let i = 1; i < sequence.length; i++) {
+    const step = index(sequence[i]) - index(sequence[i - 1]);
+    if ((step === 1 || step === -1) && (direction === 0 || step === direction)) {
+      direction = step;
+      continue;
+    }
+    report(runStart, i - 1);
+    runStart = step === 1 || step === -1 ? i - 1 : i;
+    direction = step === 1 || step === -1 ? step : 0;
+  }
+  report(runStart, sequence.length - 1);
+
+  if (sequence.length >= 4 && sequence === [...sequence].reverse().join("")) {
+    out.push(`the key ${sequence} reads the same backwards, so the second half follows from the first`);
+  }
+  return out;
 }
 
 /**
@@ -985,6 +1095,16 @@ export function judge(stats: CourseStats): { problems: Finding[]; warnings: Find
         file,
         where: "answer key",
         message: `"${id}" is the answer to ${stats.key[id]} of ${questions} questions (${pct(share)}), above the ${pct(MAX_SINGLE_LETTER_SHARE)} limit. Spread the key across a, b, c and d.`,
+      });
+    }
+  }
+
+  for (const assessment of stats.assessments) {
+    for (const pattern of keyPatterns(assessment.keySequence)) {
+      warnings.push({
+        file,
+        where: `${assessment.label} answer key`,
+        message: `${pattern}. Reorder the options inside those questions so the key is not deducible.`,
       });
     }
   }

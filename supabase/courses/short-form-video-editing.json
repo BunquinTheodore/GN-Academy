@@ -1,0 +1,929 @@
+{
+  "slug": "short-form-video-editing",
+  "title": "Short-Form Video Editing",
+  "subtitle": "Hold the first two seconds, then make it repeatable",
+  "level": "professional",
+  "category": "Video",
+  "format": "Self-paced online",
+  "summary": "Editing vertical video that people actually finish. Twelve lessons on the opening seconds, pace and cutting, the on-screen text and sound that have to carry a video watched with the volume down, and a production routine that turns a batch of videos into an afternoon instead of a week. Shot on a phone, edited on a phone or a laptop, and taught as principles rather than a tour of one app's menus.",
+  "description": "This course is for Filipino freelancers, VAs, students and jobseekers who are already handed footage, or who film on their own phone, and need the edit to be the part that earns money. You will learn what the opening frame and the first spoken line have to do before a thumb moves, how to shoot so there is something to cut, how to strip dead air and then build a pace that varies instead of one that just runs fast, when a word on screen does work no shot can do, how to caption for a viewer with the sound off in a jeep, how to keep voice and music from fighting each other, and how to set up a project, a template and a review pass so ten videos come out of one sitting at a quality you can defend. Every technique is described in terms any editor on any app can carry out, because the app you use this year is not the app you will use next year. The course does not teach you to sell the service, price it, or run the client's account: it teaches you to make the video.",
+  "skills": [
+    "Vertical framing and shooting for the edit",
+    "Opening hooks that survive the scroll",
+    "Pace, rhythm and cut timing",
+    "B-roll, inserts and punch-ins",
+    "Caption accuracy, placement and readability",
+    "Voice and music level balance",
+    "Batch production, review and export"
+  ],
+  "outcomes": [
+    "Build an opening that states the promise in the first frame, the first words and the first motion",
+    "Cut a talking clip down to what earns its place, then vary the pace so it stops feeling flat",
+    "Choose a cutaway, insert or punch-in that shows what the voice is only describing",
+    "Caption a video so it reads with the sound off, and balance voice against music so nobody reaches for the volume",
+    "Run a batch of videos through one setup, one template and one review pass in a single sitting"
+  ],
+  "roles": [
+    "Video Editor",
+    "Short-Form Content Creator",
+    "Social Media Virtual Assistant",
+    "Freelance Content Producer"
+  ],
+  "price_php": 1499,
+  "is_free": false,
+  "passing_score": 70,
+  "credential_prefix": "SVE",
+  "sort_order": 12,
+  "requires_assignment": true,
+  "modules": [
+    {
+      "slug": "chapter-1-the-first-two-seconds-and-the-promise-you-make",
+      "title": "The first two seconds, and the promise you make",
+      "description": "What the viewer is deciding at the top of the video, the shape of a video someone finishes, and how to shoot so the edit has material to work with.",
+      "lessons": [
+        {
+          "slug": "the-first-two-seconds",
+          "title": "The first two seconds",
+          "duration_minutes": 8,
+          "content_mdx": "# The first two seconds\n\nThe opening of a short video is not a title card. It is an offer: stay, and here is what you get. If the offer is not on screen straight away, nothing you built after it will ever be seen.\n\nMariel edits for a milk tea shop in Bacolod. Her first cut opened with the shop logo spinning in, then the owner saying \"Hi guys, welcome back.\" The drink does not appear until the video is a third over. No single part of that is a mistake. Together they ask the viewer to wait, and a thumb does not wait.\n\n## Three things arrive at once\n\n**The first frame.** What is on screen the instant the video starts, before anyone has heard a word.\n\n**The first words.** The first thing the voice says, or the first line of text if there is no voice.\n\n**The first movement.** Something changing: a hand entering frame, a cut, the subject turning, a lid coming off.\n\nAll three land together and all three have to work. A strong first line over a static empty counter is still a weak opening. So is a good-looking moving shot over a line that says nothing.\n\n## What the viewer is deciding\n\nNobody consciously decides to watch. They glance and answer three questions without noticing:\n\n- Is there a person, or is something happening?\n- Can I tell what this is about?\n- Is it about me?\n\nIf the answers are not yes right away, they scroll. They are not rejecting your edit. They never got far enough to have an opinion about it.\n\n## Four openings that lose\n\n**The logo intro.** Branding at the top is for the client's pride. Put it on the last frame, where it lands on people who stayed.\n\n**The greeting.** \"Hi guys, welcome back po.\" A greeting is what you say to someone who has already sat down. Your viewer has not sat down.\n\n**The wide establishing shot.** A wide of a room tells the viewer about the room. Vertical video is a narrow frame held at arm's length, so a wide shot puts a small subject in a lot of empty space. Start closer than feels comfortable.\n\n**The line that describes the video.** \"Today I am going to show you how we pack an order.\" That is a table of contents, and nobody came for the table of contents. \"We used to lose one order a week to this\" is a start.\n\n## Four moves that work\n\n**Start on the strongest frame you have, not the first one you shot.** Scrub the footage. Find the moment with the best picture in it, the one where something is already underway, and put that at the top. Chronology is not an obligation.\n\n**Put the result before the process.** The finished drink, the repaired shelf, the packed box on the scale. Show what it becomes, then go back and show how it got there.\n\n**Delete the first sentence.** Cut whatever the speaker said first, watch it again, and see whether anything is missing. Often nothing is, and the video now starts a beat later and a beat stronger. Do this before you do anything else to the timeline.\n\n**Open mid-action or mid-sentence.** Starting a clip halfway through a movement or a phrase feels wrong while you are scrubbing and reads as urgency on a phone. Trust the phone.\n\n## About the two seconds\n\nTreat two seconds as a working rule of the craft, a habit that keeps you honest about how little room the opening has. It is not a measured threshold and it is not a rule any platform publishes. Nobody is going to hand you that number, and any number you are handed is worth less than the check you can run yourself: watch your own opening on your own phone, at the size a stranger sees it, and ask whether you would have stayed.\n\n## The drill\n\nTake any clip you already have, even a bad one. Find three frames in it that could each be the first frame. Write one sentence for each saying why a stranger would stay for it. Then choose one and recut the video so it starts there.\n\nRun that drill three times and it changes how you watch footage. You stop looking for where the take begins and start looking for where the video begins. They are rarely the same place, and what sits between them is usually the greeting, the setup, and the breath before the point.\n"
+        },
+        {
+          "slug": "one-video-one-idea",
+          "title": "One video, one idea",
+          "duration_minutes": 8,
+          "content_mdx": "# One video, one idea\n\nOpenings get judged. Middles get abandoned. A viewer who stayed past the first frames leaves later for a different reason: the video stopped going anywhere, and leaving cost nothing.\n\nA short video carries one idea. Not one topic, one idea. \"Paint\" is a topic. \"Cheap paint costs more because you have to do three coats\" is an idea, and you can tell in a single viewing whether the video delivered it.\n\n## The promise and the payoff\n\nThe top of the video makes a promise whether or not you meant to make one. The body has to visibly move toward it. The payoff has to actually arrive.\n\nJomar edits for a hardware store in Imus. The owner recorded fourteen minutes about paint. Jomar's first cut opened with \"cheap paint is a trap\", wandered through brands, and ended with \"so choose carefully\". The promise was made and never paid. Somebody who watched the whole thing got nothing they could repeat to a friend, and what they learned instead is that this account does not deliver.\n\nThe open loop, where you raise a question and answer it later, is a real tool. It turns into bait the moment the answer never comes or gets pushed to a part two. Bait works once. It costs you the next video, the one that would have been watched by the person who now scrolls past your client's face.\n\n## Write the sentence before you touch the timeline\n\nBefore importing anything, write down, on paper, the one sentence the video is making. Not the topic. The sentence.\n\n- \"Cheap paint costs more because you need three coats.\"\n- \"You can ship a fragile order for the same money if you pack it in this order.\"\n- \"This is why your rice cooker smells burnt even when the rice is fine.\"\n\nNow the edit has a test. Every clip either serves that sentence or it does not, and the ones that do not come out, however good they are. This is what makes a long edit fast. You are no longer deciding what is interesting, which is a decision with no end. You are checking against something you already decided.\n\n## Three ideas is three videos\n\nFootage usually arrives carrying more than one idea. The instinct is to fit them all in, because the client said them all and cutting feels like throwing away work you were given.\n\nFit them all in and the video changes subject in the middle, which is a place to leave. Take the three ideas and make three videos instead. The client gets more, you reuse one setup, and each video is about something.\n\nIf two ideas genuinely depend on each other, they are one idea and one of them is the setup. Say the setup in a sentence and move on.\n\n## The middle is where you lose people\n\nBetween the promise and the payoff, every second either moves toward the answer or stands still. Standing still looks like this: a second example of a point already made, a qualification nobody asked for, the speaker restating the last sentence in different words, a courtesy line about the other services the shop also offers.\n\nCut them. If taking a section out does not change whether the sentence lands, the section was not doing anything.\n\n## Stop when the idea is delivered\n\nThe ending is where editors do quiet damage. The payoff lands, and then there are eleven more seconds of \"so yeah, that is it, thank you for watching, see you next time\".\n\nThose seconds are the clearest exit sign in the video, and they sit exactly where you least want one. End on the payoff. If the client insists on a call to action, make it one short line that arrives with the payoff rather than trailing after it.\n\nA last frame that resembles the first frame, the finished drink again, the packed box again, sends the viewer back up into the top of the video instead of out of it. You do not have to force this. When it fits, it is free.\n\n## Practical\n\nPaper, one sentence, before the timeline. Tape it to the edge of your screen where you cannot avoid reading it.\n\nWhen you catch yourself defending a clip you like, read the sentence and ask what the clip does for it. If the honest answer is \"nothing, but it is good\", save it for the video where it is the idea.\n"
+        },
+        {
+          "slug": "shooting-for-the-edit",
+          "title": "Shooting for the edit",
+          "duration_minutes": 8,
+          "content_mdx": "# Shooting for the edit\n\nYou can only cut what somebody shot. Every editing problem that cannot be solved on the timeline was created at capture, and the fix is always the same one: get the material next time.\n\nTrina is a VA in Davao who edits for a client in Australia. For months she received one long take per video, filmed in a bright kitchen with the electric fan on, the subject centred and standing well back. She could trim it and she could put text on it, and that was the whole of what she could do. Her videos improved the week she sent the client a shot list, not the week she learned a new app.\n\n## Frame so you can cut later\n\nShoot vertical, which is the tall 9 by 16 shape a phone gives you when you hold it upright, and which is the frame this whole course assumes. That shape is stable. The things around it, the lengths a destination accepts and the file it wants, move, so look those up at the source on the day you deliver. Keep anything that has to be seen in the middle band of the frame, and confirm later, from a draft post on a phone, where the interface covers the top and bottom. The general craft of sizing and safe areas belongs to a design course, not to this one.\n\nWhat is specific to a moving frame is room. Leave space around the subject while you film. That space is what lets you crop in later and build a tighter shot out of the same take, which hands you a second angle for free and a place to hide a cut. Frame somebody tight at capture and you have exactly one shot, forever.\n\nRoom costs pixels, so check what you are filming at before the shoot rather than after it. A crop is not a zoom lens. It throws away part of the picture and enlarges what is left. Film at the same size you deliver at and every punch-in comes back softer than the shots either side of it, and a viewer reads that as cheap without being able to name it. Open your camera app's settings once and film at the largest size the phone offers that still leaves you storage for the day. Then the crop is free, and not before.\n\nHeadroom is the same argument on a smaller scale. A little air above the head. Not a hand's width of ceiling, and not the top of the skull pressed against the edge of the frame.\n\n## When the footage arrives sideways\n\nClients film horizontally out of habit, and the first you hear of it is when the folder opens. You have three moves and none of them is free. Crop into the middle of the horizontal frame, which loses the sides and the pixels, so it only works if the subject was centred and the file is big. Sit the horizontal shot in the middle of a vertical frame and fill the space above and below on purpose, with a title, a flat colour or a still, rather than a blurred copy of the same shot. Or ask for it again, held upright, which costs the client two minutes and is the only one of those moves that gives you a full frame. Pick one, tell the client which and why, and put \"filmed upright\" at the top of the shot list so the next batch does not arrive the same way.\n\n## Coverage: five things to get every time\n\n**A second take of the opening line.** Always. The opening carries the whole video, and the first attempt is the one where the speaker is still finding it.\n\n**A wide and a close of the same action.** The same thing happening twice, at two distances. That is a cut you can make later without a single other clip existing.\n\n**Ten seconds of the hands doing the thing.** Whatever the video is about, film the hands doing it, close, with nobody talking. Ten seconds of that is worth more to an editor than another minute of the face.\n\n**Room tone.** Ten seconds of the room with nobody speaking, recorded in the same place at the same time. It sounds like nothing. It is what you lay under a gap so a cut does not thud.\n\n**A reaction.** The face after the thing works, or the face while listening. Small, cheap, and useful in ways you cannot predict until you are cutting.\n\n## Audio is the part you cannot fix\n\nGet the microphone close to the person talking. A clip-on mic that plugs into the phone is the cheapest real upgrade in this craft, because it stays on the speaker's chest no matter where the phone ends up. If the client owns one, tell them to use it. If nobody owns one, move the phone in close instead. Close beats expensive every time: a cheap mic near the mouth beats a costly one across the room. What it does not beat is a microphone that is both cheap and close.\n\nChoose the quiet room over the pretty room. The kitchen with the good window and the humming ref is worse than the bedroom with the door shut. Turn off the aircon and the fan for the take, and be uncomfortable for two minutes.\n\nThen be honest about the limit. A voice recorded far away in a hard, echoing room was never captured clearly, and nothing puts back what the phone did not get. Tools can reduce a steady hum, and doing that leaves you with the echo. If the audio is unusable, the professional move is to ask for it again, not to bury it under music.\n\n## Light and steadiness with no kit\n\nFace the window. Put the person facing the light rather than with the light behind them, or you deliver a silhouette. Watch for the ceiling light directly overhead, which drops shadow into the eyes, and the one directly behind, which flares.\n\nBrace against something. A wall, a doorframe, a stack of books, elbows planted on a table. Handheld looks fine on a phone. Unsupported handheld for a whole take does not.\n\n## The five-minute shot list\n\nBefore anyone films anything, agree these seven lines. It fits in a phone note.\n\n1. Filmed upright, in the tall frame.\n2. The one sentence the video is making.\n3. The opening line, filmed twice.\n4. The main action, wide and close.\n5. Ten seconds of hands.\n6. Ten seconds of room tone.\n7. One reaction.\n\nSend that list to any client who films their own footage. It is the cheapest improvement available to either of you, and it costs them five minutes they were going to spend anyway.\n"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "You have forty seconds of footage of a Cebu barbershop owner explaining a fade. Four moments in it could be the first frame. Which one do you cut to the top?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The shop sign and the open door, held for a beat so the viewer knows where this is."
+            },
+            {
+              "id": "b",
+              "text": "The owner mid-cut, clippers already moving, with the shape of the fade half finished."
+            },
+            {
+              "id": "c",
+              "text": "The empty chair with the tools laid out neatly, before anybody has sat down in it."
+            },
+            {
+              "id": "d",
+              "text": "The owner seated and smiling at the camera, taking a breath before he greets people."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "visual_craft",
+          "explanation": "The first frame has to have something already happening in it. The sign, the empty chair and the breath before the greeting are all setup, and setup is what a thumb scrolls past. Starting mid-cut puts the subject, the movement and the topic on screen in the same instant."
+        },
+        {
+          "prompt": "Your rough cut for a Marikina shoe repair shop opens with the owner saying, \"So in this video I will be explaining the difference between a resole and a full rebuild.\" The rest of the video is strong. What is the best fix?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Keep the line and lay fast music under it so the opening has energy while he sets up."
+            },
+            {
+              "id": "b",
+              "text": "Keep the line but put a text hook over it so there is something to read while he talks."
+            },
+            {
+              "id": "c",
+              "text": "Cut the line and open on his hands peeling the old sole off, and let his voice come in over it."
+            },
+            {
+              "id": "d",
+              "text": "Swap the line for a short friendly greeting so the video still feels warm before the work starts."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "message_craft",
+          "explanation": "That sentence is a table of contents, and nobody came for one. Deleting the first line and checking whether anything is missing is the fastest test in this craft. Here nothing is missing: the hands pulling the old sole away say what the video is about, faster and without asking anyone to wait."
+        },
+        {
+          "prompt": "A client sends one take where she explains why her ube jam keeps without preservatives, then, in the same take, runs through her delivery cut-off times. She wants one video. How do you cut it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Build the video on the preservatives idea alone, and make the delivery cut-offs a second one."
+            },
+            {
+              "id": "b",
+              "text": "Cut both in, with a text card between them so the change of subject is at least signposted."
+            },
+            {
+              "id": "c",
+              "text": "Keep the delivery cut-offs and drop the preservatives, since the practical part is more useful."
+            },
+            {
+              "id": "d",
+              "text": "Trim both hard so each one gets an equal share and the whole thing still comes out short."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "message_craft",
+          "explanation": "Two ideas in one short video means the video changes subject in the middle, and a change of subject is a place to leave. Signposting it does not fix that. The client is not losing anything either: she gets two videos out of one setup, and each one is about something a viewer can repeat."
+        },
+        {
+          "prompt": "You are filming a testimonial on a phone and you already know you will want a tighter shot partway through the take. What do you do while the camera is rolling?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Frame the subject tight now, so the footage already looks close and needs no extra work later."
+            },
+            {
+              "id": "b",
+              "text": "Use the phone's zoom halfway through the take so the change of shot is captured live."
+            },
+            {
+              "id": "c",
+              "text": "Shoot the whole take wide and plan to add movement to the shot during the edit instead."
+            },
+            {
+              "id": "d",
+              "text": "Leave room around the subject so that a later crop still holds them properly in the frame."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "visual_craft",
+          "explanation": "Room around the subject is what lets you crop in later and get a second angle out of one take. Framed tight at capture, you have one shot forever. Zooming live commits you to the change at a moment you cannot revise, and a wide take of empty space is not a shot you can rescue with movement."
+        },
+        {
+          "prompt": "Arvin filmed alone and got exactly one take of the opening line, which he fumbled. He is filming the next video this afternoon. What goes on the shot list?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A written script taped next to the phone so the line comes out right on the first attempt."
+            },
+            {
+              "id": "b",
+              "text": "A full second run of the entire video, so there is a complete backup of everything he says on camera."
+            },
+            {
+              "id": "c",
+              "text": "A wide version of the whole take, to cut to whenever the close version has a stumble in it."
+            },
+            {
+              "id": "d",
+              "text": "A second take of the opening line, recorded straight after the first one, on every single shoot."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "production_workflow",
+          "explanation": "The opening carries the video and the first attempt is the one where the speaker is still finding it, so a second take of that one line is the cheapest insurance on the list. A script does not stop a fumble, a wide alternative still carries the fumbled words, and reshooting everything is how filming stops happening at all."
+        },
+        {
+          "prompt": "Lorna has twelve minutes of client footage from a plant shop in Marilao and one afternoon to cut it. What does she do before she opens the timeline?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Watch all twelve minutes and mark every usable moment so nothing good gets missed later."
+            },
+            {
+              "id": "b",
+              "text": "Write down the one sentence the video is making, then cut only what serves that sentence."
+            },
+            {
+              "id": "c",
+              "text": "Import everything and start trimming from the top, deciding what stays as she goes along."
+            },
+            {
+              "id": "d",
+              "text": "Find the strongest thirty seconds in the footage and build the video around what is in it."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "message_craft",
+          "explanation": "Written down first, the sentence turns every later decision into a check rather than a judgement call, which is what makes a long edit fast. Marking everything usable and building around the best clip both leave her deciding what is interesting, and that decision has no end."
+        },
+        {
+          "prompt": "You are filming a demo where on-screen text will sit under the subject for the whole video. The client asks where she should leave space. What do you tell her?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Leave the top and bottom thirds empty and shoot everything through the middle strip, so the placement never needs checking."
+            },
+            {
+              "id": "b",
+              "text": "Fill the frame with the subject, then move the text wherever there is space during the edit and check it on a phone at the end."
+            },
+            {
+              "id": "c",
+              "text": "Keep the subject in the middle band of the frame, and confirm the placement later from a draft post on a real phone."
+            },
+            {
+              "id": "d",
+              "text": "Shoot it wide so there is empty space all around the subject, then place the text after the video is exported."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "platform_fluency",
+          "explanation": "The area an interface covers is not a number anybody can tell you once. It differs between apps and it changes without notice, so a stated fraction of the frame is a guess wearing the clothes of a spec, and hollowing the frame out to a middle strip throws away the picture to buy a guarantee nobody can give. Keep what matters in the middle band, then look at the video from a draft post on a phone. A file sitting in a camera roll shows you the frame, not what the app puts on top of it."
+        },
+        {
+          "prompt": "Client footage arrives shot in a bright tiled kitchen, the subject standing well back from the phone, with aircon hum on every take. What do you tell the client?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ask for the takes again, in a smaller room, with the aircon off and the phone held close to her."
+            },
+            {
+              "id": "b",
+              "text": "Accept it and clean the hum up in the edit, since a steady noise is the kind of thing tools handle."
+            },
+            {
+              "id": "c",
+              "text": "Accept it and run music across the whole video so the hum sits underneath the track."
+            },
+            {
+              "id": "d",
+              "text": "Ask for one clean take of the opening line only, and keep the rest of the footage as it is."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "production_workflow",
+          "explanation": "A voice recorded far away in a hard room was never captured clearly, and no tool puts back what the phone did not get. Pulling the hum out leaves you with the echo. Music and text cover the symptom while the viewer still hears a thin, distant voice, and that is the thing that makes them leave. Refilming only the opening line leaves the same problem running through every sentence after it."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-2-cutting-pace-rhythm-and-what-to-show",
+      "title": "Cutting: pace, rhythm and what to show",
+      "description": "The mechanics of the timeline: stripping what does not earn its place, building a rhythm instead of just going fast, and putting a picture on the part the voice can only describe.",
+      "lessons": [
+        {
+          "slug": "cutting-dead-air",
+          "title": "Cutting dead air",
+          "duration_minutes": 7,
+          "content_mdx": "# Cutting dead air\n\nAira edits for a dental clinic in Bacolod. The dentist sends her a two minute clip of himself explaining why a cleaning is not the ordeal people expect. The idea is good. The clip is unwatchable, because between every sentence there is a breath, a glance down at his notes, and an \"ah, ano nga ba.\"\n\nHer first job is not to make it interesting. Her first job is to remove everything that is not the man talking. That is the gap pass, and it is the fastest improvement available to any edit.\n\n## What counts as dead air\n\nRun the clip and watch for these:\n\n- The breath in the middle of a sentence, where the speaker is regrouping rather than finishing a thought\n- The um, the ah, the \"so, anyway\"\n- The restart, where the speaker stumbles and then says the line properly\n- The pause while they hunt for the next word\n- The walk to the table, the hand reaching for the object, the chair scraping\n- The stretch after the point is made, before anything else happens\n\nNone of these carry meaning. Take them out and nobody watching knows they were ever there.\n\n## Do the gap pass without judging the content\n\nHere is the mistake that turns a short edit into a whole evening. You start removing gaps. Then you hear a sentence you do not like, so you stop to decide whether that section should go at all. Then you rewatch it. Then you try a different order. An hour later you have finished forty seconds.\n\nSeparate the passes. During the gap pass you are not allowed to have an opinion about the content. Gap, delete. Gap, delete. Reach the end.\n\nOnly then watch it once through and decide what to cut for meaning. The clip you are judging on that second pass is a different clip from the one you started with. Sentences that felt slow were slow because of the silence around them, and several of the content decisions you were about to agonise over have already made themselves.\n\n## Trim at the edge of the word\n\nSloppy trims are what make an edit feel cheap even when the pacing is right. Place the cut just before the first sound of a word and just after the last one. Cut into the word and the word gets chopped. Leave a hair of silence at both sides of every join and that hair stacks up into a clip that drags again.\n\nPlay each join back once. If you can hear where the edit is, move it.\n\n## Jump cuts are the texture here, not a mistake\n\nWhen you remove a pause in the middle of a talking shot, the speaker's head jumps. In vertical short-form that is the ordinary look of the format, not something to hide. You do not need an effect on the join.\n\nTwo situations do read as jarring. One is when the speaker's position changes a lot across the cut, so they appear to teleport. The other is when several joins are packed inside one breath, which makes the head twitch. Both are fixed the same way, by putting a picture over the join: a cutaway, a punch-in to a tighter crop of the same take, a still. Lesson three is about where those come from when you have no extra footage.\n\n## What you do not cut\n\nSome silence is working. Leave it:\n\n- The beat before a punchline. Remove it and the joke lands flat.\n- The pause after a figure or a price, which is the viewer catching up.\n- The breath someone takes before saying something hard. In a testimonial, that pause is the content.\n- A pause the speaker is clearly using for emphasis.\n- The breath at the end of a sentence. That one is punctuation, and removing it is what makes a speaker sound chased.\n\nThe test is one question: what is this silence doing? If the answer is waiting, cut it. If the answer is landing, keep it.\n\n## The opposite failure\n\nCielo in Davao over-corrected on her first client batch. She took out every gap, including the breaths at the ends of sentences, and delivered a clip where the speaker sounds like she is being chased. The client could not say what was wrong, only that it was tiring to watch.\n\nThe fix is small. Put the breaths back at the ends of sentences and before the lines that carry the point, and leave the mid-sentence gaps out. Speech has a shape. You are removing the parts where nothing is happening, not the parts where the person is breathing.\n\n## Do this now\n\nTake any talking clip you already have. Write down its length. Run one gap pass, content opinions banned. Write down the length again.\n\nNothing was lost. That difference is the cheapest improvement you will ever hand a client.\n"
+        },
+        {
+          "slug": "rhythm-and-when-not-to-cut",
+          "title": "Rhythm, and when not to cut",
+          "duration_minutes": 8,
+          "content_mdx": "# Rhythm, and when not to cut\n\nFast is not the same as good. You can cut a video to ribbons and still lose people in the middle, because the thing holding a viewer is not speed. It is variation. A video where every shot is the same length reads as flat whether that length is short or long, because after a few shots the eye stops expecting anything new.\n\nPace is a decision you make against the content, shot by shot.\n\n## Speed up what the viewer can predict\n\nCut hard through:\n\n- The setup, once the viewer already knows where this is going\n- Anything the video has said once already\n- Process the viewer can follow at a glance: the mixing, the wiping, the walking over\n- The second sentence that only restates the first\n\n## Slow down where the idea lands\n\nGive room to:\n\n- The reveal\n- A figure or a price, so the viewer can read it and think about it\n- A face reacting\n- The one line the whole video exists to deliver\n\nSlowing down rarely means slow motion. Usually it means holding a shot a beat longer than the shots around it. That extra beat is the only thing telling the viewer that this part is different from the part before it.\n\n## Cut on motion and on sound\n\nA cut placed on a movement is close to invisible. Someone reaching for a tray, standing up, turning their head, setting a cup down: cut in the middle of that action and the eye is busy following the motion, so the join goes unnoticed. A cut placed in the middle of stillness gets noticed every time.\n\nSound works the same way. A cut that lands on a beat, a click, a door, or the first sound of a word disappears into it. When a join feels wrong and you cannot say why, try nudging it a few frames onto the nearest movement or sound before you change anything else.\n\n## Speed changes, used honestly\n\nSpeeding up a process shot is fine. The viewer knows what would have happened and does not need to sit through it, and the compression is the joke or the satisfaction.\n\nSlowing a reveal is fine.\n\nSpeeding up speech to make a video fit a length is not fine. You can hear it, the voice goes thin and hurried, and the viewer starts working to follow instead of listening. If the video is too long, cut a sentence. Do not compress every sentence.\n\n## Do not let the track drive the cut\n\nDexter in Cebu cut a motorcycle detailing video to a track he liked. Every cut sits on a beat. It looks deliberate for about four seconds, and then the owner's sentences start getting sliced in half so the next cut can land on time, and by the middle you cannot follow what he is saying about the polishing compound.\n\nWords first, music second. Let the sentences decide where the cuts go, then put the music underneath. If the track's build no longer lines up, change the track or trim it. The track is the cheapest thing in the edit to replace, and nobody watching came for it.\n\nThere is a version of this that works, which is a clip with no speech at all: a process, a walkthrough, a set of shots. There the beat is the only structure available and cutting to it is the right call.\n\n## Build a shape across the whole video\n\nKuya Dennis sells lechon manok in Antipolo, and his forty second video moves like this: quick through the marinade and the loading, quick through the coals, then a long hold on the first cut into the chicken with nothing else happening, then quick through the sauce and the packing, then a hold on a customer taking the first bite.\n\nTwo holds in forty seconds. Everything else runs. That is the shape, and you can feel where the video wants you to look without anyone telling you.\n\nFlat videos usually sag in the middle because the maker put all the good material at the top. Keep one thing back. A middle needs its own small reveal, not just a countdown to the end.\n\n## The paper drill\n\nTake an edit you have already finished. Watch it once with a pen, and put a tick on the paper at every cut, spacing your ticks by how long each shot felt rather than by any measurement.\n\nNow look at the row of ticks. If they are evenly spaced from top to bottom, your video is flat no matter how quick it is. Pick three cut points and change them: pull two shots shorter in the setup, and let the one that matters run longer.\n\nWatch it again. That is rhythm, and it is a thing you decided rather than a thing that happened.\n"
+        },
+        {
+          "slug": "showing-instead-of-saying",
+          "title": "Showing instead of saying",
+          "duration_minutes": 8,
+          "content_mdx": "# Showing instead of saying\n\nThe talking head is the default and it is the weakest thing you have. A person facing a phone camera, talking. It is what the client sends you and it is what the footage will stay as unless you do something.\n\nThe habit that changes an editor: every time the voice describes something, ask whether a picture of it exists. Then go and find one, or build one out of what you already have.\n\n## The toolkit\n\nSix things, in rough order of how easy they are to get:\n\n**Punch-in.** Crop into the same take so you are on a tighter version of the same shot. One take becomes two angles. Use it on the line that matters, and cut back out when the point is finished.\n\n**Cutaway.** A shot of the thing being talked about. The product on the table, the sign outside, the queue.\n\n**Insert.** Close on hands doing the step. Counting the change, wiping the lens, tying the knot. Inserts buy you more per second of filming than anything else on this list, and they take no skill to get.\n\n**Screen recording.** For anything happening on a device. If the voice says \"then you upload it\", show the upload.\n\n**Still.** A photo, a receipt, a screenshot, a map. Hold it long enough to be read.\n\n**A pointer.** An arrow or a circle drawn over the frame at the moment the voice says \"this part here.\" Keep it to the one element that needs it.\n\n## Reframe one wide take into three shots\n\nRowena in Iloilo tutors online and films herself in one wide take. She has no b-roll and no second camera. Her edit still changes shot four times, because she shoots wide with room around herself, then crops in for the explanation, out for the example, and in tight for the line she wants remembered.\n\nNothing new was filmed. Shoot with a little room in the frame, at a size bigger than you deliver at, and this is available to you in every edit.\n\n## When to stay on the face\n\nA cutaway during an emotional beat throws the viewer out. If a stall owner's voice catches while she describes the month she lost money, cutting to a shot of her stall is a mistake even though the shot is relevant. Her face is the content in that moment. Save the stall for the sentences where she is describing what she sells.\n\nStay on the face for the reaction, the admission, the punchline, and the sentence the video was made for. Cut away for everything the voice is only describing.\n\n## The b-roll you can actually get\n\nAsk the client for these before they film anything, or grab them yourself in one pass:\n\n- The workspace with nobody in it\n- The product from three distances\n- Hands doing the main action, filmed twice\n- The walk in through the door\n- The screen, if there is one\n\nThat is a few minutes of filming and it covers a month of talking heads. If footage arrives without any of it, ask for it once, in a specific list. \"Send b-roll\" produces nothing. \"Send ten seconds of your hands packing one order\" produces the shot.\n\n## When there is genuinely nothing\n\nSometimes the client will not film again and the deadline is tonight. Then you use punch-ins on the one take, stills of whatever exists, and on-screen text where a picture is missing. Chapter three covers what that text should do.\n\nTell the client plainly that the video is weaker for it and name the two shots you needed. Editors who never say this end up being blamed for footage they did not shoot.\n\n## Continuity, and how much of it matters\n\nIn this format, mismatched shirts across a cut or a cup that moves are not the problem people think they are. Nobody is checking. What does break the video is a mismatch in the audio, in the light, or in the eyeline: a cut from a bright window shot to a dim indoor one reads as an error even to a viewer who could not name it.\n\n## Where the automatic tools fit\n\nSome editing tools offer to strip silences for you, or to pick highlights out of a long clip. If the tool you use has that, run it as a first pass and then correct it, the same way you would treat a rough cut handed to you by someone who has not heard the brief. It cannot tell the pause before a punchline from the pause where somebody forgot their line, and it will cut the first one.\n\nUse it to get through the mechanical work, then make every judgement yourself.\n\n## Do this now\n\nTake a talking clip and write down each line where the voice describes something you cannot see. For each one, name the picture: punch-in, cutaway, insert, screen, still, pointer. Then go get three of them.\n"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "You are running the gap pass on a two minute clip of a physiotherapist in Cabanatuan explaining what a first session involves. Four silences are candidates for removal: the chair scraping as he sits down, a pause while he hunts for a word, the beat right after he delivers the line the whole clip is built around, and a stumble where he restarts a sentence. Which one do you leave in?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The chair scraping as he sits down, because the sound of him arriving tells the viewer the take is real and unstaged."
+            },
+            {
+              "id": "b",
+              "text": "The stumble and the restart, because one honest stumble left in makes him read as a real person rather than as a polished scripted read."
+            },
+            {
+              "id": "c",
+              "text": "The beat after the line the clip is built around, because that silence is the viewer catching up and cutting it buries the point."
+            },
+            {
+              "id": "d",
+              "text": "The pause while he hunts for the word, because cutting mid-thought creates a jump in his head position that the eye will notice."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "visual_craft",
+          "explanation": "Ask what each silence is doing. Waiting silences go: the chair scrape, the search for a word, the stumble. The beat after the line that matters is doing work, because it is the only room the viewer gets to absorb the point before the next thing arrives. Cut it and the line goes past unregistered."
+        },
+        {
+          "prompt": "Weng runs a gap pass on a thirty second explainer for a laundry shop and takes out every silence she can find, including the ones at the ends of sentences. Played back, every word is there and it is exhausting to listen to. What is the fix?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Put the end-of-sentence breaths back, and the ones before the lines that carry the point, and leave the mid-sentence gaps out."
+            },
+            {
+              "id": "b",
+              "text": "Lay a calm music bed under the whole clip so the joins are covered and the speed reads as a deliberate choice to the ear."
+            },
+            {
+              "id": "c",
+              "text": "Slow the whole clip down a little so the speech sits at an easier pace without her having to touch any of the cut points."
+            },
+            {
+              "id": "d",
+              "text": "Ask the shop owner to record the lines again at a slower pace, so the delivery is calm from the start and no pauses need restoring."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "visual_craft",
+          "explanation": "This is the gap pass over-corrected. Speech has a shape, and the breath at the end of a sentence is punctuation rather than dead air, which is why that one goes back. Music hides nothing here, slowing the clip makes the voice sound wrong, and a re-record spends the client's time on a problem that lives in the timeline."
+        },
+        {
+          "prompt": "Nestor has six clips to rough cut before dinner. On the first clip he removes a gap, then stops to decide whether a whole section is worth keeping, then tries reordering two sentences. An hour later he is still on clip one. What should he change?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Start with the clip he finds strongest so the momentum carries him, and leave the weakest one for a session when he is fresher."
+            },
+            {
+              "id": "b",
+              "text": "Ask the client which of the six is the priority, then spend the time he has left on that one and deliver the rest rougher."
+            },
+            {
+              "id": "c",
+              "text": "Give each clip a fixed slot on the clock and move on when the time is up, accepting whatever state that edit is in."
+            },
+            {
+              "id": "d",
+              "text": "Run one pass over all six that removes gaps and nothing else, then watch each one and make the content cuts."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "production_workflow",
+          "explanation": "Mixing the gap pass with content judgement is what makes an edit take all night. Separate them: gaps first with no opinions allowed, then decisions. The clip you judge afterwards is a different clip, and several of the decisions will have made themselves."
+        },
+        {
+          "prompt": "A video for a cooking stall runs quickly from beginning to end, every shot roughly the same short length. The client watches it and says parang walang nangyayari. Nothing in it is slow. What is actually wrong?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The cuts are too quick for any shot to register, so lengthening every shot a little will let each one read before the next arrives."
+            },
+            {
+              "id": "b",
+              "text": "The shot lengths never vary, so nothing is marked as more important and the reveal goes past at the speed of the setup."
+            },
+            {
+              "id": "c",
+              "text": "There is no music under it, so the viewer has nothing telling them where the energy is meant to rise and fall."
+            },
+            {
+              "id": "d",
+              "text": "The joins are not placed on movements, so every cut is landing in stillness and the eye is catching each one of them."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "visual_craft",
+          "explanation": "Flatness is a lack of variation, not a lack of speed. Every shot the same length tells the viewer that every shot is worth the same. Hold the moment the idea lands a beat longer than the shots around it and the same footage suddenly has a shape."
+        },
+        {
+          "prompt": "You are cutting a forty-five second explainer to a track with a hard beat. To keep every cut on the beat you would have to slice two sentences in half, and to reach the track's ending you would have to speed the voice up slightly. What do you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Keep every cut on the beat and speed the voice up a little, because a video moving with its music will hold a viewer better."
+            },
+            {
+              "id": "b",
+              "text": "Drop the voiceover and carry the whole explanation with pictures and text, so the beat can drive every cut without fighting words."
+            },
+            {
+              "id": "c",
+              "text": "Let the sentences decide the cut points and put the music underneath, changing or trimming the track if its ending no longer fits."
+            },
+            {
+              "id": "d",
+              "text": "Cut to the beat except on those two sentences, then fade the music out early so the sped-up ending is not needed at all."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "message_craft",
+          "explanation": "Words first, music second. A sliced sentence costs you the thing the video was made to say, and sped-up speech is audible and tiring. The track is the cheapest element in the edit to swap. Cutting to the beat is the right call only where there is no speech to fight with."
+        },
+        {
+          "prompt": "A client sends one take of the owner describing three steps of her service. There is no b-roll, she will not film again, and the video is due tonight. What is the strongest move with what you have?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Punch in to a tighter crop of the same take for the steps and cut back out between them, so one take carries two angles."
+            },
+            {
+              "id": "b",
+              "text": "Loop a stock office clip underneath the talking so the frame is not static for the whole video and there is something moving."
+            },
+            {
+              "id": "c",
+              "text": "Deliver the single take as it is and tell her the video stays weak until she films the cutaways you asked for next time."
+            },
+            {
+              "id": "d",
+              "text": "Freeze the frame at each of the three steps so the video changes state even though there is no other footage to cut to."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "visual_craft",
+          "explanation": "A punch-in builds a second angle out of footage you already have, which is why you frame with room around the subject. Stock office footage belongs to no one in the video and reads as filler. Say the video is weaker without b-roll and name the two shots you needed, but say it as well as editing, not instead of it."
+        },
+        {
+          "prompt": "You are cutting a testimonial for a hardware store. The customer's voice tightens as he describes the week the flood took his stock. You have usable b-roll of the aisle he is talking about. What do you do at that moment in the edit?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Cut to the aisle there, because a viewer is uncomfortable sitting on a face and the shot gives the hard line something to rest against."
+            },
+            {
+              "id": "b",
+              "text": "Cut to the aisle and bring his voice under a soft music bed, so the difficult moment is a little easier for a stranger to watch."
+            },
+            {
+              "id": "c",
+              "text": "Trim the catch out of his voice with a tight cut so the testimonial holds an even tone from beginning to end."
+            },
+            {
+              "id": "d",
+              "text": "Stay on his face through the line, and save the aisle for the sentences where he is describing what the store sells."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "message_craft",
+          "explanation": "A cutaway during an emotional beat throws the viewer out of it. His face is the content in that moment, and the catch in his voice is the reason anyone will believe the rest. Cut away for what the voice is only describing, and stay for the reaction, the admission and the line the video was made for."
+        },
+        {
+          "prompt": "A new editor on your team delivers a vertical talking-head video with a spin effect on every join, and tells you that raw jump cuts look unprofessional. What do you tell him?",
+          "options": [
+            {
+              "id": "a",
+              "text": "He is right that the joins need covering, but one single effect should be used every time so the whole batch of videos reads as a set."
+            },
+            {
+              "id": "b",
+              "text": "Jump cuts are the ordinary texture of this format, so leave the joins bare and cover only the ones that actually read as jarring."
+            },
+            {
+              "id": "c",
+              "text": "Effects are fine as long as they are quick, so shortening each one is enough to stop the video from feeling over-decorated."
+            },
+            {
+              "id": "d",
+              "text": "He should swap the spins for a soft dissolve, which is the neutral join and does not pull attention the way a spin does."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "platform_fluency",
+          "explanation": "Removing a pause inside a talking shot makes the head jump, and in vertical short-form that is what an edit looks like. An effect on every join is the tell of a beginner. The joins worth covering are the ones where the speaker's position shifts a lot or where several cuts sit inside one breath, and a punch-in or a cutaway covers those better than a spin."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-3-captions-and-sound-carry-the-video",
+      "title": "Captions and sound carry the video",
+      "description": "Vertical video gets watched in a jeep, in a queue, and at a desk with the volume down. The text layer and the audio mix are where a technically fine edit is won or lost.",
+      "lessons": [
+        {
+          "slug": "captions-that-can-be-read",
+          "title": "Captions that can be read",
+          "duration_minutes": 8,
+          "content_mdx": "# Captions that can be read\n\n## Where the video is actually watched\n\nPicture where this video lands. Somebody standing in a jeep on Commonwealth with one hand on the rail. Somebody in a queue at the LTO in Pasay. Somebody in bed at eleven at night with a partner asleep beside them. Somebody at a desk in BGC with a supervisor two metres away. In all of those, the volume is down or off.\n\nYou do not need a number for that, and you should not use one. The point is the shape of it: your video has to work as a silent video, end to end, because you never get to know which viewer has the sound on.\n\nThat makes the caption track part of the edit, not a finishing touch you bolt on at midnight.\n\nKeep one thing straight before you talk to a client. In this course, captions means the words inside the video frame. The written text under the post, the one with the hashtags, is a different craft and belongs to social media work. The client will assume you mean theirs.\n\n## Two places the words can live\n\nThe words can be rendered into the picture, so they are part of every frame you export, or they can be added by the place you post to, as a layer sitting over your file. Which of those a destination offers, whether it can be edited after posting, and what happens to it when somebody downloads the file are things that differ by app and move without notice, so look them up at the source on the day you need them.\n\nWhat does not move is the tradeoff. Text rendered into the picture travels wherever the file travels, and a typo in it costs you an export. Text added by the destination is cheap to fix and belongs to that one post. Choose by where the video is going. A file a client will hand to a supplier to repost needs the words in the picture.\n\n## Auto captions are a first draft\n\nGenerate them, then correct them. The correction pass is not optional, and it is quick if you do it in one sitting.\n\nThe words a captioning tool reliably gets wrong are the exact words carrying the meaning:\n\n- **Business and brand names.** Rhea edits for a skin clinic called Bighani in Antipolo, and the transcript came back as \"Big Honey\". Nobody at the clinic will ever mention it to her. They will just stop sending work.\n- **Place names.** Anything carrying a local spelling, and in particular the tilde in Parañaque and Dasmariñas, which a transcript can drop without telling you. Type these back yourself and check them against how the client writes them.\n- **Taglish and code-switching.** A speaker who slides from English into Tagalog mid-sentence produces the strangest transcripts you will ever read.\n- **Numbers said out loud.** \"Twenty-five hundred\" and \"two five zero zero\" do not always land the same way.\n- **The client's own product words.** Sizes, model codes, the name of the service.\n\nRead the whole track once against the audio before you touch anything else. The test is simple: if you would be embarrassed to send that line to the client as a text message, fix it.\n\nDecide punctuation once and keep it. Full stops or none, commas or none. Changing your mind halfway through a video is visible.\n\n## Readable at arm's length, on a bright day\n\nFour things decide whether text can actually be read.\n\n**Contrast.** White text over a bright window in a Baguio cafe disappears. Put a solid shape or an outline behind the text so it holds up when the footage changes behind it, and use that same treatment on every caption in the video.\n\n**Size.** Judge it on a phone at arm's length, never on the laptop you edited on. What looks generous on a laptop screen can be unreadable in sunlight.\n\n**How much is on screen at once.** A viewer reads a caption in a glance while also watching a face. A few words at a time works. A full paragraph parked on screen gets skipped.\n\n**Case.** All caps at speed is harder to read on a small screen, not easier. Sentence case, sized properly, beats shouting. Save capitals for the one word you want to land.\n\n## Timing\n\nCaptions should land with the word, not ahead of it and not behind it. One that runs early spoils the line before the speaker says it, which kills a punchline. One that runs late leaves the viewer slightly out of sync, and they will not be able to tell you why.\n\nWord-by-word animation, where each word pops in on its own, is fine in small amounts and becomes noise across a whole video. Watch it muted before you commit to it.\n\n## Placement\n\nChapter one gave you the rule at capture: keep anything that has to be seen in the middle band, because the top and bottom bands are where an app's own interface lands. Captions inherit it.\n\nWhat is specific to text is that it has to survive time. A caption must stay clear of the interface and clear of the speaker's face for every second it is on screen, not only in the one frame you were looking at when you dragged it into place. A speaker who stands up mid-sentence walks straight into a caption that was sitting fine a moment earlier.\n\nWhere the interface sits differs by app and changes without notice. So the check worth trusting is to get the file onto the destination itself, posted privately or held as a draft, and look at it on a phone from there. A file sitting in your camera roll shows you the frame, not what will sit on top of it.\n\n## Because some viewers cannot hear it\n\nDeaf and hard-of-hearing viewers exist regardless of anybody's volume setting. Accurate captions are the difference between a video they can watch and one they cannot. That is a reason on its own.\n\n## Do this now\n\nTake a video you already finished. Mute it. Watch it on your phone at arm's length, standing up, in a bright room. Write down every moment you could not follow. That list is your fix list."
+        },
+        {
+          "slug": "text-that-is-not-a-caption",
+          "title": "Text that is not a caption",
+          "duration_minutes": 8,
+          "content_mdx": "# Text that is not a caption\n\n## Two jobs on one screen\n\nSubtitles transcribe. Design text adds. They look similar, they do completely different work, and treating them as one thing is why some videos end up as a wall of words nobody reads.\n\nA caption repeats what was said so a silent viewer gets it. Design text is a decision: you are putting something on screen that the shot could not show and the voice did not carry well enough.\n\n## Four jobs a word does that a shot cannot\n\n**Naming a thing.** A label on the object being shown. The name of the part, the location, the person's role. Marivic's video shows a technician pulling a filter out of a split-type aircon. Two words on screen, \"return filter\", and the viewer stops guessing.\n\n**Structuring the video.** \"Step 2 of 4\". A short heading that says what is coming. This is not decoration. It tells the viewer how much is left, which lowers the cost of staying.\n\n**Emphasising.** One word pulled out of the sentence at the moment it is said, larger than the caption around it. Use it once or twice in a short video. Use it eight times and it stops meaning anything.\n\n**Carrying what the voice never says.** This is the one editors forget. In Marivic's aircon demo the technician never mentions that the unit has to be unplugged first. Nobody is going to reshoot. A line of text at that moment fixes it, and no other tool you have can.\n\n## Ranking, which is general design\n\nRanking what a frame carries, and quieting everything that is not first, is general design, and Canva and Visual Content teaches it properly. One line of it transfers here unchanged: if a caption and a title are on screen together, one of them is quieter, or the eye picks neither.\n\n## The delete test\n\nWhat is different about video is that the reader cannot stop. A poster gives somebody as long as they want to sort five elements out. A shot gives them its own length, and nobody rewinds on a scroll. So a frame carrying a caption, a title bar, a step counter, an arrow and a logo sticker reads as carrying none.\n\nThe habit that fixes it is boring and it works. Ask one question first: at this second, which single thing must the viewer read? That one stays loud. Then delete one of the others, watch the shot, and ask what was lost. Often the answer is nothing, and it stays deleted. Then do it again.\n\nThree things that look like fixes. Shrinking everything so it all fits keeps five elements and makes each one harder to read. Giving each its own colour makes the clutter brighter. Staggering the entrances spreads the same clutter across time and delays every one of them, which is worse in a video nobody is going to rewind.\n\n## Text has to survive the shot, not the frame\n\nThe captions lesson made this point about the interface and the speaker's face. It bites harder on design text, because design text gets placed by hand on whichever frame you happened to be parked on.\n\nText sits where the composition leaves room, not on top of the face that is talking. The trouble is that the composition moves. A title clear of a speaker's face at second four is across her mouth at second six when she stands up. A word placed against a dark wall vanishes when the shot cuts to the window. An element sized for a wide shot is suddenly enormous after a punch-in.\n\nSo the drill is to scrub the whole span the element is on screen, first frame to last, watching the picture underneath rather than the text. If the shot leaves nowhere for the text to live, reframe it, punch in or pull back, rather than pushing the text down into the band where the interface will land on it.\n\n## One style for the whole set\n\nFix the text style before the batch, not during it: the family, the weight, the size, the colour, the background treatment and the position. Then use it on every video for that client. The videos read as a set rather than as six unrelated files, and you stop making the same decision over and over, which is the workflow point chapter four picks up.\n\n## Motion on text\n\nAn entrance helps when the text is fully readable at the moment the reason for it is happening. A quick fade or a straight cut does that.\n\nAn entrance hurts when the animation is still running while the speaker has moved on. Letters flying in one at a time, a slow slide from the edge, a bounce that settles after a beat: the word arrives after the moment it was for.\n\nSay it as a rule. If the animation finishes later than the word it belongs to, the animation cost you the point.\n\n## The failure to watch for: text that argues with the voice\n\nMarivic's opening text reads \"3 gamit ng suka na hindi mo alam\". Watching it back, the speaker gets through two, and there is no footage for a third.\n\nA viewer with the sound off reads the text. A viewer with the sound on hears the voice. When those two disagree, one of those audiences has been misled, and the number in the text is a promise the video does not keep. Fixing it by promising the third in a follow-up is worse, because now the video is bait and the next one starts from a deficit.\n\nThe check takes a minute. Read only the on-screen text, in order. Then listen only to the audio. If they tell different stories, the text is what changes, because the footage is what it is.\n\n## Do this now\n\nScreenshot every frame in your last video that carries text. Lay them out in one place. Read only the text, in order. If it does not tell the story, or if any frame makes you work out where to look first, you have your edit list."
+        },
+        {
+          "slug": "sound-that-does-not-drive-people-away",
+          "title": "Sound that does not drive people away",
+          "duration_minutes": 9,
+          "content_mdx": "# Sound that does not drive people away\n\n## The viewer you already won\n\nBad audio does not cost you the scroller. It costs you the person who stopped, turned the volume up and was willing to listen. That is the expensive one to lose.\n\nThe signs are always the same. A hiss under everything. An echo, because the room was tiled and empty. Music sitting on top of the voice instead of under it. A level that jumps at every cut. The moment a viewer reaches for the volume, in either direction, you have interrupted them.\n\n## The mix, in one sentence\n\nThe voice is the priority, the music sits under it, and nothing else competes. The rest of this lesson is how to check that and how to get there.\n\n## Checking a mix with no meters and no training\n\nTwo passes, both on the exported file and never on the timeline.\n\n**Phone speaker, low volume, in a room with other noise.** Can you follow the words without leaning in? If you are guessing at any sentence, the mix is wrong, no matter how good it sounded in your earphones at midnight.\n\n**Earphones, moderate volume.** Is anything harsh? Does the music jump up at a cut? Is there a hiss you stopped noticing three hours ago?\n\nPaolo checks his edit on laptop speakers, hears nothing wrong and delivers. The client watches it on a phone in a busy office and cannot make out the voiceover at all. Nothing was wrong with the file. He checked it in conditions nobody actually watches in.\n\n## Bringing the music down under the voice\n\nDescribe what you want and you can do it in any editor. While someone is speaking, the music level drops. In the gaps between, it comes back up. Some tools do that on their own, some make you set it by hand across the talking sections, and the result you are after is the same either way.\n\nBoth have names, and knowing them saves you an hour of hunting. Music dropping under a voice automatically is called ducking. Doing it by hand means setting volume points, usually called keyframes, at the start and end of each spoken stretch. Search your editor for either word and you will find whichever one it gives you.\n\nWhat does not work is fighting the music by raising the voice. That gets you a loud video rather than a clear one, and loud is what makes a person in a queue turn the volume down and leave it down.\n\n## Choosing the track\n\nMatch the energy to the content, not to your own taste. A track you love, with a beat that does not agree with a calm explainer, will beat the explainer.\n\nAvoid vocals under a voiceover. You are asking a listener to follow two people speaking at once, and they will follow neither. Instrumental under speech, every time.\n\n## Music rights, which you check rather than assume\n\nEvery track has an owner. A platform's own in-app library, a stock music site, free or paid, and a track a friend made all come with terms, and those terms are not the same as each other. They often differ depending on whether the account is personal or a business, and on whether the video is an ad. They also change. So there is no fact to memorise here, and anyone who tells you a particular sound is fine to use is telling you something they cannot know about your client's situation.\n\nThe move, every time, before you publish a client's video: open the terms of the source you took the music from, read what they say today for the kind of account and the kind of use this is, and write down the source, the date and what you read. If you cannot find the terms, do not use the track.\n\nTwo things that are not permission. A sound being popular is not permission, and a track being offered inside an app is not a statement about what your client may do with it. Whatever the consequence turns out to be, it lands on the client's account first and on your reputation second.\n\n## Silence is a tool\n\nA beat of silence before the point makes the point. Dropping the music out entirely under one sentence makes that sentence the loudest thing in the video without raising anything.\n\nUse room tone rather than true digital silence in a gap. Total silence reads as a dropout, and viewers assume something broke.\n\n## Sound effects, and where they turn amateur\n\nA whoosh on a transition that already works adds nothing. When every cut has one, they stop marking anything and become the video's texture, which is when it reads as a template somebody filled in. Use an effect where it marks something: an item appearing, a number landing, a reveal. Then stop.\n\n## What cleanup can and cannot do\n\nYou can patch a gap with room tone, take some steady hiss off and even out levels between clips.\n\nYou cannot fix echo from a bare tiled room, wind on the mic, a recording that was already distorted, or a speaker who was too far from the phone. The answer to those is to record the line again, which is why the shooting lesson in chapter one spent its time on the quiet room and the close mic. Push a cleanup tool hard enough to seem to fix them and you get a voice that sounds like it is underwater.\n\n## Do this now\n\nPlay your last export on a phone speaker at low volume, standing in another room. Write down every sentence you could not follow. Fix those, then check it again on earphones for anything harsh."
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Kristine edits for a bakeshop in Malolos called Panaderia Ilaya. The auto captions turned the shop name into \"Panaderia Ilalim\" and mangled a Taglish line about the Sunday pre-orders. What is her correction pass?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Fix the shop name, then leave the Taglish as it came out, since spelling in Taglish varies anyway and viewers will follow the sense of it."
+            },
+            {
+              "id": "b",
+              "text": "Fix the shop name, then read the whole caption track against the audio and correct every name, place, number and Taglish line."
+            },
+            {
+              "id": "c",
+              "text": "Drop the words from inside the frame on this one and let each destination add its own caption layer at upload instead."
+            },
+            {
+              "id": "d",
+              "text": "Ask the bakeshop to re-record the voiceover in straight English, so the captioning tool has a cleaner recording to work from."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "message_craft",
+          "explanation": "Auto captions are a first draft, and the words a tool mishears are the ones carrying the meaning: names, places, numbers and code-switched lines. So the pass is a full read against the audio, not a spot repair. Leaving mangled Taglish tells a viewer nobody watched it back. Handing the job to a destination's own caption layer, or making the client speak differently to suit a tool, both solve a problem you do not have."
+        },
+        {
+          "prompt": "Aldrin is delivering a finished video to a hardware store in Iloilo. The store will post it themselves, and their supplier has asked for the file so they can repost it on their own page. What does he do about the captions?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Leave the video clean and let each account add its own text after posting, so every version can be corrected in place."
+            },
+            {
+              "id": "b",
+              "text": "Skip captions altogether, because the supplier may crop or re-edit the file and words burned into the frame would then sit in the wrong place."
+            },
+            {
+              "id": "c",
+              "text": "Burn the captions in at the bottom edge, check the file once on his phone, and send it, since no interface covers that edge."
+            },
+            {
+              "id": "d",
+              "text": "Burn the captions in so they travel with the file wherever it gets reposted, and check the placement from a draft post on a phone."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "platform_fluency",
+          "explanation": "Words in the picture and words added by the destination are a tradeoff, not a ranking. Words rendered into the picture travel with a downloaded file, which is what this job needs, and the cost is that a typo means re-exporting. Words added by a destination belong to that post, and what each destination allows is something you check at the source rather than carry in your head. And no band of the frame is permanently safe, so you confirm the placement from a draft on the destination itself, not from a file sitting in a camera roll."
+        },
+        {
+          "prompt": "Nikki is editing a promo for a dental clinic in Bacoor and wants a sound she has heard on dozens of videos this week. The clinic posts from a business account. What does she do before delivering?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Open the terms of the library the sound comes from, read what they say today for a business account, and note the source and the date."
+            },
+            {
+              "id": "b",
+              "text": "Use it, since the sound is offered inside the app itself, and anything the app puts in front of her is cleared for anyone posting there."
+            },
+            {
+              "id": "c",
+              "text": "Use it, because it is trending right now and other clinics and shops in the area are already running the same sound on their pages."
+            },
+            {
+              "id": "d",
+              "text": "Pick a different track from the same library, since anything offered in there comes on the same terms as the one she wanted."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "platform_fluency",
+          "explanation": "Music has an owner, and what any library permits depends on the source, the kind of account and the kind of use, all of which differ and all of which change. The only move that holds up is reading the current terms of the source yourself and keeping a note of what you read and when. Popularity is not permission, a track being available inside an app is not a statement about what a client may do with it, and lowering the volume does not change who owns it. Swapping to a neighbouring track in the same library changes the track, not the question of what that library permits for this account and this use."
+        },
+        {
+          "prompt": "Emman's captions are white text. For four seconds the speaker steps out onto a sunlit terrace in Tagaytay and the words vanish into the light. What fixes it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Switch the whole caption track to all caps, since capitals are heavier on screen and hold up better against a bright background."
+            },
+            {
+              "id": "b",
+              "text": "Raise the caption size a long way for those four seconds, so the words are large enough to read through the brightness behind them."
+            },
+            {
+              "id": "c",
+              "text": "Put a solid shape or an outline behind the text, and keep that treatment on every caption so the look does not change mid-video."
+            },
+            {
+              "id": "d",
+              "text": "Move the captions down into the darker bottom strip of the frame for that stretch, then bring them back up once the shot is past it."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "visual_craft",
+          "explanation": "Contrast is the problem, so contrast is the fix, and it has to be one treatment applied across the video rather than a patch on four seconds. All caps at speed is harder to read on a small screen, not easier. A size jump for one stretch is visible as a mistake. Moving text down for a moment puts it in the band an interface can cover and makes the caption position wander."
+        },
+        {
+          "prompt": "Bernard's frame carries five things at once: the caption, a title bar reading \"Water heater install\", a step counter, an arrow pointing at the shut-off valve, and a sticker with the shop logo. It reads as clutter. What does he do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Stagger the entrances so the five arrive one after another instead of together, spreading the reading out across the whole shot."
+            },
+            {
+              "id": "b",
+              "text": "Shrink all five so they fit the frame without overlapping, which keeps every piece of information and gives the eye room to move."
+            },
+            {
+              "id": "c",
+              "text": "Give each element its own colour so the viewer can tell them apart at a glance and knows which of the five to look at first."
+            },
+            {
+              "id": "d",
+              "text": "Decide which single element the viewer must read at that second, then delete the others one at a time and check what was lost."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "visual_craft",
+          "explanation": "A frame with five text elements reads as none, and the way out is subtraction against a question: at this second, what must be read? Shrinking keeps all five and makes each one harder to read. Colour-coding makes clutter brighter, not clearer. Staggering entrances spreads the same five across time and delays every one of them, which is worse in a video the viewer is not going to rewind."
+        },
+        {
+          "prompt": "The opening text on Faye's video reads \"4 na gamit ng baking soda\". Playing it back, the demo covers three of them and the fourth was never filmed. What does she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Change the opening text to three, so that the promise a silent viewer reads matches what the video actually hands them."
+            },
+            {
+              "id": "b",
+              "text": "Keep the text and add an end card saying the fourth one is coming in a follow-up video on the client's page later in the week."
+            },
+            {
+              "id": "c",
+              "text": "Keep the text and let the caption track carry the true count, since a viewer with the sound on hears what was said."
+            },
+            {
+              "id": "d",
+              "text": "Leave the text as it is, because the number is what stops the scroll, and few viewers sit there counting the items off as they go."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "message_craft",
+          "explanation": "On-screen text and the voice reach two different audiences, and when they disagree one of those audiences has been misled. A number in the opening text is a promise, so the honest fix is to change the promise to what the footage delivers. Deferring the third item to a follow-up turns the video into bait and makes the next one start from a deficit, and hoping the caption track quietly corrects the headline just leaves two claims fighting on the same screen."
+        },
+        {
+          "prompt": "Junix mixes an edit late at night on earphones and it sounds balanced to him. The client plays it on a phone speaker at a busy terminal and messages that the voiceover is buried under the music. What happened, and what changes?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The earphone playback was too quiet, so he raises the level of the whole mix, voice and music together, until the words come through."
+            },
+            {
+              "id": "b",
+              "text": "Phone speakers cannot carry music properly, so after checking on a phone he takes the track out and delivers the voiceover on its own."
+            },
+            {
+              "id": "c",
+              "text": "He checked it in conditions nobody watches in, so he replays the export on a phone at low volume and brings the music under the voice."
+            },
+            {
+              "id": "d",
+              "text": "The voice was recorded too quietly, so he lifts the voiceover until it sits clearly above the music at every point in the video."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "platform_fluency",
+          "explanation": "A mix is only checked when it is checked in the conditions people watch in, which is a phone speaker at low volume with other noise around. The arrangement you want is the music dropping under the speech and coming back up in the gaps, which is what ducking means. Raising everything gets you a loud video rather than a clear one, and lifting the voice alone to win against the music does the same thing by another route. Deleting the music fixes the symptom and gives up a tool."
+        },
+        {
+          "prompt": "Ramil has six videos for one bakeshop in Davao, edited across three evenings. Each ended up with a slightly different caption font, colour and position. The client has not said anything. What does he do before the next batch?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Leave them, since each video is watched on its own in a feed and nobody is lining all six up side by side to compare them."
+            },
+            {
+              "id": "b",
+              "text": "Settle on one caption style, apply it across all six videos, and save it so the next batch starts from that same setup."
+            },
+            {
+              "id": "c",
+              "text": "Match each video's caption colour to the footage in it, so the text always sits well against what is behind it."
+            },
+            {
+              "id": "d",
+              "text": "Vary the style deliberately video to video, so the client's page does not look repetitive to somebody scrolling."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "production_workflow",
+          "explanation": "A fixed text style does two jobs: the videos read as one set on the client's page, and you stop re-deciding the same thing every evening. Colour matched per video means the style still wanders, and contrast is better solved by a background treatment that works everywhere. Varying it on purpose confuses a set for variety. And a client who has not complained yet is not the same as a client who has not noticed."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-4-a-batch-in-an-afternoon",
+      "title": "A batch in an afternoon",
+      "description": "The difference between an editor who can make a good video and one who can be paid to make forty: a setup, a template, an order of operations, and a review pass that catches the thing you stopped seeing three hours ago.",
+      "lessons": [
+        {
+          "slug": "setup-and-the-order-of-operations",
+          "title": "Setup, and the order of operations",
+          "duration_minutes": 8,
+          "content_mdx": "# Setup, and the order of operations\n\nTwo editors get the same client footage on the same morning. One sends the videos back that afternoon. The other is still fighting the timeline at midnight. The gap is almost never speed on the keyboard. It is what happened before the project opened, and the order they worked in once it did.\n\n## Get the footage into one place, once\n\nFootage arrives from a phone's camera roll, a shared drive link, a chat thread, and sometimes a memory card. Before you cut anything, put all of it in one folder on one device.\n\nName the folder so it still makes sense to you in three months: client, shoot date, subject. Something like `bacolod-milktea-2026-08-14-store-tour` beats `New Folder (3)`. Inside it, keep the files exactly as they came off the camera, and do your work on copies or inside the editing project.\n\nKeeping the originals is not tidiness. It is the difference between a recut and a reshoot. When the client comes back in October and asks you to pull one line out of an August video, either those clips still exist or you are asking a busy shop owner to film again.\n\nThen back up in a way you will actually do. One copy on the laptop and one in a cloud folder is enough. A backup routine you never run is a story you tell yourself.\n\n## Phone or laptop\n\nBoth are real answers, and it depends on the job.\n\nA phone is faster to shoot on, faster to post from, and it is already in your hand. For one video, filmed and cut in the same hour, it is the shorter route.\n\nA laptop earns its place when the timeline gets long, when there are many clips to line up, when you need to trim precisely at the start and end of a word, and when you are handling several videos in one sitting. Anything you have to do accurately and repeatedly is easier with a bigger screen and a keyboard.\n\nPick per job, not by loyalty. Rico in Davao films on his phone at the client's shop, dumps everything onto his laptop that evening, and cuts the whole batch there. That is one workflow, not two.\n\n## The order that stops rework\n\nWasted hours in an edit come from doing a later step before an earlier one has settled. Work in this order:\n\n1. **Select.** Watch through and mark the takes you will use. Nothing else.\n2. **Assemble.** Lay the story out in order, rough and too long.\n3. **Cut the dead air.** The ruthless pass from chapter two.\n4. **Pace.** Fix where it drags and where it rushes.\n5. **Visuals.** Cutaways, inserts, punch-ins, and any colour work.\n6. **Text.** Captions and anything else on screen.\n7. **Sound.** Voice level, music under it, silence where it helps.\n8. **Export.**\n\nThe cut is locked between step four and step five. After the lock, timings stop moving.\n\nCaptioning or colouring before that point is work you will do twice. Marilou times a full set of captions to a forty-five second edit, then the client asks her to drop a section from the middle. Every caption after that point now sits in the wrong place, and she spends her evening retyping instead of finishing. She did careful work in the wrong order.\n\nIf a client approves cuts, ask for that approval at the lock, not at the end.\n\n## Build the project once\n\nSet a project up the way you want it, then reuse it:\n\n- The vertical frame you shoot in, the tall 9 by 16 shape from chapter one, so nothing has to be reframed at the end.\n- A caption style you have already tested on a phone: typeface, size, colour, and whatever you use to keep it readable over moving footage.\n- Placement guides, so text stays clear of the top and bottom bands the interface sits over.\n- An export setting you have already checked, so exporting is one action and not a decision.\n\nSave it as a template. Every job that starts from it begins with those four decisions already made, and every video you deliver looks like it came from the same person.\n\n## When the device fills up or slows down\n\nStorage runs out mid-batch, which always feels like an emergency and never is. Keep only the current job's footage on the working device, and move finished jobs off it the same week. If the editor starts lagging, export what you have as a checkpoint, close everything else, and carry on from there.\n\nDo not delete originals to make room. Move them.\n\n## Do this now\n\nOpen the last project you finished. Write down the order you actually worked in. Mark the first place you did a later step before an earlier one had settled. That is the hour you lost.\n"
+        },
+        {
+          "slug": "batching-a-week",
+          "title": "Batching a week",
+          "duration_minutes": 8,
+          "content_mdx": "# Batching a week\n\nAn edit batch is not the same animal as a content batch. The general case for batching a week belongs to AI Social Media Management and is not repeated here. This lesson is the video-specific part: what the blocks are, what order they go in, and where a batch actually breaks.\n\n## The assembly line\n\nA batch is not \"do ten videos today\". It is \"do one stage of ten videos, then do the next stage\".\n\nThe blocks, in order:\n\n1. **Film everything.** One session, one setup, every video you need. The light does not change, the shirt does not change, the phone does not move, so the videos already look like a set before you touch the timeline.\n2. **Dump and label.** Every file into one named folder. This is also where you find out something is unusable, and finding out now is the whole reason this block sits second.\n3. **Rough cut all of them.** Select, assemble, strip the dead air, then stop. Do not pause to caption the good one.\n4. **Pace and lock all of them.** One pass for where each video drags and where it rushes. When you close this block the timings stop moving, on every video in the batch. Nothing goes on top of a cut that is still shifting.\n5. **Visuals on all of them.** Cutaways, inserts and punch-ins, one video after another, drawing on the same b-roll folder.\n6. **Caption all of them.** One style, one correction pass, video after video.\n7. **Sound on all of them.** Voice level set, music under it, silence where it earns a place.\n8. **Export and check all of them.**\n\nEach block uses the same part of your brain and the same part of the software. Captioning the ninth video is fast because your hands already know the operation, not because you are rushing it.\n\n## Build once, reuse for a year\n\nThe things worth making once and never making again:\n\n- A caption style, saved.\n- An opening and closing treatment, if the client wants one.\n- A name plate for whoever is talking.\n- A shot list you can hand to a client so they film something usable.\n- A bank of opening lines that worked, kept in a note.\n- The review checklist from the next lesson.\n\nThe template is an asset, and it improves by use. After each batch, fix the one thing that annoyed you all afternoon and put the fix back into the template. The next batch starts from the better version.\n\n## Decide the quality bar before you start\n\nA daily post for your own account and a paid deliverable for a clinic in Makati are not the same job, and pretending they are is how an afternoon disappears.\n\nFor your own account, the bar is: it says the one thing, it is readable on mute, you are not embarrassed by it.\n\nFor a client deliverable, the bar also includes their name spelled correctly, any price or claim confirmed with them in writing, captions corrected word by word, and a file you would be content to see played on a large screen in their office.\n\nSet the bar before the first cut. Otherwise you will give a throwaway video client-grade attention and run out of afternoon before the paid work.\n\n## Ask for the right raw material\n\nNothing wastes a batch like footage you cannot use. Before you agree to a delivery date, ask the client for:\n\n- footage filmed vertical, held upright\n- the raw files, not versions already squeezed down by a chat app\n- a second take of any line that matters\n- correct spellings of names, places and products\n- anything that must not appear on camera: a face, a receipt, an address, a screen\n- anything they have already promised the video will say\n\nWhen footage arrives unusable, say so immediately and specifically. \"The voice on clips 3 and 7 is buried under aircon noise and cannot be rescued in the edit. I need those two lines refilmed, phone closer to you, same shirt.\" That is a message Angelo's client can act on today. Discovering it at the end of the batch and quietly delivering eight of the ten is worse for everybody.\n\n## Perfectionism is the bottleneck\n\nThe thing that actually stops a batch is not skill. It is the fourth pass over a caption timing nobody will notice. Give yourself a stopping rule: when a video passes the review pass in the next lesson, it ships.\n\n## The honest limit\n\nBatching has a cost, and it is sameness. If every video opens with the same card, the same caption style and the same music bed, the set turns into wallpaper and the client starts saying the videos all feel alike. They are right. Change one element on purpose each batch, and keep the rest fixed.\n\n## An afternoon, as blocks\n\nNot a schedule in minutes, because your footage and your device are not mine. An order:\n\n- Block one: dump, label, and watch everything once, marking the usable takes.\n- Block two: rough cut all of them.\n- Block three: pace all of them, and lock every cut before anything goes on top.\n- Block four: cutaways, inserts and punch-ins on all of them.\n- Block five: captions on all of them.\n- Block six: sound on all of them.\n- Block seven: export, review pass, deliver.\n\nTake your breaks between blocks, never inside them. Leaving a block half done is the same as not batching at all.\n\n## Do this now\n\nTake the next three videos you owe anybody. Do block one on all three before you start block two. Note where you were tempted to break out and finish one.\n"
+        },
+        {
+          "slug": "the-review-pass-and-shipping-it",
+          "title": "The review pass, and shipping it",
+          "duration_minutes": 9,
+          "content_mdx": "# The review pass, and shipping it\n\nYou stopped seeing this video an hour ago. You know what every line says before it is said, your ear has stopped hearing the music, and the caption missing a letter has been in front of you so long that it now looks correct.\n\nSo the review cannot be a feeling. It has to be a checklist you run the same way every time, on a phone, held where you normally hold a phone.\n\n## The pass\n\n**One. Sound off, whole video.** Can you follow it end to end? Anything you cannot follow on mute is broken for a viewer in a jeep, in a queue at the bank, in an office, or in bed beside someone who is asleep.\n\n**Two. Sound on, volume low.** Is the voice clear at a volume you would actually use in public? Does the music make you want to reach for the volume button? If it does, the music is too loud, not the voice too soft.\n\n**Three. The opening on its own.** Play only the start, then stop. Does it offer something, or does it warm up?\n\n**Four. Captions against the audio, line by line.** Names, brands, places, numbers, and every Taglish line. Auto-generated text is a draft, and this is where the draft gets corrected.\n\n**Five. The frame check.** Everything that has to be read sits in the middle band, clear of the top and bottom, where the interface sits over the video. Do not judge this on a laptop. Upload it as a draft or an unlisted post and look at it there, because that is the only place the real overlay appears.\n\n**Six. The stranger pass.** Watch it once as somebody who has never seen the footage, does not know the client, and did not sit through the shoot. If you cannot say in one sentence what the video told you, go back to the sentence you wrote before the edit and cut whatever stopped serving it.\n\n## Export as an arrangement, not as numbers\n\nDo not memorise settings. Hold the shape instead:\n\n- Keep the vertical frame you shot and edited for. Do not let an export setting reframe it.\n- Export at the best quality your device offers rather than a squeezed version, so that whatever compression happens on the way in is happening once and not twice. If the file is then too large to send on the connection you have, re-export smaller rather than sending the squeezed original, and check what the destination itself says about size on the day.\n- Keep the master file. That is what a future recut and a second destination come from.\n- Open the exported file and watch it before you send it. Exports fail quietly: a missing audio track, a caption layer that did not render, a black second at the end.\n\nWhere a destination publishes a current specification, look it up at the source on the day you deliver and write the date next to it, the same habit Canva and Visual Content builds for placements.\n\nThe export failure this course cares about is the plainest one: the file is too big to send. You finish at midnight, the upload stalls on mobile data partway through, and the delivery is due before you find wifi. Two habits stop it. Check the file size before you leave the laptop, on the same evening you export, not in the morning on the road. And keep a second, smaller export of anything you have to send over a phone connection, made from the same master rather than from the file the chat app already squeezed, so the version that goes out is one you compressed on purpose.\n\n## Delivering to a client\n\nSend the file itself, or a link that does not expire and does not need an access request. Name it so it survives their downloads folder: client, subject, date, version.\n\nThen ask for feedback in a form you can act on. \"Let me know what you think\" produces \"make it pop\". Ask instead: \"If something is off, tell me the second it happens and what you expected there.\" Bea now gets replies like \"at 0:11 I thought the price was going to show\" instead of a mood, and that is a short fix rather than a guess.\n\n## One edit, several destinations\n\nDuplicate the project. Do not rebuild the cut.\n\nWhat genuinely changes between destinations is where the interface covers the frame, which may mean moving a text element, and sometimes the ending, if one destination expects a card the other does not. The cut, the captions and the mix survive intact. Check each version on a real phone, in the place it is going, before it goes.\n\n## After it posts\n\nWhatever numbers your account shows you, read them with modesty. They can tell you that something happened. They cannot tell you why, and they cannot separate the opening from the subject from the day you posted.\n\nSo do the thing an editor can actually do: change one thing per batch. This batch, a different opening treatment. Next batch, tighter captions. If you change five things at once you learn nothing, and you will spend the following month arguing with yourself about which one worked.\n"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Joy has captioned and styled a thirty second edit for a dermatology clinic. The client comes back asking for eight seconds added at the front, a shot of the receptionist that was not in the rough cut. What is the fix that stops this happening again?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Keep all the captions in one long block so nothing needs retiming when a section moves."
+            },
+            {
+              "id": "b",
+              "text": "Lock the cut before captioning, so text is only timed against a timeline that is final."
+            },
+            {
+              "id": "c",
+              "text": "Ask the client to sign off on the cut and the captions together in a single review pass."
+            },
+            {
+              "id": "d",
+              "text": "Rebuild the captions after every change and treat the retyping as normal client work."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "production_workflow",
+          "explanation": "Captions are timed to a timeline. Move the timeline, by cutting time out of it or by dropping time into it, and every timing after that point breaks. That is why the cut is locked before text goes on: select, assemble, cut the dead air, pace, lock, and only then caption. Approving both at once sounds efficient but just moves the same problem later, and one long caption block is unreadable on a phone."
+        },
+        {
+          "prompt": "Precious agreed to deliver ten short videos from footage a dental lab in Iloilo sent over. Dumping and labelling the files, she finds three of the ten were filmed with the subject standing well back in a bare tiled room. What does she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Flag the three now with exactly what she needs refilmed, and keep the other seven moving."
+            },
+            {
+              "id": "b",
+              "text": "Push those three to the end of the batch and decide about them once the rest are done."
+            },
+            {
+              "id": "c",
+              "text": "Run noise reduction hard on the three and deliver them with a note that the audio was hard."
+            },
+            {
+              "id": "d",
+              "text": "Deliver the seven good ones and say nothing about the rest until the client asks."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "production_workflow",
+          "explanation": "The dump-and-label block exists to find this on day one, while a reshoot is still cheap. A voice recorded far away in a hard, echoing room was never captured, and no tool puts it back, so option c delivers something unusable with an excuse attached. Saying nothing costs you the client. Flag it specifically, name the shot and the fix, and let the other seven keep moving."
+        },
+        {
+          "prompt": "Nadine exports a video and watches it on her laptop. The price she added at the end sits low in the frame and reads perfectly. Uploaded and viewed on a phone, the app's own buttons and the account name cover it. What is the correct fix?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Export the video again at the highest quality available so the text renders more sharply on a phone screen."
+            },
+            {
+              "id": "b",
+              "text": "Shrink the price text on a phone until it fits into the gap below the interface buttons."
+            },
+            {
+              "id": "c",
+              "text": "Move the price into the middle band of the frame and check it again from a draft post on a phone."
+            },
+            {
+              "id": "d",
+              "text": "Leave it, since anyone interested in the price will pause the video and read it."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "platform_fluency",
+          "explanation": "The interface sits over the top and bottom of the frame, and it is not the same everywhere, so the check that settles it is the destination itself: post it privately or hold it as a draft and look at it there. Anything that has to be read belongs in the middle band. Shrinking text solves a layout problem by making it unreadable, and export quality has nothing to do with what is covering the frame."
+        },
+        {
+          "prompt": "Kim edits straight out of her phone's camera roll and deletes nothing. Three weeks later a client asks for a recut of an August video with one line removed. She cannot find the original clips among everything filmed since. What habit would have prevented this?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Exporting a second version of every finished video at the end of each shoot day."
+            },
+            {
+              "id": "b",
+              "text": "Deleting each clip once it is inside a finished video so the camera roll stays short."
+            },
+            {
+              "id": "c",
+              "text": "Keeping every edit project open on the phone until the client confirms the video."
+            },
+            {
+              "id": "d",
+              "text": "Copying each shoot into its own named, dated folder and keeping the originals."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "production_workflow",
+          "explanation": "A recut needs the source clips, and a camera roll is not storage, it is a queue. One named folder per shoot, originals untouched, turns a recut request into a short job instead of a reshoot. Deleting clips guarantees the reshoot. A second export is still a finished video and cannot be cut back into."
+        },
+        {
+          "prompt": "Gilbert has six videos to make for a laundry shop in Quezon City, all already filmed. He opens the first clip, cuts it, captions it, mixes it, exports it, then opens the second. By the fourth he is slow, and the captions no longer match the style he used on the first. What should he change about the way he is working?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Time each stage with a stopwatch so he can see which part is costing him the afternoon."
+            },
+            {
+              "id": "b",
+              "text": "Work in passes across all six: rough cut every one, then caption every one, then mix."
+            },
+            {
+              "id": "c",
+              "text": "Edit the three strongest videos properly and give the last three a lighter treatment."
+            },
+            {
+              "id": "d",
+              "text": "Split the six over two days so he comes to the second half of the batch fresh."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "production_workflow",
+          "explanation": "Doing one stage across every video beats doing every stage on one video. The caption drift is the giveaway: a style saved once and applied in a single captioning block cannot drift. Splitting across two days keeps the switching cost and adds a second setup. Downgrading three videos is a quality decision made by exhaustion."
+        },
+        {
+          "prompt": "Divine finished a vertical video for a client's account and is now asked for a version for a second destination as well. She still has the project file and the master export. What is the right approach?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Recut the video from the original clips so the second version is built for that destination."
+            },
+            {
+              "id": "b",
+              "text": "Upload the same export to both, after checking it once on a phone, since the cut and the mix are identical either way."
+            },
+            {
+              "id": "c",
+              "text": "Ask the client which destination matters more, and deliver only that one properly."
+            },
+            {
+              "id": "d",
+              "text": "Duplicate the project, check the second place on a phone, and move only what is covered."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "platform_fluency",
+          "explanation": "The cut, the captions and the mix carry over. What changes between destinations is where the interface covers the frame, and sometimes the ending. Duplicating the project and adjusting placement is the small job; recutting from the clips is the same work twice. And one check does not cover two destinations, because the thing that differs between them is what each one puts on top of the frame."
+        },
+        {
+          "prompt": "Ana has used one template for a client's videos since she started: same opening card, same caption style, same music bed. The client says the videos are starting to blur into each other. What is the right response?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Change one part of the template, such as the opening treatment, and keep the rest fixed."
+            },
+            {
+              "id": "b",
+              "text": "Drop the template completely and build every video from scratch so no two of them look alike."
+            },
+            {
+              "id": "c",
+              "text": "Explain that a consistent look is the whole point of a template and change nothing."
+            },
+            {
+              "id": "d",
+              "text": "Add more motion, effects and transitions to each video so the edits stand out more."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "visual_craft",
+          "explanation": "The client is describing the real cost of batching. The template is still what makes an afternoon possible, so you do not throw it away. You retire one element at a time and keep the rest, which preserves both the speed and the family resemblance. Piling on effects changes the surface without changing the sameness."
+        },
+        {
+          "prompt": "On the stranger pass, Rolly watches his own edit for a car wash as if he had never seen the footage. It is clean, well cut and fully captioned, but by the end he cannot say in one sentence what it actually told him. What does the review pass require him to do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Add a title card at the top announcing what the video is going to be about."
+            },
+            {
+              "id": "b",
+              "text": "Record a closing line that summarises the video so the point is clearly stated at the end."
+            },
+            {
+              "id": "c",
+              "text": "Return to the one sentence he wrote before the edit and cut whatever drifted away from it."
+            },
+            {
+              "id": "d",
+              "text": "Accept it, since a clean and well-captioned edit is what the client asked him for."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "message_craft",
+          "explanation": "A technically clean video that says nothing is still a failed video, and the stranger pass exists to catch exactly that. The fix is not more material bolted onto either end. It is the one sentence the video was meant to make, used as a knife on everything that drifted away from it during the edit."
+        }
+      ]
+    }
+  ],
+  "assignment": {
+    "title": "One video, argued cut by cut",
+    "brief_mdx": "Pick footage you are allowed to use. Your own phone footage is best. Footage a client, a friend or a family business handed you, with their permission, is fine. Do not use a clip you pulled off somebody else's feed.\n\nCut one vertical video of roughly twenty to sixty seconds out of it. Publish it somewhere a reviewer can watch it, unlisted or public, and paste the link in the link field. Open that link yourself in a private browser window before you submit. A reviewer with no account has to be able to press play, and a link that asks them to request access is a failed submission.\n\nThe video is not marked on gear, on subject or on polish. It is marked on whether it holds up with the sound off, and on whether you can defend what you did to it. The write-up is the graded part.\n\n**Do this before you open the timeline.** Write one sentence saying the one thing this video is making. Put it in a note or on paper. Submit that sentence exactly as you wrote it, even if the finished edit drifted away from it. If it drifted, say so and say where.\n\n**What you write: roughly 800 to 1,000 words, in eight parts.**\n\n1. **The one sentence, and the footage.** Your sentence, unchanged. Then two lines on what you were working with: what you shot or were given, how much of it there was, and who gave you permission to use it.\n\n2. **The opening.** Name three things, one line each: the first frame, the first words, and the first motion. Then name one opening you rejected, which has to be a real alternative that existed in your footage, another frame or an earlier line, and say what made you drop it. \"I started where the clip started\" is not an answer. If your video opens on a greeting, a logo or a wide shot of nothing, go back and recut it before you write this section.\n\n3. **Three cuts, argued.** For each one: where it sits, what is on either side of it, and why it belongs there instead of a second earlier or a second later. Then name one place you deliberately did not cut, and say what that pause or that long take is doing. Arguments, not descriptions. \"I took out the um\" describes. \"I kept the beat before the number because the number needs somewhere to land\" argues. Two of your three should be doing different jobs, so do not submit three trims of dead air.\n\n4. **One thing you showed instead of said.** Name the moment, and what you put on screen: a cutaway, an insert of the hands, a screen recording, a punch-in on the same take, a still, a mark pointing at the part that matters. Then write out the talking-head version you would have been stuck with, so the reviewer can see what the picture bought you.\n\n5. **Captions and text.** Quote at least two corrections you made to auto-generated text: what the tool wrote, and what it should have said. Names, brands, place names, Taglish lines and numbers are where they usually go wrong. Then your placement: where the text sits, why it sits there, how you kept anything that carries meaning clear of the bands the interface covers at the top and bottom of the frame, and how you checked that. If you used on-screen text that is not a caption, name the job it is doing that no shot could do.\n\n6. **The audio.** What the voice and the music are doing relative to each other, and one place where silence is doing work. Then the music: name where it came from, and say how you satisfied yourself you were allowed to use it in this video, meaning what you read, where you read it, and the date you checked. Do not write that a track is free. Do not write what a library or a platform allows. Name the source and name the check you ran on it. If your video has no music, say so and describe the voice and room sound instead.\n\n7. **The setup you worked in.** Where the files live and how they are named, phone or laptop for this job and the reason it was the right one here, the order you actually worked in from picking the usable takes through to export, and what you have now saved so the next video starts further along: a caption style, a text treatment, a checklist, an export setting. Write it so another editor could run your order tomorrow without asking you a question.\n\n8. **The review pass.** The checks you ran on the finished file, and one thing the pass caught, with what you changed because of it. \"It caught nothing\" is not an answer. If your pass caught nothing, run it again on a phone, held at arm's length, with the sound off, then once more at low volume, and watch it as somebody who has never seen the footage.\n\n**Two rules for the write-up.**\n\nDo not state a platform's behaviour as fact. No length limits, no required aspect ratio or resolution, no safe-zone measurements, nothing about how a recommendation system treats a sound, a watermark or a repost, and nothing about what any music library permits. Where a decision you made depended on one of those, name where you looked it up and when you looked. Naming the source and the date is what is being marked, not the figure.\n\nNo invented numbers. Do not tell the reviewer what share of viewers watch on mute, when a view is counted, or how long anything took you in minutes. Describe what you did and why you did it.",
+    "criteria": [
+      "The link opens and plays for a reviewer with no account, the video is vertical and roughly twenty to sixty seconds long, and the write-up contains all eight numbered parts",
+      "Watched end to end with the sound off, the video is followable: captions match what is said, they stay readable on a phone held at arm's length, and nothing carrying meaning sits under the bands the interface covers at the top and bottom",
+      "The video does not open on a greeting, a logo or a wide shot of nothing, and the write-up names the first frame, the first words and the first motion plus one rejected opening that genuinely existed in the footage",
+      "The one sentence was written before the edit and is the idea the finished video actually delivers, or the learner states plainly where it drifted and why",
+      "The three cuts are argued rather than described, each giving a reason the cut belongs at that point rather than a second either side, and one deliberate non-cut is named with what the held pause is doing",
+      "The music source is named with what the learner read and the date they checked it, rather than an assertion that a track is free, and no invented statistic, platform mechanic or licensing claim appears anywhere in the write-up"
+    ],
+    "min_words": 700
+  }
+}

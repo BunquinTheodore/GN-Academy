@@ -1,0 +1,1065 @@
+{
+  "slug": "resume-portfolio-and-job-hunting",
+  "title": "Resume, Portfolio and Job Hunting",
+  "subtitle": "Show the work, not the adjectives",
+  "level": "foundation",
+  "category": "Careers",
+  "format": "Self-paced online",
+  "summary": "A free course on making what you can do visible to somebody who is skimming. Nine lessons on a resume that survives a fast first pass, a portfolio that shows finished work instead of claiming it, an application that is not the paragraph everyone else sent, and honest answers about a gap, a credential or a rate. Written for people applying to Philippine employers and to overseas remote roles, and the exam at the end issues a verifiable certificate.",
+  "description": "Being right for the job is not what gets you read. Somewhere between your inbox and a shortlist there is a person moving fast through a pile, looking for a reason to keep you in, and your application either gives them one in the first few lines or it does not. This course is about that moment and everything that has to be true before it. You build an evidence inventory of work you have actually finished, turn it into a one page resume ordered for a skimmer, assemble a small portfolio with a case note under each piece, and write applications that prove you read the ad. Then the parts people avoid: what to say about a gap, how to state a credential so it means something, how to answer the expected pay question for a local job and for an overseas remote role, when a test task is a fair sample and when it is free work, and how to follow up without pestering. Philippine context throughout, including what changes when the employer is not in the country. No invented statistics about recruiters, no promises about callbacks, and nothing you cannot check for yourself.",
+  "skills": [
+    "Evidence inventory",
+    "Resume structure and editing",
+    "Portfolio case notes",
+    "Targeted applications",
+    "Talking about gaps and credentials",
+    "Pay and test task conversations",
+    "Follow up and pipeline habits"
+  ],
+  "outcomes": [
+    "Turn duties you performed into evidence a stranger can check",
+    "Write a one page resume ordered for somebody reading fast",
+    "Assemble a portfolio that shows finished work, including when the work is confidential",
+    "Send an application that could only have been written for that role, and explain a gap or a credential in one honest line",
+    "Handle the expected pay question, an unpaid test task and the follow up without underselling or overpromising"
+  ],
+  "roles": [
+    "Students and fresh graduates",
+    "Jobseekers and career shifters",
+    "Virtual assistants",
+    "Freelancers applying to remote roles"
+  ],
+  "price_php": null,
+  "is_free": true,
+  "passing_score": 70,
+  "credential_prefix": "RPJ",
+  "sort_order": -4,
+  "requires_assignment": false,
+  "modules": [
+    {
+      "slug": "chapter-1-what-the-person-reading-you-is-doing",
+      "title": "What the person reading you is actually doing",
+      "description": "Before you write a word: how an application gets filtered, what counts as evidence rather than assertion, and which role you are actually aiming at. Every later decision comes from this chapter.",
+      "lessons": [
+        {
+          "slug": "how-your-application-gets-filtered",
+          "title": "How your application gets filtered",
+          "content_mdx": "# How your application gets filtered\n\nRiza screens hiring for a logistics company in Mandaue. One opening for an admin assistant, one folder of applications, and an hour before her next meeting. She is not going to read them. She is going to sort them.\n\nHold that distinction, because the rest of this course comes out of it. On a first pass nobody is deciding whether you are good. They are reducing a pile to something small enough to read properly, and the fastest way to reduce a pile is to look for a reason to set an application aside.\n\n## Sorting is not evaluating\n\nA sorting pass has a rough shape. A look at the top of the document, where your name and what you do should be. A quick check that you are plausibly for this role and not for some other one. Then a hunt for anything specific enough that it is still in her head when she reaches the bottom of the folder.\n\nIf nothing in your application survives that third step, you were not rejected. You were just not retained. Nobody made a judgement about you. There was nothing to hold onto.\n\nSkill is not what the first pass is looking at, because Riza cannot see your skill. She can only see what you wrote down, and what you wrote down was \"hardworking, fast learner, willing to be trained\", which is also what the applications underneath yours say.\n\n## Two different rooms\n\n**A Philippine employer, reached through a job site or by email.** Assume the person opening your file is an HR generalist screening against a posting somebody else handed them. They are checking fit against that posting. Your job is to make the fit obvious rather than leaving them to construct it.\n\n**An overseas remote posting.** Assume the reader is the person who would manage you, doing this between their own deliverables, working through replies that look near identical because they were written from the same template by people who never opened the posting. Nothing about you can be assumed. Not your school, not the company on your last line, not the fact that a certain firm in Ortigas is a serious place to have worked. Everything has to be legible on its own.\n\nThe documents you build for these two rooms are mostly the same. What changes is how much you have to spell out.\n\n## The software in front of some employers\n\nSome employers use software that receives, stores, sorts and searches applications. That much is true and worth knowing.\n\nHere is what this course will not tell you, because nobody writing a lesson can know it: which product a given employer uses, whether it scores you, whether it rejects a file type, what a recruiter typed into its search box, or which layout survives a machine. Anybody selling you a guarantee about that is selling you a guess with a price on it.\n\nWhat does survive being challenged is cheap, and none of it costs you anything:\n\n- Plain structure. Ordinary headings, one readable column, no maze.\n- The employer's own words for work you have genuinely done. If the ad says billing reconciliation and you did billing reconciliation, write billing reconciliation instead of the synonym you prefer. This is not keyword stuffing. Stuffing in terms you cannot back is the version that fails, and it fails in the interview, in front of somebody who asks.\n- A file that opens on a stranger's machine, named with your name and the role.\n- A link that opens without a request for access.\n\n## The working rule\n\nYour job on the first pass is not to be impressive. It is to be legible and specific, fast.\n\nLegible means the reader can tell from the top few lines who you are and what you are for. Specific means there is at least one thing in there that could not have been written by anybody else applying to that job.\n\nTest your own. Cover your name and read the top few lines of the resume you have now. If they would sit just as comfortably on the resume of the person at the next desk, they are doing nothing for you. Not because they are false. Because they do not distinguish.\n\nEverything in the next two lessons exists to give you something true and specific to put up there. Lesson two is where you go and find it.",
+          "duration_minutes": 7
+        },
+        {
+          "slug": "your-evidence-inventory",
+          "title": "The evidence inventory",
+          "content_mdx": "# The evidence inventory\n\nBefore the resume, before the portfolio, before you answer a single posting, you open a blank file and spend an evening on this. Both documents are edits of it. Skip it and you will spend the next month rewriting adjectives and wondering why nothing lands.\n\n## Everything you have finished\n\nList it all, paid and unpaid. Jobs. Freelance gigs. School projects. Org work. The sari-sari store whose notebook you kept for your aunt. The parish page you ran for two years. The thesis whose data you cleaned. The despedida you coordinated because nobody else would.\n\nDo not filter yet. Filtering is a later pass, and doing it now costs you the entries you have already talked yourself out of.\n\n## Four columns\n\nFor every entry, fill in:\n\n1. **What the task was.** The situation, in one line.\n2. **What you personally did.** Not the team. You.\n3. **What changed because of it.** What was different afterwards.\n4. **What survives.** Something a stranger could actually look at.\n\nColumn four is what turns a list of memories into evidence, and it is the column everybody leaves blank.\n\n## Duty against delivery\n\nA duty is what the job description said. A delivery is what you produced.\n\n\"Handled customer inquiries\" is a duty. Every support agent in the country can write it, so it tells a reader nothing about you.\n\nHere is Kaye's delivery from the same job. She answered the shop's messages every morning so nothing sat overnight, and she wrote the standard replies for the questions that kept coming back, which the assistant who replaced her is still using. Column four: that reply file, and the message thread where the owner said the overnight backlog had stopped.\n\nSame job, same year, same person. One version is furniture. The other is something Riza from lesson one can hold onto.\n\nRun it on your own entries. Say what you did, then say what existed afterwards that did not exist before.\n\n## Numbers only when they are yours\n\nPut a number in only when you measured it yourself and could say where it came from if somebody asked. Kaye can say she cut the pending messages from around sixty a week to under ten, because she counted them every Friday. That is evidence. A figure you reverse-engineered so that it would sound bigger is a trap you set for yourself.\n\nAn inflated number is the one thing in your whole application that an interviewer can catch you on, and when it collapses it takes everything true in the same document down with it. That is a terrible trade for a figure that impressed nobody in the first place.\n\nIf you do not have the number, describe the change instead. \"Nothing was left unanswered overnight\" needs no arithmetic, and the owner who was there can confirm it.\n\n## Save it now, into one folder\n\nAccess disappears. Company email closes on your last day. Group chats get archived. The client redesigns the site. The page you managed gets handed to somebody who clears it out.\n\nMake one folder today and put in it: files you made and are allowed to keep, screenshots, links, the schedule you built, the report you wrote, the message where somebody said the work was good. Write the date and what each thing was for, because in eight months you will not remember.\n\nTwo rules while you do it. Take only what you are entitled to take, which is your own work and anything already public. Client lists, customer records and anything marked confidential stay where they are. Chapter two deals with how to show work you are not allowed to show, and taking it is not the answer.\n\nIf you are still in the job, ask now, while asking is easy. \"I would like to keep a copy of the tracker I built, for my own portfolio. Is that alright?\" That question is ordinary on the way out and awkward six months later.\n\n## The empty rows\n\nWhen you finish, some rows will be blank. A column four with nothing under it. A whole category with no entry at all.\n\nThat is not a verdict on you. It is a work list. If you want support roles and nothing survives that shows how you write to a customer, write one set of replies. If you want bookkeeping work and have nothing to show, offer to sort out one small set of books for someone you know, and keep the before and the after.\n\nThe inventory tells you what to go and make. Chapter two turns what is already in it into two documents.",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "the-role-you-are-aiming-at",
+          "title": "The role you are aiming at",
+          "content_mdx": "# The role you are aiming at\n\nApplying to everything is how you end up writing to nobody. The one-size application is not a shortcut. It is the thing that guarantees the reader finds nothing to hold onto, which is exactly the failure lesson one described.\n\nSo you pick first. Picking well takes one careful read of a real posting.\n\n## Take one posting apart\n\nOpen an ad you would genuinely apply to, and answer four questions in your notes.\n\n**What is the job, once the boilerplate is gone?** Skip the mission statement and the dynamic team. Read the duties. A posting titled Social Media Manager whose duties are answering customer messages, scheduling posts the marketing lead writes, and sending a weekly numbers report is a support and coordination job wearing a marketing title. Knowing that changes how you would answer it.\n\n**Which requirements are the job, and which are the wishlist?** The ones repeated in the duties and echoed in the title are the job. The long list at the bottom is where wishes accumulate. Missing an item from that list is not a wall. Missing the thing the job actually is, is.\n\n**What is the employer anxious about?** Somebody wrote that ad because they have a problem. Read the requirement lines as worries rather than rules. \"Must work with minimal supervision\" tells you that chasing people is on their mind. \"Attention to detail is a must\" tells you something went out wrong. Answer the worry and you are already ahead of the template replies.\n\n**Which inventory entry answers it?** Go back to your file from lesson two and find the entry that speaks to that worry. If nothing in there does, this may not be your posting today.\n\n## Two arrangements, not two versions of one\n\nA job with a Philippine employer and an overseas remote engagement are different arrangements. Be exact about this, because people compare them as though they were the same thing with different numbers on it.\n\nAn employee of a Philippine company sits inside an employment arrangement. The employer runs payroll, handles the government contributions and the withholding, and there is a set of statutory benefits attached to that status, thirteenth month pay among them, that a contract rate does not come with. What each of those currently amounts to is for DOLE and the agencies to say rather than a course, and somebody else is administering them for you.\n\nAn overseas remote engagement is usually a contract, and inside a contract you are on your own. The rate is the whole of the compensation. Your equipment, your electricity, your connection, the days you cannot work, your own registrations and tax obligations, all of it sits behind that one figure. Nobody is deducting anything on your behalf and nobody is filing anything for you.\n\nWhat each arrangement requires in law is not something to take from a course. Employment rules, contributions and tax obligations change, and each has an official source. DOLE, SSS, PhilHealth, Pag-IBIG and BIR publish what currently applies, and the contract itself is where you read what a client is offering. What you need from this lesson is the shape: a salaried offer and a contract rate are not the same kind of thing, and reading a contract as though it were an offer of employment is how people get surprised months later.\n\n## Where you actually stand\n\nBe honest about your position, because it decides where your hours go.\n\n**Entry.** No paid experience in this line yet. Your leverage is the finished work in your inventory and how plainly you answer the posting.\n\n**Already doing this.** You have delivered this exact work. Lead with it, name it in their words, and aim higher than you have been aiming.\n\n**Shifting in.** You have real experience in something adjacent. Your task is to carry the delivery across, not to explain why you left. Chapter two has the language for that.\n\nA stretch posting earns an application when you can answer the core of the job with evidence. It does not when all you can send is a plea. Twenty pleas take more of your week than four real applications and leave you with nothing at the end of it.\n\n## The pay question starts here\n\nNobody has asked you yet. But the moment you decide to apply, you have already accepted whatever that role pays, and the arrangement it sits inside decides what the number has to cover.\n\nSo note it now. For each posting you keep, write down whether it is employment or a contract, and whatever the ad says about pay. Chapter three is where you answer the question once it is asked, with a range and a basis. Building the number itself, upward from what your own work costs you to do, belongs to Freelancing Fundamentals rather than to this course, and it is a different exercise from answering an interviewer.",
+          "duration_minutes": 8
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Dennis has one resume he is proud of, and he has sent it unchanged to postings for admin assistant, HR assistant, virtual assistant and customer support. Three weeks in, nothing has come back. He asks a friend whether his resume is bad. What is the more useful diagnosis?",
+          "options": [
+            {
+              "id": "a",
+              "text": "As a document it is probably fine. Nothing in it was written for any one of those postings, so no reader found anything to hold onto."
+            },
+            {
+              "id": "b",
+              "text": "It is too thin for those roles, so he should add every job he has ever held and a longer summary until the page is properly filled."
+            },
+            {
+              "id": "c",
+              "text": "Three weeks is too early to read anything into silence, so the sensible move is to keep sending the same file out and wait for replies."
+            },
+            {
+              "id": "d",
+              "text": "The four roles are too different from one another, so he should choose one of them and send that same resume only to postings for it."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "finding_work",
+          "explanation": "Riza is sorting, not evaluating. A document written for nobody in particular gives a sorting pass nothing specific to retain, which is why silence follows. Option d is tempting because narrowing is genuinely part of the answer, but narrowing while sending the same unchanged file changes nothing about what the reader sees. Option b makes it worse, since more general material is only more to skim past. Option c is comfortable because waiting requires no work, and it costs Dennis another three weeks of the same result."
+        },
+        {
+          "prompt": "A posting for a bookkeeping assistant in Iloilo lists five duties Charmaine has done for two years. A requirements list at the bottom names an accounting system she has never opened. She decides not to apply at all. What is she getting wrong?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nothing. Applying without every listed requirement wastes the employer's time and her own on a role she was never going to be given."
+            },
+            {
+              "id": "b",
+              "text": "The requirements list is decoration, so she can put the system on her resume and teach herself enough about it before anybody asks."
+            },
+            {
+              "id": "c",
+              "text": "The system sits on a wishlist under duties she has actually performed, so the core of the job is answered and the application is worth sending."
+            },
+            {
+              "id": "d",
+              "text": "She should apply only after teaching herself that system first, since the requirements list is where the employer says what it will test her on."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "finding_work",
+          "explanation": "The requirements repeated in the duties are the job. A long list at the bottom is where wishes accumulate, and treating a wishlist item as a hard bar is how people rule themselves out of work they can do. Option a feels responsible and considerate, which is exactly what makes it dangerous. Option b takes the opposite wrong turn, and claiming a system you cannot use gets found out in the interview or in the first week, which puts every true line on the same resume in doubt. Option d is the patient version of the same error: an evening spent on a wishlist item is an evening not spent answering the duties she has already done, and the posting gets filled while she studies."
+        },
+        {
+          "prompt": "Nica ran the online orders for her cousin's milk tea shop for a year. She is choosing which inventory entry goes near the top of her resume for a customer support role. Which one belongs up there?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Managed all customer communications and daily operations for a growing food business, which covers the widest part of what she did."
+            },
+            {
+              "id": "b",
+              "text": "Wrote the order and refund replies the shop still uses today, saved as a file of her own text that a stranger can open and read."
+            },
+            {
+              "id": "c",
+              "text": "Trusted by the owner with complete responsibility for the shop's online presence, which shows how much she was relied on there."
+            },
+            {
+              "id": "d",
+              "text": "Helped the business grow its online sales through a difficult year, which sets her contribution against the shop's overall result."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "finding_work",
+          "explanation": "Column four of the inventory is the test: something survives that a stranger could look at. The reply file is checkable, is unmistakably hers, and is the exact work a support employer is hiring for. The other three are tempting because each one is true and each one sounds bigger. They are also unfalsifiable, so a reader has no way to weigh them and nothing to remember. Options a and c describe scope, while option d borrows credit from a result she cannot separate her own work from."
+        },
+        {
+          "prompt": "Arjun's tito tells him applications are thrown out by software unless the resume is ATS-optimised, and offers to sell him a template that is guaranteed to pass. Arjun's resume is a plain one-page document with clear headings. What should he do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Buy the template, because a guarantee about software he cannot see the workings of is worth paying somebody who does see them."
+            },
+            {
+              "id": "b",
+              "text": "Rebuild it as a two-column design with a graphic skills chart, so that a human reader is more likely to stop and look at it."
+            },
+            {
+              "id": "c",
+              "text": "Rewrite every bullet in the ad's own phrasing, including three duties he has not performed, so the wording matches all the way down."
+            },
+            {
+              "id": "d",
+              "text": "Keep the plain page, use the employer's own words for work he has really done, and check that the file opens on another machine."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "finding_work",
+          "explanation": "Software does sit in front of some employers, and that is the honest end of what anybody can tell you. Which product, whether it scores, what a recruiter searched for and which layout survives are not knowable from outside, so a guarantee is a guess with a price on it. Option a is tempting because certainty is worth money when you feel blind. Option b is a real trade-off, though a heavy layout is harder to read either way. Option c is the one that sounds like the advice in this lesson and is not: their words go on work you have genuinely done, and three duties he has not performed are a claim somebody will ask him about."
+        },
+        {
+          "prompt": "Bianca is holding two things: an offer from a Manila company as a regular employee, and a posting from an overseas client for the same kind of work as an independent contractor at an hourly rate. She converts the hourly rate to a monthly figure, sees it is higher, and decides to take the contract. What is missing from her comparison?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nothing is missing. Converting the hourly rate into a monthly figure puts the two on the same footing, and the higher figure wins."
+            },
+            {
+              "id": "b",
+              "text": "A contract rate is the whole of her compensation and has to carry what an employer would otherwise administer, so the two do not compare."
+            },
+            {
+              "id": "c",
+              "text": "Overseas contracts pay better than local employment as a rule, so the only thing left for her to check is whether the client pays on time."
+            },
+            {
+              "id": "d",
+              "text": "Exchange rates move constantly, so she should hold off on the decision until the peso sits at a level that favours taking the contract."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "scoping_and_pricing",
+          "explanation": "An employment arrangement and a contract are different arrangements, not two versions of one. Inside employment, payroll, contributions and withholding are administered for her. Inside a contract the rate stands alone behind her equipment, her downtime and her own obligations, and what those obligations currently are is for BIR and the agencies to say rather than a course. Option a is the arithmetic everybody does, and it is arithmetic on two things that are not alike. Option c is a belief worth being suspicious of, and option d treats a real risk as the main question when the structure is the main question."
+        },
+        {
+          "prompt": "A posting is titled Social Media Manager. The duties under it are answering customer messages, scheduling posts the marketing lead writes, and sending a weekly numbers report. Rowena has done all three, in a support job. How should she read the posting?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The duties are the job and the title is packaging, so she applies against the duties using the support work that matches them."
+            },
+            {
+              "id": "b",
+              "text": "The title is the job, so she should build the application around campaign strategy and planning to look like a manager."
+            },
+            {
+              "id": "c",
+              "text": "The mismatch is a warning sign that the employer does not know what it wants, so the posting is better skipped for a clearer one."
+            },
+            {
+              "id": "d",
+              "text": "She should apply and ask in the interview which of the two it really is, keeping the application general until she has an answer."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "scoping_and_pricing",
+          "explanation": "Strip the boilerplate and the duties tell you what the work is. Rowena has done that work, and answering the duties is what makes her application legible. Option b is the common mistake, because writing to the title means claiming a job she has not done while ignoring the one she has. Option c throws away a role she is well matched to over a title that cost the employer nothing to write. Option d keeps the application vague on purpose, which is the failure from lesson one, and the interview only happens if the application survives the sort."
+        },
+        {
+          "prompt": "Ella ran her college org's Facebook page. She wants to put grew engagement by 45 percent on her resume. She never tracked it, and the figure came from somebody's guess in the group chat. What should she write instead?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Keep the figure but soften it to grew engagement by roughly 45 percent, so it reads as an honest estimate rather than a measurement."
+            },
+            {
+              "id": "b",
+              "text": "Drop the entry entirely, because unpaid college org work with no numbers behind it does not earn any space on a one-page resume."
+            },
+            {
+              "id": "c",
+              "text": "Write significantly grew the page's engagement, which makes exactly the same point without committing her to a number she cannot prove."
+            },
+            {
+              "id": "d",
+              "text": "Write what she did and what survives, which is the posting schedule she built and the three posts the page keeps pinned as examples."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "professional_communication",
+          "explanation": "An invented number is the one line an interviewer can catch you on, and when it falls it takes the true lines beside it down with it. Option a is tempting because rounding feels like honesty, but it is the same unsupported figure with a hedge in front of it. Option c is the phrase people reach for, and it trades a checkable claim for an adjective that a sorting reader skips. Option b throws away real evidence, since unpaid work counts and a schedule and a pinned post are things a stranger can open."
+        },
+        {
+          "prompt": "Beth has resigned and finishes in two weeks. The trackers, reports and templates she built over two years sit in her work email and on the company drive. She plans to sort out her portfolio next month, once the job hunt actually starts. What should she do before her last day?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Wait until the job hunt actually starts, then email her old manager and ask whether they can send over the trackers and reports she built."
+            },
+            {
+              "id": "b",
+              "text": "Ask her manager for a reference letter instead, which covers the same ground and raises no awkward question about company files at all."
+            },
+            {
+              "id": "c",
+              "text": "Save her own work that she is allowed to keep, ask about anything unclear while asking is still normal, and note what each file was for."
+            },
+            {
+              "id": "d",
+              "text": "Rely on describing the work from memory, since a resume carries the description anyway and none of this material was ever confidential."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "delivery_reliability",
+          "explanation": "Access ends on the last day, and asking afterwards is a favour rather than a routine question. The move is to save what is genuinely yours and to ask about the rest now, while asking reads as ordinary. Option a is the one people actually plan on, and it turns a routine question into a favour: her manager has a job of their own, no obligation, and no reason to spend an afternoon in a leaver's folders. Option b is worth doing as well, but a letter is somebody's opinion rather than the work itself. Option d assumes memory holds file names and details for eight months, and it does not."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-2-the-resume-and-the-portfolio",
+      "title": "The resume and the portfolio",
+      "description": "The two documents, built from the inventory. One page ordered for somebody reading fast, a small set of pieces that show finished work, and honest language for a gap, a shift or a credential.",
+      "lessons": [
+        {
+          "slug": "a-resume-that-survives-a-skim",
+          "title": "A resume that survives a skim",
+          "content_mdx": "# A resume that survives a skim\n\nJoan has four years of admin and purchasing work in Bacolod. Her resume opens with \"Objective: To secure a challenging position in a reputable company where I can maximise my potential and contribute to organisational growth.\" The line under it is her high school. Her best piece of work, rebuilding a supplier list nobody had cleaned in three years, sits on page two inside a paragraph.\n\nNothing about Joan is unqualified. She has put the reason to keep her where a fast reader will never find it.\n\nYour resume has one job: give somebody moving quickly something specific in the first few lines. What follows is how to arrange the inventory you built in chapter one so that happens.\n\n## The top of the page\n\nFour things, in this order.\n\nYour name. The role you are applying for, in the employer's own words: \"Accounts Assistant\" if that is what the ad says, not \"Aspiring Finance Professional\". A contact line that works, meaning a number you answer and an email address you would be happy to read aloud in an interview. Then two or three lines saying what you do and what you have done, written for this posting and rewritten for the next one.\n\nJoan's version: \"Admin and purchasing support, four years, hardware retail. Rebuilt the supplier list, ran the weekly reorder, closed the month with the bookkeeper.\" Not one adjective in it.\n\nCut the objective. It describes what you want. The reader is looking for what you have finished.\n\n## Bullets built the same way every time\n\nWhat you did, how, and what changed. Chapter one called that a delivery, and a resume bullet is a delivery cut down to one line.\n\nJoan's worst bullet: \"Responsible for supplier coordination.\" Her best: \"Rebuilt the supplier list, matching every item to a current price and a lead time, so the reorder stopped going out against prices from three years ago.\" Same job, same year. Only the second one is hers.\n\nExperience goes in reverse order, most recent first. Inside each job, relevance beats chronology: the bullet that answers this posting goes at the top of that job's list, not the one that happened most recently.\n\nNumbers follow the rule the inventory set. Only what you measured yourself, and only where you could say out loud where the figure came from.\n\n## The one page discipline\n\nOne page is not a rule handed down from anywhere. It is a constraint, and the reason to accept it is that it forces you to choose. The thing you want read first cannot be on the second page, because you do not control whether the second page is in front of the reader at all.\n\nCut in this order: the objective, adjectives with no evidence under them, tools you cannot open, seminars that changed nothing about what you can do, and duties that every other person with that job title also performed.\n\n## Use their words, honestly\n\nIf the ad says \"reconciliation\" and you called it checking the bank against the book, write reconciliation. That is translating, and it costs you nothing.\n\nIf the ad names a tool you have never opened, leave it out. That is not translating, that is a claim, and the claim gets tested in week one.\n\n## Photo, address, birthday\n\nRead the form in front of you rather than a rule somebody posted in a forum. Where a Philippine employer's ad or application form asks for a photo, a birthdate or a full home address, those fields are ordinary here and you fill them in. An overseas application may ask for none of them, and some employers strip personal details out of a file before a human reads it. No single rule carries between the two rooms, so do two things instead.\n\nGive exactly what the form in front of you asks for, and nothing beyond it. If a field is not there and the ad does not mention it, leaving it off costs you nothing at all.\n\nAnd keep the two documents apart. A full home address, a birthdate and a photo sitting on a file you are emailing to strangers is personal information travelling further than it needs to. City and province tell a local reader what they need about whether you can get to the office.\n\n## File hygiene, and what it is not\n\nChapter one said software sits in front of some employers, and that we are not going to tell you how it scores, because we do not know. So none of this is a promise. It is cheap insurance.\n\nName the file with your name and the role, so it survives being saved into a folder with forty others. Send something that opens on somebody else's machine. Keep it one column of readable text, because a two column layout with text boxes is a gamble you gain nothing from taking. Click every link in it yourself, from a browser you are not signed into.\n\n## The last pass\n\nRead your own resume as the person in chapter one: moving fast, sorting, looking for a reason to keep you.\n\nDelete every line that could have appeared on anybody else's resume for the same job. If deleting a line costs you nothing, that line was costing you attention.\n\nWhat survives is short, specific and yours. That is the document. Now do it again tomorrow for the next posting, because the top three lines change every time and the rest mostly does not.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "a-portfolio-that-shows-work",
+          "title": "A portfolio that shows work",
+          "content_mdx": "# A portfolio that shows work\n\nKim keeps the books for three small businesses in Davao. Asked for a portfolio, she sent a folder link. The hiring manager clicked it and got a screen asking her to request access. Kim saw the request two days later, approved it, and never heard back.\n\nThat is a portfolio failing before anybody looked at the work, and none of it was about the work.\n\nThe other one is a folder of screenshots with no explanation, which tells a stranger that something happened but not what you did.\n\n## An exhibit is a piece plus a note\n\nA portfolio is not a gallery. It is a small set of exhibits, and under each one sits a short note:\n\n- What the situation was.\n- What you were asked for.\n- What you did.\n- What happened after.\n- Which part was yours, if the work was shared.\n\nThat last line matters more than people expect. Looking at good shared work, a stranger cannot tell whether you led it or carried the folders. Saying so unprompted reads as confidence, not modesty.\n\nThree or four pieces with notes beat twenty without. The note is the part everybody skips, and it is the part that turns a screenshot into evidence.\n\n## When the work is not yours to show\n\nWork you did for an employer or a client is not automatically yours to publish. Four situations, one ladder.\n\n**Ask.** Message the client: \"I would like to show the reconciliation process I built for you in my portfolio, with your name and all figures removed. Is that all right?\" It costs you one message, and it is the only fully clean option there is.\n\n**Redact.** If they agree with conditions, or the work is yours but the details are not shareable, strip it. The client becomes \"a logistics company in Paranaque\". Real names come out. Order numbers and amounts are replaced with substitutes, and you say on the piece that they were substituted. Then flatten what you send to an image, or rebuild the sample fresh, so the thing you covered is not still sitting inside the file you handed over.\n\n**Show the method, not the material.** For confidential work, exhibit the process: the checklist you follow, the folder structure, the steps in your monthly close. A process document gives away nothing about the client and demonstrates more than a screenshot does.\n\n**Build a labelled sample.** No paid work yet, or nothing you can touch? Make something real for a business that exists, and label it a sample on the piece itself. A sample you announce is evidence. A sample you let somebody assume was paid work is a lie with a delay on it.\n\nTwo hard lines. Never show a client's confidential material to win a job, because the person you are showing it to is watching what you would do with theirs. And never present somebody else's work as yours. Whoever catches that will not tell you they caught it. You will simply not hear back, and you will think it was the market.\n\n## Portfolios for jobs nobody calls portfolio jobs\n\n- A bookkeeper shows a cleaned ledger with substituted figures and the reconciliation checklist beside it.\n- A support agent shows three written replies: a refund refusal, an apology, and a first response to somebody furious.\n- A virtual assistant shows a calendar system and a one page process document for the thing the client used to explain every week.\n- A writer shows the brief next to the finished piece, so the reader can see what was asked for.\n\nIf you did the work, an artefact exists. It is usually a document, and you probably deleted the last one. Start keeping them in one folder from today.\n\n## Where it lives\n\nAnywhere it opens.\n\nThe test is not which platform you chose. It is this: a stranger with no account, on a phone, taps your link and sees the work. No sign in, no request for access, no notification sent to you. Send the link to a friend and watch them open it while signed out of everything.\n\nOne more thing. Once that link is on a resume, it is permanent. Resumes get forwarded months later by people you never met. Do not reorganise your folders and break the only address a hiring manager has for your work.\n",
+          "duration_minutes": 7
+        },
+        {
+          "slug": "gaps-credentials-and-honest-framing",
+          "title": "Gaps, credentials and honest framing",
+          "content_mdx": "# Gaps, credentials and honest framing\n\nMarlon worked three years on a support account in Cubao, then left to care for his mother, who was ill for most of the following two years. He is applying again. Every draft of his application either invents a freelance business he never ran, or spends a full paragraph apologising.\n\nBoth are the same mistake. A gap is a fact, and facts get one line.\n\n## The gap line\n\nWhat the period was. What you did in it. Stop.\n\n\"From 2023 to 2025 I was my mother's full time carer. I took a bookkeeping course in the last six months of that and I am back working now.\"\n\nNo drama, no lesson about what the experience taught him, and no story that collapses the moment somebody asks one follow up question. Treat the gap question as a question mark to be closed rather than a trap to be survived. An unexplained two years is a question mark, and a question mark on a fast pass is a reason to move on.\n\nWhere it goes: the dates on your resume are honest, so they already show the gap. The one line belongs in the application message, or is said out loud in the conversation. It does not become a paragraph inside the resume, because that spends your best space explaining what you did not do.\n\n## Changing direction\n\nShifting from one kind of work to another, lead with the delivery that transfers, not with why you left.\n\nNobody hiring is interested in the manager you could not work with. They want to know whether the thing you are good at survives the move. \"Four years handling irate customers on a US account, now applying that to client onboarding\" is a sentence about them. \"I was burnt out and wanted a change\" is a sentence about you, and it opens a conversation you cannot win.\n\nNo paid experience yet? Say what you have built and finished, and let the portfolio carry the rest. Do not label yourself entry level in your first line and ask the reader to lower their expectations before they have read anything.\n\n## Stating a credential so it can be checked\n\nA certificate is worth exactly what the reader can check. State four things: what it is, who issued it, what it required, and how to verify it.\n\nA GN Academy credential is built for that. Each one carries a code, and the code resolves to a public page under `/verify` that anyone can open with no account. That page shows the holder's name, the certification, the date it was issued, whether it is active or revoked, and the competency scores from the assessment behind it. If you switch your public profile on, your page under `/talent` lists your credentials, each linking to its own verification page, alongside your headline, skills and portfolio pieces.\n\nSo write the line as: \"Resume, Portfolio and Job Hunting, GN Academy, code RPJ-2026-000123\", with the verification link printed on the certificate itself. A reader can check it without having to ask you for anything, which is the whole point.\n\nNow the part nobody enjoys. A credential is evidence that you were assessed. It is not evidence that you have done the work, and it does not entitle you to a rate. It sits beside the portfolio. It does not replace it. Put two applicants side by side holding the same credential, and the one with a finished piece of work attached has something the other does not.\n\nFor describing AI skills in particular, AI Essentials for Work has a lesson called Talking about your AI skills honestly. This one does not repeat it.\n\n## The five small lies\n\nEach of these is easy, common, and detonates exactly when the job becomes real.\n\n- **An inflated job title.** You were an admin assistant, not an operations manager. Reference checks are boring and specific.\n- **A tool you cannot use.** It gets tested in week one, in front of people.\n- **A stretched date.** You cover four blank months by extending a job. Now a payroll record disagrees with you.\n- **A number you cannot support.** \"Increased sales by 40 percent.\" How do you know that? Whose figure is it?\n- **A borrowed portfolio piece.** The one thing you can be asked to walk through, line by line, on a call.\n\nNone of these get caught dramatically. They get caught quietly, and the real cost is not the job you lose. It is that you never learn which of your applications died of it.\n\n## The tone for all of it\n\nState the fact. Offer the evidence. Do not apologise, and do not oversell.\n\nMarlon's line is not clever. It is true, delivered without flinching, and it takes one breath. That is what you are aiming for on every hard question in this process.\n",
+          "duration_minutes": 8
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Cheska is applying for an inventory clerk role at a warehouse in Cabuyao. Her proudest achievement is a fundraising drive she led for her college org that filled a gym. Her most relevant is six months covering stock counts at a hardware store, which she found dull. What belongs at the top of her resume?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The fundraising drive, because it is the strongest single result she has and it shows the initiative any employer wants."
+            },
+            {
+              "id": "b",
+              "text": "The stock counts, written as what she did and what changed, with the fundraising drive kept further down the page."
+            },
+            {
+              "id": "c",
+              "text": "Both of them, under a summary line presenting her as a versatile candidate who would suit a wide range of roles."
+            },
+            {
+              "id": "d",
+              "text": "The fundraising drive first, then the stock counts, so the reader meets the impressive item before the routine one."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "finding_work",
+          "explanation": "The reader is sorting for fit, not ranking achievements. Six months of stock counts is the thing that answers this posting, so it goes where a fast pass will hit it. The fundraising drive is genuinely her best work, which is exactly why it is tempting, and it still belongs lower down where it adds colour rather than confusion. The versatile summary is the write-to-nobody failure from chapter one. Leading with the impressive item treats the reader as an audience to win over, when they are a person deciding quickly whether she is plausibly for this job."
+        },
+        {
+          "prompt": "Ernesto has fifteen years behind him and a resume running to two and a half pages. He says he has already cut everything he can. What is left includes an objective paragraph, a list of eleven seminars he attended, and bullets such as 'Responsible for daily operations'. What is the honest next cut?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Shrink the font and the margins so that exactly the same content fits into two pages instead of two and a half."
+            },
+            {
+              "id": "b",
+              "text": "Accept the length, because fifteen real years will not fit on one page and cutting real experience is dishonest."
+            },
+            {
+              "id": "c",
+              "text": "Move the older roles into a second document he can send on request, leaving the last five years in the resume."
+            },
+            {
+              "id": "d",
+              "text": "Delete the objective, the seminar list, and every bullet that any other person with that job title could also write."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "professional_communication",
+          "explanation": "A duty bullet is a job title restated, so deleting it removes no information. The seminars and the objective describe attendance and intention rather than delivery. Shrinking the type is the most tempting option because nothing appears to be lost, but it cuts nothing and makes the page harder to skim. Accepting the length protects material that is not carrying any weight. Splitting into two documents makes the reader ask for the rest, which is a request a reader moving fast has no reason to send, so compress the older roles into one line instead."
+        },
+        {
+          "prompt": "A virtual assistant posting names a task management tool Hazel has opened exactly once, in a two hour trial. Everything else in the ad matches what she does daily. What goes in her skills section?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Leave that tool out, and name the tools she does run plus what she uses each one for, using the ad's own vocabulary."
+            },
+            {
+              "id": "b",
+              "text": "List the tool, since she has technically used it once and can work through tutorials before an interview comes up."
+            },
+            {
+              "id": "c",
+              "text": "List the tool with 'basic' written beside it, which is honest enough and keeps her from being filtered out too early on."
+            },
+            {
+              "id": "d",
+              "text": "Leave the skills section off entirely, since a list of tools proves nothing and her experience section carries her."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "delivery_reliability",
+          "explanation": "A tool on your resume is a promise about week one, and week one happens in front of people. The two hour trial is tempting because it is technically true, and technically true is what every caught claim was. Writing 'basic' feels like a hedge, but the reader takes it as can use it, and Hazel still cannot. Dropping the whole section over-corrects: the skills line is where the employer's own words legitimately belong, and losing it costs her the honest matches she does have."
+        },
+        {
+          "prompt": "Kim pastes a folder link into her resume and sends it to eleven employers over two weeks. She then opens the link in a signed out browser and gets a screen asking the viewer to request access. What should she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Wait for the access requests and approve each one fast, which also shows her which of the eleven actually looked."
+            },
+            {
+              "id": "b",
+              "text": "Leave it alone, because an employer who is genuinely interested will send a request and the request itself is a signal."
+            },
+            {
+              "id": "c",
+              "text": "Open the sharing on that same link so it stops asking for access, check it signed out, and keep the address she sent."
+            },
+            {
+              "id": "d",
+              "text": "Move the work to a new public link, then email all eleven employers a correction with the working address in it."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "delivery_reliability",
+          "explanation": "Fixing the permission at the same address repairs eleven resumes that are already out of her hands, which is why the signed out check matters more than the choice of platform. Waiting for requests looks like free information, but each one is a delay sitting in somebody else's inbox and a reader moving fast will not send one. Treating the obstacle as a filter for genuine interest is comforting and wrong. Moving to a new link is the right instinct with the wrong mechanism: it orphans every copy already sent, and the correction email arrives as an apology."
+        },
+        {
+          "prompt": "Arnel built a payroll tracker for a client in Iloilo. It is the best thing he has made. It holds real employee names and salaries, and his contract says the client's data is confidential. He wants it in his portfolio. What is the right move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Send it only when an employer asks for a sample, since a private message to one person is not the same as publishing."
+            },
+            {
+              "id": "b",
+              "text": "Ask the client for permission to show it with names and figures replaced, and exhibit the method instead if they refuse."
+            },
+            {
+              "id": "c",
+              "text": "Blur the names and the salary column in a screenshot, which hides the confidential part and leaves the real work visible."
+            },
+            {
+              "id": "d",
+              "text": "Describe it in a resume bullet and keep it out of the portfolio, since confidential work simply cannot be shown at all."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "professional_communication",
+          "explanation": "Asking costs one message and is the only fully clean route, and the fallback of showing his method gives away nothing. Sending it privately feels safer and is the usual version of this mistake: the contract does not care how many people saw it, and the employer is reading how he treats a client's data. Blurring is nearly right, but he still has not asked, and a blur laid over a live file can travel with the data underneath it. Refusing outright throws away two options he had."
+        },
+        {
+          "prompt": "Mikaela's portfolio is nineteen screenshots of social media graphics from her last job, posted as a grid with no text anywhere on the page. She is getting no replies to her applications. Which change is most likely to help?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Add more pieces to the grid, since nineteen is a thin body of work and a fuller page looks more like a professional's."
+            },
+            {
+              "id": "b",
+              "text": "Post the same grid on a second platform as well, so that more of the people reading her applications come across it."
+            },
+            {
+              "id": "c",
+              "text": "Replace the grid with a written list of every brand and campaign she worked on, which is much faster for a reader to scan."
+            },
+            {
+              "id": "d",
+              "text": "Cut it to four pieces and put a short note under each: the brief, what she did, and what happened after it went out."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "finding_work",
+          "explanation": "Nineteen screenshots prove that something happened and say nothing about what Mikaela did, so the note is the whole fix. Adding more is tempting because volume feels like proof, but more of the same carries no new information. A second platform spreads a piece that still says nothing. The written list is the trap worth naming: brand names read as impressive and are pure claim, since nobody can tell from a list which part of the work was hers."
+        },
+        {
+          "prompt": "Elaine was a teacher, then spent two years out of work during a family illness, and is now applying for a scheduling role. Her draft resume opens with a paragraph explaining the gap and why she left teaching. What should she do with that paragraph?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Cut it, open with what transfers from teaching, and keep one plain line about the gap for the message or the call."
+            },
+            {
+              "id": "b",
+              "text": "Keep it in the resume but move it to the bottom, so the reader meets her experience first and the explanation after."
+            },
+            {
+              "id": "c",
+              "text": "Cut it and let the dates speak for themselves, answering the gap question only if an interviewer raises it directly."
+            },
+            {
+              "id": "d",
+              "text": "Keep it but cut it to two sentences, since a gap left unexplained reads like something she is trying to hide."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "professional_communication",
+          "explanation": "The resume's space is for delivery, and the gap needs one line somewhere a person is actually reading sentences. Moving the paragraph to the bottom keeps the resume doing a job it should not be doing. Letting the dates speak is half right and the most defensible wrong answer: the dates are honest, but an unexplained two years is a question mark on a fast pass, and one line removes it cheaply. Two sentences still aim the reader's attention at the two years instead of at what Elaine can do."
+        },
+        {
+          "prompt": "Bernard was an admin assistant for two years, and in that job he also arranged deliveries and built the staff schedule. A friend tells him to write Operations Manager on his resume, because it describes the work better and admin assistant undersells him. What should Bernard do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Write Operations Manager, since job titles vary between companies anyway and his bullets underneath describe what he did."
+            },
+            {
+              "id": "b",
+              "text": "Write Admin Assistant moving into operations, which reflects the direction the role was going without misstating it."
+            },
+            {
+              "id": "c",
+              "text": "Keep Admin Assistant as the title and use the bullets to show the deliveries and the schedule he ran inside that job."
+            },
+            {
+              "id": "d",
+              "text": "Ask his old employer whether they would describe him as operations, and use whichever title they say they would give."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "finding_work",
+          "explanation": "The title is the one line on a resume that an employment record or a reference call can flatly contradict, and the work he actually did is safe in the bullets where it is checkable. Rewriting the title is tempting precisely because titles really are inconsistent between companies, which makes it feel like a translation rather than a claim. The hybrid smuggles in a promotion that did not happen. Asking the old employer is a good instinct badly aimed: an informal description does not change the record, and it puts them in an awkward position."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-3-applying-asking-and-following-through",
+      "title": "Applying, asking, and following through",
+      "description": "The documents are only the entry fee. What you send with them, how you handle the money question and a test task, and whether your behaviour during the process looks like somebody who delivers.",
+      "lessons": [
+        {
+          "slug": "the-application-nobody-else-sent",
+          "title": "The application nobody else sent",
+          "content_mdx": "# The application nobody else sent\n\nMarilou is applying for an admin assistant post at a dental clinic in Marikina. The ad says the clinic is moving its appointment book from paper to an online calendar, and whoever is hired will run it. Marilou set up and ran the shared calendar at her barangay health center for two years.\n\nShe sends the letter she sends everywhere. It opens with \"Dear Sir/Madam, I am writing to express my keen interest in the position advertised,\" and it never mentions a calendar.\n\nShe was the right person. Nothing in her message said so.\n\n## Three parts, and nothing else\n\n**One: the role, and where you saw it.** One line. A clinic can be hiring for three things at once, and the reader should not have to work out which pile you belong in.\n\n**Two: one thing from the posting, answered with one thing you have done.** Not your proudest achievement. The one that matches the thing they wrote the ad about. Then say where it can be seen.\n\n**Three: what happens next.** Name what you attached, name the link, give a real availability for a call. Stop there.\n\nHere is Marilou's middle paragraph, written twice.\n\nGeneric: \"I am a hardworking and detail-oriented person with excellent organizational skills and a genuine passion for helping people.\"\n\nSpecific: \"You mentioned moving the appointment book online. I set up and ran the shared calendar at our barangay health center for two years, including the double-booking rules and the reminder routine the midwives still use. There is a one-page write-up of how it works in the folder linked below.\"\n\nBoth are true about Marilou. Only one of them could have been written by her, about this job.\n\n## What to cut\n\n- The greeting to nobody. Use a name if the ad carries one, \"Hiring team\" if it does not.\n- The paragraph about your passion. Nobody can check it, so it carries no information.\n- The restatement of your resume. It is attached. They can read it.\n- The closing that thanks them for their time and asks for nothing.\n\n## The parts that get seen first\n\nOn email, the subject line and the opening line may be all that exists before anyone decides to open anything. Put the role and your name in the subject: \"Application: Admin Assistant, Marilou Santos\". Make the first line the role and the specific thing, not a greeting that spends the line saying hello.\n\nAttach what they asked for, with your name and the role in the filename. Link the rest. Then open your own link in a browser where you are not signed in to anything. If it asks a stranger to request access, your application is finished, and nobody will write to tell you.\n\n## When the application is a box\n\nSome employers never receive an email from you at all. The application is a form on a job site, the letter is a field with a limit, and there is nowhere to attach anything.\n\nWrite the same three parts, shorter. Put the link in as plain text so it survives a form that strips formatting. If the form asks a question, answer that question first, then use the rest of the box for the specific thing you did.\n\nProposals on freelance marketplaces and cold outreach to businesses work differently and belong to Freelancing Fundamentals. Platform mechanics such as fees, credits, ranking and badges change often enough that printing them here would only mislead you, so read the current help pages of whichever site you are on.\n\n## When it is a chat, or a piece of paper\n\nA Philippine employer may post the vacancy on their page and ask you to send your resume through Messenger, or ask you to bring a printed copy in. The three parts do not change. What changes is what you can attach and how long the reader stays.\n\nIn a chat there is no subject line, so the first line does both jobs: the role, and the one thing you have done about the thing they wrote the ad about. Send the file as a file rather than as pasted text, and put the link underneath as plain text, because a link that opens for somebody signed in to nothing is still your best evidence.\n\nOn paper, assume the copy leaves with them and you do not. Your name and the role sit at the top, your contact line sits where a thumb finds it, and anything that does not fit belongs behind a link short enough to be typed by hand.\n\n## Drafting with AI\n\nFine as a drafting engine. Fatal as an author.\n\nA model can tighten your sentences, cut your length, and tell you which paragraph says nothing. It cannot supply the calendar at the barangay health center. A message assembled entirely from a model's idea of an application letter is, by construction, the message everyone else sent, which is the exact failure this lesson exists to prevent.\n\nThe rule: every concrete fact in the message comes from you. Basic AI and AI Essentials for Work cover the drafting craft itself.\n\n## Try this\n\nOpen the last posting you saved and write the middle paragraph only. One sentence naming something from the ad. One naming what you have done about that thing. One naming where it can be seen. If you cannot write the second sentence, either you are applying to the wrong posting or you have work to go and finish first.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "the-money-question-and-the-test-task",
+          "title": "The money question and the test task",
+          "content_mdx": "# The money question and the test task\n\nTwo moments decide what the work will be worth, and both of them happen before anybody hires you.\n\nDianne is interviewing for a marketing assistant post at a company in Ortigas. Twenty minutes in: \"What are your salary expectations?\" Ken is on a call with a founder in Melbourne about a part-time remote operations role, and gets the same question. Same words, different arrangement. Answering them the same way is how one of the two ends up short.\n\n## They are not the same question\n\nChapter one drew the line between the two arrangements. Here is what that line does to a number.\n\nInside employment, the figure you are discussing sits within everything the employer administers around it, and it is not the whole of what you get. Inside a contract there is nothing around the number. Your machine, your connection, the weeks with no work, and your own registrations and tax obligations all sit inside it. If you register as a freelancer here, filing on a schedule comes with the registration, and the current rules, rates and deadlines are published by the offices that run them. Look them up there, not in a group chat.\n\nSo the flat rule: never take a local salary, or a foreign figure converted at today's exchange rate, and quote it into the other arrangement as though the same things were covered.\n\n## Answer with a range and a basis\n\nThree answers are available to you, and only one of them works.\n\n**A bare number**, named blind because refusing felt rude. You are now anchored to a figure you cannot explain, and if it is low you will be held to it for a year.\n\n**No answer at all.** \"I am flexible.\" \"Whatever is standard.\" It sounds accommodating. It hands the decision to the person across from you and tells them nothing about how you think.\n\n**A range, and one sentence of basis.** \"For a full-time role at this scope I am looking at this much to this much a month. That comes from current postings for the same responsibilities in Metro Manila, and it assumes the schedule and the review period you described.\"\n\nBuilding the number itself, from what your work costs you to produce and what it has to cover, is a longer job, and Freelancing Fundamentals teaches it. What this course asks is narrower: arrive with the range already worked out, be able to say where it came from in one sentence, and know what the arrangement covers so you know what your number has to carry.\n\nTwo habits make that possible. Research current postings for the actual role in the actual market before the call, never during it. And write your floor down beforehand, the figure below which the answer is no, so you are not deciding that while trying to be liked.\n\n## The test task\n\nThe freelance version of this, where a client asks for the live deliverable before anything is agreed and the counter is to offer a small paid first piece, is in Freelancing Fundamentals under Where the work actually comes from. What follows is the hiring-process version, where the counter is different because there is no contract to negotiate yet.\n\nA fair sample is small, scoped, described before you start, and the same for every candidate. Two replies to a made-up complaint. Half a page in their template. A short call plan for a fictional client.\n\nFree work looks different. It is a real deliverable, with a real deadline, often on a client's live material, and it ships whether or not you are hired. Twelve product descriptions for a store that goes live on Monday is not a sample of your work. It is Monday's work.\n\nThe reply that tells one from the other is not an accusation. Ask four things: what exactly is being asked for, what it is judged on, how long they expect it to take, and what happens after they read it.\n\nAn employer who has thought about the task answers that in a few lines. Somebody collecting free work goes vague or goes quiet. Either way you have learned something, and asking is itself a demonstration. Agreeing scope before starting is the job, and doing it politely at this stage is a sample of how you will behave in week three.\n\n## The trap at the end\n\nThe trap is not the unfair test. It is agreeing to something you cannot deliver because saying so felt awkward.\n\nKen says yes to a two-day turnaround while a full week of other work is already sitting in front of him. He has just made his first promise to this employer, and it is one he is going to break. A hiring process where you overpromise once becomes a working relationship where you overpromise weekly.\n\n## Once you have accepted a fair one\n\nWork to the brief you were given, including the time in it. If the task says about forty five minutes, forty five minutes is what is being sampled, and an afternoon of polish answers a question nobody asked. It also promises a standard you cannot hold once real deadlines arrive, which is the overpromise above wearing better clothes.\n\nIf the brief is unclear, ask before you start rather than after. That is the same move as the four questions, and it is still free.\n\n## Try this\n\nWrite two sentences now, before anybody asks you. One is your range and its basis for a local salaried role. One is your range for a contract where nothing is covered except the work. Keep them in the same file as your evidence inventory, and update them every time you finish a piece of work worth adding.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "the-conversation-and-what-happens-after",
+          "title": "The conversation, and what happens after",
+          "content_mdx": "# The conversation, and what happens after\n\nJoel gets the call back. Fifteen minutes in, the interviewer asks him to describe something he handled that went wrong. Joel says he is a fast learner who works well under pressure. The interviewer writes nothing down.\n\nAn interview is your evidence, spoken. Nothing new is needed. What is needed is being able to say three entries from your inventory out loud, in order, without wandering.\n\n## Three stories, short arcs\n\nPick three before the call and match them to what the ad emphasised. For each one: what the situation was, what you did, what happened afterwards.\n\nSay each one aloud once. If you cannot get to the end without backing up to explain something, the story needs cutting, not more detail. Do not memorise a script. A rehearsed speech sounds rehearsed, and it falls apart at the first follow-up question.\n\n## When you do not know\n\nSay so, then say what you would do about it. \"I have not used that one. I used a different tool for the same job at the clinic, and I would spend the first day in their documentation and ask whoever set it up what the conventions are.\"\n\nBluffing does not get caught on the call. It gets caught in week two, by the person who hired you because of the bluff.\n\n## The questions you ask\n\nYour questions are read as closely as your answers, so ask the ones somebody planning to do the work would ask.\n\n- What does the first month look like for whoever takes this?\n- How is the work reviewed, and by whom?\n- Who would I be reporting to day to day?\n- What would good look like in this role by the end of the year?\n\n## If the employer is not in the country\n\nFour things need concrete answers rather than reassurance.\n\n**Hours.** Name the overlap you can hold every single week, not the one you managed twice last month.\n\n**Setup.** What machine you work on, and what connection you have at home.\n\n**Backup.** This is the one people fumble, because they try to promise that nothing will ever go wrong. Nobody believes that, and the first brownout turns it into a lie. Say what you actually do instead: a phone with data on it, a coworking space or a relative's house nearby, and a message sent within a set time whenever something goes down.\n\n**Days off.** Name the days you do not work, and let them tell you how that fits their week. Guessing at somebody else's calendar helps nobody.\n\n## The follow-through is the sample\n\nEverything you do between applying and being hired is a free preview of how you work.\n\n- Reply within a reasonable time. If a proper answer needs a day, send a line saying so.\n- Send what you said you would send, by when you said it. If it is going to slip, say so before the date, with a new date attached.\n- Be on the call early, somewhere you can be heard.\n- Follow up once, after the interval they named. If nobody named one, ask at the end of the call so that you have one.\n\nWhen the answer is silence, one short message early the following week is the whole move. When the answer is no, two lines: thanks for letting me know, and you would be glad to hear from them if something that fits comes up later. It costs a minute, and the person turning you down today may be the same person hiring in six months.\n\n## The tracker\n\nA search runs for weeks and memory does not. One sheet, one row per application: where, what role, the date you sent it, what you sent, what they said, what is due next and when.\n\nIt stops you applying twice to the same place, it stops you forgetting the sample you promised on a call, and after a month it shows you which kinds of application actually get answered.\n\n## The loop\n\nEvery application produces new evidence. A sample you built for a test task, a write-up you made for one clinic, a question that exposed a gap you can now go and fill. All of it goes back into the inventory from chapter one, which is a living file rather than an exercise you did once.\n\n## Try this\n\nMake the tracker today, with the last three things you applied for already in it, and one line under each saying what you owe that employer next and by when. If the answer is nothing, write nothing. That is a row you can stop thinking about.\n",
+          "duration_minutes": 8
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Marilou has one cover letter she has polished over several evenings, and it reads well. Tonight she has an hour and four saved postings, one of them a dental clinic whose ad says it is moving its paper appointment book online. Marilou ran the shared calendar at her barangay health center for two years. What is the best use of the hour?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Send the polished letter to all four postings tonight, since one general letter reaching four employers beats one slower application."
+            },
+            {
+              "id": "b",
+              "text": "Send the polished letter to the clinic first, then spend the rest of the hour finding more postings to send that same letter to."
+            },
+            {
+              "id": "c",
+              "text": "Keep the polished letter for all four, but add one line about her passion for healthcare so that each of them feels personal."
+            },
+            {
+              "id": "d",
+              "text": "Send the clinic one letter naming the calendar she ran and where it can be seen, then apply to the other three on another night."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "professional_communication",
+          "explanation": "The clinic wrote its ad around one worry, and Marilou has already done that exact thing. A paragraph naming the calendar, with somewhere it can be seen, is the only version of tonight that could not have been sent by anybody else. Option a is tempting because volume feels like effort, but a letter written for nobody arrives as a letter from nobody. Option b spends the saved time widening a message that was never specific. Option d adds a sentence nobody can check, which is not the same as adding evidence."
+        },
+        {
+          "prompt": "Dianne is interviewing for a marketing assistant role at a company in Ortigas. She has read current postings for the same responsibilities and has a range in mind, but when the interviewer asks about her salary expectations, naming a figure suddenly feels presumptuous. What should she say?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Say she is flexible and open to whatever the company's standard is for the role, so that the offer does not slip away."
+            },
+            {
+              "id": "b",
+              "text": "Give the range, one sentence on where it came from, and what she has assumed about the scope and the review period."
+            },
+            {
+              "id": "c",
+              "text": "Ask the interviewer to name the budget for the role first, and give no figure of her own until that has happened."
+            },
+            {
+              "id": "d",
+              "text": "Name the very top of her range as a single flat figure, since a range only invites them to pick the bottom of it."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "scoping_and_pricing",
+          "explanation": "A range with a basis is an answer the other side can work with, and the basis is what stops it sounding like a wish. Option b feels gracious and is a common instinct, but it hands the decision away and says nothing about how she thinks. Option c is a fair thing to ask once, though refusing to answer until they go first turns a conversation into a standoff. Option d throws away the room a range gives her to explain what the number has to cover."
+        },
+        {
+          "prompt": "Ken is employed by a Philippine company and is talking to a founder overseas about a part-time remote contract. Asked for his rate, he plans to quote his current monthly salary, because he would be happy earning the same as he earns now. What is wrong with that plan, and what should he do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "His salary sits inside an arrangement the contract will not carry, so he should rebuild the figure and quote that range instead."
+            },
+            {
+              "id": "b",
+              "text": "Nothing is wrong with the figure, so he should quote it and ask for a review after three months once he has proved himself."
+            },
+            {
+              "id": "c",
+              "text": "He should convert that same salary into the founder's currency at today's rate, so that the number reads as normal in their market."
+            },
+            {
+              "id": "d",
+              "text": "He should quote the same figure and then ask the founder to cover his internet and his equipment as a separate monthly allowance."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "scoping_and_pricing",
+          "explanation": "A salary is one part of an arrangement that also handles payroll, contributions and leave. A contract rate carries the work plus everything that arrangement used to absorb, including his equipment, his unpaid weeks, and his own registration and filing. Option a ports the number and postpones the problem to a review that may never come. Option b converts a figure whose meaning does not survive the conversion. Option c is closer, because it notices something is missing, but it patches two visible costs and leaves the invisible ones out."
+        },
+        {
+          "prompt": "Jomar applies for a virtual assistant role with a small online store. The reply asks him to write product descriptions for twelve items that go live on Monday, unpaid, so they can see how he works. He wants the job and does not want to look difficult. What should he do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Write all twelve well and send them on time, since arguing at this stage costs him a job that he actually wants and needs."
+            },
+            {
+              "id": "b",
+              "text": "Decline it, because any unpaid task is free work and a business that asks for one is not worth working for anyway."
+            },
+            {
+              "id": "c",
+              "text": "Ask what exactly the task is judged on, how long they expect it to take, and what happens after they have read what he sends."
+            },
+            {
+              "id": "d",
+              "text": "Write three of the twelve and say the rest can follow once there is a signed agreement and a start date in place."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "scoping_and_pricing",
+          "explanation": "Twelve items with a launch date behind them is Monday's work, not a sample, but the useful move is to clarify rather than to accuse. Those questions take a few lines to answer for anybody who has thought about the task, and the answer tells him which of the two this is. Option a hands over a deliverable and teaches them what he will accept. Option c refuses a fair sample along with an unfair one. Option d negotiates a smaller amount of free work without ever finding out what is being tested."
+        },
+        {
+          "prompt": "The overseas founder asks Ken whether he can be online from nine in the evening to five in the morning, Philippine time, every weekday. Ken could manage those hours some nights but not reliably every night, and he badly wants the role. What is the right answer to give?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Say yes, since he can hold it for the first few weeks and can raise the difficulty later once he has proved he is useful."
+            },
+            {
+              "id": "b",
+              "text": "Say which hours he can hold every week without fail, then ask which parts of their day actually need him online and present."
+            },
+            {
+              "id": "c",
+              "text": "Say yes but plan to be on his phone during the hours he cannot properly work, so that he is at least reachable throughout the night."
+            },
+            {
+              "id": "d",
+              "text": "Say the schedule is impossible for him and ask whether the whole role could be done on his own hours with no overlap at all."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "delivery_reliability",
+          "explanation": "The commitment you can hold every week is worth more than the one you can hold until you are tired, and asking which hours matter often shrinks the requirement to something real. Option a buys the job with a promise that breaks in month two, when breaking it is expensive. Option c is the same promise with a worse version of the work behind it. Option d is honest, but it skips the question that would have found the overlap that actually works."
+        },
+        {
+          "prompt": "At the end of a good interview, Joel offered to send a one-page write-up of the handover process he built, and said it would arrive Tuesday. On Monday night an unrelated deadline lands and the write-up will not be ready before Thursday. What should he do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Send whatever he has on Tuesday, because arriving on the promised day matters more to a new employer than the state of it."
+            },
+            {
+              "id": "b",
+              "text": "Send it Thursday with an apology attached, since flagging a delay in advance only draws attention to the fact he is late."
+            },
+            {
+              "id": "c",
+              "text": "Message them on Monday naming Thursday as the new date, then send it on Thursday exactly as he has just said he would."
+            },
+            {
+              "id": "d",
+              "text": "Say nothing and drop it, since he offered it himself rather than being asked, and raising it now creates a problem."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "delivery_reliability",
+          "explanation": "Nothing he does here is really about a write-up. It is the employer's first sample of what he does when one of his own dates is in trouble, and the answer they want is early warning followed by a date that then holds. Option a trades the thing he is being judged on for punctuality. Option b is the common instinct and it is backwards, because a warning is a courtesy while a silent overrun is a surprise. Option c assumes they forgot, and anybody who did not forget now has a data point."
+        },
+        {
+          "prompt": "Marilou's interviewer said the clinic would decide by the end of the week. Friday passes with no word, and so does the weekend. She is anxious, the role suits her, and she has two other applications still open. What should she do on Monday?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Send one short message asking where the decision stands, then leave it there and keep working on her other applications."
+            },
+            {
+              "id": "b",
+              "text": "Message every second day until somebody answers, since the applicant who stays visible is the one they end up remembering."
+            },
+            {
+              "id": "c",
+              "text": "Treat the silence as a no, stop thinking about the clinic, and never contact them again about this or a later role."
+            },
+            {
+              "id": "d",
+              "text": "Wait another full week before saying anything, since chasing a decision that is already late is what loses a candidate the offer."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "professional_communication",
+          "explanation": "One message after the interval they themselves named is a fair ask, and stopping after it is what keeps it fair. Option b is tempting because waiting feels passive, but repeated chasing is a preview of how she will handle a client who is slow to reply. Option c is the quiet version of the same anxiety, and it costs her a role that may still be open. Option d is the opposite instinct and costs her the same week: they named the interval themselves, it has passed, and one message inside it is the thing she is entitled to send."
+        },
+        {
+          "prompt": "After a second interview, Ken gets a two-line email saying the company went with somebody else. He is disappointed, he thought it went well, and it is a company he would still like to work for someday. What is the best reply?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ask for detailed feedback on why he was not chosen and which part of the interview process he actually lost it on."
+            },
+            {
+              "id": "b",
+              "text": "Reply setting out the two things he thinks he answered best in the second interview, in case the decision was closer than it looked."
+            },
+            {
+              "id": "c",
+              "text": "Send nothing at all, since a reply to a rejection changes nothing and takes attention away from applications still open."
+            },
+            {
+              "id": "d",
+              "text": "Reply in two lines, thanking them for the time and saying he would be glad to hear about anything that fits him later."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "professional_communication",
+          "explanation": "Two warm lines cost a minute and leave the door open with somebody who has already met him and may be hiring again. Option a is understandable and sometimes works as a light ask, but framed as a demand for detail it puts work on a person who owes him none. Option b reopens a decision that has already been made, politely and at length, and a reply that asks to be reconsidered is the one they remember him by. Option d is not rude, it is just the option that throws away the only thing left on the table."
+        }
+      ]
+    }
+  ],
+  "final_exam": {
+    "slug": "resume-portfolio-and-job-hunting-final-exam",
+    "title": "Resume, Portfolio and Job Hunting final exam",
+    "passing_score": 70,
+    "max_attempts": 3,
+    "questions": [
+      {
+        "prompt": "Trina works for a firm in Ortigas that everybody in her industry here recognises, and she is applying to a remote posting with a company in another country. The top of her resume leads with the firm's name, her university, and the fact that she was promoted twice in three years. What is the risk in leading with those three?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Nothing much, since a known employer and a good university are the fastest signals of quality that a reader anywhere can pick up."
+          },
+          {
+            "id": "b",
+            "text": "Two promotions in three years read as somebody expensive, so the money conversation starts before they have seen anything she did."
+          },
+          {
+            "id": "c",
+            "text": "It reads as boasting to a foreign employer, and the tone of the opening lines is what decides whether the rest of the page gets read."
+          },
+          {
+            "id": "d",
+            "text": "A reader abroad cannot decode any of them, so her best space goes on names that carry nothing there and no work she has finished."
+          }
+        ],
+        "correct_option_id": "d",
+        "competency": "finding_work",
+        "explanation": "In the second room nothing about you can be assumed. The firm everybody here recognises is a name, the university is a name, and a promotion is a fact about an internal ladder whose rungs a stranger cannot see. Everything has to be legible on its own, so the top of the page carries what she did and what changed because of it, with the firm's name still sitting there and no longer being asked to do the work. Option b is what prestige is assumed to do for you, and it holds in one room and not in the other. Option c invents a motive for the reader that nothing in the posting supports. Option d treats the problem as tone, when the problem is that three lines have gone by carrying nothing a reader abroad can use."
+      },
+      {
+        "prompt": "An ad for an accounts assistant in Valenzuela puts attention to detail in the title line, in three of the six duties, and again at the bottom. Reymar has two years of encoding delivery receipts and has never once described himself in those words. What should he take from the repetition?",
+        "options": [
+          {
+            "id": "a",
+            "text": "That something went out wrong there before, so his opening should name the receipts he encoded and the errors he caught in them."
+          },
+          {
+            "id": "b",
+            "text": "That the phrase is filler in almost every ad, so it carries nothing at all and he should write his application from the duties alone."
+          },
+          {
+            "id": "c",
+            "text": "That they want somebody who describes themselves that way, so the phrase belongs in his opening line in their own words."
+          },
+          {
+            "id": "d",
+            "text": "That the bar sits above what he can evidence, so the evening is better spent on a posting that does not lean on the phrase."
+          }
+        ],
+        "correct_option_id": "a",
+        "competency": "professional_communication",
+        "explanation": "Somebody wrote that ad because they have a problem, so a requirement repeated three times reads as a worry rather than a rule. Answering the worry is what makes his opening line his: the receipts he encoded and the errors he caught in them are the same claim with evidence under it. Option b is the near miss and stops one step short, because repeating their phrase back is an adjective anybody applying can also type. Option a throws away the clearest signal in the ad. Option d rules him out of a posting his two years already answer, which is the wishlist mistake in a different costume."
+      },
+      {
+        "prompt": "An overseas remote posting for a customer support role has one required field: expected hourly rate. Grace has only ever been paid a Philippine salary and has no idea what to type. She is about to write the word negotiable so she does not price herself out of the shortlist. What belongs in that field?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Her current monthly salary converted at today's rate and divided by her working hours, which keeps her honestly at the level she is paid now."
+          },
+          {
+            "id": "b",
+            "text": "The lowest figure she could live on, since being the cheapest candidate is the one clear advantage she has over people the client knows already."
+          },
+          {
+            "id": "c",
+            "text": "The word negotiable, because naming any number before she knows what the client has budgeted can only cost her the interview she wants."
+          },
+          {
+            "id": "d",
+            "text": "A range she can justify in one line, taken from what postings for this same remote role are currently offering, and priced as a contract."
+          }
+        ],
+        "correct_option_id": "d",
+        "competency": "scoping_and_pricing",
+        "explanation": "Two ideas have to meet here. A rate on a contract is the whole of your compensation: your own equipment, your own unpaid time between jobs, and your own registrations and obligations, whatever those currently are, all sit inside it, which a salary does not. And the way you answer is a range with its basis, not a bare number and not a refusal. Converting a salary feels honest and quietly imports an arrangement that does not apply. Naming the lowest number she could survive on sets the ceiling for the whole engagement and reads as somebody who has not priced the work. Negotiable is the answer that box collects all day, and it leaves the reader nothing to act on. Go and read current postings for the actual role in the actual market before filling it in."
+      },
+      {
+        "prompt": "Two days after applying, Rosalie gets a reply asking two things: whether she could start by the fifteenth, and whether she has ever run a monthly stock count. She has run stock counts. She cannot answer the date honestly until she has checked her notice period with her current employer, which will take a day. What should she do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Answer both within the hour with her best guess at the date, since she can go back and correct it later if her employer needs notice."
+          },
+          {
+            "id": "b",
+            "text": "Wait until she has the real date and then send one complete reply, because an answer arriving in pieces reads as disorganised."
+          },
+          {
+            "id": "c",
+            "text": "Reply the same day naming when she will have the date, answer the stock count question in that message, and come back on that day."
+          },
+          {
+            "id": "d",
+            "text": "Answer the stock count question now and leave the date out, since raising a start date she is unsure of invites a harder one."
+          }
+        ],
+        "correct_option_id": "c",
+        "competency": "delivery_reliability",
+        "explanation": "Nobody has seen her work yet, so what she does with a small question is the sample they are actually reading. Reply inside a reasonable time, and where the real answer needs a day, say so and name the day, then keep it. Option b is the tempting one, because a complete answer feels more professional than a partial one, and what the employer has meanwhile is silence from somebody they have already written to. Option a buys a fast reply with a date she may have to take back, which makes her first promise to them one she breaks. Option c answers the half she finds easy and leaves them to chase the half they asked about first."
+      },
+      {
+        "prompt": "Lorna keeps the books for two small clients. A posting asks applicants to attach samples of their work. Everything she has is a live client ledger carrying real names, amounts and account numbers, and neither client has been asked about any of it. What should she attach?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A short note on how she runs a monthly reconciliation, plus a small ledger she built herself with invented rows, labelled clearly as a sample."
+          },
+          {
+            "id": "b",
+            "text": "One ledger rebuilt into a fresh file with the same structure and the real figures retyped, since what she sends is then not the client's own file."
+          },
+          {
+            "id": "c",
+            "text": "One ledger with the client's name taken out of the header, since amounts and account numbers on their own do not identify anybody in practice."
+          },
+          {
+            "id": "d",
+            "text": "Nothing, with a line saying bookkeeping is confidential work that produces no portfolio, and an offer to answer any questions they have."
+          }
+        ],
+        "correct_option_id": "a",
+        "competency": "finding_work",
+        "explanation": "The order to work through is ask permission, redact, describe the method, or build a labelled sample. She has not asked, so what she can honestly send today is the method plus something she made herself and says she made. Retyping the real figures into a fresh file changes the container and not the contents: the amounts, the dates and the names are still the client's, she still has not asked, and the person who notices will not tell her they noticed. Removing the name from the header is worse than it looks: amounts, dates and account numbers together still identify, and a half redaction shows she does not know where the line sits. Sending nothing is honest and hands the reader nothing, and the premise is wrong anyway. A reconciliation process and a clean set of books are exactly the exhibit."
+      },
+      {
+        "prompt": "An application form for a Philippine employer offers one box, headed why are you applying, with a short character limit. Ivan is about to paste the paragraph he uses everywhere, which opens by calling him a passionate and driven professional seeking growth. What should go in the box instead?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The role and where he saw it, one requirement from the posting, one finished thing of his that answers it, and what he is asking for next."
+          },
+          {
+            "id": "b",
+            "text": "The strongest paragraph out of his resume summary, since it is already written and it is the best short description of him that exists."
+          },
+          {
+            "id": "c",
+            "text": "A line saying his resume and portfolio are attached, so that the box does not repeat what the reader is about to open in a moment anyway."
+          },
+          {
+            "id": "d",
+            "text": "A short account of why this industry has interested him since college, since an employer hiring for the long term is looking for real interest."
+          }
+        ],
+        "correct_option_id": "a",
+        "competency": "professional_communication",
+        "explanation": "The test for that box is whether the paragraph could have been sent to any other employer. If it could, it is doing nothing. Naming one requirement and answering it with one finished thing proves he read the posting, which is the cheapest way to be remembered. The resume summary is the most tempting option because it is polished and it is his, but the reader is about to read it anyway and a repeat wastes the one chance the box gives him. Pointing at the attachment gives the box away entirely and assumes the attachment gets opened. The passion paragraph is the default everybody sends, and interest in an industry is not evidence he can do the work. The finished thing is."
+      },
+      {
+        "prompt": "A posting for a remote virtual assistant with an overseas agency states a monthly figure and describes the work as an independent contract. Ruth is salaried at a Philippine company now, likes the figure at first sight, and plans to sort the money out later if they make her an offer. What should she do tonight, before she writes anything?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Apply now and open the money question once they have decided they want her, since a candidate has no leverage before that point."
+          },
+          {
+            "id": "b",
+            "text": "Work out whether that figure, standing alone as a contract rate, covers what she would be carrying herself, and note it down."
+          },
+          {
+            "id": "c",
+            "text": "Apply now and ask in her first message whether the figure is negotiable, so she knows where it can move before she prepares more."
+          },
+          {
+            "id": "d",
+            "text": "Skip it for postings that state no figure at all, since a printed rate is a ceiling and silence leaves the number open."
+          }
+        ],
+        "correct_option_id": "b",
+        "competency": "scoping_and_pricing",
+        "explanation": "The moment you decide to apply you have accepted whatever that role pays, so the arithmetic belongs before the application and not after the offer. A contract rate stands alone: her equipment, her connection, the weeks with no work, and her own registrations and obligations all sit inside that one figure, where a salary has an employer administering things around it. What those obligations currently amount to is for BIR and the agencies to say, and all this lesson asks is that she knows the figure has to carry them. Option b is the common plan, and it postpones a decision she has already made by applying. Option c is not a wasted question, it just asks about movement in a number she has not worked out yet. Option d treats a stated figure, which is information she can use tonight, as a reason to walk away."
+      },
+      {
+        "prompt": "In a video interview for an admin role, the manager asks Cherry how she would set up an approval flow inside a system she has never opened. She understands approval flows and has built one by hand, but she does not know that product at all. What is the best answer?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A confident general answer about how approval flows work, since the concept transfers and naming the gap only plants a doubt about her."
+          },
+          {
+            "id": "b",
+            "text": "That she has not used that product, then the approval flow she did build by hand, and what she would read or ask to get it working there."
+          },
+          {
+            "id": "c",
+            "text": "The approval flow she built by hand, described in full, with no mention of the product at all, so she stays on ground she can defend."
+          },
+          {
+            "id": "d",
+            "text": "A request to come back to it later in the call, so that she can quietly look the product up while the manager moves on to the next question."
+          }
+        ],
+        "correct_option_id": "b",
+        "competency": "professional_communication",
+        "explanation": "Saying what she does not know, and then saying what she would do about it, is the answer that survives the first week of the job. It also lets her spend the rest of the answer on evidence, which is the part she has. The confident general answer is tempting because it sounds capable and nobody can check it in the moment, but bluffing is the answer that gets checked later, in front of the person who then has to fix it. Describing the flow she built and never touching the gap is the near miss, and it is all true: it also leaves the question the manager actually asked, about a product she has not opened, sitting in the room for somebody else to raise. Stalling in order to look it up is the same bluff with extra steps, and a manager who has run interviews before watches it happen."
+      },
+      {
+        "prompt": "An overseas employer asks Paolo in the interview about his internet, his power supply and which of their morning hours he can work. He is in Davao on a fibre line, in an area that has brownouts every few weeks. What should he say?",
+        "options": [
+          {
+            "id": "a",
+            "text": "That his connection is solid and he has never had an outage, since raising brownouts now hands them an easy reason to choose somebody else."
+          },
+          {
+            "id": "b",
+            "text": "The actual setup, what he does when the power or the signal drops, and the specific hours of their morning he can be online every day."
+          },
+          {
+            "id": "c",
+            "text": "That he will make any hours work and be online whenever they need him, since flexibility is what gets a remote candidate picked over others."
+          },
+          {
+            "id": "d",
+            "text": "That he will flag any outage the moment it happens, and let them tell him afterwards which of their morning hours they need him for."
+          }
+        ],
+        "correct_option_id": "b",
+        "competency": "delivery_reliability",
+        "explanation": "Remote employers are not looking for somebody with no problems. They are looking for somebody who has thought about theirs. A named backup and a specific overlap window is concrete enough to plan around, and it is the same habit the job will need every week. Promising perfect reliability is tempting and it lasts until the first brownout, at which point he has an outage and a broken claim. Promising any hours they need is how people agree to a schedule they cannot hold, and the first missed morning is then a broken promise rather than an inconvenience. Promising to flag an outage is a habit rather than a backup, and handing the hours question back to them leaves the two things they asked about, his plan and his overlap, for somebody else to work out."
+      },
+      {
+        "prompt": "Analyn is filling in the fourth column of her evidence inventory for a year of doing the schedule at a family restaurant. Under what changed she has written that shifts stopped clashing. Under what survives she has written nothing, because the roster lived in a notebook that stayed with the restaurant. What should she do about that row?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Leave the row as it is, since what changed is the part an employer cares about and the notebook was never hers to take away."
+          },
+          {
+            "id": "b",
+            "text": "Drop the row from the inventory, because an entry with nothing checkable under it is the unsupported claim this course warns about."
+          },
+          {
+            "id": "c",
+            "text": "Ask the restaurant to photograph the notebook pages for her, and use those as the artefact even though the staff names are on them."
+          },
+          {
+            "id": "d",
+            "text": "Rebuild one month of that roster in a fresh file, label it on the piece as work she is reconstructing, and put it in column four."
+          }
+        ],
+        "correct_option_id": "d",
+        "competency": "finding_work",
+        "explanation": "Column four is what turns a memory into evidence, and an empty one is a work list rather than a verdict on the year. She cannot take the notebook, so she makes something a stranger can open: the same roster rebuilt, and said on the piece to be a rebuild. A sample you announce is evidence, and one you let a reader assume was the original is a lie with a delay on it. Option a leaves her with a change nobody can weigh, which is the row every inventory is full of already. Option b throws away a year of real work over an artefact she can still make this week. Option d carries other people's names out of a business that never offered them, and a reader looking at those names learns what she would do with theirs."
+      },
+      {
+        "prompt": "A local agency sends every shortlisted applicant the same test: one product description, in your own words, and it should take about forty five minutes. Dexter wants the job badly and plans to spend a whole afternoon on it and send three different versions. What is wrong with that plan?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Only the three versions. More care on the sample can only make a better impression, so the fix is to send the strongest one he writes."
+          },
+          {
+            "id": "b",
+            "text": "Unpaid work should always be held to the smallest possible amount, and forty five minutes is already more than an applicant should give."
+          },
+          {
+            "id": "c",
+            "text": "The test asks what he can do in forty five minutes, so an afternoon answers a different question and hides how he works to a deadline."
+          },
+          {
+            "id": "d",
+            "text": "The agency is timing him without saying so, and going over the stated time is the thing they are really screening the shortlist on."
+          }
+        ],
+        "correct_option_id": "c",
+        "competency": "scoping_and_pricing",
+        "explanation": "This test is a fair one: small, scoped, described in advance and the same for everybody. What is being sampled is the work he produces in the time he was given, which is also what the job will ask of him. An afternoon of polish tells them nothing about that, and it quietly promises a standard he cannot repeat once real deadlines arrive. Cutting three versions down to one fixes the wrong part of the plan, because the afternoon is still in it, and polish nobody asked for is not a better impression of him. Refusing on principle throws away a reasonable ask and a real chance. The option about secret timing is a guess about the agency's motives dressed up as insight. Work to the brief Dexter was actually given, and ask before starting if the brief is unclear."
+      },
+      {
+        "prompt": "Rowel passed a GN Academy final exam last month, so he now has a credential code and a public verification page that anybody can open without an account. He is deciding how to put it on his resume for an operations role. Which version does the most for him?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A line naming the certification, who issued it, the fact that it was passed by exam, and the code a reader can check on the public page."
+          },
+          {
+            "id": "b",
+            "text": "The word Certified placed in front of his job title at the top, so the first thing anybody sees is that he is qualified for this role."
+          },
+          {
+            "id": "c",
+            "text": "A sentence saying the credential puts him above applicants without one, sitting next to the salary figure he has written into the document."
+          },
+          {
+            "id": "d",
+            "text": "The credential badge printed large across the header, which a reader moving quickly will notice long before they reach a line of small text."
+          }
+        ],
+        "correct_option_id": "a",
+        "competency": "finding_work",
+        "explanation": "A certificate is worth what the reader can check. Naming the issuer, what it required and the code that opens a public verification page turns it from a claim into evidence, and it costs one line. Certified in front of a job title is the common version and it is a quiet inflation of a title he does not hold, which is the same family of problem as a stretched date. Claiming the credential ranks him above other applicants asserts something he cannot know, and parking it beside a salary figure implies a credential entitles somebody to a rate, which it does not. A large badge is decoration standing where the evidence should be. None of them replace finished work: a credential opens the file, the portfolio keeps it open."
+      },
+      {
+        "prompt": "Kris is interviewing for a salaried role at a Quezon City company and is asked what she expects to be paid. She is also holding an offer for an overseas remote contract that pays more per hour once she converts it, and she is about to name that converted figure. What should she do instead?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Name the converted figure and mention the other offer, since a competing offer in hand is the strongest basis any candidate can point to."
+          },
+          {
+            "id": "b",
+            "text": "Say she will take whatever they offer, since staying flexible about pay is what keeps her inside a process she genuinely wants to be in."
+          },
+          {
+            "id": "c",
+            "text": "Give a range for salaried roles of this kind here, and the basis for it, because the contract and the salary are not the same package."
+          },
+          {
+            "id": "d",
+            "text": "Ask them to name a figure first and give no range at all, since whoever says a number first gives up ground in a negotiation like this."
+          }
+        ],
+        "correct_option_id": "c",
+        "competency": "scoping_and_pricing",
+        "explanation": "A salary and a contract rate are different arrangements, not two prices for one thing. The salaried package is administered by the employer and carries benefits, leave and contributions inside it. The contract rate is the whole of what she gets, and everything else is hers to carry. Converting one into the other and quoting it compares two things that were never comparable, and the interviewer hears a number with no basis under it. Waving the other offer looks like leverage and mostly reads as somebody who will leave. Saying she will take whatever they offer sets the floor at whatever they were hoping to pay. Refusing to give a range is the tactic people repeat to each other, and it hands the interviewer nothing to work with while she still has a role to fill."
+      },
+      {
+        "prompt": "Two weeks after a final interview, Angel gets a two line rejection email. She has heard nothing at all on three other applications she sent that same month. What is the sensible next move?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A reply asking what she did wrong and what to fix, and another message if no answer comes, since feedback is what improves the next one."
+          },
+          {
+            "id": "b",
+            "text": "One short reply thanking them and asking to be kept in mind for the next opening, then a single follow up on each of the other three."
+          },
+          {
+            "id": "c",
+            "text": "Nothing at all, since a reply changes no decision that has been made and the other three have already answered her by staying silent."
+          },
+          {
+            "id": "d",
+            "text": "A message to the other three saying she was turned down elsewhere and is free to start immediately, which shows them she is available now."
+          }
+        ],
+        "correct_option_id": "b",
+        "competency": "professional_communication",
+        "explanation": "A short reply to a rejection costs nothing and occasionally returns something, because the person they hired does not always stay and the next opening lands on the same desk. Meanwhile the other three are still live, and each is owed one follow up rather than a campaign. Asking what she did wrong feels like growth, and it asks a stranger to put a judgement about her in writing, which is more than a rejection email owes her, and chasing it turns a good impression into an awkward one. Doing nothing is the common choice and it closes a door that was still ajar. Announcing the rejection to the other three tells them somebody else assessed her and said no, which is not the thing she wants leading."
+      },
+      {
+        "prompt": "An employer phones Nadine eleven days after she applied and asks whether she is still interested and whether she sent the sample they requested. She has applied to about twenty places this month and cannot remember which posting this is or what she sent them. What should she do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Say yes to both questions and work out afterwards which role it was, since hesitating on a phone call loses the opportunity outright."
+          },
+          {
+            "id": "b",
+            "text": "Apply to far fewer places from now on, because twenty is more than anybody can hold in their head and the memory is the real problem here."
+          },
+          {
+            "id": "c",
+            "text": "Ask which role it is, say she will confirm within the hour, and then start one file logging what she sent, when, and what is due next."
+          },
+          {
+            "id": "d",
+            "text": "Search her sent mail during the call and read the posting back to them, since the record already exists and needs no separate tracker."
+          }
+        ],
+        "correct_option_id": "c",
+        "competency": "delivery_reliability",
+        "explanation": "A search runs for weeks and memory does not, so the fix is a file: what she sent, to whom, when, and the next thing due. Asking which role it is costs nothing and beats a confident yes to a question she cannot answer, which is a promise she may already have broken. Cutting back to a handful of applications treats the symptom by shrinking the search itself. Digging through sent mail during the call feels resourceful, and an inbox is a pile rather than a record: it holds what she sent and never what is due next. That same file is where new evidence goes as well, because every application and every test task produces something for the inventory."
+      }
+    ]
+  }
+}

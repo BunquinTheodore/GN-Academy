@@ -1,0 +1,929 @@
+{
+  "slug": "bookkeeping-basics-for-freelancers",
+  "title": "Bookkeeping Basics for Freelancers",
+  "subtitle": "Records you can hand to a client, a bank or the BIR",
+  "level": "professional",
+  "category": "Business admin",
+  "format": "Self-paced online",
+  "summary": "Bookkeeping for people who invoice their own clients. Twelve lessons on separating business money from personal money, keeping documents that prove what happened, running a plain spreadsheet you update weekly, and understanding what registering as self-employed commits you to. Education, not tax or legal advice: every figure that matters, you are told to confirm with the BIR or an accountant.",
+  "description": "You get paid, the money lands in the same account as your groceries, and four months later a client asks for a summary, or a bank asks what you earn, or you sit down to file and cannot reconstruct the year. This course builds the habit before you need it. You will put one boundary between business money and personal money, learn what each document in a freelance transaction actually proves, build a one-sheet income and expense ledger, record a payment correctly when platform fees, withholding and currency conversion shave it on the way in, and close each month in about an hour. The last chapter covers what being registered with the BIR commits a self-employed person to, described as an arrangement rather than as a set of figures, because rates, thresholds, form names and deadlines change and a number you read in a course is not a number you can file on. You finish with a deadline calendar built from sources you checked yourself, and the questions to ask a bookkeeper or an accountant when the work outgrows you. This is education, not tax or legal advice.",
+  "skills": [
+    "Separating business and personal money",
+    "Invoices, receipts and proof of payment",
+    "Evidence that an expense was business",
+    "Income and expense ledgers in a spreadsheet",
+    "Monthly reconciliation and close",
+    "BIR obligations and a deadline calendar you checked yourself",
+    "Working with a bookkeeper or an accountant"
+  ],
+  "outcomes": [
+    "Set a boundary between business money and personal money, and explain what mixing them costs you when someone asks for records",
+    "Say what an invoice, a receipt and a proof of payment each prove, and produce the one a client, a bank or a reviewer is actually asking for",
+    "Keep a one-sheet income and expense ledger and reconcile it against your bank and e-wallet statements once a month",
+    "Record a payment where the amount that landed is smaller than the amount you invoiced, and defend every line of the arithmetic",
+    "Describe what registering as self-employed commits you to, build a deadline calendar from official sources, and name the figures you must confirm with the BIR or an accountant instead of assuming"
+  ],
+  "roles": [
+    "Freelancers and virtual assistants",
+    "Online sellers",
+    "Self-employed professionals",
+    "Jobseekers planning to go freelance"
+  ],
+  "price_php": 1499,
+  "is_free": false,
+  "passing_score": 70,
+  "credential_prefix": "BKB",
+  "sort_order": 8,
+  "requires_assignment": true,
+  "modules": [
+    {
+      "slug": "chapter-1-records-you-can-stand-behind",
+      "title": "Records You Can Stand Behind",
+      "description": "Before any spreadsheet, the two moves that make bookkeeping possible: knowing who will ask you for records and when, and putting a boundary between business money and personal money that you can actually keep.",
+      "lessons": [
+        {
+          "slug": "who-asks-for-your-records",
+          "title": "Who Asks for Your Records, and When",
+          "content_mdx": "# Who Asks for Your Records, and When\n\nReyna does virtual assistant work for three clients from a room in Bacolod. She has never kept books. Then one month arrives in which her longest-running client asks for a summary of everything she billed them last year, a landlord asks her to show what she earns, and a fourth client insists they already paid an invoice she is certain is unpaid.\n\nNone of those is an accounting question. They are the same question wearing three different shirts: can you show what happened.\n\nOne thing before the rest of this course. It is education, not tax or legal advice. Nothing here substitutes for the BIR's current issuances or for a licensed professional who can see your actual situation, and every figure that matters is one you will be told to confirm rather than one this course prints.\n\n## The five people who will ask\n\n**A client or an agency.** They are closing their own year and want a statement of what you billed them and when. They are not testing you. They need it to match their side.\n\n**An institution.** A bank, a landlord, a lender, an embassy. Someone salaried hands over a payslip. You have no payslip, so you are asked to show income another way. What each institution accepts differs by institution and changes from year to year, so the only reliable move is to ask that institution directly what they want, and to ask early rather than in the last week. Do not take the answer from a forum thread, from a group chat, or from a friend who applied three years ago.\n\n**The BIR, if you are registered.** Registration is chapter 4's subject, and this course refuses to guess at its details. What matters here is the shape: keeping books and being able to produce them is an obligation that sits on you rather than on an employer.\n\n**A client who says they already paid.** This is the one that costs money directly. The argument is settled by evidence, or it is settled by whoever gives up first.\n\n**You.** You cannot tell whether a retainer is worth keeping if you have never added up what it costs you to serve. The client who pays the least is not always the one to drop.\n\nFive askers, five different cuts of the same underlying records. That is the argument for keeping one set that answers all of them, rather than assembling something new every time somebody asks.\n\n## The panic week\n\nHere is what happens instead, and it happens to careful people.\n\nThe request arrives and you have nothing. So you take a week. You open your bank history, scroll your e-wallet, dig through Messenger threads and Gmail, and rebuild the year from whatever is still reachable. Some of it is gone. Some of it is ambiguous: a transfer from a name you do not recognise, a payment that might have settled two invoices or might have settled one. You round the awkward figures. You guess at a date.\n\nWhat you produce is a document you cannot defend. Ask yourself a follow-up question about any single line in it and you have no answer, because you did not know the answer when you wrote the line.\n\nThe second cost is worse. That week teaches you that bookkeeping is horrible. It is not. What is horrible is doing a year of it in one week, from memory, under a deadline, for free.\n\n## The standard this course holds to\n\nA record you can stand behind has three properties.\n\n**You wrote it near the time it happened.** Not the same second. The same week is fine. March is not.\n\n**It points at a document that exists.** A statement line, an invoice you issued, a receipt, a message where the client confirmed the amount. The record itself says where that document is kept.\n\n**It has not quietly changed since.** When you correct something, you correct it visibly and with a date, so the correction becomes part of the record instead of replacing it.\n\nEvery habit in the rest of this course exists to produce records that pass those three tests. None of it is complicated. The difficulty is entirely in doing it near the time, which is why the next lesson removes the largest obstacle to that: money sitting in one undifferentiated pile.\n\n## Before the next lesson\n\nWrite down the last time somebody asked you to show something about your money, and what you actually sent them. If nobody has ever asked, write down who is likeliest to ask you first this year. That person is your real deadline.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "separating-business-money",
+          "title": "Separating Business Money From Personal Money",
+          "content_mdx": "# Separating Business Money From Personal Money\n\nEverything in the last lesson gets cheap or expensive depending on one decision, and you can make it this afternoon.\n\nJoel does motion graphics for two agencies in Iligan. Client payments land in the same account as his rent, the money he sends his mother, his game top-ups and the transfers to the sari-sari store downstairs. In January somebody asks him what he earned from agency work last year. There is no answer in that account. There is only a river.\n\n## Why one account cannot be untangled later\n\nYou might think the transactions are all still sitting there, so the information is still there too. It is not, and the reason is simple: a bank line records an amount, a date and a counterparty, and nothing else. It does not record why.\n\nA transfer to your cousin might be a gift, a loan repayment, or paying a subcontractor who helped you on a client job. A card charge might be a subscription you use only for client work, only for yourself, or for both. The bank cannot tell you which. Only you can, and only while you still remember, and that window closes faster than anyone expects.\n\nSeparation is not tidiness. It is a way of recording the why at the moment you still know it, using an account as the label.\n\n## What it looks like at freelance scale\n\nYou do not need a company. You need a boundary.\n\n**One account or wallet is the business one.** Client money arrives there. Business spending leaves from there. Nothing else touches it.\n\n**You pay yourself on a schedule.** Once or twice a month, one transfer from the business side to your personal side. That transfer is your pay. Rent, groceries, savings and everything else happen on the far side of it, and none of that is this course's business.\n\nMake it one labelled movement rather than a dozen small withdrawals whenever cash runs low. A dozen withdrawals is twelve rows you have to explain and cannot. One transfer per period is one row that explains itself, and it lets you see what you actually paid yourself last quarter, which is a figure worth having.\n\nWhat kind of account, at which institution, and what you need to open it: that is not a question this course can answer, because requirements, balances and charges differ by provider and change. Ask the institution directly what a self-employed person opens and what to bring. A second ordinary account used only for business is a legitimate starting point and far better than nothing.\n\n## The messy edges, handled honestly\n\n**The subscription that renews on your personal card.** It happens. Do not pretend it did not. Record the charge in your business records with a note saying it was paid personally, keep the document, then go and change the card. The rule is record it, mark it, stop doing it.\n\n**Cash from a client.** It goes into the business account, not into your pocket. Yes, that is an extra trip. It is also the only way that payment ever becomes evidence.\n\n**A client who keeps paying into your personal account** because that is where they have always sent it. Send the new details in writing, and until the change takes effect, move each payment across on the day it lands with a note naming the invoice it settles.\n\n## If you are already mixed\n\nDo not retro-fit. Reconstructing eight months of tangled transactions is the panic week from the last lesson with extra steps.\n\nPick a date instead. The first of next month will do. From that date the boundary exists and every transaction lands on the correct side of it. For what came before, do one bounded job: pull out only the client payments, list them with their dates and amounts, and label that list as reconstructed along with the date you built it. Then leave the rest alone.\n\nA clean line with a documented mess behind it is defensible. A mess everywhere is not.\n\n## One honest limit\n\nSeparating your money is a bookkeeping decision. It is not a legal shield. If you are self-employed rather than a company, the money in the business account is still your own money and your obligations are still yours personally. Nobody is protected by a second account. What the second account buys you is the ability to answer questions.\n\nBudgeting the personal side, on income that arrives unevenly, is the Basic Finance course's subject and it is a genuinely different skill. This course starts at the moment money becomes business money, and stops again at the moment you pay yourself.\n\n## Before the next lesson\n\nChoose the date your boundary starts, and write it down where you will see it. Then write one sentence saying how you will pay yourself: how often, and from which side to which side.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "what-makes-a-record-trustworthy",
+          "title": "What Makes a Record Trustworthy",
+          "content_mdx": "# What Makes a Record Trustworthy\n\nNobody who looks at your books is grading your handwriting. They are running four tests, usually without announcing them. Learn the tests and you can run them on yourself before anybody else does.\n\n## Test one: contemporaneous\n\nWritten near the time it happened.\n\nNobody will ask you when you wrote a row. They find out by asking about one. A row written the same week comes with something attached to it: which call, which file, which of the two similar jobs. A row written four months late answers with a pause, and the pause is the finding.\n\nA date you remembered in March is a guess wearing a date's clothes. A description you wrote in March is worse, because by then you have merged two similar jobs into a single memory and you genuinely no longer know which client the ₱3,500 was for.\n\nThe practical version of this test is a weekly habit rather than a daily one. Sunday night, ten minutes, everything that moved this week goes in. A week-old memory is still a memory. A four-month-old memory is fiction.\n\n## Test two: sourced\n\nEvery row points at a document that exists, and the row says where that document is.\n\nThis is the property that turns a spreadsheet from a diary into evidence. Without it, your ledger is a list of things you assert. With it, every line has something behind it that somebody else produced: a statement line, an invoice you issued, a receipt, a written confirmation from the client.\n\nThe check is one question, asked about one row somebody picked more or less at random: where is this from. The answer arrives in ten seconds or it does not arrive, and there is no third outcome.\n\nIf a row has no document, the row still goes in. You write in the reference column that there is none, and say what you have instead. An admitted gap is a record. A hidden gap gets found by whoever is checking, and once they find it they start doubting the rows that were fine.\n\n## Test three: complete\n\nThe small ones are in there too.\n\nThere is a strong pull toward recording only the transactions that feel significant. It feels efficient. It destroys the ledger, because a reviewer who spots one missing ₱200 charge has learned that your records are selective, and now has no way of knowing what else was left out. They start doubting the ₱40,000 rows.\n\nWhich is why the check runs on the small ones. A large transaction is the one you were always going to record. The cheapest row to leave out is the smallest, so that is the row somebody looks for.\n\nCompleteness is also what makes your own totals mean anything. A category total is only useful if everything in that category is actually inside it.\n\n## Test four: stable\n\nYou correct with a new dated line, not by quietly overwriting an old one.\n\nYou will make mistakes. You will categorise something wrongly, or record a payment at the amount you invoiced when the statement shows less arriving. The fix is not to go back and change the old number so the sheet looks like it was always right. The fix is a new row, dated today, saying what changed and why, with the old row left exactly where it is.\n\nThis feels pedantic until the first time somebody asks why a figure differs from one you sent them in June. If you overwrote it, you have no answer. If you corrected it visibly, the answer is sitting right there and takes ten seconds.\n\n## The four things freelancers produce instead\n\n**The screenshot folder.** Hundreds of files called Screenshot_20260114_193302.jpg. The evidence exists and cannot be found, which in practice is the same as not existing.\n\n**The notebook that stops in February.** Started with real energy. Abandoned during a busy week. Now it is worse than nothing, because it implies a complete record and is not one.\n\n**The one-sitting ledger.** Typed up in April from bank history. Every row is real, and no row knows why the money moved. It is a reasonable starting point, but it has to be labelled as reconstructed, with the date you built it, and the rows you were unsure about marked as unsure.\n\n**The rounded figure.** A payment of ₱12,437.50 written down as ₱12,400 because the round number reads nicer. Now your ledger will never agree with your statement, every total inherits the error, and you get to spend an evening hunting a difference you created on purpose.\n\n## Filing, in two sentences\n\nFiling and naming are the spreadsheets course's chapter 1, and the rule there is the one to use: the date first, then the counterparty, then what the document is, one folder per year and one folder per month inside it. What that course does not cover is the part this one needs from it, which is that paper gets photographed the day it reaches you and the photo goes into the same folder under the same name.\n\nStore all of it somewhere you will still have access to after you change phones or hand back a borrowed laptop. That is a decision about your own accounts, and it is worth ten minutes before three years of files depend on the answer.\n\n## How long you have to be able to answer\n\nOne more reason not to throw anything out. Records that support a filing have to be kept, and a required period is attached to them. How long that period runs, what form the records have to be in, and when the clock starts are set by rule, and rules move, so this course prints no number for any of it. Ask the BIR, then write the answer into the year's folder with the date you asked and who told you. Until you have that answer, keeping costs you storage and destroying cannot be undone.\n\n## Before the next chapter\n\nRename the last five payment screenshots on your phone using the date-first rule, and move them into a folder for the month they belong to. That is the entire habit, at a size you can finish tonight.\n",
+          "duration_minutes": 10
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Reyna has been paid into her personal e-wallet for eight months, mixed in with family transfers and load top-ups. One client now asks for a statement of everything they paid her last year. What should she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Export the whole wallet history for the year and send it, noting which lines the client should ignore."
+            },
+            {
+              "id": "b",
+              "text": "Build the statement from that client's invoices and payments only, marking any line she cannot evidence."
+            },
+            {
+              "id": "c",
+              "text": "Work out the amounts from her rate and the months she worked, then ask the client to confirm the total looks right."
+            },
+            {
+              "id": "d",
+              "text": "Tell the client the older records are gone, and offer a statement running from this month onward."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "record_keeping",
+          "explanation": "The client asked about their own transactions, so the statement is built from the documents that concern them: her invoices and the payments that settled them. Sending the whole wallet history hands over her family's transfers and makes the client do her work for her, and a note telling them what to skip does not fix that. Rate multiplied by months is a guess, and asking the client to confirm a guess makes it their problem rather than evidence. Where she genuinely cannot evidence a payment, the honest move is to mark it as such rather than smooth it over."
+        },
+        {
+          "prompt": "In April, Ariel types up a ledger covering January to March in one sitting, reading every row off his bank history. Each row is a real transaction. How should he treat the sheet?",
+          "options": [
+            {
+              "id": "a",
+              "text": "As a labelled reconstruction: note the date he built it, and flag the rows whose purpose he is unsure of."
+            },
+            {
+              "id": "b",
+              "text": "As unusable, since nothing written months after the fact can be relied on at all."
+            },
+            {
+              "id": "c",
+              "text": "As finished work, since every row traces to a real bank line, and ask the bank to confirm the doubtful ones."
+            },
+            {
+              "id": "d",
+              "text": "As a rough draft to retype later, once he has asked each client to confirm what their transfers were for."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "record_keeping",
+          "explanation": "Reconstruction from statements is honest work and much better than reconstruction from memory, but a bank line records an amount, a date and a counterparty and never why the money moved. The bank cannot tell him either, so asking it confirms nothing he did not already have. Labelling the sheet as reconstructed, with the date he did it, and marking the rows he is unsure about keeps it defensible. Writing it off as unusable throws away real evidence. Waiting until every client answers leaves three months unrecorded, and some of them will never answer."
+        },
+        {
+          "prompt": "Rico keeps every proof of payment as a phone screenshot. The folder holds hundreds of files named like Screenshot_20260114_193302.jpg. A client queries one payment from last March and he cannot find it. What actually fixes this?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Keep the screenshots as they are and search the phone gallery by the date the payment was made."
+            },
+            {
+              "id": "b",
+              "text": "Move every screenshot into one folder called Proofs, so at least nothing is scattered any more."
+            },
+            {
+              "id": "c",
+              "text": "Rename each file so the date comes first, then the counterparty, then what the document is, and file it in that month's folder."
+            },
+            {
+              "id": "d",
+              "text": "Ask the client to resend their own proof, since their copy records the same transfer as his."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "admin_tooling",
+          "explanation": "Evidence you cannot find is, for every practical purpose, evidence you do not have. A date-first filename sorts the folder into order by itself and tells you what the file is without opening it, and a folder per month means you are searching a handful of files rather than hundreds. Searching a gallery by date works only when you already know the date, which is the thing in dispute. One big folder is the same problem with a nicer name. Asking the client to supply the proof puts your record in their hands."
+        },
+        {
+          "prompt": "A design tool Marisol uses only for client work renews every month on her personal card, and switching the card is a chore she keeps postponing. What should she do about her books in the meantime?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Leave it out of the business records, and note the card change on her list of things to get round to."
+            },
+            {
+              "id": "b",
+              "text": "Put it on the personal side only, but note the client use in the description so the purpose is not lost."
+            },
+            {
+              "id": "c",
+              "text": "Start recording it in the business records from the month she moves the card across, and mark the earlier months as personal."
+            },
+            {
+              "id": "d",
+              "text": "Record the charge with a note that it was paid personally, keep the document, and then change the card."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "record_keeping",
+          "explanation": "The test for a record is whether it describes what happened. The charge happened and it was for client work, so it goes in, with a note naming which card paid it and the document kept alongside. Leaving it out makes the category total wrong and hides a cost that repeats every month, however good the note on the to-do list is. Filing it as personal because of which card was used records the mechanism instead of the purpose, and a description does not undo a row on the wrong side. Marking the earlier months as personal is the same error written down twice."
+        },
+        {
+          "prompt": "At a family gathering, an uncle tells Grace that freelancers only have to keep records for a set number of years, and that she can throw out anything older than that. What is the right response?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Follow it, since a rule about how long to keep papers is not the sort of thing that moves."
+            },
+            {
+              "id": "b",
+              "text": "Keep everything for now, and confirm the current rule with the BIR or an accountant."
+            },
+            {
+              "id": "c",
+              "text": "Clear out the oldest year, noting what she destroyed, as a middle position between the two."
+            },
+            {
+              "id": "d",
+              "text": "Keep only what a client might ask about, and ask her groupmates what they do with the rest."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "compliance_ph",
+          "explanation": "The obligation to keep records is real, and chapter 1 told you a required period is attached to it. What that period is, and what form the records have to be in, are set by rules that change, and an uncle at a party is not a source. The move is to confirm the current rule with the BIR or an accountant and write down the date you checked, so that next year you know how old your answer is. Meanwhile keeping costs you a folder and destroying cannot be undone. A noted middle position is still a guess, and a groupmate is the same uncle with better wifi."
+        },
+        {
+          "prompt": "A client payment of ₱12,437.50 lands in Ella's business account. She writes ₱12,400 in her ledger because the round figure reads more nicely. What does this habit actually cost her?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nothing worth worrying about, since the difference is small and the rounding went in the safe direction."
+            },
+            {
+              "id": "b",
+              "text": "Only that her recorded income reads slightly low, which is a cautious way to keep her figures."
+            },
+            {
+              "id": "c",
+              "text": "Every total built on that row is now wrong, and she has made a difference she will have to hunt down at the close."
+            },
+            {
+              "id": "d",
+              "text": "The client will notice the mismatch when they check their own books against her invoice."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "working_with_numbers",
+          "explanation": "Rounding breaks reconciliation, which is the check that makes a ledger trustworthy: the row is meant to match a statement line exactly, and a row that does not match cannot be ticked off. Every category total and every yearly figure inherits the error, and the evening spent chasing the difference is spent on one she created herself. Rounding downward is not conservative, it is just wrong in a chosen direction. Whether the client notices is beside the point, because the person who has to reconcile this is her. Record the figure the statement shows, awkward centavos included."
+        },
+        {
+          "prompt": "A client insists they already settled an invoice from two months ago. All Nadine has is a Messenger thread where the client wrote sending now. Her business account shows no matching credit. What is her position?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Strong on both the invoice and the missing credit, so ask the client for their proof of transfer."
+            },
+            {
+              "id": "b",
+              "text": "Weak, so the practical move is to write the amount off and be more careful with the next client."
+            },
+            {
+              "id": "c",
+              "text": "Neutral, since with one message on each side it comes down to whoever pushes hardest for longest, so she should note the dispute and move on."
+            },
+            {
+              "id": "d",
+              "text": "Strong, because the client's own message saying they were sending it confirms that the payment was made."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "record_keeping",
+          "explanation": "Sending now records an intention, not a transfer, and a message confirming an intention is not a confirmation of payment. What Nadine holds is stronger than she thinks: a numbered invoice she issued, and a business account statement showing no matching credit in that period. That pair is checkable by a stranger, which a chat message is not. So the next step is to ask the client for their proof of transfer with the date, amount and reference, and check it against the same statement. Note what makes this work: had the money been landing in a personal account mixed with everything else, she would have no clean statement to point at."
+        },
+        {
+          "prompt": "Ferdie is setting up his records as one spreadsheet plus a folder of documents per month. He works from a phone he replaces every couple of years and a laptop borrowed from his sister. What deserves ten minutes of thought before he starts?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Whether documents are kept as photos or as PDFs, and noting the format on each row so nothing is ambiguous."
+            },
+            {
+              "id": "b",
+              "text": "Which spreadsheet application to pay for, since the paid ones are the ones that handle books properly."
+            },
+            {
+              "id": "c",
+              "text": "How many columns the sheet will need, since adding one later would break the formulas he has written by then."
+            },
+            {
+              "id": "d",
+              "text": "Where the files will live, so he still has access after the phone is replaced and the laptop goes back."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "admin_tooling",
+          "explanation": "The tooling questions are answerable later and cheaply. Access is the one that is expensive to fix afterwards, because records you cannot reach are records you do not have, and a phone gets replaced and a borrowed laptop goes back to its owner. Columns can be added to a sheet whenever you need them, and a formula that breaks tells you it broke. A legible photo and a PDF are both fine as evidence, so noting which one it is buys him nothing. Decide where everything lives and under whose account before three years of files depend on the answer."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-2-the-paper-that-proves-it",
+      "title": "The Paper That Proves It",
+      "description": "What a document has to do to be worth keeping. Which document proves a sale, which proves the money arrived, and the business purpose test that decides whether an expense survives being questioned.",
+      "lessons": [
+        {
+          "slug": "three-documents-three-jobs",
+          "title": "Three Documents, Three Different Jobs",
+          "content_mdx": "# Three Documents, Three Different Jobs\n\nJomar edits video in Mandaue for two small agencies. A third client, a corporation with an actual accounting department, sends him an onboarding form. One line asks what document he can issue for his fees. He does not know what the question is asking, so he attaches a screenshot of a GCash transfer from a different client and submits it. Onboarding stalls there.\n\nThe screenshot was the wrong document, and not because Jomar was careless. Freelancers use three words for paperwork as though they were one word. They name three different jobs, and only one of them is the job that form was asking about.\n\n## Three jobs, not three synonyms\n\n**A request to be paid.** Call it a billing statement; the word invoice now belongs to the regulated document below. You write it, you issue it, and it says what you are owed and why. It proves what you claimed. It does not prove that anything was paid.\n\n**An acknowledgement that money changed hands.** A receipt in the ordinary sense of the word: a document saying an amount was received, from whom, on what date, and for what. A bank statement line and a wallet history entry are evidence of the same event, recorded by the channel rather than by you.\n\n**The document a registered seller is required to issue.** This is the one people reach for the phrase \"official receipt\" to describe, and it is the regulated one. What that document is currently called, what it has to carry, and what a client can do with it once they have it have all been changed by legislation in recent years, and they are still moving.\n\nSo this lesson hands you the shape and refuses to hand you the term. Take the current requirement from the BIR or from an accountant, ask about your own situation rather than about freelancers in general, and write down the date you asked. A word you read in a course is not a word you can put on a document.\n\n## Why this is a commercial question first\n\nJomar's immediate problem was not a penalty. It was a form he could not fill in, in front of a client who needed an answer before they could set him up as a payee at all. That is the shape of the risk for a freelancer. Not knowing what you can issue costs you the conversation long before it costs you anything else.\n\nWhich makes the fix ordinary. Find out what you can issue, say exactly that, and name what you are still checking. Never promise a document you have not confirmed you can produce, because a promise you cannot keep is worse than a gap you named on day one.\n\nSomething you could send today:\n\n> I can send a billing statement with my details and the work described, and a written acknowledgement of payment once the transfer lands. I am confirming with the BIR what else applies to me, and I will come back to you on Friday.\n\n## The billing document you can issue today\n\nCareful with the word. Legislation has been moving these terms around, and invoice is one of the words it moved onto the regulated document a registered seller issues. So do not put that word on anything you hand a client until you have confirmed with the BIR what you are entitled to issue and what it has to be called. What follows is the content, not the label. Head it something neutral, Billing Statement or Request for Payment.\n\nWhat a payable billing document has to carry is the freelancing course's subject and that list has not changed: who is billing, who is billed, a number, a date, what the work was in the words of the agreement, the amount and the terms, and exactly how to pay you with the reference to put on the transfer. What that course does not cover is what turns a pile of them into records, which is the numbering and the copies.\n\nElsewhere this course still says invoice, because that is the word you and your client will both use out loud and the word your own numbering uses. The care is about the label on a document you hand somebody, and about what you tell a client you are able to issue.\n\n## Numbering that does not collide\n\nPick one sequence and never break it. The year plus a running count is enough: INV-2026-001, then INV-2026-002. Never reuse a number, never restart in the middle of a year, and never let two clients share one.\n\nIf you cancel an invoice, do not recycle its number. Issue a new one, and note on your copy that the old number was cancelled and when. A gap in a sequence is a question you can answer. A repeated number is a question you cannot.\n\n## Keep your own copy of everything you issue\n\nSave the billing document as a file the moment you send it, named with the date and its number, in the month folder you set up in chapter 1. Save the acknowledgement you send when the money arrives, in the same place, named the same way.\n\nClients change staff. Threads get archived. Apps get uninstalled and phones get stolen. The copy you control is the only one you can count on when somebody asks you in eleven months what you billed them in March, and being the person who can answer that in a day is worth more to a client than any of the paperwork feels while you are doing it.",
+          "duration_minutes": 9
+        },
+        {
+          "slug": "proving-money-came-in",
+          "title": "Proving the Money Came In",
+          "content_mdx": "# Proving the Money Came In\n\nBea does inbox and calendar work for three clients from Davao. One pays her by bank transfer, one through a freelancing platform, and one sends cash with a relative who works two jeepney rides away. In March a client asks her to confirm what they paid her across last year. She has the money. She cannot show where any of it came from.\n\nIncome evidence is the half of bookkeeping that looks easy until somebody asks. The money arriving is not the record. The record is the thing you can still put in front of a stranger a year later.\n\n## What each channel hands you, and for how long\n\nEach channel records the event in its own way, so you are looking for a different object in each one.\n\n- From a bank, the statement line: a date, an amount, and whatever it shows about the sender.\n- From a wallet, the transaction entry and whatever reference sits on it.\n- From a platform, its own record that a payment was released to you.\n- From a remittance, the advice or the slip and the reference on it.\n- From a client, a message saying \"sent na po\", which is a claim rather than evidence.\n\nDo not assume any of these will still be reachable when you need it. How far back a history goes, whether it can be exported, and in what form all differ by provider and change without anyone telling you. So find out what your own accounts give you this week, while nothing is urgent.\n\nThen take the object out at the time and keep it: the statement each month, a screenshot with the date and reference visible, the platform's own record of the release. Saving at the time costs you a minute. Retrieving in a year costs you an email chain, and sometimes costs you the record entirely.\n\n## Matching a payment to the invoice it settles\n\nProof that money arrived is only half the job. The other half is knowing which invoice it settled, because that is what turns a pile of deposits into a set of answers.\n\nGive every row a **document reference**: a short code naming the file that holds the evidence. The row says what happened, the reference says where the proof lives, and chapter 3 builds the sheet around that column. Bea's reference for a March transfer might read `2026-03-14-bank-stmt-p2`, which is enough to find the file in the folder from chapter 1 without opening four others first.\n\nFour awkward cases fill a freelancer's year.\n\n**One payment covering two invoices.** Say Bea invoiced ₱8,000 and ₱4,500 in the same month, and a single transfer of ₱12,500 arrives. Those figures are invented so the shape is visible; yours will be different. Record two rows, one against each invoice, both pointing at the same document reference, with a note that they arrived together. A single row for ₱12,500 against nothing is a row that will defeat you in November.\n\n**A partial payment.** Record what actually arrived, against the invoice it belongs to, and leave that invoice showing a balance still open. Do not edit the invoice down to match the money that came. The gap is the useful information.\n\n**An advance paid before the work.** The money is in your account and the job has not started. Record it on the day it arrived, mark on the row that it is an advance against a named job, and settle it against the invoice when you issue one.\n\n**A payment under a name you do not recognise.** A spouse, a business manager, a company's disbursement account, a relative sending on somebody's behalf. Do not leave it sitting as a mystery deposit, and do not quietly guess. Ask the client in writing to confirm that the payment came from them and what it covers, then save that reply beside the bank line. Two objects, one row.\n\n## Cash, where there is no line to point at\n\nCash leaves no trail unless you make one. When somebody hands you money, write an acknowledgement on the spot: the date, the amount in words and in figures, what it is for, which invoice it settles, your name, the payer's name, and both signatures. Photograph it before either of you walks away.\n\nThat photo is the only evidence that will ever exist for that transaction. It cannot be reconstructed later, and remembering it clearly is not the same as being able to show it.\n\n## What this buys you\n\nBea's client in March was not accusing her of anything. They were closing their own books and needed a number they could rely on. A freelancer who can answer that in a day, with references attached, is a freelancer who gets asked back.\n\nThe habit is three moves and it fits in a week. Money lands. You save the object. You write the row, and the row names the object.",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "proving-an-expense-was-business",
+          "title": "Proving an Expense Was Business",
+          "content_mdx": "# Proving an Expense Was Business\n\nSay this plainly before anything else. This lesson is about evidence, not about deductions. Writing a cost into your books does not make it deductible, and nothing here tells you what the BIR will allow. Whether a given expense reduces what you owe is a question for the rules current at the time, or for an accountant looking at your actual situation. This is education, not tax or legal advice.\n\nWhat the lesson does give you is the ability to answer one question about any peso you spent. What business purpose did this serve, and can you say it out loud to a stranger without flinching.\n\n## The three piles\n\nRowena writes product copy for e-commerce brands from her family's house in Antipolo. Take one month of her spending and sort it.\n\n**Clean.** A stock image subscription she uses only for client decks. An external drive bought to hold one client's raw files. The renewal on her own portfolio domain. Each of these exists because the business exists. The purpose is a sentence, and the sentence is boring, which is exactly what you want.\n\n**Mixed.** Her internet, shared with four other people in the house. Electricity. Phone load. Her share of the rent. A laptop she works on and her brother games on. These are real costs of doing the work, and they are also the household's costs. Pretending either half is not there is where freelancers get into trouble.\n\n**Personal, and it felt like work.** Dinner with a friend who might refer her someday. A course she bought during a slow week and never opened. Shoes for a client meeting held on Zoom. A feeling of relevance is not a business purpose.\n\nSorting one real month into those three piles is a single sitting, and it will teach you more about your books than any tool will.\n\n## For mixed costs, write down the basis\n\nNobody can hand you the right split. Any number printed in a course would be a number invented for a person who is not you. What you can do is choose a basis you are willing to explain, then be consistent about it.\n\nA basis is a rule with a reason attached. Rowena works in one of the five rooms in the house and uses it for nothing else, so she splits rent and electricity by rooms. She already logs her working hours, so she splits the internet bill by hours of use in an ordinary week. The laptop is genuinely shared, and she is not willing to claim all of it.\n\nThree moves turn that from a guess into a record.\n\n1. Write the basis down in one sentence, on a reference tab or in a note in the year's folder.\n2. Write the date you chose it and what you based it on.\n3. Apply the same basis every month, and when the situation changes, revisit it with a new dated line rather than a silent edit.\n\nA client's finance team, a reviewer or an accountant is not looking for a perfect number. They are looking at whether you had a method, whether you can explain it, and whether February and September were treated the same way. An inconsistent split is a far bigger problem than a conservative one.\n\nSay it once more, because this is the lesson where the temptation lives. A split you have documented is evidence of how you arrived at a figure. It is not a ruling that the figure is allowed. That ruling comes from the BIR or from an accountant, and you go and ask.\n\n## When the supplier gives you nothing\n\nThe sari-sari store that sold you bond paper. The tricycle and then the jeepney to a client's office in Ortigas, paid in cash to both. The neighbour who repaired your chair. Sometimes there is no document at all.\n\nDo not skip the row, and do not invent a document. Record it the same day with everything you do have: the date, the amount, who you paid, what it was for, and how you paid it. If there is a transfer or a wallet entry behind it, that is your reference. If it was cash, write your own dated note and file it with the month's papers.\n\nAn expense with a thin record and an honest note is defensible. An expense with no record at all, remembered in April, is not.\n\n## The three things that travel together\n\nFor every business cost, at the time it happens:\n\n- **The document**, saved and named the way chapter 1 set out\n- **The row**, carrying the document reference, so the two can find each other\n- **The purpose**, in a few plain words, written while you still know why\n\n\"Stock image subscription, March, used on the Salcedo bakery deck and two client carousels\" is a purpose. \"Software\" is not, and by October you will not be able to tell those two spends apart.\n\nChapter 3 turns these rows into a working sheet. This chapter's job was to make sure that every row you write there will have something real standing behind it.",
+          "duration_minutes": 8
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Jomar's new corporate client sends an onboarding form. One line asks what document he can issue for his fees, and he has never been asked this before. What should he put in that box?",
+          "options": [
+            {
+              "id": "a",
+              "text": "That he will issue an official receipt, then ask around online for what one has to contain and copy a template that matches."
+            },
+            {
+              "id": "b",
+              "text": "A screenshot of a transfer from an earlier client, marked with the date, as evidence he has been paid before."
+            },
+            {
+              "id": "c",
+              "text": "A note saying what he can issue today, what he is still confirming with the BIR, and when he will confirm the rest."
+            },
+            {
+              "id": "d",
+              "text": "A request that the client name the document they need, and a note promising to provide whatever they write on the form."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "compliance_ph",
+          "explanation": "What a registered seller is required to issue, what it is called, and what a buyer needs on their side have been changed by legislation and keep moving, so a template copied off the internet risks issuing the wrong thing under a name that no longer applies. Promising whatever the client names is the same guess with the client's wording on it. A transfer screenshot proves money moved, not what he can issue, and a date on it does not change that. Naming what he can do today and what he is still checking keeps the onboarding alive and keeps him honest."
+        },
+        {
+          "prompt": "Bea sees ₱6,000 land in her account from \"M. Ramirez\". She has no client by that name, but a dental clinic she invoiced for exactly ₱6,000 has not paid yet. What should she do first?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ask the clinic to confirm in writing who sent the payment and what it settles, then save the reply beside the bank line."
+            },
+            {
+              "id": "b",
+              "text": "Record it as income from the clinic, since the amount matches the open invoice and no other client owes her exactly that figure."
+            },
+            {
+              "id": "c",
+              "text": "Leave it out of the ledger until somebody asks about it, so that her books never carry a row whose source she cannot explain."
+            },
+            {
+              "id": "d",
+              "text": "Record it under an unknown heading and note it for the year end, when she reconciles the whole year in one sitting."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "record_keeping",
+          "explanation": "A matching amount is a strong hint and not evidence. Clinics pay through an owner's personal account, a spouse, or a disbursement officer, and they also sometimes pay the wrong freelancer. One message costs nothing and produces a second document that sits beside the bank line for good. Waiting for somebody to ask leaves a gap between the statement and the ledger that she will have to explain anyway, and a year-end pile of unknowns is the reconstruction problem this course exists to prevent, whether or not each one carries a note."
+        },
+        {
+          "prompt": "Nina issued INV-2026-011 for ₱8,000 and INV-2026-012 for ₱4,500 to the same client. A single transfer of ₱10,000 arrives with no reference on it at all. How should she record it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "One row for the full ₱10,000 against the larger invoice, with a note that the client still owes the difference."
+            },
+            {
+              "id": "b",
+              "text": "One row for ₱10,000 with no invoice named, since the client never said which of the two jobs the money was for."
+            },
+            {
+              "id": "c",
+              "text": "Two rows of ₱5,000, one against each invoice, so both are left showing the same amount outstanding."
+            },
+            {
+              "id": "d",
+              "text": "Ask the client how the ₱10,000 splits across the two invoices, then write one row per invoice and save the reply as the evidence for both."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "working_with_numbers",
+          "explanation": "Only the client knows what they intended, and the split decides which invoice you chase next month. Halving it is an invented figure that will not match their records. Putting all of it against the larger invoice leaves ₱2,000 sitting against nothing, and a note about the difference does not say which invoice it belongs to. A row with no invoice named is the row that defeats you in November. One question now produces both the arithmetic and the document that supports it."
+        },
+        {
+          "prompt": "A client sends Ellen ₱5,000 to start on a job that has not begun, and she has not issued an invoice yet. What belongs in her records today?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nothing yet. She waits until the job is finished and the invoice is issued, then records the whole agreed fee on that later date."
+            },
+            {
+              "id": "b",
+              "text": "A row dated the day the money arrived, marked as an advance against the named job."
+            },
+            {
+              "id": "c",
+              "text": "A row recording it as a loan from the client, since none of it has been earned and no work has been delivered."
+            },
+            {
+              "id": "d",
+              "text": "A row for the full agreed fee now, noting that the balance will follow once she delivers the work."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "record_keeping",
+          "explanation": "Money that arrived on a date is recorded on that date, whatever it is for. Waiting for the invoice puts her ledger out of step with the bank statement, which is the mismatch that makes a monthly reconciliation painful. Recording the full fee records money she does not have, and a note saying the rest is coming does not make the row true today. Calling it a loan describes an arrangement neither of them agreed to. An advance is money received with a job named against it, and that mark is what lets her settle it cleanly later."
+        },
+        {
+          "prompt": "Rowena works from a house in Antipolo where the internet is shared with four other people. She wants the business share of the bill in her books. What is the defensible way to do it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Put the whole bill in, on the ground that without a connection she could not do a single hour of client work from that house."
+            },
+            {
+              "id": "b",
+              "text": "Leave the internet out of the books completely, since it is a household bill and any split she chose would be arguable."
+            },
+            {
+              "id": "c",
+              "text": "Estimate a different share each month depending on how heavy the client work felt, noting that month's reasoning on the row."
+            },
+            {
+              "id": "d",
+              "text": "Choose a basis she can explain, note the basis and the date, and apply that same basis every month until it stops fitting."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "record_keeping",
+          "explanation": "A reviewer is testing method and consistency, not precision. A written basis with a date behind it survives being questioned even if somebody would have chosen differently. A share that moves with how the month felt is an opinion recorded monthly, and writing the reasoning down each time documents the inconsistency rather than curing it. The whole bill ignores four other people on the same line. Leaving it out entirely means her books understate the real cost of the work, which distorts every judgement she makes about pricing."
+        },
+        {
+          "prompt": "Marco bought a laptop he uses for client editing and his household uses for streaming. He asks whether he can deduct it. What should he do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Record the cost with its document and a note on how the laptop is used, then ask the BIR or an accountant."
+            },
+            {
+              "id": "b",
+              "text": "Keep it out of his books until an accountant has confirmed in writing that a laptop shared with a household can be deducted at all."
+            },
+            {
+              "id": "c",
+              "text": "Record the full purchase price as a business expense, since he bought the machine for the client work and the streaming came later."
+            },
+            {
+              "id": "d",
+              "text": "Use the split another freelancer posted online for shared laptops, noting that it is a common arrangement for this kind of machine."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "compliance_ph",
+          "explanation": "Your books record what you spent and why. They do not decide what is allowed, and that decision belongs to the rules current at the time or to a professional looking at your situation. Waiting for permission before recording anything leaves a hole in the ledger and loses the document while he waits. Claiming the whole machine ignores household use he already knows about. A number somebody posted online is a stranger's guess about a different set of facts, and noting that it is common does not put any reasoning of his own behind it."
+        },
+        {
+          "prompt": "Rowena pays cash for a tricycle and then a jeepney to reach a client's office in Ortigas, and is given nothing for either fare. Her ledger rows are supposed to name their evidence. What now?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Leave the fares out and note the trip in her diary, since a row with no document weakens every row that has one."
+            },
+            {
+              "id": "b",
+              "text": "Add them at month end from memory, in one batch with the rest of the month's small cash travel, and mark the whole total as estimated."
+            },
+            {
+              "id": "c",
+              "text": "Write her own dated note the same day with the amounts, the route and the purpose, file it in that month's folder, and reference it."
+            },
+            {
+              "id": "d",
+              "text": "Round them into the next expense that does have a document, so the money is noted somewhere and the row still names a real file."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "admin_tooling",
+          "explanation": "Some suppliers will never give you a document, and the answer is to make one rather than to pretend the cost did not happen. A note written the same day and filed where the row can point at it is thin evidence, but it is contemporaneous and honest, which is what survives being questioned. A diary the ledger cannot reach is not evidence for a row that does not exist. Reconstructing at month end produces guesses, and marking them estimated only records that they are guesses. Folding them into another expense corrupts a row that was true before, and now neither row matches its document."
+        },
+        {
+          "prompt": "Liza is not registered with the BIR. A small business client pays her and asks for a receipt for their records. What should she send?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A note explaining that a receipt is not needed for an amount this small, along with a screenshot of the transfer for their files."
+            },
+            {
+              "id": "b",
+              "text": "A billing statement and a written acknowledgement of the payment, a note on what she cannot yet issue, and a date to confirm the rest."
+            },
+            {
+              "id": "c",
+              "text": "An official receipt filled in from a template she found online, so the client's records are complete and nobody has to wait around for it."
+            },
+            {
+              "id": "d",
+              "text": "A message agreeing to send the right document next week, once she has asked somebody what the right document is."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "compliance_ph",
+          "explanation": "She can always bill a client in writing and acknowledge a payment, and both are useful to the client. What she cannot do is produce a regulated document she is not in a position to issue, and a template filled in from the internet is exactly that. She should also watch what she calls the thing she sends, because legislation has moved the regulated document's name and the word she reaches for may now belong to it. Telling a business client that no document is needed decides something on their behalf that is not hers to decide. Agreeing to send one next week buys a week and then breaks a promise."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-3-the-ledger-you-keep-every-week",
+      "title": "The Ledger You Keep Every Week",
+      "description": "The working system: a spreadsheet with the columns that matter, recording what actually landed when fees and withholding shave a payment, and an hour a month that closes the books.",
+      "lessons": [
+        {
+          "slug": "the-columns-that-do-the-work",
+          "title": "The Columns That Do the Work",
+          "content_mdx": "# The Columns That Do the Work\n\nTeddy does admin support for two clients from Tarlac. His sheet has three columns: date, client, amount. It took him four minutes to set up and it has never once answered a question. When a client asked which invoices a single transfer covered, he could not say. When he wanted to know whether the smaller retainer was worth the hours, the sheet had nothing in it about what serving that client cost him. The sheet is not wrong. It is just too thin to be useful.\n\nEvery column in a ledger exists to answer a question somebody will ask you later. That is the whole test. If you cannot name the question a column answers, delete it. If you can name a question your sheet cannot answer, add the column now, while the answers are still easy to find.\n\n## Two tabs and a reference tab\n\nOne tab for money in. One tab for money out. A third tab that is not a ledger at all: your category list, written once and left alone, so that six months of rows use the same words for the same thing.\n\nKeep the two ledgers separate. A single tab holding both, with income positive and expenses negative, looks clever in January and is hard to read by June.\n\n## The columns, and the question each one answers\n\n**Date.** When did this happen. Use the date the money actually moved. If the invoice belongs to a different month, that goes in the notes.\n\n**Client or supplier.** Who was on the other side. Write the name the same way every time, or your totals for one client will split across two spellings.\n\n**Description.** What was this, in plain words a stranger could read. \"October retainer, social media\" beats \"work\".\n\n**Document reference.** Where is the proof. This is the column that connects the ledger to the documents chapter 2 had you keep, filed and named the way chapter 1 set out. Write the filename, or the folder and the date. This is the column a client's question lands on, and it decides whether answering takes you a minute or a week.\n\n**Category.** What kind of money is this. Chosen from the reference tab, never invented at the keyboard.\n\n**Account or wallet.** Which account did the money move through. This is the column that lets you tick your ledger against a statement at the end of the month, and without it you will spend the close guessing.\n\n**Gross.** What you earned, or what the supplier charged, before anything was taken off.\n\n**Deductions.** What was taken off on the way. The next lesson is entirely about this column.\n\n**Net.** What actually landed in your account, or what actually left it.\n\n**Currency, peso amount, rate used, rate source.** If a client pays in another currency, the ledger still has to end in pesos. Record which currency, the peso figure, the rate you applied, and where that rate came from. Four small columns you will thank yourself for later.\n\n**Notes.** The one sentence you will not remember. \"Paid under her husband's name.\" \"Advance against November.\"\n\nThat is a dozen columns and change, and it looks like a lot until you have filled twenty rows, at which point it takes about as long as the three-column version and answers questions the three-column version cannot.\n\n## Table structure is a separate craft\n\nHow a table should be built, meaning one row per thing that happened, dates stored as dates, amounts stored as plain numbers, and no totals sitting inside the data, is taught properly in the spreadsheets course. Learn it there. What this course asks of you is narrower: every transaction gets its own row, and every row names its evidence.\n\n## When a spreadsheet stops being enough\n\nA spreadsheet is the right tool at freelance scale, and it stays right for longer than people expect. You have outgrown it when more than one person needs to write in it at the same time, when you are carrying stock, when you are paying other people regularly, or when whoever files for you wants your records inside a system they already run.\n\nAccounting software exists. Choosing one is a decision to make with the person who files for you, not from a course and not from an advertisement. This course names none of them and quotes no prices.\n\n## Do this now\n\nOpen a new sheet. Make the two tabs and the reference tab. Put in last week's transactions, all of them, including the small ones. Then look down the document reference column and see how many rows you can actually fill. The empty ones are your homework for the rest of the week.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "recording-what-actually-landed",
+          "title": "Recording What Actually Landed",
+          "content_mdx": "# Recording What Actually Landed\n\nMika edits video from Cagayan de Oro. She invoiced an overseas client and the amount that reached her bank was noticeably smaller than the amount on her invoice. She did the easy thing: she wrote down the figure that landed and moved on.\n\nSix months later that client queried the invoice. Mika's sheet said one number, the invoice said another, and she had nothing in between to explain the gap. The money was fine. Her ability to explain it was not.\n\n## The rule\n\nRecord what you earned. Record each deduction on its own named line. Record what landed. The three have to reconcile, and you have to be able to say where each figure came from.\n\nA gap between an invoice and a deposit is never mysterious. It is some combination of a platform's service fee, a payment processor's charge, a currency conversion, a client withholding part of the fee, and a bank charge on the way in. Each of those is a real event and each deserves a line with its own name. \"Fees\" as one blob is where defensibility goes to die.\n\n## One worked example, with invented figures\n\nEvery number below is made up so that you can watch the arithmetic. Replace all of them with your own.\n\nSay Mika invoiced USD 500, an invented figure. Say the platform took a service fee of USD 45, invented too and not a rate you should assume applies to you. Say the remaining USD 455 converted at an invented rate of 50 pesos to the dollar, a round number picked so the arithmetic stays readable. Say her bank charged 200 pesos to receive the transfer, also invented.\n\nHer income row reads:\n\n- Gross: USD 500, which at the rate used is 25,000 pesos\n- Deduction, platform service fee: USD 45, which is 2,250 pesos\n- Deduction, receiving bank charge: 200 pesos\n- Net: 22,550 pesos\n\nCheck it both ways. 25,000 less 2,250 less 200 is 22,550. And 455 dollars at 50 is 22,750, less the 200 peso bank charge, is 22,550. The two roads meet, which is the point of writing it out.\n\nConvert once, at one recorded rate, and let the peso figures carry the rounding. Converting each line at a slightly different rate is how a sheet ends up out by a few pesos with nobody able to say where.\n\n## Pick your rate source and write it down\n\nYou need two decisions, made once: which source you take an exchange rate from, and which date you use. Write both on your reference tab with the date you decided, then apply them to every foreign payment after that.\n\nThis course names no source and no rate. Pick one you can point at, and record on the row where the figure came from.\n\nNever work backwards. Dividing the pesos that landed by the dollars you invoiced produces a number that looks like a rate and is really the rate plus every fee, blended together and unnameable. Once that number is in your sheet, no deduction can be checked, because they have all disappeared inside it.\n\n## The client who withholds\n\nSome local clients pay part of your fee to the government on your behalf rather than to you, and give you a certificate saying they did. Whether a particular client is required to do that, at what amount, and what it means for you at filing time are not things to take from another freelancer or a group chat. Ask the client what they are doing, and confirm the treatment with the BIR or an accountant. This is education, not tax advice.\n\nThe bookkeeping is the same either way. Record the gross. Record the withheld amount on its own named line. Mark the certificate as outstanding, and chase it while the client still remembers the payment. A deduction you cannot evidence is money you risk paying twice, and that certificate lives in somebody else's inbox, which means it will not arrive unless you ask.\n\n## Four sanity checks\n\n- **A net larger than a gross.** That cannot happen. Something carries the wrong sign, or the gross was typed short.\n- **A deduction with no name.** Find out what it was before you close the month.\n- **A category total that jumped.** Either something is miscategorised or something real changed, and you should know which.\n- **A month with no expenses at all.** You had expenses. They are not in the sheet yet.\n\n## What you can do now\n\nTake the last payment that arrived smaller than you invoiced. Write the gross, each deduction by name, and the net. If the three do not reconcile, you have just found the thing this lesson exists for, and you found it while the evidence is still retrievable.\n",
+          "duration_minutes": 9
+        },
+        {
+          "slug": "the-monthly-close",
+          "title": "The Monthly Close",
+          "content_mdx": "# The Monthly Close\n\nCecile manages inboxes for three clients from Naga. On the first Saturday of every month she makes coffee, opens one folder and one sheet, and spends about an hour closing the month before. Then she does not think about bookkeeping again until the following Saturday's ten minutes.\n\nThat hour is what turns a spreadsheet into books. A ledger nobody ever checks against a statement is a list of things you believed at the time.\n\n## The sequence\n\n1. **Pull the statements.** Every account and every wallet the business used that month. Save the files into the month's folder now, not later.\n2. **Tick every statement line against a ledger row.** Line by line. This is the boring part, and it is the part that finds things.\n3. **Investigate whatever sits on one side only.** A statement line with no row is a payment you forgot, or a subscription you did not know was still running. A row with no statement line is the wrong account in the account column, or a payment that never actually arrived.\n4. **Chase the missing documents.** The receipt, the certificate, the platform statement. Ask now, while the person on the other end still remembers the transaction.\n5. **File everything.** One folder per year, one per month, named the way chapter 1 had you name them.\n6. **Run the totals.** Income, expenses, by category, by client.\n7. **Stop touching the month.**\n\nStep seven is a real step. A month you keep quietly editing is a month with no fixed version, and every number you have ever quoted from it is now questionable.\n\n## Correcting a month you already closed\n\nYou will need to. A supplier sends an invoice late, or you find something filed under the wrong category.\n\nDo not reopen the month and silently retype a figure. Add a new line, dated the day you are making the correction, saying plainly what it corrects and why. Anyone reading the sheet afterwards, including you, can then see both the original and the fix. The closed total stays visible, which is the entire reason for closing it.\n\nA record earns trust because you can see what changed in it. Overwriting destroys exactly that.\n\n## What the totals are for\n\nOnce the numbers are true, read them for ten minutes:\n\n- Which client paid best for the hours you gave them. The retainer that feels small can turn out to be the profitable one.\n- Which subscriptions are still running. Look for the one you forgot.\n- What a slow month looks like from the inside, early enough to do something about it instead of afterwards.\n\nThis is the part freelancers skip, and it is the only part that pays you back the same week.\n\n## Download the statement while you are already in the folder\n\nChapter 2 made the case for saving evidence at the time rather than trusting it will still be reachable. A statement is the same object. Pull it during the close, not in the week somebody asks for it. Half a minute a month, and it is the difference between having records and having had them.\n\n## When you are months behind\n\nArnel had not touched his books since April and it was August. The instinct is to sit down and rebuild the four months from memory and message threads. Do not.\n\nWork backwards from the newest statement instead. Statements are the one source that is complete, dated, and not written by you. Take the newest month first, then the one before it. Where you cannot find a document, write \"no document found\" in the reference column and leave it visible. A gap left visible is still part of the record. A confident row you invented is not, and it will fail the first time somebody tests it.\n\n## The ten minutes that make the hour possible\n\nSame day each week. Add the week's rows. Save the documents into the folder. Name the ones you are still waiting on.\n\nDo that, and the monthly hour is a check. Skip it, and the monthly hour becomes a reconstruction, which is the experience that teaches people bookkeeping is horrible.\n\nThree closes from now you have a quarter you could hand to anybody who asks for it. Twelve from now you have a year.\n",
+          "duration_minutes": 8
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Mika invoiced an overseas client USD 500. The platform took a service fee, the payout converted to pesos, and her bank charged for the incoming transfer, so a smaller peso figure reached her account. How should the income row carry it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Record the gross she invoiced, then each deduction on its own named line, and the net that landed"
+            },
+            {
+              "id": "b",
+              "text": "Record the peso amount that landed as the sale, since that is the figure her bank can confirm"
+            },
+            {
+              "id": "c",
+              "text": "Record the gross in pesos and describe the fee and the bank charge in the notes column"
+            },
+            {
+              "id": "d",
+              "text": "Record the payout left after the platform fee, and treat the bank charge as an expense"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "working_with_numbers",
+          "explanation": "Gross, each named deduction, then net. The three reconcile, and every line can be pointed at a document. Recording only what landed loses the invoice the payment settles, whatever the bank can confirm about the figure. Pushing the fees into notes means they cannot be totalled or checked. Netting the platform fee off the gross hides one deduction while naming the other."
+        },
+        {
+          "prompt": "Rowena's local client paid her fee less an amount they say they are remitting to the government on her behalf. The certificate evidencing it has not arrived. What goes in her ledger this month?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The net she received, with a note to add the rest once the certificate arrives"
+            },
+            {
+              "id": "b",
+              "text": "Nothing yet, because the row cannot be finished until the certificate is actually in her hands"
+            },
+            {
+              "id": "c",
+              "text": "The gross, the withheld amount on its own line, and the certificate flagged as outstanding"
+            },
+            {
+              "id": "d",
+              "text": "The gross, with the withheld amount noted as a business expense for that month"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "working_with_numbers",
+          "explanation": "The event happened this month, so it is recorded this month: gross, the withheld amount as its own named deduction, and a visible flag that the evidence is still owed to her. Waiting for the document leaves a hole in the month. Recording only the net erases the withholding, and a note to fix it later is not a line anyone can total. Calling it an expense is a treatment question for the BIR or an accountant, not something to settle in a ledger."
+        },
+        {
+          "prompt": "Checking her sheet, Divine finds an income row where the net is larger than the gross. Both figures are in pesos and the row names one invoice. What does that tell her?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The gross was entered after the platform fee had already come off, so that fee is counted nowhere"
+            },
+            {
+              "id": "b",
+              "text": "The amount that landed was typed into the gross column too, so both columns hold the same figure"
+            },
+            {
+              "id": "c",
+              "text": "The client's withheld amount was written as a separate expense row instead of on this row"
+            },
+            {
+              "id": "d",
+              "text": "A deduction carries a positive sign, so the sheet added it on rather than taking it off"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "working_with_numbers",
+          "explanation": "Net is gross less deductions, so a net above a gross is arithmetic that cannot happen, and only one of these four produces it: a deduction carrying the wrong sign gets added rather than subtracted. The other three are real faults worth fixing, and none of them lifts a net above a gross. A gross entered short still sits above the money that actually landed. The same figure in both columns makes them equal, not unequal. A withholding recorded on the wrong row leaves this row's net below its gross and the deduction invisible."
+        },
+        {
+          "prompt": "Kim invoices in dollars. She divides the pesos that landed by the dollars she invoiced, writes the result in her rate column, and moves on. What has she actually done?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nothing wrong, so long as she uses the same method every month and notes it on her reference tab"
+            },
+            {
+              "id": "b",
+              "text": "Blended every fee into the rate, so no deduction on that row can be named or checked"
+            },
+            {
+              "id": "c",
+              "text": "Used the payout date when the invoice date is the convention she ought to follow"
+            },
+            {
+              "id": "d",
+              "text": "Recorded a rate with no source, which she can fix by noting the news rate that day"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "working_with_numbers",
+          "explanation": "Working backwards from the peso figure produces a number that looks like a rate and is really the rate plus every fee, mixed together and impossible to separate. Consistency does not rescue it, and noting the method on a tab only records that she does it every time. Which date to use is a convention she chooses and writes down, not a fixed right answer. And quoting a rate after the fact does not put the fees back on their own lines."
+        },
+        {
+          "prompt": "During her monthly close, Cecile ticks her e-wallet statement against her ledger and finds a statement line with no matching row. What does she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Add a row for the amount now and label it unidentified until she can trace it"
+            },
+            {
+              "id": "b",
+              "text": "Leave it alone, since the statement is the real record and her sheet only summarises"
+            },
+            {
+              "id": "c",
+              "text": "Adjust her closing total so the sheet agrees with the statement, and note the difference"
+            },
+            {
+              "id": "d",
+              "text": "Trace it to a payment or a purchase, then add the row and the document reference behind it"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "admin_tooling",
+          "explanation": "A one-sided item is the close doing its job, and the close is when the trail is still warm. Trace it, then record it with its evidence. An unidentified row is a placeholder she will never come back to. Treating the statement as the record gives up on categories and documents. Adjusting a total to force agreement makes the sheet balance and stop meaning anything, and a note beside the adjustment still does not say what the money was."
+        },
+        {
+          "prompt": "Two weeks after closing March, a supplier sends Jomar an invoice dated in March that he never recorded. What is the right correction?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Open March again, insert the row in date order, and recalculate the March totals"
+            },
+            {
+              "id": "b",
+              "text": "Put it in April at its April date, noting that the charge actually arose back in March"
+            },
+            {
+              "id": "c",
+              "text": "Add a dated adjusting line naming what it corrects, leaving the closed total visible"
+            },
+            {
+              "id": "d",
+              "text": "Keep late items on a list he checks at year end, marking each with the month it belongs to"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "admin_tooling",
+          "explanation": "A closed month is corrected in the open, with a dated line that says what changed and why, so the original figure and the fix are both readable. Reopening March and retyping the totals destroys the version he already quoted from. Redating it to April misstates when the cost arose, and a note saying so leaves the misstatement sitting in the figures. A parking list at year end is a reconstruction waiting to happen, however carefully each item on it is marked."
+        },
+        {
+          "prompt": "Teddy's sheet has three columns: date, client, amount. A client asks which invoices one transfer settled, and he cannot say. Which column would have answered that?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A document reference column, naming the invoice each payment settles"
+            },
+            {
+              "id": "b",
+              "text": "A running balance column, so each payment reads against the total still owed"
+            },
+            {
+              "id": "c",
+              "text": "A category column, separating client income from the other kinds of income"
+            },
+            {
+              "id": "d",
+              "text": "A notes column, holding whatever he happened to remember at the time he typed the row"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "admin_tooling",
+          "explanation": "The document reference is the column that ties a row to the evidence behind it, which is exactly what the client is asking about. A running balance shows what is outstanding but not which invoice a payment cleared. A category tells you what kind of income it was. Notes hold what you remembered, and what you remembered is the thing that failed here."
+        },
+        {
+          "prompt": "Arnel has not touched his books since April and it is now August. Statements exist for every one of those months. What is the sensible way back?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Start clean from August, noting that the four missing months are unrecoverable"
+            },
+            {
+              "id": "b",
+              "text": "Work backwards through the statements, newest first, marking the rows he cannot document"
+            },
+            {
+              "id": "c",
+              "text": "Rebuild the four months from memory and message threads, then ask clients to confirm the totals"
+            },
+            {
+              "id": "d",
+              "text": "Wait for the year end and hand the whole untouched period to a bookkeeper"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "record_keeping",
+          "explanation": "Statements are complete, dated and not written by him, so they are the spine to rebuild against, newest first while the trail is warmest. Gaps get marked as gaps and stay visible. Abandoning four months throws away recoverable records, and a note calling them unrecoverable does not make them so. Memory produces confident rows that fail the first challenge, and asking a client to confirm a total he invented invites them to agree to a figure neither of them checked. A bookkeeper handed an untouched shoebox costs more and does worse work."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-4-registration-deadlines-and-getting-help",
+      "title": "Registration, Deadlines, and Getting Help",
+      "description": "What being registered with the BIR commits a self-employed person to, how to build a deadline calendar from sources you can check yourself, and when to hand the work to a professional.",
+      "lessons": [
+        {
+          "slug": "what-registration-actually-means",
+          "title": "What Registration Actually Means",
+          "content_mdx": "# What Registration Actually Means\n\nThis lesson is education, not tax or legal advice. Nothing in it replaces the BIR's own current issuances or a licensed professional who knows your situation. Every figure that matters in this chapter is one you confirm before you act on it, and this chapter will not hand you a single one.\n\nThat is the method, not a disclaimer bolted on the front. Rates, options, thresholds, form names and due dates all move, and what applies to you depends on how you are classified and on what you earn. A number printed in a course is a number that was true for somebody, on some day, under rules that may since have changed.\n\n## What an employer was absorbing for you\n\nIf you have ever been on a payroll, someone else did a quiet pile of work on your behalf. Your employer computed what to withhold, remitted it, filed on a schedule, and handed you a summary at the end of the year. You saw a deduction on a payslip and nothing else.\n\nEarning from your own trade or profession moves that work to you. It arrives as six obligations, and it helps to see them as shapes rather than as a list of figures you are supposed to have memorised.\n\n**Registering.** You exist in the system as someone earning from their own work rather than through an employer. What that involves, and where, is a question for the BIR.\n\n**Keeping books.** Records of what came in and what went out, kept in a form the rules recognise. Chapters 1 to 3 built exactly this: the boundary, the documents, the ledger, the monthly close.\n\n**Issuing the document a buyer is entitled to when they pay you.** Chapter 2 covered what these documents do. What the required one is currently called, which transactions call for it, and what you must have in place before you can issue it have all been changed by legislation in recent years. Confirm the current requirement rather than repeating what a client or a groupmate told you.\n\n**Filing returns on a schedule.** Returns fall due on a schedule the BIR sets. Which ones apply to you and when each falls is the subject of the next lesson, and you are the one who finds out.\n\n**Paying what is assessed.** Filing and paying are separate acts. Keep proof of both.\n\n**Your own contributions.** SSS, PhilHealth and Pag-IBIG stop being lines an employer deducts from a payslip and become arrangements you join and pay into yourself. Whether each applies to you as a self-employed member, on what schedule, and what the member benefits are is published by SSS, PhilHealth and Pag-IBIG themselves, and this course prints none of it. They belong on the calendar you build in the next lesson, beside anything BIR-facing, because a missed contribution is invisible until the month you need the benefit.\n\nRead that order again. The two that feel like admin, the books and the documents, are what make the rest of them possible. You cannot file a figure you cannot produce, and you cannot produce it from memory in a panicked week.\n\n## Why the details differ, and why that is not evasion\n\nElmer edits podcasts for an agency in Cebu and a client in Australia. Marilou is a VA in Iloilo with four small local clients. Both are self-employed freelancers, and their obligations are not identical, because classification, what you earn, where the client sits and what you have chosen all feed the answer.\n\nThat is why a figure passed around a group chat is dangerous even when nobody is lying. It was somebody's real answer, to their situation, on a date nobody recorded. Marilou acting on Elmer's number is not taking a shortcut. She is answering a different question.\n\n## The questions worth bringing to a BIR office or an accountant\n\nVague questions get vague answers. Bring closed ones about your own situation, and bring something to write on.\n\n- I earn from local clients and from a client abroad. Which returns apply to me, and when does each one fall due?\n- Given roughly what I expect to earn this year, which options are open to me, and what does choosing one commit me to?\n- What am I required to give a client when they pay me, and what do I need in place before I can give it?\n- Which of my contributions do I make myself now, and does that change how I file?\n- What records do you need from me, in what form, and how often?\n- What do I have to tell you, or the BIR, when something changes: a new client abroad, a bigger year, a move?\n- Where can I read this myself in the BIR's own issuances?\n\nWrite down the answer, who gave it, and the date you got it. That last habit is what the next lesson is built on.\n\n## Where the authoritative answer lives\n\nIn order: the BIR's own current issuances and its own offices. Then a licensed professional who has seen your actual records. Then everything else, including this course, which is orientation only.\n\nA confident answer from someone with no stake in whether you are right is the most expensive kind. The group chat is not a source. It is a useful place to discover that a question exists.\n\n## Do this before the next lesson\n\nWrite one list. Every obligation you think applies to you, and next to each, honestly, whether you know that or assume it. The assumed ones go to the BIR or to an accountant. The next lesson turns the confirmed ones into a calendar.\n",
+          "duration_minutes": 9
+        },
+        {
+          "slug": "building-your-deadline-calendar",
+          "title": "Building Your Deadline Calendar",
+          "content_mdx": "# Building Your Deadline Calendar\n\nYou are about to build a deadline calendar without this course naming a single date. That is not a gap in the lesson. A date you did not check is not a deadline, it is a rumour with a number in it, and this lesson is about the checking.\n\nThe standing note applies here too: education, not tax or legal advice. Every date in the calendar you build comes from the BIR or from your accountant, and you write down which.\n\n## One row per obligation, four columns\n\nOpen a tab in the same workbook as your ledger. Give it these columns.\n\n**Obligation.** In your own words. What is due, and to whom. The BIR is not the only answer: any contribution you now make yourself, to SSS, PhilHealth or Pag-IBIG, gets its own row here on the same terms as everything else, confirmed with the body that runs it.\n\n**Due date or frequency.** As confirmed. Not as assumed, and not as remembered.\n\n**Source.** Who told you. A BIR issuance, a BIR office, your accountant by name.\n\n**Date checked.** The day you were told.\n\nThe last two columns are what let the calendar survive a year. Anybody can write a date down. A row that cannot say where its date came from is the same rumour you started with, sitting in a spreadsheet where it now looks official.\n\nSheryl designs social graphics for two agencies in General Santos. Her sheet has a fifth column headed \"not yet confirmed\". Rows sit in it carrying a question and the date she sent it to someone who can answer. Nothing leaves that column without a source and a date. That column is worth more than the rest of the sheet, because it is the honest list of what she does not know, and it is the thing she brings to an accountant.\n\n## Then put it in a calendar, early\n\nThe spreadsheet is the record. The calendar is what actually reminds you. Copy each confirmed obligation into whatever calendar you already look at, and set the reminder well ahead of the date rather than on it.\n\nLead time is the point, because the due date is rarely the thing that fails. What fails is everything upstream of it:\n\n- a client who owes you a certificate for tax they withheld and has not sent it\n- a document you cannot find because it was never filed into the month folder\n- an office that is closed, or a queue longer than your afternoon\n- a payment channel that is down on the day\n- a laptop that dies in the one week you needed it\n\nA reminder that arrives on the due date is telling you about a problem you no longer have time to solve.\n\n## When you already know you will miss one\n\nHiding is the expensive move. The sequence that works:\n\n1. Find out from an authoritative source what actually happens when this particular one is late. Not what a group says happens. The consequence is a fact about the rules, and it is knowable.\n2. Ask what the shortest route back to compliant looks like for your situation.\n3. Act at the first opportunity rather than waiting for the next deadline to come round.\n4. Write down what you were told, by whom, and when, in the same sheet.\n\nA missed deadline is a problem with a size. Not knowing the size is what turns it into dread, and dread is what makes people leave it another quarter.\n\n## Keep the proof the way you keep income evidence\n\nChapter 2 had you save proof that money came in. Save proof that money went out to an obligation with the same care: the filing confirmation, the payment confirmation, the reference number. Into the month folder from chapter 1, named the way everything else there is named.\n\nThen put that reference into the document reference column of the ledger row for the payment. A payment you made with no retrievable proof is a payment you can end up making twice.\n\n## The commercial dates belong on the same view\n\nObligations are not the only dated things in a freelance year. Keeping them on a separate calendar from the commercial ones is how you end up owing money in a week you forgot to invoice.\n\nPut these on the same view:\n\n- the day each retainer invoice goes out\n- the date each client runs their payments, if they have a fixed one\n- when your own subscriptions renew, so a tool you stopped using does not quietly bill you for another year\n- your monthly close day from chapter 3\n\nSeen together, they tell you something a list of due dates cannot. Which weeks are heavy, and which invoice needs to go out early because something falls due soon after it.\n\n## The yearly recheck\n\nBook one appointment with yourself, once a year, in the calendar you just built. The job is to walk down the sheet, ask whether each row is still true, and update the source and date checked columns.\n\nRules change. So do you: a new client abroad, a bigger year, a different arrangement. A calendar built once and never revisited gets quietly more wrong every year, while looking exactly as confident as it did on the day you made it.\n",
+          "duration_minutes": 9
+        },
+        {
+          "slug": "when-to-hand-it-to-an-accountant",
+          "title": "When to Hand It to an Accountant",
+          "content_mdx": "# When to Hand It to an Accountant\n\nThe last judgment call in this course is when to stop doing this yourself. It is not a failure point. It is a decision with a cost on both sides, and having read this far you can now make it well.\n\n## The signals\n\nAny one of these is a reason to talk to a professional. Two together is a reason to do it this month.\n\n- Money arriving from several countries, or in several currencies.\n- You have taken someone on: an employee, or a subcontractor you use regularly.\n- A client is asking for a document you are not sure you can issue, and onboarding is stalled on it.\n- A letter or a notice arrived that you do not fully understand.\n- Several months of records untouched, getting heavier every month you leave them.\n- The plain arithmetic one. The hours you spend on this are worth more spent on client work. If an evening a week goes to admin, price that evening at your own rate and look at the number.\n\nNotice what is not on that list: the size of your income. Small and complicated needs help. Large and simple sometimes does not.\n\n## A bookkeeper and an accountant are not the same hire\n\nA bookkeeper works with the records. Keeping the ledger current, matching documents to rows, closing the month, keeping the file in a state somebody else could pick up. That work is regular, and it is the work this course taught you to do.\n\nAn accountant works on top of records that already exist. What your situation requires, what applies to you, what to file, what to do about the letter. That work is occasional, and it costs more per hour.\n\nFreelancers often need the second sometimes and the first more often. Hiring an accountant to sort out a shoebox is paying senior rates for junior work, and both of you will resent it.\n\n## What you hand over is what you already built\n\nAldrin ships web work from Dumaguete. He put off getting help for two years because he assumed the first meeting would be humiliating. What he eventually walked in with was a ledger with one row per transaction, a folder per month holding the documents those rows point at, one account that had only ever held client money, and a written page of the things he was not sure about.\n\nThe meeting ran under an hour and the advice was specific, because there was something to be specific about.\n\nArriving organised changes both the price and the quality of what you get. The price, because nobody is billing you to reconstruct your year first. The quality, because an adviser looking at real records can answer your situation, while an adviser looking at estimates can only answer in general.\n\nThe written page of what you are unsure about is the part people skip and the part that earns the most. It is the same list as the not yet confirmed column from the last lesson.\n\n## Choosing someone\n\nAsk five questions before you engage anybody.\n\n- What do you need from me each month, and in what form?\n- How do you want to receive it?\n- What is not included in what you do for me?\n- How do you charge, and for what scope?\n- Who exactly will be doing the work?\n\nThen check that the person is who they say they are, through whatever verification the relevant professional body itself offers, rather than through a screenshot of a certificate in a chat. If any of those five answers comes back vague, that vagueness is the thing you will be arguing about in eight months.\n\nAsk one more thing during the first engagement: show me where in the rules this comes from. A good adviser is not annoyed by that question.\n\n## What stays yours whoever you hire\n\nTwo things do not transfer.\n\nYou are the one who signs. Whatever is filed under your name is yours, and \"my bookkeeper did it\" is not a position you want to be standing in.\n\nAnd you are the one who has to know what your own numbers mean. Not the rules, not the rates. Your numbers: what you earned, what it cost you to earn it, which client is worth the hours, what is still sitting unpaid. Delegating the filing is sensible. Delegating the knowing is how a freelancer ends up learning about their own business from a stranger.\n\nThat is also the honest answer about AI here. Whatever helps you draft or organise, you remain the one who signs, and a fluent answer about a rule is not a source.\n\n## The last word\n\nThis course has been education and not tax or legal advice, and it said so every time it mattered. What it has given you is smaller than advice and more useful: records you can stand behind, and therefore professional advice that is cheap, fast, and actually about you.\n",
+          "duration_minutes": 8
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Marilou reads in a freelancer Facebook group that a return is due on a particular day next month. The person who posted it sounds certain and several people have thanked them. Marilou is registered and it may well apply to her. What should she do with that date?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Put it in her calendar exactly as posted, since several people in the group have already confirmed the same date."
+            },
+            {
+              "id": "b",
+              "text": "Ignore it completely, because nothing posted in a group chat about tax is ever worth acting on."
+            },
+            {
+              "id": "c",
+              "text": "Treat it as a question, confirm it with the BIR or her accountant, and record the source and the date."
+            },
+            {
+              "id": "d",
+              "text": "Wait until nearer the date and then ask the group again, to see whether the answer has changed by then."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "compliance_ph",
+          "explanation": "A group chat is a good place to discover that a question exists and a bad place to get its answer: the poster was describing their own situation, on a date nobody recorded, under rules that move. Thanks from other members confirm that the post was popular, not that it was right. Ignoring it entirely wastes the useful half, which is the prompt to go and check. Asking the group again later re-runs the same unreliable process closer to the deadline. Take it to the BIR or your accountant, then write the answer down with who gave it and when, so next year you can tell whether the row has gone stale."
+        },
+        {
+          "prompt": "Marisol's ledger has not been closed since April, her documents are unfiled, and no row names the evidence behind it. She wants one person to put that right and then keep it right every month. Who should she be looking for, and why?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A bookkeeper, because keeping the ledger current and matching documents to rows is regular work at the lower rate."
+            },
+            {
+              "id": "b",
+              "text": "An accountant, because records left in this state need a licensed professional before anyone else is asked to touch them."
+            },
+            {
+              "id": "c",
+              "text": "An accountant, because whoever files for her later should be the person who wrote the rows in the first place."
+            },
+            {
+              "id": "d",
+              "text": "A bookkeeper, but only after an accountant has been paid to clear the backlog and hand over clean books."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "record_keeping",
+          "explanation": "The work she is describing is bookkeeping: rows kept current, documents matched to them, months closed, a file somebody else could pick up. It is regular, and it costs less per hour. An accountant works on top of records that already exist, on what her situation requires and what to file, so hiring one to clear a backlog is paying senior rates for junior work. Nothing here needs a licensed opinion yet. The moment one arrives, a letter she does not understand or a new client abroad, is the moment to book the accountant, and by then the books will be worth showing."
+        },
+        {
+          "prompt": "A question has sat in Sheryl's not yet confirmed column since January. She sent it to one person then and it is now September with no reply. Next quarter's decision depends on the answer. What should she do with the row?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Leave it where it is, since an unanswered question is exactly what that column was built to hold."
+            },
+            {
+              "id": "b",
+              "text": "Act on the figure that several of the sources online agree on, noting she could not confirm it herself."
+            },
+            {
+              "id": "c",
+              "text": "Delete the row and raise it again if the decision really does come up, so that the column stays short and current."
+            },
+            {
+              "id": "d",
+              "text": "Ask a second source, write the date of that second attempt beside the question, and leave the row where it is."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "compliance_ph",
+          "explanation": "The column is a list of open questions, not a place questions go to rest. A row that has sat for eight months is telling her the first attempt failed, and the answer to a failed attempt is another attempt somewhere else, dated so that the next review can see how long this has been running. Leaving it untouched means arriving at the decision with nothing. Deleting it loses the record that she knew the question existed and when she first asked. And acting on what sources happen to agree on is the thing the column exists to stop, whatever she notes beside it."
+        },
+        {
+          "prompt": "A filing Aldrin has confirmed with his accountant falls due in three weeks. Two things it depends on are not in place: a client owes him a certificate for tax withheld, and a payment document from May was never filed into the month folder. His only reminder is set for the due date itself. What should he change first?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nothing, since the date is confirmed and the client will almost certainly send the certificate in time."
+            },
+            {
+              "id": "b",
+              "text": "Move the reminder several weeks earlier, and start chasing the certificate and the missing document today."
+            },
+            {
+              "id": "c",
+              "text": "Ask the client for the certificate and, if it has not arrived by the due date, file what he remembers."
+            },
+            {
+              "id": "d",
+              "text": "File on the due date with whatever he holds, and correct it afterwards once the certificate and the document turn up."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "compliance_ph",
+          "explanation": "The due date is rarely what fails. What fails is everything upstream of it: a certificate sitting in somebody else's inbox, a document that was never filed, an office that is closed, a channel that is down. A reminder arriving on the due date is telling him about a problem he no longer has time to solve, so the reminder moves and the chasing starts now. Filing on a remembered figure puts a number he cannot evidence into something signed in his name. Planning to correct it afterwards accepts that cost before he has even tried to avoid it."
+        },
+        {
+          "prompt": "Joy has not touched her records since February and it is now July. She has bank and e-wallet statements, a document folder that stops in April, and a client who still owes her a certificate for tax withheld. She has an accountant booked for next week. What should she bring?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A rebuilt ledger covering all five months, filled in from memory wherever the documents do not reach."
+            },
+            {
+              "id": "b",
+              "text": "A fresh sheet starting in August, since the older months are too far gone to reconstruct usefully now."
+            },
+            {
+              "id": "c",
+              "text": "Only the months she has documents for, and a note to mention the other months at some later point."
+            },
+            {
+              "id": "d",
+              "text": "The statements and documents she has, plus a written list of the gaps and what she is chasing."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "record_keeping",
+          "explanation": "A documented gap is worth more than an invented reconstruction, because an accountant can work with a known hole and cannot detect a plausible guess. Filling months from memory produces figures nobody can defend if they are ever questioned. Holding back the months she cannot evidence wastes the appointment she is paying for and guarantees a second one, whatever she has noted to raise later. Starting fresh in August leaves the earlier months to surface at a worse moment. Bring the statements, the documents, and an honest list of what is missing and who she is chasing."
+        },
+        {
+          "prompt": "Dennis files and pays an obligation online. He gets a confirmation on screen with a reference number, and an email arrives. Six months later a question comes up about whether that payment was actually made. What should he have done at the time?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Trusted that the emailed confirmation would still be searchable in his inbox when he needed it."
+            },
+            {
+              "id": "b",
+              "text": "Saved the confirmation into that month's folder and put the reference number on the ledger row it belongs to."
+            },
+            {
+              "id": "c",
+              "text": "Taken a photo of the screen and kept it in his phone gallery with the rest of his work photos."
+            },
+            {
+              "id": "d",
+              "text": "Written the reference number in the notebook where he keeps things he might need later."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "record_keeping",
+          "explanation": "Proof that money went out to an obligation deserves the same handling as proof that money came in: a named file in the month folder, and the reference recorded on the row it belongs to, so the ledger points at its own evidence. An inbox search depends on the account, the provider and the wording still being findable in six months. A notebook is not connected to the ledger row anyone will actually be looking at. A photo in a general gallery is technically kept and practically lost."
+        },
+        {
+          "prompt": "Two freelancers build deadline calendars. Sheryl's sheet has one row per obligation with a source column and a date-checked column. Marilou's sheet carries the same dates, typed neatly, with nothing beyond the dates. A year later, what is the practical difference?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Sheryl can walk down her sheet and see which rows are old enough to be worth rechecking this year."
+            },
+            {
+              "id": "b",
+              "text": "Marilou's is easier to read at a glance, which matters more than noting where each date came from."
+            },
+            {
+              "id": "c",
+              "text": "There is no real difference, since both sheets carry exactly the same set of confirmed due dates."
+            },
+            {
+              "id": "d",
+              "text": "Sheryl's needs rebuilding from scratch each year, while Marilou's can simply be carried forward as it is."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "admin_tooling",
+          "explanation": "Source and date checked are what make a calendar maintainable: they turn the yearly review into a walk down a column instead of a fresh investigation of every row. Readability is not the binding constraint on a short list, and a tidy date with no provenance is a rumour that now looks official. The two sheets are not equivalent, because only one of them can say how old its information is, and only one of them was ever confirmed. And it is Marilou's that needs rebuilding, since she has no way to tell which dates have quietly gone stale."
+        },
+        {
+          "prompt": "Joy's accountant asks for her total income for the quarter. Her ledger shows one client payment recorded only as the amount that landed in her account, after a platform fee was taken out. Every other row shows gross, deductions and net. What should she do before sending the total?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Send the total exactly as it stands, and note the platform fee in the covering message to the accountant."
+            },
+            {
+              "id": "b",
+              "text": "Add the fee back to the total without changing the row, so the figure she sends is at least correct."
+            },
+            {
+              "id": "c",
+              "text": "Fix the row from the payout document so it shows gross, the fee and net, then total the gross column."
+            },
+            {
+              "id": "d",
+              "text": "Send both totals, the one with the fee and the one without, and ask the accountant which of them to use."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "working_with_numbers",
+          "explanation": "One row recorded differently from the rest means the gross column no longer totals anything real, and a total she cannot trace back to rows is not defensible. A note in the covering message fixes the email and leaves the books wrong for whoever reads them next. Adjusting the total without fixing the row makes the sheet and the figure disagree, which is worse than either alone. Handing over two totals and a question hands over the problem. Repair the row from the payout document, then let the column add itself up."
+        }
+      ]
+    }
+  ],
+  "assignment": {
+    "title": "Books You Could Hand Over",
+    "brief_mdx": "You are handing your books over. Not to us: to a client asking what you billed them last year, to a bank asking what a self-employed applicant earns, or to an accountant you are hiring next month. Build the thing you would hand over, out of your own work.\n\nIf you have no freelance income yet, build the same submission for a worked case you label as one at the top: a plausible set of clients, payments and costs, invented on purpose, kept consistent all the way through. Everything below is marked the same way either way.\n\nPlain text or Markdown, no uploads. Replace client names you cannot share with Client A, Client B. Eight parts.\n\n1. **The boundary.** Which account or wallet holds business money now, how money reaches you personally and on what schedule, the date you drew the line, and what you did about the transactions sitting before that date. If you have not separated anything yet, write the decision you have actually made and the date it takes effect. An intention with no date is not a boundary.\n\n2. **Your categories.** The list you will use, as a short reference list. Add a one-line reason for any category a stranger would not guess from its name.\n\n3. **One month of ledger rows.** A table, at least ten rows, income and expenses both. Every row carries a date, who paid you or who you paid, a plain description, a category from part 2, the amount, and a document reference naming the file or record that backs it.\n\n4. **One payment that arrived short.** In that table, or written out underneath it, take at least one payment where the amount that landed is not the amount you invoiced. Show the invoiced amount, then each deduction on its own named line (a platform service fee, a transfer charge, a currency conversion, an amount a client withheld), then the amount that landed. The arithmetic has to reconcile line by line. Next to each deduction, say where the figure came from: your own bank statement, a payout record, the client's advice. Do not reach for a rate you have not read off a document. If you are working the labelled case, say the figures are invented in the same breath as you use them.\n\n5. **The document register.** For each row, where its backing document actually lives: a folder, a file name, an email thread, a physical folder. Then a short list of the rows whose document is missing or thin, with how you will chase each one and by when. A register that admits gaps is worth more here than one that hides them.\n\n6. **Your monthly close.** The steps in order, short enough to follow at the end of a tiring week, naming the fixed day of the month it happens. Include how you tick statements against ledger rows, what you do with a statement line that has no row, and how you correct a month you have already closed.\n\n7. **The deadline calendar.** A table with one row per obligation that applies to you, BIR-facing or not, including any contribution you now make yourself. For each row: what the obligation is, when it falls, the source you got that from, and the date you checked that source. Then a second short list, the figures and dates you could not confirm, each one naming exactly where you will confirm it (the BIR itself or its published issuances, an accountant, a bookkeeper) and when you will ask. That second list is not a hole in your submission. It is the part this course was built for.\n\n8. **The hardest row.** About 150 words. Which single record in what you have submitted would be hardest to defend if a client, a bank or a reviewer questioned it, why it is weak, and what you are changing so the next one is not.\n\nThe tables count toward length, so a submission that clears the word count on tables alone has not answered parts 1, 2, 6 and 8.\n\nTwo rules decide whether this passes. Every obligation in part 7 carries a source and the date you checked it. And nowhere in this submission may you state a rate, a fee, a threshold, a penalty or a due date as fact without naming where you got it and when. Anything you cannot source goes in the unconfirmed list instead, and putting it there costs you nothing. Guessing costs you the credential, because guessing is the habit this course exists to break.\n\nThis assignment, like the course, is education and not tax or legal advice.",
+    "criteria": [
+      "The boundary is a decision already taken, not an intention: a named account or wallet holding business money, a stated way and schedule of paying themselves, a date the line was drawn, and what was done about transactions before that date",
+      "The ledger table carries at least ten rows across both income and expenses, and every row has a date, a counterparty, a description, a category from the learner's own list, an amount, and a document reference that points at a specific file or record",
+      "At least one payment is broken out as invoiced amount, each deduction on its own named line, and the amount that landed, the arithmetic reconciles, and each deduction figure names the document it was read from or is declared part of a labelled worked case",
+      "The document register says where each backing document is stored and names the rows whose document is missing or thin, each with a stated way of chasing it, rather than presenting the records as complete",
+      "The close checklist is a sequence a stranger could run on a named fixed day, and includes ticking statements against ledger rows, handling a statement line with no matching row, and correcting a month already closed",
+      "Every row of the deadline calendar names the source consulted and the date it was checked, and the unconfirmed list names each figure the learner could not verify with where they will confirm it. Any rate, fee, threshold, penalty or due date asserted anywhere in the submission without a named source and date fails this criterion and the work is returned"
+    ],
+    "min_words": 550
+  }
+}

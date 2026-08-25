@@ -1,0 +1,929 @@
+{
+  "slug": "customer-support-with-ai",
+  "title": "Customer Support with AI",
+  "subtitle": "AI drafts it. You decide what the customer reads.",
+  "level": "professional",
+  "category": "Support",
+  "format": "Self-paced online",
+  "summary": "Support work is a queue of small decisions made under time pressure, and AI can carry the typing but never the decision. Twelve lessons on triaging a day's tickets, building macros that do not read like macros, holding your tone when a customer is angry, escalating so the next person can act, and drawing the hard line on what AI may never send unreviewed.",
+  "description": "Clients and employers do not hire a support person to be fast. They hire one to keep customers from leaving, and every reply that goes out under the company's name is a decision someone has to own. This course treats the queue as a system: what the queue promises, what your seat is allowed to promise, which repeats deserve a macro, and where AI belongs in all of it. AI drafts, clusters, labels and rewrites. You check the facts, choose the tone, refuse what you cannot grant, and read every word before a customer does. Built on Philippine support work: ecommerce chat, small SaaS inboxes, offshore helpdesks, and clients in another time zone who will not be awake when the ticket lands.",
+  "skills": [
+    "Ticket triage and prioritisation",
+    "Macro and template libraries",
+    "AI-assisted reply drafting",
+    "Tone under pressure and de-escalation",
+    "Escalation and handoff notes",
+    "Support scope, coverage and authority",
+    "Reading your own queue numbers honestly"
+  ],
+  "outcomes": [
+    "Triage a day's queue by what breaks if it waits, and name the tickets that are not yours to decide",
+    "Build a reply library from the tickets that actually repeat, and personalise a macro so it does not read like one",
+    "Edit an AI draft into a reply that answers first, admits only what is true, and fits the channel it is sent on",
+    "Hold your tone through an angry ticket, a refusal, and a mistake you caused yourself",
+    "Write the rule sheet for what AI must never send a customer unreviewed, and hand off an escalation the next person can act on straight away"
+  ],
+  "roles": [
+    "Customer support representative",
+    "Support and chat VA",
+    "Ecommerce store support",
+    "BPO staff moving to remote support work"
+  ],
+  "price_php": 1499,
+  "is_free": false,
+  "passing_score": 70,
+  "credential_prefix": "CSA",
+  "sort_order": 7,
+  "requires_assignment": true,
+  "modules": [
+    {
+      "slug": "chapter-1-the-queue-and-what-you-are-allowed-to-promise",
+      "title": "The queue, and what you are allowed to promise",
+      "description": "Before any reply gets written: what the queue has promised the customer, how to sort a day's tickets by what breaks if they wait, and the short list of things your seat is actually authorised to grant.",
+      "lessons": [
+        {
+          "slug": "what-the-queue-promises",
+          "title": "What a support queue actually promises",
+          "duration_minutes": 8,
+          "content_mdx": "# What a support queue actually promises\n\nOpen a queue at the start of a shift and you are looking at promises somebody already made. Not you. Whoever runs the business set them: on the website, in the auto reply, on the shipping page, or by saying nothing at all, which is its own kind of promise. Your shift is spent keeping them, so you had better know what they are.\n\n## Two promises the customer hears as one\n\nResponse time is how long before a human replies at all. Resolution time is how long before the problem is gone. They are different promises, and different things meet them.\n\nCathy answers chat for a skincare shop in Cebu. A customer messages that her parcel has not moved in five days. Cathy replies in four minutes. Her response time is excellent. The parcel is with the courier, so resolution is not hers and will take as long as it takes.\n\nHere is where the shift goes wrong. Cathy types \"we will fix this right away.\" The customer reads that as resolution, waits a day, hears nothing, and comes back angry at a person who did nothing wrong.\n\nSplit the two out loud, inside the reply:\n\n\"I have your order open in front of me. The parcel is with the courier and I filed a follow up this morning. I will message you again by Thursday noon, whether or not there is news.\"\n\nFast response, honest resolution, and a next contact with a time on it. That is the shape of nearly every reply you send in this course.\n\n## Coverage is a window, not a feeling\n\nA queue has hours when somebody is in it and hours when nobody is. That window is a promise too, and it is the one businesses are worst at stating.\n\nRyan handles the inbox for a small booking software company whose owner is in Australia. Tickets land through the Philippine night, and there are hours in every day when nobody at the client end is awake to decide anything. Ryan cannot change that. What he can do is make sure the auto reply says when a person is actually there, so a customer messaging at 1am knows what to expect instead of refreshing for an hour.\n\n\"We reply as soon as possible\" is not a coverage statement. It is a way of avoiding one, and every customer reads their own hope into it.\n\nFind out three things about your window: which hours are covered, what an out of hours customer is told, and who reads the overnight pile first.\n\n## Busy is not behind\n\nA busy queue fills fast and empties by the end of your shift. That is a hard day. A queue that is behind is bigger at the end of every shift than it was at the start, and its oldest untouched ticket keeps getting older.\n\nTwo numbers tell them apart, and you can keep both in a notebook: the count at shift start and shift end, and the age of the oldest open ticket.\n\nBusy is yours to work through. Behind is not a personal failure and cannot be fixed by skipping lunch. It is a volume problem, and it belongs in a conversation with whoever pays you, early, with those two numbers in hand rather than the word \"swamped\".\n\n## Nobody is going to hand you the target\n\nAsk on day one, in writing, and keep the answers where you can find them:\n\n- How fast a first reply should go out, on each channel you cover\n- Which hours are covered, and what happens to a ticket outside them\n- What happens when volume goes above what one person can hold\n- Who you ask when the answer is not on your list\n\nIf the client has never thought about it, do not wait for them to. Propose a target you can actually hold, send it in a message, and ask them to confirm. Once they reply, the promise exists and you both know what it is.\n\n## Your numbers, not a benchmark\n\nYou will read confident figures online about what a good first response time is, what share of tickets a macro should cover, what a normal backlog looks like. This course states none of them, because nobody here can source them, and a number you cannot source is a number you should not promise a client.\n\nMeasure your own queue instead. Your first reply times. Your start and end counts. Your oldest open ticket. Those are true, they are yours, and you can show where they came from.\n\n## Do this before the next lesson\n\nPick a queue you run or could plausibly run. Write three lines: the response promise, the coverage window, and what an out of hours customer is told. Where you do not know, write the question you will ask the client.\n"
+        },
+        {
+          "slug": "triage-that-holds",
+          "title": "Triage that holds up on a bad day",
+          "duration_minutes": 8,
+          "content_mdx": "# Triage that holds up on a bad day\n\nJenny opens the store's chat at eight in the morning and finds sixty unread. Somewhere in there are three people charged twice, a bride whose order has to arrive Saturday, and about a dozen asking where their parcel is.\n\nIf she works from the top down, the double charges get answered around lunch. Arrival order is the sorting the system does for free, and on a bad morning it is wrong.\n\n## Sort by what breaks if it waits\n\nFour bands and one thing that sits above all of them. Work the bands in order, and inside a band, oldest first.\n\n**Zero: somebody may be hurt.** A customer describing a reaction, an injury, a burn, a product that failed dangerously. This is not a ticket you work. Send it to the named person that same minute, tell the customer you have done so, and stop. Chapter three has the reason: nobody at your desk answers a safety question.\n\n**One: money has already moved.** Charged twice, paid and no order, a refund promised and never sent. Every hour here costs a real person real money, and these are the tickets that become public complaints and disputes.\n\n**Two: a paying customer cannot use what they paid for.** Login broken, wrong item delivered, the booking is tomorrow. The money is not in dispute yet. It will be by tonight if nobody moves.\n\n**Three: a repeat contact on an open issue.** A second or third message on a ticket already sitting with somebody. The problem has not changed, but the complaint has: it is now the silence. This band is the cheapest to fix, because one honest line about where things stand resets it.\n\n**Four: everything that genuinely waits.** Questions before buying, \"do you have this in blue\", feedback, thanks. Real work, no consequence in an hour.\n\nOne rule cuts across all four bands. A ticket with a deadline you cannot recover after it passes, the booking is tomorrow, the parcel has to land before the wedding, moves up a band, because the test is what breaks if it waits and that one breaks permanently. A double charge can be reversed on Thursday. Saturday cannot.\n\nJenny's morning, sorted: nothing in band zero, three double charges in band one, the Saturday bride moved up beside them because Saturday does not move, four repeat contacts, and the rest wait until she has cleared the first eight. That is a different day from the one she was about to have.\n\n## The habit you already have\n\nCertified AI Virtual Assistant made this argument for a client's inbox: keep a small fixed category set rather than inventing one per day, and spot check the sorting yourself for the first weeks before you trust it. That carries over unchanged, so this lesson spends its length on what a customer queue adds, which is that every row belongs to a stranger who has already paid.\n\n## Where AI earns its place\n\nExport the queue to a sheet, then strip it before anything leaves the tool. You want four columns: timestamp, channel, the situation in your own three or four words, and a row number you can map back to the real ticket in your own notes. No names, no email addresses, no phone numbers, no order references, no pasted customer text. Give a model your four bands in your own words, with one invented example per band rather than a real ticket, and ask for two things.\n\nFirst, a label per row. Second, and this is the part that pays, the clusters. Which of these sixty are the same ticket? Ten \"where is my parcel\" messages naming one courier are not ten problems. They are one problem with ten people waiting, and it probably needs a decision from the client rather than ten separate replies.\n\nAsk for the shape of the day in a few lines as well. \"Eleven parcels stuck with one courier, three payment complaints, one urgent for Saturday\" is something you can send the client at nine in the morning, and it makes you the person running the queue rather than the person drowning in it.\n\nWhether your helpdesk can export a queue at all is a thing to find out before you build a habit on it. Tools differ. Check yours.\n\nThe row number is the whole trick. The model sorts anonymous rows; you are the only one who can turn row 34 back into Mrs Santos.\n\n## Check which way it errs\n\nFor your first weeks, sort by hand as well and compare. You are not looking for a score. You are looking for the direction of the mistakes.\n\nOne keeps happening and is worth naming. A polite customer who was charged twice, who never used the word refund, gets filed as a general question. Calm language reads as low priority to a labelling pass, and a customer's tone has nothing to do with what is at stake. Once you know that is the failure, you read band one by hand every morning regardless of what the labels say.\n\n## The line at the bottom of this lesson\n\nAI may sort. AI may never close a ticket, issue a refund, or set the priority on anything touching money or somebody's safety.\n\nSorting is a suggestion you check. Closing is a decision that reaches a customer. A mislabel that drops a double charge into \"can wait\" is not a labelling error to the person it happened to. It is another day of their money missing, and it is your name on the queue.\n\n## Do this before the next lesson\n\nWrite your four categories in your own words, plus the band that sits above them, with one line each on what breaks if that band waits and one invented example ticket. That sheet is what you hand a model later, and what you hand whoever covers your shift.\n"
+        },
+        {
+          "slug": "the-limits-of-your-seat",
+          "title": "The limits of your seat",
+          "duration_minutes": 8,
+          "content_mdx": "# The limits of your seat\n\nA customer has been in your chat for twenty minutes. He is not unreasonable, he is just done, and you can see exactly what would end it: refund him, or waive the fee, or tell him it will arrive Friday.\n\nThe question is not whether that would be fair. The question is whether it is yours to give.\n\n## The four that are commonly withheld\n\nSupport seats are usually given room for the ordinary things: look up an order, resend a confirmation, correct an address, apply the published policy as written, replace something clearly wrong.\n\nFour things are commonly withheld, and the only version that matters is the one you get in writing from the person paying you.\n\n**Money back.** Refunds, reversals, anything that sends money the other way.\n\n**Discounts.** Including the small goodwill one that feels like nothing.\n\n**Exceptions to a policy.** The refund window that closed four days ago, the item outside warranty, the account that broke the terms.\n\n**Promises about dates.** This one surprises new agents. A date is only yours if the thing happens inside your reach. If it depends on a courier, a bank, a developer or a supplier, you can report a date somebody else gave you and name who gave it. You cannot promise it.\n\n## Write the authority list before your first shift\n\nTwo columns, agreed with the client, on one page.\n\nArvin does support for a small booking software company. His left column: resend a confirmation, move a booking to another date, resend an invoice copy, apply the published cancellation policy as written. His right column: any refund, any credit, any waiving of a fee, any exception, and anything a customer says they were told by somebody else.\n\nThat last line earns its place. \"Your colleague promised me\" is a claim, not a fact, and acting on it is how a seat gets used to rewrite a policy one customer at a time.\n\nThen add the two lines people forget. Who you ask when the list runs out, and on which channel. And what you do when that person is asleep, on leave, or simply not replying, because the queue does not pause for either.\n\n## When the list moves\n\nA client will sometimes widen your authority in passing, usually when something has been slow. Take it. Then pin it down before you use it, because a sentence in a chat window is not a list.\n\nThree questions, asked back in the same thread: how big does small go, does it cover every channel you work, and does it expire. Then write the answer into the shared list and say you have done it.\n\nWorking to your own private reading of a vague permission leaves you holding a decision nobody agreed to, and the fact that the client offered it will not help you.\n\n## The holding sentence\n\nWhen something lands above your seat, you need one sentence that buys time without promising anything:\n\n\"Let me check that and come back to you by 4pm today.\"\n\nThree working parts. You are not deciding this now. Somebody will. There is a time attached.\n\nCompare \"I will check with my manager and get back to you as soon as I can.\" No time, so the customer has no way to judge whether to wait or escalate, and you have guaranteed yourself a second ticket from the same person.\n\nPick a time you can hold on a bad day. Sooner is not better. Kept is better.\n\n## Then keep it\n\nAt 4pm, message them, answer or no answer.\n\n\"No decision yet. I have chased it twice, and I will update you again by 10am tomorrow.\"\n\nThat is not a wasted message. What you promised was an update, not an outcome, and you kept it exactly. Silence after a stated time is what turns a waiting customer into an angry one.\n\n## Refusing without deciding\n\nYou can decline to grant something without granting it and without pretending the answer is no:\n\n\"I am not able to approve a refund from where I sit. What I can do is put this in front of the person who decides, today, with everything that happened written down. You will hear from me by 4pm.\"\n\nThat is not a brush off. It names a limit, gives a route, and attaches a time. Customers take it better than agents expect, because it is honest and it moves.\n\n## Escalation is the answer, not the failure\n\nNew agents hide escalations, because handing a ticket up feels like admitting you could not do it. That is backwards. A ticket that was never yours to decide, moved quickly with a time attached, is your seat working as designed. The failure is the agent who granted an exception nobody authorised so they would look capable, and left the client to find it in the numbers a month later.\n\nKnowing which tickets those are is this lesson. Handing one over so the next person can act without reopening the whole thing is chapter four.\n\n## Do this before the next chapter\n\nWrite your two columns. Then mark the one line on the right you wish you could grant, and write the holding sentence you would send that customer instead.\n"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Ronnie handles chat for a Manila online store. For three weeks the queue has been bigger at the end of his shift than at the start, and the oldest untouched ticket keeps getting older. He is working through his breaks to keep up. What should he do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Sort the whole queue strictly oldest first for a week so the ageing tickets clear out, then go back to his normal order once the backlog is gone."
+            },
+            {
+              "id": "b",
+              "text": "Tell the client the queue is behind, show the shift start and shift end counts and the age of the oldest ticket, and ask what should give."
+            },
+            {
+              "id": "c",
+              "text": "Split the queue with the weekend agent for a fortnight and see whether the two counts come back level before he raises it with anyone."
+            },
+            {
+              "id": "d",
+              "text": "Keep the two counts running for another month so he has a longer run of numbers before he takes the volume question to the client."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "workflow",
+          "explanation": "A busy queue empties by the end of the shift. A queue that grows every shift and carries an ageing oldest ticket is behind, and behind is a volume problem rather than a personal one. Sorting differently moves the same load around, splitting the queue is the client's call rather than his, and another month of counts only buys the backlog another month. Take the two numbers he already has to whoever pays him, early."
+        },
+        {
+          "prompt": "Jenny opens sixty unread at eight in the morning. Among them: three customers charged twice, a bride whose order has to land on Saturday, one customer saying a filter cracked and cut her hand, and nine asking where their parcel is. What does she do first?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Send the injury ticket to the named person that minute and tell the customer she has done so, then take the double charges and the Saturday order."
+            },
+            {
+              "id": "b",
+              "text": "Work the three double charges oldest first, since money has already moved and every hour of that is money missing from a real customer's account."
+            },
+            {
+              "id": "c",
+              "text": "Answer the nine parcel questions first, because one honest line clears nine tickets and leaves her morning free for the money band after that."
+            },
+            {
+              "id": "d",
+              "text": "Reply to the injured customer with what the store knows about that filter, then move the Saturday order up and take the double charges after it."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "workflow",
+          "explanation": "A safety claim does not queue and it is not yours to answer, so it leaves your desk the minute you see it and the customer is told it has. After that the test is what breaks if it waits. Money that has already moved outranks the parcel questions, and Saturday moves up beside it, because a double charge can be reversed on Thursday and a wedding cannot be moved."
+        },
+        {
+          "prompt": "Karla wants a model to label and cluster this morning's sixty tickets. Her helpdesk exports timestamp, channel, subject line, customer name and order reference. What does she paste in?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The full export, since the model needs the order reference to spot that four of the tickets are about the same delayed shipment."
+            },
+            {
+              "id": "b",
+              "text": "The full export with the customer names taken out, since the name is the column that identifies somebody and the rest is just queue data."
+            },
+            {
+              "id": "c",
+              "text": "Timestamp, channel, the situation written in her own few words, and a row number she can map back to the real ticket in her own notes."
+            },
+            {
+              "id": "d",
+              "text": "The subject lines on their own, since a subject line is one short phrase rather than the body of anybody's message to the store."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "judgment",
+          "explanation": "A support subject line routinely carries a full name and an order number, so removing the name column is not stripping the export. The model does not need to know who anybody is to see that four rows are one problem. The row number is the whole trick: it sorts anonymous rows, and you are the only one who can turn row 34 back into Mrs Santos."
+        },
+        {
+          "prompt": "Karla runs an AI labelling pass over her exported queue each morning. Hand checking it, she finds a customer who was charged twice was labelled a general question, because the message was polite and never used the word refund. What should she take from this?",
+          "options": [
+            {
+              "id": "a",
+              "text": "She should add a category for politely worded complaints, so the labelling pass has somewhere sensible to file messages in that tone."
+            },
+            {
+              "id": "b",
+              "text": "She should feed the model twenty tickets she has already labelled herself, so the next pass is calibrated against her own reading of the queue."
+            },
+            {
+              "id": "c",
+              "text": "The customer buried the problem, so she should ask the client for a chat form that makes people pick a topic before chat opens."
+            },
+            {
+              "id": "d",
+              "text": "The sorting errs toward calm, so she keeps reading the money band by hand and never lets the pass set priority on payment tickets."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "judgment",
+          "explanation": "Spot checking is not about scoring the model, it is about learning the direction of its mistakes. Tone has nothing to do with what is at stake, and a labelling pass reads calm as low priority. Better examples may well raise the hit rate and they change nothing about the rule: AI may sort, and it may never set priority on anything touching money or safety."
+        },
+        {
+          "prompt": "Bea starts on a small software company's inbox on Monday. Nobody has told her how fast a first reply should go out or what happens to a ticket that lands overnight, and the website says only that the team replies as soon as possible. What is her strongest first move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Look up the industry standard first response time for software support and hold herself to that until the client tells her something different."
+            },
+            {
+              "id": "b",
+              "text": "Write down a response target and a coverage window she can hold, send both to the client to confirm in writing, and log her own reply times."
+            },
+            {
+              "id": "c",
+              "text": "Read a month of the previous agent's replies, work out the times that queue has been running at, and quietly adopt those as her own standard."
+            },
+            {
+              "id": "d",
+              "text": "Reply to everything within a few minutes for the first week, so the client can see what good looks like before any target gets set at all."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "judgment",
+          "explanation": "The promise is set by whoever runs the business, and when they have not set one your job is to propose it and get it confirmed in writing. A benchmark out of an article is a number you cannot source and should not be promising a client. What the last agent happened to manage is a pattern rather than a promise, and nobody has agreed to it. A heroic first week only sets a target she will miss in week three."
+        },
+        {
+          "prompt": "A customer bought a bundle, missed the refund window by four days, and is now demanding his money back in chat. Refunds are not on Angela's authority list, though she thinks the client would probably approve this one. What should she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Tell him the refund window has closed and that there is nothing anybody at the company is able to do about it at this point."
+            },
+            {
+              "id": "b",
+              "text": "Check whether anyone at the company has refunded a bundle outside the window before, and match whatever was done that time."
+            },
+            {
+              "id": "c",
+              "text": "Say the decision is not hers to make, put it in front of whoever decides today with what happened written down, and give him a time."
+            },
+            {
+              "id": "d",
+              "text": "Approve it, since she is fairly confident the client would say yes and the customer gets angrier every minute that she leaves him waiting."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "judgment",
+          "explanation": "Probably approving is not approving, and granting an exception nobody authorised is how a seat rewrites a policy one customer at a time. Precedent is not authority either: what somebody else once did is a claim about the past rather than permission from the person paying you. Naming the limit, giving a route and attaching a time is neither a yes nor a no, and customers take it better than agents expect."
+        },
+        {
+          "prompt": "Mid shift, the client messages Paolo in chat: \"Ang bagal kasi ng approvals, sige, small refunds na lang bahala ka na.\" What should Paolo do with that?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ask what counts as small, whether it covers every channel, and get the answer written into the shared authority list before he uses it."
+            },
+            {
+              "id": "b",
+              "text": "Treat it as approval and start refunding small amounts, since the client put it in writing and asking again would only waste both their time."
+            },
+            {
+              "id": "c",
+              "text": "Screenshot the message into his own notes, so he can show the client's own words if a refund he approved is ever questioned later on."
+            },
+            {
+              "id": "d",
+              "text": "Use it only on customers who are already angry and keep escalating the calm ones, so the client is not flooded with approval requests."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "judgment",
+          "explanation": "The client is widening your authority, which is good, so take it. Then pin it down, because small is not a number and a sentence in a chat window is not a list. Ask how big small goes, whether it covers every channel, and whether it expires, then write the answer into the shared list and say you have done it. A screenshot proves what was said and still leaves him working to his own private reading of it."
+        },
+        {
+          "prompt": "A customer messaged at 1am, outside the covered hours. Rio opens the queue at 8am and finds it. The parcel is with the courier, he has filed a follow up, and he has no date. Her last line reads \"So aayusin niyo na today?\" What should his reply say?",
+          "options": [
+            {
+              "id": "a",
+              "text": "That the parcel is out of the store's hands and the courier caused the delay, so she will get a faster answer by contacting the courier herself."
+            },
+            {
+              "id": "b",
+              "text": "That it will be sorted out today, since the follow up is already filed and opening with bad news will only make her angrier."
+            },
+            {
+              "id": "c",
+              "text": "That her message came in outside the covered hours, that he picked it up at the start of his shift, and that the follow up went in this morning."
+            },
+            {
+              "id": "d",
+              "text": "That he has her order open, the follow up is filed, he cannot promise a date the courier has not given, and when she will hear from him."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "workflow",
+          "explanation": "Response time and resolution time are different promises, and she is asking about resolution. Rio can be fast, honest about what sits outside his reach, and specific about the next contact. Promising today is promising a courier's work. Explaining the coverage window tells her when he read the message rather than what happens to her parcel."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-2-macros-that-do-not-read-like-macros",
+      "title": "Macros that do not read like macros",
+      "description": "The volume side of the job: finding the tickets that genuinely repeat, building a reply library the client has approved, and editing AI drafts until they read like a person who understood the question.",
+      "lessons": [
+        {
+          "slug": "what-deserves-a-macro",
+          "title": "What deserves a macro",
+          "duration_minutes": 8,
+          "content_mdx": "# What deserves a macro\n\nThree weeks into a queue you will feel like you already know what repeats. You do not. You know what annoyed you. Those are different lists, and building a library from the second one is how you end up with fourteen macros and still typing the same answer by hand every afternoon.\n\n## Read a month before you write anything\n\nStart with the record, not your memory. Find out whether your helpdesk can export a date range of tickets to a spreadsheet, because that decides whether this takes an hour or an evening. If it cannot, copy the subject lines and first messages from the last month out by hand.\n\nStrip the personal details before anything leaves the tool: names, email addresses, phone numbers, order references. You want the situations, not the customers.\n\nThen let AI do the sorting it is genuinely good at. Paste the stripped list in and ask it to group the messages by the customer's underlying problem, name each group in the customer's own words, and count how big each group is. What comes back is a first draft of your library's table of contents.\n\nNow judge it, because this is the part the tool cannot do. It will split one situation into three because the customers used different words, and merge two because they used the same word. It does not know that \"my order is late\" from a customer who was already refunded last week is a completely different ticket.\n\n## The test a cluster has to pass\n\nA cluster earns a macro when three things are true.\n\n1. You have typed that answer more times than you can stand to type it again.\n2. The answer changes only in named places: their name, their order, their specific problem.\n3. The answer rests on something the client has already decided and written down.\n\nIf the third one fails, you do not have a macro. You have a question for the client that keeps arriving, which is more useful to raise than any template would have been.\n\nOne macro per situation, never one per customer. The Certified AI Virtual Assistant course already made that argument for a client's inbox, so the only new thing to say here is that a queue punishes you faster. A per customer library is unsearchable by the second month.\n\n## Name them so you can find one mid-chat\n\nA customer is watching the typing indicator. You have seconds, so the name of a macro has exactly one job, which is to be findable by the word the customer just used.\n\nPut the customer's problem first, then the variant:\n\n- `order-late-no-tracking-update`\n- `refund-status-card`\n- `refund-status-gcash`\n- `cancel-before-dispatch`\n- `wrong-item-received`\n\nNot `Reply 4`, not `Joy template v2`, not `Standard response, delivery`. Your own action goes last if it goes in at all. Search \"late\" and you should get every macro about lateness and nothing else.\n\n## The audit that keeps the library true\n\nA macro is a promise that keeps going out long after you stopped reading it. That is its value and its entire danger.\n\nTibay Hardware in Marikina changed its exchange window in March. In June an agent is still sending a macro that quotes the old one, because it was approved once and nobody looked again. Every customer who got it was told, in writing and under the store's name, something the store will not honour.\n\nTwo habits fix this:\n\n- **A fixed audit date.** Once a month, open every macro next to the client's own written policy and read them against each other. Put it in your calendar, not in your intentions.\n- **An audit the hour a policy changes.** When the client announces a change, search the library that same shift for the old wording.\n\nWhen you find one, retire it. Do not edit around it and do not bolt on a hedge like \"please confirm with us\". A macro that has to be apologised for while it is being sent is not a macro. Archive it, write the replacement, get it approved, and tell whoever else works the queue which name replaced which.\n\n## The library belongs to the client\n\nEvery entry is approved before it is sent for the first time. That is not bureaucracy. It is the reason you get to send it a hundred times afterwards without asking again.\n\nAnd it carries the rule this whole chapter turns on: you never invent a policy inside a template. If the answer needs a fact nobody has given you, the macro carries a slot, and the slot stays empty until someone with the authority fills it. The sentence that costs a client real money is never the obviously reckless one. It is the plausible one you wrote at two in the morning because it sounded like something the business would say.\n\n## Do this before the next lesson\n\nExport or copy out a month of a queue you know, strip the names and order references, and write down the situations that came back more than twice. No macros yet. Mark the ones where the answer rests on something the client has actually written down."
+        },
+        {
+          "slug": "the-three-layers-of-a-reply",
+          "title": "The three layers of a reply",
+          "duration_minutes": 8,
+          "content_mdx": "# The three layers of a reply\n\nEvery reply you send has three layers in it, and the whole craft of a macro is knowing which layer a sentence belongs to. Get that wrong and you send something either useless or insulting, and the insulting one is the faster of the two to send.\n\n## Layer one: the fixed layer\n\nThis is what the macro exists to carry. Facts the client has settled, the policy in the client's own words, and the next step.\n\nFor Sagip Water Systems, a small filter store shipping out of Laguna, the fixed layer of a late delivery reply is how the store tracks a parcel, what it does when tracking has not moved, and what the customer is asked to do while that is checked. None of it changes between customers. Written once, approved once, sent a hundred times.\n\nFacts in this layer have to be stable, not merely true today. Anything that moves with the day, the courier or the customer's account is not fixed, and putting it here is how a library starts lying.\n\n## Layer two: the variable layer\n\nTheir name. Their order. And their problem restated in the words they used.\n\nThe third one is what people skip, and it is the one doing the work. A customer who wrote \"yung filter po na dumating, may basag yung casing\" should see the word casing in your reply, not the word component. Restating is how she knows a person read her message rather than a keyword matcher.\n\nIt is also a check on you. If you cannot restate the ticket in one line, you have not understood it, and the macro you were reaching for is probably the wrong macro. That single line catches mis-sends nothing downstream will, because it happens before you have chosen the macro.\n\nMark the slots so they cannot be missed:\n\n`Hi {{FIRST_NAME}}, thanks for flagging this. About order {{ORDER_REF}}: you told us {{WHAT_THEY_SAID}}.`\n\nTwo rules on slots. They have to look wrong when empty, so leave them ugly. Double braces and shouting capitals exist to be visible at a glance in a chat window at the end of a long shift. And never give a slot a friendly fallback. Setting an empty name field to print \"Hi there\" hides the failure rather than fixing it, because the same half filled send is also carrying an empty order slot that nobody will now notice.\n\nIf your tool fills the name in automatically, read it anyway. Name fields hold whatever the customer typed at sign up, which includes full email addresses, \"asdfg\", and shop names in capital letters.\n\nA macro that goes out reading \"Hi [Name],\" has told the customer that nobody read her message. Everything true in the rest of that reply is now suspect, including the part where you said you were looking into it. Another minute of silence would have cost you far less.\n\n## Layer three: the layer that is never templated\n\nThree things get written by hand every single time, or they do not go out at all.\n\n- **An apology for a specific failure.** Not \"we apologise for the inconvenience\", which is a shape rather than an apology. The real version names the thing: \"we charged you twice on the 14th and did not spot it until you told us\".\n- **A commitment to a date or a time.** Anything with a when in it comes from someone who actually knows, and it gets typed fresh with that answer in front of you.\n- **An admission of fault.** Whether this was the store's mistake is a finding, not a phrase. It goes out after somebody has checked, and it goes out in your own words.\n\nThe moment one of these lives in a macro it starts reaching people it is not true about. A stored apology arrives at a customer who was not wronged. A stored date arrives at a customer nobody has looked up. Both are worse than a slower reply, because both are now on record.\n\n## Where the layers meet your authority\n\nChapter one had you write down what your seat may grant. That list governs the fixed layer too.\n\nA macro ending in a refund, a discount, a waiver or a firm date is granting something, and sitting in the shared library does not hand you the authority to grant it. If you find one that does, take that sentence out of the reply you are about to send, answer with what you can, and raise the macro with the client. A template can carry a permission somebody gave you. It cannot create one.\n\n## Do this before the next lesson\n\nTake one reply you have already sent and mark every sentence as layer one, two or three. Anything you cannot place is layer three, so pull it out of whatever template it is sitting in."
+        },
+        {
+          "slug": "editing-what-ai-drafts",
+          "title": "Editing what the AI hands you",
+          "duration_minutes": 8,
+          "content_mdx": "# Editing what the AI hands you\n\nA drafting tool will hand you something fluent, polite and complete looking almost immediately. Fluent is the problem. What you have is a colleague's first draft, except written with total confidence by something that has never seen your client's business.\n\nHere is the pass that turns one of those into a reply you can put a customer's name on.\n\n## The tells\n\nMachine drafts fail in the same handful of ways, so learn to see them at a glance:\n\n- **Hedging.** \"It appears that your order may have experienced a delay.\"\n- **Thanking twice.** Gratitude in the opening line, then again before the sign off.\n- **Restating the question.** A paragraph telling the customer what she just told you, before anything gets answered.\n- **Apology inflation.** Sorry for the inconvenience, sorry for any confusion, sorry for the trouble caused, none of it attached to a specific thing that went wrong.\n- **A wall with no next step.** Four correct paragraphs and not one sentence saying what happens now, or who is doing it.\n\nNone of these is a grammar problem, which is why proofreading will not catch them. They are structure problems, and you fix them by moving and deleting rather than by rewording.\n\n## Cut to answer, reason, next step\n\nThat order, every time.\n\nTake a customer asking whether she can still change the delivery address on an order she placed last night. The draft opens with thanks, explains what a delivery address is for, and reaches the answer in the fourth paragraph. What she needs is:\n\n\"Yes, we can still change it, because your order has not been dispatched yet. Send me the new address and I will update it now and confirm back here.\"\n\nAnswer, reason, next step. The version that leads with gratitude makes her read three paragraphs to find out whether the thing she wants is even possible, which is a small rudeness performed politely.\n\n## Match the channel\n\nA chat reply and an email reply are different objects, and a customer can tell when one has been pasted into the other.\n\nChat is two or three short lines, sent as they land, in the rhythm of a conversation. Email carries the record: the fuller explanation, the reference, the sign off. Paste an email macro into a chat window and the customer gets a wall with a signature block sitting in it. Paste a chat line into an email and it reads as a shrug.\n\nSo do not trim the email version down. Rewrite the answer for chat, then offer to send the full version by email. Same facts, different object.\n\n## Register, and which language\n\nAI drafts default to a flat corporate English that belongs to nobody. Decide what this particular queue sounds like.\n\nSome Philippine queues are right in Taglish, because the customers write that way and the client wants the business to sound like the neighbourhood it sells to. Others are English only, because the owner reads the transcripts, or the brand voice was set that way, or the customers are overseas. Both are legitimate and neither is guessable.\n\nSo ask, in writing, in your first week: do you want replies in English only, or should we mirror the customer's language? Put the answer in the same document as your authority list. Until you have it, English is the safer default, because that is the easier correction to make later.\n\nInside whichever rule you get, mirror the customer's formality. A customer writing po in every sentence gets po back. A customer opening with \"hey, quick q\" does not need \"Dear Sir/Madam\".\n\n## The last pass, which is not optional\n\nRead the finished reply one more time looking only for facts. Every name, number, date, amount and link.\n\nCertified AI Virtual Assistant taught this as the verification ladder, and a customer facing reply sits on its middle rung: check every name, number, date and link before it goes. A support queue adds one rung of its own. A customer who has already escalated, to a manager, to the client, or to a public complaint, gets nothing out of a draft without a second human reading it first. Chapter three writes that rule sheet properly.\n\nWhat you are hunting is the fluent invention. A draft will happily produce a refund timeline in banking days, a courier's next scan, an amount, and a link shaped exactly like your real tracking links. None of it came from the client's records, because the tool has never had access to them.\n\nDelete anything you cannot point at a source for, and put in its place the sentence that is always available to you: \"I am checking this with the warehouse now and will come back to you here by 3pm today.\" That sentence costs you a follow up. The invented one costs the client a customer.\n\n## Do this before the next chapter\n\nAsk a model to draft a reply to a late delivery ticket you invent. Then run the pass: cut it to answer, reason, next step, and delete every fact you cannot point at a source for. Keep both versions side by side, because that pair is one of the artefacts chapter four asks you for."
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "You are three weeks into the queue for Sagip Water Systems, an online filter store in Laguna, and you have exported a month of tickets. Four patterns come out of the clustering. Which one earns a macro first?",
+          "options": [
+            {
+              "id": "a",
+              "text": "\"Where is my order\", arriving daily, answered the same way every time once you have opened the tracking and seen where the parcel is."
+            },
+            {
+              "id": "b",
+              "text": "An angry ticket about a filter that leaked, arriving weekly, which the store has sometimes ended with a replacement and sometimes with a partial refund."
+            },
+            {
+              "id": "c",
+              "text": "\"Will this fit my faucet\", arriving daily, where the answer depends on the model in the photo the customer attached to her message."
+            },
+            {
+              "id": "d",
+              "text": "A hardware shop asking about bulk terms, arriving a few times a month, which the owner has always answered personally after seeing the volume."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "workflow",
+          "explanation": "A cluster earns a macro when the answer changes only in named slots and rests on something the client has already settled. The fit question changes with every photo. The leak ends differently case by case, so the answer moves outside the slots, and it carries an apology that is never templated. Bulk terms are the owner's decision. The tracking answer is the only one where the words are the same every time."
+        },
+        {
+          "prompt": "Tibay Hardware changed its exchange window in March. In June, mid-chat with a customer waiting, you notice the macro you were about to send still quotes the old window. What do you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Send the macro as it stands this once, since the client approved that wording themselves, and flag the out of date window at the end of your shift."
+            },
+            {
+              "id": "b",
+              "text": "Answer this customer by hand from the store's current written policy, then archive the macro and write a replacement for the client to approve."
+            },
+            {
+              "id": "c",
+              "text": "Send it with a line added saying the window may have changed recently and asking the customer to confirm the current one with the store."
+            },
+            {
+              "id": "d",
+              "text": "Edit the macro to the window the store announced in March and send that, so the customer gets the current rule and the next agent gets the fix."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "judgment",
+          "explanation": "An approved macro is a promise that keeps going out after you stop reading it, so a wrong one gets retired rather than patched. Hedging it means apologising for the reply while you send it. Editing it from what you remember the store announcing publishes a wording nobody approved, and the library belongs to the client. Answer from the written policy, then fix the library properly."
+        },
+        {
+          "prompt": "You are naming the twelve macros in a new library. A customer is watching the typing indicator while you search for one. Which naming rule holds up mid-chat?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The customer's problem first and the variant second, so searching the word she just used returns every macro about it and nothing else."
+            },
+            {
+              "id": "b",
+              "text": "Numbered in the order you built them, so the library sits in one predictable list and nothing ever moves position when you add an entry."
+            },
+            {
+              "id": "c",
+              "text": "Grouped by the action you take, refund, replace or resend, since what you are reaching for is the thing you are about to do for her."
+            },
+            {
+              "id": "d",
+              "text": "Named after the channel and the register, so you can never paste the formal email version into a live chat window by accident again."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "tools",
+          "explanation": "The name has one job, which is to be findable by the word the customer just used. She writes late, so order-late-no-tracking-update comes up. Your own action goes last if it goes in at all, because you do not know which action applies until you have found the macro. Build order tells you nothing, and channel and register are a fix for a different problem."
+        },
+        {
+          "prompt": "You are writing the fixed layer of Sagip Water Systems' late delivery macro, the part that gets approved once and sent a hundred times. Which of these belongs in it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The courier the store is using this month, so the customer knows who is carrying her parcel without you having to look it up each time."
+            },
+            {
+              "id": "b",
+              "text": "The usual time these parcels take from dispatch to arrival, which has been steady all year and gives the customer something to plan around."
+            },
+            {
+              "id": "c",
+              "text": "How the store tracks a parcel, what it does when tracking has not moved, and what the customer is asked to do while that is being checked."
+            },
+            {
+              "id": "d",
+              "text": "The line apologising for the delay, written carefully once so every customer gets the same considered wording rather than a rushed one."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "judgment",
+          "explanation": "The fixed layer carries what the client has settled and what does not change between customers. A courier changes. A usual delivery time is a date in disguise, and anything with a when in it gets typed fresh by somebody who checked. An apology for a specific failure is layer three and never templated. Facts here have to be stable, not merely true today, and putting a moving one in is how a library starts lying."
+        },
+        {
+          "prompt": "A customer writes: \"yung filter po na dumating, may basag yung casing.\" Your draft reply says the component arrived damaged and offers a replacement. What is worth changing before it goes?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Mirror her Taglish through the whole reply, since she wrote that way and matching a customer's language is what stops a reply reading like a template."
+            },
+            {
+              "id": "b",
+              "text": "Put her own word, casing, into the reply, because restating what she wrote is how she knows a person read it and how you check that you did."
+            },
+            {
+              "id": "c",
+              "text": "Add the model name and the batch of the filter, so the reply shows her you have already opened her order rather than answering her generically."
+            },
+            {
+              "id": "d",
+              "text": "Open by thanking her for letting the store know, so that the reply acknowledges her before it leads with the damage she has just reported."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "prompting",
+          "explanation": "Component is your word. Casing is hers, and restating the ticket in the customer's own words does two jobs: it proves a person read it, and it is a check on you. If you cannot restate it in one line you have not understood it, and the macro you were reaching for is probably the wrong one. Language is the client's rule to set, and both detail and gratitude come after the answer."
+        },
+        {
+          "prompt": "A teammate suggests setting every macro so an empty name slot prints \"Hi there\" instead of the raw placeholder, arguing that nobody will ever be embarrassed by \"Hi [Name],\" again. What is wrong with the fix?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A neutral greeting reads colder than a name, and a customer who is already annoyed will take the coldness as a brush off before reading anything."
+            },
+            {
+              "id": "b",
+              "text": "The client has to approve any change to a macro's wording, and a greeting fallback is a wording change that they have not seen or signed off."
+            },
+            {
+              "id": "c",
+              "text": "It should fall back to the customer's email address instead, since that field is filled on every channel and still shows the record was opened."
+            },
+            {
+              "id": "d",
+              "text": "It removes the one visible sign that a macro went out half filled, so the empty order and problem slots in the same reply now travel unnoticed."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "tools",
+          "explanation": "Slots are left ugly on purpose. The raw placeholder is not the failure, it is the alarm, and any fallback silences the alarm while the rest of the reply is still empty. An email address in the greeting is a second failure wearing the first one's clothes. A customer can forgive a plain greeting. She cannot forgive a reply that never mentions her order or her problem."
+        },
+        {
+          "prompt": "A customer asks one line: can she change the delivery address on an order she placed last night? The AI draft opens with three sentences of thanks and appreciation and answers in the fourth paragraph. What do you send?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Rewrite the opening in the client's voice so the gratitude reads as specific to her rather than generic, then leave the rest of the draft alone."
+            },
+            {
+              "id": "b",
+              "text": "Move the answer up to the top and leave the draft underneath it, so she has it at once and the fuller explanation is still on record."
+            },
+            {
+              "id": "c",
+              "text": "Lead with the answer, then the reason it is still possible, then what she needs to send you and what you will do with it when it arrives."
+            },
+            {
+              "id": "d",
+              "text": "Cut everything including the greeting and paste only the steps for changing an address, since she asked a procedure question and wants nothing else."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "prompting",
+          "explanation": "Answer, reason, next step. Making her read three paragraphs to learn whether the thing she wants is even possible is a small rudeness performed politely. Rewriting the gratitude in a nicer voice leaves the delay exactly where it was, and lifting the answer to the top while leaving the draft under it keeps the thanking twice and the restatement you were meant to delete. Bare steps overcorrect and drop the next step she needs from you."
+        },
+        {
+          "prompt": "Your tool suggests a reply about a replacement unit: it says the parcel will arrive Thursday and includes a tracking link. Neither the date nor the link appears in the ticket or the order record, and the queue is backed up. What do you send?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Send it as drafted, since the link is in the format the store's links always take and Thursday matches how long these deliveries have been running."
+            },
+            {
+              "id": "b",
+              "text": "Send it with the date softened to \"should arrive around Thursday\", so the customer gets a useful expectation without anything being promised outright."
+            },
+            {
+              "id": "c",
+              "text": "Open the courier's own site, check whether the parcel really is due Thursday, and send the draft unchanged if the two happen to agree."
+            },
+            {
+              "id": "d",
+              "text": "Cut the date and the link, confirm only what the order record actually shows, and tell her when you will come back with the tracking details."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "judgment",
+          "explanation": "A fluent invention is the easiest thing in this course to send by accident: dates, amounts and links come out looking exactly like the real ones. Softening a date still leaves the customer planning around it. Checking one of the two and sending the whole draft leaves the link unsourced and turns a courier's estimate into the store's promise. Confirm what the record shows and name when you will come back."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-3-hard-tickets-and-the-line-ai-must-not-cross",
+      "title": "Hard tickets and the line AI must not cross",
+      "description": "The tickets that decide whether a customer stays: the angry one, the one you have to refuse, and the mistake you caused. Then the hard line, written down, on what AI may never send to a customer unreviewed.",
+      "lessons": [
+        {
+          "slug": "the-angry-ticket",
+          "title": "The angry ticket",
+          "duration_minutes": 9,
+          "content_mdx": "# The angry ticket\n\nAn angry ticket carries two things at once, and they need different handling. There is the anger, and underneath it there is a request. That request is usually smaller than the volume on top of it, and it is the part you can actually answer: tell me where my order is, give me back my money, make the thing I paid for work.\n\nAnswer the request. Acknowledge the anger once, in one sentence, and then leave it alone.\n\nThis lesson is the support inbox and chat. A complaint under a public post is social media management's ground, and it is answered differently there because the audience is the thread rather than the person.\n\nThis is also not the unhappy client, who is the person paying you and is complaining about your own work. That one is Client Communication in English. This lesson is a stranger who paid the business, not you.\n\n## Read for the ask, not the volume\n\nLiezl messages an online gadget store in Bacolod at eleven at night: \"3 DAYS WALA PA RIN. SCAMMER BA KAYO. Ireport ko na kayo.\"\n\nStrip the caps and the accusation and what is left is this: her parcel has not moved and nobody has told her anything. That is a fair thing to be angry about, and it is answerable.\n\nDo not respond to the tone. Do not open with \"I understand you are upset, but\". Do not quote her own words back at her. Nothing you say about how she is behaving improves the outcome, and it hands her a screenshot she will use.\n\n## Acknowledge the specific thing, admit only what you know\n\nThe default AI apology is the problem here, not the fix. Ask a model to soften an angry ticket and you get back: \"We sincerely apologise for any inconvenience this may have caused.\" Any inconvenience. May have caused. It apologises for nothing in particular, which is exactly how the customer reads it, and it is the fastest way to make a real person feel processed.\n\nReplace it with one specific sentence built from the record: \"Your parcel has not been scanned since Tuesday and nobody updated you about it. I can see that from here.\"\n\nNaming what you can see does two jobs at once. It proves you actually read the ticket, and it commits you to nothing you have not checked. You do not yet know whose fault the delay is, so you do not say. Fault is a separate sentence, and it comes later or not at all.\n\n## The four part shape\n\nEvery hard reply fits this, and it stays short.\n\n1. **What happened.** The specific thing, in your own words, taken from the record.\n2. **What is true right now.** Only what you have verified yourself.\n3. **What you are doing.** An action with a subject: I am chasing, I have raised it, I have requested.\n4. **When they hear from you next.** A time you name, not \"soon\" and not \"ASAP\".\n\nLiezl gets four sentences, not four paragraphs. Length reads as excuse making, and a long reply to an angry customer looks like a business explaining why it is fine.\n\nPart four is the one that gets dropped when the queue is deep, and it is the one deciding whether she writes again tomorrow.\n\n## The repeat contact is angry about the silence\n\nBy the third message on the same ticket the complaint has changed. It is not about the parcel any more. It is about a person promising an update, no update arriving, and the only thing landing in her inbox being another automated acknowledgement.\n\nTreat a repeat contact as a failure of your follow up rather than of the warehouse. Open with that: \"I said I would come back to you yesterday and I did not.\" Then run the four parts again.\n\nThe fix is not a better apology. The fix is that the next time you name is one you can actually keep, so name a later one and keep it.\n\n## Moving it to a private channel\n\nMove when the next step needs account details: the order number, the delivery address, the reference on the payment, the account a refund would return to. Say why you are moving it, and answer whatever you can answer first.\n\nMoving reads as hiding when it happens before you have answered anything. \"Please send us a DM\" as the first reply to a direct question is a brush off, and the customer knows it. So does everybody else watching that inbox.\n\n## What you do not do\n\n- Do not match their register. If they swear, you do not.\n- Do not explain the internal reason at length. A backlog is your problem, and it is not compensation.\n- Do not promise a fix, a date or money nobody authorised you to promise. That is the next lesson, and it is where a calm reply turns into a broken one.\n\nDraft the four parts before you write a single polished sentence. If you cannot fill part two honestly, you are not ready to send anything.\n\n## Do this before the next lesson\n\nWrite the four parts for the angriest ticket your queue could produce. Four sentences, no more. If you cannot fill part two honestly, write down what you would have to check first."
+        },
+        {
+          "slug": "saying-no-and-bad-news",
+          "title": "Saying no, and delivering bad news you did not cause",
+          "duration_minutes": 9,
+          "content_mdx": "# Saying no, and delivering bad news you did not cause\n\nRefusing is the part of the job new agents avoid, and avoiding it costs more than doing it. A soft no that sounds like a maybe brings the customer back three messages later, angrier, having already told their group chat they were promised something.\n\nSay the no in the first line. Everything after it is easier to read once the customer knows where they stand.\n\n## A refusal has four parts\n\n1. **The decision.** First line, plainly.\n2. **The reason.** In words a stranger understands.\n3. **The alternative**, if one exists.\n4. **The escalation path**, if they want to push.\n\nJoel bought a mechanical keyboard from a small Quezon City store, used it for five weeks, and now wants his money back because he changed his mind. The store's stated terms cover faulty and wrong items, not preference. You cannot overturn that from your seat.\n\nWeak: \"Sorry po, as per our policy hindi po pwede.\" Policy with no reason attached is the sentence customers hate, because it sounds like a wall built specifically to stop them.\n\nBetter: \"I cannot refund a change of mind on this one. The store's terms cover items that arrive faulty or wrong, and this one is neither. What I can do is check whether it qualifies for store credit, and I will have that answer for you by Friday lunchtime. If you want the decision itself looked at again, I will pass it to the owner with your reason attached.\"\n\nThat reply refuses, explains, offers what is real, and names a way up. It also promises exactly one thing: a time.\n\nIf the customer starts citing their rights or a law, stop arguing. Consumer complaints in the Philippines sit with the DTI, and what a particular buyer is entitled to in a particular situation is not settled by a support agent in a chat window. Escalate it, tell the customer you are escalating it, tell your client the same day, and never tell the customer what the law says. If you want to know the current arrangement, read it on the DTI's own site rather than from anyone repeating it.\n\n## Do not invent the way out\n\nThe temptation in a refusal is to soften it with something. A small discount. Free shipping next time. A partial refund. An exception just this once, because it is only a few hundred pesos and it ends the ticket.\n\nNone of that is yours to give. Handing out the client's margin to end your own discomfort is how a support seat gets lost, and the customer will reasonably expect the same thing next time.\n\nRefuse the soft promise too. \"I will try to get this approved for you\" when you know it will not be approved is a no wearing a costume, and it buys you one quiet day and one much worse conversation.\n\nWhen you have nothing to give, you still have four things: the truth, a timeline, your name on the follow up, and a real escalation path. Name the path as a real thing, not as a brush off. \"I am sending this to the owner today with your order details and my recommendation, and I will write to you tomorrow before five with the answer\" is something a person can hold you to.\n\n## Bad news you did not create\n\nAn outage. A delay. Stock that will not arrive. A refund the client already refused.\n\nTell them before they ask, whenever you can see it coming. A customer who hears it from you first is a customer with a support team. A customer who finds out alone is a customer with a complaint.\n\nDo not blame a named third party to move the weight off yourself. \"The courier lost it\" makes the business look like it does not control its own operations, and you do not actually know that it is true. Say what is known and what you are doing about it.\n\nDo not guess a date. \"I do not have a confirmed date yet. I will update you Thursday whether or not it has moved\" is stronger than a comforting guess, because the comforting guess is a promise you break on Thursday and then have to explain twice.\n\n## The mistake you caused\n\nAyen sent a customer the wrong discount code and he paid the full price.\n\nThe plain version costs less than the carefully managed version. \"It appears there may have been an issue with the code\" invites a fight about what happened. This does not: \"I sent you the wrong code, and that is my mistake. I have asked the owner whether the difference can be returned to you, and I will come back to you by five today either way.\"\n\nOne apology, specific, then action. Repeating sorry five times makes the reader feel worse rather than better, and it reads as a person trying to be forgiven instead of a person fixing something.\n\nThen tell your client or your team lead the same day, before the customer does.\n\n## Do this before the next lesson\n\nWrite one refusal in full, with the decision, the reason, the alternative and the escalation path. Then read it back and cross out anything you are not authorised to promise."
+        },
+        {
+          "slug": "the-unreviewed-send-line",
+          "title": "What AI must never send unreviewed",
+          "duration_minutes": 9,
+          "content_mdx": "# What AI must never send unreviewed\n\nThe reason this rule needs writing down is that the failure is invisible. A bad AI reply does not arrive broken. It arrives fluent, correctly punctuated, in the right tone, sitting in the sent folder beside forty good ones. Nobody notices until a customer acts on it.\n\nSo the control cannot be \"read it if it looks risky\". The control is a written list of categories that never leave without a human read, agreed with your client before your first shift.\n\n## The categories\n\n**Anything with money in it.** A refund, an amount, a fee, a discount, a total, a claim about what somebody was charged. If a peso figure is in the draft, a person reads it before a customer does.\n\n**Anything with a date in it.** Delivery, restock, callback, when the fix ships, when the refund lands. AI produces confident dates from nothing, because a helpful sounding reply has a date in it and the model is optimising for helpful sounding.\n\n**Anything carrying the customer's personal details.** Their address, their order, their phone number, the tail of a card. A draft that has picked up somebody else's details from earlier in a thread is a data problem, not a typo.\n\nThis one is not only a habit. Philippine businesses handling customers' personal information sit under the Data Privacy Act, overseen by the National Privacy Commission, and the queue you are working is the business's data before it is your text. What that obliges your particular client to do is theirs to know and yours to ask about. What it obliges you to do is simpler: do not move a customer's details anywhere nobody agreed they could go.\n\n**Any legal, health or safety claim.** What a buyer is entitled to, whether a product is safe to use on broken skin, what a regulator requires. Nobody at your desk gets to answer that, and a draft will answer it happily.\n\n**Any apology that admits fault.** \"We failed to dispatch your order on time\" is a finding, not a phrase, and it can be quoted back at the business later. That does not make the empty version acceptable: sorry for any inconvenience is what lesson one of this chapter told you never to send. The rule is about who writes it, not about hedging it. An admission of fault is typed by a person who checked, in their own words, after somebody decided it was true. Until then you name what you can see, which commits you to nothing and still reads as a person who read the ticket.\n\n**Anything at all to a customer who has already escalated.** Once a ticket sits with the owner, a manager or a formal complaint, every message from that account belongs to one conversation somebody else is now running. A cheerful automated acknowledgement landing in the middle of it undoes real work.\n\n## Suggested replies and auto replies fail quietly\n\nA suggested reply waits for one tired click at the end of a long shift. An auto reply does not wait for anything at all.\n\nAutomation is fine for a message with no facts in it: we have your ticket, here is your reference, here is when a person reads it. It stops being fine the moment the message contains an answer.\n\nWhether your helpdesk can be configured to require a human send, whether it drafts at all, and what it does with the text of a customer's message are questions about your specific tool and your specific account. Find out from whoever administers it, get the answer in writing, and never assume a setting exists because you saw it in somebody else's screenshot.\n\nOn what a customer's message may be pasted into, AI Essentials for Work covers the general rule and the support version of it is short. A ticket is not your text. It is a stranger's name, address, order and sometimes their money trouble. Hand the AI tool the shape of the problem, not the customer.\n\n## Write this queue's own rule sheet\n\nOne page, plain language, and the client signs it. Four headings.\n\n1. **Never sends without a human read.** The categories above, rewritten for this business. A skincare shop names refunds, skin reactions and delivery dates. A booking service names schedule changes and no show charges. \"Check AI output\" is not a rule sheet, because nobody has ever been stopped by it.\n2. **May go out automatically.** The acknowledgement, the reference number, the coverage hours. Nothing with an answer in it.\n3. **Who reviews when you are not there.** A named person, not a role. This is the line that makes the sheet survive you being off sick.\n4. **What happens when the queue is backed up.** The answer is that the queue waits. A backlog is not an authorisation, and a rule suspended on a busy Monday was never a rule.\n\nThen put it where the next person finds it without asking you, and date it. When the client changes a policy, the sheet changes the same week.\n\nThe sheet is worth writing even when you are the only agent, and it is worth more on the day you are not. It is also the strongest thing you can hand a client who asks what happens when the AI gets something wrong. You give them a page saying it never reaches a customer alone.\n\n## Do this before the next chapter\n\nDraft your queue's rule sheet under the four headings. Leave a name blank where you do not have it yet, and write next to it the question you will ask to fill it in."
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Liezl has messaged three times about the same undelivered order. Her first two messages got an automated acknowledgement, and the agent who promised her an update yesterday did not send one. Her third message is furious and mostly about being ignored. What do you send now?",
+          "options": [
+            {
+              "id": "a",
+              "text": "An apology naming the missed update, a full explanation of where the parcel sits, and an offer to keep her posted daily until it moves"
+            },
+            {
+              "id": "b",
+              "text": "A note saying the update was missed, what the record shows today, what you are chasing, and a time you will write again"
+            },
+            {
+              "id": "c",
+              "text": "A request that she send her order number by private message so the account team can look into the matter properly"
+            },
+            {
+              "id": "d",
+              "text": "A short reply telling her the parcel is still with the courier and that you will get back to her as soon as you hear anything"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "judgment",
+          "explanation": "By the third message the complaint is the silence, not the parcel. Name the missed promise, give what you have actually verified, and name the next time you will write. Daily until it moves is a promise about a courier rather than about your own contact, and the length reads as excuse making. The other two ask her for something she already sent, or replace a real time with as soon as."
+        },
+        {
+          "prompt": "A customer asks in your public page inbox why her refund has not landed. You can see the order, and the next step needs the account the payment came from. What do you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ask her to send the details by private message first, then answer the refund question properly once it is somewhere safer"
+            },
+            {
+              "id": "b",
+              "text": "Answer what you can see about the refund now, say why the rest needs the payment account, and move it with her agreement"
+            },
+            {
+              "id": "c",
+              "text": "Answer the whole thing where she asked, quoting only the last four digits of the account, so nothing sensitive is exposed"
+            },
+            {
+              "id": "d",
+              "text": "Reply publicly that the refund is being looked into, and open a private thread separately so that the two do not get mixed up"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "workflow",
+          "explanation": "Move when the next step genuinely needs account details, and answer whatever you can answer first. Moving before you have answered anything reads as hiding, and everybody watching that inbox can see it. A partial account number is still the customer's payment detail sitting in a public thread, and running two threads leaves her deciding which one to trust."
+        },
+        {
+          "prompt": "An angry customer whose order arrived late wants compensation. Your authority list does not include discounts or goodwill credit. She is threatening to post about it. What do you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Offer her a small discount code on her next order, since it costs the shop very little and ends the ticket today"
+            },
+            {
+              "id": "b",
+              "text": "Tell her the shop's policy does not allow any form of compensation for a late delivery in any circumstances"
+            },
+            {
+              "id": "c",
+              "text": "Tell her the delay was the courier's fault, so compensation has to come from them, and point her at their claims process"
+            },
+            {
+              "id": "d",
+              "text": "Say you cannot decide it, send it up with the record and a proposed answer, and give her a time you will reply"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "judgment",
+          "explanation": "Compensation is the client's money, and a threat does not transfer authority to you. Blaming the courier moves the weight off yourself, makes the business look as though it cannot run its own operations, and you do not actually know it is true. Option b states a rule you invented, and the owner may well approve something. Escalate with what happened and what you recommend, then tell her when she hears back."
+        },
+        {
+          "prompt": "The owner has refused a refund on a five week old keyboard the customer no longer wants. You have to deliver that decision, and you privately think the customer has a point. What do you write?",
+          "options": [
+            {
+              "id": "a",
+              "text": "That a refund is not possible, the reason the owner gave, what can be offered instead, and how to put it to him again"
+            },
+            {
+              "id": "b",
+              "text": "That as per company policy refunds are not possible once the return period on an order has already closed"
+            },
+            {
+              "id": "c",
+              "text": "That you personally would have approved it but the owner has said no, so unfortunately your hands are tied"
+            },
+            {
+              "id": "d",
+              "text": "That a refund is unlikely, though you will keep pushing internally and will let him know if anything at all changes soon"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "judgment",
+          "explanation": "Decision, reason, alternative, escalation path. The escalation has already been walked and it ended in a no, so the fourth part is an honest offer to put it back in front of the owner rather than a promise of a different outcome. Policy on its own is a wall. Telling him you disagree with your own client makes the business look divided. Unlikely plus I will keep pushing is a no in a costume."
+        },
+        {
+          "prompt": "A customer replies that under Philippine consumer law she is entitled to a full refund, and that she will file a complaint. You do not know whether she is right. What do you do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Look up the rule she is citing, and if it does say what she thinks it says, approve the refund before this becomes formal"
+            },
+            {
+              "id": "b",
+              "text": "Tell her the store's own written terms govern the sale, since those are what she agreed to when she ordered"
+            },
+            {
+              "id": "c",
+              "text": "Stop arguing the law, escalate it with what she said, tell her you have done so, and tell your client the same day"
+            },
+            {
+              "id": "d",
+              "text": "Ask her to send the section she is relying on, so you can check it against the store's terms before anybody escalates"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "judgment",
+          "explanation": "Consumer complaints in the Philippines sit with the DTI, and what a particular buyer is entitled to in a particular situation is not settled by a support agent in a chat window, whichever way you read it. Do not argue it, do not concede it, and do not open a comparison of her section against the store's terms. Escalate, say you have escalated, and tell your client the same day."
+        },
+        {
+          "prompt": "You are writing the part of the rule sheet that lists what may go out automatically on a skincare shop's queue. Which message can be sent without a human reading it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The acknowledgement carrying the ticket reference and the hours a person is at the queue, with no answer to anything in it"
+            },
+            {
+              "id": "b",
+              "text": "The confirmation that a refund has been approved, telling the customer the working days it usually takes to reach her"
+            },
+            {
+              "id": "c",
+              "text": "The reply to a customer who has already written to the owner, letting her know her message reached the support queue"
+            },
+            {
+              "id": "d",
+              "text": "The reply to a repeated question about whether a product suits sensitive skin, using the exact wording the client wrote"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "workflow",
+          "explanation": "Automation is fine for a message with no facts in it. It stops being fine the moment the message contains an answer. A refund timeline is a date, a suitability claim is a health claim and nobody at your desk gets to answer that even in approved wording, and anything at all reaching a customer who has already escalated lands in the middle of a conversation somebody else is running."
+        },
+        {
+          "prompt": "Ayen sent a customer the wrong promo code and he paid the full price. She has already asked the owner whether the difference can be returned and is waiting for an answer. What should she write to the customer now?",
+          "options": [
+            {
+              "id": "a",
+              "text": "That an issue occurred with the code on her end and that the matter is currently being reviewed internally"
+            },
+            {
+              "id": "b",
+              "text": "Nothing yet, since writing before she has the owner's decision only gives him something more to be annoyed about today"
+            },
+            {
+              "id": "c",
+              "text": "That she sent the wrong code, and that she will return the difference out of her own pay if the owner says no"
+            },
+            {
+              "id": "d",
+              "text": "That she sent the wrong code, that this was her mistake, what she has asked the owner for, and when he hears back"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "judgment",
+          "explanation": "The plain version costs less than the managed one. An issue occurred invites an argument about what happened, and waiting hands him the discovery instead of the apology. Paying it out of her own pocket is still money moving without the owner's decision, and it quietly sets the price of the next mistake. Say what you did, what you have asked for, and when he hears."
+        },
+        {
+          "prompt": "You want a model to help you rewrite a difficult reply. The ticket carries the customer's name, her address, her order number and a paragraph about why she cannot afford to wait. What goes into the tool?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The whole ticket, since the model needs her situation to pitch the tone, and the tool's settings say chats are not used for training"
+            },
+            {
+              "id": "b",
+              "text": "The ticket with her name and address taken out, keeping the order number and her own paragraph so the rewrite still sounds like her"
+            },
+            {
+              "id": "c",
+              "text": "The shape of the problem in your own words, with no name, no address, no order number and none of her own text pasted in"
+            },
+            {
+              "id": "d",
+              "text": "The whole ticket, once you have asked her in chat whether she minds you using a tool to help you write the reply back"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "tools",
+          "explanation": "A ticket is not your text. It is a stranger's name, address, order and sometimes her money trouble, and it is the business's data before it is yours. Philippine businesses handling customers' personal information sit under the Data Privacy Act, overseen by the National Privacy Commission, and what that obliges your client to do is theirs to know and yours to ask about. A vendor's training setting is not permission, an order number identifies her as surely as her name, and a customer in the middle of a complaint is in no position to refuse."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-4-escalation-scope-and-getting-hired-for-a-queue",
+      "title": "Escalation, scope, and getting hired for a queue",
+      "description": "What turns a good shift into a job you keep: handing a ticket over so the next person can act immediately, agreeing what the support engagement actually covers, and showing a hiring client evidence rather than adjectives.",
+      "lessons": [
+        {
+          "slug": "escalation-as-a-handoff",
+          "title": "Escalation as a handoff",
+          "duration_minutes": 9,
+          "content_mdx": "# Escalation as a handoff\n\nChapter one said escalation is the right answer to a question above your seat, not a failure. This lesson is the other half. How you hand a ticket over decides whether the customer waits an hour or a day.\n\n## What \"pls help\" costs\n\nMarilou runs the chat queue for an online mattress store in Iloilo. A customer messages that the bed frame arrived with a cracked slat. Replacing a part is not something Marilou can approve, so she screenshots the chat, drops it in the team channel with \"pls help po\", and opens the next ticket.\n\nShe has handed her supervisor a puzzle. He has to find the order, read the whole thread, work out what Marilou already told the customer, check whether anything was promised, and guess what she wants him to do. That takes longer than answering it himself would have taken, and the customer sits through all of it.\n\nAn escalation is not passing the problem along. It is passing a decision, with everything needed to make it already attached.\n\n## The five lines\n\nWrite the handoff as one block at the top of the ticket, in this order.\n\n1. **What the customer asked for**, in their words, trimmed to the request.\n2. **What I have already told them.** Copy it exactly if you promised anything.\n3. **What I checked and ruled out.** Order status, earlier tickets, the policy line you read, the detail you verified.\n4. **What I think should happen.** A recommendation, not a question.\n5. **What has been promised, and by when.**\n\nMarilou's version:\n\n> Customer received the frame with a cracked slat, wants the slat replaced, does not want to return the whole bed. Order verified, delivered Tuesday, photo attached, no earlier tickets on this order. I have told her we are checking and that she will hear from us before I log off today. I have offered her nothing. My read: send a replacement slat, no pickup needed. Needs your approval.\n\nA supervisor can answer that in a single read.\n\nThe line new agents leave out is the recommendation. It is also the line that gets you trusted. Being wrong about it costs you nothing, because the person you asked is the one deciding. Having no view at all is what makes you look like a relay.\n\n## Drafting the handoff without handing over the customer\n\nA long thread is the kind of thing a model summarises well, so use it. Strip the ticket first, the way chapter one had you strip the queue: no name, no address, no order reference, no pasted customer text. Give it the situation in your own words and ask for lines one, two and three of the shape above.\n\nThen write line four yourself. Every other line can be checked against the thread, so a paraphrased promise or a misread request gets caught on the read. The recommendation cannot be checked against anything, because it is not in the thread. It is your view, it is the line that gets you trusted, and a model producing one has no stake in whether it is right.\n\n## Escalated does not mean no longer mine\n\nThe ticket stays yours until somebody says, in writing, that they have it. A status field is not a person.\n\nSet your own reminder to check on it, and check before the time you promised the customer, not after. If the person you escalated to works while you sleep, plan around that rather than hoping. Decide what you will send the customer if the answer has not arrived, and write it before you need it.\n\n## The holding reply\n\nThe customer does not care which desk the ticket is sitting on. They care whether they have been forgotten.\n\nThree parts: what has happened so far, what is happening now, and when they hear from you next. The third part does the work, and it has to be a time you can hit even if nothing is resolved by then. If the answer is not in, you send another short note at that time. That is not an admission of failure. It is the thing that stops a patient customer turning into the angry repeat contact from chapter three.\n\n> Hi Ms Ramos, I have your photo and your order shows as delivered Tuesday. A replacement slat needs approval from the warehouse and I have sent that across with your details. I will message you again before five today either way, even if the approval is still pending.\n\n## Close the loop in your own words\n\nWhen the approval comes back, do not assume anybody told the customer. Somebody fixing a thing is not the same as the customer knowing it was fixed, and a ticket quietly marked resolved is how a good ending turns into a complaint.\n\nSend the confirmation yourself: what was done, what it means for them, and anything you still need from them. Then write down the answer you were given. The next time this ticket arrives, and it will arrive again, it may sit inside your seat, or it may become the next entry in the macro library from chapter two.\n\n## Do this before the next lesson\n\nTake a ticket you would have to escalate and write the five lines for it. Then read line four back. If it is a question rather than a recommendation, rewrite it as a recommendation."
+        },
+        {
+          "slug": "agreeing-the-support-engagement",
+          "title": "Agreeing what the support job covers",
+          "duration_minutes": 9,
+          "content_mdx": "# Agreeing what the support job covers\n\nSupport scope rarely changes in one big request. It changes in small friendly ones, and every one of them is easy to say yes to.\n\n## Four things settled before the first shift\n\n**Which channels.** Email and a website chat widget is one job. Email, chat widget, the Facebook page inbox, Instagram DMs and a marketplace chat is a different job, with five sets of habits and five places to miss something. Write the list down and treat anything not on it as new work.\n\n**Which hours.** Name the window you are at the queue, and name whose clock it runs on. If your client is overseas, agree the window in your own local time and let them translate it, because the gap between your clock and theirs shifts during their year. Chapter one covered what a queue promises and what happens to a ticket that lands outside coverage. This is where you write that answer down before it happens rather than after.\n\n**Roughly what volume, and what happens above it.** Ask what the queue has been running at recently, and ask where that count came from. If nobody has a number, say you will measure the first month and bring it back. Either way you now have a baseline, and a baseline is the only thing that turns \"parang mas mabigat na\" into a conversation somebody can act on.\n\n**What you are authorised to decide.** The list from chapter one, in writing, with the name of the person you ask when the list runs out.\n\n## How creep arrives in a queue\n\nFour shapes, and none of them looks like a demand.\n\n- **The extra channel.** \"Pwede mo rin ba i-check ang IG? Konti lang naman.\"\n- **The new product line.** Same inbox, new questions, and your macros are quoting things that are no longer true.\n- **Weekend cover, just this once.** Then the next sale. Then every sale.\n- **Becoming the escalation point.** Questions you were hired to escalate start coming back to you, because by month three you know the answer. It is flattering, it is a promotion nobody agreed to, and it is the one that eats your day.\n\nAnalyn moved off a BPO floor in Cubao to run support for a skincare shop in Quezon City. She agreed to email and the page inbox. By week six she was also answering the Shopee chat and a Viber group, because each one was a small yes.\n\n## Naming the change without refusing it\n\nYou are not turning work down. You are pricing it in time.\n\nThe move itself belongs to Client Communication in English: agree in principle, then name what it changes, then hand the client the choice. What a queue adds is the count. Analyn cannot say the IG inbox is heavy. She has to say what it is, in messages a day, and what it does to the email queue's first reply. Without the count it is a complaint. With it, it is an operations question the client can answer.\n\nThen set a point to look again: after a launch, after a sale, after a price change, or on a date in the calendar. A ticket count from a campaign month is not the count for an ordinary month, and agreeing to revisit is far easier before you need it.\n\n## The shape of the pay conversation\n\nNo figures here, and no rates. What matters at this stage is knowing which shape you are on, because each one breaks differently when the queue doubles.\n\n- **Paid for hours worked.** Twice the tickets inside the same hours means you get busier and earn the same. Quality is the first thing that gives.\n- **Paid for coverage**, meaning you are available across an agreed window. Same exposure as hours when volume climbs, but quiet weeks are paid too, which suits a queue that swings.\n- **Paid by volume**, per ticket or per band of tickets. Pay follows the queue, and you carry the quiet months. A queue of simple questions and a queue of furious ones pay the same, so agree what counts as a ticket.\n\nNone of the three is the right one. Pick knowingly, and write down the trigger for revisiting it: a volume number, a new channel, or a date. What to charge is a different subject. What to agree on is this one.\n\n## Do this before the next lesson\n\nWrite the four things you would settle before a first shift, in the words you would actually send a client. Mark the one you would be likeliest to leave vague."
+        },
+        {
+          "slug": "proving-you-can-run-a-queue",
+          "title": "Proving you can run a queue",
+          "duration_minutes": 10,
+          "content_mdx": "# Proving you can run a queue\n\nTwo people apply to run the same inbox. Both did support for eight months. One writes \"excellent communication skills, hardworking, fast learner, can work under pressure\". The other writes \"I ran the email and page inbox for a skincare shop from March to August. Here is the triage sheet I worked from, three of my macros, one refusal I had to send, and the escalation note that went with it.\"\n\nOnly one of those can be checked. That is why only one of them is worth reading.\n\n## Say only the numbers you can source\n\nSupport work produces numbers, and numbers are where support portfolios fall apart. Quote one and the next question is where it came from. If you cannot answer that in a sentence, everything else you said gets re-read with suspicion.\n\nSo keep the rule narrow. Say a number only when you can name three things: what it counts, the window it covers, and where you got it.\n\n- Tickets you handled between two dates, counted from the helpdesk export or from your own log.\n- Your first reply time, if the tool records it and you can point at where it appears.\n- How many of your tickets came back after you closed them, counted the same way each week.\n\nBe honest with yourself about what each one proves. Volume proves stamina and says nothing about quality. A fast first reply proves you were at the desk, not that anything got solved. Tickets that did not come back is the closest thing to a quality signal you own, and only if you can say how you counted it.\n\nA metric you cannot show the source of is worth less than no metric at all.\n\nIf you never measured, do not reach for a figure you half remember, and do not borrow a benchmark out of an article about the support industry. Chapter one made the point already: the target on your queue was set by whoever runs that business, so the only numbers that mean anything are that queue's and yours. Open a sheet this week with the date, the count and the source, and in a month you will have something true to say.\n\n## Read your own sent replies before anyone else does\n\nOnce a week, pull ten replies you sent and read them cold against a short rubric.\n\n- Does the first line answer the question that was asked?\n- Is every fact, figure, date and link in it something I checked?\n- Did it promise only what my seat is allowed to grant?\n- Does it say what happens next, and when?\n- Would I be comfortable if the client read it aloud to the customer?\n\nThis is uncomfortable the first few times, and it is the cheapest improvement available to you, because it needs nobody's permission and no tool. It also builds the pack below, because the replies you are not embarrassed by are the ones worth showing.\n\n## The pack that gets you shortlisted\n\nFour artefacts, small enough for a busy person to read in five minutes.\n\n1. **A triage sheet** for one queue: the categories, the rule for what gets answered first, and the two column split of what that seat may decide against what it must escalate.\n2. **Two or three macros**, variable slots marked, with one shown filled in for a specific customer.\n3. **One hard reply**, showing the AI draft and the version you actually sent, plus a line on what you changed and why.\n4. **One escalation note**, in the five line shape from this chapter's first lesson.\n\nStrip every real name, order number, phone number and address, and put placeholders in their place. Doing that properly, and the harder question of showing work covered by a confidentiality agreement, is a job hunting subject with its own course. If you have never been paid for support work, build the pack around a realistic queue and label it as a sample. A labelled sample is honest. A sample presented as a client is a lie you will be asked about in the interview.\n\n## The mock ticket\n\nExpect a hiring client to send one awkward ticket and ask what you would reply. They are not marking your grammar. They are reading for whether you answered the question, whether you promised something nobody gave you the authority to promise, whether you asked for the one detail you actually needed, and how you sound when the customer is unhappy.\n\nThe usual trap is an angry customer demanding a refund. Granting it is the failure. Answer the request, say what you would check, and add one line to the client underneath: \"I have assumed a refund needs your approval. Tell me the real policy and I will adjust the reply.\" That line is the test.\n\nMore clients now send the ticket with their own tool's draft attached and ask what you would send. That is not a harder test, it is a clearer one, because they are watching you edit. What they are reading for is what you take out: the delivery date nobody confirmed, the refund nobody authorised, the paragraph of thanks sitting in front of the answer. Send back the cut version rather than a rewrite from scratch, and say in one line what you removed and why. A rewrite hides the edit they asked to see. On AI, one accurate sentence beats a tool name: you draft with it, and you read every reply before a customer does. AI Essentials for Work covers how to describe AI skills in general.\n\n## Do this this week\n\nOpen a sheet with three columns: date, count, source. Then write the first artefact, the triage sheet, for the queue you would like to be running in six months. It is the shortest of the four and the one every other artefact hangs off. The assignment asks you for the rest.\n"
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Marilou cannot approve a replacement part, so she posts a screenshot of the chat in the team channel with \"pls help po\" and moves to her next ticket. What should she have sent instead?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A note with the request, what she has already told the customer, what she checked, and what she recommends"
+            },
+            {
+              "id": "b",
+              "text": "The screenshot plus the full chat history, so her supervisor has every detail and can decide however he wants"
+            },
+            {
+              "id": "c",
+              "text": "A short summary of the problem ending in a question asking her supervisor what he would like her to do next"
+            },
+            {
+              "id": "d",
+              "text": "The screenshot with the order number added, since her supervisor can pull the rest of the detail out himself"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "workflow",
+          "explanation": "An escalation passes a decision, not a puzzle. The five lines let the next person act on one read: the request, what was already said, what was checked, your recommendation, and what has been promised. Handing over raw history makes them redo the work you already did, and a summary ending in a question leaves out the one line that gets you trusted."
+        },
+        {
+          "prompt": "You paste a stripped version of a long thread into a model and ask it to draft the five line handoff. Which of the five lines do you write yourself?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Line two, what you have already told the customer, because a model paraphrases and a promise has to be quoted exactly"
+            },
+            {
+              "id": "b",
+              "text": "Line four, your recommendation, because that is the line you are trusted for and a model has no stake in whether it is right"
+            },
+            {
+              "id": "c",
+              "text": "Line one, what the customer asked for, because a model reading a thread will pick the last complaint over the real request"
+            },
+            {
+              "id": "d",
+              "text": "None of them, as long as you read the whole draft back against the thread and correct anything in it that does not match"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "prompting",
+          "explanation": "Every line gets checked against the thread, and that is exactly where a paraphrased promise or a misread ask gets caught. Line four is different in kind. There is nothing in the thread to check it against, because it is your view rather than a fact from the record. It is the line that makes you something other than a relay, being wrong about it costs you nothing, and a model producing one has no stake in it."
+        },
+        {
+          "prompt": "Jasper escalates a billing bug to the client's developer, sets the ticket status to Escalated, and moves on. Two days later the customer writes back asking whether anyone is still there. What went wrong?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nothing in Jasper's handling, since the delay belongs to the developer who never acknowledged the ticket at all"
+            },
+            {
+              "id": "b",
+              "text": "He should have set himself a reminder to chase the developer, though the ticket was properly out of his hands"
+            },
+            {
+              "id": "c",
+              "text": "He escalated far too early, before the customer had asked for the problem to reach a technical person"
+            },
+            {
+              "id": "d",
+              "text": "He treated a status field as a handover, when the ticket was still his and the silence was his to prevent"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "workflow",
+          "explanation": "Escalated does not mean no longer mine. A status is not a person accepting the ticket. It stays yours until somebody says in writing that they have it, which means you chase it and you keep the customer informed while it sits on another desk. A reminder to chase the developer is half the job, and it leaves the customer in exactly the silence she wrote about."
+        },
+        {
+          "prompt": "The supervisor approves the replacement slat, writes it in an internal note and marks the ticket resolved. Marilou sees the note. What does she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Leave it, since the ticket reads as resolved and the supervisor will have written to the customer when he approved it"
+            },
+            {
+              "id": "b",
+              "text": "Reopen it and ask the supervisor to tell the customer himself, since he is the one who made the decision"
+            },
+            {
+              "id": "c",
+              "text": "Message the customer herself with what was approved and what happens next, then log the answer she was given"
+            },
+            {
+              "id": "d",
+              "text": "Forward the supervisor's internal note to the customer so she can see for herself that the approval has come through"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "workflow",
+          "explanation": "Somebody fixing a thing is not the same as the customer knowing it was fixed, and assuming the decider wrote to her is how a good ending turns into a complaint. An internal note is written for the team and carries wording that was never meant for her. Close the loop in your own words, then write down the answer, because that is what turns this ticket into a macro or into something your seat can decide next time."
+        },
+        {
+          "prompt": "Three weeks into the month, Analyn's client asks her to also watch the Instagram DMs. \"Konti lang naman.\" She currently covers email and the page inbox inside an agreed window.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Agree, then say what the extra messages come to a day and what that does to email, and let the client choose"
+            },
+            {
+              "id": "b",
+              "text": "Say yes and absorb it quietly for now, and then raise it at month end if the extra messages turn out to be heavy"
+            },
+            {
+              "id": "c",
+              "text": "Agree for a trial month, then bring the client a proposal for a higher rate once she can show the channel is real"
+            },
+            {
+              "id": "d",
+              "text": "Decline until the agreement is rewritten, since the channels were all settled in writing before her first shift"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "workflow",
+          "explanation": "Neither refuse nor absorb. A second channel is real work inside the same hours, so name what it costs and put the choice back where the authority sits: extend the window, drop something, or let email run slower. The count is what a queue adds to that move, and without it this is a complaint. A trial month leaves the email queue slipping for a month with nobody told."
+        },
+        {
+          "prompt": "You decide to pull ten of your own sent replies once a week and read them cold. What are you reading them for?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Typos, clumsy sentences and anything that reads awkwardly, since that is what a client notices when he opens up a transcript"
+            },
+            {
+              "id": "b",
+              "text": "Whether the first line answered the ask, whether every fact was checked, and whether anything was promised above your seat"
+            },
+            {
+              "id": "c",
+              "text": "The ones you are proudest of, so that the best of them can go straight into the sample pack you show a hiring client"
+            },
+            {
+              "id": "d",
+              "text": "Which of them a macro could have answered, so that the library grows out of what you actually typed by hand that week"
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "judgment",
+          "explanation": "The rubric is five questions and none of them is about polish: did the first line answer the ask, was every fact checked, did it promise only what your seat may grant, does it say what happens next and when, and would you be comfortable if the client read it aloud. It needs nobody's permission and no tool, which is why it is the cheapest improvement you have. The pack and the library are by-products."
+        },
+        {
+          "prompt": "Nico has run the booking inbox for a dental clinic in Davao for eight months. His application says \"excellent communication skills, hardworking, fast learner\". What would improve it fastest?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Add a line with his average first reply time from memory, since he worked that inbox every single day for eight months"
+            },
+            {
+              "id": "b",
+              "text": "Name the clinic, the eight months and the channels he covered, and give his best remembered figure for daily ticket volume"
+            },
+            {
+              "id": "c",
+              "text": "Ask the clinic owner for a reference letter and lead with that instead of describing the work himself"
+            },
+            {
+              "id": "d",
+              "text": "Attach a triage sheet, two macros, one hard reply and an escalation note, with names and numbers stripped out"
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "judgment",
+          "explanation": "Adjectives cannot be checked and every applicant has the same ones. Artefacts can be read in five minutes and show how he actually works. Naming the clinic and the months is a real improvement, and then it attaches a remembered figure, which fails the three part rule: what it counts, the window it covers, and where he got it. A reference letter says what somebody else thinks rather than what he did."
+        },
+        {
+          "prompt": "A hiring client sends one test: an angry customer demanding a refund on a late order, and the reply their own AI tool drafted for it. They ask what you would send. What does the strongest answer do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Rewrite the draft from scratch in your own voice, so they can see that you do not need their tool to produce a reply at all"
+            },
+            {
+              "id": "b",
+              "text": "Keep the draft's structure and tone and correct only the facts, since the tool has handled the part they are testing"
+            },
+            {
+              "id": "c",
+              "text": "Send the draft back with the unconfirmed date and the refund promise cut, answer the request, and name what you assumed"
+            },
+            {
+              "id": "d",
+              "text": "Send the draft as it stands with a note listing the three things you would want checked before a real customer saw it"
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "judgment",
+          "explanation": "They are watching you edit. The draft is there because they want to see what you take out, so cutting the date nobody confirmed and the refund nobody authorised is the answer, along with the line naming your assumption about the policy. Rewriting from scratch hides the edit they asked to see, correcting only the facts leaves a promise standing, and a list of checks you did not run is not a reply."
+        }
+      ]
+    }
+  ],
+  "assignment": {
+    "title": "The support pack for one real queue",
+    "brief_mdx": "Pick one support queue you could plausibly run: a Philippine online store, a small software product, a service business with a booking inbox, a clinic whose messages pile up all day. A real one is better. A realistic one you know well is fine. Then submit one text document with a short setup and five artefacts.\n\n**The setup.** One paragraph. What the business sells, which channels customers write in on, what those customers usually want, and what one shift on this queue looks like.\n\nThen the five artefacts.\n\n1. **The triage sheet.** Your category set for this queue, short and fixed. The rule for what gets answered first, written so someone covering your shift would sort the same way you do. Then a two column list: what this seat may decide on its own, and what has to go to somebody else. At least one thing you would like to be able to grant has to sit on the escalate side, with the holding sentence you would send instead.\n\n2. **Three macros.** Take three situations this queue would really see again and again. Write the reply for each with the variable slots marked, so a rushed agent cannot send one half filled. Show one of them filled in for a specific customer. No macro may state a policy, a fee, a delivery window or any figure you have not confirmed with the business.\n\n3. **Three hard tickets.** One angry customer, one request you have to refuse, one you have to escalate. For each, give the ticket in a line or two, the AI draft, the version you would actually send, and one line naming what you changed and why. The change has to be a real change, not a note that the draft was fine.\n\n4. **The unreviewed send rule sheet.** One page for this queue. What never reaches a customer without a human reading it first, written as concrete categories for this business rather than a general line about checking AI output. Include what happens on the morning the queue is backed up and the rule is inconvenient, because that is the morning it breaks.\n\n5. **The coverage and authority statement, plus one escalation note.** What you would agree with the client before your first shift: which channels, which hours, roughly what volume, and what happens when the queue goes above it. Then the escalation note that travels with the ticket you escalated in part 3, written so the next person can act without reopening the whole thing.\n\nEverything is text. No screenshots and no uploads. Replace real customer names, order numbers, phone numbers and email addresses before you submit. Do not state a fee, a commission, a refund timeline, a response time benchmark or a marketplace rule as fact anywhere in the pack. Where your queue needs one of those, write the placeholder and name who you would ask for the current answer. Doing that properly is part of what is being marked.",
+    "criteria": [
+      "The triage sheet is specific to this business: every category traces to a ticket this queue would really receive, and the first-answered rule is written clearly enough that a colleague covering the shift would sort the same way",
+      "The authority split is real rather than decorative: at least one thing the learner clearly wants to grant sits on the escalate side with the holding sentence they would send instead, and the coverage statement names channels, hours, expected volume and what happens above it",
+      "The three macros are shaped around situations rather than individual customers, every variable slot is marked, one is shown filled in for a named case, and no macro states a policy, fee or timeframe the learner invented",
+      "Each hard reply answers the request first and promises nothing outside the stated authority, the named edit to the AI draft is a genuine change, and the escalation note gives the next person what was asked, what the customer has already been told, what was checked and what was promised",
+      "The unreviewed send rule sheet names concrete categories for this queue, covering money, dates, a customer's personal details and anyone who has already escalated, and says what holds when the queue is backed up, rather than restating that AI output should be checked",
+      "Real customer names, order numbers and contact details are removed or replaced, and no price, fee, refund timeline, response time benchmark or platform rule appears as a stated fact anywhere in the pack"
+    ],
+    "min_words": 900
+  }
+}

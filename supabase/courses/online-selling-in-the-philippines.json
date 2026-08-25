@@ -1,0 +1,929 @@
+{
+  "slug": "online-selling-in-the-philippines",
+  "title": "Online Selling in the Philippines",
+  "subtitle": "Listings that sell, prices that survive the fees",
+  "level": "professional",
+  "category": "E-commerce",
+  "format": "Self-paced online",
+  "summary": "A practical course for anyone running, or about to run, a small online shop from home. Twelve lessons on choosing what to sell, building listings and photos that answer a buyer's questions, pricing that still leaves money after platform deductions and shipping, handling chats and orders without living in your inbox, and surviving the parts that go wrong: lost parcels, failed deliveries, refunds and bad reviews.",
+  "description": "The shop this course is built for is one person with a phone, a stack of stock in the bedroom, and a courier pickup twice a week. You start by deciding what you sell and where it can actually sell, because the product and the platform together decide how hard every later week will be. Then you build a listing that does the selling while you sleep: photos taken on a phone that show scale, condition and what is in the box, a title written in the words buyers type, and a description that answers the five questions that otherwise arrive as chats. Then the money: what a unit really costs you once packaging, breakage and your own hours are in, what categories of deduction come out of a marketplace payout before it reaches your bank, how shipping options and vouchers move your margin, and how to set a floor price you refuse to go under. Finally the operation: standing replies for the questions you answer daily, packing and handover discipline, what to do when a parcel goes missing or a buyer files a dispute, and a weekly routine that keeps the shop running without burning you out. No rate cards, no invented percentages. You learn how the arrangements work and where to look up today's numbers yourself, because every fee in this business changes.",
+  "skills": [
+    "Product and niche selection",
+    "Phone product photography for listings",
+    "Listing titles, attributes and search terms",
+    "Unit costing, floor pricing and payout deductions",
+    "Shipping, COD and returns handling",
+    "Buyer chat and complaint handling",
+    "Weekly seller operations and stock control"
+  ],
+  "outcomes": [
+    "Choose a product and a platform mix on margin, hassle and repeatability rather than on what looks popular",
+    "Shoot and write a listing that answers a buyer's real questions before they have to ask them in chat",
+    "Build a per-unit cost and price sheet with every deduction category named, then set a floor price you refuse to go under",
+    "Read your own payout statement and work out what a marketplace order actually earned you",
+    "Run chats, packing, shipping problems and returns on a weekly routine that survives a busy month"
+  ],
+  "roles": [
+    "Online seller and reseller",
+    "Small business owner",
+    "E-commerce virtual assistant",
+    "Student or jobseeker starting a side shop"
+  ],
+  "price_php": 1499,
+  "is_free": false,
+  "passing_score": 70,
+  "credential_prefix": "OSL",
+  "sort_order": 11,
+  "requires_assignment": true,
+  "modules": [
+    {
+      "slug": "chapter-1-what-you-sell-and-where-it-can-sell",
+      "title": "What you sell, and where it can actually sell",
+      "description": "The two decisions that set the difficulty of everything after: which product you are willing to buy, store, pack and answer questions about, and which selling places you put it in, knowing what each place does for you and what it takes back.",
+      "lessons": [
+        {
+          "slug": "picking-what-to-sell",
+          "title": "Picking what to sell",
+          "content_mdx": "# Picking what to sell\n\nJhen in Antipolo spent three weeks choosing between two products. One was an imported skincare set with a high sticker price. The other was plain cotton socks. She kept drifting back to the skincare because the number was bigger.\n\nThen she asked a different question: which of these will I still be willing to pack at eleven at night in August, with a rider waiting outside and a toddler awake? Socks do not leak. They do not expire. There is no shade that turns out wrong on a buyer's arm. She is not waiting on anybody's approval to list them. She picked socks, and her first year was boring in the way a business should be.\n\nThat is the whole lesson. Choosing a product is a margin and hassle decision, not a passion decision. You are going to handle this thing hundreds of times.\n\n## Three ways to get stock, and what each one asks of you\n\n**You buy it.** You pay upfront and you hold it. You control the price, you dispatch fast, and you have seen the item with your own hands. The cost is money sitting in a cabinet instead of in your account, plus everything that never sells.\n\n**You make it.** Handmade or made to order. Little money upfront, no dead stock. But the product is your hours, and a seller who prices their own labour at zero is quietly paying to work. Chapter 3 puts a number on that. Your ceiling is how fast you can make things.\n\n**Someone else holds it.** Consignment, or a dropship arrangement where the supplier ships straight to your buyer. Light on capital and light on space. What you carry instead is the complaint, the rating and the refund for a parcel you never packed and never inspected, and you learn an item is out of stock only after you have sold it. This arrangement is worth exactly as much as your supplier's answering speed.\n\n## The physical questions that decide your life later\n\nBefore you fall in love with a product, answer these out loud.\n\n- How big is it once it is packed? Bulky items cost more to send and eat your space.\n- Can it break in a bag, on a motorcycle, in the rain?\n- Does it expire? A shelf life turns unsold stock into rubbish on a fixed date.\n- Does it need sizes, shades or flavours? Every variant is another count to keep and another wrong-size return.\n- If a buyer complains about one part, are you replacing the whole unit?\n- Can you buy it again next week? A product you cannot restock is one sale, not a shop.\n\nNone of those questions has a right answer. Fragile and bulky is a fine business if you know that is what you signed up for. What kills a new shop is finding out in month two.\n\n## Demand you can see with your own eyes\n\nSkip the trend guessing. You have better evidence within walking distance.\n\nWhat do people already ask you for? Ate Baby's neighbours kept asking where she got her baking trays, so she sold baking trays. What already sells near you, in the palengke stall with the queue, or the sari-sari that restocks the same item every week? What can you get again, from a supplier in Divisoria or Cebu or online, on a day you are actually free to go?\n\nThat is demand you can verify. A category someone told you is booming is not.\n\n## Categories that carry extra rules\n\nSome things need more than a supplier before you may list them: food, cosmetics, supplements, medical devices, some electronics, secondhand goods, anything a regulator licenses. Requirements exist, they change, and other sellers listing the same item is not proof that it is allowed.\n\nTwo checks, and you do both yourself. Read the current requirements on the agency's own page, which for food, cosmetics and supplements means FDA. Then read the selling platform's own restricted and prohibited list for the category you plan to use. Take neither answer from a seller group chat.\n\n## Start with a range you can finish in one weekend\n\nPick a handful of items you can photograph, cost, price and pack in a single weekend. Not thirty. A small range is not a lack of ambition. It is the only way you reach the end of chapter 2 with real listings instead of a folder of half-shot photos and a supplier catalogue you never opened.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "how-the-selling-places-behave",
+          "title": "How the selling places behave",
+          "content_mdx": "# How the selling places behave\n\nRandy in Cebu sells one phone stand. Sold through a marketplace app it earns him less than the price on the listing and he never speaks to the buyer. Sold through his page it earns him the full amount and he answers eleven messages to get there. Same product, two different businesses.\n\nThis lesson describes selling places as arrangements rather than by name. Names, owners and features change, and a course that teaches you today's app teaches you nothing for next year. What lasts is the trade each arrangement makes: what it gives you, and what it takes back.\n\n## The large marketplace\n\nWhat it gives: buyers who came looking for a product and had never heard of you. It collects the payment and holds it until the order counts as complete. It produces the waybill and hands the parcel to a courier it already has an arrangement with. When a buyer disputes, there is a process, and you are not the one running it.\n\nWhat it takes back: deductions on every order, rules you did not write and cannot negotiate, and the customer relationship. The buyer is theirs, not yours. What the deductions are today, and how they differ by category and by programme, sits on the platform's own published fee page. Look it up before you choose and again before you price. Do not carry a number in your head, and do not take one from a group chat.\n\n## A page, a group or a chat thread\n\nWhat it gives: the conversation. Nobody stands between you and the person buying, nobody takes a share of the order, and a buyer who liked you comes back and brings her sister.\n\nWhat it takes back: every job the marketplace was doing for you. Nobody sends you buyers, so traffic is your problem. Nobody collects the payment, so you carry the risk of an edited payment screenshot or a buyer who goes quiet after you shipped, which chapter 4 handles. And nobody decides a dispute, so your written terms, your chat thread and your proof of handover are the entire case file.\n\n## Live and video selling\n\nThis is an attention arrangement layered on top of one of the two above. It moves stock quickly because people are watching at the same moment, and it commits you to being on camera at a fixed hour and to packing a burst of orders afterwards. Treat it as a schedule you have to keep rather than a free extra.\n\n## Your own link page or site\n\nNobody takes a cut and nobody sends you anyone. Every job the marketplace was doing, you now do yourself or pay someone to do. It is a reasonable place to end up and a hard place to start.\n\n## The buyer is not the same person in each place\n\nSomeone who found you through a marketplace search is comparing you against a grid of listings that look like yours, trusts the platform rather than you, and leaves a rating that follows your shop around. Someone who messaged your page found you through a person, asks more questions, expects a reply in your own voice, and is far easier to sell to a second time.\n\nThat is why one set of words cannot serve both without losing something. Chapter 2 writes for the first buyer. Chapter 4 talks to the second.\n\n## Start with one or two\n\nEvery place you add is another inbox to answer, another set of rules to keep up with, another stock count that can go stale, and another payout to reconcile. Two channels run properly beat five run badly, and the shop that lists everywhere in week one is the shop that cancels orders in week three.\n\nA rule for adding the next one: add it when the place you already have runs without you thinking about it. Not when someone in a group chat says the new app is where the buyers are.\n\nWrite your choice down with the reason next to it. This product, in these one or two places, because of what each one gives me and what it takes back. In chapter 3 you find out what the arrangement actually costs, and a reason on paper is what lets you change your mind on evidence instead of on mood.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "the-shop-you-can-actually-run",
+          "title": "The shop you can actually run",
+          "content_mdx": "# The shop you can actually run\n\nCel in Davao has a day job, two hours after dinner, and half a cabinet. That is the whole factory. Every decision in this lesson comes from those three facts, because a shop designed around somebody else's hours goes late in its first busy week.\n\n## Stock on hand, made to order, or pre-order\n\nThese are three different promises to a buyer, and the promise is the point.\n\n**Stock on hand.** The item exists, in your cabinet, today. You can offer the shortest dispatch window because nothing has to happen first. The cost is money tied up in things nobody has bought yet.\n\n**Made to order.** Nothing expires and nothing is wasted, but your dispatch window is your production time plus your day job, and it has to be written in the listing in a form you can hit on a bad week.\n\n**Pre-order.** The buyer pays before the item exists in your hands, so your window now depends on somebody else. Never publish your supplier's date as your date. Take the day the goods are supposed to reach you, add the time to check them, count them and pack them, add the slack you know you need, and put the word pre-order in the listing so the buyer is choosing it with their eyes open.\n\nA dispatch promise is public in a way a chat message is not. Same-day dispatch looks competitive on a screen. It becomes a late dispatch the first evening your child has a fever.\n\n## One count, in one place\n\nCel used to keep stock in the bedroom cabinet, a box under the stairs, and a bag at her mother's house. She sold a bag she thought she still had, and cancelled the order. Cancelling stings more than a slow dispatch: the buyer waited, told someone, and the platform noticed.\n\nKeep the stock where you can see all of it at once. Keep one count, in a notebook or a sheet, and change the number the moment a parcel leaves the house. Not at the end of the day. Not from memory on Sunday.\n\n## Four things you need before your first order\n\n- **A payout destination** in a name that matches your own records, so the money can reach you and you can tell which order it belongs to.\n- **A return address a rider can find.** House number, barangay, a landmark, and somebody there in the daytime. A parcel that comes back has to come back somewhere.\n- **A handover habit.** Pickup at your door or dropoff at a branch, on a fixed day and time you have already tried once. Not whenever you get around to it.\n- **A number you will answer.** If you will not answer it, do not publish it.\n\n## Promises you set once and then live with\n\nBefore day one, decide and write down your dispatch window, what you mean when you say in stock, whether you accept cash on delivery, and what happens when a buyer wants to return something. Chapter 3 prices the last two and chapter 4 runs them. What matters now is that every one of them is a public commitment. You can change it for new orders. You cannot change it for the buyer holding the old version.\n\n## Records from the first order, not the fiftieth\n\nFrom order one, write down what you bought and what it cost you, what you sold and for how much, and what came back. A notebook counts. That record becomes your cost sheet in chapter 3, your evidence when a parcel goes missing in chapter 4, and the only honest answer to the question of which product is making you money.\n\n## Registration and tax are part of it\n\nSelling online is doing business, and a business in the Philippines carries registration and tax obligations. What applies to you depends on how you sell and what you earn, and both the rules and the figures change, so this course will not hand you a threshold, a rate or a form number.\n\nDo this instead. Ask three places what applies to a seller in your situation: DTI, where a sole proprietor registers a business name; your own LGU, meaning your barangay and your city or municipal hall; and BIR. Write down the date you asked and who told you. Bookkeeping Basics for Freelancers takes the records and the deadline calendar further. Doing this early is administrative. Doing it after two good years is expensive.\n",
+          "duration_minutes": 9
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Jhen has capital for one product line. The first is an imported skincare set with a high sticker price, a shade range, an expiry date and requirements she has not checked yet. The second is plain cotton socks in three sizes from a supplier she can restock weekly. Both would leave her roughly the same pesos per unit. Which reasoning should settle it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The skincare, because the higher sticker price makes the shop look established and pulls in the buyers who have money to spend."
+            },
+            {
+              "id": "b",
+              "text": "The skincare, because the shade range gives her more listings, and a shop page carrying more listings has more ways to be found."
+            },
+            {
+              "id": "c",
+              "text": "The socks, because at the same pesos per unit she buys far less handling: no expiry, no shades, and a restock she controls."
+            },
+            {
+              "id": "d",
+              "text": "Neither yet, because she should list both lines and let a month of real orders tell her which product her buyers prefer."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "production_workflow",
+          "explanation": "When the margin per unit is the same, the product decision is a hassle decision. An expiry date puts a deadline on unsold stock, shades and sizes multiply the counts you keep and the wrong-variant returns you handle, and a regulated category has to be checked before you may list at all. A high sticker price is not margin, and it does not make a shop look established. More listings from a shade range is more photography, more counting and more returns for the same product. Listing both lines doubles all of it before she has proved she can run one, which is how a first month ends with neither line finished."
+        },
+        {
+          "prompt": "Randy sells one phone stand and has a day job. A seller group tells him to list on every marketplace, run a page, and start live selling in his first week, because more places means more sales. He is about to do it. What is the better move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Start on one or two, and add the next place only once the first one runs without him thinking about it every day."
+            },
+            {
+              "id": "b",
+              "text": "Open all of them now while he has the momentum, then close whichever two have brought the fewest orders by month three."
+            },
+            {
+              "id": "c",
+              "text": "Open all of them but list only his three best sellers in each, so the stock counts stay small enough to keep in step."
+            },
+            {
+              "id": "d",
+              "text": "Start on the page alone, since a place that deducts nothing leaves him the most money per stand sold."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "platform_fluency",
+          "explanation": "Adding a channel is not free even when listing is free. Each one is an inbox somebody has to answer, a rule set he did not write, a stock count that goes stale the moment it disagrees with the others, and a payout to reconcile. Opening everything and pruning later still spends three months collecting ratings in places he cannot answer. Cutting the range per channel shrinks the stock problem and leaves the inbox and the rulebooks untouched. Selling only through the page is a real choice, but a place that deducts nothing is also a place that sends him nobody, so traffic becomes the job. Add the next channel when the one he has runs without him thinking about it."
+        },
+        {
+          "prompt": "Two of Marisol's orders go wrong on the same day. One came through a marketplace app. The other came through her own page, where the buyer sent a transfer and she shipped the next morning. Both buyers now say the item is not as described and want their money back. What is structurally different between the two?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nothing structural. A buyer who claims an item is not as described is in the same position either way, so she can handle both the same."
+            },
+            {
+              "id": "b",
+              "text": "On the marketplace a third party holds the payment and decides the dispute. On her page nobody is in between and her records are the case."
+            },
+            {
+              "id": "c",
+              "text": "The page order is the safer one, since she already holds the money, so that buyer's complaint is not really hers to settle at all."
+            },
+            {
+              "id": "d",
+              "text": "The marketplace order is the safer one, because the platform decides the case, and a seller who dispatched on time is not the one who pays."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "platform_fluency",
+          "explanation": "The difference is who is standing in the middle. A marketplace collects the payment, holds it until the order counts as complete, and runs a process that decides the outcome, so the rules are theirs and so is the decision. On her own page nobody collects, nobody decides, and nobody is obliged to take her side, which makes her written terms, the chat thread and her proof of handover the whole case file. Holding the money is not the same as being safe, and a platform deciding a case is not the same as a platform funding the outcome. The current dispute rules sit on the platform's own policy page, which is where to read them."
+        },
+        {
+          "prompt": "Cel wants to add imported glutathione capsules to her shop. Her supplier says everything is legitimate, and she has seen the same product listed by several other sellers on the app she uses. What should she do before listing?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Neither of those settles it. Supplements are a regulated category, so she reads the requirements on FDA's own current page first."
+            },
+            {
+              "id": "b",
+              "text": "Take the other sellers as her evidence, since a platform takes down anything that is not allowed in the category it was listed in."
+            },
+            {
+              "id": "c",
+              "text": "Keep her supplier's word and a photo of their paperwork, because responsibility for the product sits with whoever imported it."
+            },
+            {
+              "id": "d",
+              "text": "List it now and take it down later if a buyer complains, since a listing costs her nothing at all until an order comes in."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "production_workflow",
+          "explanation": "Food, cosmetics, supplements, devices and several other categories carry requirements that sit with a regulator, not with your supplier and not with the app. Those requirements change, so the only answer worth having is the one on the agency's own current page, which for supplements means FDA. Other sellers listing the same item proves only that they listed it. A supplier's assurance is not transferable to you when a buyer or a regulator asks. And a listing that should not exist costs plenty once an order, a complaint or a takedown follows it. Read the platform's own restricted list as the second check."
+        },
+        {
+          "prompt": "Marisol's supplier in Divisoria says a shipment lands next week. She wants to open pre-orders tonight, and her draft listing promises dispatch within three days of payment. What should she change?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Open pre-orders tonight with the three-day window, and message every buyer the moment the shipment slips."
+            },
+            {
+              "id": "b",
+              "text": "Open pre-orders tonight but cap them at the quantity the supplier confirmed, keeping the three-day window as drafted."
+            },
+            {
+              "id": "c",
+              "text": "Open pre-orders tonight and quote the supplier's landing date as her dispatch date, since that is the date she was given."
+            },
+            {
+              "id": "d",
+              "text": "Publish it as a pre-order and start the window the day the goods are in her hands and checked, not when payment lands."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "production_workflow",
+          "explanation": "A dispatch window is a public promise, and a pre-order window rests on somebody else's schedule. Build it from the day the goods actually reach you, add the time to check, count and pack them, add the slack you know you need, and label the listing a pre-order so the buyer chooses the wait on purpose. Explaining a slip afterwards still costs you the buyer who had already told someone the parcel was coming. Capping the quantity limits how many people are waiting without fixing the date at all. And the supplier's landing date is the one date that is not hers to promise, because checking, counting and packing all happen after it."
+        },
+        {
+          "prompt": "Randy notices that his page orders arrive with nothing deducted, while every marketplace order comes back smaller than the price on the listing. He plans to close the marketplace shop and sell only through his page. How should he read the situation?",
+          "options": [
+            {
+              "id": "a",
+              "text": "He is right. Nothing at all is taken from a page order, and the buyers who bought from him on the marketplace will follow him across."
+            },
+            {
+              "id": "b",
+              "text": "The deduction is the price of what the marketplace does: buyers who never heard of him, payment collected, and a dispute process."
+            },
+            {
+              "id": "c",
+              "text": "He is right for now, and he should reopen the marketplace shop during campaign months when buyers are out hunting for deals."
+            },
+            {
+              "id": "d",
+              "text": "He is wrong, because closing the shop gives up his ratings there, and ratings are the one thing that makes any listing sell."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "platform_fluency",
+          "explanation": "A deduction is not a theft. It is the price of an arrangement, and the arrangement includes discovery by people who had never heard of his shop, payment collected and held for him, courier handling, and a dispute process he does not have to run himself. Whether that price is worth paying is a real question, and chapter 3 answers it from his own payout statement rather than from a feeling. Marketplace buyers rarely follow anyone anywhere, because they bought from the platform. Ratings help, but they are not the only thing selling a listing. Opening and closing a shop around campaigns throws away the standing he built there."
+        },
+        {
+          "prompt": "Cel keeps stock in a bedroom cabinet, a box under the stairs, and a bag at her mother's house. Last week she sold a tote she was sure she still had, then cancelled the order two days later. What actually fixes this?",
+          "options": [
+            {
+              "id": "a",
+              "text": "One count in one place, changed the moment a parcel leaves, with the stock stored where she can see all of it at once."
+            },
+            {
+              "id": "b",
+              "text": "Add a line to every listing saying stock is limited, so a buyer who gets cancelled on was warned before placing the order."
+            },
+            {
+              "id": "c",
+              "text": "List one fewer of everything than she owns, so a miscount eats the buffer instead of turning into a cancelled order."
+            },
+            {
+              "id": "d",
+              "text": "Message the buyer to wait while she restocks, so the order stays open on her side instead of being cancelled outright."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "production_workflow",
+          "explanation": "The cancellation came from stock she could not see and a number she was remembering rather than reading. Consolidating the stock and keeping a single count that changes when the parcel leaves the house removes the cause. A buffer helps a little and hides the real problem, which is that she does not know what she has. A warning line in a listing does not make a cancellation acceptable to the buyer who waited. Holding the order open while she scrambles turns a bad day into a long one, and both a late dispatch and a cancellation leave a record."
+        },
+        {
+          "prompt": "Nikka has no space and little capital, so her supplier ships straight to her buyers and she never touches the stock. One buyer reports a cracked lid, and a second order she accepted turns out to be for an item the supplier ran out of last week. What is she carrying in this arrangement?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Nothing she controls, since the supplier packed both parcels, so the rating and the refund are the supplier's to answer for."
+            },
+            {
+              "id": "b",
+              "text": "Only the refund, because a dispute is decided on who shipped the parcel rather than on whose shop took the order."
+            },
+            {
+              "id": "c",
+              "text": "The rating, the refund and the cancellation, because the shop is hers and she learned of both problems after selling."
+            },
+            {
+              "id": "d",
+              "text": "A stock gap and nothing worse, since a daily stock list from the supplier would stop her selling what is already gone."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "production_workflow",
+          "explanation": "This arrangement is light on capital and light on space, and what you carry instead is the complaint, the rating and the refund for a parcel you never packed and never inspected, plus finding out an item is gone only after you have sold it. The buyer bought from her shop, so the dispute, the rating and the cancellation are hers whoever taped the box. It is worth exactly as much as your supplier's answering speed, which is why a daily list from a supplier who is already slow does not fix it: the list is only as fresh as the person sending it. Buying and holding costs money and space and buys back control of both."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-2-the-listing-does-the-selling",
+      "title": "The listing does the selling",
+      "description": "Buyers look at your shop while you are asleep. This chapter builds the listing that answers for you: photographs that show what the thing really is, a title written in the words buyers type, and a description that kills the questions that otherwise arrive as chats.",
+      "lessons": [
+        {
+          "slug": "photos-taken-on-a-phone",
+          "title": "Photos taken on a phone",
+          "content_mdx": "# Photos taken on a phone\n\nJomar resells secondhand phones from his house in Imus. Every listing had one picture: the handset face on, screen off, lying on his bedsheet. Every listing also produced the same four chats. May scratch po ba? Kumusta na ang battery? Kasama ba ang charger? Ganito ba talaga ang kulay?\n\nHe answered those by hand all day. The buyers who could not be bothered to ask just scrolled past him.\n\nThen he started shooting five photos per unit instead of one, and the chats that were left were the ones actually about buying.\n\nPhotos are not decoration on a listing. They are the part of the shop that sells while you are asleep. Every question your photos fail to answer either lands in your inbox or quietly costs you the sale.\n\n## The shot set\n\nFive kinds of shot, in this order, so you never forget one.\n\n**The hero.** The whole item, front on, plain background, filling the frame, nothing else in it. This is the thumbnail sitting in a grid beside other sellers, so it has to read at thumbnail size.\n\n**The scale shot.** The item beside something everybody knows: a one peso coin, a ballpen, your own hand holding it. Written dimensions do not travel. A number is something the buyer has to imagine. A hand holding the thing is instant. Skip this shot and you will be reading \"akala ko mas malaki\" after delivery.\n\n**The detail shots.** Close on the parts a buyer would inspect if the item were on the table in front of them: the stitching, the weave, the charging port, the clasp, the printed label, the expiry date. One shot per thing worth inspecting.\n\n**The in-use shot.** The bag worn, the lamp switched on, the container with rice in it. This tells the buyer what the thing is for and how it sits in a real room.\n\n**The what-is-in-the-box shot.** Everything the buyer receives, laid out flat: item, cable, pouch, freebie, manual. This single shot kills the whole \"kasama ba ang\" category of chat.\n\n## Light first, camera second\n\nYour phone is fine. Bad light is not.\n\nShoot beside a window with the light coming from the side rather than from behind the item. Shade and overcast days are easier than noon sun, which cuts hard shadows and blows out anything white.\n\nSwitch the ceiling bulb off while you shoot near that window. Warm indoor light mixed with daylight lands the colour somewhere between the two, and colour is a refund category: a maroon blouse that photographs orange comes back.\n\nFor background, a white wall, a sheet of cartolina curved up behind the item, or a bedsheet ironed flat all work. The only rule is that it never changes and never competes with the product.\n\n## Build the setup once, not thirty times\n\nSellers post one bad photo because photographing feels like an event. Stop making it one.\n\nPick the spot near the window. Mark it. Keep the background, your scale prop and the few props for in-use shots in one box beside it. Now photographing thirty items is one afternoon: unpack, shoot the five, repack, next item.\n\nSame spot, same background, same angle, same crop, across everything you sell. A shop page shot that way reads as one shop that knows what it is doing. A page of mismatched backgrounds reads as somebody forwarding other people's pictures.\n\n## Editing that is honest, and editing that creates a refund\n\nStraighten. Crop. Brighten a frame that came out dark. All fine, because the parcel still matches the picture.\n\nRecolouring, smoothing out a scuff, slimming a garment, erasing a dent: none of these prevent the complaint. They move it to the moment the box is opened, where it arrives as a return, a dispute and a public review. The buyer compares the parcel to the picture. So does the platform, when it has to decide between the two of you.\n\n## Somebody else's photos are somebody else's promise\n\nSupplier catalogue images, and pictures lifted from another shop, are a liability you took on for free. You do not know which batch that picture was shot from, what shade it was, or what packaging came with it. When the parcel does not match, the picture you published is the evidence against you.\n\nShoot the actual unit sitting in your room. If you are selling something you have never held, that is a stock arrangement to revisit before it becomes a photography problem.\n\n## Photograph the flaw on purpose\n\nSelling preloved is not selling perfect. Shoot the scuff, the pilling, the missing button, close and lit, and say what it is in the caption of that photo.\n\nA flaw you named is a reason to trust the rest of the listing. A flaw the buyer discovers in the box is a refund and a one star review.\n\nTake your worst-performing listing today and shoot the five. It is one afternoon, and it is the only work in this course that keeps paying while you sleep.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "the-title-and-the-words-buyers-type",
+          "title": "The title and the words buyers type",
+          "content_mdx": "# The title and the words buyers type\n\nDivine sells baby clothes in Iloilo. Her listing was titled SALE!!! Cute Baby Romper Best Quality Mura Trusted Seller. A tita shopping for a christening gift opens the app, types \"romper newborn cotton\", then taps the size filter.\n\nDivine had left the size field blank because it looked optional. A filter can only read the fields you filled in, so her listing drops out of that shopper's results before the title is ever read.\n\nHer title was written for Divine. The search was written by the buyer. Your job is to close that gap.\n\n## Finding you is two moves\n\nA buyer types a short phrase, then narrows what comes back. Both moves have to find you, and they use different parts of your listing. The phrase has to match words in your title. The narrowing runs on the structured fields underneath it.\n\nNobody outside the company knows how results are ordered, and the weighting changes without announcement. So do not chase a formula. Write the words a real buyer types and fill in every field, which is the part you actually control.\n\n## Write the title out of the buyer's vocabulary\n\nFour parts, in this order:\n\n- **What the thing is called by the person searching.** Use the word they would type, including the local or Taglish one: sando, tsinelas, bimpo, ref, powerbank. If your buyers say pambahay and you wrote loungewear, you have written yourself out of the search.\n- **Brand or generic name.** Whichever one the buyer knows the item by.\n- **The model, size, capacity or variant.** The thing that decides whether it fits, works, or suits them.\n- **The one detail that separates your version from the next seller's.** Cotton. Stainless. Original box. Pick one, not five.\n\n## Front-load, because titles get cut\n\nTitles are trimmed in listing grids and on small screens, and the front of the title is the part everybody sees. Open your own shop on a phone and look at where your titles stop. Spending that space on SALE, MURA, COD AVAILABLE and TRUSTED SELLER means the words that decide the tap never appear.\n\nRead your own title back with only the first stretch showing. If a buyer could not tell what the item is from that alone, rewrite it.\n\n## The fields under the title do work the description cannot\n\nCategory first, then every attribute the form offers: brand, size, colour, material, capacity, compatibility, condition.\n\nNarrowing is built to run on those structured fields rather than on your free text, which is why a size written only in your description can drop you out of a size-filtered result. You do not have to take that on trust. Fill the fields on one listing, leave them blank on a comparable one, then narrow by size yourself as a buyer would and see which of the two comes back. Whatever your platform does underneath, filling the fields costs a minute per listing and never hurts you.\n\n## Variations are stock, not a sentence\n\n\"Message me po for other colours\" is not a variation. It is an extra chat, and it is a cancellation waiting to happen, because nothing in your listing knows the pink ran out.\n\nSet sizes, colours and bundles as real options, each carrying its own stock count. The buyer picks inside the listing instead of inside your inbox, and a variant with nothing behind it stops being orderable without you having to do anything. Check how your own platform shows a sold-out variant before you rely on it, because that is the whole point of setting them up.\n\n## Stuffing repels the buyer it attracts\n\nA title packed with every word you could think of does pull people in, and they are the wrong people. Someone searching for a laptop sleeve who lands on your phone case leaves immediately, and you spent your one line of shelf space on a stranger.\n\nThe same goes for words that oversell. Original, brand new, authentic, waterproof: if the parcel cannot back the word up, the title has bought you a return, a dispute and a review, all at your own expense.\n\n## Do this now\n\nOpen your three best-selling listings. For each one, write down the exact phrase you think a buyer types, then compare it word for word with your title. Fix the ones that do not match, then go back and fill in every blank attribute field.\n\nKaye, who sells preloved dresses in Lipa, did this and found she had titled everything \"Dress OOTD Casual Korean Style\". Her buyers were typing \"midi dress floral small\". Those are not the same shop, and only one of them can be found.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "the-description-that-answers-the-chats",
+          "title": "The description that answers the chats",
+          "content_mdx": "# The description that answers the chats\n\nKaye sells preloved dresses in Lipa. She is asked \"hanggang saan po kasya?\" several times a day, and she answers it well. She has a good paragraph saved, she pastes it, the buyer says thank you, and then a different buyer asks the same thing an hour later.\n\nThat question is not a chat problem. It is a hole in her description, and it will keep billing her in messages until she fills it.\n\n## Your inbox is the outline\n\nScroll back through a week of chats and tally the questions. Not the friendly ones. The ones people ask before they will pay.\n\nThat tally, in order of how often it appears, is your description. You do not have to guess what a buyer needs to know. You have been told, repeatedly, for free.\n\n## The order a buyer decides in\n\nWrite it in this sequence, because this is the order the decision gets made in.\n\n1. **Exactly what they receive.** The item, the quantity, the accessories, the freebie. If the picture shows a set, say whether the set is what ships.\n2. **The specifications that decide fit.** Measurements taken flat, dimensions, material, capacity, compatibility, which device or model it works with. This is the section that prevents the expensive returns.\n3. **Condition, and what counts as normal wear.** New, preloved, refurbished, open box. For preloved, name the flaws you photographed and say plainly what you consider ordinary for the age of the item.\n4. **How it is packed and when it is dispatched.** What the parcel looks like, whether it is bubble wrapped, and the dispatch window you actually keep. Promise the window you can keep when the day goes wrong, not the one you can keep when it goes right.\n5. **Returns and warranty, in plain words.** Say what you will do, in the sentence a buyer will read.\n\nOn that last one: consumer protection rules exist here, and each selling place has its own return arrangement layered on top of them. Do not copy another shop's policy paragraph, and do not invent a window because it sounds reassuring. Read the current policy page of the place you sell in, check the consumer side with DTI, then write terms you can afford to honour on the day somebody holds you to them.\n\n## Write for a skimmer\n\nNobody reads a wall of text. Use bullets, one idea per line, the specifications as a list rather than a sentence, and a bold label at the front of each block so a scrolling thumb can find the part it came for.\n\nIf the fit measurements are buried in the fourth paragraph of a brand story, they are not in the listing.\n\n## The line between confident and unprovable\n\nMarketing copy has an honesty line, and it is taught properly in AI-Powered Digital Marketing. In a product listing it has a sharper edge, because your words are what a buyer quotes back at you in a dispute, and a claim you cannot support is a refund you already agreed to.\n\nDescribe what the item is and what it does. Leave out cures, lifetime guarantees, \"safe for everyone\", \"same as the branded one\", and any superlative you would not want read out during a return request.\n\nWhere a figure is printed by the manufacturer, quote it as the manufacturer's figure and say so. Where a category carries its own rules, food, cosmetics, supplements and devices among them, the wording is regulated as well as the product, so check what is required with the agency rather than copying a phrase off another listing.\n\n## Every repeated question is an unfinished description\n\nMake this a rule with a deadline attached: answer it once in chat, then edit the listing the same day.\n\nTwo weeks of that and your inbox changes character. What is left is people confirming stock and telling you their barangay, which is a shop running, instead of a person retyping the same paragraph.\n\n## When the product changes, the words change that day\n\nThe supplier switched the packaging. The new batch ships with a different cable. The freebie ran out. Every one of those makes your description false, and a false description is indistinguishable from a lie once the parcel lands.\n\nEdit before the next order goes out. Kaye keeps a note on her phone for this: any time she opens a new box from a supplier, she reads the listing against what is in front of her before she lists a single unit of it.\n",
+          "duration_minutes": 8
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Errol sells desk organisers. Two buyers this month opened the parcel, messaged that the item is smaller than they expected, and one filed a return. His listing has four photos: a hero, two more angles of the same hero, and an in-use shot on a desk. What is the fix?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Add a line to the description asking buyers to check the measurements carefully before they place their order."
+            },
+            {
+              "id": "b",
+              "text": "Add a shot of the organiser beside a ballpen and one with a hand holding it, so the size registers without being read."
+            },
+            {
+              "id": "c",
+              "text": "Reshoot the hero on a clean white background so the item reads more clearly at thumbnail size in a crowded listing grid."
+            },
+            {
+              "id": "d",
+              "text": "Add the size to the end of the title so a buyer sees it in the results before they ever open the listing page itself."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "visual_craft",
+          "explanation": "A written dimension is a number the buyer has to imagine, and imagining is where the mistake happens. Telling a buyer to check carefully is not a measurement and does not survive a return request. A scale shot beside something everybody knows lands instantly and needs no reading. A cleaner hero and a size at the end of the title both help him get found, and neither one is what stops a parcel arriving smaller than the buyer pictured."
+        },
+        {
+          "prompt": "Rina resells water bottles from a supplier and uses the supplier's catalogue photos. A buyer opens a dispute: the bottle arrived a different shade of green and without the pouch shown in the picture. What should Rina change before she lists the next batch?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Shoot her own hero of one unit and keep the supplier's images in the other slots, since those show the bottle better lit."
+            },
+            {
+              "id": "b",
+              "text": "Ask the supplier for the batch code and shade of the units she was sent, then keep the catalogue images with that noted."
+            },
+            {
+              "id": "c",
+              "text": "Shoot her own hero and a scale shot, and add a line saying the pouch shown is not included in her parcel."
+            },
+            {
+              "id": "d",
+              "text": "Shoot the unit sitting in her own room, including a what-is-in-the-box shot of exactly what she puts in each parcel."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "visual_craft",
+          "explanation": "She does not know which batch the catalogue image was shot from, so she cannot make her stock match it. Any supplier frame left in the set is still a picture the buyer compares the parcel to, and so does the platform when it decides the dispute, which is why a noted batch code or a line about the pouch does not rescue it. A disclaimer never beats a photograph. Shooting her own stock, including everything that goes in the parcel, is the only version she can stand behind."
+        },
+        {
+          "prompt": "Kaye is listing a preloved dress with a faint stain near the hem. She has decided to tell buyers about it. Where does it belong?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Named in the condition line of the description, with the photo set left exactly as she shot it."
+            },
+            {
+              "id": "b",
+              "text": "In the title, so a buyer knows about the stain before they ever open the listing page at all."
+            },
+            {
+              "id": "c",
+              "text": "Shot close and lit, captioned on that photo, and named in the condition part of the description."
+            },
+            {
+              "id": "d",
+              "text": "In the hero shot alongside the whole dress, so the flaw and the garment read together in one frame."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "visual_craft",
+          "explanation": "All four tell the buyer, which is the easy part. Only one puts the flaw where the buyer is already looking and in the words that survive a return request: a photograph of it, captioned, plus the condition line. A description line on its own is invisible to a skimmer. The title spends the part everybody sees on a negative, and it is the line that has to win the tap. A hero shot carrying the stain costs her the thumbnail, which is the same problem in a more expensive place."
+        },
+        {
+          "prompt": "Divine sells baby clothes in Iloilo. Her title reads SALE!!! Cute Baby Romper Best Quality Mura Trusted Seller. A tita is searching for a christening gift for a newborn. Which rewrite serves her?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Newborn Baby Romper Cotton Short Sleeves 0 to 3 Months Plain White"
+            },
+            {
+              "id": "b",
+              "text": "Plain White Cotton 0 to 3 Months Short Sleeves Newborn Baby Romper"
+            },
+            {
+              "id": "c",
+              "text": "Baby Romper Best Seller Mura COD Available Fast Ship Trusted Store"
+            },
+            {
+              "id": "d",
+              "text": "Baby Romper Onesie Jumper Sando Terno Infant Clothes Ootd Set Cute"
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "message_craft",
+          "explanation": "The buyer types what the thing is, then narrows by age and material. The title that wins front-loads the word she would type and adds the one detail that separates it from the next seller. The same words in the wrong order lose the tap, because titles are trimmed in a grid and the front is the part everybody sees, so a title opening on plain white is a title about nothing yet. Shop claims like mura and COD are things every shop says. A pile of related words pulls in people looking for something else, who leave."
+        },
+        {
+          "prompt": "Dennis lists office chairs in three sizes. He wrote all three sizes into the description and left the attribute fields blank because filling them looked optional. Buyers who narrow by size are not seeing his listing at all. What is going on?",
+          "options": [
+            {
+              "id": "a",
+              "text": "He needs to repeat the size words more times in the description before a search will connect those words to his listing."
+            },
+            {
+              "id": "b",
+              "text": "Three sizes in one listing cannot be narrowed, so each size has to be posted as its own separate listing instead."
+            },
+            {
+              "id": "c",
+              "text": "Narrowing is built on the structured fields he skipped, so filling them is the only move that can put him back in."
+            },
+            {
+              "id": "d",
+              "text": "His category is wrong, and a size filter is only offered to buyers browsing a category page rather than to those searching."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "platform_fluency",
+          "explanation": "The title and description are free text that a person reads. Narrowing is built to run on the fields the listing form asks you to fill in, which is why skipping them takes you out of the results of every buyer who narrows. He can confirm it in five minutes by filling one listing, leaving a comparable one blank, and filtering by size himself. Repeating words in free text does not create a field that was never filled. Splitting into three listings does not either, because each of those three would still have an empty size field, and he would have thrown away the variation stock counts as well."
+        },
+        {
+          "prompt": "Cheska sells one lunch tumbler listing in black, clear and pink, with a line saying to message her for the colour you want. She keeps accepting orders for pink she does not have, then cancelling them. What should she change?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Keep the single listing and reply faster, confirming the colour is on hand before the buyer places the order at all."
+            },
+            {
+              "id": "b",
+              "text": "Set the three colours as variations with their own stock counts, so the listing stops selling the pink she has run out of."
+            },
+            {
+              "id": "c",
+              "text": "List only black, the colour she restocks without trouble, and offer the other two to buyers who ask her in chat."
+            },
+            {
+              "id": "d",
+              "text": "Keep the single listing and rewrite the note every morning with the colours she can still see sitting in the cabinet that day."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "platform_fluency",
+          "explanation": "Nothing in a one-line note knows the pink ran out, so the listing keeps selling it, and a note she rewrites at breakfast is stale by lunchtime. Real variations carry their own stock, so the listing stops selling what is gone instead of your inbox catching it afterwards. Check how your own platform shows a sold-out variant before you rely on it, because that is the whole point of setting them up. Replying faster puts the work back in the inbox, and dropping colours fixes the cancellations by giving up sales she could have kept."
+        },
+        {
+          "prompt": "Bea sells powerbanks. Her supplier's product sheet says the unit works with any phone and lasts a lifetime, and she pasted that straight into her description. She wants a line she could stand behind if a buyer quoted it back during a return request. What should the description say the unit does?",
+          "options": [
+            {
+              "id": "a",
+              "text": "It works with the phone models she has tested herself, with a note printed that other models may behave differently."
+            },
+            {
+              "id": "b",
+              "text": "It comes with her own replacement warranty: a stated number of months in which she replaces a faulty unit."
+            },
+            {
+              "id": "c",
+              "text": "It works with almost any phone and holds its charge well, wording that promises nothing."
+            },
+            {
+              "id": "d",
+              "text": "It holds the capacity the manufacturer prints on it, attributed to the manufacturer, and nothing beyond it."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "message_craft",
+          "explanation": "All four drop the lifetime claim, which is the easy part. What replaces it is the question. A list of models she has tested invites the buyer whose model is not on it, and she cannot test them all. A replacement warranty is a real offer, but it is a promise she funds out of her own margin and it does not describe the product at all. Vague reassurance is still a claim she cannot support when it is read out during a return. A printed figure, attributed to whoever printed it, is the one line that is true, checkable, and not hers to honour."
+        },
+        {
+          "prompt": "Kaye is asked hanggang saan po kasya on her dress listings several times a day. She has a good reply saved and pastes it every time, and the question keeps arriving from new buyers. What should she do next?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Keep the saved reply and add a note in the title telling buyers to message her for measurements before they order."
+            },
+            {
+              "id": "b",
+              "text": "Photograph the size tag on every dress, since the tag carries the information buyers are asking about."
+            },
+            {
+              "id": "c",
+              "text": "Move the flat measurements and a fit note into the description, and keep the reply for the ones who still ask."
+            },
+            {
+              "id": "d",
+              "text": "Add a line to the description saying the dresses are preloved and buyers should compare with one they already own."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "message_craft",
+          "explanation": "A question you answer daily is a hole in the listing, and a saved reply only makes the hole cheaper to keep. Move the answer into the description the same day. Sending buyers to chat from the title spends the part everybody sees on extra work for both of you. A size tag on preloved clothing is not reliable, and vague advice to compare with something at home is not a measurement, so neither of those closes the question."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-3-pricing-that-survives-fees-and-shipping",
+      "title": "Pricing that survives fees and shipping",
+      "description": "A price that looks profitable at the listing stage often is not, once deductions, shipping and vouchers have taken their turn. This chapter builds the number from the bottom up, then teaches you to read what actually landed in your payout.",
+      "lessons": [
+        {
+          "slug": "what-a-unit-really-costs-you",
+          "title": "What a unit really costs you",
+          "content_mdx": "# What a unit really costs you\n\nRhea makes soy candles in her kitchen in Bacolod and sells them online. She priced a jar at ₱350 because a candle she saw on another shop was ₱380 and hers is nicer. Six months in, the shop is busy and her savings have not moved. Nothing was stolen. She had priced against a competitor instead of against her own costs, and she had never written the costs down.\n\nThis lesson is one spreadsheet. Build it once and every new product after it takes minutes.\n\n## Per unit and per order are two different lists\n\nA per unit cost happens every time you make or buy one item: the wax, the jar, the wick, the label. A per order cost happens once per parcel no matter how many items are inside it: the mailer, the filler, the tape, the printed waybill, the thank you card.\n\nSellers who mix the two overcharge on bundles and undercharge on singles. A buyer who orders three candles does not use three mailers. A buyer who orders one carries the whole mailer alone.\n\nWrite two columns. Keep them apart.\n\n## The costs nobody writes down\n\n**Getting the stock to you.** Freight from the supplier, the fare to Divisoria, the courier that brought your box of jars. Divide it across the units in that delivery.\n\n**Breakage, loss and stock that never sells.** Some jars arrive cracked. Some candles get scratched in storage. Some colours sit so long you write them off. Those units still cost you money, and the only place that money can come back from is the units that do sell. Count only what you can no longer sell, not everything you have not sold yet: stock still in the cabinet is money waiting, not money gone. Divide the written-off units across the units that did sell, and open the number again the next time a batch goes bad.\n\n**The freebie.** The sample sachet, the sticker, the extra candle for a repeat buyer. Free to the buyer is not free to you.\n\n**Your hours.** Rhea pours, cures, labels, photographs, packs and answers chats. If she puts zero on that line she is paying for the privilege of working. Pick an hourly number you would accept from someone else for the same work, time yourself through one honest batch, and divide.\n\n## Costs that only appear monthly\n\nLoad for the phone you answer chats on. The tricycle to the dropoff. Storage boxes and shelving. Anything you subscribe to. These do not attach themselves to any single unit, so they get forgotten, and then the month ends short.\n\nAdd them up for one month, then divide by the units you actually sold that month. That is your per unit share of them. When your volume changes, that share changes, which is the point.\n\n## A worked example\n\nThese pesos are invented so the arithmetic is visible. Replace every one of them with your own.\n\n| Line | Amount |\n| --- | --- |\n| Wax, wick, fragrance, jar | ₱95 |\n| Share of the delivery from the supplier | ₱8 |\n| Breakage and write-off share | ₱6 |\n| Label | ₱3 |\n| Her time, 20 minutes at ₱90 an hour | ₱30 |\n| Monthly costs spread over units sold | ₱12 |\n| **Per unit** | **₱154** |\n| Mailer, filler, tape | ₱18 |\n| Thank you card | ₱4 |\n| **Per order, one item** | **₱22** |\n\nOne candle in one parcel costs Rhea ₱176 before anybody else has deducted anything. Her ₱350 price felt like a comfortable margin over the ₱95 of materials. It is not that at all.\n\nThose numbers are made up so you can see the method. Real ones vary; the method does not.\n\n## Margin in pesos, not only in percent\n\nPercent is useful for comparing two of your products against each other. Pesos are what pays rent. The same percentage margin on a ₱120 item and on a ₱2,000 item is the same figure on the sheet and two very different lives.\n\nSo for each product write one number: pesos earned per unit sold. Then ask how many of those you can realistically pack and hand over in a week. That multiplication is your shop, and it is a more honest picture than any percentage.\n\n## Re-run it whenever anything moves\n\nThe supplier raises the price of jars. Your mailer supplier changes the size. You start putting in a card. Each of those is a new number in the sheet, and each one quietly eats a margin you still think you have. Open the sheet the same day the cost changes, not at the end of the year.\n\nThe next lesson shows you what a marketplace takes out of a price like Rhea's ₱350 before any of it reaches a bank account.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "what-comes-out-of-a-payout",
+          "title": "What comes out of a payout",
+          "content_mdx": "# What comes out of a payout\n\nMarlon sells phone cases from a room in Mandaue. A case is listed at ₱499. The buyer pays ₱499. What reaches his bank is not ₱499, and it is not short by the same amount on every order. He has never known why, so he has been running his shop on a number that does not exist.\n\nYou cannot price against a payout you have never read. This lesson is about reading one.\n\n## What the marketplace is charging for\n\nThe marketplace brought the buyer, ran the checkout, collected and held the money, connected a courier, and will sit in the middle if the buyer disputes the order. Each of those is a service, and it is charged for out of the order value. That is the arrangement, it is published on the platform's own seller pages, and your job is to go and read it.\n\n## The categories that come out\n\nYou will not meet all of these on every order, and the wording differs per platform. The categories are stable even when the numbers are not.\n\n**Commission on the order value.** A share of what the buyer paid, taken by the marketplace. Platforms publish it by product category, so the case Marlon sells and the shirt his neighbour sells are not treated the same way.\n\n**Payment or transaction handling.** The cost of collecting money by card, e-wallet, bank or cash on delivery, passed on to you.\n\n**Programme and service charges.** If your shop takes part in a free shipping or subsidised delivery programme, part of what makes that delivery look free to the buyer comes off your side. Other opt-in seller programmes work the same way.\n\n**Campaign and voucher participation.** When you join a campaign or issue a shop voucher, some or all of the discount the buyer enjoys is funded by you. A platform funded discount and a seller funded discount look identical to the buyer and land very differently on your payout.\n\n**Adjustments after the fact.** A refund, a return, a cancellation or a claim can be deducted from a later payout, after you have already been paid and already spent it. This is the line that surprises people.\n\nA deduction connected to taxes may also appear. What it is, and what it means for your own filings, is not something to learn from a course or a group chat. Read the platform's published statement of what it deducts, and confirm your own obligations with BIR.\n\n## Do not memorise a single number\n\nEvery figure behind those categories moves: by category, by programme, by campaign, by year. Anyone quoting you a rate over coffee is quoting last year's rate for somebody else's products. The rate card lives on the platform's current seller help pages, and the only version that counts is the one published today.\n\nSo do not learn numbers. Learn where the numbers live, and check them before you set a price or join anything.\n\n## Take one real order apart\n\nThis is the habit the lesson exists for, and it costs you twenty minutes once.\n\nOpen your seller account and find the payout or income statement. Pick one completed order. Write the buyer's total at the top. Under it, list every deduction line the statement shows, in the platform's own wording and not yours. At the bottom, write the amount that actually reached your bank.\n\nNow put last lesson's cost sheet beside it. Subtract your per unit and per order costs from the amount that landed. That figure, in pesos, is what the order earned you.\n\nThen do a second order in a different category, or one that carried a voucher. The two will not match. The difference is the lesson.\n\n## What actually reached you\n\nDivide what landed by what the buyer paid. That fraction is the share of the buyer's payment you kept on that order, computed from your own statement, and it is worth more than any figure anyone could tell you. Subtract it from one and you have what the platform took on that order, which is the number a rate card is talking about. Write both down for a handful of orders across your products.\n\nNow you know which products are actually feeding you, and which ones are busy work with a nice photo.\n\n## Money that exists but is not yours yet\n\nA marketplace holds the buyer's payment until the order is considered complete. So a shop can be profitable and still short of cash: the stock is bought, the parcels are gone, and the money is sitting somewhere you cannot spend it. How long that hold runs, and when payouts release, are stated in your own seller account and nowhere else.\n\nRestock against the cash you have, not against the sales you made.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "shipping-vouchers-and-the-price-the-buyer-sees",
+          "title": "Shipping, vouchers and the price the buyer sees",
+          "content_mdx": "# Shipping, vouchers and the price the buyer sees\n\nJoy sells blankets and bedsheets out of her house in Davao. A queen comforter weighs almost nothing and fills half a sack. In her first month the shipping cost more than she had put in the price, on nearly every order she sent out. The blanket was light. The parcel was not small.\n\n## Two ways a parcel gets sent\n\n**Integrated shipping.** The marketplace calculates the fee, shows it to the buyer at checkout, produces the waybill and settles with the courier. You pack and hand over. You give up the choice of courier and the level of the fee, and in return you stop quoting shipping by hand and arguing about it in chat.\n\n**Self arranged shipping.** You book the courier yourself, or you use a rider you know. You quote the fee, you collect it, and you carry the gap when you quote it wrong. Selling through a page or a group means this arrangement unless you have set up something else.\n\nThe second one is where new sellers lose money quietly, because a fee you quoted too low is a cost you absorb without ever seeing a line item for it.\n\n## Weight is not the whole charge\n\nCouriers charge on weight bands, and they also charge for the space a parcel occupies. A large light parcel can be charged as though it were much heavier, because a van fills up on volume before it fills up on kilos. Joy's comforter is the textbook case. So is a lampshade, a bag of chips, and anything packed in a box with air in it.\n\nTwo things follow. Packing smaller is a pricing decision and not a housekeeping one: compressing a comforter into a right sized mailer changes what every order costs for the rest of the year. And the fee is not guessable. Weigh the packed parcel, measure it, and put those figures into your courier's or your platform's current shipping calculator before you set a price. The bands, the limits and the way size is counted are the courier's to publish, and they change.\n\n## Who pays, and what free means\n\n**The buyer pays.** The fee appears at checkout and your margin is untouched. Some buyers leave at that screen.\n\n**You absorb it.** Free shipping is not free. You have paid it out of the item price, which is a legitimate choice and only works if the shipping was inside your cost sheet before you announced it.\n\n**A subsidised programme.** The platform makes delivery look free or cheap to the buyer, and part of that comes off your payout as a programme charge. Before opting in, find the programme's current terms on the platform's own seller pages, then run one real order of yours through the sheet with that charge included.\n\n## Cash on delivery\n\nCOD lets a buyer pay only once the parcel is in their hands, which is why buyers ask for it. It costs you three things.\n\nThe money reaches you later, because it has to be collected from the buyer and remitted before it is released to you. The delivery can fail: nobody is home, the number is off, the buyer changes their mind at the door. And a refused parcel comes back, which means you paid to send it and often to bring it home, with the item now handled and the packaging opened.\n\nNone of that means refuse COD. It means price and plan for it. Read how remittance and return to sender are handled on your own platform, keep enough cash to survive the gap, and pack so that a returned item is still sellable.\n\n## Vouchers and campaign days are margin decisions\n\nA discount is a price change, so it belongs in the cost sheet and not in the marketing mood.\n\nThe trap is stacking. Your own shop voucher, a platform campaign discount and a free shipping promotion can all land on one order. Each looked survivable on its own. Together they can take an order below what it cost you to fulfil, and you find out weeks later on a payout statement.\n\nBefore you join anything, run one order through the sheet with every discount applied at once and look at what is left.\n\n## A list price and a floor price\n\nSet two numbers for every product. The list price is what you normally sell at. The floor price is the number below which the order is not worth doing: your total cost plus the margin you refuse to work under.\n\nThen decide in advance, in writing, which promotions you will join and which you will not. When an invitation arrives with a required discount that puts a product under its floor, the decision is already made, and the answer is that this product does not join. Enter a different one, or sit the campaign out.\n\nA shop that cannot say no to a campaign is not the one setting its prices.\n",
+          "duration_minutes": 8
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Ella sells phone tripods. Her cost sheet adds ₱25 of mailer, tape and filler to every item. A buyer orders three tripods, Ella packs them into one mailer, and the sheet charges that order ₱75 for packaging. What has she got wrong?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Packaging should not sit on a line of its own at all; it belongs folded into the item price so that no buyer ever sees it."
+            },
+            {
+              "id": "b",
+              "text": "Nothing is wrong here, because a parcel holding three tripods genuinely uses more tape and filler than one holding a single unit."
+            },
+            {
+              "id": "c",
+              "text": "She should be charging the buyer that ₱75 as a handling fee, since a three item order takes her longer to pack than a single one."
+            },
+            {
+              "id": "d",
+              "text": "The three tripods went out inside one mailer, so packaging is a per order cost of ₱25 here, not ₱25 repeated for each item."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "production_workflow",
+          "explanation": "Per unit costs repeat with every item. Per order costs happen once per parcel, however many items are inside. Mixing them makes bundles look expensive and singles look cheap, which is backwards: the single order is the one carrying a whole mailer by itself. A bigger parcel does use a little more tape, and that is a reason to keep the per order line honest rather than to multiply it. Keep the two lists in separate columns."
+        },
+        {
+          "prompt": "Marlon sees that the amount reaching his bank is smaller than his listing price and asks in a sellers' group. Three people reply with three different commission percentages. What is his next move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ask in the same group which of the three sellers is in his own product category, then plan his own prices against that seller's figure."
+            },
+            {
+              "id": "b",
+              "text": "Open his own payout statement, list every deduction line on one completed order, then check the platform's current rate card."
+            },
+            {
+              "id": "c",
+              "text": "Ask the platform's support team to confirm which of the three percentages applies to his category this month."
+            },
+            {
+              "id": "d",
+              "text": "Price against the highest of the three figures, so his margin survives whichever one turns out to be right for him."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "platform_fluency",
+          "explanation": "Fee figures move by category, by programme and by year, so a number remembered by another seller is last year's number for somebody else's products, and finding the seller closest to his category only makes a stale figure feel personal. Pricing against the highest of them prices his product against a guess and hands the difference to nobody. Support may answer and may take days, and it is not where the figure is published. Two sources are worth something: his own payout statement, which shows what happened to one of his own orders, and the platform's current published rate card."
+        },
+        {
+          "prompt": "Bea's shop had its best month yet. Her cost sheet says every order earned money, and she still cannot pay her supplier for the next batch of stock this week. What is the most likely explanation?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The marketplace holds payment until an order completes, so part of that month's sales is money she has earned and not received."
+            },
+            {
+              "id": "b",
+              "text": "Her cost sheet has an error somewhere, because a month where every order earned money cannot end with an empty account."
+            },
+            {
+              "id": "c",
+              "text": "Her prices are too thin, and a shop selling plenty of units at a small margin will always run short of cash at the end of a busy month."
+            },
+            {
+              "id": "d",
+              "text": "She reinvested too little of the earlier months in stock, so the supplier's invoice has arrived before she had built any working capital."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "production_workflow",
+          "explanation": "Profit and cash are different questions. The marketplace holds the buyer's payment until the order is considered complete, so a growing shop is always waiting on money it has genuinely earned. Thin margins and thin capital are both real problems, and neither one explains a month where the sheet says every order paid. Restock against the cash actually in the account, and read your own seller account for how the hold and the release work."
+        },
+        {
+          "prompt": "Ken's floor price on a lamp is ₱720. He joins a campaign that requires a discount, and a shop voucher he set up earlier is still running. An order arrives with both applied and lands under his floor. Where did his process fail?",
+          "options": [
+            {
+              "id": "a",
+              "text": "He should not run a shop voucher during a campaign, because a campaign already brings in more buyers than his own voucher can."
+            },
+            {
+              "id": "b",
+              "text": "He set the floor price too high going into a campaign month, and a floor that keeps blocking campaigns is costing him real volume."
+            },
+            {
+              "id": "c",
+              "text": "He never ran one order through his sheet with every discount applied at once, so he met the stacked total after it had landed."
+            },
+            {
+              "id": "d",
+              "text": "The campaign should have stopped the two discounts stacking, so the shortfall is an error to raise with the platform in writing."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "platform_fluency",
+          "explanation": "A shop voucher, a campaign discount and a shipping promotion can all reach the same order, and each of them looked survivable alone. The check is arithmetic done in advance: apply every live discount to one order in the sheet and see what is left. Running one discount at a time is a rule he could keep, but he would be keeping it without knowing why. The floor is the number he set from his own costs, not a mood to be adjusted when a campaign invitation arrives. A discount is a price change, so it belongs in the sheet."
+        },
+        {
+          "prompt": "Rhea's candle sheet lists wax, wick, jar, label, the mailer, and a share of the phone load and fares she pays every month. Every jar is priced comfortably above the total of those lines. Six months in, the shop is busy, nothing has been stolen, and her savings have not moved. What is the sheet missing?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A markup on top of materials, because a handmade item ought to be priced above whatever the raw materials cost."
+            },
+            {
+              "id": "b",
+              "text": "The hours she works on every jar and the units that break or never sell, both of which only the sold jars can pay for."
+            },
+            {
+              "id": "c",
+              "text": "A competitor check, because a price is only healthy once it sits somewhere near what comparable candles sell for elsewhere."
+            },
+            {
+              "id": "d",
+              "text": "Nothing at all. The problem is volume, and a shop this small cannot pay for itself until the orders per week go up a lot."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "production_workflow",
+          "explanation": "Labour priced at zero means you are paying to work, and stock that breaks or that you end up writing off still cost you money that only the sold units can return. Time one honest batch, put an hourly figure on it, and spread the written-off units across the ones that sold. A markup on materials is a guess dressed as a method, and a competitor's price tells you what they charge and nothing about what your jar costs you. Volume multiplies whatever the sheet says, so a sheet missing two lines just loses money faster."
+        },
+        {
+          "prompt": "Joy sells blankets, which are light and bulky. She reads the current terms of a programme that shows buyers free delivery, and finds the charge that would come off her side. What does she do next?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Compare that charge against what sellers of small light items pay, since her parcels are the expensive kind to send."
+            },
+            {
+              "id": "b",
+              "text": "Opt in for a month and read the sales totals from before and after, since the real effect shows up in volume rather than on paper."
+            },
+            {
+              "id": "c",
+              "text": "Work out what share of her list price the charge is, and opt in wherever that share is smaller than her margin percentage."
+            },
+            {
+              "id": "d",
+              "text": "Put one real bulky order of hers through her own cost sheet with that charge in it, and look at the pesos left at the bottom."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "platform_fluency",
+          "explanation": "The terms tell her what the charge is. Only her own sheet tells her what it does to an order she actually sends, because her parcels are the bulky kind and the charge lands on top of shipping she already struggles to cover. Another seller's parcels are not hers. A percentage is not pesos, and a comfortable-looking share of a low-priced blanket can still leave almost nothing on the order. Opting in for a month to find out is an experiment paid for in real orders, when the arithmetic takes ten minutes."
+        },
+        {
+          "prompt": "Joy's comforters weigh very little and go out in a large sack. Her shipping charges keep coming in above what she budgeted for them. What is the fix that changes every future order?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Compress and repack into the smallest parcel that still protects the item, then re-quote the fee using the packed size and weight."
+            },
+            {
+              "id": "b",
+              "text": "Add a flat amount to the price of every comforter so that the shipping overrun is covered whatever an individual parcel turns out to cost."
+            },
+            {
+              "id": "c",
+              "text": "Move to a courier whose weight bands are cheaper for light parcels, and keep packing the comforter the way she does now."
+            },
+            {
+              "id": "d",
+              "text": "Offer local pickup instead, so that buyers around Davao collect the comforter themselves and there is no shipping in the order."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "production_workflow",
+          "explanation": "Parcels are charged on weight bands and also on the space they take up, so a light bulky item can be charged like a heavy one. Packing smaller is therefore a pricing decision that pays out on every order after it. Then weigh and measure the packed parcel and put it through the current shipping calculator rather than guessing. A flat markup buries the overrun in the price without shrinking it, a cheaper weight band does not help a parcel being charged on its volume, and local pickup serves the buyers who live near her and nobody else."
+        },
+        {
+          "prompt": "Two weeks after Marlon was paid for an order, a deduction for that same order shows up on a later payout, because the buyer returned the item. Marlon tells his friend the platform has made a mistake. Has it?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Yes. Once a payout has been released the order is closed, and anything the buyer raises after that is the platform's cost to carry."
+            },
+            {
+              "id": "b",
+              "text": "No. Refunds, returns and cancellations can be adjusted against a later payout, so money already in your account is not always yours."
+            },
+            {
+              "id": "c",
+              "text": "Yes, if the buyer's return was accepted after the window for raising one had closed, in which case he can ask for it to be reversed."
+            },
+            {
+              "id": "d",
+              "text": "Yes, if the platform had already marked that order complete, because a completed order is settled and any later return is theirs."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "platform_fluency",
+          "explanation": "Adjustments are one of the deduction categories, and they are the one that arrives out of order. A payout settles the orders standing at that moment; it is not a final verdict on each of them, and completion is what starts the return window rather than what closes the book. A return accepted outside the published window is worth raising, but that is a different argument from the one he is making, and he has not read the window. Treat a recent payout as partly provisional, and read your platform's current returns policy before a return actually happens."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-4-orders-problems-and-the-week",
+      "title": "Orders, problems, and the week",
+      "description": "The shop is now designed and priced. This chapter is the part that decides whether it lasts: answering people fast without living in the inbox, packing and handing over parcels properly, handling the orders that go wrong, and running a week that repeats without burning you out.",
+      "lessons": [
+        {
+          "slug": "chats-that-turn-into-orders",
+          "title": "Chats that turn into orders",
+          "content_mdx": "# Chats that turn into orders\n\nAileen sells refilled reed diffusers out of a spare room in Novaliches. She wakes up to eleven unread chats. Three ask if an item is available. Two ask for a price that is printed on the listing. One wants a discount. One wants to reserve until payday. One sent a payment screenshot at eleven the night before and wants the parcel out this morning.\n\nHer inbox is the counter of her shop. What she does with it before breakfast decides how much of the day is left for everything else.\n\n## Fast beats polished\n\nA short reply that arrives quickly and answers the actual question beats a careful paragraph an hour later. The buyer is deciding now, with other shops open in other tabs.\n\nYou can hold a fast reply time without staring at your phone all day. Two things do it.\n\n**Standing replies.** Keep a note on your phone holding the ten answers you find yourself retyping: available and ready to ship, how dispatch works, the size guide, what is in the box, how returns work, whether you take COD. Paste, change the name and the one detail that differs, send. A pasted answer that answers what they asked does not read as a robot. A pasted answer that ignores the question does.\n\n**A set-hours line.** Put the hours you answer chats where a buyer sees them before they start waiting. \"Chats answered 9am to 6pm po. Orders go through anytime, dispatch every Tuesday and Friday.\" A buyer who knows when you reply does not send four follow-ups at midnight.\n\nThen the habit that actually shrinks the inbox: any question you answer twice goes into the listing that day. The description you built in chapter 2 is not finished, it is fed.\n\n## The haggler\n\n\"Last price po?\" is not an insult, and it is not a negotiation you are required to win. You have a floor price from chapter 3, and going under it is working for free with extra steps.\n\nThings you can offer that are not a discount:\n\n- a two-unit bundle at a price you have already costed\n- the smaller variant, which is a real answer to \"too expensive\"\n- shipping you have already built into the price\n- a warm, flat no: \"That's my last price po. What I can do instead is...\"\n\nSay the number once. Repeating it and explaining your costs reads as room to push.\n\n## A hold is stock you cannot sell\n\n\"Reserve po until Friday.\" A reserved item is not sold and not available. If Friday passes, you have paid for the wait with a listing that could have moved.\n\nPut the rule in one line and use the same line every time: reservations hold until a stated date and time, and the first person who pays gets it. Type the actual date into the chat. By Thursday night, \"Friday\" is a different day to two people.\n\n## The four asks that are the warning\n\n- **Payment outside the platform.** It is offered as a favour, a way to save you the deduction. What it does is move the order somewhere with no order record, no protection, and nothing for a dispute process to read. The whole loss becomes yours.\n- **Ship before the money lands.** A screenshot is a picture. Pictures get edited, and reference numbers get typed by hand. Open your own account, look for the amount, and pack when it is there. If it is not there, say so plainly: \"Wala pa po sa account, I will ship as soon as it lands.\"\n- **Declare a lower value on the waybill.** You are the one signing that declaration. Decline in one sentence and do not argue about it.\n- **Speed, aimed at you.** A buyer who needs you to break your own rule inside the next ten minutes is telling you what the rest of the transaction is going to be like.\n\nOff-platform pressure shows up in three courses here for three different reasons. Freelancing Fundamentals treats it as an agreement problem, Online Safety and Scam Defence treats it as an identity harvest, and in this course it is your own fraud exposure as the seller with stock going out the door.\n\n## Write like it will be screenshotted\n\nAssume any message you send can be pasted into a dispute, a review or a group chat. That is not a reason to be cold. It is a reason to be specific and boring. Dates instead of \"soon\". The exact variant instead of \"yung isa\". What you will do, and when you will come back with an answer.\n\nThe reply you would be happy to see quoted is almost always the shortest one that contains a fact.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "packing-shipping-and-when-it-goes-wrong",
+          "title": "Packing, shipping, and when it goes wrong",
+          "content_mdx": "# Packing, shipping, and when it goes wrong\n\nMarisol sells stoneware mugs from her mother's house in Silang, Cavite. Her first month she packed them the way a gift is packed: tissue, a paper sleeve, a sticker holding the box shut. The cracked ones kept coming back until she started packing for the trip instead of for the unboxing.\n\n## Pack for the trip, not for the photo\n\nBetween your table and the buyer's gate, a parcel is dropped into a sack, stacked under heavier parcels, driven over a road, sorted more than once, left near an open warehouse door in the rain, and finished on the back of a motorcycle. Pack for that.\n\n- **Cushion so nothing touches the wall of the box.** A fragile item needs filled space on all six sides.\n- **Waterproof first, pretty second.** A plastic layer inside the mailer. Ink on a label runs.\n- **Seal so tampering shows.** Tape across every seam, not a sticker holding a flap.\n- **Nothing loose.** Movement inside the box is what breaks things.\n\nNice packaging is worth having once the parcel already survives the trip. A thank-you card inside a broken box buys nothing.\n\n## One label, one parcel, the right item inside\n\nPack, check the label against the order, then seal. Two orders open on the same table at the same time is how the wrong item reaches the wrong person, and that mistake costs you two parcels, a refund and a review.\n\nThen the habit that pays for itself the first time you need it: film the pack. One unbroken clip on your phone, from the open box with the item visible, through the filler and the tape, ending on the label with the order number readable. Ten seconds. Keep the clips until the orders close. When a buyer says the box was empty or the colour was wrong, that clip is the only thing that answers it.\n\n## Handover and proof\n\nPickup or dropoff, choose the one that fits your week and repeat it on the same days. What matters is that no parcel leaves you without proof that it left: the courier's receipt, a scan against the tracking number, or a photo of the stack you handed over that day.\n\nThe tracking number is the parcel's identity. It belongs in your own record next to the order, not only inside an app.\n\n## The five failures, and the move for each\n\n**Stuck in transit.** Nothing scanned for days. Message the buyer before the buyer messages you, raise it with the courier through the channel your platform provides, and keep the reference of that report.\n\n**Lost.** The same start, then a decision. When the courier's own process ends without the parcel, somebody absorbs it. Decide in advance whether you replace or refund, and then do it without being chased.\n\n**Damaged on arrival.** Ask for photos of the item and the packaging together, before anything else. That pair tells you whether to change your packing or your courier, and any claim will need it.\n\n**Wrong item sent.** This one is yours. Fix it quickly, apologise once, then go and look at your packing table.\n\n**Returned to sender.** Nobody home, a wrong address, a refused COD parcel. It comes back and you have paid to move it twice. Note which buyer it was, because the same name coming back twice is information.\n\n## Disputes and returns as an arrangement\n\nMarketplace dispute processes share a shape. A buyer can raise a problem inside a window that opens at a certain stage of the order. Both sides put in evidence. The platform decides, and it decides on what is in the record.\n\nThe length of that window, who pays return shipping, what evidence counts, and how long a decision takes differ by platform and get changed. Do not carry them in your head, and do not take them from a seller group chat. Open the platform's current policy page while the case is open, and read the version that is live today.\n\nYour job inside the process is boring: respond before the window closes, attach the packing clip and the handover proof, and write flat sentences with dates in them.\n\n## A returns policy you can afford\n\nWrite your terms in the words a buyer will actually read, then check that you could pay for them in a bad week. A generous policy you quietly break is worse than a narrow one you keep.\n\nSome fights cost more than the item. A replacement mug costs one mug. Three days of arguing costs three days, and the review lands anyway. Decide the peso line at which you stop arguing and simply replace, and decide it before you are angry.\n\nWhen a review is unfair, keep the tone flat. One short public reply saying what happened and what you offered, then stop typing. That thread is being read by people deciding whether to buy from someone who behaves well when something goes wrong.\n",
+          "duration_minutes": 9
+        },
+        {
+          "slug": "the-week-and-what-to-drop",
+          "title": "The week, and what to drop",
+          "content_mdx": "# The week, and what to drop\n\nAileen's week has no shape. Chats all day. Packing whenever there is a gap. Listings when there is energy left. Restocking after something has already run out.\n\nThat is not a busy shop. That is a shop with no week.\n\n## Give every job a slot\n\nThe shop contains four jobs. Give each one a fixed place:\n\n- **A photo and listing block.** One session, several products, one setup put up and taken down once.\n- **A packing and handover window.** Tied to how your parcels leave, so packing finishes before they do.\n- **Chat windows.** Two or three a day, at the hours you told buyers about, instead of all day at nobody's request.\n- **A restock and numbers check.** One slot a week, the same day every week.\n\nA slot is not a fantasy of a perfect week. It is what stops each job from depending on you remembering it at nine at night.\n\n## Restock triggers instead of restock panics\n\nCounting stock and reordering when it looks low is how a bestseller runs out in the middle of your busiest week.\n\nSet a reorder point per product instead. It has two inputs and both are yours: how many you sell in a normal week, and how long your supplier or your own making takes to put stock back in your hands. Reorder when the count reaches what a normal week sells, multiplied by the weeks your supplier takes, plus a few units of slack. The slack is the point: a supplier who normally takes a week sometimes takes ten days, and some of your weeks will be busier than a normal one. Write it on the same sheet as your costs, so the weekly check is one look.\n\nWhen you cannot restock in time, mark the listing out of stock. An out-of-stock listing costs you an order you were never going to fill. A cancelled order costs you the buyer, the refund handling, and whatever the platform counts against your shop.\n\n## Which products actually pay you\n\nGut feel says your bestseller is your best product. Your cost sheet from chapter 3 and your payout statements say something else, and they are the ones holding evidence.\n\nOnce a month, put four things side by side for each product: units sold, pesos of margin per unit after every deduction, how many chats it generated, and how many came back. A product that sells steadily, earns little per unit, and produces the questions and the returns is a job you are paying to keep.\n\nDropping it is a decision, not a failure. Sell the remaining stock, take the listing down, and move the hours to the product that pays. Every hour in this shop is bought with something.\n\n## Account health lives in your dashboard, not in the group chat\n\nMarketplaces keep measures on sellers, in categories such as how you respond to buyers, how often you cancel, whether you dispatch on time, and how you are rated. They matter because they affect how your shop is treated.\n\nWhat those measures are called, what counts as good, and what happens when you fall short all differ by platform and get changed. A number somebody posts in a seller group chat is a number from another platform, another category, or last year.\n\nSo treat it as a category you check yourself. Open your own seller dashboard on a fixed day, read what is shown for your shop today, and if something is flagged, fix the thing underneath it. Cancellations come from listing stock you do not have. Late dispatch comes from a packing window that is too small. Slow replies come from having no chat window and no standing replies.\n\n## Spikes and holidays\n\nA campaign or a Christmas rush multiplies the orders, not your hours.\n\n- Pre-pack the bestsellers before the rush. Boxes taped, filler in, label added at the end.\n- Cut the range you sell during the spike, so packing becomes repetitive instead of a puzzle.\n- State the real dispatch window in the listing and in your chat note, then keep it. A wide honest window survives. A tight promise that slips becomes a cancellation, a complaint and a mark against the shop.\n- Decide in advance which promotions you will join, using the floor price you set in chapter 3.\n\n## When to add, when to get help, when to close\n\nThree decisions come back every few months, and the same evidence answers all three.\n\nAdd a channel when the one you have keeps running out of hours, not when a new place is being talked about. Every new place is another inbox and another rulebook to keep up with.\n\nGet help when one job has a fixed enough shape to hand over. Packing first, because it is the easiest to teach and the easiest to check.\n\nClose a product line when the numbers have said so two months running and you are keeping it out of hope.\n\nThen run the week again, and let the week carry the shop instead of you carrying it.\n",
+          "duration_minutes": 8
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Aileen sells reed diffusers. A buyer messages: \"Last price po? ₱250 na lang, bibili ako ng dalawa.\" Aileen's floor price for one unit, after every deduction, sits above ₱250. What is the reply that keeps the sale possible?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Accept ₱250 for the two units, since a repeat buyer who takes two is worth more than the margin on one order."
+            },
+            {
+              "id": "b",
+              "text": "Ask what price the buyer had in mind, then settle between that and the listed price so the sale does not walk."
+            },
+            {
+              "id": "c",
+              "text": "Offer the two-unit bundle she has costed, or the smaller size, and say her price once without repeating it."
+            },
+            {
+              "id": "d",
+              "text": "Reply that the price is final and leave it there, since a buyer who opens with a haggle rarely buys anyway."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "message_craft",
+          "explanation": "The floor price exists so this decision is already made: below it she is paying to work. What she still has are moves that are not discounts, and a bundle or a smaller variant answers too expensive without touching the floor. Asking what the buyer had in mind opens a negotiation with no bottom. A flat refusal with nothing offered throws away a sale she could have kept, and plenty of hagglers buy. Say the price once, because repeating it and explaining your costs reads as room to push."
+        },
+        {
+          "prompt": "Marisol's parcel to a buyer in Bacolod has not been scanned for six days. The buyer messages: \"Ma'am wala pa rin po, scam ba to?\" What is the best first reply?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Apologise, refund straight away, and file the report with the courier herself once the buyer has been made whole."
+            },
+            {
+              "id": "b",
+              "text": "Send the tracking link and the courier hotline, so the buyer can chase the parcel while Marisol files her own report."
+            },
+            {
+              "id": "c",
+              "text": "Ask the buyer to wait a few more days before either of them raises anything, since a stuck scan often clears on its own in the end."
+            },
+            {
+              "id": "d",
+              "text": "Say what the tracking shows, that she is filing a report with the courier today, and when she will come back to the buyer."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "message_craft",
+          "explanation": "An anxious buyer needs to know that a person has the problem and that something specific happens next. Facts she can see, an action with a date on it, and a promise to come back cover all three. Refunding first removes your leverage with the courier and trains the reflex for every future delay. Handing over a link and a hotline makes the buyer chase her own parcel, which is what she messaged to avoid. Asking for a few more days sets no date, files nothing, and leaves the buyer exactly where she was, only later."
+        },
+        {
+          "prompt": "A buyer leaves a one-star review saying the mug arrived cracked. Marisol's packing clip shows it left intact, and the buyer refused the replacement she offered. The review is public. What does she post?",
+          "options": [
+            {
+              "id": "a",
+              "text": "One short reply that states what she offered and where a buyer can reach her, then nothing further on the thread."
+            },
+            {
+              "id": "b",
+              "text": "A reply walking through the packing clip step by step, so that any reader can see the mug had left her table intact."
+            },
+            {
+              "id": "c",
+              "text": "A reply asking the buyer to take the review down now that a replacement has been offered and then refused."
+            },
+            {
+              "id": "d",
+              "text": "Nothing in public, and a private message repeating the offer, since replying only draws more eyes to the review."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "message_craft",
+          "explanation": "The reply is written for the people reading the thread later, not for the reviewer. What they are judging is how this shop behaves when something goes wrong, and one calm line with an offer in it answers that. Arguing the clip point by point makes the shop look like the angry party even when the shop is right. Asking for a review to be taken down reads as pressure to every future reader and rarely works. Saying nothing in public leaves the buyer's version as the only version on the page, whatever she says privately."
+        },
+        {
+          "prompt": "Nico sells phone accessories from Marikina. He answers chats the second they arrive, all day, and his dispatch has started slipping because packing happens in whatever gap is left. What fixes the week?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Answer chats only after the day's parcels are packed, and let the morning messages wait until the evening."
+            },
+            {
+              "id": "b",
+              "text": "Keep replying instantly and move packing to after the last pickup, since a fast answer is what turns a chat into an order."
+            },
+            {
+              "id": "c",
+              "text": "Cut his range to the three products that generate the fewest questions, until dispatch has settled down again."
+            },
+            {
+              "id": "d",
+              "text": "Set two chat windows a day, post those hours on the shop, and paste standing replies for the questions he answers daily."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "production_workflow",
+          "explanation": "Reply speed matters and so does dispatch, so the fix is not choosing between them but giving each one a slot. Published hours plus pasted answers hold a fast reply time without the phone owning the day. Making buyers wait until evening with no posted hours produces the follow-up messages he was trying to avoid, and packing after the last handover means the parcels miss it. Cutting the range is a real decision he may make later on evidence from his own numbers, but here it gives up products to fix a week that simply has no shape."
+        },
+        {
+          "prompt": "A buyer opens a case saying the box held a black case, not the blue one she ordered. Nico is sure he packed blue, but he has no record of that order beyond the waybill number. What should he do now, and change from today?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Hold firm and reply that he packed the order himself and remembers the blue case going into that box."
+            },
+            {
+              "id": "b",
+              "text": "Send the replacement now, and from today film one unbroken clip per parcel, ending on a label the camera can read."
+            },
+            {
+              "id": "c",
+              "text": "Ask the buyer to send the black case back to him first, then decide whether the claim was honest before he replaces it."
+            },
+            {
+              "id": "d",
+              "text": "Refund in full and stop stocking colour variants, since a colour claim is the one thing he can never prove."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "visual_craft",
+          "explanation": "With no evidence this case is already lost, so pay the cheap version of it and buy the habit that stops the next one. A ten second clip that runs from the open box to a label you can actually read is the only thing that answers an empty-box or wrong-item claim later, and a clip that ends on a blurred label answers nothing. Remembering is not evidence and reads as an argument. Demanding the item back first is reasonable once you have proof, but here it stalls a buyer he cannot contradict. Dropping variants throws away sales to fix a record-keeping problem."
+        },
+        {
+          "prompt": "Aileen's bestselling scent ran out in the middle of her busiest week and she cancelled four orders. Her supplier needs about a week to refill her. What stops this happening again?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Order double of everything at the next restock, so that she is never caught short on any product again."
+            },
+            {
+              "id": "b",
+              "text": "Keep the listing up during the gap and tell each buyer there is a short wait while the stock is refilled."
+            },
+            {
+              "id": "c",
+              "text": "Set a reorder point covering a week of normal sales plus slack, and check it in her weekly numbers slot."
+            },
+            {
+              "id": "d",
+              "text": "Check the stock count every morning and reorder the moment a product looks low on the shelf."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "production_workflow",
+          "explanation": "A reorder point turns restocking into arithmetic instead of memory, and both inputs are hers: what a normal week sells, and how long the supplier takes. The slack is the part people drop. Set it to exactly one week of normal sales and every busier-than-normal week is a stockout, and a supplier who normally takes a week sometimes takes ten days. Buying double across the range ties up cash in the products that do not move and does nothing for the one that does. Selling what she cannot dispatch converts an out-of-stock listing, which costs her an order, into cancellations, which cost her the buyers. A daily eyeball is the same guess run more often."
+        },
+        {
+          "prompt": "Nico opens his own seller dashboard and reads the measures shown for his shop today. Cancellations are flagged. Both of this month's cancellations happened after he listed stock he did not actually have. What should he do about the flag?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Fix the habit underneath it: one stock count, changed the moment a parcel leaves, so he stops selling what is gone."
+            },
+            {
+              "id": "b",
+              "text": "Hold himself to two cancellations a month, which is the line a seller group says the platform draws for a shop like his."
+            },
+            {
+              "id": "c",
+              "text": "Ask the next buyer who has to be cancelled on to cancel from their side, so it is not recorded against his shop."
+            },
+            {
+              "id": "d",
+              "text": "Dispatch the doubtful orders late rather than cancel them, since a late parcel annoys a buyer less than a cancellation."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "platform_fluency",
+          "explanation": "The dashboard tells him what is being measured on his shop now, which is the only version that counts, and a line remembered from a group chat is another platform's line or last year's. Once he has read it, the flag is not the problem: the cause is. Both cancellations came from listing stock he did not have, so one count changed the moment a parcel leaves is what removes them. Capping cancellations by willpower does not stop the next oversell. Pushing the cancellation onto the buyer asks a stranger to cover for him and may be recorded anyway, and swapping cancellations for late dispatch moves the mark to another measure."
+        },
+        {
+          "prompt": "A month later a different buyer files a return request saying her mug arrived cracked. Marisol has read the platform's current policy page and she is inside the window to respond. What does she ask the buyer for, and what does she attach herself?",
+          "options": [
+            {
+              "id": "a",
+              "text": "A photo of the crack on its own, attached with her courier receipt for the day that parcel was handed over."
+            },
+            {
+              "id": "b",
+              "text": "A video of the buyer opening the parcel, attached with the supplier's photo of the mug as it left the factory."
+            },
+            {
+              "id": "c",
+              "text": "The waybill number and the buyer's own account of what happened, attached with her written packing routine."
+            },
+            {
+              "id": "d",
+              "text": "A photo of the mug and its packaging together, attached with her packing clip ending on the readable label."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "visual_craft",
+          "explanation": "The pair is the point. A crack photographed on its own says the mug is broken and nothing about how. The mug lying in its own filler and mailer shows whether the packing failed or the parcel was crushed, which tells her whether to change her packing or her courier, and any claim will need it. Her own clip, running unbroken from the open box to a label the camera can read, is the other half: it shows what left her table. An unboxing video is the buyer's to make or refuse, a factory photo is somebody else's promise, and a written routine describes every parcel rather than this one."
+        }
+      ]
+    }
+  ],
+  "assignment": {
+    "title": "One Product, From Listing to Payout",
+    "brief_mdx": "Pick one product you could actually sell this month. Your own stock, something you make, or something you resell for someone else. It has to be real enough that you can hold it, photograph it and find out what it costs you. Everything below is about that one product and the shop you would run around it.\n\nSubmit one text document with seven parts. No images and no uploads. Where photos are asked for, describe them in words.\n\n1. **The product decision.** What the product is, and how you get stock: bought and held by you, made to order, or held by a supplier or consignor. Then the handling reality in a few lines: size, weight, fragility, shelf life if it has one, whether it needs sizes or colours, and what one damaged unit costs you to replace. Finish with the demand you have seen with your own eyes. What people already ask you for, what already sells near you, what you could restock next week. Not a trend somebody told you about.\n\n2. **The channel.** Name the one or two selling places you would actually start in. For each one, write what it gives you and what it takes back. Then name a place you are not using and say why not.\n\n3. **The listing, written out ready to paste.**\n   - A title built from the words a buyer would type, local and Taglish terms included.\n   - An ordered shot list. For each shot: what is in the frame, and the buyer question it answers. One of them has to show scale. One of them has to show condition, including any flaw.\n   - The full description, in the order a buyer decides: what they receive, the details that decide fit, condition, how it is packed and dispatched, and your terms.\n   - Your variations as real options with stock against each, not a line telling people to message you for other colours.\n\n4. **The cost and price sheet, in pesos, per unit.** Item cost, cost of getting it to you, packaging and filler, the label, any freebie you include, and a share for breakage and for stock that never sells. Put a peso value on your own hours and say how you arrived at it. Then list the deduction categories that come out of a payout on your chosen channel, one line each, and fill in the current figure from that platform's published rate card. **Beside every fee, rate, charge or courier price you write, name where you found it and the date you looked.** If a figure is not published, or you could not confirm it, write the line item anyway and say so instead of guessing. Nobody is checking whether your figure is right. They are checking that you can say where it came from and when. Close with your list price, your floor price, and one promotion or campaign you would refuse because it would price you under that floor.\n\n5. **Shipping and returns, in the words a buyer will read.** Who pays for delivery, whether you accept cash on delivery, your dispatch window, what happens when an item arrives damaged or wrong, and what you will not take back. Write it as the buyer sees it. Then add one line addressed to your reviewer: how you can afford these terms at the floor price you just set.\n\n6. **Five standing replies.** Written the way you would send them. Include a buyer asking for a discount, a buyer asking where their order is, and a buyer whose parcel went back to sender. Choose the other two from the questions you expect daily. Keep them short, specific and boring, because anything you type can end up in a dispute or a screenshot.\n\n7. **The week.** Your fixed slots for photos and listings, packing and handover, chats, and a restock check, each with a day and a rough number of hours. State how many hours a week you actually have. Add one restock trigger: the stock level that makes you reorder, and how you would notice you had hit it.\n\nBefore you submit, do one check. Read your five replies, then read your listing. Every question those replies answer should already be answered in the listing. If it is not, edit the listing. Answering the same question twice a day forever is the thing this assignment exists to save you from.",
+    "criteria": [
+      "The product decision names how stock is obtained, the physical handling reality including what one damaged unit costs to replace, and demand the learner has personally seen rather than an assumed trend; the channel section names one or two specific selling places and states, for each, what it gives the seller and what it takes back",
+      "The listing is complete and pasteable: a title in the words a buyer would type, a description covering what is received, the details that decide fit, condition and terms, and variations carrying their own stock rather than an instruction to message for other options",
+      "The shot list is ordered, every shot states the buyer question it answers, and it includes a shot that shows scale and a shot that shows condition, not only a hero shot and close-ups",
+      "The cost sheet arithmetic is correct when the reviewer adds it up, and it carries packaging, a share for breakage or unsold stock, and a peso value on the learner's own hours with a stated basis; a list price, a floor price and one refused promotion are named, and the refused promotion would genuinely breach that floor",
+      "Every fee, rate, charge or courier price in the submission is followed by where the learner looked it up and the date they looked, or by a plain statement that it could not be confirmed. The reviewer checks that a source and a date are named, not that the figure is correct, and returns any submission that asserts a percentage, a rate or a threshold with neither",
+      "The shipping and returns terms are written for a buyer to read and are affordable at the stated floor price, the five replies cover a discount request, a where-is-my-order and a return to sender, and the weekly routine has fixed slots plus a restock trigger that fit inside the hours the learner says they have"
+    ],
+    "min_words": 900
+  }
+}

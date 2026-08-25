@@ -535,14 +535,14 @@
             },
             {
               "id": "c",
-              "text": "Give the model the business, the offer, the voice guide and this post's one idea, then ask for twelve hooks split across question, number, mistake and quoted customer, twelve words maximum."
+              "text": "Ask for a full caption first, then cut everything except the single line that reads best and use that as the hook, since the model writes better when it is working in whole paragraphs."
             },
             {
               "id": "d",
-              "text": "Ask for a full caption first, then cut everything except the single line that reads best and use that as the hook, since the model writes better when it is working in whole paragraphs."
+              "text": "Give the model the business, the offer, the voice guide and this post's one idea, then ask for twelve hooks split across question, number, mistake and quoted customer, twelve words maximum."
             }
           ],
-          "correct_option_id": "c",
+          "correct_option_id": "d",
           "competency": "prompting",
           "explanation": "You are using AI for range, not judgment, so the prompt has to carry the context and force variety across the patterns with a length limit. Asking for one best line, or handing the choice straight to the client, skips the part where range is the point, and pulling a hook out of a finished caption gives you one shape instead of four."
         },
@@ -551,22 +551,22 @@
           "options": [
             {
               "id": "a",
-              "text": "\"Trusted by hundreds of Pasig businesses for their rush printing needs, every single year since we opened in 2019.\""
+              "text": "\"Files in before 11am print that same afternoon, because the big press runs twice daily.\""
             },
             {
               "id": "b",
-              "text": "\"We use only premium inks and heavy-duty tarpaulin material on every single order.\""
+              "text": "\"Trusted by hundreds of Pasig businesses for their rush printing needs, every single year since we opened in 2019.\""
             },
             {
               "id": "c",
-              "text": "\"Nobody else in the city turns around a rush tarpaulin job faster than our team does.\""
+              "text": "\"We use only premium inks and heavy-duty tarpaulin material on every single order.\""
             },
             {
               "id": "d",
-              "text": "\"Files in before 11am print that same afternoon, because the big press runs twice daily.\""
+              "text": "\"Nobody else in the city turns around a rush tarpaulin job faster than our team does.\""
             }
           ],
-          "correct_option_id": "d",
+          "correct_option_id": "a",
           "competency": "judgment",
           "explanation": "Proof is a detail only this business could say, and a process step the reader can check against their own deadline is exactly that. A round trust number, a materials claim and a speed superlative all sound concrete, but any competitor could write those three lines without changing a word."
         },
@@ -575,22 +575,22 @@
           "options": [
             {
               "id": "a",
-              "text": "You could paste it onto a competitor's page and it would still make sense."
-            },
-            {
-              "id": "b",
               "text": "It is noticeably shorter than the captions this client usually posts on the page."
             },
             {
-              "id": "c",
+              "id": "b",
               "text": "It uses no emoji at all, not even in the short list of items near the end."
             },
             {
-              "id": "d",
+              "id": "c",
               "text": "It asks the reader to do only one thing instead of two or three."
+            },
+            {
+              "id": "d",
+              "text": "You could paste it onto a competitor's page and it would still make sense."
             }
           ],
-          "correct_option_id": "a",
+          "correct_option_id": "d",
           "competency": "workflow",
           "explanation": "The competitor test is the fastest check for generic writing: if nothing in the caption is specific to this client, the draft has been approved rather than edited. Short, emoji-free and single-ask are not faults, and are often signs the caption is working."
         },
@@ -631,14 +631,14 @@
             },
             {
               "id": "c",
-              "text": "Post it on Facebook, rewrite it properly for Instagram and TikTok, and reuse the Facebook text on LinkedIn since both are text-heavy platforms."
+              "text": "Rewrite the one idea into a native version per platform, and leave out any platform you cannot make a native version for this week."
             },
             {
               "id": "d",
-              "text": "Rewrite the one idea into a native version per platform, and leave out any platform you cannot make a native version for this week."
+              "text": "Post it on Facebook, rewrite it properly for Instagram and TikTok, and reuse the Facebook text on LinkedIn since both are text-heavy platforms."
             }
           ],
-          "correct_option_id": "d",
+          "correct_option_id": "c",
           "competency": "workflow",
           "explanation": "Native rewrites are the work. A translation or a trim is still the Facebook post wearing a different shirt, and LinkedIn is not simply a longer feed. Skipping a platform with a stated reason is a professional answer the client can approve."
         },

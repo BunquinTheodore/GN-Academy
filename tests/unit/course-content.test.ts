@@ -571,6 +571,16 @@ describe("the invented-statistic scan", () => {
     expect(patterns("That is the most useful thing in the chapter.")).toEqual([]);
   });
 
+  it("finds a peso amount, which is this catalogue's riskiest number", () => {
+    expect(patterns("She charges ₱12,000 a month for that.")).toContain("peso amount");
+    expect(patterns("The fee was PHP 35000 for five pages.")).toContain("peso amount");
+    expect(patterns("He paid 2,500 pesos before his first shift.")).toContain("peso amount");
+  });
+
+  it("leaves the currency alone when no amount is attached to it", () => {
+    expect(patterns("Tax sits on top as a share of every peso invoiced.")).toEqual([]);
+  });
+
   it("returns the sentence, since a human has to judge each hit", () => {
     const hits = scanForStatistics("chapter 4, lesson 1", "A CTR of about 1.9 percent is fine.");
     expect(hits[0].sentence).toBe("A CTR of about 1.9 percent is fine.");

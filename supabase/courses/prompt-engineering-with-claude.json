@@ -89,11 +89,11 @@
           "options": [
             {
               "id": "a",
-              "text": "The context: Claude did not know enough about the reader you were writing for"
+              "text": "The shape: you never said what form the answer should take, so it guessed"
             },
             {
               "id": "b",
-              "text": "The shape: you never said what form the answer should take, so it guessed"
+              "text": "The context: Claude did not know enough about the reader you were writing for"
             },
             {
               "id": "c",
@@ -104,7 +104,7 @@
               "text": "The task: the verb was too vague, so Claude picked the job it thought you meant"
             }
           ],
-          "correct_option_id": "b",
+          "correct_option_id": "a",
           "competency": "prompting",
           "explanation": "Format is its own part of a brief. If you do not say \"a table with these three columns\" or \"five bullets, one line each,\" you get paragraphs, because paragraphs are the default. The other three parts were present here, which is why the content was fine and only the form was wrong."
         },
@@ -121,14 +121,14 @@
             },
             {
               "id": "c",
-              "text": "Paste three emails she has already approved, labelled clearly as style samples"
+              "text": "Ask for a professional tone, then correct the wording after each draft arrives"
             },
             {
               "id": "d",
-              "text": "Ask for a professional tone, then correct the wording after each draft arrives"
+              "text": "Paste three emails she has already approved, labelled clearly as style samples"
             }
           ],
-          "correct_option_id": "c",
+          "correct_option_id": "d",
           "competency": "tools",
           "explanation": "A description is a summary you wrote from memory, and it loses the small habits that make writing recognisable: how she opens, whether she uses exclamation marks, where the deadline goes. Real examples carry all of that at once. Label them as samples so their content does not get reused in the draft."
         },
@@ -141,18 +141,18 @@
             },
             {
               "id": "b",
-              "text": "Shorten the notes yourself first so only the important parts get pasted"
+              "text": "Label the sections and repeat the instruction after the notes as well"
             },
             {
               "id": "c",
-              "text": "Move to a fresh chat and paste the notes in there a second time"
+              "text": "Shorten the notes yourself first so only the important parts get pasted"
             },
             {
               "id": "d",
-              "text": "Label the sections and repeat the instruction after the notes as well"
+              "text": "Move to a fresh chat and paste the notes in there a second time"
             }
           ],
-          "correct_option_id": "d",
+          "correct_option_id": "b",
           "competency": "prompting",
           "explanation": "Long material swallows short instructions. Plain labels like INSTRUCTIONS, NOTES and REMINDER separate what you are asking for from the raw text, and restating the instruction after the long block puts it somewhere easy to find. Pre-trimming the notes defeats the point, since deciding what matters is the job you handed over."
         },
@@ -161,11 +161,11 @@
           "options": [
             {
               "id": "a",
-              "text": "Reply asking it to keep the structure and rewrite it in plainer language"
+              "text": "Open a new chat and send the same prompt again, hoping for something better"
             },
             {
               "id": "b",
-              "text": "Open a new chat and send the same prompt again, hoping for something better"
+              "text": "Reply asking it to keep the structure and rewrite it in plainer language"
             },
             {
               "id": "c",
@@ -176,7 +176,7 @@
               "text": "Rewrite the whole thing yourself, since the draft is already fairly close to usable"
             }
           ],
-          "correct_option_id": "a",
+          "correct_option_id": "b",
           "competency": "judgment",
           "explanation": "Naming what to keep matters as much as naming what to change, because otherwise the fix often breaks the part you liked. Re-sending the same prompt in a new chat throws away the draft that showed you what was wrong, and asking for ten versions makes you do the diagnosis by comparison instead of just stating it."
         },
@@ -189,18 +189,18 @@
             },
             {
               "id": "b",
-              "text": "Ask it to list the three weakest parts of the draft and why"
-            },
-            {
-              "id": "c",
               "text": "Ask for a completely different version of the draft, written from another angle"
             },
             {
-              "id": "d",
+              "id": "c",
               "text": "Accept the draft and fix whatever bothers you once you finally spot it"
+            },
+            {
+              "id": "d",
+              "text": "Ask it to list the three weakest parts of the draft and why"
             }
           ],
-          "correct_option_id": "b",
+          "correct_option_id": "d",
           "competency": "judgment",
           "explanation": "Claude is better at finding problems in a finished draft than at avoiding them while writing, so asking for a self-critique often puts words to the thing you could not name. You then choose which of the listed weaknesses you care about. \"Not quite right\" gives it nothing to work with and usually returns a reshuffle."
         },
@@ -241,14 +241,14 @@
             },
             {
               "id": "c",
-              "text": "Ask Claude each week what details it needs before it starts writing anything"
+              "text": "Save the brief that worked and swap in this week's material each time"
             },
             {
               "id": "d",
-              "text": "Save the brief that worked and swap in this week's material each time"
+              "text": "Ask Claude each week what details it needs before it starts writing anything"
             }
           ],
-          "correct_option_id": "d",
+          "correct_option_id": "c",
           "competency": "workflow",
           "explanation": "A brief that produced a good result is a template, not a one-off. Most of it (who the reader is, the tone, the length, the format, the things to avoid) stays true from week to week, so only the material changes. Retyping it from memory each Friday repeats work you have already done once."
         }
@@ -284,11 +284,11 @@
           "options": [
             {
               "id": "a",
-              "text": "A chat on claude.ai, where you read each draft and adjust as you go"
+              "text": "A background task that writes and files the message while you work"
             },
             {
               "id": "b",
-              "text": "A background task that writes and files the message while you work"
+              "text": "A chat on claude.ai, where you read each draft and adjust as you go"
             },
             {
               "id": "c",
@@ -299,7 +299,7 @@
               "text": "A tool built into your own software that generates the reply for you"
             }
           ],
-          "correct_option_id": "a",
+          "correct_option_id": "b",
           "competency": "judgment",
           "explanation": "A chat is interactive: nothing happens between your messages, so you see every draft before it goes anywhere. That is exactly what a sensitive client email needs. Background handoffs and code tools are for other shapes of work, and building it into software is the API, which is not what you use as an editor of your own writing."
         },
@@ -312,18 +312,18 @@
             },
             {
               "id": "b",
-              "text": "It runs on web, desktop, mobile, Slack, and Microsoft 365 add-ins"
+              "text": "It runs on desktop only, with the web version reserved for coding"
             },
             {
               "id": "c",
-              "text": "It runs on desktop only, with the web version reserved for coding"
+              "text": "It runs on web, desktop, mobile, Slack, and Microsoft 365 add-ins"
             },
             {
               "id": "d",
               "text": "It runs on mobile and web, while Slack access needs the API instead"
             }
           ],
-          "correct_option_id": "b",
+          "correct_option_id": "c",
           "competency": "tools",
           "explanation": "The assistant is available on the web, as a desktop app (macOS, Windows, Linux, ChromeOS), on mobile, through a Slack integration, and as Microsoft 365 add-ins. The surface changes where you work, not what Claude is. The API is a separate thing for developers building Claude into their own software."
         },
@@ -360,18 +360,18 @@
             },
             {
               "id": "b",
-              "text": "Uploaded files stop being readable once the folder mixes sources"
+              "text": "The standing setup no longer describes one job, so answers drift"
             },
             {
               "id": "c",
-              "text": "Nothing at all; more material in one place always helps the output"
+              "text": "Uploaded files stop being readable once the folder mixes sources"
             },
             {
               "id": "d",
-              "text": "The standing setup no longer describes one job, so answers drift"
+              "text": "Nothing at all; more material in one place always helps the output"
             }
           ],
-          "correct_option_id": "d",
+          "correct_option_id": "b",
           "competency": "judgment",
           "explanation": "A Project works because its instructions and files describe one situation. Mix five clients and the setup can no longer say who the audience is or which product to name, so results come back generic or wrong. Make one Project per client or per recurring job instead."
         },
@@ -380,22 +380,22 @@
           "options": [
             {
               "id": "a",
-              "text": "Upload the PDF and say which section to turn into a dated table"
-            },
-            {
-              "id": "b",
               "text": "Retype the parts you remember so the conversation stays shorter"
             },
             {
-              "id": "c",
+              "id": "b",
               "text": "Describe the document yourself, since uploads only work for images"
             },
             {
-              "id": "d",
+              "id": "c",
               "text": "Paste the file name and ask Claude to find it on the client's site"
+            },
+            {
+              "id": "d",
+              "text": "Upload the PDF and say which section to turn into a dated table"
             }
           ],
-          "correct_option_id": "a",
+          "correct_option_id": "d",
           "competency": "tools",
           "explanation": "Upload the real document rather than your summary of it, because your summary has already dropped detail. Then give the upload a job and point at the part that matters. PDFs, images, text and documents can all be uploaded, and Drive, OneDrive and SharePoint can be connected."
         },
@@ -408,18 +408,18 @@
             },
             {
               "id": "b",
-              "text": "Ask for that section to be cut, revising the same Artifact again"
-            },
-            {
-              "id": "c",
               "text": "Copy it into a document app, because an Artifact cannot be changed"
             },
             {
-              "id": "d",
+              "id": "c",
               "text": "Ask for a brand new guide, since each request makes a separate one"
+            },
+            {
+              "id": "d",
+              "text": "Ask for that section to be cut, revising the same Artifact again"
             }
           ],
-          "correct_option_id": "b",
+          "correct_option_id": "d",
           "competency": "workflow",
           "explanation": "An Artifact is a standalone output you keep revising, so name the specific part that is wrong and ask for that change. Everything you already approved survives. Starting over discards good work and usually costs you a second round of corrections."
         },
@@ -428,22 +428,22 @@
           "options": [
             {
               "id": "a",
-              "text": "The exact file format, since connected documents arrive unreadable"
+              "text": "The job: what to pull from the notes and what the result should be"
             },
             {
               "id": "b",
-              "text": "A separate upload of each file, as connectors only list the names"
+              "text": "The exact file format, since connected documents arrive unreadable"
             },
             {
               "id": "c",
-              "text": "The job: what to pull from the notes and what the result should be"
+              "text": "A separate upload of each file, as connectors only list the names"
             },
             {
               "id": "d",
               "text": "A summary of every note, since connected files load one at a time"
             }
           ],
-          "correct_option_id": "c",
+          "correct_option_id": "a",
           "competency": "prompting",
           "explanation": "Handing over material is not the same as giving a brief. The connector solves access to the files; you still have to say what to extract, what to ignore, and what shape the answer should take. Without that, you get a general response instead of a usable one."
         },
@@ -452,22 +452,22 @@
           "options": [
             {
               "id": "a",
-              "text": "Rewriting a cover letter for a job ad, then tightening it twice"
+              "text": "A long unattended job you want finished overnight with no steering"
             },
             {
               "id": "b",
-              "text": "Talking through pricing for a small business and settling wording"
+              "text": "Rewriting a cover letter for a job ad, then tightening it twice"
             },
             {
               "id": "c",
-              "text": "Turning a messy client brief into a checklist you review by line"
+              "text": "Talking through pricing for a small business and settling wording"
             },
             {
               "id": "d",
-              "text": "A long unattended job you want finished overnight with no steering"
+              "text": "Turning a messy client brief into a checklist you review by line"
             }
           ],
-          "correct_option_id": "d",
+          "correct_option_id": "a",
           "competency": "judgment",
           "explanation": "A chat only moves when you move it: nothing happens between your messages. That suits work you want to read and react to. Work you would rather hand off and collect later is a different execution model, which is what Claude Cowork covers in chapter 4."
         }
@@ -551,22 +551,22 @@
           "options": [
             {
               "id": "a",
-              "text": "It commits the change, then reads the code, then shows you a diff"
+              "text": "It reads the codebase, proposes edits, you review, then tests run"
             },
             {
               "id": "b",
-              "text": "It writes a plan file, waits for tests, then edits without review"
+              "text": "It commits the change, then reads the code, then shows you a diff"
             },
             {
               "id": "c",
-              "text": "It reads the codebase, proposes edits, you review, then tests run"
+              "text": "It writes a plan file, waits for tests, then edits without review"
             },
             {
               "id": "d",
               "text": "It runs the tests first, then edits whatever those tests flagged up"
             }
           ],
-          "correct_option_id": "c",
+          "correct_option_id": "a",
           "competency": "workflow",
           "explanation": "The loop is: you describe the task, Claude reads the relevant files, proposes edits, you review and approve, and then it can run tests and commit. Committing before review would defeat the point of the loop, because your approval is what sits between a proposal and a change to your project."
         },
@@ -599,22 +599,22 @@
           "options": [
             {
               "id": "a",
-              "text": "In CLAUDE.md, which holds written instructions about your project"
-            },
-            {
-              "id": "b",
               "text": "In settings.json, the file that holds machine settings for the tool"
             },
             {
-              "id": "c",
+              "id": "b",
               "text": "In a hook, so the conventions fire whenever anyone saves a file"
+            },
+            {
+              "id": "c",
+              "text": "In CLAUDE.md, which holds written instructions about your project"
             },
             {
               "id": "d",
               "text": "Pasted at the top of every new session, by every person, every time"
             }
           ],
-          "correct_option_id": "a",
+          "correct_option_id": "c",
           "competency": "tools",
           "explanation": "CLAUDE.md is a file of instructions for Claude about your project: standards, structure, what to check before committing. It is not a config file; machine settings belong in settings.json. Hooks are for automation that must run on an event, not for standing guidance you want Claude to take into account."
         },
@@ -627,18 +627,18 @@
             },
             {
               "id": "b",
-              "text": "MCP, which connects Claude Code to outside tools and services"
+              "text": "CLAUDE.md, which is where you list the services your team uses"
             },
             {
               "id": "c",
-              "text": "CLAUDE.md, which is where you list the services your team uses"
+              "text": "MCP, which connects Claude Code to outside tools and services"
             },
             {
               "id": "d",
               "text": "A permission mode, which decides what Claude reaches without asking"
             }
           ],
-          "correct_option_id": "b",
+          "correct_option_id": "c",
           "competency": "tools",
           "explanation": "MCP is the connection between Claude Code and systems outside your codebase. Hooks automate on events inside a session; CLAUDE.md is prose instructions, not a connection; permission modes govern approval, not reach into other services. The signal that you need MCP is exactly this: repeated manual copying from another system."
         },
@@ -655,14 +655,14 @@
             },
             {
               "id": "c",
-              "text": "Slash commands are typed inside a running session, not in the shell"
+              "text": "The shell needs a plugin installed before slash commands will run"
             },
             {
               "id": "d",
-              "text": "The shell needs a plugin installed before slash commands will run"
+              "text": "Slash commands are typed inside a running session, not in the shell"
             }
           ],
-          "correct_option_id": "c",
+          "correct_option_id": "d",
           "competency": "tools",
           "explanation": "Slash commands such as /help, /context and /skills belong inside a running Claude Code session. At the shell prompt they are just unknown commands. Start the session first, then type them. /context in particular is worth learning early, because it shows what Claude actually has in view when results go strange."
         },
@@ -675,18 +675,18 @@
             },
             {
               "id": "b",
-              "text": "\"Rewrite the whole app so the checkout page stops breaking sometimes\""
+              "text": "\"The checkout total ignores the discount code; fix it and add a test\""
             },
             {
               "id": "c",
-              "text": "\"Improve the code quality across the repository wherever you can\""
+              "text": "\"Rewrite the whole app so the checkout page stops breaking sometimes\""
             },
             {
               "id": "d",
-              "text": "\"The checkout total ignores the discount code; fix it and add a test\""
+              "text": "\"Improve the code quality across the repository wherever you can\""
             }
           ],
-          "correct_option_id": "d",
+          "correct_option_id": "b",
           "competency": "prompting",
           "explanation": "A reviewable change needs a scoped task and a way to tell whether it worked. Naming the wrong behaviour gives Claude something to verify against and gives you something concrete to check in the diff. Vague or repository-wide requests produce changes too large to read, which quietly turns approval into clicking yes."
         }
@@ -722,22 +722,22 @@
           "options": [
             {
               "id": "a",
-              "text": "Dispatch it in Cowork with the emails and the report format attached, overnight"
-            },
-            {
-              "id": "b",
               "text": "Paste the emails into chat ten at a time and steer each summary as it appears"
             },
             {
-              "id": "c",
+              "id": "b",
               "text": "Open Claude Code on the mail export and approve each change as the batch proceeds"
             },
             {
-              "id": "d",
+              "id": "c",
               "text": "Dispatch it in Cowork with just the emails, and sort out the format afterwards"
+            },
+            {
+              "id": "d",
+              "text": "Dispatch it in Cowork with the emails and the report format attached, overnight"
             }
           ],
-          "correct_option_id": "a",
+          "correct_option_id": "d",
           "competency": "workflow",
           "explanation": "The job has a known shape, all the material exists up front, and the deadline falls while you are asleep. That is exactly the case Dispatch was built for. Chat would work but keeps you at the keyboard for all forty. Claude Code is for editing a codebase, not for reading client mail."
         },
@@ -750,18 +750,18 @@
             },
             {
               "id": "b",
-              "text": "You are not there to correct a wrong turn, so the brief has to do the steering"
+              "text": "Background work is charged differently, so a shorter brief costs you a lot less"
             },
             {
               "id": "c",
-              "text": "Background work is charged differently, so a shorter brief costs you a lot less"
+              "text": "You are not there to correct a wrong turn, so the brief has to do the steering"
             },
             {
               "id": "d",
               "text": "Cowork ignores every attached file unless the brief names each one of them"
             }
           ],
-          "correct_option_id": "b",
+          "correct_option_id": "c",
           "competency": "prompting",
           "explanation": "In chat you fix a thin brief in seconds with a follow-up. In a hand-off, any ambiguity gets resolved without you and you only see the result at the end. Naming what to do at each fork (what counts as unclear, what to flag rather than guess) is the part that makes a brief survive on its own."
         },
@@ -770,22 +770,22 @@
           "options": [
             {
               "id": "a",
-              "text": "Only this month's raw numbers, since older material tends to confuse the run"
+              "text": "Standing instructions, the source files, and a past report the client accepted"
             },
             {
               "id": "b",
-              "text": "A single line naming the client, which keeps the setup light and flexible"
+              "text": "Only this month's raw numbers, since older material tends to confuse the run"
             },
             {
               "id": "c",
-              "text": "Standing instructions, the source files, and a past report the client accepted"
+              "text": "A single line naming the client, which keeps the setup light and flexible"
             },
             {
               "id": "d",
               "text": "The full chat history of every earlier conversation you had about this client"
             }
           ],
-          "correct_option_id": "c",
+          "correct_option_id": "a",
           "competency": "tools",
           "explanation": "A project is where the context and materials for a hand-off live, so put in the things the run cannot ask you about: how this client's documents are written, the files the work is built from, and an example of the finished shape they already approved. Raw numbers alone leave out the rules; a bare name leaves out everything; a pile of old conversation is not the same as a curated setup."
         },
@@ -846,18 +846,18 @@
             },
             {
               "id": "b",
-              "text": "A careful reply to an unhappy client, where you weigh each line"
+              "text": "Scoring sixty applications against a rubric you have already written"
             },
             {
               "id": "c",
-              "text": "Scoring sixty applications against a rubric you have already written"
+              "text": "A careful reply to an unhappy client, where you weigh each line"
             },
             {
               "id": "d",
               "text": "Compiling a standing report from files you have already gathered"
             }
           ],
-          "correct_option_id": "b",
+          "correct_option_id": "c",
           "competency": "workflow",
           "explanation": "Work where you change your mind as you read belongs in a conversation, because your judgment is applied line by line. The other three have a known shape and all their material up front, which is what makes them safe to hand off and review at the end."
         },
@@ -870,18 +870,18 @@
             },
             {
               "id": "b",
-              "text": "They are the plan tiers that decide how long a dispatched task may run"
+              "text": "They extend what Cowork can do beyond what it handles on its own"
             },
             {
               "id": "c",
-              "text": "They extend what Cowork can do beyond what it handles on its own"
+              "text": "They are the plan tiers that decide how long a dispatched task may run"
             },
             {
               "id": "d",
               "text": "They turn finished reports into slide decks for viewing on mobile"
             }
           ],
-          "correct_option_id": "c",
+          "correct_option_id": "b",
           "competency": "tools",
           "explanation": "Plugins add capability; they do not add judgment. A vague brief stays vague, and nothing decides for you what is fit to send a client. Check what is actually available to you rather than assuming a capability exists, and treat each new connection as another place your client's material can travel."
         },
@@ -894,18 +894,18 @@
             },
             {
               "id": "b",
-              "text": "Run the same task again and see whether the identical figure comes back"
+              "text": "Trace the figure to a source you can name, or cut it before you send"
             },
             {
               "id": "c",
-              "text": "Add a note in your cover email saying one figure is unverified, then send"
+              "text": "Run the same task again and see whether the identical figure comes back"
             },
             {
               "id": "d",
-              "text": "Trace the figure to a source you can name, or cut it before you send"
+              "text": "Add a note in your cover email saying one figure is unverified, then send"
             }
           ],
-          "correct_option_id": "d",
+          "correct_option_id": "b",
           "competency": "judgment",
           "explanation": "Time spent running in the background is not evidence of accuracy, and a repeated answer is not a verified one. Anything a client could check (names, dates, amounts, quotes) has to trace back to a source you can point at. A disclaimer does not fix a number you cannot stand behind."
         }

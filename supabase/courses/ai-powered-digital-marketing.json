@@ -746,22 +746,22 @@
           "options": [
             {
               "id": "a",
-              "text": "The first line of the ad, then the image, since it is seen and not earning clicks."
-            },
-            {
-              "id": "b",
               "text": "The landing page headline and the form, since something on the page is stopping people from converting."
             },
             {
-              "id": "c",
+              "id": "b",
               "text": "The daily budget, so the ad is shown more times and the click count climbs back up again."
             },
             {
-              "id": "d",
+              "id": "c",
               "text": "The audience, narrowing it to the most likely buyers so that the clicks come from better-matched people."
+            },
+            {
+              "id": "d",
+              "text": "The first line of the ad, then the image, since it is seen and not earning clicks."
             }
           ],
-          "correct_option_id": "a",
+          "correct_option_id": "d",
           "competency": "workflow",
           "explanation": "CTR is clicks divided by impressions, and 90 from 30,000 is 0.3 percent, so the break is at the click stage and the fix belongs in the ad: first line, then image, then offer. Almost nobody reached the landing page, so it cannot be the problem yet."
         },
@@ -774,18 +774,18 @@
             },
             {
               "id": "b",
-              "text": "The budget is too low for the platform to find buyers, so it is serving the cheapest clicks it can."
+              "text": "The page is not repeating the ad's promise, so visitors arrive thinking they have landed somewhere else."
             },
             {
               "id": "c",
-              "text": "The offer is priced too high for this market, so the price needs to come down before anything else."
+              "text": "The budget is too low for the platform to find buyers, so it is serving the cheapest clicks it can."
             },
             {
               "id": "d",
-              "text": "The page is not repeating the ad's promise, so visitors arrive thinking they have landed somewhere else."
+              "text": "The offer is priced too high for this market, so the price needs to come down before anything else."
             }
           ],
-          "correct_option_id": "d",
+          "correct_option_id": "b",
           "competency": "workflow",
           "explanation": "A 2 percent CTR means the ad earned the click, so the loss happened after people landed. Start at the page stage, checking promise match first, then load speed and how many fields the form demands, rather than reworking the audience, budget or price that were doing their job."
         },
@@ -818,11 +818,11 @@
           "options": [
             {
               "id": "a",
-              "text": "The new headline is clearly better, so roll it out to the emails and the ads today."
+              "text": "Nothing yet, because three sign-ups is far too few to be a rate, whatever the percentage looks like."
             },
             {
               "id": "b",
-              "text": "Nothing yet, because three sign-ups is far too few to be a rate, whatever the percentage looks like."
+              "text": "The new headline is clearly better, so roll it out to the emails and the ads today."
             },
             {
               "id": "c",
@@ -833,7 +833,7 @@
               "text": "Restore the old headline, since a jump that large is more likely to be broken tracking than real."
             }
           ],
-          "correct_option_id": "b",
+          "correct_option_id": "a",
           "competency": "judgment",
           "explanation": "Wait for enough results, not enough days. A rate built on three conversions is noise, and one day cannot show you how a full week behaves, so there is nothing here to roll out, keep or reverse yet."
         },
@@ -846,18 +846,18 @@
             },
             {
               "id": "b",
-              "text": "\"Analyse this export and tell me what I should fix first, second and third, with a reason for each.\""
+              "text": "\"Summarise what changed between the two weeks. Describe only the numbers, and flag rates built on few results.\""
             },
             {
               "id": "c",
-              "text": "\"Summarise this export, then add benchmarks for my industry so I know whether these numbers are good or bad.\""
+              "text": "\"Analyse this export and tell me what I should fix first, second and third, with a reason for each.\""
             },
             {
               "id": "d",
-              "text": "\"Summarise what changed between the two weeks. Describe only the numbers, and flag rates built on few results.\""
+              "text": "\"Summarise this export, then add benchmarks for my industry so I know whether these numbers are good or bad.\""
             }
           ],
-          "correct_option_id": "d",
+          "correct_option_id": "b",
           "competency": "prompting",
           "explanation": "The model can do arithmetic on data it can see, but any \"why\" is a guess, because you are the one who knows what you changed and when. Asking it to rank fixes or to supply industry benchmarks invites reasons and figures it has no way to check."
         },
@@ -894,18 +894,18 @@
             },
             {
               "id": "b",
-              "text": "Say the product was gifted, label the image as AI-generated, and keep the shortened testimonial as it is."
-            },
-            {
-              "id": "c",
               "text": "Restore the testimonial in full and disclose the gift, but leave the image alone since it is not a photograph."
             },
             {
-              "id": "d",
+              "id": "c",
               "text": "Disclose the gift and the testimonial edit, but leave the image unlabelled since it only illustrates the post."
+            },
+            {
+              "id": "d",
+              "text": "Say the product was gifted, label the image as AI-generated, and keep the shortened testimonial as it is."
             }
           ],
-          "correct_option_id": "b",
+          "correct_option_id": "d",
           "competency": "judgment",
           "explanation": "A gifted product is a paid partnership and has to be disclosed, and an image that could pass for a photo of the real product has to be labelled. Trimming a testimonial for length is fine as long as its meaning survives, so there is nothing to restore or flag there."
         }

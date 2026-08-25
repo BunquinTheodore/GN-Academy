@@ -1,0 +1,1064 @@
+{
+  "slug": "online-safety-and-scam-defence",
+  "title": "Online Safety and Scam Defence",
+  "subtitle": "See it coming, make it hard, know the first hour",
+  "level": "foundation",
+  "category": "Digital safety",
+  "format": "Self-paced online",
+  "summary": "A free course on the scams and account takeovers built for Filipino students, freelancers and jobseekers: fake job offers, task scams, OTP phishing, cloned pages, SIM swap, lending apps that harvest your contacts, and the slow approach that ends at an investment platform. Nine lessons on spotting the approach, hardening the accounts worth taking, deciding what you hand over, and working through the first hour after it goes wrong. The exam at the end issues a verifiable certificate.",
+  "description": "A free foundation course on the scams and account takeovers aimed at Filipino students, freelancers and jobseekers, covering recognition, hardening, data handling and the first hour after a takeover.",
+  "skills": [
+    "Recognising a scam approach",
+    "Checking a page, a link or a caller before you act",
+    "One-time codes, phone numbers and SIM swap",
+    "Password managers and unique passwords",
+    "Two-factor authentication and account recovery",
+    "App permissions and document sharing",
+    "Incident response and reporting"
+  ],
+  "outcomes": [
+    "Name what a message, a caller or a page is actually after, and tell an approach from an ordinary message whether it moves in one afternoon or builds over months",
+    "Reach a login page, an app or a bank by a route you chose, and say why a padlock proves nothing about who is on the other end",
+    "Harden your email, money and social accounts so a stolen password on its own is not enough, and close the recovery back door",
+    "Decide what to hand over, at which stage, and to whom, including what a fake recruiter collects and what it lets them do",
+    "Work through the first hour after a takeover in the order that stops the bleeding, and report it to the right institutions"
+  ],
+  "roles": [
+    "Students",
+    "Jobseekers",
+    "Virtual assistants, freelancers and online sellers",
+    "Anyone who has been hit once and does not want it to happen again"
+  ],
+  "price_php": null,
+  "is_free": true,
+  "passing_score": 70,
+  "credential_prefix": "OSD",
+  "sort_order": -5,
+  "requires_assignment": false,
+  "modules": [
+    {
+      "slug": "chapter-1-why-you-and-how-it-starts",
+      "title": "Why you, and how it starts",
+      "description": "Before any single scam: what somebody actually wants from a person with no savings, how the first message reaches you whether it moves in an afternoon or over months, and the one habit that defeats a page built to look like the real one.",
+      "lessons": [
+        {
+          "slug": "what-they-are-actually-after",
+          "title": "What they are actually after",
+          "content_mdx": "# What they are actually after\n\nJomar is 22, in his third year at a state university in Cavite, and there is about ₱340 sitting in his e-wallet. When a classmate warned him about scam texts he laughed. There is nothing in the account. Why would anybody bother.\n\nTwo weeks later somebody was borrowing money from his blockmates in his name, in his own chat style, from his own account.\n\nNobody was ever after his ₱340.\n\n## Four things worth taking from a person with no savings\n\n**A code.** The short number that arrives on your phone when something important is about to happen. That code is not information. It is an action waiting to be authorised, and whoever hears it performs the action.\n\n**A password.** Your email password before any other, for the reason below.\n\n**A document.** A photo of your ID. A selfie holding that ID beside your face. A payslip. A signed form. These are not paper. They are what somebody uses to open things in your name.\n\n**A permission.** An app you let read your contacts. An account you let something post from. A person you let onto your screen during a call. You granted each of these once, in a hurry, and never looked at them again.\n\nNone of the four needs you to have money.\n\n## Email is not one account, it is the master key\n\nSit with this until it is uncomfortable.\n\nWhoever controls your mailbox can press \"forgot password\" on every other account you own, receive the link, set a new password, and lock you out of your own life. Your wallet. Your bank. Your school portal. Your freelancing profile. Every one of them is reachable from the mailbox that receives the resets.\n\nSo there is no such thing as protecting your bank account while your email password is the one you also used on a forum years ago. The bank is a room. The mailbox is the front door and the spare key under the mat.\n\nAnswer this before you read on: which mailbox would a stranger have to take, in order to take everything else?\n\n## Why a real account is worth more than an empty one\n\nJomar's account had something his ₱340 did not. It had history. Years of posts. Blockmates who know the name. A way of typing that his friends recognise.\n\nThat is the product. A message asking for an emergency ₱1,500 works when it comes from a face people trust, and does not work at all from a blank profile made yesterday. What gets stolen is not your money. It is your ability to be believed, and it gets spent on the next person.\n\nWhich means the damage from your account being taken lands mostly on other people. Hold on to that, because it changes what you do in the first hour after it happens. Chapter three covers that hour.\n\n## Why a jobseeker and a freelancer are easier to reach\n\nHere is the uncomfortable part of the job search. It trains you to do the exact thing this course will tell you not to do.\n\nYou send your CV to strangers. You attach an ID because onboarding asked for it. You send a selfie holding that ID because a verification step said so. You give an account name and number so that payroll can pay you. You do all of it before you have met anybody, because that is what applying looks like now, and a person three months without work does it faster and questions it less.\n\nSo when a fake recruiter asks, nothing feels wrong. The request has the same shape as every real one you answered this month. Chapter two takes that apart properly. For now, notice only this: what you are asked for is exactly what a real employer also asks for, which is why the play works at all.\n\n## Your four, written down\n\nTake ten minutes and write these somewhere offline. A notebook is fine.\n\n1. **Which mailbox holds my resets.** Write the actual address. If there is more than one, write them all, including the abandoned one from high school that is still sitting somewhere as a backup.\n2. **Which number receives my codes.** The number attached to your bank, your wallet, and your main accounts.\n3. **Which documents are already out there.** Scroll your sent messages. Every ID photo, selfie with ID, payslip and signed form you have sent in the past year, and who you sent it to.\n4. **Which apps hold permissions.** The ones that can reach your contacts, your gallery, your messages, or post using your name.\n\nDo not fix anything yet. This is an inventory. You cannot defend what you have never listed.\n\nItem three is the one that makes people go quiet. That is the correct reaction, and the rest of this course is what to do about it.\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "how-the-approach-starts",
+          "title": "How the approach starts",
+          "content_mdx": "# How the approach starts\n\n\"Hi po, is this Ma'am Cecil? Sorry, wrong number.\"\n\nRhea replied because she is polite. That is the whole opening. Being polite.\n\nShe is 26, a virtual assistant in Iloilo, and by the time this ends she will have given away more about herself than any form ever asked her for. We will come back to her.\n\nApproaches arrive on every channel you already use, and they move at one of two speeds.\n\n## Fast: it needs an answer today\n\nA text with a link about a parcel held for a fee. A message from a friend on Messenger whose account is no longer being driven by your friend. A Marketplace buyer who is very keen and wants to sort out one thing before paying. A reply to a job application that came back far quicker than any real one. A helpful stranger under the public post where you asked for help, offering to fix it in private. A call about a delivery you are half expecting, or about a transfer you never made.\n\nFast approaches are built for the minute you are distracted. Riding a jeep. Between classes. Holding a crying baby. They need you inside a few minutes, before you check anything, which is why every one of them supplies a reason that checking would be expensive.\n\n## Slow: it is willing to spend months\n\nRhea's wrong number became a conversation. He was Filipino, working in Singapore, back home in November. He asked about her clients. He remembered that her mother had an operation coming. Good morning messages landed before her alarm did.\n\nFor seven weeks he asked for nothing.\n\nThat is not the absence of a scam. That is the first stage of one. Nothing is requested because the request has to arrive after you would defend the person making it.\n\nAround week seven he mentioned, in passing, something he puts money into on the side. He did not offer it to her. He changed the subject. She asked him about it two days later.\n\nThat inversion is the craft. When you do the asking, you defend the decision afterwards as your own.\n\n## The pipeline has a name\n\nRomance to investment. The relationship is the setup and a platform is the close, and it is the same machine whether the platform trades currencies, shares or something on a chain.\n\nWhere the money question belongs is not here. Whether a promised return can be real is Basic Finance, in its lesson on how the scams are built. Whether a chain makes any of it worse is Basic Blockchain. This lesson stays on the three parts this course owns: the relationship, the isolation, and what you handed over on the way.\n\nCount what Rhea handed over in seven weeks without being asked once. Her birthday. Her mother's maiden name, from a joke about her full name. Her high school. The name of her first dog. The street her boarding house is on. Her biggest client. A photo of her ID, sent the evening he offered to help her sign up for something.\n\nThose are not trivia. Read them again as the answers to somebody's security questions.\n\n## Five tells that work without hearing the story\n\nYou will not always recognise the particular scam. You do not have to.\n\n1. **Time pressure.** A window that closes today, and closes for you specifically.\n2. **A move to a private channel.** From a comment thread into DMs. From a platform's messages into a separate app.\n3. **A reason not to tell anybody.** Keep it between us. Your family will not understand this. Your co-workers will only want in.\n4. **A script that survives every question.** Asking questions feels like checking, and it is not. Smooth answers mean the answers have been given many times before.\n5. **An offer that found you.** You were not looking for it. It arrived.\n\nAny one of them is worth a pause. Three of them together is the answer.\n\n## The counter-move, which is one sentence\n\nTake it out of the conversation and into tomorrow.\n\nThe pressure only works while you are still inside the thread. Step out of it and the offer either survives the night or it does not, and which of those happens is the information you came for. Nothing legitimate collapses because you put your phone down.\n\nThe second move undoes the isolation: say it out loud to one person who is not in the conversation. That is what happened to Rhea. She told her ate on a Sunday, and her ate asked one question she could not answer. What is the company called, and where do I look it up.\n\nRhea never got an answer to that, which was the answer.\n\n## Before the next lesson\n\nThink of the last message that made you feel hurried. Which of the five tells was in it?\n",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "check-it-before-you-type",
+          "title": "Check it before you type",
+          "content_mdx": "# Check it before you type\n\nOne sentence carries most of this lesson.\n\n**You never arrive at a login page through a link somebody sent you.**\n\nNot a link in a text. Not a link in an email. Not a link in a chat. Not a QR code. Not the first thing in a search result when you were in a hurry.\n\nRead it again, because everything below is only the reasons.\n\n## The costumes\n\nInvent a bank for a moment. Call it Pilipinas Savings, living at pilipinassavings.com.ph.\n\n**The near miss.** pilipinassavings.com.ph becomes pilipinassavlngs.com.ph. A lower case L where an i used to be. You do not read addresses, you recognise them, and recognition is the thing being used against you.\n\n**The arrangement.** pilipinassavings.com.ph.account-secure.example/login. Every character of the real name is present and correctly spelled, and it is still not the bank. An address is read from the right, and you stop at the first single slash. Walk left from that slash. Skip the ending, which is .com, or .net, or .ph, or .com.ph, or .gov.ph. The very next word going left is the name that decides whose computer answers you. Here the ending is .example, used because it is reserved for teaching and cannot be registered against you, and the next word going left is account-secure. That is whose site this is, and a real one would carry an ordinary ending in that slot. Everything further left, pilipinassavings.com.ph included, is decoration the owner chose and can set to anything at all. Run the same walk on the genuine address and it comes out the other way: in pilipinassavings.com.ph/login the ending is .com.ph and the next word going left is pilipinassavings, which is the bank.\n\n**The advertisement.** A paid slot can sit above the real result in a search. Paying for a slot is not a background check.\n\n**The QR code.** A square you cannot read before you follow it. On a poster at a terminal, on a receipt, on a sticker pasted over the sticker that used to be on a payment counter, or dropped into a chat. Scanning is typing a link you never got to read.\n\n**The lookalike listing.** In an app store, an app with a familiar icon and a name a word or two off.\n\n**The sender name.** The name printed above a message is a label. Labels get set. When a message lands inside the same thread as your real alerts, that tells you the label matched, not that the sender did.\n\n**The caller ID.** The same trick, for calls. The name or number on your screen is a claim about who is calling, nothing more.\n\n## What a padlock actually says\n\nThis is the one that catches careful people.\n\nA padlock means the connection between you and whatever computer answered is encrypted. It says nothing at all about who that computer belongs to. Anybody who sets up a site can have one, and a criminal setting up a fake login page sets one up too.\n\nThe padlock is a sealed envelope. It does not tell you the address on the front is the right address.\n\n## The replacement habit: a route you chose\n\nDo not get better at judging links. Stop using them.\n\n- Type the address yourself.\n- Open your own bookmark, saved on a day when nobody was hurrying you.\n- Open the app you installed yourself.\n- Ring the number printed on the back of your own card, or on a page you navigated to yourself.\n\nNotice that none of this asks you to spot anything. That is exactly why it works. You cannot be fooled by a link you did not follow, no matter how good it was.\n\nAnd the message might be real. Often it is. That changes nothing. Act on it through your own route. If your account really has been locked, it will still be locked when you get there by yourself, and it will take you an extra minute.\n\n## For voice: the callback rule\n\nThe rule for a phone call has one moving part. You end the call.\n\nHang up. Wait a moment. Dial a number you sourced yourself. Never a number the caller reads out to you, and never \"hold on, let me transfer you\", because a transfer keeps you inside the call you are trying to leave.\n\nKnowing your name, your branch, or a recent purchase is not proof of anything. Details leak. Being able to survive you hanging up and calling back is what proof looks like, and if hanging up is presented to you as risky, that is your answer.\n\n## One free alarm you may already own\n\nA password manager fills your login by matching the address it saved. So when it sits there and does not offer to fill, that is not a glitch. It is telling you that the page in front of you is not at the address it knows. People override it because they are in a hurry, and overriding it is the move the fake page is waiting for. A manager can also fail to fill for dull reasons, a login moved to a new address or a form it has not seen before, so treat it as a stop sign and not a verdict. Read the address in the bar before you type anything. If it is the address you expected, type the password in by hand this once, then fix the saved entry afterwards.\n\nChapter three is where you pick one and move your accounts onto it.\n\n## Before the next lesson\n\nBookmark three things now, from addresses you typed yourself: your mailbox, your bank or wallet, and the one account you would most hate to lose. Reach each of them once through the bookmark.\n\nThat is your route from now on, and you built it on a calm afternoon rather than during somebody else's emergency.\n",
+          "duration_minutes": 10
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "It is close to midnight and Jomar gets a Messenger message from Katrina, a blockmate since first year. Her lola has been rushed to hospital and she needs ₱2,000 tonight, to be paid back on Friday. The account is definitely hers: the same profile photo, and years of their old conversations sitting right above the new message. What is the move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Reply in the thread with a question only the real Katrina could answer, such as their first year adviser's name."
+            },
+            {
+              "id": "b",
+              "text": "Ask her onto a video call before he sends anything, since a stranger driving her account could not manage one."
+            },
+            {
+              "id": "c",
+              "text": "Ring Katrina on the number he already has for her, and treat the request as unanswered until she picks up."
+            },
+            {
+              "id": "d",
+              "text": "Send nothing tonight and ask two blockmates in the morning whether the story about her lola is true."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "threat_recognition",
+          "explanation": "Nobody here sends money, so that is not what the question is about. Whoever holds the account holds the history, which means a question about first year is answered by scrolling up, and every reply lands in the channel the attacker is driving. A video call is met with a broken camera, a bad signal, or a face he was not expecting. Waiting until morning to ask blockmates spreads the story around without ever reaching Katrina, and it leaves the request live all night. The only check that means anything is a second channel Jomar chose: a number he already had, dialled by him. If she picks up and knows nothing about it, he has also just found out her account is gone, which is worth more to her than the ₱2,000."
+        },
+        {
+          "prompt": "Divine gets an email saying her wallet account needs re-verification within 48 hours or transfers will be paused. Nothing about it looks wrong: her name is spelled correctly, the logo is right, and there is a button to finish the process. She has genuinely been meaning to update her details, so this may well be real. What should she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Ignore the button, open the wallet app she installed herself, and see whether the same notice is waiting inside it."
+            },
+            {
+              "id": "b",
+              "text": "Ignore the button, and reply to the email asking support to confirm the message really did come from them."
+            },
+            {
+              "id": "c",
+              "text": "Ignore the button, and check the sender address against an older receipt from the same wallet company before deciding."
+            },
+            {
+              "id": "d",
+              "text": "Ignore the button, and search for the wallet's login page instead, using the first result that comes back."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "threat_recognition",
+          "explanation": "The message may be perfectly genuine, and it still does not matter, because arriving by her own route costs Divine a minute when it is real and saves her everything when it is not. Not using the button is only half of it. The other half is where she goes instead. A reply reaches whoever sent the message, so a confirmation by reply confirms nothing. A sender address is a label that can be set, and matching it against an old receipt tests the label rather than the sender. A search result is not a route she chose either, since a paid slot can sit above the real one. The app she installed herself is the only one of the four that nobody else could have arranged for her, and if the notice is real it will be waiting there."
+        },
+        {
+          "prompt": "A page opens with the logo and layout Arnel expects from his bank, whose real address is pilipinassavings.com.ph. The address in the bar reads pilipinassavings.com.ph.account-secure.example/login. He checks the bank's name letter by letter and every character is correct. Why is this still not his bank?",
+          "options": [
+            {
+              "id": "a",
+              "text": "There are too many dots in it, and a genuine bank address does not carry more than one of them anywhere."
+            },
+            {
+              "id": "b",
+              "text": "It probably is his bank, since every character of the bank's name appears in the address and is correctly spelled."
+            },
+            {
+              "id": "c",
+              "text": "It is his bank as long as the padlock is showing, since a padlock is only issued to the company named in it."
+            },
+            {
+              "id": "d",
+              "text": "Walking left from the slash and past the ending, the owner is account-secure, and the bank's name is decoration."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "threat_recognition",
+          "explanation": "An address is read from the right, and you stop at the first single slash. Walk left from there, skip the ending, and the very next word is the one that decides whose computer answers you. Here the ending is .example and the next word going left is account-secure, so that is whose site this is. Everything further left is the owner's to arrange however he likes, which is how the bank's name came to be spelled perfectly inside somebody else's address. Counting dots is not the rule: pilipinassavings.com.ph carries two of its own, and Philippine addresses on .com.ph and .gov.ph routinely carry more. The correct spelling is the point of the costume rather than evidence against it. A padlock is about encryption and not about identity. In practice you do not want to be parsing addresses under pressure at all, which is why the habit is to reach a login through a bookmark or the app instead."
+        },
+        {
+          "prompt": "Doing the inventory from lesson one, Kaye finds a chat thread from eight months ago. In it she sent a photo of the front of her ID, a selfie holding it beside her face, and a filled-in form carrying her signature, to a recruiter who then stopped replying and later deleted the account. What is the honest situation now?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Deleting the thread on her side removes the copies, so she should clear it now and treat the matter as closed."
+            },
+            {
+              "id": "b",
+              "text": "Those copies left her hands permanently, so the useful move now is watching for anything opened in her name."
+            },
+            {
+              "id": "c",
+              "text": "An ID photo cannot be used for anything without the physical card in hand, so there is nothing here to act on."
+            },
+            {
+              "id": "d",
+              "text": "Since the recruiter deleted the account, whatever they held went with it and her exposure ended there."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "data_handling",
+          "explanation": "A document you sent is a copy somebody else now owns. Deleting your side of a thread removes your copy and nothing else, and an account being deleted says nothing about what was saved off it months earlier. The combination Kaye sent is the strong one: an ID, a selfie proving a face goes with it, and a signature. That set is built for opening things in somebody's name. The physical card is not required for that. So the realistic response is not to undo it, which cannot be done, but to stop treating a surprise notice or an unfamiliar account as spam, and to change what she sends next time and at what stage. Chapter two covers who collects this and how, and chapter three covers what to do the hour you find out something was opened."
+        },
+        {
+          "prompt": "Rhea has been messaging someone for seven weeks after a wrong number text. He has asked her for nothing at all. Last night he mentioned in passing a platform he puts money into on the side, then changed the subject, adding that he does not usually talk about it. Rhea messaged him two days later asking him to explain it. What is the tell she should be reading?",
+          "options": [
+            {
+              "id": "a",
+              "text": "That he has asked for nothing in seven weeks, which is unusual enough to suggest his interest in her is real."
+            },
+            {
+              "id": "b",
+              "text": "That the returns sound too good, which is a question for somebody who understands investing."
+            },
+            {
+              "id": "c",
+              "text": "That he would not come on a video call last month, which is the single test that settles whether a person is real."
+            },
+            {
+              "id": "d",
+              "text": "That she did the asking, and that a reason to keep it quiet was attached before any money came up."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "threat_recognition",
+          "explanation": "Seven weeks with no request is not evidence of good intentions; it is the cost of the setup, paid so that the request arrives after you would defend the person making it. The inversion is the craft: he mentioned it and stopped, she chased it, and now the decision feels like hers to defend. Secrecy attached to something before money is even discussed is the isolation being installed early. A video call is not a test that settles anything, and a bad one is easily explained away. Whether the returns can be real is a genuine question and it belongs to Basic Finance, which teaches where a promised return has to come from; if it ends up on a chain, Basic Blockchain has that. What Rhea owns right now is the relationship, the secrecy, and what she has already given away."
+        },
+        {
+          "prompt": "Arnel's phone rings and the screen shows his bank's name. The caller knows his full name and the branch where he opened the account, and says a transfer is being blocked right now and she needs to confirm a few things with him. He tells her he will ring back. Which number should he ring?",
+          "options": [
+            {
+              "id": "a",
+              "text": "The number sitting in his recent calls list, since that is the number the bank has just been ringing him from."
+            },
+            {
+              "id": "b",
+              "text": "The number printed on the back of the card in his wallet, which he has carried since the day it was issued."
+            },
+            {
+              "id": "c",
+              "text": "The direct line she read out to him before he hung up, since he is the one placing the call this time."
+            },
+            {
+              "id": "d",
+              "text": "The number that comes back first when he searches for his bank's name and the word hotline."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "threat_recognition",
+          "explanation": "Ending the call is the easy half and every option here does it. The callback rule has two moving parts, and the second one is that the number is one he sourced himself. Caller ID is a claim, so the number in his recent calls list is that claim written down, and dialling it dials whatever was displayed. A direct line read out by the caller is the caller's number whichever end places the call, and being invited to ring it back is the script anticipating him. A search result is not a number he sourced, since a paid slot can sit above the real one and a hotline is exactly the search somebody would buy. The card in his wallet was printed by the bank and has been in his pocket since before this call started. Knowing his branch proves nothing either, because details leak and get bought."
+        },
+        {
+          "prompt": "At a small shop in Cubao the counter has a printed QR code taped to it for payments. Bea notices the sticker looks newer than the laminated sign behind it and is slightly crooked. The cashier is busy and there is a queue behind her. What should she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Skip the code, open the wallet app she installed herself, and pay to the shop's own details or in cash."
+            },
+            {
+              "id": "b",
+              "text": "Skip the code and pay in cash now, then scan it at home later to find out where it actually pointed."
+            },
+            {
+              "id": "c",
+              "text": "Skip the code for the moment, and scan it only once the cashier has confirmed the sticker is the shop's own."
+            },
+            {
+              "id": "d",
+              "text": "Skip the code, and pay through the link on the shop's Facebook page, which she can find while she queues."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "threat_recognition",
+          "explanation": "A QR code is a link you cannot read until you have already followed it, so scanning one is the same act as tapping a link a stranger sent, and it is no safer at home on the sofa than at the counter. A busy cashier does not necessarily know what is taped to the counter, and asking a queue-pressured stranger to vouch for a sticker is not verification. A page she finds while queueing is a route somebody else could have arranged for her, which is the whole lesson. The queue itself is the time pressure, working exactly as intended. Paying through an app she opened herself removes the question rather than answering it."
+        },
+        {
+          "prompt": "Bea's inventory turns up a photo filter app she installed two years ago and has not opened since. When she installed it she allowed it to reach her contacts and to post using her account. She is about to move on to the next item, since she does not use the app any more. What is worth understanding here?",
+          "options": [
+            {
+              "id": "a",
+              "text": "An app that is never opened cannot do anything, so a permission sitting on a dormant app carries no real risk."
+            },
+            {
+              "id": "b",
+              "text": "A permission expires on its own after a long enough stretch of no use, which has already happened in this case."
+            },
+            {
+              "id": "c",
+              "text": "The access carries on working whether she opens the app or not, and it reaches her contacts and her name."
+            },
+            {
+              "id": "d",
+              "text": "Removing the app from her phone withdraws every permission she granted it, the posting access included."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "data_handling",
+          "explanation": "A permission is standing access, not something that runs only while you are looking at an app. Nobody has to open anything for a granted permission to keep being useful, and it does not lapse because you lost interest. That matters here because of what she granted: her contact list, which is a route to other people, and the ability to post using her name, which is the borrowed trust from lesson one. Deleting an app from a phone removes the app, and access that was granted to an account can outlive it, which is why the two have to be checked separately. This is why the inventory has a fourth item at all. Chapter two picks up what to do with the permissions you find."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-2-the-plays-and-what-each-one-takes",
+      "title": "The plays, and what each one takes",
+      "description": "Three plays aimed straight at this audience, each read by what it is actually taking rather than by the story it tells: a job that charges you, a code that hands over an account, and an app whose real product is your contact list.",
+      "lessons": [
+        {
+          "slug": "fake-jobs-and-task-scams",
+          "title": "What a fake recruiter is collecting",
+          "content_mdx": "# What a fake recruiter is collecting\n\nMarilou is 22, in Tacloban, and has been applying for home based encoding work for a month. A recruiter replies within the hour. Two friendly messages later she is told she got the job. Then the onboarding pack arrives: a photo of her ID front and back, a selfie holding that ID beside her face, her bank account name and number, a copy of her last payslip, and a form to sign with several fields left blank.\n\nNobody asks her for a single peso.\n\nThat is the version worth teaching, because the one with a fee is the easy one. Basic Finance already holds that rule flat, that an employer pays you and you do not pay an employer whatever the fee is called, and it covers the task scam that pays you small amounts before asking you to top up. This lesson is about the recruiter who wants no money at all. What they are collecting is you.\n\n## What each document opens\n\n**The ID photo, front and back.** On its own it is a picture of a card. It is also enough to start an application in your name at a service that never sees you in person.\n\n**The selfie holding it.** This is the one to guard. The document and your face together are what a live person check is built around, so the pair turns a picture of a card into a claim that you were there and agreed.\n\n**The bank or wallet account name and number.** Presented as where your salary will go. It is also a destination somebody else can name, and a detail that makes the next message you receive sound like it came from inside your bank.\n\n**The payslip or certificate of employment.** Your employer, your salary, your employee number, your signature block, and a clean template to copy.\n\n**The signed form with blanks in it.** Your signature is the part you cannot take back, and the blanks above it can be filled in later with anything.\n\n**The friendly questions.** Birthday, mother's maiden name, first school, the city you were born in. On a form they look like human resources doing its job. They are also the standing answers to account recovery questions, which chapter three takes further.\n\n## The order is the tell\n\nReal hiring has a shape. You talk to somebody, you get an offer you can read, carrying a company name and a person you can reach through a route you found yourself, and only then does anything with your ID on it move. Documents come after there is something to attach them to.\n\nReverse that order and the documents are the point. If the identity pack arrives before the interview, before a written offer, or before the company has a name you could look up on your own, the job is the wrapper and the pack is the product.\n\nSo do not become the applicant who refuses everything. Know the stages instead. At application: your resume, your samples, your links. At offer: your name as it appears on your ID, so a contract can be drawn up. At onboarding, once you hold a signed offer: the ID copies, the account details, the government numbers. Sending them then is normal, and refusing then would be strange. The stage is the whole question.\n\n## The offer to receive and forward\n\nSame week, different message. It is called payment coordinator, remittance officer, or finance assistant. A client will send money to your GCash or your bank, you keep a cut, you forward the rest the same day. There is no fee. The first transfers are real and you are paid on time.\n\nThis is not a job. What is being hired is your account and your name. Money that has to travel through a stranger's personal account is money that does not want to be traced, and the trail stops with the account holder, who is you. When the person it was taken from starts looking, your name is the one written on the transfer.\n\nNothing in the story changes that. Not a contract, not a company name, not screenshots of other coordinators being paid. An employer pays you for work. It does not need your account as a stop on the way to somewhere else.\n\n## If you already sent them\n\nYou cannot un send a photo. What you can still do is treat everything in that pack as answers somebody now holds. Anything using your birthday, your mother's maiden name or your school as a recovery answer needs changing, and any account you named in the form needs its second step looked at. Keep the thread, the profile and the messages instead of deleting them in embarrassment. Chapter three walks the hour after, in order.\n\n## Try this\n\nSearch your chat threads for the last photo of your ID you sent. Note who received it, what stage that process had reached, and whether you could reach that person today through a route you chose yourself. Write down the ones you would not send again.\n",
+          "duration_minutes": 9
+        },
+        {
+          "slug": "the-code-and-the-number",
+          "title": "The code and the number",
+          "content_mdx": "# The code and the number\n\nA one time code is not a password and not a secret in the ordinary sense. It is the system stopping, turning to you, and asking whether you personally want this one thing to happen right now.\n\nSo reading a code to somebody does not tell them about the action. It hands them the action.\n\nThat is also why nobody who genuinely works at your bank, your wallet provider or a platform will ever ask you for one. They are already inside. The code exists to prove that you are.\n\n## The scripts\n\n**The fraud team calling you.** A transfer is being attempted right now, they are blocking it for you, a code is coming, read it back quickly. They use your name and maybe a recent transaction, which is easier to obtain than it feels and proves nothing about who is calling.\n\n**The buyer who wants to verify you.** You are selling a phone on Marketplace. The buyer says the payment is sitting ready and will release once you confirm the code that just arrived. A buyer paying you needs nothing at all from your phone.\n\n**The friend who cannot receive a code.** A message from an account you know. I am locked out, my number is not receiving, can I borrow yours, a code will arrive, just send it over. Your friend is not on the other end. That account was taken an hour ago and you are the next one on the list.\n\n**The courier and the raffle.** A delivery to confirm, a prize to claim, a code to read back before either can be released.\n\n## The tell that survives every script\n\nThe code message itself names the action it authorises. Open it and read it before you say anything.\n\nIf the message says the code will sign someone in, reset a password or add a device, and the caller says it will block a transfer, then one of them is lying and it is not the message. Remember also why the code arrived at all: somebody typed your number or your address into that flow seconds ago. An unrequested code is not a warning that someone might try. It is someone trying, now.\n\nChapter one gave you the habit, which is to end the call and reach the institution by a route you chose. This is where it earns its keep, because the pressure in these calls is deliberate. A caller who cannot let you hang up and ring back has answered your question for you.\n\n## Your number is part of the lock\n\nOnce codes arrive by text, your number stops being a contact detail. It is a key. Whoever receives your codes can run the reset flows on their own: type your address into the forgotten password page, receive the code, set a new password, and be you.\n\nWhich gives an attacker a second route. Rather than getting a code out of you, they can arrange to receive your codes directly, by persuading whoever handles the process that they are you and that your number belongs on a SIM they are holding. What that process requires differs between providers and has changed before, so look yours up at the source rather than trusting a description in a chat. What matters here is the effect. Your codes now arrive somewhere else, and you were never asked.\n\n## What it looks like from your side\n\nYour phone quietly loses service in a place where you always have signal. Nobody beside you has the same problem. Calls and texts stop reaching you while the world still reaches your old number, so your friends notice nothing. Sometimes a flood of junk messages comes first, which is there to make you silence the phone or stop reading it.\n\nTreat a dead phone as a takeover until you know otherwise. Two moves belong here and the rest is chapter three.\n\nDo not start any reset that sends a code to that number, because you would be handing the reset to whoever holds it now. And get to another device and secure your mailbox first, since the mailbox is where every other reset lands.\n\n## Where SMS sits\n\nA code by text is the weakest of the real second factors, because it rides on the number and the number can be moved without you.\n\nIt is also much better than nothing. With it, a stolen password on its own stops being enough, and passwords are stolen in bulk from places you have no control over.\n\nSo the answer is never to switch it off and sit with a password alone. The answer is to move the accounts worth taking onto a second factor that does not depend on your number. Chapter three sets that out as a ladder and tells you how to find out where each of your own accounts can sit on it.\n\n## Try this\n\nOpen the last one time code message you received. Read the sentence around the code and write down the action it names. That sentence is the one a caller will need you to ignore.\n",
+          "duration_minutes": 9
+        },
+        {
+          "slug": "lending-apps-and-your-contact-list",
+          "title": "The permission you grant at install",
+          "content_mdx": "# The permission you grant at install\n\nDennis needs ₱4,000 before payday. Rent is short and his mother's maintenance medicine is due. He installs a lending app that promises approval in minutes. Before it shows him a single figure, it wants his contacts, his photo gallery and his messages.\n\nHe thinks he is deciding whether to borrow. He is deciding something larger and quieter, and he has about four seconds to do it while the loading screen waits.\n\n## Why the app wants your phonebook\n\nLending is priced on the chance you repay. A lender looking at a borrower with no payslip, no collateral and no long record has to find its assurance somewhere.\n\nWhen the app asks for your contacts and your gallery, that is where it found it. The permission is not a feature you receive. It is part of what you are paying with. Your phonebook is the leverage, and your gallery is what makes a message about you land harder.\n\nBasic Finance carries the rest of that story: what the loan really costs once the rate is turned into pesos, what to do when you cannot pay, and where a complaint about a lender goes. This lesson is about the decision that comes before all of it, the one Dennis is making at the loading screen.\n\n## What the leverage looks like when it is used\n\nDennis pays a day late. The messages do not go to Dennis.\n\nThey go to his sister, his old team leader, a client from two years ago, the number saved as Kuya Tricycle. Sometimes it is a group chat assembled out of his phonebook. Sometimes it is a photo from his gallery with words added to it.\n\nThat is what the permission bought. A lender who can only reach you has to deal with you. A lender who can reach everybody who knows you does not.\n\nPaying does not reliably switch it off, because the pressure is the collection method rather than a step on the way to one.\n\nAnd none of it is yours to absorb quietly. There is a line between collecting a debt and this, there is a regulator for the lending and another for the misuse of your contact list, and lenders operating here are required to be registered. Chapter three covers making the report and keeping every message while it happens.\n\n## Match the permission to the job\n\nOne question, and it works on every app rather than only the lending ones.\n\nWhat does this app do, and what would it need in order to do that?\n\nA camera app needs the camera. A ride app needs your location while you are using it. A messaging app needs your contacts, because contacting people is the thing it does. A calculator, a wallpaper pack, a torch or a loan app asking for your phonebook is not being convenient. It is running a second business, and your contacts are its stock.\n\nThe mismatch is the whole signal. You do not have to work out what they intend to do with it. You only have to notice that the request does not fit the job.\n\n## Say no before, not after\n\nDeny it at the request rather than later in a settings review. Once you grant access to a list, a copy of that list can be taken in the first seconds. Revoking afterwards stops the next read. It does not reach back for the copy that already left your phone.\n\nThat makes install time the moment that counts. Installing something just to see what it offers has already made the decision, because the asking comes before the offering.\n\nYour phone also gives you more answers than yes and no. Depending on the handset you may be able to allow something once, or only while the app is open, or choose individual photos instead of handing over the whole gallery. Look for those options where the request appears instead of assuming the choice is all or nothing.\n\nAnd if an app refuses to open at all unless you give it something it has no use for, you have your answer. Close it.\n\n## Audit what you already said yes to\n\nDo this once a quarter, or the next time your phone feels slow. Go down your installed apps and ask three things of each.\n\nDo I still use this one? The app from a single trip, the game a cousin recommended, the filter you opened once.\n\nWhat does it hold? A gallery, a phonebook, a location history, a saved card, a scan of something.\n\nWhat did I grant it, and would I grant that today?\n\nUninstall the dead ones and revoke what does not fit on the ones you keep. Being late does not make it pointless.\n\nOne thing this pass misses. The apps and sites you signed into using your email or your social account keep their access even after you delete the app from your phone, because that access lives on the account rather than on the handset. Chapter three handles those inside the hardening pass.\n\n## Tell your own people, in your own words\n\nIf a phonebook has gone, the people in it are yours to warn, and hearing it from you first changes what they believe later. One line to the group chat does it. An app I installed has my contacts, so if anything about me reaches you from a number you do not know, it did not come from me, check with me first.\n\nThat sentence costs you nothing today and takes the sting out of anything that arrives later.\n\n## Try this\n\nOpen your list of installed apps and pick the three you use least. For each one, write down what it can reach on your phone. Remove one of them today.\n",
+          "duration_minutes": 10
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Marilou applies for home based encoding work. Two friendly messages later the recruiter says she is hired and sends an onboarding pack to fill in: a photo of her ID front and back, a selfie holding it, her bank account name and number, and a form to sign with blank fields. There has been no interview, no written offer, and no fee. What should she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Send the ID photo now but hold back the selfie and the account details until her first payday has actually arrived."
+            },
+            {
+              "id": "b",
+              "text": "Send nothing yet, find the company through a route she chose herself, and confirm the role before any document moves."
+            },
+            {
+              "id": "c",
+              "text": "Complete the pack, since no money is being asked for and identity documents are a normal part of onboarding anywhere."
+            },
+            {
+              "id": "d",
+              "text": "Ask the recruiter for a company ID and a photo of their business permit first, then send the whole pack once those arrive."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "threat_recognition",
+          "explanation": "The order is the tell. Documents come after there is something to attach them to: an interview, a written offer, a company you can reach on your own. Nothing here has a name she found herself. A company ID and a permit photo are images, and images are the easy part to produce. Splitting the pack still sends her ID, and waiting for a payday that never comes just means she sent it earlier."
+        },
+        {
+          "prompt": "A week ago Jomar sent a recruiter his ID photo, a selfie holding it, his last payslip and a form carrying his birthday and his mother's maiden name. The account has since vanished and the company has no trace anywhere he can find. What is the useful move now?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Message the account once more asking them to delete the files, and keep whatever reply comes back as proof."
+            },
+            {
+              "id": "b",
+              "text": "Accept that nothing can be done once photos have been sent, and watch his bank balance carefully for a while."
+            },
+            {
+              "id": "c",
+              "text": "Warn people in his job hunting group chat by name so nobody else in his batch sends the same pack over."
+            },
+            {
+              "id": "d",
+              "text": "Treat those details as answers somebody now holds, and change anything that uses them for account recovery."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "data_handling",
+          "explanation": "He cannot un send a photo, so the work now is limiting what the copy unlocks. His birthday, his mother's maiden name and his school are standing answers to recovery questions, and recovery is the back door into the accounts themselves. Asking a scammer to delete files gets a reassuring reply and nothing else. Warning the group is decent of him, but it protects other people rather than him."
+        },
+        {
+          "prompt": "Angel is offered work as a payment coordinator. A client sends money to her GCash, she keeps ₱500 of each transfer and forwards the rest the same day. There is no fee, no training kit, and the first two transfers really did pay her. What should she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Refuse the arrangement, because what is being hired here is her account, and the trail ends at her name."
+            },
+            {
+              "id": "b",
+              "text": "Ask for a contract naming the company, then carry on if the paperwork looks proper."
+            },
+            {
+              "id": "c",
+              "text": "Carry on but screenshot every transfer, so that she can show later she only forwarded what the client sent."
+            },
+            {
+              "id": "d",
+              "text": "Take the work while it lasts, since none of her own money is at risk and the task itself is simple."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "threat_recognition",
+          "explanation": "Money that has to travel through a stranger's personal account is money that does not want to be traced, and the account holder is the name on the transfer when somebody comes looking. A contract does not change whose account it is. Screenshots record her part in it rather than excusing it. Being paid on time and asked for nothing is what keeps the arrangement running."
+        },
+        {
+          "prompt": "Rico is selling a phone on Marketplace. The buyer says he has already paid and the wallet will release the money once Rico reads back the code that just landed on his phone, to confirm he is the real seller. The code message is sitting unopened. What is the right move?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Give the code to nobody and block the buyer, without opening the message the code came in."
+            },
+            {
+              "id": "b",
+              "text": "Give the code to nobody and ask him to send the payment again, so a second code arrives to compare against the first."
+            },
+            {
+              "id": "c",
+              "text": "Open the code message, act on the action it names rather than on the buyer, and give the code to nobody."
+            },
+            {
+              "id": "d",
+              "text": "Give the code to nobody, and read one out only if a second message arrives from the wallet confirming him."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "threat_recognition",
+          "explanation": "None of these hands the code over, so that is not what the question is about. The code message names the action it authorises, and reading that sentence is what breaks every version of this script, because no wallet needs a code from a seller before it releases a payment. Blocking without opening leaves Rico not knowing what was just attempted on his account, which is the thing that has actually happened. Asking for a second code invites a second attempt. Waiting for the wallet to confirm the buyer waits for a message a wallet does not send, and the one that arrives will be another text with a label on it."
+        },
+        {
+          "prompt": "A code lands on Nikko's phone at 9pm. He did not ask for one, nobody has called him, and the message says it will sign someone in to his e-wallet. He is about to ignore it and go to sleep. What should he do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Treat it as somebody typing his details into the wallet sign-in now, and change that password tonight."
+            },
+            {
+              "id": "b",
+              "text": "Reply STOP so no further codes reach his number, then look at the account properly in the morning."
+            },
+            {
+              "id": "c",
+              "text": "Ignore it, since a code is only dangerous once somebody has heard it, and nobody has spoken to him at all."
+            },
+            {
+              "id": "d",
+              "text": "Wait to see whether a second code arrives before he does anything, since one on its own may be a mistake."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "threat_recognition",
+          "explanation": "An unrequested code is not a warning that somebody might try. It is somebody trying, now. The code exists because a person typed his address or his number into that sign-in seconds ago, which means they already hold something of his and are one step from the rest. Ignoring it leaves them there to try again with a better story. STOP is a reply to whoever arranged the sending, and it silences the alarm rather than the intruder. Waiting for a second code is waiting for the attempt to succeed. The code itself is safe while it stays on his phone, and the password behind it is the part somebody else already knows."
+        },
+        {
+          "prompt": "Kim's phone loses service mid afternoon in Quezon City where her signal is always fine, and her officemate on the same network has full bars. Her email and her wallet are both tied to that number. Her first instinct is to open her laptop and reset her email password. What should she do first?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Restart the phone and wait until the evening, since coverage drops out from time to time and comes back on its own."
+            },
+            {
+              "id": "b",
+              "text": "Run the email password reset from the laptop now, so the code is waiting the moment signal comes back."
+            },
+            {
+              "id": "c",
+              "text": "Message her contacts from the laptop to warn them that her number may no longer be reaching her at the moment."
+            },
+            {
+              "id": "d",
+              "text": "Treat the number as taken and secure the mailbox from another device without sending any code to that number."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "incident_response",
+          "explanation": "A phone that goes quiet while the phone beside it works is a takeover until proved otherwise. Any reset that sends a code to that number hands the reset to whoever holds it now, which makes it the worst available first move. Warning her contacts matters, but the mailbox holds the resets for everything else and it goes first."
+        },
+        {
+          "prompt": "Dennis installed a lending app three months ago and granted it his contacts, his photos and his messages. The loan is fully repaid and he has not opened the app since. What is worth doing now?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Leave it as it is, since the loan is settled and the permissions only mattered while he still owed money on the loan."
+            },
+            {
+              "id": "b",
+              "text": "Revoke the permissions and then remove the app, while understanding that any copy taken earlier has already gone."
+            },
+            {
+              "id": "c",
+              "text": "Revoke the permissions but keep the app installed, in case he needs another fast loan before a later payday."
+            },
+            {
+              "id": "d",
+              "text": "Delete the app, which takes its access away along with everything it collected while it was installed."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "data_handling",
+          "explanation": "Revoking stops the next read, and there is always a next read, so it is worth doing late. What it cannot do is reach back for the copy taken in the first seconds, and deleting the app does not retrieve that copy either. Keeping it installed for convenience keeps a live permission sitting on a phonebook that is not only his."
+        },
+        {
+          "prompt": "Pia installs a photo editing app a friend recommended. Before it will open at all, it asks for her gallery, her contacts and her messages. She is on a deadline for a client graphic. What should she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Grant all three now to get moving, then go back after the deadline and revoke whatever turns out to be unnecessary."
+            },
+            {
+              "id": "b",
+              "text": "Grant the gallery and contacts but refuse messages, since sharing an edit needs a destination."
+            },
+            {
+              "id": "c",
+              "text": "Grant only the gallery and treat the other two requests as a sign of what the app is really selling."
+            },
+            {
+              "id": "d",
+              "text": "Grant everything, since an app with good reviews on the store has already been checked out by other people."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "data_handling",
+          "explanation": "Match the permission to the job: editing photos needs photos, and nothing about the job explains contacts or messages. Granting now and tidying later gives away the copy, since revoking stops the next read rather than the last one. Reviews say people liked the editing, not what the app collected while they used it."
+        }
+      ]
+    },
+    {
+      "slug": "chapter-3-hard-to-take-and-the-first-hour",
+      "title": "Hard to take, and the first hour",
+      "description": "The defences that actually change the outcome, in the order that pays: the accounts worth hardening first, the standing habit about what you hand over, and a checklist for the hour after it has already gone wrong.",
+      "lessons": [
+        {
+          "slug": "make-the-account-expensive-to-take",
+          "title": "Make the account expensive to take",
+          "content_mdx": "# Make the account expensive to take\n\nNobody can make an account impossible to take. What you can do is make it cost more than it is worth, so whoever is working through a list of stolen passwords gives up on your name and moves to the next one.\n\nDo the pass in the order that protects the most value first: your email, then the accounts that hold or move money, then the social accounts that would speak in your voice to people who trust you.\n\n## Email first, because email is the master key\n\nChapter one named the cascade. Whoever holds your mailbox holds the reset link for everything else, so one evening spent on your email is worth more than a week spent on the rest.\n\nNelia, a VA in Dumaguete, had a scare and spent a Saturday hardening her wallet and her Facebook. She left alone the free mailbox she opened in first year college and had not read since. That old address was still sitting there as the recovery email on her main mailbox. She had bolted the front door and left a key under the mat.\n\nHarden every mailbox you own, including the abandoned one. If you genuinely cannot get back into an old address, then remove it from every account that still lists it.\n\n## One password per account\n\nA reused password means a break-in anywhere is a break-in everywhere. Somebody buys a password from a shopping site you forgot you joined, then tries the same email and password on your mailbox, then on your wallet. Nothing clever is happening. It is a list, tried in bulk, and a match costs the attacker nothing.\n\nOne password per account is only possible with a password manager, because you cannot hold thirty of them in your head. Judge one by what it does rather than by the brand or the price. It stores. It generates a long random password so you never have to invent another one. And it refuses to fill a login on an address it does not recognise, which is the free tripwire from chapter one: if the manager will not fill, read the address before you type anything.\n\nThen set one up rather than reading about them. Install it on the phone and the browser you actually use. Set one long passphrase for the manager itself, several unrelated words, and write that one on paper at home, because it is the only password you now have to remember. Then move three accounts into it tonight, mailbox first, generating a new password for each as you go rather than saving the old one.\n\nLong and unique beats clever and short. Several unrelated words you can actually type will hold up better than a short word with a few letters swapped for symbols, which adds far less than it feels like it does.\n\n## The second factor is a ladder\n\nA password on its own means one stolen string is the whole lock. A second factor means the thief needs the string and something else.\n\nClimb as far as each account lets you:\n\n1. Nothing at all.\n2. A code sent to you by SMS.\n3. A code from an authenticator app on your phone.\n4. A passkey or a physical security key.\n\nSMS sits low for the reason chapter two gave: whoever controls the number receives the codes, and a number can be taken. It still beats nothing by a distance, so if SMS is all an account offers, switch it on today instead of waiting for something better. Where an account offers an authenticator app or a passkey, climb. What each service supports keeps changing, so open the security settings of your own accounts and look, rather than trusting anybody's list, including this one.\n\n## Recovery is the back door\n\nPeople bolt the front and leave the back open. The recovery path is a second way into the same account, and it is usually the softer one.\n\nOn each account that matters, work through four things.\n\n**The backup email.** Is it an address you still control and still read?\n\n**The backup number.** Is it a number you still hold? A number you stopped paying for does not stay yours forever.\n\n**The security questions.** Mother's maiden name, first school, first pet, the town you were born in. If the answer sits on your public profile, it is not a secret. Answer with something unrelated and store that answer in your password manager.\n\n**The recovery codes.** Save them where a lost phone, a fire or a flood cannot take every copy at once. Printed and kept at home, plus one copy in your manager, is enough.\n\n## Finish the pass\n\nChanging a password does not evict somebody who is already inside. Close the leftovers they rely on:\n\n- Sign out other sessions, on every device.\n- Review connected apps and remove anything you do not recognise or no longer use.\n- Check your mailbox for forwarding rules and filters. A rule quietly copying your mail to a stranger survives every password change you will ever make.\n\nDo one account tonight, and make it your email. Password changed, second factor moved up a rung, recovery cleaned out, other sessions signed out, forwarding checked. Then put the next two accounts in your calendar for this week, and stop there. A pass you finish on three accounts beats a plan you abandon on twelve.",
+          "duration_minutes": 9
+        },
+        {
+          "slug": "what-you-hand-over",
+          "title": "What you hand over, and to whom",
+          "content_mdx": "# What you hand over, and to whom\n\nMarivic works nights at a call centre in Bacolod. Counting back through her chat threads, she has sent a photo of her ID eleven times this year: a room rental, a lending app, two raffles, a gym membership, a seller who wanted it before shipping, and five recruiters. She could not tell you where a single one of those copies is now, or who else has seen it.\n\nNone of that was a scam. That is the point. The exposure builds out of ordinary requests you said yes to without thinking, and the habit that fixes it is a standing one rather than a reaction to an obvious fraud.\n\n## Three questions before anything leaves your hands\n\n**Who is asking?** Not the name in the message, the organisation, and whether you went to them or they came to you.\n\n**What is it for?** A specific step in a process you are actually in, or a vague requirement nobody has explained?\n\n**What can they do with it if they are not who they say they are?** This is the question that changes behaviour, because it is the only one that assumes the answer to the first one might be a lie.\n\n## Copies of your ID\n\nSend the minimum. Send it at the stage of a process where it is normal, which is almost never the first message.\n\nMark the copy. Write across the image what it is for and the date, placed so the details the recipient legitimately needs stay readable. A copy that reads \"for room rental application, 12 March\" is harder to hand on for opening an account in your name somewhere else. Some organisations will ask for a clean copy instead, and that is a conversation to have with a named person at an organisation you approached, not with an account that messaged you first.\n\nTreat the selfie holding your ID as a bigger ask than the ID by itself, because it exists to prove that a live person is holding that document. So does a short video of your face. When somebody wants both the document and the proof that you are standing behind it, they are assembling everything needed to be you.\n\n## Your public profile is somebody's answer sheet\n\nYour birthday with the year. Your mother's maiden name, in a comment under a family photo. The school and the year you left. The first pet, from a name-your-pet thread. The payslip photo. The boarding pass with the code printed on it. The new company ID posted the day you got hired, showing your full name, your employee number and where you work.\n\nEach one is harmless. Together they answer the security questions from the last lesson and they hand a stranger enough detail to open a call sounding like somebody who already knows you.\n\nThe move is not to delete your life. It is to keep the answer set out of it: lock down what does not need to be public, stop answering the fun quizzes that are shaped exactly like recovery questions, and remember that your mother's maiden name is not a secret. It is a fact, and facts get looked up.\n\n## Screen sharing and remote control\n\nNobody legitimate walks you through installing a remote control tool during a call. Not your bank, not a platform's support, not a courier, not a government office.\n\nThe reason is simple. Once it is installed, the person on the other end has your screen and often your keyboard, which means your mailbox, your wallet, and every code that arrives while they watch. If you are already in that call, end it, uninstall the tool, and treat it as an incident using the next lesson.\n\n## Devices that are not only yours\n\nThe computer shop, the borrowed laptop, the family tablet, the office machine.\n\nAssume a browser you do not own remembers what you type. Do not tick remember me. Sign out when you finish, and later, from your own device, sign out other sessions as well. Do not leave documents you care about sitting in a downloads folder on a machine somebody else uses. A family account whose password everyone knows is not an account with a password on it.\n\nIf you handle a client's material, the device holding it is part of your exposure and theirs. How you actually run client work belongs to the freelancing and client operations courses. What this course asks is narrower: the machine that file sits on should be yours, and hardened the way the last lesson describes.\n\n## Do this today\n\nOpen your sent folder and your chat threads and search for your own attachments. Write the list of who currently holds a copy of your ID. You cannot pull those copies back, and that is not the point. The point is that the list stops growing tonight, because from now on nothing leaves your hands until you have answered the third question out loud.",
+          "duration_minutes": 8
+        },
+        {
+          "slug": "the-first-hour",
+          "title": "The first hour",
+          "content_mdx": "# The first hour\n\nJerome, a freelancer in Antipolo, is on his phone at 11:40 at night when a login alert arrives from a city he has never visited. He taps through to change his password and it does not work. It has already been changed.\n\nWhat follows is the checklist for that hour, written for somebody whose hands are shaking. The order matters more than the speed. The instinct is to run at the loudest problem, which is usually the money, and that is the wrong first move.\n\n## 1. The mailbox, before anything else\n\nEven when the visible loss is somewhere else. An attacker sitting inside your mailbox undoes every other fix you make, because every other fix ends in a reset link that lands there.\n\nChange the mailbox password. Sign out all sessions. Then hunt the leftovers, which is the part people skip: recovery addresses and numbers that were added, forwarding rules, filters that quietly move warning mail out of your inbox, connected apps, and any app passwords issued to devices you do not recognise.\n\nIf you cannot get in at all, start the account's own recovery from a device you control. Read step 3 first if your phone has lost service.\n\n## 2. Money, through a route you chose\n\nReach your bank or wallet the way chapter one taught: the app you installed yourself, the number printed on your card, a branch. Never the number in the message, and never a link somebody sent you. Say what happened and what you want done, and write down who you spoke to and when.\n\n## 3. If the phone lost service, the number is taken\n\nA phone that quietly drops to no service while the world still reaches your number is chapter two's tell, and in this hour you treat it as confirmed rather than possible.\n\nDo not run any reset that sends a code to that number. You would be mailing the key to the person who took the lock. Use the routes that do not depend on it: a recovery code, an authenticator app on a device you still hold, a backup email. Then get to your provider in person, with your ID, and deal with the SIM before you trust that number again.\n\n## 4. Capture the evidence before it disappears\n\nChat threads, the profile that contacted you, the page you typed into, the transaction, the alert emails. Screenshots with the time and date visible, plus the sender's name and the full address where you can see it. Save them somewhere that is not inside the compromised account, because messages get deleted and accounts get closed, sometimes within the hour.\n\nWrite a plain timeline while it is fresh: what arrived, when, what you did, what you clicked. You will not remember this clearly tomorrow.\n\n## 5. Tell the people who will be targeted next\n\nYour contacts, your clients, your employer. Chapter one said an account's value to a scammer is the trust it can borrow to reach the next person, and right now that next person is somebody who trusts you.\n\nSay it plainly and quickly: this account is not mine at the moment, ignore anything sent from it, especially a request for money or for a code, and here is how to reach me instead. Send it from a channel they can verify is you. It is an uncomfortable message to write and it is the step that stops the loss spreading past you.\n\n## 6. Report it\n\nTake it to the institutions, and look up how to reach each one on the day, at the source, through an address you navigated to yourself:\n\n- The platform or provider whose account was taken, through its own account security or fraud channel.\n- Your bank or e-wallet's fraud channel.\n- The Philippine cybercrime authorities, meaning the PNP Anti-Cybercrime Group and the NBI Cybercrime Division.\n- The Securities and Exchange Commission, when an online lending app is the problem. Lending and financing companies operating here have to be registered with it, it publishes which ones are, and it takes complaints about how they collect. Look up its current complaint route on its own site on the day.\n- The National Privacy Commission, where personal data has been misused. Between the two, the Privacy Commission takes the misuse of your contact list and your gallery, and the Securities and Exchange Commission takes the lender itself.\n\nChannels, requirements and contact details change, so do not work from a number in a forwarded post. Keep every reference number you are given. Reporting is not the same thing as a refund request, and nobody can tell you in advance how one ends, so make the report and keep your own record either way.\n\n## 7. The second wave\n\nWeeks later somebody arrives offering to recover what you lost, for a fee paid upfront. It is the same crime finding you again, because being hit once put you on a list of people who can be reached. Pay nothing, keep the message, add it to your report. Basic Blockchain works through why a recovery offer of that shape cannot be what it says it is.\n\n## Write your plan tonight\n\nYou will not compose this at midnight with your hands shaking. Take a sheet of paper now and number your own accounts in the order you would lock them, starting with the mailbox that holds the resets. Beside each one, write how you get in without your phone. Keep it somewhere you can reach without the account it protects.",
+          "duration_minutes": 9
+        }
+      ],
+      "quiz": [
+        {
+          "prompt": "Marlon uses a password manager, a different password on every account, and an authenticator app on his mailbox. That same mailbox still lists a school address he lost access to years ago as its recovery email, and its security answers are his real first school and his real first pet, both of which appear on his public profile. What gives him the biggest gain now?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Replace the stale recovery address and change the security answers to unrelated strings he stores."
+            },
+            {
+              "id": "b",
+              "text": "Set an even longer password on the mailbox, since that is the account every other reset runs through."
+            },
+            {
+              "id": "c",
+              "text": "Add a second authenticator app on the same phone so he has a backup if the first one stops working."
+            },
+            {
+              "id": "d",
+              "text": "Switch off the SMS option on the mailbox so nobody can reach it by taking over his phone number."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "account_hardening",
+          "explanation": "He has hardened the front door and left the back one open. A recovery address he cannot open is an address somebody else may be able to claim, and security answers that are published facts are not answers, they are lookups. A longer password does nothing for a path that never asks for the password, a second authenticator on the same phone shares the same single point of failure, and turning off SMS on an account that already uses an app removes an option without closing the recovery hole."
+        },
+        {
+          "prompt": "Ann-Margaret sells shoes online and has an authenticator app on her seller account. Somebody calls saying they are from the platform's seller support, knows her store name and her last two orders, and says her verification keeps failing: she should turn the second factor off for ten minutes so their system can relink the account, and they will tell her when to switch it back on. What should she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Tell the caller she will not switch it off, stay on the line, and hear out what the relink needs."
+            },
+            {
+              "id": "b",
+              "text": "Tell the caller she will not switch it off, then search the platform's help pages and follow the relink steps she finds."
+            },
+            {
+              "id": "c",
+              "text": "Leave it switched on and take a reference number and a callback number from her, then ring that number back to go on."
+            },
+            {
+              "id": "d",
+              "text": "Leave it switched on, end the call herself, and go back to seller support through the app she installed."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "account_hardening",
+          "explanation": "All four refuse to lower the factor, so the question is what happens next. Staying on the line keeps her inside a conversation that opened with a request to disable her lock, and a callback number she was handed is the caller's number whichever end dials it. Searching for help pages is closer and it is still not a route she chose, since a paid slot can sit above the real one. Knowing her store name and recent orders proves nothing, because order details reach buyers, sellers and anybody reading a screen over a shoulder. She ends the call herself and comes back through the app she installed, which is the only one of the four that nobody arranged for her."
+        },
+        {
+          "prompt": "Erwin learned this week that SMS codes are the weakest second factor. His mailbox offers an authenticator app, and his e-wallet offers codes by SMS and nothing else. He is about to switch the SMS codes off on the wallet because he no longer trusts them. What should he do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Switch SMS off on both accounts, since a code that can be intercepted is worse than having no code at all."
+            },
+            {
+              "id": "b",
+              "text": "Keep the wallet on SMS for now, and move the mailbox up to the authenticator app it already offers."
+            },
+            {
+              "id": "c",
+              "text": "Leave both on SMS and rely on a long unique password at the wallet instead of a second factor."
+            },
+            {
+              "id": "d",
+              "text": "Switch the wallet's codes off now and turn them back on if it ever starts offering an app."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "account_hardening",
+          "explanation": "The ladder runs from nothing, to SMS, to an authenticator app, to a passkey or a physical key, and every rung beats the one below it. SMS is weak because whoever holds the number holds the codes, but removing it drops the wallet to a single stolen password, which is worse. Climb where climbing is possible and stay put where it is not. A long password is the first factor, not a second one."
+        },
+        {
+          "prompt": "A landlady in Cavite messages Kristine on chat about a room she advertised. Before Kristine has seen the unit, met her, or agreed to anything, the landlady asks for a photo of the front and back of her ID, a selfie holding it, and a copy of her latest payslip. What should Kristine do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Send the ID but hold back the selfie and the payslip, since those are the parts that matter."
+            },
+            {
+              "id": "b",
+              "text": "Ask which agency she works with, then send all three once that answer sounds convincing enough to her."
+            },
+            {
+              "id": "c",
+              "text": "Send nothing yet, view the room first, and hand over ID when a contract is actually being signed."
+            },
+            {
+              "id": "d",
+              "text": "Send all three with the numbers blurred, so a stolen copy cannot be used to open anything."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "data_handling",
+          "explanation": "The question is not only what to send but at which stage, and this stage is a chat with a stranger about a room nobody has viewed. Documents plus a selfie holding them is the full set needed to be you somewhere else. An agency name offered over chat is not a check, and blurring numbers still hands over your face, your name and proof you were holding the document. When the process reaches a signing, send the minimum and mark the copy with what it is for and the date."
+        },
+        {
+          "prompt": "Rommel wakes to a wallet alert for a transfer of ₱6,000 he did not make. He opens his mailbox to find the confirmation email and it is not there, and neither is anything else from the last three days. He starts by changing his wallet password. What should he do instead?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Carry on: change the wallet password and the PIN, then watch the balance for the rest of the morning."
+            },
+            {
+              "id": "b",
+              "text": "Stop and secure the mailbox first: new password, sign out all sessions, then clear the leftovers."
+            },
+            {
+              "id": "c",
+              "text": "Report the transfer to the wallet provider and deal with the mailbox once somebody has replied."
+            },
+            {
+              "id": "d",
+              "text": "Uninstall and reinstall the wallet app so any session on another device is cut off immediately."
+            }
+          ],
+          "correct_option_id": "b",
+          "competency": "incident_response",
+          "explanation": "Three days of missing mail says somebody is inside the mailbox, probably with a filter hiding the alerts. Every wallet fix he makes ends in a reset link that lands in that mailbox, so the wallet work is undone as fast as he does it. Mailbox first: password, all sessions out, then the forwarding rules, added recovery addresses and connected apps. Reinstalling an app does not end a session held on another device, and waiting on a reply is time the attacker keeps."
+        },
+        {
+          "prompt": "Cherry's phone drops to no service at two in the afternoon and does not recover. On her laptop she finds she has been signed out of her mailbox. The reset page offers three routes: a code to her number, a recovery code, or a link to her backup email. Which route should she take?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Send the code to her number and ask a friend to try calling her to see whether the line works."
+            },
+            {
+              "id": "b",
+              "text": "Send the code to her number anyway, since the mailbox is the account to save first."
+            },
+            {
+              "id": "c",
+              "text": "Wait for the signal to come back before touching any reset, so the process is not interrupted."
+            },
+            {
+              "id": "d",
+              "text": "Treat the number as taken, reset with a recovery code, and fix the SIM before using it."
+            }
+          ],
+          "correct_option_id": "d",
+          "competency": "incident_response",
+          "explanation": "A phone that quietly loses service while the number still works for everybody else is the tell that somebody else is now receiving your codes. Sending a reset code there hands them the mailbox as well, and a test call tells her nothing useful in time. Waiting costs her the hour that matters. She uses a route the number cannot touch, then sorts the SIM out in person before trusting it again."
+        },
+        {
+          "prompt": "Alvin gets his Messenger account back after an hour. Nothing of his own was taken, but while it was gone the attacker sent an urgent request for money to dozens of his contacts, two of them clients. He has already changed the password and signed out other sessions. What should he do now?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Message the contacts who were written to, from a channel they know is him, saying what to ignore."
+            },
+            {
+              "id": "b",
+              "text": "Say nothing now, since the account is his again and telling people will only worry them for nothing."
+            },
+            {
+              "id": "c",
+              "text": "Report the account to the platform and let it warn the people who received those messages."
+            },
+            {
+              "id": "d",
+              "text": "Post about it publicly later in the week, once he is sure nobody else has been affected."
+            }
+          ],
+          "correct_option_id": "a",
+          "competency": "incident_response",
+          "explanation": "The account was worth taking because of the trust it could borrow, and that trust is being spent on his contact list right now. Recovering the account does not unsend a request for money to a client. A platform does not warn his contacts for him, and a public post next week arrives after anybody who was going to pay has paid. He tells the people at risk, quickly, through something they can verify is him."
+        },
+        {
+          "prompt": "Two weeks after losing ₱18,000 to a fake buyer, Marites gets a message from an account offering to recover it. They post screenshots of money returned to other victims and ask for a processing fee upfront, which they say is refundable once her funds land. What should she do?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Pay nothing, block the account, and delete the message so she is not tempted by it later in the week."
+            },
+            {
+              "id": "b",
+              "text": "Pay nothing yet, and ask them to recover it first and take their fee out of whatever comes back."
+            },
+            {
+              "id": "c",
+              "text": "Pay nothing, keep the message and the account name, and add both to the report she has already made."
+            },
+            {
+              "id": "d",
+              "text": "Pay nothing, and post the account name in her sellers' group chat so the next person gets a warning."
+            }
+          ],
+          "correct_option_id": "c",
+          "competency": "incident_response",
+          "explanation": "None of these pays the fee, which is the easy half. Somebody who knows she was hit knows it because being hit put her on a list, so the message is evidence about the first crime as well as an attempt at a second. Deleting it destroys the only thing she has gained from the whole exchange, and blocking without keeping it does the same. Asking them to work first accepts that there is a recovery to negotiate about and keeps the conversation open, which is what the fee was really for. Warning her group is decent of her and does nothing about her own report. She keeps it, hands it to the institutions she already reported to, and answers nothing further."
+        }
+      ]
+    }
+  ],
+  "final_exam": {
+    "title": "Online Safety and Scam Defence final exam",
+    "passing_score": 70,
+    "max_attempts": 3,
+    "questions": [
+      {
+        "prompt": "A number you did not know messaged you in June, apologised for the wrong number, and stayed. You have talked most days since: your job hunt, her business, your families. She has never asked you for money. This week she mentions that her uncle runs a small private group for Filipina traders, and that to be added you send a photo of your ID and a selfie holding it. What should you do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Send neither, and ask her uncle to explain how the group actually works first, so you know what you would be joining."
+          },
+          {
+            "id": "b",
+            "text": "Send neither, and tell her you will join once you have met her in person on her next trip home."
+          },
+          {
+            "id": "c",
+            "text": "Send neither and take it no further, since the months were the approach and the documents are the point."
+          },
+          {
+            "id": "d",
+            "text": "Send neither, block her, and delete the thread, since anybody running that approach will just move on to the next name."
+          }
+        ],
+        "correct_option_id": "c",
+        "competency": "threat_recognition",
+        "explanation": "A slow approach spends months buying something a fast one cannot: your belief that this person is ordinary. The tell is not the story, it is the shape. No offer for months, then a first ask that is not money but identity. A photo of an ID together with a selfie holding it is the pair used to prove that you are you, which is exactly why it is worth collecting, and once sent it cannot be taken back. All four options hold the documents, so what separates them is what you do with the conversation. Asking the uncle to explain and setting a condition for later both keep you inside a script that has been answering smoother questions than yours for months, and a meeting that is always one trip away is the oldest part of the pattern. Blocking is sensible and deleting the thread is not: months of messages are the record of how you were approached, and this course asks you to keep exactly that. Whether the trading returns can be real is a Basic Finance question and it does not need answering here, because the documents were the loss."
+      },
+      {
+        "prompt": "Your freelancing profile shows the payout account changed on Tuesday to a bank you have never used, and two invoices worth ₱11,200 between them have already been marked paid to it. Your own wallet and bank are untouched. You search your mailbox for the platform's change-of-details notice and it is not there, though older mail from the same platform is. You have twenty minutes before your shift. What do you do first?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Secure the mailbox first: new password, sign out every session, then clear any forwarding rule, filter or recovery address that was added."
+          },
+          {
+            "id": "b",
+            "text": "Reach the platform through the app you installed and ask for the payouts to be reversed, then work the mailbox once somebody answers."
+          },
+          {
+            "id": "c",
+            "text": "Change the payout account back on the profile and reset its password, then get to the mailbox once the profile is locked."
+          },
+          {
+            "id": "d",
+            "text": "Message the two clients whose invoices were paid into that account, since they are the ones out of pocket and they need to hear it from you tonight."
+          }
+        ],
+        "correct_option_id": "a",
+        "competency": "incident_response",
+        "explanation": "One notice missing while older mail from the same sender sits there is not the platform failing to write. It is somebody inside the mailbox moving it, with a filter or a forwarding rule, and that makes the mailbox the compromised account whatever the visible loss looks like. Nothing was taken from your wallet, and that is the part that misleads: the rule is mailbox first even when the money went somewhere else, because every fix you make anywhere else ends in a reset link landing there. Lock the profile first and whoever holds the mailbox resets it back within the hour. Reaching the platform is right and it is the second move rather than the first. The clients do need telling, and telling them before you have closed the door means telling them twice."
+      },
+      {
+        "prompt": "You run a small online store from one mailbox, protected by an authenticator app. The bookkeeper you hired for the month says the codes are slowing her down and asks you to switch that mailbox back to text codes and share the password with her for the two weeks she is pulling statements. What should you do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Keep the password to yourself, and move that mailbox onto text codes for the fortnight so the app stops holding her up."
+          },
+          {
+            "id": "b",
+            "text": "Keep the mailbox as it is and get her the statements another way, since her work never needs the keys to your resets."
+          },
+          {
+            "id": "c",
+            "text": "Keep the password to yourself, and set a rule forwarding the bank's mail to her address until the work is done."
+          },
+          {
+            "id": "d",
+            "text": "Keep the password to yourself, and read her the code out of the app each time she needs to sign in during the fortnight."
+          }
+        ],
+        "correct_option_id": "b",
+        "competency": "account_hardening",
+        "explanation": "A protection does not have to be defeated if the owner can be talked into lowering it, and a plausible reason is what does the talking. None of these hands over the password, and three of them hand over something just as useful. Moving that mailbox back to text codes drops it onto your phone number, which is the one part of the lock somebody can take without ever touching you. Reading a code aloud is the same act the fraud caller wants, wearing a friendlier face, and the code authorises whatever was typed in seconds earlier rather than whatever you were told. A forwarding rule is the exact leftover an attacker installs, and it copies your mail out of the account for as long as nobody remembers to remove it. She needs documents. Send documents."
+      },
+      {
+        "prompt": "Your cousin installed a loan app last month. It approved her in minutes, and at install it asked for her contacts, her photos and her messages, and she tapped allow on all three. She has not missed a payment. What should you tell her to do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Uninstall the app today, which pulls back its access along with the copy of the contact list it took while the permission was live."
+          },
+          {
+            "id": "b",
+            "text": "Pay the balance off early, which closes the arrangement and with it any reason for the app to reach anyone in her phone at all."
+          },
+          {
+            "id": "c",
+            "text": "Leave the permissions as they are until the loan is cleared, since taking access away now is what makes a lender treat a borrower as a risk."
+          },
+          {
+            "id": "d",
+            "text": "Turn off the permissions it does not need, check the same permissions on other apps she kept, and tell her own contacts in her own words."
+          }
+        ],
+        "correct_option_id": "d",
+        "competency": "data_handling",
+        "explanation": "Access to contacts, photos and messages is not a convenience for a loan app. It is the product, because your reputation with the people in your phone is what the collection runs on. Revoking stops what happens next and does not reach a copy already taken, which is why she tells her own people first and in her own words rather than letting them hear it from a stranger. Uninstalling has the same limit and gets sold as a fix. Paying early is a decision about the loan, not about the copy. What the loan actually costs, and what to do about collection messages once they start, are Basic Finance's."
+      },
+      {
+        "prompt": "A client you have worked with for eight months emails you. The shared folder has moved, here is the link, sign in with your work email to keep your access. The sender address matches the one she has always used, it sounds like her, and she did mention last week that they were changing systems. What should you do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Do not use the link, and reply to her asking her to confirm she sent it before you go looking for the folder."
+          },
+          {
+            "id": "b",
+            "text": "Do not use the link, and open the folder from your own bookmark first, then follow the link if it really has gone."
+          },
+          {
+            "id": "c",
+            "text": "Do not use the link. Open the folder the way you always have, and message her on the number you already use if it has moved."
+          },
+          {
+            "id": "d",
+            "text": "Do not use the link, and forward the mail to a colleague on the same account so he can open it and say whether it is genuine."
+          }
+        ],
+        "correct_option_id": "c",
+        "competency": "threat_recognition",
+        "explanation": "This message is probably genuine, and that is the point of the item. All four refuse the link, so the question is what you do instead, and two of them start from a route you already had. A reply goes to whoever is holding that mailbox, so it confirms nothing. Checking your bookmark and then following the link anyway is the habit and its opposite in one move: a folder that really has moved does not make the link genuine, and the page it opens still wants the password that gets somebody everything. Opening the link on a colleague's account spends his password instead of yours and answers nothing, because a page built to harvest one does not misbehave visibly. Arriving by a route you already had costs you nothing on the day the message is real, and reaching her on the number you already use is the second half of the same habit."
+      },
+      {
+        "prompt": "Your phone has had no signal since you woke up, and your sister's phone on the same network in the same room is fine. Your laptop is still signed in to your mailbox and nothing there has been changed yet. What do you do first?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Get to the operator branch with your ID and sort the SIM out, since nothing you change holds while somebody else takes your codes."
+          },
+          {
+            "id": "b",
+            "text": "Change the passwords on your wallet and your bank from the laptop, since the number can complete a reset on either of them."
+          },
+          {
+            "id": "c",
+            "text": "Run the mailbox's own recovery from the laptop for a clean sign-in, taking whichever verification route the page offers first."
+          },
+          {
+            "id": "d",
+            "text": "Use the mailbox session you still hold: change the password, sign out other devices, and take that number off its recovery."
+          }
+        ],
+        "correct_option_id": "d",
+        "competency": "incident_response",
+        "explanation": "One phone dead while another beside it on the same network works means the loss of service is yours rather than the network's, and your number is part of the lock on everything that texts you a code. What you also have is a signed-in session on a device nobody has touched, and that is the asset with a clock on it, since it ends the moment somebody resets the account from the other side. Use it while it is there. A recovery flow started from the laptop is a fresh sign-in you do not need, and the route it offers first may be a code to the number you no longer hold. The wallet and the bank come after the mailbox, because the mailbox holds the reset link for both of them. The operator and the SIM are the same day's work and not the first ten minutes of it."
+      },
+      {
+        "prompt": "One password with a number on the end covers your email, two wallets, Facebook and a dozen shopping accounts. One of those shops was breached last year and you changed nothing at the time. You have this evening free and no idea where to start. Where should you start?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Set a new and longer version of that same password everywhere, so every account moves off the breached one in a single sitting tonight."
+          },
+          {
+            "id": "b",
+            "text": "Start at the mailbox: a password nothing else uses, plus a second factor that is not your phone number, then the money accounts after it."
+          },
+          {
+            "id": "c",
+            "text": "Start at the two wallets, since that is where the money actually sits, and work through the email and the shops over the next few weekends."
+          },
+          {
+            "id": "d",
+            "text": "Turn on text-message codes across all of them tonight and leave the passwords, since a stolen password on its own is then not enough."
+          }
+        ],
+        "correct_option_id": "b",
+        "competency": "account_hardening",
+        "explanation": "The mailbox holds the reset link for everything else, so it is not one account among many and it is not where you finish. Harden the wallets first and whoever holds the mailbox simply resets them back. A longer version of the same password is still one password: the breached shop tells an attacker your pattern, and a pattern used everywhere still turns one break-in into all of them. Codes by text beat nothing and sit low on the ladder, since the number can be taken, and they do nothing at all about a password already circulating from last year's breach."
+      },
+      {
+        "prompt": "A recruiter in a group chat gave you product-rating work. Two payouts of ₱350 arrived on time. Before the bigger batch she asks for a photo of your ID, a selfie holding it, your bank account name and number, and a form to sign with the salary line left blank. What should you do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Send none of it, since paid work needs neither a selfie holding your ID nor a signed blank, and that set opens things in your name."
+          },
+          {
+            "id": "b",
+            "text": "Send none of it yet, and ask for the bigger batch to be paid up front, so nothing with your face on it moves before you have been paid."
+          },
+          {
+            "id": "c",
+            "text": "Send none of it yet, and ask her to fill in the salary line first, since a completed form is safe enough to sign and return."
+          },
+          {
+            "id": "d",
+            "text": "Send none of it, and offer a certificate of employment from your last job instead, which shows who you are without a selfie."
+          }
+        ],
+        "correct_option_id": "a",
+        "competency": "threat_recognition",
+        "explanation": "Payouts that arrive are not proof of an employer, and Basic Finance covers why an early payment is worth making. All four hold the pack, so the question is whether the request is worth negotiating with at all. A filled-in salary line does not make a signature safe when the rest of the form is still somebody else's to complete. Asking to be paid first treats the money as the risk, and here the documents are the risk. A certificate of employment is not a smaller ask: it carries your employer, your salary, your employee number and a signature block, which is a clean template to copy. What this course owns is what the paperwork is for. An ID copy, a selfie holding it and an account in your name are the pieces used to open something, borrow something, or route somebody else's stolen money through your account, which puts your name on the case rather than theirs."
+      },
+      {
+        "prompt": "You reach a second interview with an agency you found and checked yourself. The day before, the coordinator asks you to send a photo of your ID, a selfie holding it, a copy of your last payslip, and a photo of your ATM card. What should you do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Send nothing yet, ask what each item is for, and send only the ID at the stage where it is normal, marked with purpose and date."
+          },
+          {
+            "id": "b",
+            "text": "Send nothing until the interview is over, then send all four, since by then the agency has decided and the stage is a normal one."
+          },
+          {
+            "id": "c",
+            "text": "Send nothing, and later send only the ID and the payslip, since the selfie and the card are the ones that could be used against you."
+          },
+          {
+            "id": "d",
+            "text": "Send nothing yet, and send whatever she asks for once she has confirmed in writing that the agency needs all four items."
+          }
+        ],
+        "correct_option_id": "a",
+        "competency": "data_handling",
+        "explanation": "A real employer does not stop a list from being wrong, and this one is wrong: a photo of an ATM card and a payslip have no use in hiring at any stage, which says the list was written by somebody collecting rather than somebody hiring. All four hold something back, so the discrimination is on the list itself rather than on the refusing. Waiting until after the interview still sends the card. Holding back the selfie and the card still sends a payslip, which carries your employer, your salary, your employee number and a signature block, and none of that is needed to interview you. A written confirmation from the person doing the asking tests nothing, since she is the one you are unsure about. Three questions run before anything leaves your hands: who is asking, what is it for, and what can they do with it if they are not who they say. Marking a copy with what it is for and the date makes it harder to reuse somewhere else."
+      },
+      {
+        "prompt": "You have reported a takeover to the platform and to your e-wallet's fraud channel. The wallet read you a reference number over the phone, the platform gave you a case number in a chat window you have since closed, and you have written nothing down. It is one in the morning and you are exhausted. What should you do before you sleep?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sleep, and put it all together in the morning when you are clearer, since nothing is going to move overnight anyway."
+          },
+          {
+            "id": "b",
+            "text": "Write to both organisations asking them to resend the reference numbers, and start your record once their replies arrive."
+          },
+          {
+            "id": "c",
+            "text": "Write the numbers down now, beside a plain timeline of what arrived when and what you did, kept outside the accounts involved."
+          },
+          {
+            "id": "d",
+            "text": "Save the timeline as a draft in the mailbox it all refers to, so it sits alongside the alert emails and the messages themselves."
+          }
+        ],
+        "correct_option_id": "c",
+        "competency": "incident_response",
+        "explanation": "Reference numbers are the only handle you have on a report once the call ends, and a case number in a closed chat window is a case number you no longer hold. The timeline is worth more than it looks: what arrived, when, what you did, what you clicked, written while it is fresh, because tomorrow you will remember the feeling and not the order. Asking both organisations to resend puts your own record in somebody else's queue and starts it days late. A draft in the mailbox that was taken lives inside the account that may still not be yours, where it can be read or deleted by whoever is in there. Sleeping on it is the one thing the hour after a takeover does not allow, because the details you will need are the ones that go first."
+      },
+      {
+        "prompt": "Your main mailbox has a password nothing else uses and an authenticator app on it. Its recovery address is a free webmail account you opened in first year: still yours, still on the password you set back then, and not signed into for four years. What should you do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Harden the old mailbox the way you hardened this one, unique password and a second factor, or take it off recovery instead."
+          },
+          {
+            "id": "b",
+            "text": "Take the old address off recovery straight away, since an address you never read is a route you have no way to watch."
+          },
+          {
+            "id": "c",
+            "text": "Leave it, since an address you still control is not a hole, and a recovery route you own beats having no route at all."
+          },
+          {
+            "id": "d",
+            "text": "Set the old address to forward everything to the main mailbox, so anything landing there reaches you where you actually read."
+          }
+        ],
+        "correct_option_id": "a",
+        "competency": "account_hardening",
+        "explanation": "Recovery is the back door, and the question is not only whether you control the old address but whether anything is defending it. A free mailbox on a password you set as a first year, unread for four years, is the softest account you own, and it holds a reset link into the one you just spent an evening hardening. Chapter three's rule runs harden every mailbox you own, including the abandoned one, and remove it only if you genuinely cannot get back in. You can get back in, so the work is real rather than a deletion. Taking it off is not wrong and it is second best, because it closes a route without the account behind it becoming any safer. Forwarding is worse than it looks: it shows you what arrives and leaves the old mailbox exactly as takeable as it was, and whoever takes it still runs the reset."
+      },
+      {
+        "prompt": "A text arrives in the same thread as every genuine alert your bank has ever sent you, sitting above them and below them. It says a device was added to your account and gives a link to remove it if it was not you. The older messages in that thread are real, and the ₱24,000 transfer limit it quotes is the one you actually have. What is the read on this?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The thread is real, so the sender is real, and the only open question left is whether a device really was added to it."
+          },
+          {
+            "id": "b",
+            "text": "The thread tells you only that the label matched, so nothing is verified, and you check the account in your app."
+          },
+          {
+            "id": "c",
+            "text": "The correct limit settles it, since a stranger could not know a figure that sits inside the account."
+          },
+          {
+            "id": "d",
+            "text": "It is safe to act on, since it asks you only to remove something rather than to send money or hand anything over."
+          }
+        ],
+        "correct_option_id": "b",
+        "competency": "threat_recognition",
+        "explanation": "The name printed above a message is a label, and labels get set. A message that lands inside the thread holding your real alerts tells you the label matched, which is what the trick is for, and says nothing at all about who sent it. Your limit, your last transaction and your branch leak, get bought, or sit on a receipt, so a correct detail is a cost the sender paid rather than proof of anything. Remove-a-device is the friendlier wrapper on the same request, because the page it lands on asks you to sign in first, and signing in is the whole point. There is no reading of this message that gets you to the truth, which is why the habit is not to read harder. You open the app you installed and look, and that costs you a minute whether the alert was real or not."
+      },
+      {
+        "prompt": "You have just moved your email and both wallets off text codes and onto an authenticator app on your phone. The setup screen hands you a list of one-time recovery codes and asks you to keep them somewhere safe. What should you do with them?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Write them out and keep the paper in your wallet, so it is on you whenever you have to sign in from somewhere new."
+          },
+          {
+            "id": "b",
+            "text": "Email them to yourself, so that they stay searchable from any device you can still sign in from later on."
+          },
+          {
+            "id": "c",
+            "text": "Screenshot them into your gallery so they travel with you on the same phone that holds the authenticator app."
+          },
+          {
+            "id": "d",
+            "text": "Write them out and keep that copy at home, plus one in your manager, so that no single loss takes them all."
+          }
+        ],
+        "correct_option_id": "d",
+        "competency": "account_hardening",
+        "explanation": "Recovery codes exist for the day the phone is gone, so any copy living on that phone is gone with it, and the gallery is also what an app you gave photo access to can read. Emailing them puts the way back into every account inside the one account that already holds the reset link for all of them, so a taken mailbox becomes a taken everything. Two of these are off the phone and only one of them survives the day you need it: paper in your wallet travels with the phone, is lost with the bag, and is soaked by the same rain. The requirement is not simply off the phone. It is that no single loss, theft, fire or flood takes every copy at once."
+      },
+      {
+        "prompt": "Your shop's page was taken for six hours yesterday and you have it back. While it was gone it sent two customers a payment account that is not yours, and one of them paid ₱3,900 into it. You have already told both of them and changed everything on your side. The customer who paid asks you what she should do now. What do you tell her?",
+        "options": [
+          {
+            "id": "a",
+            "text": "That the loss is yours to carry, so you will refund her today and there is nothing further she needs to do about it."
+          },
+          {
+            "id": "b",
+            "text": "To report it to her own bank or wallet's fraud channel now and keep the reference, since it left her account."
+          },
+          {
+            "id": "c",
+            "text": "To message the account she paid and ask for the money back, since the transfer is recent."
+          },
+          {
+            "id": "d",
+            "text": "To wait until the platform finishes looking into the page, since its findings are what any bank will ask her for first."
+          }
+        ],
+        "correct_option_id": "b",
+        "competency": "incident_response",
+        "explanation": "The money left her account, so the fraud channel that can do anything about it is her bank's or her wallet's, not yours and not the platform's, and speed is the whole variable in whether a transfer can still be reached. She keeps the reference number, because it is the only handle she will have on that report next week. Messaging the account she paid tells whoever holds it that the payment landed and that she is worth another message. Waiting for the platform's findings spends the hours that matter on a report she does not need in order to make her own. Refunding her may well be the right thing for your shop, and it is a separate decision from hers: telling her that nothing further is needed costs her the report she should be making tonight."
+      },
+      {
+        "prompt": "The recovery questions on one of your accounts are your mother's maiden name, your first school and your first pet. Your Facebook carries a birthday post naming your mother, your school sits in your intro, and years ago you answered a tag game naming the pet. What should you do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Set the whole profile to friends only, which puts those posts out of reach of anybody who is not already a contact of yours today."
+          },
+          {
+            "id": "b",
+            "text": "Treat the answers as public, and move that account's recovery onto a backup phone number of yours instead of questions."
+          },
+          {
+            "id": "c",
+            "text": "Treat the answers as public now, and replace them with strings that are not true and are stored the way a password is stored."
+          },
+          {
+            "id": "d",
+            "text": "Leave the answers and rely on the second factor instead, since a second factor covers the account whatever a question says."
+          }
+        ],
+        "correct_option_id": "c",
+        "competency": "data_handling",
+        "explanation": "A security question is a password you already told everybody, and this is the same profile that feeds the approach in the first place. Once something has been posted, treat it as known: it can be screenshotted, saved, or read by the friend whose own account is taken next year. Friends only helps what you post next and not what has been up for years. Two of these do treat the answers as public, and only one of them closes the door. Moving recovery onto a number swaps a question anybody can look up for a number anybody can take, which is the piece a SIM swap goes after, so the back door is still a back door. A second factor is worth having, and recovery is a path around it, which is why an answer that is not true and is stored the way a password is stored is the fix."
+      }
+    ]
+  }
+}

@@ -14,7 +14,14 @@
  * scores computed under them.
  */
 
-export type CompetencyDomain = "ai" | "blockchain" | "finance";
+export type CompetencyDomain =
+  | "ai"
+  | "blockchain"
+  | "finance"
+  | "freelance"
+  | "admin"
+  | "content"
+  | "security";
 
 export const COMPETENCIES = {
   // AI Readiness Test and the AI courses. Weights are the §8 calibration.
@@ -93,6 +100,110 @@ export const COMPETENCIES = {
     weight: 25,
     measures: "Catching the offer that is too good to be true",
     domain: "finance",
+  },
+
+  // Freelancing, client communication, support and client operations.
+  finding_work: {
+    label: "Finding work",
+    weight: 25,
+    measures: "Getting in front of people who will pay you",
+    domain: "freelance",
+  },
+  scoping_and_pricing: {
+    label: "Scoping & pricing",
+    weight: 25,
+    measures: "Agreeing what the work is, and what it costs",
+    domain: "freelance",
+  },
+  professional_communication: {
+    label: "Professional communication",
+    weight: 25,
+    measures: "Writing to a client or an employer and being understood",
+    domain: "freelance",
+  },
+  delivery_reliability: {
+    label: "Delivery & reliability",
+    weight: 25,
+    measures: "Finishing, on time, to what was agreed",
+    domain: "freelance",
+  },
+
+  // Bookkeeping and spreadsheets.
+  record_keeping: {
+    label: "Record keeping",
+    weight: 25,
+    measures: "Records you can stand behind months later",
+    domain: "admin",
+  },
+  compliance_ph: {
+    label: "Philippine compliance",
+    weight: 25,
+    measures: "Knowing the obligation, and where to check the current rule",
+    domain: "admin",
+  },
+  working_with_numbers: {
+    label: "Working with numbers",
+    weight: 25,
+    measures: "Rates, totals and arithmetic you can defend",
+    domain: "admin",
+  },
+  admin_tooling: {
+    label: "Admin tooling",
+    weight: 25,
+    measures: "Making a spreadsheet do the work instead of you",
+    domain: "admin",
+  },
+
+  // Design, online selling and video.
+  visual_craft: {
+    label: "Visual craft",
+    weight: 25,
+    measures: "How it looks, and being able to say why",
+    domain: "content",
+  },
+  message_craft: {
+    label: "Message craft",
+    weight: 25,
+    measures: "What it says, and who it is for",
+    domain: "content",
+  },
+  platform_fluency: {
+    label: "Platform fluency",
+    weight: 25,
+    measures: "How the places you publish actually behave",
+    domain: "content",
+  },
+  production_workflow: {
+    label: "Production workflow",
+    weight: 25,
+    measures: "Making it repeatably, at volume, without burning out",
+    domain: "content",
+  },
+
+  // Online safety.
+  threat_recognition: {
+    label: "Threat recognition",
+    weight: 25,
+    measures: "Spotting it before you click, send or pay",
+    domain: "security",
+  },
+  account_hardening: {
+    label: "Account hardening",
+    weight: 25,
+    measures: "Making an account expensive to take",
+    domain: "security",
+  },
+  data_handling: {
+    label: "Data handling",
+    weight: 25,
+    measures: "What you hand over, and to whom",
+    domain: "security",
+  },
+  incident_response: {
+    label: "Incident response",
+    weight: 25,
+    measures: "The first hour after it has already gone wrong",
+    domain: "security",
   },
 } as const satisfies Record<
   string,
