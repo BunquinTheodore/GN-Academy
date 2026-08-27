@@ -17,6 +17,8 @@ import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { GoogleMark } from "@/components/google-mark";
+import { AuthCard, AuthEyebrow } from "../auth-card";
+import { PasswordInput } from "../password-input";
 
 export function LoginForm() {
   const router = useRouter();
@@ -58,97 +60,104 @@ export function LoginForm() {
   const pending = form.formState.isSubmitting || googlePending;
 
   return (
-    <div className="flex flex-col gap-6">
-      <div>
-        <h1 className="font-display text-2xl font-semibold">Sign in</h1>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Pick up where you left off.
+    <AuthCard className="mx-auto w-full max-w-sm">
+      <AuthEyebrow>Welcome back</AuthEyebrow>
+      <h1 className="mt-1 font-display text-2xl font-semibold sm:text-3xl">
+        Log in
+      </h1>
+      <p className="mt-1 text-sm text-muted-foreground">
+        Pick up where you left off.
+      </p>
+
+      <div className="mt-6 flex flex-col gap-6">
+        {serverError && (
+          <Alert variant="destructive">
+            <AlertDescription>{serverError}</AlertDescription>
+          </Alert>
+        )}
+
+        <Button
+          type="button"
+          variant="outline"
+          className="h-12 w-full rounded-full"
+          onClick={onGoogle}
+          disabled={pending}
+        >
+          <GoogleMark className="size-4" />
+          {googlePending ? "Waiting for Google…" : "Sign in with Google"}
+        </Button>
+
+        <div className="flex items-center gap-3">
+          <Separator className="flex-1" />
+          <span className="text-xs text-muted-foreground">or</span>
+          <Separator className="flex-1" />
+        </div>
+
+        <form
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="flex flex-col gap-4"
+          noValidate
+        >
+          <div className="flex flex-col gap-1.5">
+            <Label htmlFor="email">Email address</Label>
+            <Input
+              id="email"
+              type="email"
+              autoComplete="email"
+              inputMode="email"
+              placeholder="you@example.com"
+              {...form.register("email")}
+              aria-invalid={!!form.formState.errors.email}
+            />
+            {form.formState.errors.email && (
+              <p className="text-sm text-destructive" role="alert">
+                {form.formState.errors.email.message}
+              </p>
+            )}
+          </div>
+
+          <div className="flex flex-col gap-1.5">
+            <Label htmlFor="password">Password</Label>
+            <PasswordInput
+              id="password"
+              autoComplete="current-password"
+              {...form.register("password")}
+              aria-invalid={!!form.formState.errors.password}
+            />
+            {form.formState.errors.password && (
+              <p className="text-sm text-destructive" role="alert">
+                {form.formState.errors.password.message}
+              </p>
+            )}
+          </div>
+
+          <Button
+            type="submit"
+            className="mt-2 h-12 w-full rounded-full"
+            disabled={pending}
+          >
+            {form.formState.isSubmitting ? "Signing in…" : "Log in"}
+          </Button>
+        </form>
+
+        <p className="text-center text-sm text-muted-foreground">
+          Don&apos;t have an account?{" "}
+          <Link
+            href={`/signup?next=${encodeURIComponent(nextPath)}`}
+            className="font-medium text-primary underline-offset-4 hover:underline"
+          >
+            Sign up
+          </Link>
+        </p>
+        <p className="-mt-4 text-center text-sm text-muted-foreground">
+          <Link
+            href="/forgot-password"
+            className="underline-offset-4 hover:underline"
+          >
+            Forgot your password?
+          </Link>
         </p>
       </div>
-
-      {serverError && (
-        <Alert variant="destructive">
-          <AlertDescription>{serverError}</AlertDescription>
-        </Alert>
-      )}
-
-      <form
-        onSubmit={form.handleSubmit(onSubmit)}
-        className="flex flex-col gap-4"
-        noValidate
-      >
-        <div className="flex flex-col gap-1.5">
-          <Label htmlFor="email">Email</Label>
-          <Input
-            id="email"
-            type="email"
-            autoComplete="email"
-            inputMode="email"
-            {...form.register("email")}
-            aria-invalid={!!form.formState.errors.email}
-          />
-          {form.formState.errors.email && (
-            <p className="text-sm text-destructive" role="alert">
-              {form.formState.errors.email.message}
-            </p>
-          )}
-        </div>
-
-        <div className="flex flex-col gap-1.5">
-          <div className="flex items-center justify-between">
-            <Label htmlFor="password">Password</Label>
-            <Link
-              href="/forgot-password"
-              className="text-sm text-primary underline-offset-4 hover:underline"
-            >
-              Forgot password?
-            </Link>
-          </div>
-          <Input
-            id="password"
-            type="password"
-            autoComplete="current-password"
-            {...form.register("password")}
-            aria-invalid={!!form.formState.errors.password}
-          />
-          {form.formState.errors.password && (
-            <p className="text-sm text-destructive" role="alert">
-              {form.formState.errors.password.message}
-            </p>
-          )}
-        </div>
-
-        <Button type="submit" className="mt-2 h-11 w-full" disabled={pending}>
-          {form.formState.isSubmitting ? "Signing in…" : "Sign in"}
-        </Button>
-      </form>
-
-      <div className="flex items-center gap-3">
-        <Separator className="flex-1" />
-        <span className="text-xs text-muted-foreground">or</span>
-        <Separator className="flex-1" />
-      </div>
-
-      <Button
-        type="button"
-        variant="outline"
-        className="h-11 w-full"
-        onClick={onGoogle}
-        disabled={pending}
-      >
-        <GoogleMark className="size-4" />
-        {googlePending ? "Waiting for Google…" : "Continue with Google"}
-      </Button>
-
-      <p className="text-center text-sm text-muted-foreground">
-        New here?{" "}
-        <Link
-          href={`/signup?next=${encodeURIComponent(nextPath)}`}
-          className="text-primary underline-offset-4 hover:underline"
-        >
-          Create an account
-        </Link>
-      </p>
-    </div>
+    </AuthCard>
   );
 }

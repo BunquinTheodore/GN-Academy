@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" role="img" aria-hidden="true">
+  <title>Submitting an identity document for verification</title>
+  <circle cx="600" cy="110" r="88" fill="oklch(0.945 0.012 122)" stroke="oklch(0.52 0.145 122)" stroke-width="3"/>
+  <rect x="546" y="70" width="140" height="94" rx="12" fill="oklch(1 0 0)" stroke="oklch(0.22 0.012 250)" stroke-width="6"/>
+  <circle cx="580" cy="106" r="16" fill="none" stroke="oklch(0.22 0.012 250)" stroke-width="6"/>
+  <path d="M560 140 c0 -14 40 -14 40 0" fill="none" stroke="oklch(0.22 0.012 250)" stroke-width="6" stroke-linecap="round"/>
+  <line x1="614" y1="98" x2="662" y2="98" stroke="oklch(0.22 0.012 250)" stroke-width="6" stroke-linecap="round"/>
+  <line x1="614" y1="116" x2="662" y2="116" stroke="oklch(0.22 0.012 250)" stroke-width="6" stroke-linecap="round"/>
+  <line x1="614" y1="134" x2="648" y2="134" stroke="oklch(0.22 0.012 250)" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="668" cy="150" r="20" fill="oklch(0.52 0.145 122)"/>
+  <path d="M659 150 L666 157 L679 142" fill="none" stroke="oklch(1 0 0)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

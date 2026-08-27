@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" role="img" aria-hidden="true">
+  <title>Filling in a sign-up form</title>
+  <circle cx="600" cy="110" r="88" fill="oklch(0.945 0.012 122)" stroke="oklch(0.52 0.145 122)" stroke-width="3"/>
+  <rect x="558" y="52" width="84" height="108" rx="10" fill="oklch(1 0 0)" stroke="oklch(0.22 0.012 250)" stroke-width="6"/>
+  <line x1="574" y1="80" x2="626" y2="80" stroke="oklch(0.22 0.012 250)" stroke-width="7" stroke-linecap="round"/>
+  <line x1="574" y1="102" x2="626" y2="102" stroke="oklch(0.22 0.012 250)" stroke-width="7" stroke-linecap="round"/>
+  <line x1="574" y1="124" x2="608" y2="124" stroke="oklch(0.22 0.012 250)" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="648" cy="150" r="24" fill="oklch(0.52 0.145 122)"/>
+  <path d="M638 150 L646 158 L660 142" fill="none" stroke="oklch(1 0 0)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

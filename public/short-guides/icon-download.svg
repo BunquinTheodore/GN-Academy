@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" role="img" aria-hidden="true">
+  <title>Downloading an app to a phone</title>
+  <circle cx="600" cy="110" r="88" fill="oklch(0.945 0.012 122)" stroke="oklch(0.52 0.145 122)" stroke-width="3"/>
+  <line x1="600" y1="54" x2="600" y2="126" stroke="oklch(0.22 0.012 250)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M566 96 L600 132 L634 96" fill="none" stroke="oklch(0.22 0.012 250)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="556" y="150" width="88" height="14" rx="7" fill="oklch(0.52 0.145 122)"/>
+  <circle cx="600" cy="110" r="88" fill="none" stroke="oklch(0.895 0.01 250)" stroke-width="1"/>
+</svg>

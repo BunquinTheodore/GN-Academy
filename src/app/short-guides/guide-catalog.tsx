@@ -2,12 +2,13 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { BookOpen, Search } from "lucide-react";
+import { Search } from "lucide-react";
 import type { PostSummary } from "@/lib/db/posts";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 
 const ALL = "All";
+const FALLBACK_COVER = "/short-guides/cover-placeholder.svg";
 
 export function GuideCatalog({
   guides,
@@ -105,19 +106,13 @@ export function GuideCatalog({
                 href={`/short-guides/${guide.slug}`}
                 className="group flex h-full flex-col overflow-hidden rounded-xl border border-border bg-card shadow-sm transition hover:-translate-y-0.5 hover:border-primary/50 hover:shadow-md"
               >
-                <div className="flex aspect-[16/10] items-center justify-center overflow-hidden bg-[linear-gradient(135deg,var(--color-accent),var(--color-secondary))]">
-                  {guide.cover_image_url ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      src={guide.cover_image_url}
-                      alt=""
-                      className="size-full object-cover transition duration-300 group-hover:scale-[1.02]"
-                    />
-                  ) : (
-                    <div className="flex size-20 items-center justify-center rounded-2xl border border-border bg-card shadow-sm">
-                      <BookOpen className="size-9 text-primary" aria-hidden />
-                    </div>
-                  )}
+                <div className="aspect-[16/10] overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={guide.cover_image_url ?? FALLBACK_COVER}
+                    alt=""
+                    className="size-full object-cover transition duration-300 group-hover:scale-[1.02]"
+                  />
                 </div>
                 <div className="flex flex-1 flex-col p-5">
                   <Badge variant="secondary" className="w-fit">

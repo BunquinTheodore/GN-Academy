@@ -18,6 +18,9 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Separator } from "@/components/ui/separator";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { GoogleMark } from "@/components/google-mark";
+import { AuthEyebrow } from "../auth-card";
+import { PasswordInput } from "../password-input";
+import { SignupHero } from "./signup-hero";
 
 export function SignupForm() {
   const router = useRouter();
@@ -64,143 +67,153 @@ export function SignupForm() {
   const pending = form.formState.isSubmitting || googlePending;
 
   return (
-    <div className="flex flex-col gap-6">
-      <div>
-        <h1 className="font-display text-2xl font-semibold">
-          Create your account
+    <div className="mx-auto w-full max-w-4xl overflow-hidden rounded-2xl border border-border bg-card shadow-sm md:grid md:grid-cols-2">
+      <SignupHero />
+
+      <div className="p-6 sm:p-8">
+        <AuthEyebrow>Create account</AuthEyebrow>
+        <h1 className="mt-1 font-display text-2xl font-semibold sm:text-3xl">
+          Register
         </h1>
         <p className="mt-1 text-sm text-muted-foreground">
           Free to join. Your test results and progress are saved to it.
         </p>
-      </div>
 
-      {serverError && (
-        <Alert variant="destructive">
-          <AlertDescription>{serverError}</AlertDescription>
-        </Alert>
-      )}
-
-      <form
-        onSubmit={form.handleSubmit(onSubmit)}
-        className="flex flex-col gap-4"
-        noValidate
-      >
-        <div className="flex flex-col gap-1.5">
-          <Label htmlFor="fullName">Full name</Label>
-          <Input
-            id="fullName"
-            autoComplete="name"
-            {...form.register("fullName")}
-            aria-invalid={!!form.formState.errors.fullName}
-          />
-          {form.formState.errors.fullName && (
-            <p className="text-sm text-destructive" role="alert">
-              {form.formState.errors.fullName.message}
-            </p>
+        <div className="mt-6 flex flex-col gap-6">
+          {serverError && (
+            <Alert variant="destructive">
+              <AlertDescription>{serverError}</AlertDescription>
+            </Alert>
           )}
-        </div>
 
-        <div className="flex flex-col gap-1.5">
-          <Label htmlFor="email">Email</Label>
-          <Input
-            id="email"
-            type="email"
-            autoComplete="email"
-            inputMode="email"
-            {...form.register("email")}
-            aria-invalid={!!form.formState.errors.email}
-          />
-          {form.formState.errors.email && (
-            <p className="text-sm text-destructive" role="alert">
-              {form.formState.errors.email.message}
-            </p>
-          )}
-        </div>
+          <Button
+            type="button"
+            variant="outline"
+            className="h-12 w-full rounded-full"
+            onClick={onGoogle}
+            disabled={pending}
+          >
+            <GoogleMark className="size-4" />
+            {googlePending ? "Waiting for Google…" : "Continue with Google"}
+          </Button>
 
-        <div className="flex flex-col gap-1.5">
-          <Label htmlFor="password">Password</Label>
-          <Input
-            id="password"
-            type="password"
-            autoComplete="new-password"
-            {...form.register("password")}
-            aria-invalid={!!form.formState.errors.password}
-          />
-          {form.formState.errors.password && (
-            <p className="text-sm text-destructive" role="alert">
-              {form.formState.errors.password.message}
-            </p>
-          )}
-        </div>
+          <div className="flex items-center gap-3">
+            <Separator className="flex-1" />
+            <span className="text-xs text-muted-foreground">or</span>
+            <Separator className="flex-1" />
+          </div>
 
-        {/* §14: marketing consent is separate from account creation, never bundled. */}
-        <Controller
-          control={form.control}
-          name="marketingConsent"
-          render={({ field }) => (
-            <label
-              htmlFor="marketingConsent"
-              className="flex min-h-11 items-start gap-3 text-sm text-muted-foreground"
-            >
-              <Checkbox
-                id="marketingConsent"
-                checked={field.value}
-                onCheckedChange={(v) => field.onChange(v === true)}
-                className="mt-0.5"
+          <form
+            onSubmit={form.handleSubmit(onSubmit)}
+            className="flex flex-col gap-4"
+            noValidate
+          >
+            <div className="flex flex-col gap-1.5">
+              <Label htmlFor="fullName">Full name</Label>
+              <Input
+                id="fullName"
+                autoComplete="name"
+                placeholder="Jane Trader"
+                {...form.register("fullName")}
+                aria-invalid={!!form.formState.errors.fullName}
               />
-              <span>
-                Send me course updates and career tips by email. This is
-                optional, and you can turn it off any time.
-              </span>
-            </label>
-          )}
-        />
+              {form.formState.errors.fullName && (
+                <p className="text-sm text-destructive" role="alert">
+                  {form.formState.errors.fullName.message}
+                </p>
+              )}
+            </div>
 
-        <Button type="submit" className="mt-1 h-11 w-full" disabled={pending}>
-          {form.formState.isSubmitting
-            ? "Creating your account…"
-            : "Create my account"}
-        </Button>
+            <div className="flex flex-col gap-1.5">
+              <Label htmlFor="email">Email address</Label>
+              <Input
+                id="email"
+                type="email"
+                autoComplete="email"
+                inputMode="email"
+                placeholder="you@example.com"
+                {...form.register("email")}
+                aria-invalid={!!form.formState.errors.email}
+              />
+              {form.formState.errors.email && (
+                <p className="text-sm text-destructive" role="alert">
+                  {form.formState.errors.email.message}
+                </p>
+              )}
+            </div>
 
-        <p className="text-xs text-muted-foreground">
-          By creating an account you agree to the{" "}
-          <Link href="/terms" className="underline underline-offset-4">
-            terms of service
-          </Link>{" "}
-          and{" "}
-          <Link href="/privacy" className="underline underline-offset-4">
-            privacy policy
-          </Link>
-          .
-        </p>
-      </form>
+            <div className="flex flex-col gap-1.5">
+              <Label htmlFor="password">Password</Label>
+              <PasswordInput
+                id="password"
+                autoComplete="new-password"
+                {...form.register("password")}
+                aria-invalid={!!form.formState.errors.password}
+              />
+              {form.formState.errors.password && (
+                <p className="text-sm text-destructive" role="alert">
+                  {form.formState.errors.password.message}
+                </p>
+              )}
+            </div>
 
-      <div className="flex items-center gap-3">
-        <Separator className="flex-1" />
-        <span className="text-xs text-muted-foreground">or</span>
-        <Separator className="flex-1" />
+            {/* §14: marketing consent is separate from account creation, never bundled. */}
+            <Controller
+              control={form.control}
+              name="marketingConsent"
+              render={({ field }) => (
+                <label
+                  htmlFor="marketingConsent"
+                  className="flex min-h-11 items-start gap-3 text-sm text-muted-foreground"
+                >
+                  <Checkbox
+                    id="marketingConsent"
+                    checked={field.value}
+                    onCheckedChange={(v) => field.onChange(v === true)}
+                    className="mt-0.5"
+                  />
+                  <span>
+                    Send me course updates and career tips by email. This is
+                    optional, and you can turn it off any time.
+                  </span>
+                </label>
+              )}
+            />
+
+            <Button
+              type="submit"
+              className="mt-1 h-12 w-full rounded-full"
+              disabled={pending}
+            >
+              {form.formState.isSubmitting
+                ? "Creating your account…"
+                : "Sign up"}
+            </Button>
+
+            <p className="text-xs text-muted-foreground">
+              By creating an account you agree to the{" "}
+              <Link href="/terms" className="underline underline-offset-4">
+                terms of service
+              </Link>{" "}
+              and{" "}
+              <Link href="/privacy" className="underline underline-offset-4">
+                privacy policy
+              </Link>
+              .
+            </p>
+          </form>
+
+          <p className="text-center text-sm text-muted-foreground">
+            Already have an account?{" "}
+            <Link
+              href={`/login?next=${encodeURIComponent(nextPath)}`}
+              className="font-medium text-primary underline-offset-4 hover:underline"
+            >
+              Log in
+            </Link>
+          </p>
+        </div>
       </div>
-
-      <Button
-        type="button"
-        variant="outline"
-        className="h-11 w-full"
-        onClick={onGoogle}
-        disabled={pending}
-      >
-        <GoogleMark className="size-4" />
-        {googlePending ? "Waiting for Google…" : "Continue with Google"}
-      </Button>
-
-      <p className="text-center text-sm text-muted-foreground">
-        Already have an account?{" "}
-        <Link
-          href={`/login?next=${encodeURIComponent(nextPath)}`}
-          className="text-primary underline-offset-4 hover:underline"
-        >
-          Sign in
-        </Link>
-      </p>
     </div>
   );
 }

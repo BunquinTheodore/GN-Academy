@@ -118,16 +118,14 @@ export default async function ShortGuidePage({
           Short Guides
         </Link>
 
-        {guide.cover_image_url && (
-          <div className="mt-5 overflow-hidden rounded-xl border border-border bg-card">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={guide.cover_image_url}
-              alt=""
-              className="max-h-[28rem] w-full object-cover"
-            />
-          </div>
-        )}
+        <div className="mt-5 overflow-hidden rounded-xl border border-border bg-card">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={guide.cover_image_url ?? "/short-guides/cover-placeholder.svg"}
+            alt=""
+            className="max-h-[28rem] w-full object-cover"
+          />
+        </div>
 
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <Badge variant="secondary">{guide.category}</Badge>

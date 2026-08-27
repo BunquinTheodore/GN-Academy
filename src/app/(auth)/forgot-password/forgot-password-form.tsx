@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Alert, AlertDescription } from "@/components/ui/alert";
+import { AuthCard, AuthEyebrow } from "../auth-card";
 
 export function ForgotPasswordForm() {
   const [serverError, setServerError] = useState<string | null>(null);
@@ -39,77 +40,83 @@ export function ForgotPasswordForm() {
 
   if (sentTo) {
     return (
-      <div className="flex flex-col gap-4">
-        <h1 className="font-display text-2xl font-semibold">Check your email</h1>
-        <p className="text-sm text-muted-foreground">
-          If an account exists for <span className="font-medium text-foreground">{sentTo}</span>,
+      <AuthCard className="mx-auto w-full max-w-sm">
+        <AuthEyebrow>Trouble signing in?</AuthEyebrow>
+        <h1 className="mt-1 font-display text-2xl font-semibold sm:text-3xl">
+          Check your email
+        </h1>
+        <p className="mt-4 text-sm text-muted-foreground">
+          If an account exists for{" "}
+          <span className="font-medium text-foreground">{sentTo}</span>,
           a reset link is on its way. It can take a minute or two to arrive, so
           check your spam folder too.
         </p>
-        <Button asChild variant="outline" className="h-11 w-full">
-          <Link href="/login">Back to sign in</Link>
+        <Button asChild variant="outline" className="mt-6 h-12 w-full rounded-full">
+          <Link href="/login">Back to log in</Link>
         </Button>
-      </div>
+      </AuthCard>
     );
   }
 
   return (
-    <div className="flex flex-col gap-6">
-      <div>
-        <h1 className="font-display text-2xl font-semibold">
-          Reset your password
-        </h1>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Enter your account email and we&apos;ll send a reset link.
+    <AuthCard className="mx-auto w-full max-w-sm">
+      <AuthEyebrow>Trouble signing in?</AuthEyebrow>
+      <h1 className="mt-1 font-display text-2xl font-semibold sm:text-3xl">
+        Reset your password
+      </h1>
+      <p className="mt-1 text-sm text-muted-foreground">
+        Enter your account email and we&apos;ll send a reset link.
+      </p>
+
+      <div className="mt-6 flex flex-col gap-6">
+        {serverError && (
+          <Alert variant="destructive">
+            <AlertDescription>{serverError}</AlertDescription>
+          </Alert>
+        )}
+
+        <form
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="flex flex-col gap-4"
+          noValidate
+        >
+          <div className="flex flex-col gap-1.5">
+            <Label htmlFor="email">Email address</Label>
+            <Input
+              id="email"
+              type="email"
+              autoComplete="email"
+              inputMode="email"
+              placeholder="you@example.com"
+              {...form.register("email")}
+              aria-invalid={!!form.formState.errors.email}
+            />
+            {form.formState.errors.email && (
+              <p className="text-sm text-destructive" role="alert">
+                {form.formState.errors.email.message}
+              </p>
+            )}
+          </div>
+
+          <Button
+            type="submit"
+            className="h-12 w-full rounded-full"
+            disabled={form.formState.isSubmitting}
+          >
+            {form.formState.isSubmitting ? "Sending…" : "Send reset link"}
+          </Button>
+        </form>
+
+        <p className="text-center text-sm text-muted-foreground">
+          Remembered it?{" "}
+          <Link
+            href="/login"
+            className="font-medium text-primary underline-offset-4 hover:underline"
+          >
+            Log in
+          </Link>
         </p>
       </div>
-
-      {serverError && (
-        <Alert variant="destructive">
-          <AlertDescription>{serverError}</AlertDescription>
-        </Alert>
-      )}
-
-      <form
-        onSubmit={form.handleSubmit(onSubmit)}
-        className="flex flex-col gap-4"
-        noValidate
-      >
-        <div className="flex flex-col gap-1.5">
-          <Label htmlFor="email">Email</Label>
-          <Input
-            id="email"
-            type="email"
-            autoComplete="email"
-            inputMode="email"
-            {...form.register("email")}
-            aria-invalid={!!form.formState.errors.email}
-          />
-          {form.formState.errors.email && (
-            <p className="text-sm text-destructive" role="alert">
-              {form.formState.errors.email.message}
-            </p>
-          )}
-        </div>
-
-        <Button
-          type="submit"
-          className="h-11 w-full"
-          disabled={form.formState.isSubmitting}
-        >
-          {form.formState.isSubmitting ? "Sending…" : "Send reset link"}
-        </Button>
-      </form>
-
-      <p className="text-center text-sm text-muted-foreground">
-        Remembered it?{" "}
-        <Link
-          href="/login"
-          className="text-primary underline-offset-4 hover:underline"
-        >
-          Sign in
-        </Link>
-      </p>
-    </div>
+    </AuthCard>
   );
 }
