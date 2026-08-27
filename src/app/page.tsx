@@ -139,7 +139,7 @@ export default async function HomePage() {
                       <span className="absolute inline-flex size-full animate-ping rounded-full bg-brand opacity-60" />
                       <span className="relative inline-flex size-2 rounded-full bg-brand" />
                     </span>
-                    Verified certification, built in the Philippines
+                    Practical basics. Verifiable skills.
                   </p>
 
                   <AnimatedHeading
@@ -255,6 +255,66 @@ export default async function HomePage() {
               </div>
             </SpotlightPanel>
           </HeroScrollFade>
+        </section>
+
+        <section className="mx-auto w-full max-w-6xl px-4 py-14 sm:py-16">
+          <div className="grid gap-6 lg:grid-cols-[1.4fr_0.8fr]">
+            <Reveal className="rounded-2xl border border-border bg-card/75 p-6 backdrop-blur-sm sm:p-8">
+              <p className="text-xs font-semibold tracking-[0.16em] text-primary uppercase">
+                {landing.certificateReasons.eyebrow}
+              </p>
+              <h2 className="font-display mt-3 max-w-2xl text-2xl font-semibold text-balance sm:text-3xl">
+                {landing.certificateReasons.heading}
+              </h2>
+              <p className="mt-4 max-w-2xl leading-relaxed text-muted-foreground">
+                {landing.certificateReasons.body}
+              </p>
+
+              <div className="mt-8 grid gap-4 sm:grid-cols-3">
+                {landing.certificateReasons.items.map((item) => (
+                  <div
+                    key={item.title}
+                    className="rounded-xl border border-border/80 bg-background/60 p-4"
+                  >
+                    <BadgeCheck className="size-5 text-primary" aria-hidden />
+                    <h3 className="mt-3 font-semibold leading-snug">
+                      {item.title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      {item.body}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
+
+            <Reveal
+              delay={0.12}
+              className="flex flex-col justify-between rounded-2xl bg-brand p-6 text-brand-foreground sm:p-8"
+            >
+              <div>
+                <p className="text-xs font-semibold tracking-[0.16em] uppercase opacity-70">
+                  {landing.certificateReasons.test.eyebrow}
+                </p>
+                <h2 className="font-display mt-3 text-2xl font-semibold text-balance">
+                  {landing.certificateReasons.test.heading}
+                </h2>
+                <p className="mt-4 text-sm leading-relaxed opacity-80">
+                  {landing.certificateReasons.test.body}
+                </p>
+              </div>
+              <Button
+                asChild
+                size="lg"
+                className="mt-8 h-12 bg-ink text-white hover:bg-ink/90"
+              >
+                <Link href={landing.certificateReasons.test.cta.href}>
+                  {landing.certificateReasons.test.cta.label}
+                  <ArrowRight className="size-4" aria-hidden />
+                </Link>
+              </Button>
+            </Reveal>
+          </div>
         </section>
 
         {/* ── The catalogue, counted ───────────────────────────────────── */}

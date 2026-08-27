@@ -12,7 +12,7 @@ export const site = {
   // someone is already stuck.
   contactEmail: "gnclub.contactus@gmail.com",
   description:
-    "Professional AI certification for Filipinos. Take the free AI Readiness Test, earn a verified credential, and get found by employers.",
+    "Practical foundations and verified credentials for Filipinos, from AI and blockchain to online safety, finance, freelancing, and career skills.",
 } as const;
 
 export const nav = {
@@ -63,7 +63,7 @@ export const home = {
 
 export const footer = {
   blurb:
-    "GN Academy certifies AI-ready Filipino talent and connects them with employers who need proof, not promises.",
+    "GN Academy helps Filipinos build practical foundations, prove what they know, and connect with employers who value verified skills.",
   columns: [
     {
       heading: "Platform",

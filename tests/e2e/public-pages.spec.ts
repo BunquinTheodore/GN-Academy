@@ -3,11 +3,17 @@ import { expect, test } from "@playwright/test";
 test("the landing page sells and sends visitors to sign up", async ({ page }) => {
   await page.goto("/");
   await expect(page.getByRole("heading", { level: 1 })).toContainText(
-    /almost nobody can prove it/i,
+    /earn proof that your skills are real/i,
   );
   await expect(
-    page.getByRole("link", { name: /create your free account/i }).first(),
+    page.getByRole("link", { name: /take the free ai skills test/i }).first(),
   ).toBeVisible();
+  await expect(
+    page.getByRole("heading", {
+      name: /knowledge gets you started. proof helps you move forward/i,
+    }),
+  ).toBeVisible();
+  await expect(page.getByText("A public page, not a PDF")).toHaveCount(0);
 });
 
 /**

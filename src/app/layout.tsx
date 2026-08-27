@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     template: "%s · GN Academy",
   },
   description:
-    "Professional AI certification for Filipinos. Take the free AI Readiness Test, earn a verified credential, and get found by employers.",
+    "Practical foundations and verified credentials for Filipinos, from AI and blockchain to online safety, finance, freelancing, and career skills.",
 };
 
 /**

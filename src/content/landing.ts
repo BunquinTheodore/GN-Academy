@@ -12,12 +12,12 @@
 
 export const landing = {
   hero: {
-    heading: "Anyone can say they know AI. Almost nobody can prove it.",
+    heading: "Learn the basics. Earn proof that your skills are real.",
     subheading:
-      "GN Academy turns AI skills into a credential employers can check in seconds: a code, a public page, no screenshots to fake. Built for Filipino students, VAs, freelancers and jobseekers.",
-    primary: { label: "Create your free account", href: "/signup" },
-    secondary: { label: "Already a member? Sign in", href: "/login" },
-    note: "Free to join. Courses open once you are inside.",
+      "Build practical foundations in AI, blockchain, online safety, personal finance, freelancing and more. Then earn a credential employers can verify in seconds.",
+    primary: { label: "Take the free AI skills test", href: "/ai-test" },
+    secondary: { label: "How certification works", href: "/how-it-works" },
+    note: "Free, short and built around real AI work scenarios.",
     /**
      * The pills floating over the hero image. Every one of them is a fact
      * about how the product works, not a mood word. A page arguing that
@@ -25,10 +25,36 @@ export const landing = {
      * "Practical Learning".
      */
     pills: [
-      "Checked in five seconds",
-      "A public page, not a PDF",
-      "Free to start",
+      "Know where your skills stand",
+      "Show employers real proof",
+      "Start learning for free",
     ],
+  },
+
+  certificateReasons: {
+    eyebrow: "Why earn a GN Academy certificate?",
+    heading: "Knowledge gets you started. Proof helps you move forward.",
+    body: "A certificate turns what you learned into evidence another person can check. That matters when you are applying for work, pitching a client or deciding what to learn next.",
+    items: [
+      {
+        title: "Stand out from unsupported claims",
+        body: "Give employers and clients a verified result instead of another skill listed without evidence.",
+      },
+      {
+        title: "See your strengths and gaps",
+        body: "Your assessment breakdown shows what you already understand and where focused practice will help most.",
+      },
+      {
+        title: "Keep proof you can share",
+        body: "Your credential code stays easy to verify from a CV, application, portfolio or client proposal.",
+      },
+    ],
+    test: {
+      eyebrow: "Already confident with AI?",
+      heading: "Take a free, short skills check.",
+      body: "Answer 15 practical scenarios in about 10 minutes and find out whether your AI knowledge holds up in real work situations.",
+      cta: { label: "Check my AI readiness", href: "/ai-test" },
+    },
   },
 
   /**
