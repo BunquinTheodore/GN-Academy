@@ -1,3 +1,4 @@
+import type { ChangeEvent } from "react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -30,14 +31,25 @@ function Shell({
 
 export function TextField({
   defaultValue,
+  value,
+  onChange,
   type = "text",
   placeholder,
   ...common
 }: Common & {
   defaultValue?: string | number | null;
+  value?: string | number | null;
+  onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
   type?: "text" | "number" | "url" | "email";
   placeholder?: string;
 }) {
+  // Controlled when `value` is passed (e.g. a field whose content must
+  // survive a sibling field swapping it out for a different component),
+  // uncontrolled otherwise — same as every other field here.
+  const controlled =
+    value !== undefined
+      ? { value: value ?? "", onChange }
+      : { defaultValue: defaultValue ?? "" };
   return (
     <Shell {...common}>
       <Input
@@ -46,7 +58,7 @@ export function TextField({
         type={type}
         required={common.required}
         placeholder={placeholder}
-        defaultValue={defaultValue ?? ""}
+        {...controlled}
         autoComplete="off"
         className="h-11"
       />
@@ -80,21 +92,33 @@ export function TextAreaField({
 
 export function SelectField({
   defaultValue,
+  value,
   options,
+  onChange,
   ...common
 }: Common & {
   defaultValue?: string | null;
+  value?: string | null;
   options: { value: string; label: string }[];
+  onChange?: (event: ChangeEvent<HTMLSelectElement>) => void;
 }) {
   // A native <select> rather than the radix Select: it posts its value with
   // the form without a hidden-input dance, which is all the admin needs.
+  // Controlled when `value` is passed (e.g. a field whose content must
+  // survive a sibling field swapping it out for a different component),
+  // uncontrolled otherwise.
+  const controlled =
+    value !== undefined
+      ? { value: value ?? options[0]?.value }
+      : { defaultValue: defaultValue ?? options[0]?.value };
   return (
     <Shell {...common}>
       <select
         id={common.name}
         name={common.name}
-        defaultValue={defaultValue ?? options[0]?.value}
+        {...controlled}
         required={common.required}
+        onChange={onChange}
         className="h-11 rounded-md border border-input bg-transparent px-3 text-sm shadow-xs outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50"
       >
         {options.map((o) => (

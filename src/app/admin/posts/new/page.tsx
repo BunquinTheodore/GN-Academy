@@ -19,7 +19,7 @@ export default function NewPostPage() {
           className="inline-flex min-h-11 items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
         >
           <ArrowLeft className="size-4" aria-hidden />
-          Blog
+          Publishing
         </Link>
         <h1 className="mt-2 font-display text-2xl font-semibold">New post</h1>
       </div>

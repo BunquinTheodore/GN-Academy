@@ -8,7 +8,7 @@ const LINKS: { href: string; label: string; exact?: boolean }[] = [
   { href: "/admin", label: "Overview", exact: true },
   { href: "/admin/certifications", label: "Certifications" },
   { href: "/admin/questions", label: "Questions" },
-  { href: "/admin/posts", label: "Blog" },
+  { href: "/admin/posts", label: "Publishing" },
   { href: "/admin/enrollments", label: "Enrollments" },
   { href: "/admin/assignments", label: "Assignments" },
   { href: "/admin/credentials", label: "Credentials" },

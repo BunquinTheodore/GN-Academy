@@ -16,7 +16,7 @@ const TARGETS = { startToComplete: 60, completeToEmail: 40 } as const;
 const SECTIONS = [
   { href: "/admin/certifications", label: "Certifications" },
   { href: "/admin/questions", label: "Question sets" },
-  { href: "/admin/posts", label: "Blog" },
+  { href: "/admin/posts", label: "Publishing" },
   { href: "/admin/enrollments", label: "Pending enrollments" },
   { href: "/admin/assignments", label: "Assignments to review" },
   { href: "/admin/credentials", label: "Credentials" },

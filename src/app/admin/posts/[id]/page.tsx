@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import { z } from "zod";
 import { getPostById } from "@/lib/db/posts";
+import { contentPath } from "@/lib/content-types";
 import { AdminForm } from "@/components/admin/admin-form";
 import { CheckboxField } from "@/components/admin/field";
 import { Badge } from "@/components/ui/badge";
@@ -27,6 +28,7 @@ export default async function EditPostPage({
 
   const post = await getPostById(parsed.data).catch(() => null);
   if (!post) notFound();
+  const publicPath = contentPath(post);
 
   return (
     <div className="flex max-w-3xl flex-col gap-8">
@@ -36,7 +38,7 @@ export default async function EditPostPage({
           className="inline-flex min-h-11 items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
         >
           <ArrowLeft className="size-4" aria-hidden />
-          Blog
+          Publishing
         </Link>
         <div className="mt-2 flex flex-wrap items-center gap-3">
           <h1 className="font-display text-2xl font-semibold">{post.title}</h1>
@@ -47,7 +49,7 @@ export default async function EditPostPage({
           </Badge>
           {post.status === "published" && (
             <Link
-              href={`/blog/${post.slug}`}
+              href={publicPath}
               className="inline-flex items-center gap-1 text-sm text-primary hover:underline"
             >
               View post

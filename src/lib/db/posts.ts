@@ -1,6 +1,10 @@
 import "server-only";
 
 import { supabaseAdmin } from "@/lib/supabase/server";
+import type { ContentType } from "@/lib/content-types";
+
+export { SHORT_GUIDE_CATEGORIES } from "@/lib/content-types";
+export type { ContentType } from "@/lib/content-types";
 
 export type Post = {
   id: string;
@@ -15,20 +19,24 @@ export type Post = {
   published_at: string | null;
   created_at: string;
   updated_at: string;
+  content_type: ContentType;
+  disclosure: string | null;
 };
 
-export type PostSummary = Omit<Post, "content_mdx">;
+export type PostSummary = Omit<Post, "content_mdx" | "disclosure">;
 
 const SUMMARY_COLUMNS =
-  "id, slug, title, excerpt, category, cover_image_url, author_name, status, published_at, created_at, updated_at";
+  "id, slug, title, excerpt, category, cover_image_url, author_name, status, published_at, created_at, updated_at, content_type";
 
 export async function listPublishedPosts(
   category?: string,
+  contentType: ContentType = "blog",
 ): Promise<PostSummary[]> {
   let builder = supabaseAdmin()
     .from("posts")
     .select(SUMMARY_COLUMNS)
     .eq("status", "published")
+    .eq("content_type", contentType)
     .order("published_at", { ascending: false });
   if (category) builder = builder.eq("category", category);
 
@@ -38,23 +46,28 @@ export async function listPublishedPosts(
 }
 
 /** Categories that actually have published posts — no empty filter chips. */
-export async function listPostCategories(): Promise<string[]> {
+export async function listPostCategories(
+  contentType: ContentType = "blog",
+): Promise<string[]> {
   const { data, error } = await supabaseAdmin()
     .from("posts")
     .select("category")
-    .eq("status", "published");
+    .eq("status", "published")
+    .eq("content_type", contentType);
   if (error) throw error;
   return [...new Set((data ?? []).map((r) => r.category))].sort();
 }
 
 export async function getPublishedPostBySlug(
   slug: string,
+  contentType: ContentType = "blog",
 ): Promise<Post | null> {
   const { data, error } = await supabaseAdmin()
     .from("posts")
     .select("*")
     .eq("slug", slug)
     .eq("status", "published")
+    .eq("content_type", contentType)
     .maybeSingle();
   if (error) throw error;
   return data;
@@ -91,6 +104,8 @@ export type PostInput = {
   author_name: string;
   status: "draft" | "published";
   published_at: string | null;
+  content_type: ContentType;
+  disclosure: string | null;
 };
 
 export async function createPost(input: PostInput): Promise<Post> {

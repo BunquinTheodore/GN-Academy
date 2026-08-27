@@ -2,6 +2,9 @@ import { env } from "@/lib/env";
 
 export const AVATAR_BUCKET = "avatars";
 export const PORTFOLIO_BUCKET = "portfolio";
+export const GUIDE_MEDIA_BUCKET = "guide-media";
+/** Must match the `guide-media` bucket's file_size_limit (migration 0009). */
+export const GUIDE_MEDIA_MAX_BYTES = 1_048_576;
 
 /**
  * Public URL for an object. Both buckets are public-read by design — the

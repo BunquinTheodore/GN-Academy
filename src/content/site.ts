@@ -17,6 +17,7 @@ export const site = {
 
 export const nav = {
   links: [
+    { label: "Short Guides", href: "/short-guides" },
     { label: "How it works", href: "/how-it-works" },
     { label: "Questions", href: "/faq" },
     { label: "For employers", href: "/employers" },
@@ -68,6 +69,7 @@ export const footer = {
       heading: "Platform",
       links: [
         { label: "AI Readiness Test", href: "/ai-test" },
+        { label: "Short Guides", href: "/short-guides" },
         { label: "Verify a credential", href: "/verify" },
         { label: "How it works", href: "/how-it-works" },
         { label: "Blog", href: "/blog" },

@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { listAllPosts } from "@/lib/db/posts";
+import { contentSection } from "@/lib/content-types";
 import { formatDate } from "@/lib/format";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "Publishing",
   robots: { index: false, follow: false },
 };
 
@@ -19,7 +20,7 @@ export default async function AdminPostsPage() {
     <div className="flex flex-col gap-6">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
-          <h1 className="font-display text-2xl font-semibold">Blog</h1>
+          <h1 className="font-display text-2xl font-semibold">Publishing</h1>
           <p className="mt-1 max-w-prose text-sm text-muted-foreground">
             Posts live in the database, so publishing one needs no deploy.
             Drafts are invisible to everyone but this screen.
@@ -49,7 +50,8 @@ export default async function AdminPostsPage() {
                 <div>
                   <p className="font-medium">{post.title}</p>
                   <p className="font-mono text-xs text-muted-foreground">
-                    /blog/{post.slug} · {post.category}
+                    /{contentSection(post.content_type)}/{post.slug} ·{" "}
+                    {post.category}
                   </p>
                 </div>
                 <div className="flex items-center gap-3">

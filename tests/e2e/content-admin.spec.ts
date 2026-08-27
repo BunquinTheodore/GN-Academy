@@ -94,6 +94,56 @@ test.describe("blog (public)", () => {
   });
 });
 
+test.describe("short guides (public)", () => {
+  test.skip(
+    process.env.E2E_AUTH !== "1",
+    "Set E2E_AUTH=1 with real keys in .env.local to run live flows.",
+  );
+
+  test("catalog searches and filters published guides", async ({ page }) => {
+    await page.goto("/short-guides");
+    await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+      "Short Guides",
+    );
+    const guide = page.getByRole("link", { name: /How to Use FundedXyz/ });
+    await expect(guide).toBeVisible();
+
+    await page.getByRole("searchbox", { name: "Search short guides" }).fill(
+      "FundedXyz",
+    );
+    await expect(guide).toBeVisible();
+    await page.getByRole("searchbox", { name: "Search short guides" }).fill(
+      "not a real guide",
+    );
+    await expect(page.getByText("No guides found")).toBeVisible();
+  });
+
+  test("a guide renders its body, disclosure, and Article JSON-LD", async ({
+    page,
+  }) => {
+    await page.goto("/short-guides/how-to-use-fundedxyz");
+    await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+      "How to Use FundedXyz",
+    );
+    await expect(page.getByText(/GN Academy is not affiliated/).first()).toBeVisible();
+    await expect(
+      page.getByRole("heading", { name: "Create your account" }),
+    ).toBeVisible();
+
+    const jsonLd = await page
+      .locator('script[type="application/ld+json"]')
+      .allTextContents();
+    expect(jsonLd.some((raw) => JSON.parse(raw)["@type"] === "Article")).toBe(
+      true,
+    );
+  });
+
+  test("short guides do not appear on the blog", async ({ page }) => {
+    await page.goto("/blog");
+    await expect(page.getByText("How to Use FundedXyz")).toHaveCount(0);
+  });
+});
+
 test.describe("SEO surfaces", () => {
   test.skip(
     process.env.E2E_AUTH !== "1",
@@ -108,6 +158,7 @@ test.describe("SEO surfaces", () => {
     const xml = await response.text();
 
     expect(xml).toContain("/blog/what-employers-actually-check");
+    expect(xml).toContain("/short-guides/how-to-use-fundedxyz");
     // Credential pages are public but deliberately unlisted — a sitemap of
     // them would turn a lookup tool into a directory of holders.
     expect(xml).not.toContain("/verify/CAVA-");
@@ -293,7 +344,7 @@ test.describe("admin publishing", () => {
     await serviceClient().from("rate_limits").delete().neq("key", "");
   });
 
-  test("an admin writes, publishes, and edits a post without a deploy", async ({
+  test("an admin writes, publishes, and edits a guide without a deploy", async ({
     page,
     browser,
   }) => {
@@ -324,9 +375,10 @@ test.describe("admin publishing", () => {
 
       // 1. Create it — the form must come back, not hang on "Saving…".
       await page.goto("/admin/posts/new");
+      await page.getByLabel("Content type").selectOption("short_guide");
       await page.getByLabel("Title").fill(title);
       await page.getByLabel("URL slug").fill(slug);
-      await page.getByLabel("Category").fill("Hiring");
+      await page.getByLabel("Category").selectOption("Cryptocurrency (Crypto)");
       await page.getByLabel("Excerpt").fill("Written by the e2e suite.");
       await page
         .getByLabel("Body (Markdown)")
@@ -342,7 +394,7 @@ test.describe("admin publishing", () => {
       //    page has to have been purged, not left to expire on its own.
       const strangerContext = await browser.newContext();
       const stranger = await strangerContext.newPage();
-      await stranger.goto(`/blog/${slug}`);
+      await stranger.goto(`/short-guides/${slug}`);
       await expect(stranger.getByRole("heading", { level: 1 })).toContainText(
         title,
       );
