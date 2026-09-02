@@ -200,8 +200,12 @@ from (values
 
 ) as v(assessment_id, sort_order, competency, prompt, options, correct, explanation)
 where not exists (
+  -- Scoped to the scored questions specifically (not "any row"), so the
+  -- non-scored intent question from migration 0011 — which runs before this
+  -- seed on a fresh install — never blocks these 15 from being seeded.
   select 1 from public.questions
   where assessment_id = 'a0000000-0000-4000-8000-000000000001'
+    and competency <> 'intent'
 );
 
 -- ════════════════════════════════════════════════════════════════════════════

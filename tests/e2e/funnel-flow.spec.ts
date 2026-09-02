@@ -29,21 +29,24 @@ test.describe("funnel flow", () => {
   test("take the test, hit the email gate, see results, land in leads", async ({
     page,
   }) => {
-    test.setTimeout(180_000); // 15 questions + live network round-trips
+    test.setTimeout(180_000); // 16 questions (15 scored + 1 goal) + live network round-trips
     const email = `e2e-funnel+${Date.now()}@example.com`;
 
     await page.goto("/ai-test");
     await page.getByRole("link", { name: "Start my test" }).click();
     await expect(page).toHaveURL(/\/ai-test\/quiz/, { timeout: 30_000 });
 
-    for (let i = 0; i < 15; i++) {
+    // 15 scored questions plus 1 non-scored "goal" question (§funnel) that
+    // drives the results-page certification recommendation.
+    const totalQuestions = 16;
+    for (let i = 0; i < totalQuestions; i++) {
       // Scoped for the same reason as the certification journey: the theme
       // toggle is a radiogroup, and nth(1) of an unscoped query is "Dark".
       const radios = page.locator("fieldset").getByRole("radio");
       await expect(radios.first()).toBeVisible({ timeout: 15_000 });
       await radios.nth(1).click();
       const nextButton = page.getByRole("button", {
-        name: i === 14 ? "Finish" : "Next",
+        name: i === totalQuestions - 1 ? "Finish" : "Next",
         exact: true,
       });
       await expect(nextButton).toBeEnabled();
@@ -63,6 +66,11 @@ test.describe("funnel flow", () => {
     await expect(page.getByText("Competency breakdown")).toBeVisible();
     await expect(
       page.getByText("Your score is unverified. Employers can't see it."),
+    ).toBeVisible();
+
+    // A specific certification recommendation is always shown (§funnel).
+    await expect(
+      page.getByText(/AI Foundations Certificate|Certified AI Virtual Assistant/),
     ).toBeVisible();
 
     // The visitor is now a lead.

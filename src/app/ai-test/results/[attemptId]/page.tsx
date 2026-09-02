@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { z } from "zod";
 import { LEVELS, RESULTS_COPY, type LevelKey } from "@/content/ai-test";
+import { getRecommendation, INTENT_QUESTION_ID } from "@/content/recommendations";
 import { getAttemptById, type Attempt } from "@/lib/db/attempts";
 import { CredentialCard } from "@/components/credential-card";
 import { SiteFooter } from "@/components/site/footer";
@@ -49,12 +50,17 @@ export default async function ResultsPage({
   const { attemptId } = await params;
   const attempt = await loadCompletedAttempt(attemptId);
 
-  const level = LEVELS[(attempt.level ?? "beginner") as LevelKey] ?? LEVELS.beginner;
+  const levelKey = (attempt.level ?? "beginner") as LevelKey;
+  const level = LEVELS[levelKey] ?? LEVELS.beginner;
   const competencies = attempt.competency_scores ?? [];
   const weakest =
     competencies.length > 0
       ? competencies.reduce((min, c) => (c.score < min.score ? c : min))
       : null;
+  const intentAnswer = attempt.answers.find(
+    (a) => a.questionId === INTENT_QUESTION_ID,
+  )?.optionId;
+  const recommendation = getRecommendation(levelKey, intentAnswer);
 
   return (
     <div className="flex min-h-svh flex-col bg-background">
@@ -134,16 +140,28 @@ export default async function ResultsPage({
             />
           </div>
 
+          <div
+            className={`flex flex-col gap-2 rounded-lg border p-5 ${
+              recommendation.tone === "urgent"
+                ? "border-primary bg-primary/5"
+                : "border-border bg-card"
+            }`}
+          >
+            {recommendation.tone === "urgent" && (
+              <span className="w-fit rounded-full bg-primary px-2.5 py-0.5 text-xs font-semibold text-primary-foreground">
+                Recommended for your score
+              </span>
+            )}
+            <p className="text-xs font-semibold tracking-wider text-muted-foreground uppercase">
+              {recommendation.headline}
+            </p>
+            <p className="font-medium">{recommendation.certification.title}</p>
+            <p className="text-sm text-muted-foreground">{recommendation.pitch}</p>
+          </div>
+
           <div className="flex flex-col gap-3">
             <Button asChild size="lg" className="h-12">
-              <Link href={RESULTS_COPY.primaryCta.href}>
-                {RESULTS_COPY.primaryCta.label}
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="h-12">
-              <Link href={RESULTS_COPY.secondaryCta.href}>
-                {RESULTS_COPY.secondaryCta.label}
-              </Link>
+              <Link href={recommendation.cta.href}>{recommendation.cta.label}</Link>
             </Button>
             <ShareButton />
           </div>

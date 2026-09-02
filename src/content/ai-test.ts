@@ -58,17 +58,9 @@ export const RESULTS_COPY = {
   // renders it on the dashboard too and has to say the same thing in both
   // places. A key here that nothing rendered was worse than no key, because
   // this file is edited by whoever owns the copy.
-  // Both destinations are behind the login now, and whoever reads this page
-  // is usually still anonymous: the results page is the end of the free
-  // funnel. Sending them to /signup with a `next` is the difference between
-  // "create your account, then you are in the course" and an unexplained
-  // sign-in wall, which is where the funnel used to lose them.
-  primaryCta: {
-    label: "Start the free certificate course",
-    href: "/signup?next=%2Fstart-free",
-  },
-  secondaryCta: {
-    label: "See the paid certification",
-    href: "/signup?next=%2Fcertifications",
-  },
+  //
+  // The CTA used to live here as one static pair shown to everyone. It now
+  // comes from getRecommendation() in ./recommendations, which picks the
+  // certification and copy by score level (and stated goal) — see that file
+  // for the /signup?next= redirect reasoning, which still applies.
 } as const;
