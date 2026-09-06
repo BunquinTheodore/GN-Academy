@@ -17,6 +17,17 @@ export function middleware(request: NextRequest) {
   const needsAuth = PROTECTED_PREFIXES.some((p) => pathname.startsWith(p));
   const hasSession = request.cookies.has(SESSION_COOKIE);
 
+  // A fresh nonce per request/response. Next's own inline bootstrap scripts
+  // (the RSC streaming payload, `self.__next_f.push(...)`) and the inline
+  // JSON-LD blocks in `<JsonLd>` and the root layout carry this nonce instead
+  // of relying on a blanket 'unsafe-inline'. It has to reach both the page
+  // (via a request header, so server components can read it) and the
+  // response (via the CSP header, so the browser knows which nonce to trust).
+  const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
+
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set("x-nonce", nonce);
+
   let response: NextResponse;
 
   if (needsAuth && !hasSession) {
@@ -25,7 +36,7 @@ export function middleware(request: NextRequest) {
     login.searchParams.set("next", pathname);
     response = NextResponse.redirect(login);
   } else {
-    response = NextResponse.next();
+    response = NextResponse.next({ request: { headers: requestHeaders } });
   }
 
   // Empty when analytics is off, so the header gains nothing then.
@@ -33,7 +44,17 @@ export function middleware(request: NextRequest) {
 
   const csp = [
     "default-src 'self'",
-    `script-src 'self' 'unsafe-inline' 'unsafe-eval' https://apis.google.com https://www.gstatic.com${analytics ? ` ${analytics}` : ""}`,
+    // 'strict-dynamic' plus the nonce covers Next's own scripts and anything
+    // they load at runtime (Firebase's own script insertion included); the
+    // explicit hosts stay only as a fallback for browsers old enough not to
+    // understand 'strict-dynamic'. No 'unsafe-inline', no 'unsafe-eval' —
+    // production builds don't need eval, and every inline script in the app
+    // now carries this nonce.
+    `script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://apis.google.com https://www.gstatic.com${analytics ? ` ${analytics}` : ""}`,
+    // Left as 'unsafe-inline': Radix's positioning primitives (popovers,
+    // dropdowns, dialogs) set inline `style` attributes at runtime, and
+    // nonce-ing every one of those is not practical. Style injection is a
+    // materially smaller blast radius than script injection.
     "style-src 'self' 'unsafe-inline'",
     // browser-image-compression runs the resize in a worker created from a
     // blob URL; without this the upload silently falls back to the main

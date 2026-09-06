@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { canWriteAttempt } from "@/lib/assessment/ownership";
 import { getAttemptById, saveAnswers } from "@/lib/db/attempts";
+import { isTrustedOrigin, untrustedOriginResponse } from "@/lib/origin-check";
 
 const bodySchema = z.object({
   answers: z
@@ -20,6 +21,7 @@ export async function PATCH(
   request: Request,
   context: { params: Promise<{ attemptId: string }> },
 ) {
+  if (!isTrustedOrigin(request)) return untrustedOriginResponse();
   const params = paramsSchema.safeParse(await context.params);
   if (!params.success) {
     return Response.json({ error: "Invalid attempt id." }, { status: 400 });

@@ -12,6 +12,7 @@ import {
   RATE_LIMITS,
   rateLimitedResponse,
 } from "@/lib/rate-limit";
+import { isTrustedOrigin, untrustedOriginResponse } from "@/lib/origin-check";
 
 const bodySchema = z.object({
   answers: z
@@ -35,6 +36,7 @@ export async function POST(
   request: Request,
   context: { params: Promise<{ attemptId: string }> },
 ) {
+  if (!isTrustedOrigin(request)) return untrustedOriginResponse();
   const params = paramsSchema.safeParse(await context.params);
   if (!params.success) {
     return Response.json({ error: "Invalid attempt id." }, { status: 400 });

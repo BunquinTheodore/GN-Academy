@@ -9,6 +9,7 @@ import { env } from "@/lib/env";
 import { site } from "@/content/site";
 import { SiteHeader } from "@/components/site/header";
 import { SiteFooter } from "@/components/site/footer";
+import { JsonLd } from "@/components/json-ld";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
@@ -70,10 +71,7 @@ export default async function TalentProfilePage({
   return (
     <div className="flex min-h-svh flex-col">
       <SiteHeader />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={jsonLd} />
 
       <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-12">
         <div className="flex flex-wrap items-start gap-5">

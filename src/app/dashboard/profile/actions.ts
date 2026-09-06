@@ -92,7 +92,14 @@ export async function saveProfileAction(
   // discarding a form someone just spent ten minutes on.
   const heldBack = is_public && credentialCount === 0;
 
-  const avatarPath = optional(formData.get("avatar_path"));
+  const submittedAvatarPath = optional(formData.get("avatar_path"));
+  // Storage write policies already restrict uploads to the caller's own
+  // folder, but the path arrives here as plain form data, and trusting it
+  // without a check would let someone point their profile at any other
+  // public object in the bucket. Never trust client input just because a
+  // downstream policy happens to catch the bad case too (§14).
+  const avatarPath =
+    submittedAvatarPath?.startsWith(`${user.uid}/`) ? submittedAvatarPath : null;
 
   const input: ProfileInput = {
     ...parsed.data,
@@ -159,7 +166,11 @@ export async function savePortfolioItemAction(
   }
 
   const { itemId, ...rest } = parsed.data;
-  const uploadedPath = optional(formData.get("image_path"));
+  const submittedImagePath = optional(formData.get("image_path"));
+  // Same reasoning as the avatar path above: verify ownership at the app
+  // layer instead of trusting client-supplied form data (§14).
+  const uploadedPath =
+    submittedImagePath?.startsWith(`${user.uid}/`) ? submittedImagePath : null;
 
   try {
     // Keep the existing image when the form was saved without picking a new one.

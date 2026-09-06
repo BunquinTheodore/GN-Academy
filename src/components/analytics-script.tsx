@@ -10,7 +10,7 @@ import {
  * deployment without them ships zero third-party bytes — no stub, no
  * blocked request, no console noise.
  */
-export function AnalyticsScript() {
+export function AnalyticsScript({ nonce }: { nonce?: string }) {
   if (!analyticsEnabled) return null;
 
   return (
@@ -18,6 +18,7 @@ export function AnalyticsScript() {
       src={ANALYTICS_SRC}
       data-website-id={ANALYTICS_WEBSITE_ID}
       strategy="afterInteractive"
+      nonce={nonce}
       // Never let the beacon compete with the LCP font or the first paint.
       defer
     />

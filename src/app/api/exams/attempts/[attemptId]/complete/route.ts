@@ -5,6 +5,7 @@ import { getScorableQuestions } from "@/lib/db/assessments";
 import { completeAttempt, getAttemptById } from "@/lib/db/attempts";
 import { supabaseAdmin } from "@/lib/supabase/server";
 import { maybeIssueCredential } from "@/lib/credentials/issue";
+import { isTrustedOrigin, untrustedOriginResponse } from "@/lib/origin-check";
 
 const bodySchema = z.object({
   answers: z
@@ -29,6 +30,7 @@ export async function POST(
   request: Request,
   context: { params: Promise<{ attemptId: string }> },
 ) {
+  if (!isTrustedOrigin(request)) return untrustedOriginResponse();
   const user = await getSessionUser();
   if (!user) {
     return Response.json({ error: "Sign in to submit the exam." }, { status: 401 });

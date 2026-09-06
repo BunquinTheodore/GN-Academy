@@ -9,6 +9,9 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
+      // Next.js turns `import "server-only"` into a no-op at build time; it
+      // throws in a plain Node environment, which Vitest is.
+      "server-only": path.resolve(__dirname, "tests/unit/mocks/server-only.ts"),
     },
   },
 });

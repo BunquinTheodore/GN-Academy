@@ -6,6 +6,7 @@ import {
   RATE_LIMITS,
   rateLimitedResponse,
 } from "@/lib/rate-limit";
+import { isTrustedOrigin, untrustedOriginResponse } from "@/lib/origin-check";
 
 const bodySchema = z.object({ idToken: z.string().min(1) });
 
@@ -27,6 +28,7 @@ const bodySchema = z.object({ idToken: z.string().min(1) });
  * sign-in route, which is where that exchange belongs.
  */
 export async function POST(request: Request) {
+  if (!isTrustedOrigin(request)) return untrustedOriginResponse();
   if (!(await checkRateLimit(request, RATE_LIMITS.sessionRefresh))) {
     return rateLimitedResponse();
   }

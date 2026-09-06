@@ -12,6 +12,7 @@ import {
   RATE_LIMITS,
   rateLimitedResponse,
 } from "@/lib/rate-limit";
+import { isTrustedOrigin, untrustedOriginResponse } from "@/lib/origin-check";
 
 const bodySchema = z.object({
   idToken: z.string().min(1),
@@ -26,6 +27,7 @@ const bodySchema = z.object({
  * `getIdToken(true)` afterwards to pick up the claim.
  */
 export async function POST(request: Request) {
+  if (!isTrustedOrigin(request)) return untrustedOriginResponse();
   if (!(await checkRateLimit(request, RATE_LIMITS.auth))) {
     return rateLimitedResponse();
   }

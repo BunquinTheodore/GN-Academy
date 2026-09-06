@@ -8,6 +8,7 @@ import {
 import { createAttempt } from "@/lib/db/attempts";
 import { getFinalExamGate } from "@/lib/assessment/exam-gate";
 import { clientIpFrom, hashIp } from "@/lib/rate-limit";
+import { isTrustedOrigin, untrustedOriginResponse } from "@/lib/origin-check";
 import { site } from "@/content/site";
 
 const paramsSchema = z.object({ slug: z.string().min(1).max(100) });
@@ -20,6 +21,7 @@ export async function POST(
   request: Request,
   context: { params: Promise<{ slug: string }> },
 ) {
+  if (!isTrustedOrigin(request)) return untrustedOriginResponse();
   const user = await getSessionUser();
   if (!user) {
     return Response.json({ error: "Sign in to take the exam." }, { status: 401 });

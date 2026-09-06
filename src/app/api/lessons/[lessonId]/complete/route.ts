@@ -8,6 +8,7 @@ import { getEnrollment, updateEnrollmentProgress } from "@/lib/db/enrollments";
 import { getCompletedLessonIds, markLessonComplete } from "@/lib/db/progress";
 import { getModuleQuiz } from "@/lib/db/course-progress";
 import { supabaseAdmin } from "@/lib/supabase/server";
+import { isTrustedOrigin, untrustedOriginResponse } from "@/lib/origin-check";
 
 const paramsSchema = z.object({ lessonId: z.string().uuid() });
 
@@ -32,9 +33,10 @@ const COURSES = "/dashboard/courses";
  * chain, which is what made lesson two onward need a second click.
  */
 export async function POST(
-  _request: Request,
+  request: Request,
   context: { params: Promise<{ lessonId: string }> },
 ): Promise<Response> {
+  if (!isTrustedOrigin(request)) return untrustedOriginResponse();
   const params = paramsSchema.safeParse(await context.params);
   if (!params.success) return Response.json({ nextHref: COURSES });
 

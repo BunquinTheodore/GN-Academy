@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Inter, Geist_Mono, Bricolage_Grotesque } from "next/font/google";
 import { env } from "@/lib/env";
 import { site } from "@/content/site";
@@ -62,11 +63,12 @@ const organizationJsonLd = {
   areaServed: { "@type": "Country", name: "Philippines" },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const nonce = (await headers()).get("x-nonce") ?? undefined;
   return (
     // suppressHydrationWarning: next-themes sets the class on <html> before
     // React hydrates, so the server and client markup differ by design here.
@@ -95,12 +97,13 @@ export default function RootLayout({
       <body className="antialiased">
         <script
           type="application/ld+json"
+          nonce={nonce}
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(organizationJsonLd),
           }}
         />
-        <ThemeProvider>{children}</ThemeProvider>
-        <AnalyticsScript />
+        <ThemeProvider nonce={nonce}>{children}</ThemeProvider>
+        <AnalyticsScript nonce={nonce} />
       </body>
     </html>
   );

@@ -8,6 +8,7 @@ import { CredentialCard } from "@/components/credential-card";
 import { SiteHeader } from "@/components/site/header";
 import { SiteFooter } from "@/components/site/footer";
 import { TrackView } from "@/components/track-view";
+import { JsonLd } from "@/components/json-ld";
 import { Button } from "@/components/ui/button";
 
 export const dynamic = "force-dynamic";
@@ -82,12 +83,7 @@ export default async function VerifyCodePage({
   return (
     <div className="flex min-h-svh flex-col">
       <SiteHeader />
-      {jsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      )}
+      {jsonLd && <JsonLd data={jsonLd} />}
       {credential && (
         <TrackView
           event="credential_verified"

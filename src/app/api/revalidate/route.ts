@@ -1,6 +1,7 @@
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { requireAdmin } from "@/lib/auth/admin";
+import { isTrustedOrigin, untrustedOriginResponse } from "@/lib/origin-check";
 
 /**
  * Purges cached public pages after an admin edit.
@@ -30,6 +31,7 @@ const schema = z.object({
 });
 
 export async function POST(request: Request): Promise<Response> {
+  if (!isTrustedOrigin(request)) return untrustedOriginResponse();
   try {
     await requireAdmin();
   } catch {

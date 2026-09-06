@@ -10,6 +10,7 @@ import {
   RATE_LIMITS,
   rateLimitedResponse,
 } from "@/lib/rate-limit";
+import { isTrustedOrigin, untrustedOriginResponse } from "@/lib/origin-check";
 
 const bodySchema = z.object({
   assessmentSlug: z.string().min(1).max(100),
@@ -17,6 +18,7 @@ const bodySchema = z.object({
 
 /** Start an attempt. Works fully logged out (§8) — anon_id cookie is the key. */
 export async function POST(request: Request) {
+  if (!isTrustedOrigin(request)) return untrustedOriginResponse();
   if (!(await checkRateLimit(request, RATE_LIMITS.attemptCreate))) {
     return rateLimitedResponse();
   }

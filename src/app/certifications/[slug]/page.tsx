@@ -15,6 +15,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CredentialCard } from "@/components/credential-card";
 import { TrackView } from "@/components/track-view";
+import { JsonLd } from "@/components/json-ld";
 
 // Course pages are behind the login now, so there is nothing to prerender and
 // nothing to cache publicly — the ISR window and generateStaticParams that
@@ -82,10 +83,7 @@ export default async function CertificationPage({
   return (
     <div className="flex min-h-svh flex-col">
       <SiteHeader />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={jsonLd} />
       <TrackView event="certification_viewed" props={{ slug: cert.slug }} />
 
       <main className="flex-1">
