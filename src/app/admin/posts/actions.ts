@@ -4,7 +4,7 @@ import { z } from "zod";
 import { auditLog, requireAdmin } from "@/lib/auth/admin";
 import { optional } from "@/lib/admin/form-values";
 import type { AdminFormState } from "@/components/admin/admin-form";
-import { contentPath, SHORT_GUIDE_CATEGORIES } from "@/lib/content-types";
+import { contentPath } from "@/lib/content-types";
 import {
   createPost,
   deletePost,
@@ -25,47 +25,34 @@ function contentPaths(
     | undefined
   )[]
 ): string[] {
-  const paths = new Set(["/sitemap.xml", "/blog", "/short-guides"]);
+  const paths = new Set(["/sitemap.xml", "/blog"]);
   for (const item of items) {
     if (item) paths.add(contentPath(item));
   }
   return [...paths];
 }
 
-const postSchema = z
-  .object({
-    id: z.string().uuid().optional(),
-    slug: z
-      .string()
-      .trim()
-      .min(2)
-      .max(120)
-      .regex(
-        /^[a-z0-9]+(?:-[a-z0-9]+)*$/,
-        "Use lowercase words separated by hyphens.",
-      ),
-    title: z.string().trim().min(3).max(200),
-    excerpt: z.string().trim().max(400).nullable(),
-    content_mdx: z.string().max(80_000).nullable(),
-    category: z.string().trim().min(2).max(60),
-    cover_image_url: z.string().trim().url().max(500).nullable(),
-    author_name: z.string().trim().min(2).max(120),
-    status: z.enum(["draft", "published"]),
-    content_type: z.enum(["blog", "short_guide"]),
-    disclosure: z.string().trim().max(500).nullable(),
-  })
-  .superRefine((data, ctx) => {
-    if (
-      data.content_type === "short_guide" &&
-      !(SHORT_GUIDE_CATEGORIES as readonly string[]).includes(data.category)
-    ) {
-      ctx.addIssue({
-        code: z.ZodIssueCode.custom,
-        path: ["category"],
-        message: "Choose a category from the list.",
-      });
-    }
-  });
+const postSchema = z.object({
+  id: z.string().uuid().optional(),
+  slug: z
+    .string()
+    .trim()
+    .min(2)
+    .max(120)
+    .regex(
+      /^[a-z0-9]+(?:-[a-z0-9]+)*$/,
+      "Use lowercase words separated by hyphens.",
+    ),
+  title: z.string().trim().min(3).max(200),
+  excerpt: z.string().trim().max(400).nullable(),
+  content_mdx: z.string().max(80_000).nullable(),
+  category: z.string().trim().min(2).max(60),
+  cover_image_url: z.string().trim().url().max(500).nullable(),
+  author_name: z.string().trim().min(2).max(120),
+  status: z.enum(["draft", "published"]),
+  content_type: z.enum(["blog"]),
+  disclosure: z.string().trim().max(500).nullable(),
+});
 
 export async function savePostAction(
   _prev: AdminFormState,

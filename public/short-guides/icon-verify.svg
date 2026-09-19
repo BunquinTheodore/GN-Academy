@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" role="img" aria-hidden="true">
-  <title>Verifying a code sent to your email or phone</title>
-  <circle cx="600" cy="110" r="88" fill="oklch(0.945 0.012 122)" stroke="oklch(0.52 0.145 122)" stroke-width="3"/>
-  <path d="M600 52 L644 68 V108 C644 138 626 156 600 168 C574 156 556 138 556 108 V68 Z"
-        fill="oklch(1 0 0)" stroke="oklch(0.22 0.012 250)" stroke-width="7" stroke-linejoin="round"/>
-  <path d="M578 110 L594 128 L624 90" fill="none" stroke="oklch(0.52 0.145 122)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>

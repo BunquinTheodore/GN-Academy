@@ -3,7 +3,6 @@ import "server-only";
 import { supabaseAdmin } from "@/lib/supabase/server";
 import type { ContentType } from "@/lib/content-types";
 
-export { SHORT_GUIDE_CATEGORIES } from "@/lib/content-types";
 export type { ContentType } from "@/lib/content-types";
 
 export type Post = {
