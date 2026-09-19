@@ -117,8 +117,8 @@ export const advocacy = {
     heading: "Bring GN Ventures to your campus or event",
     body: "Jops speaks with university students and communities about practical trading and technology skills, the same foundations taught in GN Academy's free tracks. Tell us about your event and we will follow up by email.",
     imagery: [
-      { file: "speaker-jops-01.jpg", alt: "TODO: describe photo, Jops presenting on stage." },
-      { file: "speaker-jops-02.jpg", alt: "TODO: describe photo, Jops engaging with the audience." },
+      { file: "speaker-jops-01.jpg", alt: "Jops speaking into a microphone during a presentation, gesturing while addressing the audience." },
+      { file: "speaker-jops-02.jpg", alt: "Jops speaking at a Web3 community event, holding a microphone in front of a branded stage backdrop." },
     ],
     form: {
       heading: "Speaking inquiry",

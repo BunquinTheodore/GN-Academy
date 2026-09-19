@@ -148,7 +148,7 @@ export default async function VerifyCodePage({
           </div>
 
           {credential.competencies && credential.competencies.length > 0 && (
-            <div className="mt-6 flex flex-col gap-3 rounded-lg border border-border bg-card p-5">
+            <div className="glass-panel-bright gn-shine overflow-hidden mt-6 flex flex-col gap-3 rounded-lg p-5">
               <h2 className="text-sm font-semibold">Assessed competencies</h2>
               {credential.competencies.map((c) => (
                 <div key={c.key} className="flex flex-col gap-1">
@@ -192,7 +192,7 @@ export default async function VerifyCodePage({
               in seconds, no account needed.
             </p>
             <Button asChild variant="outline" size="sm" className="mt-3">
-              <Link href="/employers">Hire verified talent</Link>
+              <Link href="/verify">Hire verified talent</Link>
             </Button>
           </div>
         </main>

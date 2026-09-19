@@ -16,7 +16,7 @@ export const landing = {
     subheading:
       "Build practical foundations in AI, blockchain, online safety, personal finance, freelancing and more. Then earn a credential employers can verify in seconds.",
     primary: { label: "Take the free AI skills test", href: "/ai-test" },
-    secondary: { label: "How certification works", href: "/how-it-works" },
+    secondary: { label: "How certification works", href: "/faq" },
     note: "Free, short and built around real AI work scenarios.",
     /**
      * The pills floating over the hero image. Every one of them is a fact

@@ -163,7 +163,7 @@ export default async function CertificationPage({
                   {modules.map(({ module, lessons }, i) => (
                     <div
                       key={module.id}
-                      className="rounded-lg border border-border bg-card p-5"
+                      className="glass-panel-bright gn-shine overflow-hidden rounded-lg p-5"
                     >
                       <p className="font-mono text-xs text-muted-foreground">
                         Module {i + 1}
@@ -208,7 +208,7 @@ export default async function CertificationPage({
 
             <aside className="flex flex-col gap-6">
               {cert.outcomes.length > 0 && (
-                <div className="rounded-lg border border-border bg-card p-5">
+                <div className="glass-panel-bright gn-shine overflow-hidden rounded-lg p-5">
                   <h2 className="text-sm font-semibold">
                     What you&apos;ll be able to do
                   </h2>
@@ -226,7 +226,7 @@ export default async function CertificationPage({
                 </div>
               )}
               {cert.skills.length > 0 && (
-                <div className="rounded-lg border border-border bg-card p-5">
+                <div className="glass-panel-bright gn-shine overflow-hidden rounded-lg p-5">
                   <h2 className="text-sm font-semibold">Skills certified</h2>
                   <div className="mt-3 flex flex-wrap gap-2">
                     {cert.skills.map((skill) => (
@@ -237,7 +237,7 @@ export default async function CertificationPage({
                   </div>
                 </div>
               )}
-              <div className="rounded-lg border border-border bg-card p-5">
+              <div className="glass-panel-bright gn-shine overflow-hidden rounded-lg p-5">
                 <h2 className="text-sm font-semibold">How you&apos;re assessed</h2>
                 <p className="mt-2 text-sm text-muted-foreground">
                   A scored knowledge exam (pass mark {cert.passing_score}%, up

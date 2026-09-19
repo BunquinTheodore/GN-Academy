@@ -47,7 +47,7 @@ export function CredentialCard({
   return (
     <div
       className={cn(
-        "relative w-full max-w-sm overflow-hidden rounded-lg border shadow-sm",
+        "gn-shine relative w-full max-w-sm overflow-hidden rounded-lg border shadow-sm",
         isInkCard && "border-ink/60 bg-ink text-white",
         state === "locked" && "border-border bg-muted text-muted-foreground",
         state === "goal" &&

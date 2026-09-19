@@ -83,8 +83,7 @@ export default async function DashboardLayout({
     {
       heading: "Connect",
       items: [
-        { href: "/employers", label: "Talent directory", icon: "directory" },
-        { href: "/verify", label: "Verify a credential", icon: "verify" },
+        { href: "/verify", label: "Credentials Verification", icon: "verify" },
         { href: "/blog", label: "Blog", icon: "blog" },
         { href: "/data-request", label: "Support & data", icon: "support" },
       ],

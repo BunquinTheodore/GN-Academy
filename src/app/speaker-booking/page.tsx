@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Camera, Mail } from "lucide-react";
 import { advocacy } from "@/content/advocacy";
 import { site } from "@/content/site";
@@ -12,23 +13,39 @@ export const metadata: Metadata = {
 };
 
 /**
- * A photo placeholder for the on-stage imagery section. See
- * `ProofOfWorkGallery`'s `PhotoSlot` for the same pattern — no `<img>` points
- * at a file that does not exist yet, and the description doubles as the
- * accessible name via `role="img"` + `aria-label`.
+ * On-stage imagery for the Speaker Booking page. Falls back to the dashed
+ * placeholder (see `ProofOfWorkGallery`'s `PhotoSlot` for the same pattern)
+ * when a slot's file has not been supplied yet under `public/speaker-booking/`,
+ * so a missing photo never renders a broken `<img>`.
  */
-function StagePhotoSlot({ file, alt }: { file: string; alt: string }) {
+function StagePhoto({ file, alt }: { file: string; alt: string }) {
+  const supplied = new Set(["speaker-jops-01.jpg", "speaker-jops-02.jpg"]);
+
+  if (!supplied.has(file)) {
+    return (
+      <div
+        role="img"
+        aria-label={alt}
+        className="glass-panel glass-panel-strong flex aspect-[4/5] flex-col items-center justify-center gap-3 rounded-2xl border-dashed p-6 text-center"
+      >
+        <Camera className="size-7 text-muted-foreground/70" aria-hidden />
+        <p className="font-mono text-xs text-muted-foreground">{file}</p>
+        <p className="max-w-[22ch] text-xs leading-snug text-muted-foreground">
+          {alt}
+        </p>
+      </div>
+    );
+  }
+
   return (
-    <div
-      role="img"
-      aria-label={alt}
-      className="glass-panel glass-panel-strong flex aspect-[4/5] flex-col items-center justify-center gap-3 rounded-2xl border-dashed p-6 text-center"
-    >
-      <Camera className="size-7 text-muted-foreground/70" aria-hidden />
-      <p className="font-mono text-xs text-muted-foreground">{file}</p>
-      <p className="max-w-[22ch] text-xs leading-snug text-muted-foreground">
-        {alt}
-      </p>
+    <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border">
+      <Image
+        src={`/speaker-booking/${file}`}
+        alt={alt}
+        fill
+        sizes="(min-width: 640px) 50vw, 100vw"
+        className="object-cover"
+      />
     </div>
   );
 }
@@ -55,11 +72,7 @@ export default function SpeakerBookingPage() {
         <section className="mx-auto w-full max-w-6xl px-4 py-10">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {advocacy.speakerBooking.imagery.map((photo) => (
-              <StagePhotoSlot
-                key={photo.file}
-                file={photo.file}
-                alt={photo.alt}
-              />
+              <StagePhoto key={photo.file} file={photo.file} alt={photo.alt} />
             ))}
           </div>
         </section>

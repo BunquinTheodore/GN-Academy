@@ -11,8 +11,8 @@ export function PageShell({
       {/*
         Body copy is foreground, not muted.
 
-        Every page using this shell (/about, /privacy, /terms, /how-it-works,
-        /companies) had its entire body set in --muted-foreground. That passes
+        Every page using this shell (/about, /privacy, /terms, /companies)
+        had its entire body set in --muted-foreground. That passes
         AA at 5.6:1, so it was never an accessibility failure, but grey is a
         signal: it means "this is secondary". Applying it to a whole page of
         prose tells the reader that none of it is the main thing, and reading

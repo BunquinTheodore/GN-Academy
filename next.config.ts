@@ -52,6 +52,35 @@ const nextConfig: NextConfig = {
     // <Button> import drags a ~244 kB shared chunk onto every page.
     optimizePackageImports: ["radix-ui"],
   },
+  /**
+   * /how-it-works and /faq merged into one page at /faq ("Questions" in the
+   * nav): each was too thin on its own to earn a separate stop, and the
+   * homepage already proved the combined ladder+FAQ layout works. This keeps
+   * any old link or bookmark to /how-it-works from dead-ending. Permanent,
+   * since the old route is not coming back.
+   *
+   * /employers and /verify merged the same way into "Credentials
+   * Verification" at /verify: an individual credential lookup and a talent
+   * directory filtered by that same credential are two entry points into one
+   * idea. /verify survives as the base route rather than /employers because
+   * /verify/[code] is a permanent, externally linked child route (printed on
+   * certificates and CVs) that a URL change would break; /employers/enquire
+   * is unaffected since this redirect only matches the exact path.
+   */
+  async redirects() {
+    return [
+      {
+        source: "/how-it-works",
+        destination: "/faq",
+        permanent: true,
+      },
+      {
+        source: "/employers",
+        destination: "/verify",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

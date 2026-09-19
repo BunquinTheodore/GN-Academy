@@ -10,7 +10,7 @@ export function AuthCard({
   return (
     <div
       className={cn(
-        "rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-8",
+        "glass-panel-bright gn-shine overflow-hidden rounded-2xl p-6 shadow-sm sm:p-8",
         className,
       )}
     >

@@ -17,10 +17,8 @@ export const site = {
 
 export const nav = {
   links: [
-    { label: "How it works", href: "/how-it-works" },
     { label: "Questions", href: "/faq" },
-    { label: "For employers", href: "/employers" },
-    { label: "Verify a credential", href: "/verify" },
+    { label: "Credentials Verification", href: "/verify" },
     { label: "Speaker booking", href: "/speaker-booking" },
   ],
   // The course catalogue is behind the login, so the public ask is the
@@ -35,7 +33,7 @@ export const home = {
     subheading:
       "Fifteen scenario questions, a score out of 100, and the exact skills to work on next. Built for Filipino students, VAs, freelancers, and jobseekers.",
     primaryCta: { label: "Take the free test", href: "/ai-test" },
-    secondaryCta: { label: "How it works", href: "/how-it-works" },
+    secondaryCta: { label: "How it works", href: "/faq" },
   },
   ladder: {
     heading: "Score it. Prove it. Get hired for it.",
@@ -69,8 +67,8 @@ export const footer = {
       heading: "Platform",
       links: [
         { label: "AI Readiness Test", href: "/ai-test" },
-        { label: "Verify a credential", href: "/verify" },
-        { label: "How it works", href: "/how-it-works" },
+        { label: "Credentials Verification", href: "/verify" },
+        { label: "How it works", href: "/faq" },
         { label: "Blog", href: "/blog" },
         { label: "Speaker booking", href: "/speaker-booking" },
       ],
@@ -79,7 +77,6 @@ export const footer = {
       heading: "Company",
       links: [
         { label: "About", href: "/about" },
-        { label: "For employers", href: "/employers" },
         { label: "For companies", href: "/companies" },
       ],
     },

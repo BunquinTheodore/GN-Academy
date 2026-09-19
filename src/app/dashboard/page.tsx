@@ -254,7 +254,7 @@ export default async function DashboardPage() {
       </section>
 
       {completeness < 100 && (
-        <section className="rounded-lg border border-border bg-card p-5">
+        <section className="glass-panel-bright gn-shine overflow-hidden rounded-lg p-5">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="min-w-0">
               <h2 className="font-display text-base font-semibold">
@@ -310,7 +310,7 @@ export default async function DashboardPage() {
             {cards.map((card, i) => (
               <article
                 key={card.cert.id}
-                className="rise-in flex h-full flex-col gap-3 rounded-lg border border-border bg-card p-5"
+                className="rise-in glass-panel-bright gn-shine overflow-hidden flex h-full flex-col gap-3 rounded-lg p-5"
                 style={{ animationDelay: `${Math.min(i, 6) * 60}ms` }}
               >
                 <div className="flex flex-wrap items-center gap-2">
@@ -392,7 +392,7 @@ function Stat({
   icon: typeof BookOpen;
 }) {
   return (
-    <div className="rounded-lg border border-border bg-card p-4">
+    <div className="glass-panel-bright gn-shine overflow-hidden rounded-lg p-4">
       <div className="flex items-center gap-2 text-muted-foreground">
         <Icon className="size-4" aria-hidden />
         <span className="text-xs tracking-wide uppercase">{label}</span>

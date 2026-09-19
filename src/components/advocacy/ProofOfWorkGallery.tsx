@@ -83,7 +83,7 @@ export function ProofOfWorkGallery() {
       <Stagger className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {advocacy.gallery.items.map((item) => (
           <StaggerItem key={item.slug}>
-            <article className="glass-panel flex h-full flex-col gap-4 rounded-2xl p-5">
+            <article className="glass-panel gn-shine overflow-hidden flex h-full flex-col gap-4 rounded-2xl p-5">
               <div className="grid grid-cols-2 gap-2">
                 {item.photos.slice(0, 4).map((file) => (
                   <PhotoSlot

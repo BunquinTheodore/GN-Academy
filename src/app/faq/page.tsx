@@ -2,58 +2,92 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { landing } from "@/content/landing";
 import { site } from "@/content/site";
-import { PageShell } from "@/components/site/page-shell";
+import { SiteHeader } from "@/components/site/header";
+import { SiteFooter } from "@/components/site/footer";
+import { FaqAccordion } from "@/components/landing/faq-accordion";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Questions",
   description:
-    "Why courses sit behind an account, what is free, how payment works, and how long a certification takes.",
+    "How GN Academy works, from free AI Readiness Test to verified credential, plus answers to the questions people actually ask.",
+  alternates: { canonical: "/faq" },
 };
 
 /**
- * The questions, moved off the landing page and given their own address.
+ * "How it works" and the FAQ used to be two separate pages
+ * (/how-it-works and /faq), each thin enough on its own that visiting one
+ * meant a full page load for a handful of paragraphs. The homepage already
+ * solved this for itself by putting the ladder and the accordion side by
+ * side in one section (see the "How it works + Questions" section in
+ * src/app/page.tsx) — this page is that same reasoning applied to the
+ * dedicated, linkable, indexable version the nav points at. /how-it-works
+ * now redirects here (see next.config.ts), so no old link dead-ends.
  *
- * They were an accordion near the bottom of the home page, which is the worst
- * place for them: somebody with a question has to scroll past the whole pitch
- * to find it, and somebody reading the pitch has to scroll past six collapsed
- * questions to reach the call to action. On their own page they are linkable,
- * findable from the nav, and indexable, and the landing page gets shorter.
- *
- * The copy still lives in `src/content/landing.ts` so a non-developer edits one
- * file. It is shared, not duplicated.
+ * Two glass panels side by side on desktop so the short content actually
+ * uses the width instead of stacking into one narrow column; single column
+ * on mobile, ladder first so the mechanism is read before the questions
+ * about it.
  */
 export default function FaqPage() {
   return (
-    <PageShell title="Questions people actually ask">
-      <p>
-        If yours is not here, email{" "}
-        <a className="underline" href={`mailto:${site.contactEmail}`}>
-          {site.contactEmail}
-        </a>
-        . A person answers.
-      </p>
+    <div className="flex min-h-svh flex-col">
+      <SiteHeader />
+      <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-16 sm:px-6">
+        <div className="max-w-2xl">
+          <h1 className="font-display text-3xl font-semibold text-balance sm:text-4xl">
+            How it works, and what people ask about it
+          </h1>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+            The mechanism on the left, the questions it usually raises on the
+            right. If yours is not here, email{" "}
+            <a className="underline" href={`mailto:${site.contactEmail}`}>
+              {site.contactEmail}
+            </a>
+            . A person answers.
+          </p>
+        </div>
 
-      <dl className="mt-2 flex flex-col gap-4">
-        {landing.faq.map((item) => (
-          <div
-            key={item.q}
-            className="rounded-lg border border-border bg-card/70 p-5 backdrop-blur-sm"
-          >
-            <dt className="font-semibold text-foreground">{item.q}</dt>
-            <dd className="mt-2 text-muted-foreground">{item.a}</dd>
+        <div className="mt-10 grid gap-6 lg:grid-cols-2 lg:gap-8">
+          <div className="glass-panel gn-shine overflow-hidden rounded-2xl p-6 sm:p-8">
+            <h2 className="font-display text-lg font-semibold sm:text-xl">
+              {landing.ladder.heading}
+            </h2>
+            <ol className="mt-6 space-y-7">
+              {landing.ladder.steps.map((step, i) => (
+                <li key={step.title}>
+                  <p className="font-mono text-sm text-muted-foreground tabular-nums">
+                    {String(i + 1).padStart(2, "0")}
+                  </p>
+                  <h3 className="mt-1 text-lg font-semibold">{step.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {step.body}
+                  </p>
+                </li>
+              ))}
+            </ol>
           </div>
-        ))}
-      </dl>
 
-      <div className="mt-4 flex flex-wrap gap-3">
-        <Button asChild className="h-11">
-          <Link href="/signup">Create your free account</Link>
-        </Button>
-        <Button asChild variant="outline" className="h-11">
-          <Link href="/how-it-works">How it works</Link>
-        </Button>
-      </div>
-    </PageShell>
+          <div className="glass-panel gn-shine overflow-hidden rounded-2xl p-6 sm:p-8">
+            <h2 className="font-display text-lg font-semibold sm:text-xl">
+              Common questions
+            </h2>
+            <div className="mt-1">
+              <FaqAccordion items={landing.faq} />
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-10 flex flex-wrap gap-3">
+          <Button asChild className="h-11">
+            <Link href="/signup">Create your free account</Link>
+          </Button>
+          <Button asChild variant="outline" className="h-11">
+            <Link href="/verify">See how verification works</Link>
+          </Button>
+        </div>
+      </main>
+      <SiteFooter />
+    </div>
   );
 }

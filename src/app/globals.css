@@ -279,6 +279,69 @@
 }
 
 /*
+ * The "What we teach" marquee rows.
+ *
+ * Same technique as `.gn-marquee` above, but the track holds three identical
+ * copies instead of two and travels exactly -33.3334% (one copy's width)
+ * rather than -50%. Three copies rather than two because these rows are only
+ * three cards wide: two copies of a three-card row are narrower than the
+ * section's own max-width, so the seam would show as a visible blank gap
+ * before the loop restarts. Three copies keeps the track wider than the
+ * viewport at every breakpoint this section renders at, so the seam between
+ * the last copy and the wrapped first one is never on screen.
+ *
+ * `.gn-track-marquee-reverse` runs the same keyframe backwards via
+ * `animation-direction: reverse`, which is exactly time-reversal of an
+ * already-seamless loop, so alternating rows cost nothing extra: no second
+ * keyframe, no different math, just the opposite direction.
+ *
+ * `prefers-reduced-motion: reduce` is handled by the caller falling back to
+ * the original static grid entirely (`motion-reduce:` / default Tailwind
+ * variants in page.tsx) rather than by freezing this track in place, because
+ * a frozen three-times-duplicated row would either repeat the same three
+ * cards or clip the later copies mid-card depending on viewport width —
+ * neither reads as a clean, readable grid the way the original layout does.
+ */
+@keyframes gn-track-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-33.3334%, 0, 0);
+  }
+}
+
+.gn-track-marquee {
+  animation: gn-track-marquee var(--gn-track-marquee-duration, 42s) linear
+    infinite;
+}
+
+.gn-track-marquee-reverse {
+  animation-direction: reverse;
+}
+
+/*
+ * Pause on hover/focus-within, as plain CSS rather than Tailwind's
+ * `group-hover:[animation-play-state:paused]` utility. That utility is real
+ * (it compiles into `@layer utilities`), but this file's animation rules are
+ * declared outside any `@layer`, and unlayered CSS always wins over layered
+ * CSS regardless of specificity — so the layered utility can never overturn
+ * the unlayered `animation` shorthand above, and the row would never
+ * actually pause. Two plain, unlayered selectors avoid that layer ordering
+ * entirely.
+ */
+.group:hover .gn-track-marquee,
+.group:focus-within .gn-track-marquee {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gn-track-marquee {
+    animation: none;
+  }
+}
+
+/*
  * Word-by-word heading reveal, in CSS.
  *
  * This was a motion/react stagger, and on the landing page's h1 that was a
@@ -422,5 +485,191 @@
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
     box-shadow: inset 0 1px 0 0 color-mix(in oklch, var(--brand) 35%, white 65%);
+  }
+}
+
+/*
+ * Bright glass, for every card-like surface across the site (course cards,
+ * catalogue cards, blog cards, dashboard status cards, the shadcn `Card`
+ * primitive). Same recipe family as `.glass-panel` — color-mix() over
+ * `--card`/`--border`/`--brand` so it reads correctly in both themes with no
+ * separate dark override — but lighter and more saturated, because a card
+ * grid reads many small surfaces at once and wants to feel brighter/airier
+ * than the one large advocacy panel `.glass-panel` was built for.
+ *
+ * `prefers-reduced-transparency: reduce` gets the same solid fallback as
+ * `.glass-panel`: opaque `--card`, no blur, no shine sweep.
+ */
+.glass-panel-bright {
+  background: color-mix(in oklch, var(--card) 70%, transparent);
+  backdrop-filter: blur(18px) saturate(190%) brightness(1.06);
+  -webkit-backdrop-filter: blur(18px) saturate(190%) brightness(1.06);
+  box-shadow:
+    inset 0 1px 0 0 color-mix(in oklch, var(--brand) 45%, white 70%),
+    0 1px 2px 0 color-mix(in oklch, var(--brand) 14%, transparent),
+    0 16px 32px -18px color-mix(in oklch, var(--brand) 30%, transparent);
+  border: 1px solid color-mix(in oklch, var(--border) 70%, var(--brand) 15%);
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .glass-panel-bright {
+    background: var(--card);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: inset 0 1px 0 0 color-mix(in oklch, var(--brand) 35%, white 65%);
+    border: 1px solid var(--border);
+  }
+}
+
+/*
+ * Same recipe as `.glass-panel-bright` minus the `border` declaration, for
+ * the cards that already carry a `border-border` (+ `hover:border-primary/*`)
+ * utility of their own. `.glass-panel-bright`'s own unlayered `border`
+ * shorthand would otherwise win the cascade over a layered Tailwind utility
+ * and silently defeat that hover affordance.
+ */
+.glass-panel-bright-fill {
+  background: color-mix(in oklch, var(--card) 70%, transparent);
+  backdrop-filter: blur(18px) saturate(190%) brightness(1.06);
+  -webkit-backdrop-filter: blur(18px) saturate(190%) brightness(1.06);
+  box-shadow:
+    inset 0 1px 0 0 color-mix(in oklch, var(--brand) 45%, white 70%),
+    0 1px 2px 0 color-mix(in oklch, var(--brand) 14%, transparent),
+    0 16px 32px -18px color-mix(in oklch, var(--brand) 30%, transparent);
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .glass-panel-bright-fill {
+    background: var(--card);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: inset 0 1px 0 0 color-mix(in oklch, var(--brand) 35%, white 65%);
+  }
+}
+
+/*
+ * The continuous shine: a diagonal light sweep, in CSS only, so it works
+ * everywhere including the dashboard (§19.16 — product-critical content
+ * cannot depend on the motion bundle). It lives on `::before`, absolutely
+ * positioned and clipped by the card's own `overflow-hidden`, with
+ * `pointer-events: none` and a negative `z-index` relative to content so it
+ * never sits between a pointer and a control or between the sweep and text
+ * (apply `.gn-shine` to an `overflow-hidden` `position: relative` ancestor
+ * whose text content is itself `position: relative` — the shadcn Card and
+ * the credential card both already are).
+ *
+ * `mix-blend-mode: soft-light` at low opacity means the sweep can only ever
+ * lighten, never darken, so it cannot drop a light-on-dark or dark-on-light
+ * pairing below its measured contrast ratio — verified against the
+ * credential card's ink surface and the light "goal"/"locked" surfaces.
+ *
+ * `prefers-reduced-motion: reduce` drops the animation and keeps a single
+ * static highlight in its resting position — "static shiny", not "no
+ * shine" — matching the reduced-motion contract used by `.rise-in` etc.
+ * `prefers-reduced-transparency: reduce` removes the sweep entirely, since
+ * a moving translucent highlight is exactly the kind of effect that setting
+ * asks not to see.
+ */
+@keyframes gn-shine-sweep {
+  0%,
+  15% {
+    transform: translate3d(-60%, -60%, 0) rotate(8deg);
+  }
+  55%,
+  100% {
+    transform: translate3d(60%, 60%, 0) rotate(8deg);
+  }
+}
+
+.gn-shine {
+  position: relative;
+  isolation: isolate;
+}
+
+.gn-shine::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(
+    100deg,
+    transparent 42%,
+    color-mix(in oklch, white 65%, var(--brand-cyan) 35%) 50%,
+    transparent 58%
+  );
+  opacity: 0.35;
+  mix-blend-mode: soft-light;
+  transform: translate3d(-60%, -60%, 0) rotate(8deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .gn-shine::before {
+    animation: gn-shine-sweep 5.5s cubic-bezier(0.45, 0, 0.2, 1) infinite;
+    animation-delay: var(--gn-shine-delay, 0s);
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .gn-shine::before {
+    display: none;
+  }
+}
+
+/*
+ * Bright glass for buttons, same recipe family as `.glass-panel-bright`.
+ * Layered per `data-variant` (set by the shared Button primitive) so each
+ * variant's own brand color still shows through the glass rather than
+ * every button reading identically. Unlayered, so it overrides the
+ * Tailwind utility layer's `bg-*` classes the same way `.glass-panel-bright`
+ * already overrides card backgrounds elsewhere in this file.
+ */
+.button-glass {
+  backdrop-filter: blur(14px) saturate(190%) brightness(1.1);
+  -webkit-backdrop-filter: blur(14px) saturate(190%) brightness(1.1);
+  border: 1px solid color-mix(in oklch, white 40%, transparent);
+  box-shadow:
+    inset 0 1px 0 0 color-mix(in oklch, white 60%, transparent),
+    0 1px 2px 0 color-mix(in oklch, var(--brand) 20%, transparent),
+    0 8px 20px -10px color-mix(in oklch, var(--brand) 45%, transparent);
+}
+
+.button-glass[data-variant="default"] {
+  background: color-mix(in oklch, var(--primary) 80%, white 14%);
+}
+.button-glass[data-variant="default"]:hover {
+  background: color-mix(in oklch, var(--primary) 88%, white 18%);
+}
+
+.button-glass[data-variant="secondary"] {
+  background: color-mix(in oklch, var(--secondary) 78%, white 16%);
+}
+.button-glass[data-variant="secondary"]:hover {
+  background: color-mix(in oklch, var(--secondary) 86%, white 20%);
+}
+
+.button-glass[data-variant="outline"] {
+  background: color-mix(in oklch, var(--card) 65%, transparent);
+  border-color: color-mix(in oklch, var(--border) 70%, var(--brand) 20%);
+}
+.button-glass[data-variant="outline"]:hover {
+  background: color-mix(in oklch, var(--card) 78%, transparent);
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .button-glass {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: none;
+    border-color: var(--border);
+  }
+  .button-glass[data-variant="default"] {
+    background: var(--primary);
+  }
+  .button-glass[data-variant="secondary"] {
+    background: var(--secondary);
+  }
+  .button-glass[data-variant="outline"] {
+    background: var(--background);
   }
 }

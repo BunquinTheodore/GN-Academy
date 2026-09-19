@@ -109,7 +109,7 @@ export default async function TalentProfilePage({
               <li key={c.credential_code}>
                 <Link
                   href={`/verify/${c.credential_code}`}
-                  className="flex flex-wrap items-center justify-between gap-3 rounded-lg border border-border bg-card p-4 hover:border-primary/50"
+                  className="glass-panel-bright-fill gn-shine overflow-hidden flex flex-wrap items-center justify-between gap-3 rounded-lg border border-border p-4 hover:border-primary/50"
                 >
                   <div>
                     <p className="font-medium">{c.title}</p>
@@ -196,7 +196,7 @@ export default async function TalentProfilePage({
           </section>
         )}
 
-        <section className="mt-12 rounded-lg border border-border bg-card p-6">
+        <section className="glass-panel-bright gn-shine overflow-hidden mt-12 rounded-lg p-6">
           <h2 className="font-display text-lg font-semibold">
             Hiring for this kind of work?
           </h2>

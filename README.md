@@ -355,14 +355,13 @@ only when their assessment has none, so `/admin` edits survive a re-seed.
 | Route | Notes |
 |---|---|
 | `/` | Hero, the three-step ladder, the credential card |
-| `/how-it-works`, `/about`, `/start-free`, `/companies` | Marketing |
+| `/faq` ("Questions" in the nav), `/about`, `/start-free`, `/companies` | Marketing |
 | `/ai-test` → `/ai-test/quiz` → `/ai-test/results/[attemptId]` | The funnel. Quiz is ISR (`revalidate = 300`); results have an OG image |
 | `/certifications` → `/certifications/[slug]` | Catalogue + product page, Course JSON-LD, prerendered via `generateStaticParams` |
 | `/certifications/[slug]/enroll` | Auth-gated, `noindex` |
 | `/blog` → `/blog/[slug]` | DB-backed MDX, category filter, Article JSON-LD, OG images |
-| `/verify` → `/verify/[code]` | Public credential verification, credential JSON-LD, revoked / not-found states |
+| `/verify` ("Credentials Verification" in the nav) → `/verify/[code]` | Credential-code lookup and the talent directory (skill + certification filters) on one page, credential JSON-LD, revoked / not-found states. `/employers` redirects here (`next.config.ts`); `/employers/enquire` is unaffected |
 | `/talent/[username]` | Public talent profile, Person JSON-LD |
-| `/employers` (+ `/employers/enquire`) | Directory with skill + certification filters; enquiry form |
 | `/data-request` | RA 10173 subject requests |
 | `/privacy`, `/terms` | Marked as drafts pending legal review |
 | `/sitemap.xml`, `/robots.txt` | See §16 |
@@ -463,8 +462,9 @@ the account on first sign-in.
 - Uploads land in a folder named after the uploader's Firebase UID; the
   storage policies accept writes nowhere else, so a tampered path is refused
   by the database, not just by the component.
-- `/employers` filters by skill and certification, and only ever offers
-  facets that match somebody.
+- The directory (part of `/verify`, "Credentials Verification" in the nav)
+  filters by skill and certification, and only ever offers facets that match
+  somebody.
 
 ---
 

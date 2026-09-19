@@ -53,10 +53,7 @@ export default function CompaniesPage() {
 
       <div className="flex flex-wrap gap-3 pt-2">
         <Button asChild>
-          <Link href="/employers">Browse verified talent</Link>
-        </Button>
-        <Button asChild variant="outline">
-          <Link href="/verify">Verify a credential</Link>
+          <Link href="/verify">Credentials Verification</Link>
         </Button>
       </div>
 

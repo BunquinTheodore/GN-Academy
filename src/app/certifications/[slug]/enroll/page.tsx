@@ -44,7 +44,7 @@ export default async function EnrollPage({
         <p className="mt-1 text-sm text-muted-foreground">{cert.title}</p>
 
         {!cert.is_free && cert.price_php && (
-          <div className="mt-6 rounded-lg border border-border bg-card p-5 text-sm">
+          <div className="glass-panel-bright gn-shine overflow-hidden mt-6 rounded-lg p-5 text-sm">
             <div className="flex items-baseline justify-between">
               <span className="text-muted-foreground">Certification fee</span>
               <span className="font-mono text-lg font-semibold">

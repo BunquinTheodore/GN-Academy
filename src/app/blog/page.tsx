@@ -87,7 +87,7 @@ export default async function BlogPage({
               <li key={post.id}>
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="group flex flex-col gap-2 rounded-lg border border-border bg-card p-6 transition-colors hover:border-primary/50"
+                  className="glass-panel-bright-fill gn-shine overflow-hidden group flex flex-col gap-2 rounded-lg border border-border p-6 transition-colors hover:border-primary/50"
                 >
                   <div className="flex flex-wrap items-center gap-3">
                     <Badge variant="secondary">{post.category}</Badge>

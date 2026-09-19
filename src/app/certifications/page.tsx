@@ -73,7 +73,7 @@ export default async function CertificationsPage() {
               <Link
                 key={cert.id}
                 href={`/certifications/${cert.slug}`}
-                className="group flex flex-col gap-4 rounded-lg border border-border bg-card p-6 transition-colors hover:border-primary/50"
+                className="glass-panel-bright-fill gn-shine overflow-hidden group flex flex-col gap-4 rounded-lg border border-border p-6 transition-colors hover:border-primary/50"
               >
                 <div className="flex items-start justify-between gap-3">
                   <Badge variant="secondary">

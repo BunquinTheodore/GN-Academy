@@ -136,3 +136,89 @@ Intended location once supplied: `public/proof-of-work/`.
 5. Confirm whether the Speaker Booking link should also appear in any other
    navigation surface (e.g. the dashboard sidebar) beyond the public header
    and footer.
+
+## Session update (2026-09-20)
+
+Additional work beyond the advocacy build above, done in the same working
+session. Verified via Chrome (chrome-devtools-mcp) and `npm run
+typecheck`/`build` after each change unless noted otherwise.
+
+1. **Fixed a sitewide 500.** `src/app/favicon.ico` (swapped in by an earlier
+   commit) was encoded as 8-bit RGB instead of RGBA; Next's favicon/metadata
+   pipeline throws on that, which took down every route with a 500, not just
+   the icon. Rebuilt as a proper 3-frame (16/32/48) RGBA `.ico` from
+   `public/brand/gn-academy-logo.png` via `sharp`. This was live on `main`
+   (i.e. in production) before the fix — worth confirming the Vercel
+   deployment actually redeployed clean.
+2. **Fixed Google/email sign-in returning "Request rejected."** Root cause:
+   `.env.local`'s `NEXT_PUBLIC_SITE_URL` was `http://localhost:3000`, but the
+   dev server in this session ran on port 3003 (to avoid clashing with GN
+   Media on 3000). Every sign-in calls `/api/auth/sync`, which checks the
+   browser's `Origin` header against `NEXT_PUBLIC_SITE_URL`
+   (`src/lib/origin-check.ts`) — a mismatch returns exactly `{"error":
+   "Request rejected."}` at 403, regardless of credential correctness.
+   Updated `NEXT_PUBLIC_SITE_URL` to `http://localhost:3003` to match.
+   **If this value gets reset again** (e.g. by `vercel env pull` or a fresh
+   `.env.local`), check it matches whatever port the dev server actually
+   runs on, or sign-in will fail with this exact message.
+3. **Real Speaker Booking photos.** The two `speaker-jops-0{1,2}.jpg`
+   placeholder slots referenced in "Photo slots needed" above are now real
+   photos (supplied by the client), stored at
+   `public/speaker-booking/speaker-jops-01.jpg` and `-02.jpg`.
+   `src/app/speaker-booking/page.tsx`'s `StagePhoto` component now renders
+   them via `next/image` when the filename is in its known-supplied set,
+   falling back to the dashed placeholder for any future slot that isn't yet
+   supplied. Alt text in `src/content/advocacy.ts` was rewritten from `TODO`
+   to accurate descriptions of what's actually in each photo. The other 16
+   photo slots (Proof of Work gallery) are still placeholders — unchanged.
+4. **Course catalog rewrite**, per `COURSE_REVIEW.md`'s findings (de-templated
+   lesson openers/closers, fixed 4 `min_words`/brief mismatches, trimmed
+   cross-course duplication, hedged unverified claims) — see
+   `COURSE_REVIEW.md` for the full findings and `HANDOFF.md`/`PROGRESS.md`
+   for what shipped. Migration `0013_cava_reviewed_assignment.sql` gave CAVA
+   a reviewed final assignment in place of its old auto-scored exam.
+5. **"How it works" + "Questions" merged** into one page at `/faq` (nav
+   label "Questions"), two-column glass-panel layout (ladder left, FAQ
+   accordion right, stacking on mobile) — reusing the pattern the landing
+   page itself already used for the same reason (thin content on each side).
+   Old `/how-it-works` permanently redirects to `/faq` (`next.config.ts`).
+6. **"For employers" + "Verify a credential" merge into "Credentials
+   Verification"** — dispatched in this session; check `HANDOFF.md`/git log
+   for whether it completed, since this file may be written before that
+   agent's completion was confirmed. It combines the `/verify` code-lookup
+   tool and the `/employers` talent directory onto one page/URL structure.
+7. **Sitewide bright-glassmorphism card redesign.** New `.glass-panel-bright`
+   / `.glass-panel-bright-fill` classes and a `.gn-shine` continuous diagonal
+   shine sweep (all in `src/app/globals.css`, both respecting
+   `prefers-reduced-motion` and `prefers-reduced-transparency`), applied to
+   the shadcn `Card` primitive (`src/components/ui/card.tsx`), the credential
+   card (shine only, background/border left untouched to protect its
+   AA-tuned contrast), and every major page (homepage, FAQ, blog,
+   certifications catalogue/product, dashboard, employers, talent, verify).
+   Contrast independently measured at 6.3-16.4:1 across every surface
+   checked (well above AA). Buttons got the same glass treatment separately:
+   `.button-glass` class in `globals.css`, applied via `data-variant`
+   targeting in `src/components/ui/button.tsx` (default/secondary/outline
+   variants; ghost/link/destructive left plain by design).
+8. **Nav bar changes.** `src/components/site/header.tsx`: nav links are now
+   uppercase with wider letter-spacing (`tracking-[0.1em]`). Signed-out state
+   now shows a single "Enroll now" button (removed the separate "Sign in"
+   ghost link + "Create free account" pairing) — an existing user can still
+   reach `/login` from the signup page itself. Signed-in state ("My
+   dashboard") is unchanged.
+9. **"What we teach" tracks grid → animated marquee**, dispatched in this
+   session (4 rows of 3 cards, alternating scroll direction per row,
+   pause-on-hover, reduced-motion fallback to the static grid). Check
+   whether this completed — it may have finished after this file was
+   written.
+
+### Design-language note
+
+Items 7-9 above follow a house design direction established this session
+across the whole GN Ventures family, not just this site: bright
+glassmorphism (translucent, blurred, saturated, NOT murky), a continuous but
+subtle shine sweep, brighter/lighter buttons, uppercase nav with generous
+tracking, and balanced/horizontal-space-maximizing layouts over tall narrow
+stacks when merging pages. See `PLAN-OVERVIEW.md`'s session-log section for
+the full cross-site statement of this preference — apply it by default to
+any future visual work here, not just where it's already been applied.

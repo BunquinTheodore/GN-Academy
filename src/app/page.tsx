@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import {
   ArrowRight,
   BadgeCheck,
@@ -78,6 +79,83 @@ const TRACK_ICONS = {
   commerce: ShoppingBag,
   admin: Table2,
 } as const;
+
+/** The twelve tracks, chunked into the rows "What we teach" scrolls as. */
+const TRACK_ROWS = Array.from(
+  { length: Math.ceil(landing.tracks.items.length / 3) },
+  (_, row) => landing.tracks.items.slice(row * 3, row * 3 + 3),
+);
+
+/**
+ * One endlessly scrolling row of the "What we teach" marquee.
+ *
+ * The track holds three back-to-back copies of the row's three cards and
+ * animates via `.gn-track-marquee` (globals.css), which is a pure CSS
+ * `translate3d` loop — no rAF, no scroll listener, nothing that depends on a
+ * JS bundle to keep moving. `reverse` flips the direction with
+ * `animation-direction: reverse` rather than a second keyframe, so the loop
+ * stays exactly as seamless run backwards as it is forwards.
+ *
+ * Only the first copy is exposed to assistive tech (`aria-hidden` on the
+ * other two): the cards are read as one set of tracks, not three.
+ *
+ * Hover/focus-within pause the animation (`.group:hover .gn-track-marquee`,
+ * globals.css) so a reader can actually look at or tab through a card
+ * instead of it sliding away — and since these cards hold no links or
+ * controls (see the comment above), a mouse hover is the only way anyone
+ * would want to pause one, but focus-within is included in case that ever
+ * changes.
+ */
+function TrackMarqueeRow({
+  items,
+  reverse,
+}: {
+  items: (typeof landing.tracks.items)[number][];
+  reverse: boolean;
+}) {
+  return (
+    <div className="group relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_4%,black_96%,transparent)]">
+      <div
+        className={cn(
+          "gn-track-marquee flex w-max gap-4",
+          reverse && "gn-track-marquee-reverse",
+        )}
+      >
+        {[0, 1, 2].map((copy) => (
+          <div
+            key={copy}
+            aria-hidden={copy !== 0}
+            className="flex shrink-0 gap-4"
+          >
+            {items.map((item) => {
+              const Icon = TRACK_ICONS[item.icon];
+              return (
+                <div key={item.title} className="w-64 shrink-0 sm:w-80 lg:w-96">
+                  <GlowCard className="glass-panel-bright-fill gn-shine h-full rounded-xl border border-border p-5 transition-colors hover:border-primary/40">
+                    <div className="flex items-start justify-between gap-3">
+                      <span className="inline-flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                        <Icon className="size-5" aria-hidden />
+                      </span>
+                      {item.free && (
+                        <span className="rounded-full bg-brand px-2.5 py-1 text-micro font-semibold tracking-wide text-brand-foreground uppercase">
+                          Free
+                        </span>
+                      )}
+                    </div>
+                    <h3 className="mt-4 font-semibold tracking-wide uppercase">{item.title}</h3>
+                    <p className="mt-2 text-sm leading-[1.6] text-muted-foreground">
+                      {item.body}
+                    </p>
+                  </GlowCard>
+                </div>
+              );
+            })}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 /**
  * The public landing page.
@@ -279,10 +357,11 @@ export default async function HomePage() {
               </p>
 
               <div className="mt-8 grid gap-4 sm:grid-cols-3">
-                {landing.certificateReasons.items.map((item) => (
+                {landing.certificateReasons.items.map((item, index) => (
                   <div
                     key={item.title}
-                    className="rounded-xl border border-border/80 bg-background/60 p-4"
+                    className="glass-panel-bright gn-shine overflow-hidden rounded-xl p-4"
+                    style={{ "--gn-shine-delay": `${index * 0.6}s` } as CSSProperties}
                   >
                     <BadgeCheck className="size-5 text-primary" aria-hidden />
                     <h3 className="mt-3 font-semibold leading-snug">
@@ -388,7 +467,7 @@ export default async function HomePage() {
                 <div
                   key={point.title}
                   className={cn(
-                    "slide-far rounded-lg border border-border bg-background/70 p-5 backdrop-blur-sm",
+                    "slide-far glass-panel-bright gn-shine overflow-hidden rounded-lg p-5",
                     i === 0 ? "slide-in-left" : "slide-in-right",
                   )}
                   style={{ animationDelay: "0.08s" }}
@@ -423,7 +502,7 @@ export default async function HomePage() {
                 key={item.title}
                 fromX={i % 2 === 0 ? -140 : 140}
                 fromY={i < 2 ? 40 : -40}
-                className="flex gap-4 rounded-lg border border-border bg-card/50 p-5 backdrop-blur-sm"
+                className="glass-panel-bright gn-shine overflow-hidden flex gap-4 rounded-lg p-5"
               >
                 <BadgeCheck
                   className="size-5 shrink-0 text-primary"
@@ -597,47 +676,66 @@ export default async function HomePage() {
             <p className="mt-4 text-muted-foreground">{landing.tracks.body}</p>
           </Reveal>
 
-          {/* The columns arrive from different sides and meet in the middle:
-              left column from the left, right column from the right, middle
-              rises. CSS again, so seven cards do not depend on a bundle. */}
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {landing.tracks.items.map((item, i) => {
-              const Icon = TRACK_ICONS[item.icon];
-              const column = i % 3;
-              const entrance =
-                column === 0
-                  ? "slide-in-left"
-                  : column === 2
-                    ? "slide-in-right"
-                    : "rise-in";
-              return (
-                <div
-                  key={item.title}
-                  className={cn("slide-far h-full", entrance)}
-                  style={{
-                    animationDelay: `${(Math.floor(i / 3) * 0.12).toFixed(2)}s`,
-                  }}
-                >
-                  <GlowCard className="h-full rounded-xl border border-border bg-card/80 p-5 backdrop-blur-sm transition-colors hover:border-primary/40">
-                  <div className="flex items-start justify-between gap-3">
-                    <span className="inline-flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                      <Icon className="size-5" aria-hidden />
-                    </span>
-                    {item.free && (
-                      <span className="rounded-full bg-brand px-2.5 py-1 text-micro font-semibold tracking-wide text-brand-foreground uppercase">
-                        Free
-                      </span>
-                    )}
+          {/*
+            Four rows of three, each an independent, endlessly scrolling
+            marquee (row 1 and 3 right-to-left, row 2 and 4 left-to-right:
+            `TrackMarqueeRow`, defined below), so twelve tracks read as more
+            than a static block without asking anyone to click through them.
+            `prefers-reduced-motion: reduce` gets the original static grid
+            instead, via Tailwind's built-in `motion-reduce:` variant: pure
+            CSS, evaluated before hydration, so nobody who asked not to see
+            continuous motion is shown a frozen or half-built marquee.
+          */}
+          <Reveal className="mt-10">
+            <div className="hidden gap-4 sm:grid-cols-2 lg:grid-cols-3 motion-reduce:grid">
+              {landing.tracks.items.map((item, i) => {
+                const Icon = TRACK_ICONS[item.icon];
+                const column = i % 3;
+                const entrance =
+                  column === 0
+                    ? "slide-in-left"
+                    : column === 2
+                      ? "slide-in-right"
+                      : "rise-in";
+                return (
+                  <div
+                    key={item.title}
+                    className={cn("slide-far h-full", entrance)}
+                    style={{
+                      animationDelay: `${(Math.floor(i / 3) * 0.12).toFixed(2)}s`,
+                    }}
+                  >
+                    <GlowCard className="glass-panel-bright-fill gn-shine h-full rounded-xl border border-border p-5 transition-colors hover:border-primary/40">
+                      <div className="flex items-start justify-between gap-3">
+                        <span className="inline-flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                          <Icon className="size-5" aria-hidden />
+                        </span>
+                        {item.free && (
+                          <span className="rounded-full bg-brand px-2.5 py-1 text-micro font-semibold tracking-wide text-brand-foreground uppercase">
+                            Free
+                          </span>
+                        )}
+                      </div>
+                      <h3 className="mt-4 font-semibold tracking-wide uppercase">{item.title}</h3>
+                      <p className="mt-2 text-sm leading-[1.6] text-muted-foreground">
+                        {item.body}
+                      </p>
+                    </GlowCard>
                   </div>
-                  <h3 className="mt-4 font-semibold">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-[1.6] text-muted-foreground">
-                    {item.body}
-                  </p>
-                  </GlowCard>
-                </div>
-              );
-            })}
-          </div>
+                );
+              })}
+            </div>
+
+            <div className="motion-reduce:hidden space-y-4">
+              {TRACK_ROWS.map((rowItems, rowIndex) => (
+                <TrackMarqueeRow
+                  key={rowIndex}
+                  items={rowItems}
+                  reverse={rowIndex % 2 === 1}
+                />
+              ))}
+            </div>
+          </Reveal>
 
           {!user && (
             <Reveal delay={0.2}>
