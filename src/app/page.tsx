@@ -44,6 +44,8 @@ import {
 } from "@/components/motion/landing-motion";
 import Image from "next/image";
 import { HeroMedia } from "@/components/motion/hero-media";
+import { ProofOfWorkGallery } from "@/components/advocacy/ProofOfWorkGallery";
+import { FaqAccordion } from "@/components/landing/faq-accordion";
 
 /**
  * Button colours for the hero panel.
@@ -257,7 +259,13 @@ export default async function HomePage() {
           </HeroScrollFade>
         </section>
 
-        <section className="mx-auto w-full max-w-6xl px-4 py-14 sm:py-16">
+        {/* ── Proof of work ────────────────────────────────────────────── */}
+        {/* Advocacy addition, sitting directly below the hero without
+            reordering or replacing the AI Readiness Test / certification
+            sections that follow it. */}
+        <ProofOfWorkGallery />
+
+        <section className="mx-auto w-full max-w-6xl px-4 py-12 sm:py-14">
           <div className="grid gap-6 lg:grid-cols-[1.4fr_0.8fr]">
             <Reveal className="rounded-2xl border border-border bg-card/75 p-6 backdrop-blur-sm sm:p-8">
               <p className="text-xs font-semibold tracking-[0.16em] text-primary uppercase">
@@ -324,7 +332,7 @@ export default async function HomePage() {
           cohort, and an invented one on this page would refute the page.
           These are read from the live catalogue instead.
         */}
-        <section className="mx-auto w-full max-w-6xl px-4 py-14">
+        <section className="mx-auto w-full max-w-6xl px-4 py-12 sm:py-14">
           <Stagger className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-4">
             {landing.stats.items.map((stat) => (
               <StaggerItem key={stat.label}>
@@ -359,7 +367,7 @@ export default async function HomePage() {
 
         {/* ── The problem ──────────────────────────────────────────────── */}
         <section className="overflow-x-clip border-b border-border bg-card/60 backdrop-blur-[2px]">
-          <div className="mx-auto w-full max-w-6xl px-4 py-16">
+          <div className="mx-auto w-full max-w-6xl px-4 py-14">
             <Reveal>
               <TypeHeading
                 text={landing.problem.heading}
@@ -396,7 +404,7 @@ export default async function HomePage() {
         </section>
 
         {/* ── What you get ─────────────────────────────────────────────── */}
-        <section className="mx-auto w-full max-w-6xl px-4 py-16">
+        <section className="mx-auto w-full max-w-6xl px-4 py-12 sm:py-14">
           <Reveal>
             <TypeHeading
                 text={landing.offer.heading}
@@ -447,7 +455,7 @@ export default async function HomePage() {
           scroll-linked transforms are the classic source of stutter on a phone,
           and the fallback is simply the same images, still.
         */}
-        <section className="mx-auto w-full max-w-6xl px-4 py-16">
+        <section className="mx-auto w-full max-w-6xl px-4 py-12 sm:py-14">
           <Reveal className="max-w-2xl">
             <TypeHeading
               text="Built for the work you actually do"
@@ -499,46 +507,76 @@ export default async function HomePage() {
           </div>
         </section>
 
-        {/* ── How it works ─────────────────────────────────────────────── */}
+        {/* ── How it works + Questions ─────────────────────────────────── */}
+        {/*
+          "How it works" and the FAQ used to be two separate full-width
+          sections, each with its own eyebrow, heading and padding, with a
+          third section (What we teach) sandwiched between them below. That
+          read as three unrelated stops rather than one line of reasoning, and
+          the FAQ in particular had no visual relationship to the thing it was
+          answering questions about. Combined here: one shared heading frames
+          both, the ladder explains the mechanism, and the accordion sitting
+          directly beside it resolves whatever the ladder raised. Two glass
+          panels side by side on desktop, stacking to one column: ladder
+          first, then FAQ, on mobile so the reading order still holds.
+        */}
         <section className="overflow-x-clip border-y border-border bg-card/60 backdrop-blur-[2px]">
-          <div className="mx-auto w-full max-w-6xl px-4 py-16">
-            <Reveal>
+          <div className="mx-auto w-full max-w-6xl px-4 py-14 sm:py-16">
+            <Reveal className="max-w-2xl">
+              <p className="text-xs font-semibold tracking-[0.16em] text-primary uppercase">
+                The mechanism, and what people ask about it
+              </p>
               <TypeHeading
                 text={landing.ladder.heading}
-                className="font-display text-2xl font-semibold sm:text-3xl"
+                className="font-display mt-3 text-2xl font-semibold sm:text-3xl"
               />
             </Reveal>
 
-            {/* Outside in: Learn from the left, Get hired from the right, and
-                Prove rising between them. All three used to come from the same
-                side, which read as one block sliding rather than as three
-                stages arriving. Plain CSS, so the steps are readable with no
-                JavaScript and the delay carries the sequence instead of an
-                observer. */}
-            <div className="mt-10 grid gap-8 sm:grid-cols-3">
-              {landing.ladder.steps.map((step, i) => (
-                <div
-                  key={step.title}
-                  className={
-                    i === 0
-                      ? "slide-far slide-in-left"
-                      : i === 1
-                        ? "rise-in"
-                        : "slide-far slide-in-right"
-                  }
-                  style={{ animationDelay: `${(i * 0.12).toFixed(2)}s` }}
-                >
-                  {/* Ticks like the stats band. Two digits, so it counts
-                      through 01 rather than flashing straight to it. */}
-                  <p className="font-mono text-sm text-muted-foreground tabular-nums">
-                    <CountUpOnView to={i + 1} duration={0.5} pad={2} />
-                  </p>
-                  <h3 className="mt-1 text-lg font-semibold">{step.title}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">
-                    {step.body}
-                  </p>
+            <div className="mt-10 grid gap-6 lg:grid-cols-2 lg:gap-8">
+              {/* Outside in: Learn from the left, Get hired from the right,
+                  and Prove rising between them. All three used to come from
+                  the same side, which read as one block sliding rather than
+                  as three stages arriving. Plain CSS, so the steps are
+                  readable with no JavaScript and the delay carries the
+                  sequence instead of an observer. */}
+              <div className="glass-panel rounded-2xl p-6 sm:p-8">
+                <ol className="space-y-7">
+                  {landing.ladder.steps.map((step, i) => (
+                    <li
+                      key={step.title}
+                      className={
+                        i === 0
+                          ? "slide-far slide-in-left"
+                          : i === 1
+                            ? "rise-in"
+                            : "slide-far slide-in-right"
+                      }
+                      style={{ animationDelay: `${(i * 0.12).toFixed(2)}s` }}
+                    >
+                      {/* Ticks like the stats band. Two digits, so it counts
+                          through 01 rather than flashing straight to it. */}
+                      <p className="font-mono text-sm text-muted-foreground tabular-nums">
+                        <CountUpOnView to={i + 1} duration={0.5} pad={2} />
+                      </p>
+                      <h3 className="mt-1 text-lg font-semibold">
+                        {step.title}
+                      </h3>
+                      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                        {step.body}
+                      </p>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+
+              <Reveal delay={0.12} className="glass-panel rounded-2xl p-6 sm:p-8">
+                <h3 className="font-display text-lg font-semibold sm:text-xl">
+                  Common questions
+                </h3>
+                <div className="mt-1">
+                  <FaqAccordion items={landing.faq} />
                 </div>
-              ))}
+              </Reveal>
             </div>
           </div>
         </section>
@@ -550,7 +588,7 @@ export default async function HomePage() {
           links into it: a card that answers with a redirect wastes the click.
           The grid says what exists and the account is the door.
         */}
-        <section className="mx-auto w-full max-w-6xl px-4 py-16">
+        <section className="mx-auto w-full max-w-6xl px-4 py-14">
           <Reveal className="max-w-2xl">
             <TypeHeading
                 text={landing.tracks.heading}
@@ -615,7 +653,7 @@ export default async function HomePage() {
 
         {/* ── Employers ────────────────────────────────────────────────── */}
         <section className="overflow-x-clip border-y border-border bg-card/60 backdrop-blur-[2px]">
-          <div className="mx-auto w-full max-w-6xl px-4 py-16">
+          <div className="mx-auto w-full max-w-6xl px-4 py-12">
             <Reveal className="max-w-2xl">
               <ShieldCheck className="size-6 text-primary" aria-hidden />
               <h2 className="font-display mt-4 text-2xl font-semibold sm:text-3xl">
@@ -635,7 +673,7 @@ export default async function HomePage() {
 
         {/* ── Final CTA ────────────────────────────────────────────────── */}
         <section className="border-t border-border">
-          <div className="mx-auto w-full max-w-3xl px-4 py-20 text-center">
+          <div className="mx-auto w-full max-w-3xl px-4 py-16 text-center">
             <Reveal>
               <h2 className="font-display text-2xl font-semibold text-balance sm:text-3xl">
                 {landing.finalCta.heading}

@@ -150,7 +150,7 @@ export const landing = {
    */
   tracks: {
     heading: "What we teach",
-    body: "Twenty certification tracks covering the work people are actually paid for. Seven of them are free all the way to the credential. The full curriculum and pricing are inside your account.",
+    body: "Twenty certification tracks covering the work people are actually paid for. Seven of them are free all the way to the credential. The full curriculum and pricing are inside your account. The same foundations also travel offline, through talks and workshops bringing trading and tech education access to university campuses.",
     items: [
       {
         icon: "foundations",

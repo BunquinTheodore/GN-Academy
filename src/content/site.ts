@@ -12,16 +12,16 @@ export const site = {
   // someone is already stuck.
   contactEmail: "gnclub.contactus@gmail.com",
   description:
-    "Practical foundations and verified credentials for Filipinos, from AI and blockchain to online safety, finance, freelancing, and career skills.",
+    "Practical foundations and verified credentials for Filipinos, from AI and blockchain to online safety, finance, freelancing, and career skills. The team behind GN Academy also brings trading and tech education directly to university campuses.",
 } as const;
 
 export const nav = {
   links: [
-    { label: "Short Guides", href: "/short-guides" },
     { label: "How it works", href: "/how-it-works" },
     { label: "Questions", href: "/faq" },
     { label: "For employers", href: "/employers" },
     { label: "Verify a credential", href: "/verify" },
+    { label: "Speaker booking", href: "/speaker-booking" },
   ],
   // The course catalogue is behind the login, so the public ask is the
   // account itself. Signing up is still free and still takes a minute.
@@ -63,16 +63,16 @@ export const home = {
 
 export const footer = {
   blurb:
-    "GN Academy helps Filipinos build practical foundations, prove what they know, and connect with employers who value verified skills.",
+    "GN Academy helps Filipinos build practical foundations, prove what they know, and connect with employers who value verified skills. Beyond the platform, the team brings trading and tech education access to university campuses directly.",
   columns: [
     {
       heading: "Platform",
       links: [
         { label: "AI Readiness Test", href: "/ai-test" },
-        { label: "Short Guides", href: "/short-guides" },
         { label: "Verify a credential", href: "/verify" },
         { label: "How it works", href: "/how-it-works" },
         { label: "Blog", href: "/blog" },
+        { label: "Speaker booking", href: "/speaker-booking" },
       ],
     },
     {

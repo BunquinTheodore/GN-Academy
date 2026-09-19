@@ -12,7 +12,6 @@ const STATIC_ROUTES: { path: string; priority: number }[] = [
   { path: "/how-it-works", priority: 0.7 },
   { path: "/faq", priority: 0.6 },
   { path: "/blog", priority: 0.7 },
-  { path: "/short-guides", priority: 0.7 },
   { path: "/employers", priority: 0.6 },
   { path: "/companies", priority: 0.5 },
   { path: "/about", priority: 0.5 },
@@ -35,9 +34,8 @@ const STATIC_ROUTES: { path: string; priority: number }[] = [
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = env.NEXT_PUBLIC_SITE_URL;
 
-  const [posts, guides, talent] = await Promise.all([
+  const [posts, talent] = await Promise.all([
     listPublishedPosts().catch(() => []),
-    listPublishedPosts(undefined, "short_guide").catch(() => []),
     // Talent profiles ARE listed, unlike credential pages: their owners
     // explicitly opted into being findable, which is the point of the
     // directory. Turning is_public off drops them from the next rebuild.
@@ -53,12 +51,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...posts.map((post) => ({
       url: `${base}/blog/${post.slug}`,
       lastModified: new Date(post.updated_at),
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
-    })),
-    ...guides.map((guide) => ({
-      url: `${base}/short-guides/${guide.slug}`,
-      lastModified: new Date(guide.updated_at),
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),

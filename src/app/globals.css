@@ -383,3 +383,44 @@
     animation: gn-slide-right 0.62s cubic-bezier(0.22, 1, 0.36, 1) both;
   }
 }
+
+/*
+ * Glass material, for the advocacy surfaces (Proof of Work gallery, Speaker
+ * Booking page and form).
+ *
+ * `.glass-panel` is a translucent surface, blurred and saturated, over
+ * `--card`/`--background`, so it reads correctly against both the light
+ * paper and dark plate without a separate dark-mode override. The inset
+ * highlight is a 1px line along the top edge only, standing in for a light
+ * source above the page rather than a border running all the way round. The
+ * shadow is tinted toward `--brand` instead of pure black, so the panels
+ * read as this product's glass rather than a generic frosted card.
+ *
+ * `prefers-reduced-transparency: reduce` gets a solid fallback: the blur and
+ * saturation are dropped and the surface becomes an ordinary opaque card, so
+ * nothing behind it shows through for someone who asked not to see that.
+ */
+.glass-panel {
+  background: color-mix(in oklch, var(--card) 62%, transparent);
+  backdrop-filter: blur(22px) saturate(165%);
+  -webkit-backdrop-filter: blur(22px) saturate(165%);
+  box-shadow:
+    inset 0 1px 0 0 color-mix(in oklch, var(--brand) 35%, white 65%),
+    0 1px 2px 0 color-mix(in oklch, var(--brand) 12%, transparent),
+    0 20px 40px -20px color-mix(in oklch, var(--brand) 35%, transparent);
+  border: 1px solid color-mix(in oklch, var(--border) 80%, transparent);
+}
+
+.glass-panel-strong {
+  background: color-mix(in oklch, var(--card) 78%, transparent);
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .glass-panel,
+  .glass-panel-strong {
+    background: var(--card);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: inset 0 1px 0 0 color-mix(in oklch, var(--brand) 35%, white 65%);
+  }
+}
