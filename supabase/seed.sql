@@ -215,7 +215,7 @@ where not exists (
 insert into public.certifications
   (id, slug, title, subtitle, level, category, format, summary, description,
    skills, outcomes, roles, price_php, is_free, passing_score,
-   credential_prefix, sort_order, is_published)
+   credential_prefix, sort_order, is_published, requires_assignment)
 values
 (
   'c0000000-0000-4000-8000-000000000001',
@@ -223,13 +223,14 @@ values
   'Certified AI Virtual Assistant',
   'Run client operations with AI, then prove it',
   'professional', 'Virtual assistance', 'Self-paced online',
-  'The professional standard for VAs who use AI as a working tool, not a novelty. Nine practical lessons, a scored exam, and a publicly verifiable credential.',
-  'Clients don''t pay for "knows ChatGPT". They pay for inboxes handled, reports delivered, and judgment they can trust. This certification covers the three things AI-era VAs are actually hired for: running client operations with AI in the loop, producing client-ready communication at speed, and knowing when not to trust the machine. Every lesson is built around real VA scenarios, and the exam tests decisions, not definitions. Pass it and your credential gets a public verification page any client can check in seconds.',
+  'The professional standard for VAs who use AI as a working tool, not a novelty. Nine practical lessons, three chapter quizzes, a reviewed final assignment, and a publicly verifiable credential.',
+  'Clients don''t pay for "knows ChatGPT". They pay for inboxes handled, reports delivered, and judgment they can trust. This certification covers the three things AI-era VAs are actually hired for: running client operations with AI in the loop, producing client-ready communication at speed, and knowing when not to trust the machine. Every lesson is built around real VA scenarios, and the final assignment is a reviewed case file, not a multiple-choice quiz: a human checks your voice brief, your report, your judgment on a flawed transcript, and your reasoning on privacy and pricing before the credential issues. Pass it and your credential gets a public verification page any client can check in seconds.',
   array['AI-assisted inbox management','Prompt templates','Meeting-notes pipelines','Client-voice writing','Output verification','Confidentiality practice'],
   array['Set up reusable AI workflows for recurring client tasks','Produce client-ready drafts in the client''s voice','Verify AI output before it reaches a client','Scope and price AI-assisted services honestly'],
   array['Virtual assistant','Executive assistant','Freelance operations support'],
   1499, false, 70,
   'CAVA', 1, true
+  , true
 ),
 (
   'c0000000-0000-4000-8000-000000000002',
@@ -244,6 +245,7 @@ values
   array['Students','Jobseekers','Anyone starting with AI'],
   null, true, 70,
   'AIF', 0, true
+  , false
 )
 on conflict (slug) do nothing;
 
@@ -269,7 +271,7 @@ insert into public.lessons (id, module_id, title, slug, content_mdx, duration_mi
 -- CAVA · Module 1
 ('e0000000-0000-4000-8000-000000000111', 'd0000000-0000-4000-8000-000000000101',
  'Inbox and email workflows with AI', 'inbox-workflows',
- E'# Inbox and email workflows with AI\n\nAn inbox is a queue of small decisions, and most of them repeat. The VAs who scale are the ones who stop treating each email as a fresh problem.\n\n## The triage-first method\n\nBefore AI writes anything, it can *sort*. A daily triage prompt with fixed categories (needs reply today, needs the client''s decision, FYI only, spam) turns forty unread emails into four short lists.\n\n- Keep the categories stable; changing them daily breaks the habit\n- Always include "needs the client''s decision", because guessing on their behalf is how trust dies\n- Spot-check the sorting for the first two weeks before you rely on it\n\n## Drafting replies\n\nBuild one reply template per *type* of email the client receives, not per email. Each template carries the client''s tone, sign-off, and boundaries (what you may promise, what you may not). The AI fills the specifics; you verify anything factual before sending.',
+ E'# Inbox and email workflows with AI\n\nAn inbox is a queue of small decisions, and most of them repeat. The VAs who scale are the ones who stop treating each email as a fresh problem.\n\n## The triage-first method\n\nBefore AI writes anything, it can *sort*. A daily triage prompt with fixed categories (needs reply today, needs the client''s decision, FYI only, spam) turns forty unread emails into four short lists.\n\n- Keep the categories stable; changing them daily breaks the habit\n- Always include "needs the client''s decision", because guessing on their behalf is how trust dies\n- Spot-check the sorting for the first two weeks before you rely on it\n\n## A real triage prompt\n\nThis is a full prompt you could paste today, categories and all:\n\n> "Sort the emails below into exactly one category each: NEEDS REPLY TODAY, NEEDS CLIENT DECISION, FYI ONLY, or SPAM. Output a table with columns: sender, subject, category, one-line reason. Do not draft replies, only sort. Treat anything mentioning a refund, a complaint, or a legal threat as NEEDS CLIENT DECISION even if it looks minor. Here are today''s emails: [paste emails]"\n\nNotice what it does: fixed categories, a fixed output shape, and one explicit safety rule (refunds and complaints escalate) so the sorting stays conservative on the calls that matter.\n\n## Drafting replies\n\nBuild one reply template per *type* of email the client receives, not per email. Each template carries the client''s tone, sign-off, and boundaries (what you may promise, what you may not). The AI fills the specifics; you verify anything factual before sending.',
  12, 1, true),
 
 ('e0000000-0000-4000-8000-000000000112', 'd0000000-0000-4000-8000-000000000101',
@@ -285,7 +287,7 @@ insert into public.lessons (id, module_id, title, slug, content_mdx, duration_mi
 -- CAVA · Module 2
 ('e0000000-0000-4000-8000-000000000121', 'd0000000-0000-4000-8000-000000000102',
  'Client-voice writing with templates', 'client-voice-writing',
- E'# Client-voice writing with templates\n\nEvery client has a voice, and generic AI output has none. The bridge is a **voice brief**: a half-page document you write once per client.\n\n## What goes in a voice brief\n\n- Three real examples of the client''s own writing\n- Tone words they''d agree with ("warm but direct", "no exclamation points")\n- Words and phrases they never use\n- How they open and close messages\n\nPaste the brief into any writing prompt and the drafts start sounding like *them*. Update it when the client corrects you, since every correction is voice data.\n\nA VA with voice briefs for five clients can switch between them in seconds. That''s a service no generic chatbot user can offer.',
+ E'# Client-voice writing with templates\n\nEvery client has a voice, and generic AI output has none. The bridge is a **voice brief**: a half-page document you write once per client.\n\n## What goes in a voice brief\n\n- Three real examples of the client''s own writing\n- Tone words they''d agree with ("warm but direct", "no exclamation points")\n- Words and phrases they never use\n- How they open and close messages\n\nPaste the brief into any writing prompt and the drafts start sounding like *them*. Update it when the client corrects you, since every correction is voice data.\n\n## A worked voice brief\n\nHere is one, in full, for an invented client who sells home-baked goods online:\n\n> **Voice brief: Dina''s Home Bakes**\n> Tone words: warm, plainspoken, a little playful\n> Never use: "Dear valued customer", "as per my last message", any exclamation point after the first line\n> Opens with: the customer''s first name, one line acknowledging exactly what they asked\n> Closes with: "Thank you po," then Dina''s first name, no formal sign-off block\n\nThat''s the whole document. Pasted into a prompt, it turns a generic "your order will arrive Friday" into something that sounds like Dina actually typed it herself.\n\nA VA with voice briefs for five clients can switch between them in seconds. That''s a service no generic chatbot user can offer.',
  12, 1, false),
 
 ('e0000000-0000-4000-8000-000000000122', 'd0000000-0000-4000-8000-000000000102',
@@ -295,7 +297,7 @@ insert into public.lessons (id, module_id, title, slug, content_mdx, duration_mi
 
 ('e0000000-0000-4000-8000-000000000123', 'd0000000-0000-4000-8000-000000000102',
  'Reports clients actually read', 'reports-clients-read',
- E'# Reports clients actually read\n\nClients skim. A report''s job is to survive skimming.\n\n## Structure before prose\n\nThe unbreakable rule from the AI Readiness Test applies here: **you own the numbers, AI owns the prose.** Pull the real figures yourself, then let AI turn them into sentences using a fixed structure:\n\n1. One-line summary: what changed and whether it''s good\n2. Three bullets of what happened, most important first\n3. One line on what you''ll do next\n\nAnything longer goes in an appendix nobody is required to read.\n\nNever let AI estimate, extrapolate, or "fill in" a number you didn''t supply. A report with one invented figure is worth less than no report, because the client no longer trusts the other figures either.',
+ E'# Reports clients actually read\n\nClients skim. A report''s job is to survive skimming.\n\n## Structure before prose\n\nThe unbreakable rule from the AI Readiness Test applies here: **you own the numbers, AI owns the prose.** Pull the real figures yourself, then let AI turn them into sentences using a fixed structure:\n\n1. One-line summary: what changed and whether it''s good\n2. Three bullets of what happened, most important first\n3. One line on what you''ll do next\n\nAnything longer goes in an appendix nobody is required to read.\n\n## A worked example\n\nSay this week you counted 52 inbox replies sent, 3 escalated to the client, and an average reply time of 2.5 hours against a 4-hour target. Fed into the structure, that becomes:\n\n> **Summary:** Inbox stayed ahead of target this week.\n> - Sent 52 replies, 3 escalated to you directly for a decision\n> - Average reply time was 2.5 hours, well inside the 4-hour target\n> - No tickets carried over past 24 hours\n> **Next step:** none needed, keep the current triage categories.\n\nEvery number there traces back to something counted, not estimated.\n\nNever let AI estimate, extrapolate, or "fill in" a number you didn''t supply. A report with one invented figure is worth less than no report, because the client no longer trusts the other figures either.',
  8, 3, false),
 
 -- CAVA · Module 3
@@ -322,12 +324,12 @@ insert into public.lessons (id, module_id, title, slug, content_mdx, duration_mi
 
 ('e0000000-0000-4000-8000-000000000212', 'd0000000-0000-4000-8000-000000000201',
  'Prompting fundamentals', 'prompting-fundamentals',
- E'# Prompting fundamentals\n\nThe quality of AI output tracks the quality of the briefing, the same way a work request to a colleague does.\n\n## Brief it like a colleague\n\nA useful prompt carries four things:\n\n1. **Role & context**: who is this for, what''s the situation\n2. **Task**: the specific thing to produce\n3. **Constraints**: length, tone, what to avoid\n4. **Format**: bullets? table? email? how many words?\n\n"Write a job application email" gets a template. "Write a 120-word application email for this posting [pasted], highlighting my two years of customer support experience, professional but not stiff" gets a draft you can actually send.\n\nWhen output disappoints, fix the briefing before blaming the tool. Re-read your prompt and ask which of the four parts is missing.',
+ E'# Prompting fundamentals\n\nThe quality of AI output tracks the quality of the briefing, the same way a work request to a colleague does.\n\n## Brief it like a colleague\n\nA useful prompt carries four things:\n\n1. **Role & context**: who is this for, what''s the situation\n2. **Task**: the specific thing to produce\n3. **Constraints**: length, tone, what to avoid\n4. **Format**: bullets? table? email? how many words?\n\n"Write a job application email" gets a template. "Write a 120-word application email for this posting [pasted], highlighting my two years of customer support experience, professional but not stiff" gets a draft you can actually send.\n\nWhen output disappoints, fix the briefing before blaming the tool. Re-read your prompt and ask which of the four parts is missing.\n\n## Now try it\n\nPick a message you actually need to send this week: a follow-up to an employer, a request to a landlord, a caption for a sale post. Write your own four-part prompt for it, then check it line by line against the checklist above: role and context, task, constraints, format. Add whichever part is missing before you use it.',
  10, 2, false),
 
 ('e0000000-0000-4000-8000-000000000213', 'd0000000-0000-4000-8000-000000000201',
  'Choosing the right tool for the task', 'choosing-tools',
- E'# Choosing the right tool for the task\n\nChat is the default AI interface, not the universal one. Reaching for the right shape of tool is a skill employers notice.\n\n## Match tool to task\n\n- **Conversation & drafting** → chat assistants\n- **Long documents** → tools built for document upload, or work in sections\n- **Repetitive extraction** (invoices, forms) → extraction tools, not chat\n- **Audio & video** → transcription first, then summarise the transcript\n- **Images** → design template tools; chatbots don''t crop or resize\n\nTwo habits: check whether a purpose-built tool exists before forcing chat to do everything, and learn the limits (length, file types, daily caps) of the free tiers you rely on. Hitting an invisible wall mid-deadline is preventable.',
+ E'# Choosing the right tool for the task\n\nChat is the default AI interface, not the universal one. Reaching for the right shape of tool is a skill employers notice.\n\n## Match tool to task\n\n- **Conversation & drafting** → chat assistants\n- **Long documents** → tools built for document upload, or work in sections\n- **Repetitive extraction** (invoices, forms) → extraction tools, not chat\n- **Audio & video** → transcription first, then summarise the transcript\n- **Images** → design template tools; chatbots don''t crop or resize\n\nLong documents fail for a specific reason: every AI tool has a context window, a hard limit on how much text it can hold in mind at once. Push past it and the tool doesn''t warn you, it just starts quietly forgetting your earliest instructions while still answering fluently. That''s why the fix is working in sections and repeating your instruction each time, not hoping the tool remembers.\n\nTwo habits: check whether a purpose-built tool exists before forcing chat to do everything, and learn the limits (length, file types, daily caps) of the free tiers you rely on. Hitting an invisible wall mid-deadline is preventable.\n\n## Now try it\n\nPick a task you did this week with chat by default: a long document, a batch of images, an audio recording. Name the tool from the list above that actually fits the shape of that task, and try it once instead of forcing chat to do everything.',
  8, 3, false),
 
 -- AIF · Module 2
@@ -348,111 +350,161 @@ on conflict (id) do nothing;
 -- ════════════════════════════════════════════════════════════════════════════
 
 insert into public.assessments (id, certification_id, slug, title, type, passing_score, question_count, max_attempts, is_published) values
-('a0000000-0000-4000-8000-000000000002', 'c0000000-0000-4000-8000-000000000001',
- 'cava-knowledge-exam', 'Certified AI Virtual Assistant Knowledge Exam', 'knowledge', 70, 10, 3, true),
 ('a0000000-0000-4000-8000-000000000003', 'c0000000-0000-4000-8000-000000000002',
  'ai-foundations-exam', 'AI Foundations Certificate Exam', 'knowledge', 70, 8, 3, true)
 on conflict (slug) do nothing;
 
--- CAVA exam — 10 questions
+-- ════════════════════════════════════════════════════════════════════════════
+-- CAVA chapter quizzes — formative, one per module, unlimited retakes.
+--
+-- Replaces the old single 10-question cava-knowledge-exam (removed by
+-- migration 0013 on already-seeded databases): CAVA now issues its
+-- credential through the reviewed assignment below, matching every other
+-- paid course, so a scored final exam would be an ending that ends nothing.
+-- The original 10 questions are redistributed by which module they actually
+-- test; module 2 was left with only two, so one new question (sort_order 3)
+-- was written to bring it to three, in the same style and difficulty.
+-- ════════════════════════════════════════════════════════════════════════════
+
+insert into public.assessments (id, certification_id, module_id, slug, title, type, passing_score, question_count, max_attempts, is_published) values
+('a0000000-0000-4000-8000-000000000004', 'c0000000-0000-4000-8000-000000000001', 'd0000000-0000-4000-8000-000000000101',
+ 'certified-ai-virtual-assistant-chapter-1', 'AI-powered client operations: chapter quiz', 'chapter', 70, 4, 99, true),
+('a0000000-0000-4000-8000-000000000005', 'c0000000-0000-4000-8000-000000000001', 'd0000000-0000-4000-8000-000000000102',
+ 'certified-ai-virtual-assistant-chapter-2', 'Content and communication: chapter quiz', 'chapter', 70, 3, 99, true),
+('a0000000-0000-4000-8000-000000000006', 'c0000000-0000-4000-8000-000000000001', 'd0000000-0000-4000-8000-000000000103',
+ 'certified-ai-virtual-assistant-chapter-3', 'Professional judgment: chapter quiz', 'chapter', 70, 4, 99, true)
+on conflict (slug) do nothing;
+
+-- Chapter 1 quiz (AI-powered client operations) — 4 questions
 insert into public.questions (assessment_id, sort_order, competency, prompt, options, correct_option_id, explanation)
 select v.assessment_id::uuid, v.sort_order, v.competency, v.prompt, v.options::jsonb, v.correct, v.explanation
 from (values
 
-('a0000000-0000-4000-8000-000000000002', 1, 'workflow',
+('a0000000-0000-4000-8000-000000000004', 1, 'workflow',
  'A new client''s inbox gets ~60 emails a day. Your first week, the right move is:',
- '[{"id":"a","text":"Reply to everything as fast as possible to show speed"},
-   {"id":"b","text":"Set up triage categories with the client, run AI sorting daily, and spot-check it while you learn their patterns"},
-   {"id":"c","text":"Let AI auto-reply to routine messages from day one"},
-   {"id":"d","text":"Read everything manually forever, since AI can''t be trusted with email"}]',
- 'b',
+ '[{"id":"a","text":"Turn on automatic AI replies for every single incoming message starting from day one, before you''ve learned anything about how this particular client actually works"},
+   {"id":"b","text":"Read every email by hand indefinitely, since AI can''t be trusted with someone else''s inbox"},
+   {"id":"c","text":"Set up triage categories with the client, run AI sorting daily, and spot-check it while you learn their patterns"},
+   {"id":"d","text":"Reply to everything yourself, as fast as you possibly can"}]',
+ 'c',
  'Systems first, trust gradually. Auto-anything on day one risks the client relationship before you understand it.'),
 
-('a0000000-0000-4000-8000-000000000002', 2, 'workflow',
+('a0000000-0000-4000-8000-000000000004', 2, 'workflow',
  'You schedule a call for a Chicago client and a Manila supplier. Which confirmation line is correct practice?',
- '[{"id":"a","text":"\"Confirmed for Tuesday 2 pm.\""},
-   {"id":"b","text":"\"Confirmed for Tuesday 2 pm CT / Wednesday 3 am PHT.\""},
-   {"id":"c","text":"\"Confirmed. Calendar invite to follow.\""},
-   {"id":"d","text":"\"Confirmed for Tuesday afternoon your time.\""}]',
+ '[{"id":"a","text":"\"Confirmed for Tuesday afternoon, sometime around 2 pm, exact time to be worked out once everyone replies.\""},
+   {"id":"b","text":"\"Confirmed for Tuesday 2 pm CT, which is Wednesday 3 am PHT.\""},
+   {"id":"c","text":"\"Confirmed. A calendar invite with all the details will follow shortly by email.\""},
+   {"id":"d","text":"\"Confirmed for Tuesday.\""}]',
  'b',
  'Stating both time zones explicitly is the five-second habit that prevents the most expensive class of scheduling error.'),
 
-('a0000000-0000-4000-8000-000000000002', 3, 'workflow',
+('a0000000-0000-4000-8000-000000000004', 3, 'workflow',
  'Your minutes pipeline produced action items, but one is assigned to "Marc" and the call had a Mark and a Marj. You:',
- '[{"id":"a","text":"Send as-is, since it''s close enough and they''ll figure it out"},
-   {"id":"b","text":"Check the transcript and recording to confirm who actually took the action item before sending"},
-   {"id":"c","text":"Assign it to both to be safe"},
-   {"id":"d","text":"Drop the item, because ambiguous ones cause trouble"}]',
- 'b',
+ '[{"id":"a","text":"Check the transcript and recording to confirm who actually took the action item before sending"},
+   {"id":"b","text":"Send it as-is without checking, since Marc, Mark, and Marj are close enough that everyone will probably figure out who''s meant"},
+   {"id":"c","text":"Assign the action item to both Mark and Marj at the same time, just to be safe either way"},
+   {"id":"d","text":"Drop the action item entirely"}]',
+ 'a',
  'Stage three of the pipeline, human review of names, numbers, and commitments, exists exactly for this.'),
 
-('a0000000-0000-4000-8000-000000000002', 4, 'prompting',
+('a0000000-0000-4000-8000-000000000004', 4, 'tools',
+ 'A client wants weekly minutes from their recorded 90-minute team calls. Your pipeline is:',
+ '[{"id":"a","text":"Play back the entire ninety-minute recording from start to finish, from beginning to end, and type out everything you hear as you go"},
+   {"id":"b","text":"Ask the client to keep their own notes during the call and just forward them to you afterward"},
+   {"id":"c","text":"Upload the whole video file to a general-purpose chatbot and ask it to write the minutes"},
+   {"id":"d","text":"Transcription tool, templated AI summary, human review of names, numbers, and commitments, delivered within hours"}]',
+ 'd',
+ 'Purpose-built transcription, templated summarisation, human verification: each stage doing the job it''s shaped for.')
+
+) as v(assessment_id, sort_order, competency, prompt, options, correct, explanation)
+where not exists (
+  select 1 from public.questions
+  where assessment_id = 'a0000000-0000-4000-8000-000000000004'
+);
+
+-- Chapter 2 quiz (Content and communication) — 3 questions
+insert into public.questions (assessment_id, sort_order, competency, prompt, options, correct_option_id, explanation)
+select v.assessment_id::uuid, v.sort_order, v.competency, v.prompt, v.options::jsonb, v.correct, v.explanation
+from (values
+
+('a0000000-0000-4000-8000-000000000005', 1, 'prompting',
  'A client says your AI-drafted replies "don''t sound like me at all." The systematic fix is:',
- '[{"id":"a","text":"Edit each draft more heavily by hand from now on"},
-   {"id":"b","text":"Build a voice brief from real examples of their writing and include it in every drafting prompt"},
-   {"id":"c","text":"Ask the AI to \"sound more human\""},
-   {"id":"d","text":"Stop using AI for this client"}]',
- 'b',
+ '[{"id":"a","text":"Build a voice brief from real examples of their writing and include it in every drafting prompt"},
+   {"id":"b","text":"Keep editing every single draft more and more heavily by hand each time, for as long as this client stays with you"},
+   {"id":"c","text":"Ask the AI to simply try sounding more human next time"},
+   {"id":"d","text":"Stop using AI to draft anything for this particular client"}]',
+ 'a',
  'Per-draft editing treats the symptom. A voice brief fixes the input, so every future draft starts in the client''s voice.'),
 
-('a0000000-0000-4000-8000-000000000002', 5, 'prompting',
+('a0000000-0000-4000-8000-000000000005', 2, 'prompting',
  'You need 30 product captions in a consistent format. The professional setup is:',
- '[{"id":"a","text":"One prompt defining hook/body/CTA/hashtags, then the whole batch through it, then a batch edit pass"},
-   {"id":"b","text":"Thirty separate creative prompts for variety"},
-   {"id":"c","text":"Ask the AI to \"be creative and consistent\""},
-   {"id":"d","text":"Write 5 manually and have AI guess the pattern from nothing"}]',
- 'a',
+ '[{"id":"a","text":"Write thirty separate, completely different creative prompts by hand, one at a time, so each caption feels fresh and unique"},
+   {"id":"b","text":"One prompt defining the hook, body, CTA, and hashtags, then the whole batch through it, then one batch edit pass"},
+   {"id":"c","text":"Write five captions manually yourself and hope the AI can guess the pattern from just that"},
+   {"id":"d","text":"Just ask the AI to be creative and consistent"}]',
+ 'b',
  'Fixed template + batch generation + batch review: consistent voice, one approval cycle, repeatable next month.'),
 
-('a0000000-0000-4000-8000-000000000002', 6, 'judgment',
+('a0000000-0000-4000-8000-000000000005', 3, 'workflow',
+ 'A client asks for this week''s report. You have the real numbers, but you''re short on time. What''s the right way to use AI here?',
+ '[{"id":"a","text":"Give the AI last week''s finished report and simply ask it to update the numbers itself without your involvement"},
+   {"id":"b","text":"Ask the AI to estimate this week''s numbers by projecting from the trend so far"},
+   {"id":"c","text":"Skip the structure entirely and just paste the raw numbers with no summary"},
+   {"id":"d","text":"Pull the real numbers yourself first, then have AI turn them into the summary, bullets, and next step"}]',
+ 'd',
+ 'The report''s structure is fixed and reusable; only the numbers change, and only you supply those. AI''s job stays limited to turning verified numbers into prose.')
+
+) as v(assessment_id, sort_order, competency, prompt, options, correct, explanation)
+where not exists (
+  select 1 from public.questions
+  where assessment_id = 'a0000000-0000-4000-8000-000000000005'
+);
+
+-- Chapter 3 quiz (Professional judgment) — 4 questions
+insert into public.questions (assessment_id, sort_order, competency, prompt, options, correct_option_id, explanation)
+select v.assessment_id::uuid, v.sort_order, v.competency, v.prompt, v.options::jsonb, v.correct, v.explanation
+from (values
+
+('a0000000-0000-4000-8000-000000000006', 1, 'judgment',
  'While drafting a client proposal, the AI includes: "The Philippine VA industry grew 34% in 2025." You can''t find this figure anywhere. You:',
- '[{"id":"a","text":"Keep it, because it''s probably approximately right"},
-   {"id":"b","text":"Cut it or replace it with a figure from a source you can name"},
-   {"id":"c","text":"Soften it to \"reportedly grew around 34%\""},
-   {"id":"d","text":"Ask the AI for its source and cite whatever it answers"}]',
- 'b',
+ '[{"id":"a","text":"Keep it in the proposal since it''s probably approximately correct anyway"},
+   {"id":"b","text":"Ask the AI where the number came from and just cite whatever source it gives you back"},
+   {"id":"c","text":"Cut the number, or replace it with a figure from a source you can actually name"},
+   {"id":"d","text":"Soften the wording to \"reportedly grew around 34 percent\""}]',
+ 'c',
  'An unverifiable statistic has no place in a client deliverable. Softening or citing an AI-invented source just launders the invention.'),
 
-('a0000000-0000-4000-8000-000000000002', 7, 'judgment',
+('a0000000-0000-4000-8000-000000000006', 2, 'judgment',
  'A client emails you their database of 800 customers and asks for a churn summary. Before using an AI tool on it, you:',
- '[{"id":"a","text":"Paste it all in; the client sent it, so it''s authorised"},
-   {"id":"b","text":"Strip or anonymise personal identifiers the analysis doesn''t need, and confirm the client''s AI-tool policy if you haven''t"},
-   {"id":"c","text":"Refuse the task, because customer data can never touch AI"},
-   {"id":"d","text":"Do it, but delete the chat afterwards"}]',
+ '[{"id":"a","text":"Paste the entire database in as-is, since the client sent it to you and that counts as authorisation"},
+   {"id":"b","text":"Strip out the personal identifiers the analysis doesn''t need, and confirm the client''s AI-tool policy first"},
+   {"id":"c","text":"Refuse the task outright, since customer data should never, under any circumstances, be allowed to touch an AI tool"},
+   {"id":"d","text":"Do it, but remember to delete the chat log afterward"}]',
  'b',
  'The client authorised the analysis, not disclosure to third-party tools. Minimise the data and know the policy. That''s Data Privacy Act territory.'),
 
-('a0000000-0000-4000-8000-000000000002', 8, 'judgment',
+('a0000000-0000-4000-8000-000000000006', 3, 'judgment',
  'The client asks you to sign an updated contract the AI helped them draft. One clause reads oddly to you. You:',
- '[{"id":"a","text":"Sign, because refusing looks difficult"},
-   {"id":"b","text":"Check the clause against a trusted template or someone qualified before signing"},
-   {"id":"c","text":"Ask the client''s AI whether the clause is fair"},
-   {"id":"d","text":"Cross it out and sign the rest"}]',
- 'b',
+ '[{"id":"a","text":"Sign it anyway, since refusing or raising any kind of question about it now might look difficult or awkward to the client"},
+   {"id":"b","text":"Ask the client''s own AI assistant whether it thinks the clause seems fair to both sides"},
+   {"id":"c","text":"Just cross out that one clause yourself and sign the rest of the contract as it is"},
+   {"id":"d","text":"Check that specific clause against a trusted template, or with someone qualified, before you sign anything"}]',
+ 'd',
  'Anything legally binding gets verified against real authority, the same ladder as every consequential claim.'),
 
-('a0000000-0000-4000-8000-000000000002', 9, 'tools',
- 'A client wants weekly minutes from their recorded 90-minute team calls. Your pipeline is:',
- '[{"id":"a","text":"Play the recording and paste what you hear into chat as you go"},
-   {"id":"b","text":"Transcription tool → templated AI summary → your review of names, numbers, commitments → deliver within hours"},
-   {"id":"c","text":"Ask the client to keep their own notes and send them over"},
-   {"id":"d","text":"Upload the video to a chatbot and ask for minutes"}]',
- 'b',
- 'Purpose-built transcription, templated summarisation, human verification: each stage doing the job it''s shaped for.'),
-
-('a0000000-0000-4000-8000-000000000002', 10, 'workflow',
+('a0000000-0000-4000-8000-000000000006', 4, 'workflow',
  'AI has cut your monthly-report time from 4 hours to 1. You bill that client hourly. The sustainable move is:',
- '[{"id":"a","text":"Say nothing and bill 4 hours anyway"},
-   {"id":"b","text":"Bill the 1 hour and absorb the pay cut"},
-   {"id":"c","text":"Propose fixed deliverable pricing for the report, reflecting its value and your verification process"},
-   {"id":"d","text":"Slow down so it takes 4 hours again"}]',
+ '[{"id":"a","text":"Say nothing about the time saved and just keep billing the client for four full hours of work every single month regardless"},
+   {"id":"b","text":"Bill only the one hour it actually took this month, and quietly absorb the resulting pay cut"},
+   {"id":"c","text":"Propose fixed deliverable pricing for the report instead, reflecting its value and your verification work"},
+   {"id":"d","text":"Deliberately slow yourself back down so the report takes four hours again like before"}]',
  'c',
  'Billing phantom hours is dishonest; absorbing the cut punishes your own efficiency. Deliverable pricing aligns pay with value, and it''s honest.')
 
 ) as v(assessment_id, sort_order, competency, prompt, options, correct, explanation)
 where not exists (
   select 1 from public.questions
-  where assessment_id = 'a0000000-0000-4000-8000-000000000002'
+  where assessment_id = 'a0000000-0000-4000-8000-000000000006'
 );
 
 -- AI Foundations exam — 8 questions
@@ -537,6 +589,29 @@ where not exists (
   select 1 from public.questions
   where assessment_id = 'a0000000-0000-4000-8000-000000000003'
 );
+
+-- ════════════════════════════════════════════════════════════════════════════
+-- CAVA final assignment — reviewed, releases the credential (requires_assignment
+-- is true for this certification; see migration 0013).
+-- ════════════════════════════════════════════════════════════════════════════
+
+insert into public.assignments (id, certification_id, title, brief_mdx, criteria, min_words, is_published)
+values (
+  '10000000-0000-4000-8000-000000000001',
+  'c0000000-0000-4000-8000-000000000001',
+  'One client, four proofs',
+  E'Pick one real or realistically invented VA client you could plausibly work for: a small business owner, an online seller, a coach, or a solo consultant. Invent the name and the business. Never use a real, identifiable person or business anywhere in this submission. Then submit one document with four parts.\n\n**1. Voice brief and draft.** Write a voice brief for your invented client in the format this course teaches: three tone words, at least one banned phrase, and how the client opens and closes a message. Base it on a short writing sample from the client that you invent and include (three to five sentences is enough). Then use the brief to write one actual draft, a reply to a customer email or a short social caption, and show the finished draft next to the brief it came from.\n\n**2. A report from real numbers.** You are given this month''s figures for the client''s support inbox: 248 emails received, 231 replied to within 24 hours, 9 escalated to the client directly, and an average first-reply time of 3.6 hours against a 4-hour target. Build the report using the exact structure this course teaches: a one-line summary, three bullets, and one line on the next step. Every number in your report must trace back to the four figures above. Do not add, estimate, or invent a single additional number.\n\n**3. Minutes pipeline, with a catch.** Here is an accurate excerpt from a client call transcript: "Next steps: Marjorie''s going to send the updated supplier invoice by Thursday. We also need to confirm the reorder amount with the vendor, it''s fifteen thousand pesos, not fifty, we already caught that mistake once. Mark, can you follow up with the vendor directly." Here is the AI-drafted action list from that same call: "Marc to send updated supplier invoice by Thursday. Follow up with vendor to confirm reorder amount of 50,000 pesos." Write the corrected action items you would actually send, and add one line stating exactly what you caught and fixed against the transcript, and why you''re confident about the fix.\n\n**4. A scoping and privacy call.** A long-time client asks you to run their full customer database, 600 records including names, emails, and phone numbers, through an AI tool to find their highest-spending customers. In the same message, they mention that since AI has made your reporting so much faster, they''d like to renegotiate your monthly rate down, since "the report barely takes you any time now." In 150 to 250 words, explain what you would do about the data before touching any AI tool, and how you would respond to the pricing request. Ground both answers in habits this course actually teaches: the paste test, and pricing the outcome rather than the hours. No artifact is needed for this part, only your written reasoning.\n\nDo not invent details about a real, identifiable client, business, or person anywhere in this submission; every name and writing sample must be invented for this exercise. Every number in the report must be traceable to the four figures given above, with nothing added or estimated. Submit at least 900 words across all four parts combined.',
+  array[
+    'The voice brief has three tone words, at least one banned phrase, and a real open/close pattern, and the draft that follows it actually reads in that voice rather than as generic AI output',
+    'The report follows the exact taught structure (one-line summary, three bullets, next step), and every number in it traces back to the four figures given, with none invented or estimated',
+    'The minutes response correctly identifies and corrects the specific errors in the AI-drafted action list (the name and the reorder amount), not just a general note that it was reviewed',
+    'The privacy and pricing response gives real reasoning grounded in the paste test and outcome-based pricing rather than a template answer, and stays within the stated word range',
+    'No real, identifiable client, business, or person appears anywhere in the submission'
+  ],
+  900,
+  true
+)
+on conflict (certification_id) do nothing;
 
 -- ════════════════════════════════════════════════════════════════════════════
 -- Demo credentials — OBVIOUSLY FICTIONAL, marked as demo records (§7 seed).
