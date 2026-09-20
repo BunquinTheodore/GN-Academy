@@ -18,7 +18,7 @@ export function SiteFooter() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-sm text-muted-foreground hover:text-foreground"
+                      className="inline-block py-1.5 text-sm text-muted-foreground hover:text-foreground sm:py-0"
                     >
                       {link.label}
                     </Link>

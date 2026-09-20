@@ -4,6 +4,7 @@ import { Inter, Geist_Mono, Bricolage_Grotesque } from "next/font/google";
 import { env } from "@/lib/env";
 import { site } from "@/content/site";
 import { AnalyticsScript } from "@/components/analytics-script";
+import { ClickSoundProvider } from "@/components/click-sound-provider";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
@@ -95,6 +96,14 @@ export default async function RootLayout({
       suppressHydrationWarning
     >
       <body className="antialiased">
+        {/*
+          Intro splash. Pure CSS (see .gn-splash in globals.css), outside
+          {children} so a next/link navigation between routes never remounts
+          it, aria-hidden because it is decorative and never the real content.
+        */}
+        <div className="gn-splash" aria-hidden="true">
+          <span className="gn-splash-title">GN Academy</span>
+        </div>
         <script
           type="application/ld+json"
           nonce={nonce}
@@ -104,6 +113,7 @@ export default async function RootLayout({
         />
         <ThemeProvider nonce={nonce}>{children}</ThemeProvider>
         <AnalyticsScript nonce={nonce} />
+        <ClickSoundProvider />
       </body>
     </html>
   );

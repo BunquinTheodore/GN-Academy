@@ -673,3 +673,87 @@
     background: var(--background);
   }
 }
+
+/*
+ * The intro splash: a black frame with the wordmark, gone inside two seconds.
+ *
+ * Lives in the root layout, once, outside `{children}`. It has to be visible
+ * the instant HTML paints, before any script runs, so it is a plain element
+ * animated with `animation-delay` rather than a timer, per the same reasoning
+ * as `.gn-rise-in` above: a JS-driven fade can leave the screen stuck black if
+ * a chunk loads slowly. `pointer-events: none` from the first frame means it
+ * never blocks a click on the real page underneath, and `aria-hidden="true"`
+ * in the markup means it was never in the accessibility tree to begin with,
+ * so nothing needs to be removed from it later. The last keyframe also sets
+ * `visibility: hidden`, so a keyboard user tabbing through the page right
+ * after load cannot land focus on anything under a fully-transparent layer.
+ *
+ * The Next.js App Router keeps a shared layout mounted across client-side
+ * navigation between routes; only `{children}` swaps. Placed here, this
+ * element is not part of `{children}`, so a `next/link` navigation cannot
+ * remount it. It only ever plays on a real document load: first visit, a
+ * fresh tab, or an actual refresh. No sessionStorage flag needed to gate it.
+ */
+.gn-splash {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: oklch(0 0 0);
+  pointer-events: none;
+}
+
+.gn-splash-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 2.9vw + 0.9rem, 2.9rem);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: oklch(0.98 0 0);
+  text-shadow: 0 0 60px color-mix(in oklch, var(--brand) 35%, transparent);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .gn-splash {
+    animation: gn-splash-out 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: 1s;
+  }
+  .gn-splash-title {
+    animation: gn-splash-title-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gn-splash {
+    animation: gn-splash-out 0.2s linear forwards;
+    animation-delay: 0.15s;
+  }
+}
+
+@keyframes gn-splash-out {
+  0% {
+    opacity: 1;
+    transform: none;
+  }
+  99% {
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.03);
+    visibility: hidden;
+  }
+}
+
+@keyframes gn-splash-title-in {
+  0% {
+    opacity: 0;
+    transform: translateY(8px) scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}

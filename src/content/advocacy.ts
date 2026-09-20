@@ -2,27 +2,18 @@
  * Advocacy content: the Proof of Work gallery and the Speaker Booking page.
  *
  * Follows the pattern of `src/content/landing.ts` — copy lives here, typed,
- * as data a non-developer can edit. Nothing in this file invents a school
- * name, an event date or a statistic. Anything not yet confirmed by Jops is
- * marked `TODO` in the value itself, so it is impossible to ship a real-
- * looking placeholder by accident: a reviewer scanning the rendered page
- * sees "TODO" printed, not a plausible-looking fake.
+ * as data a non-developer can edit. The gallery below only lists real,
+ * supplied photos (see `gallery.photos`) — no per-event names, cities or
+ * dates are claimed, since none have been confirmed by Jops. Nothing in this
+ * file invents a school name, an event date or a statistic.
  */
 
-export type ProofOfWorkItem = {
-  /** Stable key, used for the gallery grid and any future linking. */
-  slug: string;
-  kind: "university-talk" | "hackathon";
-  /** School or event name. TODO until Jops confirms the real name. */
-  name: string;
-  /** Free-text location, or TODO. */
-  location: string;
-  /** ISO date if known, otherwise the literal string "TODO". */
-  date: string;
-  /** One or two sentences of factual description, no invented detail. */
-  description: string;
-  /** Published path(s) under /public/proof-of-work this item's photos use. */
-  photos: string[];
+/** One real photo in the campus/event gallery marquee. */
+export type ProofOfWorkPhoto = {
+  /** Filename under `/public/proof-of-work/campus/`. */
+  file: string;
+  /** Honest, brief description of what is visible in the photo. */
+  alt: string;
 };
 
 export const advocacy = {
@@ -33,83 +24,56 @@ export const advocacy = {
   intro: {
     eyebrow: "Beyond the platform",
     heading: "Bringing trading and tech education to more campuses",
-    body: "Outside the courses on this site, the GN Ventures team runs talks, workshops and hackathon sessions that bring practical trading and technology education directly to university students. This gallery documents that work as it happens.",
+    body: "Outside the courses on this site, the GN Ventures team runs talks, workshops and hackathon sessions that bring practical trading and technology education directly to university students. Below are real photos from the talks, panels and expo stops the team has shown up for — proof of that work as it happens.",
   },
 
   gallery: {
-    heading: "Proof of work",
-    body: "A running record of campus talks and community events, each one labelled with what it was and when. Real names and dates go in as they are confirmed.",
-    items: [
+    photos: [
       {
-        slug: "university-talk-01",
-        kind: "university-talk",
-        name: "TODO: school/university name",
-        location: "TODO: city",
-        date: "TODO",
-        description:
-          "Jops speaking with students about practical trading and technology skills. TODO: replace with a confirmed description once the event is on record.",
-        photos: ["school-01.jpg", "school-02.jpg"],
+        file: "IMAGE0054-00624.jpg",
+        alt: "A speaker in a light jacket smiling and pointing his microphone toward the audience on a blue-lit stage.",
       },
       {
-        slug: "university-talk-02",
-        kind: "university-talk",
-        name: "TODO: school/university name",
-        location: "TODO: city",
-        date: "TODO",
-        description: "TODO: confirm event description.",
-        photos: ["school-03.jpg", "school-04.jpg"],
+        file: "IMAGE0055-00628.jpg",
+        alt: "Two speakers sharing microphones and laughing together on stage in front of a large screen.",
       },
       {
-        slug: "university-talk-03",
-        kind: "university-talk",
-        name: "TODO: school/university name",
-        location: "TODO: city",
-        date: "TODO",
-        description: "TODO: confirm event description.",
-        photos: ["school-05.jpg", "school-06.jpg"],
+        file: "IMAGE0086-00756.jpg",
+        alt: "A speaker in a jacket holding a phone and speaking into a microphone on stage, with a certificate of appreciation displayed beside him.",
       },
       {
-        slug: "university-talk-04",
-        kind: "university-talk",
-        name: "TODO: school/university name",
-        location: "TODO: city",
-        date: "TODO",
-        description: "TODO: confirm event description.",
-        photos: ["school-07.jpg", "school-08.jpg"],
+        file: "IMAGE0087-00759.jpg",
+        alt: "A panel of four people seated together on stage, with one panelist speaking into a microphone.",
       },
       {
-        slug: "university-talk-05",
-        kind: "university-talk",
-        name: "TODO: school/university name",
-        location: "TODO: city",
-        date: "TODO",
-        description: "TODO: confirm event description.",
-        photos: ["school-09.jpg", "school-10.jpg"],
+        file: "IMAGE0088-00761.jpg",
+        alt: "A panelist wearing glasses and a fleece jacket, speaking into a microphone from a couch during a panel discussion.",
       },
       {
-        slug: "wobex-hackathon",
-        kind: "hackathon",
-        name: "Wobex Hackathon",
-        location: "TODO: city / venue",
-        date: "TODO",
-        description:
-          "GN Ventures' presence at the Wobex hackathon. TODO: confirm the exact event name, dates and a factual one-line recap once available.",
-        photos: [
-          "wobex-01.jpg",
-          "wobex-02.jpg",
-          "wobex-03.jpg",
-          "wobex-04.jpg",
-          "wobex-05.jpg",
-        ],
+        file: "IMAGE0089-00763.jpg",
+        alt: "A panelist in a denim jacket wearing a name badge, speaking into a microphone on a couch during a panel discussion.",
       },
-    ] satisfies ProofOfWorkItem[],
-    note: "Real school and event names, and confirmed dates, are pending from Jops. Every TODO above is a placeholder, not a claim.",
-  },
-
-  /** The wide hero image above the gallery grid. */
-  heroPhoto: {
-    file: "school-hero.jpg",
-    alt: "TODO: describe the photo once selected (Jops speaking at a university, wide shot).",
+      {
+        file: "IMAGE0117-00842.jpg",
+        alt: "Two speakers standing close together sharing microphones on an expo stage backdrop reading \"World of Innovation\".",
+      },
+      {
+        file: "IMAGE0149-00951.jpg",
+        alt: "A speaker presenting beside a bright yellow slide about a company's solutions during an expo talk.",
+      },
+      {
+        file: "IMAGE0163-01012.jpg",
+        alt: "A speaker at a podium gesturing while presenting a slide about a decentralized data platform at an expo.",
+      },
+      {
+        file: "IMAGE0167-01022.jpg",
+        alt: "A speaker at a podium smiling while speaking into a microphone under purple stage lighting.",
+      },
+      {
+        file: "IMAGE0218-01240.jpg",
+        alt: "A speaker wearing a cap and a jacket with an ocean-themed logo, speaking into a microphone on an expo stage.",
+      },
+    ] satisfies ProofOfWorkPhoto[],
   },
 
   speakerBooking: {

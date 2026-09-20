@@ -78,47 +78,6 @@ export const landing = {
     note: "Counted from the live catalogue, not rounded up.",
   },
 
-  problem: {
-    heading: "The line on your CV that means nothing",
-    body: '"Proficient with AI tools" costs one line to write and takes an employer twenty minutes to test. So most of them never test it. They just discount it. That hurts the people who actually did the work.',
-    points: [
-      {
-        title: "For you",
-        body: "You learned the skill, and it looks identical on paper to someone who watched a video once.",
-      },
-      {
-        title: "For employers",
-        body: "Every shortlist has the same sentence on it, so the sentence stops carrying information.",
-      },
-    ],
-  },
-
-  offer: {
-    heading: "What you actually get",
-    items: [
-      {
-        title: "A credential with a public page",
-        body: "Pass, and you get a code like CAVA-2026-000001. Anyone can open its verification page. No login, no waiting on us, no PDF to forge.",
-      },
-      {
-        title: "A breakdown, not just a pass",
-        // Do not name the four AI competencies here. The catalogue now spans
-        // blockchain and finance, which are scored on their own, so listing
-        // one course's competencies as though they were every course's makes
-        // the page wrong the moment somebody earns a different credential.
-        body: "Every credential shows how you scored on the skills that course assessed, not just whether you passed. Two people who both passed are still distinguishable.",
-      },
-      {
-        title: "A profile employers browse",
-        body: "Your credentials attach to a public profile in our talent directory. There is no unverified tier in it, which is the entire point.",
-      },
-      {
-        title: "Work you can point at",
-        body: "Add a portfolio of real pieces alongside the credential, so the proof and the evidence sit in one place.",
-      },
-    ],
-  },
-
   ladder: {
     heading: "How it works",
     steps: [

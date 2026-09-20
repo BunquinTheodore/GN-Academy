@@ -4,6 +4,8 @@ import { nav, site } from "@/content/site";
 import { getSessionUser } from "@/lib/auth/session";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { MobileNav } from "@/components/site/mobile-nav";
+import { SiteNav } from "@/components/site/site-nav";
 
 /**
  * The public header knows whether you are signed in, because the catalogue
@@ -16,7 +18,7 @@ export async function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
-      <div className="mx-auto flex h-16 w-full max-w-[90rem] items-center justify-between gap-3 px-5 lg:px-8">
+      <div className="relative mx-auto flex h-16 w-full max-w-[90rem] items-center justify-between gap-3 px-5 lg:px-8">
         <Link
           href="/"
           className="flex shrink-0 items-center gap-2.5 whitespace-nowrap font-display text-lg font-semibold tracking-tight"
@@ -35,20 +37,7 @@ export async function SiteHeader() {
           <span className="hidden sm:inline">{site.name}</span>
         </Link>
 
-        <nav
-          aria-label="Main"
-          className="hidden min-w-0 flex-1 items-center justify-center gap-0 min-[1120px]:flex xl:gap-1"
-        >
-          {nav.links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="shrink-0 rounded-md px-3 py-2 text-sm font-medium tracking-[0.1em] whitespace-nowrap text-foreground uppercase hover:bg-accent hover:text-primary xl:px-4"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </nav>
+        <SiteNav />
 
         <div className="flex shrink-0 items-center gap-2 whitespace-nowrap">
           <ThemeToggle />
@@ -61,6 +50,7 @@ export async function SiteHeader() {
               <Link href={nav.cta.href}>Enroll now</Link>
             </Button>
           )}
+          <MobileNav />
         </div>
       </div>
     </header>

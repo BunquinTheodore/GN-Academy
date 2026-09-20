@@ -42,7 +42,7 @@ export function ThemeToggle({ className }: { className?: string }) {
       role="radiogroup"
       aria-label="Colour theme"
       className={cn(
-        "inline-flex items-center gap-0.5 rounded-full border border-border p-0.5",
+        "inline-flex items-center gap-1 rounded-full border border-border p-0.5 sm:gap-0.5",
         className,
       )}
     >
@@ -59,7 +59,7 @@ export function ThemeToggle({ className }: { className?: string }) {
             title={option.label}
             onClick={() => setTheme(option.value)}
             className={cn(
-              "flex size-8 items-center justify-center rounded-full transition-colors",
+              "flex size-10 items-center justify-center rounded-full transition-colors sm:size-8",
               active
                 ? "bg-primary text-primary-foreground"
                 : "text-muted-foreground hover:bg-accent hover:text-foreground",

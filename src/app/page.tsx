@@ -28,7 +28,6 @@ import { Reveal, Stagger, StaggerItem } from "@/components/motion/reveal";
 import {
   AnimatedHeading,
   AuroraField,
-  ConvergeCard,
   CountUpOnView,
   Float,
   GlowCard,
@@ -36,17 +35,14 @@ import {
   GridField,
   HeroScrollFade,
   Marquee,
-  Parallax,
   PageAmbience,
   ScrollProgress,
   Sheen,
   SpotlightPanel,
   TypeHeading,
 } from "@/components/motion/landing-motion";
-import Image from "next/image";
 import { HeroMedia } from "@/components/motion/hero-media";
 import { ProofOfWorkGallery } from "@/components/advocacy/ProofOfWorkGallery";
-import { FaqAccordion } from "@/components/landing/faq-accordion";
 
 /**
  * Button colours for the hero panel.
@@ -337,10 +333,50 @@ export default async function HomePage() {
           </HeroScrollFade>
         </section>
 
+        {/* ── The catalogue, counted ───────────────────────────────────── */}
+        {/*
+          The slot a template fills with student counts and partner logos.
+          There is no honest number of learners to print before the first
+          cohort, and an invented one on this page would refute the page.
+          These are read from the live catalogue instead.
+        */}
+        <section className="mx-auto w-full max-w-6xl px-4 py-12 sm:py-14">
+          <Stagger className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-4">
+            {landing.stats.items.map((stat) => (
+              <StaggerItem key={stat.label}>
+                {/* The sweep is the certificate metaphor: light crossing
+                    foil. It belongs on the numbers, which are the one place on
+                    this page making a claim about the catalogue. */}
+                <p className="font-display text-4xl font-semibold tabular-nums sm:text-5xl">
+                  <Sheen>
+                    <CountUpOnView to={Number(stat.value)} />
+                  </Sheen>
+                </p>
+                <p className="mt-2 text-sm text-muted-foreground">{stat.label}</p>
+              </StaggerItem>
+            ))}
+          </Stagger>
+          <Reveal delay={0.15}>
+            <p className="mt-8 text-sm text-muted-foreground">
+              {landing.stats.note}
+            </p>
+          </Reveal>
+
+          {/* The subjects, running past. Pure CSS so it pauses on hover and
+              costs the scrolling thread nothing. Every item is a real course
+              in the catalogue. */}
+          <Reveal delay={0.2}>
+            <Marquee
+              className="mt-12 border-y border-border py-5"
+              items={landing.tracks.items.map((t) => t.title)}
+            />
+          </Reveal>
+        </section>
+
         {/* ── Proof of work ────────────────────────────────────────────── */}
-        {/* Advocacy addition, sitting directly below the hero without
-            reordering or replacing the AI Readiness Test / certification
-            sections that follow it. */}
+        {/* Advocacy addition, grouped with the catalogue stats above it and
+            the AI Readiness Test / certification copy that follows it,
+            without reordering or replacing anything else on the page. */}
         <ProofOfWorkGallery />
 
         <section className="mx-auto w-full max-w-6xl px-4 py-12 sm:py-14">
@@ -390,10 +426,32 @@ export default async function HomePage() {
                   {landing.certificateReasons.test.body}
                 </p>
               </div>
+              {/*
+                This card is `bg-brand` (the neon lime). The default Button
+                variant's `.button-glass` rule (globals.css) paints its own
+                background/border with higher CSS specificity than any
+                Tailwind `bg-*`/`border-*` utility class, so a plain `bg-ink
+                text-white` here never actually painted ink — it silently
+                rendered the same bright lime as the card behind it, with
+                white text on top: ~1.4:1 text contrast, and a button that
+                was visually indistinguishable from its own card (lime pill
+                on a lime card reads as one flat block, not a control).
+                Text-only fixes (e.g. `text-brand-foreground`) solve the AA
+                number but not this: near-black text on the *same* lime as
+                the card still visually fuses button and card together. The
+                fix has to invert the fill, not just re-tint the text, and
+                it has to win the specificity fight — inline `style` always
+                beats an unlayered stylesheet rule, `!important` or not, so
+                it is used here instead of a class.
+              */}
               <Button
                 asChild
                 size="lg"
-                className="mt-8 h-12 bg-ink text-white hover:bg-ink/90"
+                className="mt-8 h-12 border-2 text-brand hover:brightness-125"
+                style={{
+                  backgroundColor: "var(--ink)",
+                  borderColor: "var(--ink)",
+                }}
               >
                 <Link href={landing.certificateReasons.test.cta.href}>
                   {landing.certificateReasons.test.cta.label}
@@ -401,262 +459,6 @@ export default async function HomePage() {
                 </Link>
               </Button>
             </Reveal>
-          </div>
-        </section>
-
-        {/* ── The catalogue, counted ───────────────────────────────────── */}
-        {/*
-          The slot a template fills with student counts and partner logos.
-          There is no honest number of learners to print before the first
-          cohort, and an invented one on this page would refute the page.
-          These are read from the live catalogue instead.
-        */}
-        <section className="mx-auto w-full max-w-6xl px-4 py-12 sm:py-14">
-          <Stagger className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-4">
-            {landing.stats.items.map((stat) => (
-              <StaggerItem key={stat.label}>
-                {/* The sweep is the certificate metaphor: light crossing
-                    foil. It belongs on the numbers, which are the one place on
-                    this page making a claim about the catalogue. */}
-                <p className="font-display text-4xl font-semibold tabular-nums sm:text-5xl">
-                  <Sheen>
-                    <CountUpOnView to={Number(stat.value)} />
-                  </Sheen>
-                </p>
-                <p className="mt-2 text-sm text-muted-foreground">{stat.label}</p>
-              </StaggerItem>
-            ))}
-          </Stagger>
-          <Reveal delay={0.15}>
-            <p className="mt-8 text-sm text-muted-foreground">
-              {landing.stats.note}
-            </p>
-          </Reveal>
-
-          {/* The subjects, running past. Pure CSS so it pauses on hover and
-              costs the scrolling thread nothing. Every item is a real course
-              in the catalogue. */}
-          <Reveal delay={0.2}>
-            <Marquee
-              className="mt-12 border-y border-border py-5"
-              items={landing.tracks.items.map((t) => t.title)}
-            />
-          </Reveal>
-        </section>
-
-        {/* ── The problem ──────────────────────────────────────────────── */}
-        <section className="overflow-x-clip border-b border-border bg-card/60 backdrop-blur-[2px]">
-          <div className="mx-auto w-full max-w-6xl px-4 py-14">
-            <Reveal>
-              <TypeHeading
-                text={landing.problem.heading}
-                className="font-display max-w-2xl text-2xl font-semibold sm:text-3xl"
-              />
-              <p className="mt-4 max-w-2xl text-muted-foreground">
-                {landing.problem.body}
-              </p>
-            </Reveal>
-
-            {/* Two cards, one from each side. The pair is "For you" and "For
-                employers", which is the section's whole argument: the same
-                sentence failing two different people. Bringing them in from
-                opposite edges to sit side by side says that before the copy
-                does. */}
-            <div className="mt-10 grid gap-6 sm:grid-cols-2">
-              {landing.problem.points.map((point, i) => (
-                <div
-                  key={point.title}
-                  className={cn(
-                    "slide-far glass-panel-bright gn-shine overflow-hidden rounded-lg p-5",
-                    i === 0 ? "slide-in-left" : "slide-in-right",
-                  )}
-                  style={{ animationDelay: "0.08s" }}
-                >
-                  <h3 className="font-medium">{point.title}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">
-                    {point.body}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ── What you get ─────────────────────────────────────────────── */}
-        <section className="mx-auto w-full max-w-6xl px-4 py-12 sm:py-14">
-          <Reveal>
-            <TypeHeading
-                text={landing.offer.heading}
-                className="font-display text-2xl font-semibold sm:text-3xl"
-              />
-          </Reveal>
-
-          {/* The four come in from the outside edges and settle into the grid
-              as the section is scrolled through: left column from the left,
-              right column from the right. Scroll-linked rather than fired
-              once, so they visibly travel while the reader moves instead of
-              playing an animation at them. */}
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
-            {landing.offer.items.map((item, i) => (
-              <ConvergeCard
-                key={item.title}
-                fromX={i % 2 === 0 ? -140 : 140}
-                fromY={i < 2 ? 40 : -40}
-                className="glass-panel-bright gn-shine overflow-hidden flex gap-4 rounded-lg p-5"
-              >
-                <BadgeCheck
-                  className="size-5 shrink-0 text-primary"
-                  aria-hidden
-                />
-                <div>
-                  <h3 className="font-medium">{item.title}</h3>
-                  <p className="mt-1.5 text-sm text-muted-foreground">
-                    {item.body}
-                  </p>
-                </div>
-              </ConvergeCard>
-            ))}
-          </div>
-        </section>
-
-        {/* ── Who this is for ─────────────────────────────────────────── */}
-        {/*
-          Photography, used as atmosphere and nothing more.
-
-          There is deliberately no caption, no name and no quote attached to any
-          of these. They are stock portraits under the Pexels licence, and the
-          moment one carries "Maria, VA, Cebu" it becomes a fabricated
-          testimonial on the one page whose entire argument is that claims
-          should be checkable. See public/landing/CREDITS.md.
-
-          Each image drifts at a different rate against the scroll, which is
-          what stops a three-image row reading as a flat strip. Desktop only:
-          scroll-linked transforms are the classic source of stutter on a phone,
-          and the fallback is simply the same images, still.
-        */}
-        <section className="mx-auto w-full max-w-6xl px-4 py-12 sm:py-14">
-          <Reveal className="max-w-2xl">
-            <TypeHeading
-              text="Built for the work you actually do"
-              className="font-display text-2xl font-semibold sm:text-3xl"
-            />
-            <p className="mt-4 text-muted-foreground">
-              Students, virtual assistants, freelancers and jobseekers. Written
-              for a phone on a commute and a laptop at a kitchen table, in the
-              country you are actually working from.
-            </p>
-          </Reveal>
-
-          <div className="mt-10 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
-            <Parallax distance={26} className="lg:col-span-2">
-              <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
-                <Image
-                  src="/landing/remote-work.jpg"
-                  alt="A man working at a laptop at a small round table."
-                  fill
-                  sizes="(min-width: 1024px) 50vw, 50vw"
-                  className="object-cover"
-                />
-              </div>
-            </Parallax>
-
-            <Parallax distance={-18}>
-              <div className="relative aspect-[3/4] overflow-hidden rounded-xl">
-                <Image
-                  src="/landing/learner-portrait.jpg"
-                  alt="A woman sitting with an open laptop on her lap."
-                  fill
-                  sizes="(min-width: 1024px) 25vw, 50vw"
-                  className="object-cover"
-                />
-              </div>
-            </Parallax>
-
-            <Parallax distance={34}>
-              <div className="relative aspect-[3/4] overflow-hidden rounded-xl">
-                <Image
-                  src="/landing/focused-desk.jpg"
-                  alt="A woman working at a desk beside a window and a plant."
-                  fill
-                  sizes="(min-width: 1024px) 25vw, 50vw"
-                  className="object-cover"
-                />
-              </div>
-            </Parallax>
-          </div>
-        </section>
-
-        {/* ── How it works + Questions ─────────────────────────────────── */}
-        {/*
-          "How it works" and the FAQ used to be two separate full-width
-          sections, each with its own eyebrow, heading and padding, with a
-          third section (What we teach) sandwiched between them below. That
-          read as three unrelated stops rather than one line of reasoning, and
-          the FAQ in particular had no visual relationship to the thing it was
-          answering questions about. Combined here: one shared heading frames
-          both, the ladder explains the mechanism, and the accordion sitting
-          directly beside it resolves whatever the ladder raised. Two glass
-          panels side by side on desktop, stacking to one column: ladder
-          first, then FAQ, on mobile so the reading order still holds.
-        */}
-        <section className="overflow-x-clip border-y border-border bg-card/60 backdrop-blur-[2px]">
-          <div className="mx-auto w-full max-w-6xl px-4 py-14 sm:py-16">
-            <Reveal className="max-w-2xl">
-              <p className="text-xs font-semibold tracking-[0.16em] text-primary uppercase">
-                The mechanism, and what people ask about it
-              </p>
-              <TypeHeading
-                text={landing.ladder.heading}
-                className="font-display mt-3 text-2xl font-semibold sm:text-3xl"
-              />
-            </Reveal>
-
-            <div className="mt-10 grid gap-6 lg:grid-cols-2 lg:gap-8">
-              {/* Outside in: Learn from the left, Get hired from the right,
-                  and Prove rising between them. All three used to come from
-                  the same side, which read as one block sliding rather than
-                  as three stages arriving. Plain CSS, so the steps are
-                  readable with no JavaScript and the delay carries the
-                  sequence instead of an observer. */}
-              <div className="glass-panel rounded-2xl p-6 sm:p-8">
-                <ol className="space-y-7">
-                  {landing.ladder.steps.map((step, i) => (
-                    <li
-                      key={step.title}
-                      className={
-                        i === 0
-                          ? "slide-far slide-in-left"
-                          : i === 1
-                            ? "rise-in"
-                            : "slide-far slide-in-right"
-                      }
-                      style={{ animationDelay: `${(i * 0.12).toFixed(2)}s` }}
-                    >
-                      {/* Ticks like the stats band. Two digits, so it counts
-                          through 01 rather than flashing straight to it. */}
-                      <p className="font-mono text-sm text-muted-foreground tabular-nums">
-                        <CountUpOnView to={i + 1} duration={0.5} pad={2} />
-                      </p>
-                      <h3 className="mt-1 text-lg font-semibold">
-                        {step.title}
-                      </h3>
-                      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                        {step.body}
-                      </p>
-                    </li>
-                  ))}
-                </ol>
-              </div>
-
-              <Reveal delay={0.12} className="glass-panel rounded-2xl p-6 sm:p-8">
-                <h3 className="font-display text-lg font-semibold sm:text-xl">
-                  Common questions
-                </h3>
-                <div className="mt-1">
-                  <FaqAccordion items={landing.faq} />
-                </div>
-              </Reveal>
-            </div>
           </div>
         </section>
 
@@ -749,15 +551,26 @@ export default async function HomePage() {
           )}
         </section>
 
-        {/* ── Employers ────────────────────────────────────────────────── */}
+        {/* ── Hiring & verification ────────────────────────────────────── */}
+        {/*
+          "If you are hiring" and the free-account pitch used to be two
+          separate sections stacked back to back with only a border between
+          them, which read as one idea broken in half for no reason. They are
+          one section now: two columns sharing a single card, split by a
+          vertical rule on desktop (`sm:border-l`, the same `border-border`
+          token every other divider on this page uses) and stacked with both
+          halves centered on mobile, rather than the employer copy staying
+          left-aligned under a narrower viewport where there is no second
+          column to justify it.
+        */}
         <section className="overflow-x-clip border-y border-border bg-card/60 backdrop-blur-[2px]">
-          <div className="mx-auto w-full max-w-6xl px-4 py-12">
-            <Reveal className="max-w-2xl">
+          <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-12 sm:grid-cols-2 sm:py-16">
+            <Reveal className="flex flex-col items-center text-center sm:items-start sm:text-left">
               <ShieldCheck className="size-6 text-primary" aria-hidden />
               <h2 className="font-display mt-4 text-2xl font-semibold sm:text-3xl">
                 {landing.employers.heading}
               </h2>
-              <p className="mt-4 text-muted-foreground">
+              <p className="mt-4 max-w-md text-muted-foreground">
                 {landing.employers.body}
               </p>
               <Button asChild variant="outline" className="mt-6 h-11">
@@ -766,13 +579,11 @@ export default async function HomePage() {
                 </Link>
               </Button>
             </Reveal>
-          </div>
-        </section>
 
-        {/* ── Final CTA ────────────────────────────────────────────────── */}
-        <section className="border-t border-border">
-          <div className="mx-auto w-full max-w-3xl px-4 py-16 text-center">
-            <Reveal>
+            <Reveal
+              delay={0.1}
+              className="flex flex-col items-center border-t border-border pt-10 text-center sm:border-t-0 sm:border-l sm:pt-0 sm:pl-10"
+            >
               <h2 className="font-display text-2xl font-semibold text-balance sm:text-3xl">
                 {landing.finalCta.heading}
               </h2>

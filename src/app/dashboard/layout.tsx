@@ -178,15 +178,24 @@ export default async function DashboardLayout({
               <SignOutButton />
             </div>
           </div>
-          <div className="-mx-0 overflow-x-auto border-t border-border px-2 pb-1">
-            <div className="flex min-w-max gap-1 py-1">
+          <div className="relative border-t border-border">
+            {/* Fade + snap tell you this strip scrolls, so the fifth item
+                reads as "more to the right" rather than a clipped bug. */}
+            <div
+              className="-mx-0 flex snap-x snap-mandatory gap-1 overflow-x-auto px-2 py-2"
+              style={{
+                maskImage: "linear-gradient(to right, black calc(100% - 24px), transparent)",
+                WebkitMaskImage:
+                  "linear-gradient(to right, black calc(100% - 24px), transparent)",
+              }}
+            >
               {sections
                 .flatMap((s) => s.items)
                 .map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="inline-flex min-h-10 items-center rounded-md px-3 text-sm whitespace-nowrap text-muted-foreground hover:bg-accent hover:text-foreground"
+                    className="inline-flex min-h-10 shrink-0 snap-start items-center rounded-md px-3 text-sm whitespace-nowrap text-muted-foreground hover:bg-accent hover:text-foreground"
                   >
                     {item.label}
                   </Link>
