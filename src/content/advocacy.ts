@@ -24,7 +24,7 @@ export const advocacy = {
   intro: {
     eyebrow: "Beyond the platform",
     heading: "Bringing trading and tech education to more campuses",
-    body: "Outside the courses on this site, the GN Ventures team runs talks, workshops and hackathon sessions that bring practical trading and technology education directly to university students. Below are real photos from the talks, panels and expo stops the team has shown up for — proof of that work as it happens.",
+    body: "Outside the courses on this site, the GN Ventures team runs talks, workshops and hackathon sessions that bring practical trading and technology education directly to university students. Below are real photos from the talks, panels and expo stops the team has shown up for, proof of that work as it happens.",
   },
 
   gallery: {

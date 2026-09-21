@@ -282,10 +282,17 @@ export function Sheen({
   highlight?: string;
 }) {
   const reduced = useReduced();
+  const ref = useRef<HTMLSpanElement>(null);
+  // background-position is a paint property, not transform/opacity, so this
+  // loop can't move to the compositor the way the rest of the file does
+  // (moving the gradient without moving the glyphs needs the position to
+  // shift under a fixed text-clip). Gating it to only run while in view
+  // at least stops it burning frames on instances scrolled off-screen.
+  const inView = useInView(ref, { margin: "-10% 0px" });
 
   if (reduced) {
     return (
-      <span className={className} style={{ color: base }}>
+      <span ref={ref} className={className} style={{ color: base }}>
         {children}
       </span>
     );
@@ -293,6 +300,7 @@ export function Sheen({
 
   return (
     <motion.span
+      ref={ref}
       className={cn("bg-clip-text text-transparent", className)}
       style={
         {
@@ -301,7 +309,9 @@ export function Sheen({
           WebkitBackgroundClip: "text",
         } as CSSProperties
       }
-      animate={{ backgroundPositionX: ["160%", "-60%"] }}
+      animate={
+        inView ? { backgroundPositionX: ["160%", "-60%"] } : undefined
+      }
       transition={{
         duration: 5.5,
         repeat: Infinity,
@@ -389,24 +399,46 @@ const GRID_STYLE = {
  * A faint engineering grid, drifting exactly one cell per cycle so the loop is
  * seamless. Masked towards the edges so it reads as texture under the content
  * rather than as a box the content sits inside.
+ *
+ * Driven by `transform: translate3d`, not `background-position`: the latter is
+ * a paint property and repaints the element's content every frame, which is
+ * real cost on a loop that runs sitewide via `PageAmbience`. The mask/overflow
+ * live on the outer, unanimated wrapper; the inner layer carries the grid
+ * image oversized by one cell in each direction (`-inset-14`, i.e. -56px) so
+ * translating it back to 0 never exposes a seam.
  */
 export function GridField({ className }: { className?: string }) {
   const reduced = useReduced();
-  const base = cn(
-    "pointer-events-none absolute inset-0 -z-10 opacity-40",
+  const wrap = cn(
+    "pointer-events-none absolute inset-0 -z-10 opacity-40 overflow-hidden",
     className,
   );
+  const maskStyle: CSSProperties = {
+    maskImage: GRID_STYLE.maskImage,
+    WebkitMaskImage: GRID_STYLE.WebkitMaskImage,
+  };
+  const gridStyle: CSSProperties = {
+    backgroundImage: GRID_STYLE.backgroundImage,
+    backgroundSize: GRID_STYLE.backgroundSize,
+  };
 
-  if (reduced) return <div aria-hidden className={base} style={GRID_STYLE} />;
+  if (reduced) {
+    return (
+      <div aria-hidden className={wrap} style={maskStyle}>
+        <div className="absolute -inset-14" style={gridStyle} />
+      </div>
+    );
+  }
 
   return (
-    <motion.div
-      aria-hidden
-      className={base}
-      style={GRID_STYLE}
-      animate={{ backgroundPositionX: [0, 56], backgroundPositionY: [0, 56] }}
-      transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-    />
+    <div aria-hidden className={wrap} style={maskStyle}>
+      <motion.div
+        className="absolute -inset-14"
+        style={gridStyle}
+        animate={{ x: [0, -56], y: [0, -56] }}
+        transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+      />
+    </div>
   );
 }
 

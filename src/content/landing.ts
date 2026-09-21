@@ -75,7 +75,6 @@ export const landing = {
       { value: "651", label: "Assessment questions" },
       { value: "7", label: "Free from the start" },
     ],
-    note: "Counted from the live catalogue, not rounded up.",
   },
 
   ladder: {
@@ -108,7 +107,7 @@ export const landing = {
    * is the single most useful thing a stranger reading this can learn.
    */
   tracks: {
-    heading: "What we teach",
+    heading: "The Courses",
     body: "Twenty certification tracks covering the work people are actually paid for. Seven of them are free all the way to the credential. The full curriculum and pricing are inside your account. The same foundations also travel offline, through talks and workshops bringing trading and tech education access to university campuses.",
     items: [
       {

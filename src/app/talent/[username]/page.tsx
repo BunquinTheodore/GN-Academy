@@ -167,7 +167,7 @@ export default async function TalentProfilePage({
                     <img
                       src={publicStorageUrl(PORTFOLIO_BUCKET, item.image_path)}
                       alt=""
-                      className="w-full border-b border-border object-cover"
+                      className="aspect-[4/3] w-full border-b border-border object-cover"
                       loading="lazy"
                     />
                   )}

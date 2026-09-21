@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useRef, useState } from "react";
-import imageCompression from "browser-image-compression";
 import { getAuth } from "firebase/auth";
 import { firebaseApp } from "@/lib/firebase/client";
 import { supabase } from "@/lib/supabase/client";
@@ -43,6 +42,11 @@ export function AdminMediaUpload({
       const user = getAuth(firebaseApp).currentUser;
       if (!user) throw new Error("Sign in again to upload.");
 
+      // Dynamic: keeps this WASM/worker-backed library out of the admin
+      // bundle until someone actually uploads something.
+      const { default: imageCompression } = await import(
+        "browser-image-compression"
+      );
       const compressed = await imageCompression(file, {
         maxWidthOrHeight: 1800,
         // browser-image-compression treats this as a target, not a hard

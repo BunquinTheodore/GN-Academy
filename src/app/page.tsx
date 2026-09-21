@@ -27,12 +27,9 @@ import { SiteFooter } from "@/components/site/footer";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/reveal";
 import {
   AnimatedHeading,
-  AuroraField,
   CountUpOnView,
   Float,
   GlowCard,
-  Grain,
-  GridField,
   HeroScrollFade,
   Marquee,
   PageAmbience,
@@ -201,9 +198,10 @@ export default async function HomePage() {
         <section className="mx-auto w-full max-w-6xl px-4 pt-6 pb-2">
           <HeroScrollFade>
             <SpotlightPanel className="relative isolate overflow-hidden rounded-3xl bg-ink px-6 py-14 ring-1 ring-white/10 sm:px-10 sm:py-14 lg:px-14 lg:py-16">
-              <AuroraField />
-              <GridField />
-              <Grain />
+              {/* No AuroraField/GridField/Grain here: the panel is translucent
+                  specifically so PageAmbience's single instance of each shows
+                  through, per the comment above. A second copy was pure
+                  duplication (8 blurred orbs animating at once). */}
 
               <div className="relative grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
                 <div className="max-w-xl">
@@ -356,12 +354,6 @@ export default async function HomePage() {
               </StaggerItem>
             ))}
           </Stagger>
-          <Reveal delay={0.15}>
-            <p className="mt-8 text-sm text-muted-foreground">
-              {landing.stats.note}
-            </p>
-          </Reveal>
-
           {/* The subjects, running past. Pure CSS so it pauses on hover and
               costs the scrolling thread nothing. Every item is a real course
               in the catalogue. */}
@@ -470,7 +462,7 @@ export default async function HomePage() {
           The grid says what exists and the account is the door.
         */}
         <section className="mx-auto w-full max-w-6xl px-4 py-14">
-          <Reveal className="max-w-2xl">
+          <Reveal className="mx-auto max-w-2xl text-center">
             <TypeHeading
                 text={landing.tracks.heading}
                 className="font-display text-2xl font-semibold sm:text-3xl"
@@ -538,17 +530,6 @@ export default async function HomePage() {
               ))}
             </div>
           </Reveal>
-
-          {!user && (
-            <Reveal delay={0.2}>
-              <Button asChild className="mt-10 h-12">
-                <Link href="/signup">
-                  Create an account to open them
-                  <ArrowRight className="size-4" aria-hidden />
-                </Link>
-              </Button>
-            </Reveal>
-          )}
         </section>
 
         {/* ── Hiring & verification ────────────────────────────────────── */}

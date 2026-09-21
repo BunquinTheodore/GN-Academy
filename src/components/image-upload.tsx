@@ -1,7 +1,6 @@
 "use client";
 
 import { useRef, useState } from "react";
-import imageCompression from "browser-image-compression";
 import { getAuth } from "firebase/auth";
 import { firebaseApp } from "@/lib/firebase/client";
 import { supabase } from "@/lib/supabase/client";
@@ -48,6 +47,12 @@ export function ImageUpload({
       const user = getAuth(firebaseApp).currentUser;
       if (!user) throw new Error("Sign in again to upload.");
 
+      // Dynamic: this WASM/worker-backed library has no reason to ship in
+      // the initial dashboard bundle for every signed-in user, only for the
+      // ones who actually pick a file.
+      const { default: imageCompression } = await import(
+        "browser-image-compression"
+      );
       const compressed = await imageCompression(file, {
         maxWidthOrHeight,
         maxSizeMB: 0.4,

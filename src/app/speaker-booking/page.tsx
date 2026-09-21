@@ -68,17 +68,11 @@ export default function SpeakerBookingPage() {
           </p>
         </section>
 
-        {/* ── On-stage imagery ────────────────────────────────────────── */}
-        <section className="mx-auto w-full max-w-6xl px-4 py-10">
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            {advocacy.speakerBooking.imagery.map((photo) => (
-              <StagePhoto key={photo.file} file={photo.file} alt={photo.alt} />
-            ))}
-          </div>
-        </section>
-
         {/* ── Inquiry form ─────────────────────────────────────────────── */}
-        <section className="mx-auto w-full max-w-3xl px-4 pb-20">
+        {/* Same max-w-6xl as the imagery grid below, so the form card reads
+            as wide as the two photos side by side rather than a narrower
+            column floating above them. */}
+        <section className="mx-auto w-full max-w-6xl px-4 py-10">
           <h2 className="font-display text-xl font-semibold sm:text-2xl">
             {advocacy.speakerBooking.form.heading}
           </h2>
@@ -100,6 +94,15 @@ export default function SpeakerBookingPage() {
               {site.contactEmail}
             </a>
           </p>
+        </section>
+
+        {/* ── On-stage imagery ────────────────────────────────────────── */}
+        <section className="mx-auto w-full max-w-6xl px-4 pb-20">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {advocacy.speakerBooking.imagery.map((photo) => (
+              <StagePhoto key={photo.file} file={photo.file} alt={photo.alt} />
+            ))}
+          </div>
         </section>
       </main>
 
