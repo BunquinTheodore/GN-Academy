@@ -5,6 +5,25 @@ import { z } from "zod";
 import { getSessionUser } from "@/lib/auth/session";
 import { createDataRequest } from "@/lib/db/data-requests";
 import { checkRateLimit, hashIp, RATE_LIMITS } from "@/lib/rate-limit";
+import { sendEmail } from "@/lib/email/send";
+import { DataRequestEmail } from "@/lib/email/data-request";
+import { site } from "@/content/site";
+import { env } from "@/lib/env";
+
+// Adds N working days (Mon-Fri) to today, for the "reply within 15 working
+// days" DPA deadline surfaced in the team notification email. Weekends are
+// skipped; Philippine holidays are not accounted for, so this is a floor,
+// not an exact legal deadline.
+function addWorkingDays(from: Date, count: number): Date {
+  const date = new Date(from);
+  let remaining = count;
+  while (remaining > 0) {
+    date.setDate(date.getDate() + 1);
+    const day = date.getDay();
+    if (day !== 0 && day !== 6) remaining -= 1;
+  }
+  return date;
+}
 
 export type DataRequestState = { error: string } | { ok: string } | null;
 
@@ -63,6 +82,26 @@ export async function submitDataRequestAction(
         "Couldn't record the request. Email gnclub.contactus@gmail.com instead and we'll handle it manually.",
     };
   }
+
+  // Best-effort team notification — the request is already durably in
+  // Supabase by this point (and visible in /admin/data-requests), so a
+  // failed/skipped send never loses it, only delays a human noticing a
+  // legally-timed request (same pattern as speaker-booking's route).
+  await sendEmail({
+    to: site.contactEmail,
+    subject: `Data Privacy Act request (${parsed.data.kind}): ${parsed.data.email}`,
+    react: DataRequestEmail({
+      email: parsed.data.email.toLowerCase(),
+      kind: parsed.data.kind,
+      details: parsed.data.details,
+      dueDate: addWorkingDays(new Date(), 15).toLocaleDateString("en-PH", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      }),
+      reviewUrl: `${env.NEXT_PUBLIC_SITE_URL}/admin/data-requests`,
+    }),
+  });
 
   return {
     ok: "Request received. We reply within 15 working days, as the Data Privacy Act requires, to the email address you gave.",

@@ -5,6 +5,9 @@ import { z } from "zod";
 import { optional } from "@/lib/admin/form-values";
 import { supabaseAdmin } from "@/lib/supabase/server";
 import { checkRateLimit, hashIp, RATE_LIMITS } from "@/lib/rate-limit";
+import { sendEmail } from "@/lib/email/send";
+import { EmployerEnquiryEmail } from "@/lib/email/employer-enquiry";
+import { site } from "@/content/site";
 
 export type EnquiryState = { error: string } | { ok: string } | null;
 
@@ -83,6 +86,21 @@ export async function submitEnquiryAction(
         "Couldn't send that. Email gnclub.contactus@gmail.com instead and we'll pick it up.",
     };
   }
+
+  // Best-effort team notification — the enquiry is already durably in
+  // Supabase by this point, so a failed/skipped send never loses it, only
+  // delays a human noticing it (same pattern as speaker-booking's route).
+  await sendEmail({
+    to: site.contactEmail,
+    subject: `Employer enquiry: ${parsed.data.employer_name}`,
+    react: EmployerEnquiryEmail({
+      employerName: parsed.data.employer_name,
+      employerEmail: parsed.data.employer_email,
+      company: parsed.data.company,
+      message: parsed.data.message,
+      talent: parsed.data.talent,
+    }),
+  });
 
   return {
     ok: "Enquiry received. We reply to serious enquiries within two working days.",
