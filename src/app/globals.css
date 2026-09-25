@@ -354,18 +354,23 @@
  * matters more here than anywhere else on the page: the hero is animating
  * several things at once on hardware that may be doing well to scroll.
  *
+ * `opacity`/`transform` only, on purpose: this used to also animate
+ * `filter: blur()`, which is a paint property and forces the browser off
+ * the compositor thread, defeating the point above (Lighthouse's
+ * non-composited-animations audit flagged it, and the hero's ~10 staggered
+ * `.gn-word` spans were the majority of the flagged elements). Dropped the
+ * blur, kept the fade + rise.
+ *
  * Stagger by setting `animation-delay` per word.
  */
 @keyframes gn-word-in {
   from {
     opacity: 0;
     transform: translateY(0.45em);
-    filter: blur(6px);
   }
   to {
     opacity: 1;
     transform: none;
-    filter: blur(0);
   }
 }
 

@@ -4,6 +4,17 @@ import type { ProofOfWorkPhoto } from "@/content/advocacy";
 import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/motion/reveal";
 
+/**
+ * These load from `public/proof-of-work/campus/optimized/`, not the raw
+ * `campus/` originals. `next.config.ts` sets `images.unoptimized: true`
+ * (Vercel Hobby's image-transform cap), so `next/image` cannot resize these
+ * at request time the way it does for other assets in this repo — whatever
+ * file sits at this path ships byte-for-byte. The `campus/` originals are
+ * untouched, unresized phone-camera photos (~5-22MB each); `optimized/`
+ * holds the same 11 photos resized to a 1000px longest edge and re-encoded
+ * as quality-78 JPEGs (~60-90KB each), which is still oversized for the
+ * ~256-320px boxes these render into but no longer multi-megabyte per file.
+ */
 /** The eleven supplied campus/event photos, split into two marquee rows. */
 const PHOTO_ROWS: ProofOfWorkPhoto[][] = [
   advocacy.gallery.photos.slice(0, 6),
@@ -54,7 +65,7 @@ function PhotoMarqueeRow({
                 className="glass-panel gn-shine relative aspect-[4/3] w-64 shrink-0 overflow-hidden rounded-xl border border-border sm:w-80"
               >
                 <Image
-                  src={`/proof-of-work/campus/${photo.file}`}
+                  src={`/proof-of-work/campus/optimized/${photo.file}`}
                   alt={photo.alt}
                   fill
                   sizes="(min-width: 640px) 320px, 256px"
@@ -79,7 +90,7 @@ function PhotoGridFallback() {
           className="glass-panel gn-shine relative aspect-[4/3] overflow-hidden rounded-xl border border-border"
         >
           <Image
-            src={`/proof-of-work/campus/${photo.file}`}
+            src={`/proof-of-work/campus/optimized/${photo.file}`}
             alt={photo.alt}
             fill
             sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"

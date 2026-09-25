@@ -542,6 +542,13 @@ export function SpotlightPanel({
 }) {
   const rich = useRichMotion();
   const ref = useRef<HTMLDivElement>(null);
+  // Cached on pointer enter instead of read on every pointer move: a
+  // `getBoundingClientRect()` call inside a high-frequency `pointermove`
+  // handler forces a synchronous layout recalculation on every event, which
+  // is a classic forced-reflow pattern. The panel's own position/size does
+  // not change while the pointer is over it, so one read per hover is
+  // enough.
+  const rectRef = useRef<DOMRect | null>(null);
   const x = useMotionValue(-9999);
   const y = useMotionValue(-9999);
   const background = useMotionTemplate`radial-gradient(${radius}px circle at ${x}px ${y}px, color-mix(in oklch, var(--brand) 13%, transparent), transparent 70%)`;
@@ -550,14 +557,19 @@ export function SpotlightPanel({
     <div
       ref={ref}
       className={className}
+      onPointerEnter={(e) => {
+        if (!rich || e.pointerType === "touch") return;
+        rectRef.current = ref.current?.getBoundingClientRect() ?? null;
+      }}
       onPointerMove={(e) => {
         if (!rich || e.pointerType === "touch") return;
-        const rect = ref.current?.getBoundingClientRect();
+        const rect = rectRef.current;
         if (!rect) return;
         x.set(e.clientX - rect.left);
         y.set(e.clientY - rect.top);
       }}
       onPointerLeave={() => {
+        rectRef.current = null;
         x.set(-9999);
         y.set(-9999);
       }}
@@ -684,6 +696,10 @@ export function GlowCard({
 }) {
   const rich = useRichMotion();
   const ref = useRef<HTMLDivElement>(null);
+  // See the matching comment in `SpotlightPanel`: cache the rect on pointer
+  // enter rather than reading it on every `pointermove`, which was forcing a
+  // synchronous layout on each event across every card on the page.
+  const rectRef = useRef<DOMRect | null>(null);
   const x = useMotionValue(-9999);
   const y = useMotionValue(-9999);
   const background = useMotionTemplate`radial-gradient(240px circle at ${x}px ${y}px, color-mix(in oklch, var(--brand) 14%, transparent), transparent 65%)`;
@@ -692,14 +708,19 @@ export function GlowCard({
     <div
       ref={ref}
       className={cn("group relative overflow-hidden", className)}
+      onPointerEnter={(e) => {
+        if (!rich || e.pointerType === "touch") return;
+        rectRef.current = ref.current?.getBoundingClientRect() ?? null;
+      }}
       onPointerMove={(e) => {
         if (!rich || e.pointerType === "touch") return;
-        const rect = ref.current?.getBoundingClientRect();
+        const rect = rectRef.current;
         if (!rect) return;
         x.set(e.clientX - rect.left);
         y.set(e.clientY - rect.top);
       }}
       onPointerLeave={() => {
+        rectRef.current = null;
         x.set(-9999);
         y.set(-9999);
       }}

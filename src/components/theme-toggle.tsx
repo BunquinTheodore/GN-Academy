@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTheme } from "next-themes";
 import { Monitor, Moon, Sun } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -25,6 +25,7 @@ const OPTIONS = [
 export function ThemeToggle({ className }: { className?: string }) {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const buttonRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
   useEffect(() => setMounted(true), []);
 
@@ -46,18 +47,43 @@ export function ThemeToggle({ className }: { className?: string }) {
         className,
       )}
     >
-      {OPTIONS.map((option) => {
+      {OPTIONS.map((option, index) => {
         const Icon = option.icon;
         const active = theme === option.value;
         return (
           <button
             key={option.value}
+            ref={(el) => {
+              buttonRefs.current[index] = el;
+            }}
             type="button"
             role="radio"
             aria-checked={active}
             aria-label={option.label}
             title={option.label}
+            // Roving tabindex: only the checked option sits in the page's
+            // tab order, as the ARIA APG radiogroup pattern requires. Arrow
+            // keys move focus (and selection) between the other options
+            // instead of leaving all three independently tabbable.
+            tabIndex={active ? 0 : -1}
             onClick={() => setTheme(option.value)}
+            onKeyDown={(e) => {
+              if (
+                e.key !== "ArrowRight" &&
+                e.key !== "ArrowDown" &&
+                e.key !== "ArrowLeft" &&
+                e.key !== "ArrowUp"
+              ) {
+                return;
+              }
+              e.preventDefault();
+              const forward = e.key === "ArrowRight" || e.key === "ArrowDown";
+              const nextIndex =
+                (index + (forward ? 1 : -1) + OPTIONS.length) % OPTIONS.length;
+              const nextOption = OPTIONS[nextIndex];
+              setTheme(nextOption.value);
+              buttonRefs.current[nextIndex]?.focus();
+            }}
             className={cn(
               "flex size-10 items-center justify-center rounded-full transition-colors sm:size-8",
               active
