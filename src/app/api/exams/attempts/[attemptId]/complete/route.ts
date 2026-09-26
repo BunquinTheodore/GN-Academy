@@ -88,6 +88,8 @@ export async function POST(
     }
 
     let credentialCode: string | null = null;
+    let credentialTitle: string | null = null;
+    let credentialIssuedAt: string | null = null;
 
     // Chapter quizzes are formative: you retake them until they stick, and
     // passing one has never been the thing that earns a credential.
@@ -99,6 +101,8 @@ export async function POST(
       });
       if (outcome.status === "issued" || outcome.status === "already") {
         credentialCode = outcome.credential.credential_code;
+        credentialTitle = outcome.credential.title;
+        credentialIssuedAt = outcome.credential.issued_at;
       }
     }
 
@@ -108,6 +112,9 @@ export async function POST(
       passingScore,
       competencies: result.competencies,
       credentialCode,
+      // What the client needs to offer a LinkedIn share without a second fetch.
+      credentialTitle,
+      credentialIssuedAt,
     });
   } catch (e) {
     console.error("exam complete failed", e);

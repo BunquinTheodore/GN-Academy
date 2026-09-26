@@ -72,7 +72,8 @@ type CourseFile = {
       duration_minutes: number;
       is_preview?: boolean;
     }[];
-    quiz: Question[];
+    /** Optional. A chapter with no quiz gets no quiz row, so nothing gates the exam. */
+    quiz?: Question[];
   }[];
   /**
    * Defaults to true so the four course files that predate exam courses keep
@@ -95,7 +96,15 @@ type CourseFile = {
   };
 };
 
-const COURSES_DIR = join(process.cwd(), "supabase", "courses");
+// `--dir=<folder>` points the seed at another folder of course files, relative
+// to the project root. It exists for supabase/test-courses, which holds
+// throwaway courses that must stay out of the content checks in
+// supabase/courses.
+const dirArg = process.argv.find((a) => a.startsWith("--dir="));
+const COURSES_DIR = join(
+  process.cwd(),
+  dirArg ? dirArg.slice("--dir=".length) : join("supabase", "courses"),
+);
 
 /**
  * Checks that a file actually describes one of the two course shapes.
@@ -326,6 +335,14 @@ async function loadCourse(
       if (error) throw error;
     }
 
+    const quizQuestions = mod.quiz ?? [];
+    if (quizQuestions.length === 0) {
+      // An empty chapter quiz would still be a published assessment the learner
+      // has to pass, and it could never be passed. Skip it and say so.
+      console.log(`   chapter ${index + 1}: ${mod.lessons.length} lessons, no quiz`);
+      continue;
+    }
+
     const quizSlug = `${course.slug}-chapter-${index + 1}`;
     const { data: quiz, error: quizError } = await db
       .from("assessments")
@@ -337,7 +354,7 @@ async function loadCourse(
           title: `${mod.title}: chapter quiz`,
           type: "chapter",
           passing_score: 70,
-          question_count: mod.quiz.length,
+          question_count: quizQuestions.length,
           // Chapter quizzes are for learning, not for gatekeeping. Retake them.
           max_attempts: 99,
           is_published: true,
@@ -351,7 +368,7 @@ async function loadCourse(
     const questionSummary = await syncQuestions(
       db,
       quiz.id,
-      mod.quiz,
+      quizQuestions,
       replaceQuestions,
       `chapter ${index + 1}`,
     );

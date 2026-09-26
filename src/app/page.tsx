@@ -423,7 +423,7 @@ export default async function HomePage() {
                 variant's `.button-glass` rule (globals.css) paints its own
                 background/border with higher CSS specificity than any
                 Tailwind `bg-*`/`border-*` utility class, so a plain `bg-ink
-                text-white` here never actually painted ink — it silently
+                text-white` here never actually painted ink, it silently
                 rendered the same bright lime as the card behind it, with
                 white text on top: ~1.4:1 text contrast, and a button that
                 was visually indistinguishable from its own card (lime pill
@@ -432,7 +432,7 @@ export default async function HomePage() {
                 number but not this: near-black text on the *same* lime as
                 the card still visually fuses button and card together. The
                 fix has to invert the fill, not just re-tint the text, and
-                it has to win the specificity fight — inline `style` always
+                it has to win the specificity fight: inline `style` always
                 beats an unlayered stylesheet rule, `!important` or not, so
                 it is used here instead of a class.
               */}

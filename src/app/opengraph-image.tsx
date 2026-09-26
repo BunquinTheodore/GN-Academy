@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "GN Academy — Learn. Prove. Get hired.";
+export const alt = "GN Academy: Learn. Prove. Get hired.";
 
 const WORDMARK = "GN ACADEMY";
 const EYEBROW = "VERIFIED CREDENTIALS · PHILIPPINES";

@@ -1,0 +1,54 @@
+{
+  "slug": "certificate-share-test",
+  "title": "Certificate Share Test",
+  "subtitle": "One paragraph, one question, one certificate",
+  "level": "foundation",
+  "category": "Testing",
+  "format": "Self-paced online",
+  "summary": "A two minute course that exists only to test sharing a certificate on LinkedIn. Read one paragraph, answer one question, and a real verifiable certificate is issued.",
+  "description": "This is a test course. It has one short lesson and a one question exam, so you can reach a real certificate in about two minutes and try the LinkedIn share flow end to end. The certificate is real and its verification page is public, so share it only if you are happy for it to be seen.",
+  "skills": ["Testing the share flow"],
+  "outcomes": ["Earn a certificate and share it on LinkedIn"],
+  "roles": ["Testers"],
+  "price_php": null,
+  "is_free": true,
+  "passing_score": 70,
+  "credential_prefix": "GNT",
+  "sort_order": 999,
+  "requires_assignment": false,
+  "modules": [
+    {
+      "slug": "chapter-1-the-lesson",
+      "title": "The lesson",
+      "description": "One paragraph.",
+      "lessons": [
+        {
+          "slug": "read-this",
+          "title": "Read this paragraph",
+          "duration_minutes": 1,
+          "content_mdx": "# Read this paragraph\n\nA certificate is only worth something if another person can check it. That is why every GN Academy certificate has a code and a public page: an employer does not have to take your word for it, they can look it up. When you share a certificate, share the link to that page, because the link is the proof and the post is just the introduction."
+        }
+      ]
+    }
+  ],
+  "final_exam": {
+    "title": "Certificate Share Test exam",
+    "slug": "certificate-share-test-final-exam",
+    "passing_score": 70,
+    "max_attempts": 99,
+    "questions": [
+      {
+        "prompt": "What makes a certificate worth sharing?",
+        "options": [
+          { "id": "a", "text": "Anyone can check it on a public page." },
+          { "id": "b", "text": "It is printed in colour." },
+          { "id": "c", "text": "It has a long title." },
+          { "id": "d", "text": "It was earned in a hurry." }
+        ],
+        "correct_option_id": "a",
+        "competency": "judgment",
+        "explanation": "A public verification page lets anyone confirm the certificate is real, which is what turns a claim into proof."
+      }
+    ]
+  }
+}

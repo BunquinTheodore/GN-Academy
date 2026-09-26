@@ -4,6 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, BadgeCheck } from "lucide-react";
 import { track } from "@/lib/analytics";
+import { env } from "@/lib/env";
+import { LinkedInShareButton } from "@/components/linkedin-share-dialog";
 import type { PublicQuestion } from "@/lib/db/assessments";
 import type { CompetencyResult } from "@/lib/assessment/scoring";
 import { Button } from "@/components/ui/button";
@@ -48,7 +50,12 @@ type ExamResult = {
   passingScore: number;
   competencies: CompetencyResult[];
   credentialCode: string | null;
+  credentialTitle: string | null;
+  credentialIssuedAt: string | null;
 };
+
+/** Long enough for the score to count up before the congratulation covers it. */
+const SHARE_DIALOG_DELAY_MS = 1600;
 
 export function ExamPlayer({
   isFreeTrack = false,
@@ -250,7 +257,19 @@ export function ExamPlayer({
                 {result.credentialCode}
               </p>
             </div>
-            <Button asChild className="h-12">
+            {result.credentialTitle && result.credentialIssuedAt && (
+              <LinkedInShareButton
+                credential={{
+                  title: result.credentialTitle,
+                  credentialCode: result.credentialCode,
+                  issuedAt: result.credentialIssuedAt,
+                  siteUrl: env.NEXT_PUBLIC_SITE_URL,
+                }}
+                autoOpenAfterMs={SHARE_DIALOG_DELAY_MS}
+                className="h-12"
+              />
+            )}
+            <Button asChild variant="outline" className="h-12">
               <Link href={`/verify/${result.credentialCode}`}>
                 View my public verification page
               </Link>

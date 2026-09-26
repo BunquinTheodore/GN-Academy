@@ -4,6 +4,8 @@ import { redirect } from "next/navigation";
 import { getSessionUser } from "@/lib/auth/session";
 import { listCredentialsForUser } from "@/lib/db/credentials";
 import { CredentialCard } from "@/components/credential-card";
+import { LinkedInShareButton } from "@/components/linkedin-share-dialog";
+import { env } from "@/lib/env";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = { title: "My credentials" };
@@ -46,7 +48,18 @@ export default async function CredentialsPage() {
                 credentialCode={credential.credential_code}
                 issuedAt={credential.issued_at}
               />
-              <div className="flex gap-2">
+              <div className="flex flex-wrap gap-2">
+                {credential.status === "active" && (
+                  <LinkedInShareButton
+                    size="sm"
+                    credential={{
+                      title: credential.title,
+                      credentialCode: credential.credential_code,
+                      issuedAt: credential.issued_at,
+                      siteUrl: env.NEXT_PUBLIC_SITE_URL,
+                    }}
+                  />
+                )}
                 <Button asChild size="sm" variant="outline">
                   <Link href={`/verify/${credential.credential_code}`}>
                     Public page
