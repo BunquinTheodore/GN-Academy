@@ -69,6 +69,7 @@ export const metadata: Metadata = {
   },
   description:
     "Practical foundations and verified credentials for Filipinos, from AI and blockchain to online safety, finance, freelancing, and career skills.",
+  twitter: { card: "summary_large_image" },
 };
 
 /**

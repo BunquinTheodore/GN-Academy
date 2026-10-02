@@ -222,3 +222,30 @@ tracking, and balanced/horizontal-space-maximizing layouts over tall narrow
 stacks when merging pages. See `PLAN-OVERVIEW.md`'s session-log section for
 the full cross-site statement of this preference — apply it by default to
 any future visual work here, not just where it's already been applied.
+
+## 2026-10-02: Brand logo as tab icon and link preview
+
+Files in `src/app/` (Next.js App Router file conventions): `favicon.ico`
+(16, 32, 48 px, PNG-in-ICO), `icon.png` (512, transparent rounded corners),
+`apple-icon.png` (180, opaque black), `opengraph-image.png`
+(1200x630, 239 KB) plus `opengraph-image.alt.txt`. There is deliberately no root
+`twitter-image.png`: it would be inherited by routes with their own dynamic
+`opengraph-image.tsx` and override their per-page card on X. Twitter falls back
+to the Open Graph image. The old `opengraph-image.tsx` and the old icon files were removed.
+`layout.tsx` now sets `twitter: { card: "summary_large_image" }`; the
+`metadataBase` was already set.
+
+Generated from the supplied `GN ACADEMY.png` with a one-off sharp script
+(not kept in the repo): trim the black margin by luminance threshold, round
+the corners, fit with padding for each size, and for the preview centre the
+mark (kept inside the central 630 px square) over near-black with a soft
+cyan, lime and yellow glow and a vignette.
+
+Route-specific previews (`blog/[slug]`, `certifications/[slug]`,
+`verify/[code]`, `ai-test/results/[attemptId]`) are untouched and still use
+their own dynamic images.
+
+After deploy: Facebook, LinkedIn and X cache preview images, so re-scrape
+(Facebook Sharing Debugger, LinkedIn Post Inspector). Browsers cache
+favicons for a long time, so the old tab icon may linger until a hard refresh
+or cache clear.
