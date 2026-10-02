@@ -61,6 +61,28 @@ test.describe("RLS security", () => {
     expect(data).toHaveLength(0);
   });
 
+  test("anon cannot read the credentials table (migration 0015)", async () => {
+    const { data, error } = await anonClient()
+      .from("credentials")
+      .select("user_id, revoked_reason, pdf_url");
+    // Select is revoked, so this is a permission error or zero rows, never data.
+    if (!error) expect(data).toHaveLength(0);
+    else expect(data).toBeNull();
+  });
+
+  test("anon can read only the public columns via credentials_public", async () => {
+    const { data, error } = await anonClient()
+      .from("credentials_public")
+      .select("*")
+      .limit(1);
+    expect(error).toBeNull();
+    for (const row of data ?? []) {
+      expect(row).not.toHaveProperty("user_id");
+      expect(row).not.toHaveProperty("revoked_reason");
+      expect(row).not.toHaveProperty("pdf_url");
+    }
+  });
+
   test("anon cannot update a profile", async () => {
     const { data, error } = await anonClient()
       .from("profiles")

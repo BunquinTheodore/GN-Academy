@@ -27,6 +27,28 @@ describe("safeNextPath", () => {
     expect(safeNextPath("")).toBe("/dashboard");
   });
 
+  it("rejects tab and newline smuggling that URL parsing would strip", () => {
+    expect(safeNextPath("/\t/evil.com")).toBe("/dashboard");
+    expect(safeNextPath("/\n/evil.com")).toBe("/dashboard");
+    expect(safeNextPath("/\r/evil.com")).toBe("/dashboard");
+    expect(safeNextPath("/dash\u0000board")).toBe("/dashboard");
+  });
+
+  it("keeps percent-encoded control characters as inert path text", () => {
+    expect(safeNextPath("/%0a/evil")).toBe("/%0a/evil");
+  });
+
+  it("preserves query strings and hashes on valid paths", () => {
+    expect(safeNextPath("/dashboard/credentials")).toBe("/dashboard/credentials");
+    expect(safeNextPath("/courses?id=3&x=a%20b#top")).toBe("/courses?id=3&x=a%20b#top");
+  });
+
+  it("falls back on non-string input", () => {
+    expect(safeNextPath(undefined)).toBe("/dashboard");
+    expect(safeNextPath(42 as unknown as string)).toBe("/dashboard");
+    expect(safeNextPath({} as unknown as string)).toBe("/dashboard");
+  });
+
   it("honours a custom fallback", () => {
     expect(safeNextPath(null, "/")).toBe("/");
   });
