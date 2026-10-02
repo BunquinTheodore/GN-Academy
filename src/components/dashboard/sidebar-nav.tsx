@@ -67,7 +67,7 @@ export function SidebarNav({
     <nav aria-label="Dashboard" className="flex flex-col gap-6">
       {sections.map((section) => (
         <div key={section.heading}>
-          <p className="px-3 text-micro font-medium tracking-widest text-muted-foreground/70 uppercase">
+          <p className="px-3 font-ui text-micro font-medium tracking-widest text-muted-foreground/70 uppercase">
             {section.heading}
           </p>
           <ul className="mt-2 flex flex-col gap-0.5">
@@ -83,7 +83,7 @@ export function SidebarNav({
                     href={item.href}
                     aria-current={active ? "page" : undefined}
                     className={cn(
-                      "flex min-h-11 items-center gap-3 rounded-md px-3 text-sm transition-colors",
+                      "flex min-h-11 items-center gap-3 rounded-md px-3 font-ui text-sm transition-colors",
                       active
                         ? "bg-primary/10 font-medium text-foreground"
                         : "text-muted-foreground hover:bg-accent hover:text-foreground",

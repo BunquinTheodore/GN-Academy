@@ -97,7 +97,7 @@ export default async function BlogPage({
                       </span>
                     )}
                   </div>
-                  <h2 className="font-display text-xl font-semibold group-hover:text-primary">
+                  <h2 className="heading-plain text-xl group-hover:text-primary">
                     {post.title}
                   </h2>
                   {post.excerpt && (

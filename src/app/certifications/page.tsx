@@ -88,7 +88,7 @@ export default async function CertificationsPage() {
                   </p>
                 </div>
                 <div>
-                  <h2 className="font-display text-xl font-semibold group-hover:text-primary">
+                  <h2 className="heading-plain text-xl group-hover:text-primary">
                     {cert.title}
                   </h2>
                   {cert.subtitle && (

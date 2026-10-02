@@ -89,7 +89,7 @@ export default async function LessonPage({
         column stays 672px wide for the header and footer controls; only the
         prose is narrowed, so the chrome does not shift.
       */}
-      <article className="prose-headings:font-display mt-6 flex max-w-[66ch] flex-col gap-5 text-base [&_h1]:text-2xl [&_h1]:font-semibold [&_h2]:mt-3 [&_h2]:text-lg [&_h2]:font-semibold [&_h3]:font-semibold [&_li]:my-1.5 [&_ol]:list-decimal [&_ol]:pl-5 [&_p]:leading-[1.7] [&_ul]:list-disc [&_ul]:pl-5">
+      <article className="heading-plain mt-6 flex max-w-[66ch] flex-col gap-5 text-base [&_h1]:text-2xl [&_h1]:font-semibold [&_h2]:mt-3 [&_h2]:text-lg [&_h2]:font-semibold [&_h3]:font-semibold [&_li]:my-1.5 [&_ol]:list-decimal [&_ol]:pl-5 [&_p]:leading-[1.7] [&_ul]:list-disc [&_ul]:pl-5">
         {lesson.content_mdx ? (
           <MDXRemote source={lesson.content_mdx} />
         ) : (

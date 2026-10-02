@@ -327,7 +327,7 @@ export function ExamPlayer({
       )}
 
       <fieldset className="flex flex-col gap-4">
-        <legend id={`prompt-${question.id}`} className="font-display text-lg leading-snug font-semibold text-balance">
+        <legend id={`prompt-${question.id}`} className="font-sans text-lg leading-snug font-semibold text-balance">
           {question.prompt}
         </legend>
         {/*

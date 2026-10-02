@@ -40,7 +40,7 @@ export function SiteNav() {
             href={link.href}
             aria-current={active ? "page" : undefined}
             className={cn(
-              "group relative shrink-0 rounded-md px-3 py-2 text-sm font-medium tracking-[0.1em] whitespace-nowrap uppercase transition-colors xl:px-4",
+              "group relative shrink-0 rounded-md px-3 py-2 font-ui text-sm font-medium tracking-[0.1em] whitespace-nowrap uppercase transition-colors xl:px-4",
               active
                 ? "text-primary"
                 : "text-foreground hover:bg-accent hover:text-primary",

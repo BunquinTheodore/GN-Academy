@@ -7,10 +7,14 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-inter);
+  /* Body: Manrope. UI (buttons, nav, labels, fields, badges): Poppins.
+     Display (titles, main sections): Josefin Sans Light, caps via CSS.
+     --font-heading is for card and dialog titles, which stay sentence case. */
+  --font-sans: var(--font-manrope);
+  --font-ui: var(--font-poppins);
+  --font-display: var(--font-josefin);
+  --font-heading: var(--font-manrope);
   --font-mono: var(--font-geist-mono);
-  --font-display: var(--font-bricolage);
-  --font-heading: var(--font-bricolage);
 
   /*
    * The type scale, moved up one step at the bottom end.
@@ -206,6 +210,63 @@
   html {
     @apply font-sans;
   }
+  /* Preflight makes form controls inherit; they are interface text. */
+  button,
+  input,
+  select,
+  textarea,
+  label,
+  [role="tab"],
+  [role="button"],
+  [role="menuitem"],
+  [role="option"] {
+    font-family: var(--font-ui);
+  }
+  /* Light caps read thin: a touch more tracking, slightly tighter leading.
+     Utilities (leading-*, tracking-*) still win over these, being later. */
+  h1,
+  h2,
+  .font-display {
+    letter-spacing: 0.05em;
+  }
+  h1,
+  h2 {
+    line-height: 1.15;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+}
+
+/*
+ * The display role, deliberately UNLAYERED so it beats utilities like
+ * `font-semibold`. Only Josefin's 300 face is shipped (mobile data), so any
+ * other weight would be a browser-synthesised faux bold. Every h1, h2 and
+ * `.font-display` element is therefore Josefin Light, uppercase.
+ *
+ * Opt out with `.heading-plain` on the element, or on a container (lesson and
+ * blog bodies, card lists): card titles, h3 and below, and long-form
+ * headings stay Manrope semibold sentence case for readability.
+ */
+h1,
+h2,
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1.heading-plain,
+h2.heading-plain,
+.font-display.heading-plain,
+.heading-plain h1,
+.heading-plain h2,
+.heading-plain h3,
+.heading-plain h4 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 1.3;
 }
 
 /*
@@ -712,7 +773,7 @@
 
 .gn-splash-title {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 300;
   font-size: clamp(1.5rem, 2.9vw + 0.9rem, 2.9rem);
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -760,5 +821,125 @@
   100% {
     opacity: 1;
     transform: none;
+  }
+}
+
+/*
+ * Sitewide background (src/components/site-background.tsx).
+ *
+ * .gn-site-bg is the static fallback and the first paint: a soft brand glow
+ * over the page background, built only from existing tokens. The animated
+ * canvas, when it loads, sits inside it; .gn-site-bg-scrim sits over the
+ * canvas so body text keeps WCAG AA contrast against the brightest pixels.
+ * The wrapper is overflow-hidden and fixed, so nothing here can bleed out.
+ */
+.gn-site-bg {
+  background:
+    radial-gradient(
+      ellipse 70% 50% at 50% 0%,
+      color-mix(in oklab, var(--brand) 16%, transparent),
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 50% 40% at 85% 100%,
+      color-mix(in oklab, var(--brand-cyan) 10%, transparent),
+      transparent 70%
+    ),
+    var(--background);
+}
+
+.gn-site-bg-scrim {
+  background: color-mix(in oklab, var(--background) 72%, transparent);
+}
+
+.dark .gn-site-bg-scrim {
+  background: color-mix(in oklab, var(--background) 82%, transparent);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .gn-site-bg .shader-frame {
+    animation: gn-site-bg-in 0.8s ease-out both;
+  }
+}
+
+@keyframes gn-site-bg-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*
+ * SignUpCta: the primary sign-up / enroll button. Brand-tinted bright glass
+ * (color-mix over --brand, no new hex values), top-edge inset highlight, a
+ * brand-tinted shadow, and the shared `.gn-shine` sweep (the component also
+ * carries `overflow-hidden`, which the sweep requires). Dark text on the neon
+ * brand fill in both themes, as with the hero's on-ink primary button.
+ *
+ * `prefers-reduced-motion: reduce` already freezes `.gn-shine` to a static
+ * highlight and drops the lift/press transforms here. `prefers-reduced-
+ * transparency: reduce` swaps the glass for a solid brand fill.
+ */
+.sign-up-cta {
+  color: var(--brand-foreground);
+  background: color-mix(in oklch, var(--brand) 84%, white 14%);
+  backdrop-filter: blur(14px) saturate(190%) brightness(1.1);
+  -webkit-backdrop-filter: blur(14px) saturate(190%) brightness(1.1);
+  border: 1px solid color-mix(in oklch, white 45%, transparent);
+  box-shadow:
+    inset 0 1px 0 0 color-mix(in oklch, white 70%, transparent),
+    0 1px 2px 0 color-mix(in oklch, var(--brand) 30%, transparent),
+    0 10px 24px -10px color-mix(in oklch, var(--brand) 60%, transparent);
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+  outline: none;
+}
+
+.sign-up-cta:hover {
+  background: color-mix(in oklch, var(--brand) 76%, white 22%);
+  box-shadow:
+    inset 0 1px 0 0 color-mix(in oklch, white 80%, transparent),
+    0 1px 2px 0 color-mix(in oklch, var(--brand) 35%, transparent),
+    0 14px 30px -10px color-mix(in oklch, var(--brand) 70%, transparent);
+}
+
+.sign-up-cta:focus-visible {
+  box-shadow:
+    inset 0 1px 0 0 color-mix(in oklch, white 70%, transparent),
+    0 0 0 3px var(--background),
+    0 0 0 5px var(--ring);
+}
+
+.sign-up-cta:active {
+  background: color-mix(in oklch, var(--brand) 90%, white 6%);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .sign-up-cta:hover {
+    transform: translateY(-2px);
+  }
+  .sign-up-cta:active {
+    transform: translateY(0) scale(0.98);
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .sign-up-cta,
+  .sign-up-cta:hover,
+  .sign-up-cta:active {
+    background: var(--brand);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-color: var(--brand);
+    box-shadow: inset 0 1px 0 0 color-mix(in oklch, white 50%, transparent);
+  }
+  .sign-up-cta:focus-visible {
+    box-shadow:
+      0 0 0 3px var(--background),
+      0 0 0 5px var(--ring);
   }
 }

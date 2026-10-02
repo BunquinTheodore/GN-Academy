@@ -9,7 +9,7 @@ export default function AuthLayout({
       <header className="flex items-center justify-between px-4 py-6 sm:px-8">
         <Link
           href="/"
-          className="font-display text-lg font-semibold tracking-tight"
+          className="font-display text-lg"
         >
           GN Academy
         </Link>

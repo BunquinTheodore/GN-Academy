@@ -257,7 +257,7 @@ export default async function DashboardPage() {
         <section className="glass-panel-bright gn-shine overflow-hidden rounded-lg p-5">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="min-w-0">
-              <h2 className="font-display text-base font-semibold">
+              <h2 className="heading-plain text-base">
                 Finish your profile
               </h2>
               <p className="mt-1 text-sm text-muted-foreground">
@@ -320,7 +320,7 @@ export default async function DashboardPage() {
                   <Badge variant={card.tone}>{card.status}</Badge>
                 </div>
 
-                <h3 className="font-display text-base font-semibold">
+                <h3 className="text-base font-semibold">
                   {card.cert.title}
                 </h3>
                 <p className="text-sm text-muted-foreground">{card.detail}</p>

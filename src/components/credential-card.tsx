@@ -79,7 +79,7 @@ export function CredentialCard({
           <div>
             <p
               className={cn(
-                "text-micro font-medium tracking-[0.18em] uppercase",
+                "font-ui text-micro font-medium tracking-[0.18em] uppercase",
                 isInkCard ? "text-white/60" : "text-muted-foreground",
               )}
             >
@@ -87,7 +87,7 @@ export function CredentialCard({
             </p>
             <p
               className={cn(
-                "text-micro tracking-[0.18em] uppercase",
+                "font-ui text-micro tracking-[0.18em] uppercase",
                 isInkCard ? "text-white/70" : "text-muted-foreground",
               )}
             >
@@ -96,14 +96,14 @@ export function CredentialCard({
           </div>
 
           {state === "verified" || state === "earned" ? (
-            <span className="inline-flex items-center gap-1 rounded-full bg-verified px-2.5 py-1 text-micro font-semibold tracking-wide text-verified-foreground uppercase">
+            <span className="inline-flex items-center gap-1 rounded-full bg-verified font-ui px-2.5 py-1 text-micro font-semibold tracking-wide text-verified-foreground uppercase">
               <BadgeCheck className="size-3.5" aria-hidden />
               Verified
             </span>
           ) : (
             <span
               className={cn(
-                "inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-micro font-semibold tracking-wide uppercase",
+                "inline-flex items-center gap-1 rounded-full border font-ui px-2.5 py-1 text-micro font-semibold tracking-wide uppercase",
                 "border-muted-foreground/30 text-muted-foreground",
               )}
             >
@@ -116,7 +116,7 @@ export function CredentialCard({
         <div>
           <p
             className={cn(
-              "font-display text-xl leading-snug font-semibold text-balance",
+              "font-sans text-xl leading-snug font-semibold text-balance",
               state === "locked" && "blur-[1.5px] select-none",
             )}
           >
@@ -137,7 +137,7 @@ export function CredentialCard({
           <div>
             <p
               className={cn(
-                "text-micro tracking-[0.15em] uppercase",
+                "font-ui text-micro tracking-[0.15em] uppercase",
                 isInkCard ? "text-white/70" : "text-muted-foreground",
               )}
             >
@@ -151,7 +151,7 @@ export function CredentialCard({
             <div className="text-right">
               <p
                 className={cn(
-                  "text-micro tracking-[0.15em] uppercase",
+                  "font-ui text-micro tracking-[0.15em] uppercase",
                   isInkCard ? "text-white/70" : "text-muted-foreground",
                 )}
               >

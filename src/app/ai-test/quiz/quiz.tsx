@@ -229,7 +229,7 @@ export function Quiz({ assessmentSlug, questions }: QuizProps) {
       )}
 
       <fieldset className="flex flex-col gap-4">
-        <legend id={`prompt-${question.id}`} className="font-display text-lg leading-snug font-semibold text-balance sm:text-xl">
+        <legend id={`prompt-${question.id}`} className="font-sans text-lg leading-snug font-semibold text-balance sm:text-xl">
           {question.prompt}
         </legend>
         {/*

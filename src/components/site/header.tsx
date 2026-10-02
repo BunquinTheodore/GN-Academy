@@ -21,7 +21,7 @@ export async function SiteHeader() {
       <div className="relative mx-auto flex h-16 w-full max-w-[90rem] items-center justify-between gap-3 px-5 lg:px-8">
         <Link
           href="/"
-          className="flex shrink-0 items-center gap-2.5 whitespace-nowrap font-display text-lg font-semibold tracking-tight"
+          className="flex shrink-0 items-center gap-2.5 whitespace-nowrap font-display text-lg"
         >
           {/* The mark is drawn for a black plate, so it keeps one — shrunk to
               the wordmark's height it reads as a badge rather than a logo

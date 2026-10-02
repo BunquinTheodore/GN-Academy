@@ -60,7 +60,7 @@ export function MobileNav() {
                 onClick={() => setOpen(false)}
                 aria-current={active ? "page" : undefined}
                 className={cn(
-                  "relative rounded-md px-3 py-3 pl-4 text-sm font-medium tracking-[0.05em] uppercase transition-colors",
+                  "relative rounded-md px-3 py-3 pl-4 font-ui text-sm font-medium tracking-[0.05em] uppercase transition-colors",
                   active
                     ? "bg-primary/10 text-primary"
                     : "text-foreground hover:bg-accent hover:text-primary",

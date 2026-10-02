@@ -122,12 +122,12 @@ export default async function AssignmentPage({
         </Alert>
       )}
 
-      <section className="prose prose-sm max-w-none text-muted-foreground prose-headings:font-display prose-headings:text-foreground prose-strong:text-foreground">
+      <section className="prose prose-sm max-w-none text-muted-foreground heading-plain prose-headings:text-foreground prose-strong:text-foreground">
         <MDXRemote source={assignment.brief_mdx} />
       </section>
 
       <section className="rounded-lg border border-border bg-card p-5">
-        <h2 className="font-display text-base font-semibold">
+        <h2 className="heading-plain text-base">
           What the reviewer checks
         </h2>
         <ul className="mt-3 flex flex-col gap-2 text-sm text-muted-foreground">
@@ -147,7 +147,7 @@ export default async function AssignmentPage({
 
       {locked ? (
         <section className="rounded-lg border border-dashed border-border p-6">
-          <h2 className="font-display text-base font-semibold">
+          <h2 className="heading-plain text-base">
             Finish the course first
           </h2>
           <p className="mt-2 text-sm text-muted-foreground">
@@ -176,7 +176,7 @@ export default async function AssignmentPage({
         </section>
       ) : approved ? null : (
         <section>
-          <h2 className="font-display text-base font-semibold">
+          <h2 className="heading-plain text-base">
             Your submission
           </h2>
           <div className="mt-3">
