@@ -6,12 +6,14 @@ import {
   issueCredential,
   type Credential,
 } from "@/lib/db/credentials";
+import { anchorNewCredential } from "@/lib/anchor/assign";
 import { getEnrollment, markEnrollmentCompleted } from "@/lib/db/enrollments";
 import { getAssignmentForCertification, getSubmission } from "@/lib/db/assignments";
 import { getProfileById } from "@/lib/db/profiles";
 import { sendEmail } from "@/lib/email/send";
 import { CredentialIssuedEmail } from "@/lib/email/credential-issued";
 import { env } from "@/lib/env";
+import { buildVerifyUrl } from "@/lib/credentials/verify-url";
 import type { CompetencyResult } from "@/lib/assessment/scoring";
 
 export type IssueOutcome =
@@ -118,6 +120,8 @@ export async function maybeIssueCredential(input: {
     competencies,
   });
 
+  await queueAnchor(credential);
+
   await markEnrollmentCompleted(input.userId, input.certificationId);
 
   if (profile?.email) {
@@ -128,12 +132,26 @@ export async function maybeIssueCredential(input: {
         holderName,
         title: cert.title,
         credentialCode: credential.credential_code,
-        verifyUrl: `${env.NEXT_PUBLIC_SITE_URL}/verify/${credential.credential_code}`,
+        verifyUrl: buildVerifyUrl(env.NEXT_PUBLIC_SITE_URL, credential.credential_code),
       }),
     });
   }
 
   return { status: "issued", credential };
+}
+
+/**
+ * Gives the new credential its salt and leaf hash and marks it pending for the
+ * next daily batch. Deliberately cannot fail issuance: the learner has earned
+ * this credential whether or not the anchoring tables exist yet or Supabase
+ * hiccups here, and scripts/anchor-backfill.ts picks up anything missed.
+ */
+async function queueAnchor(credential: Credential): Promise<void> {
+  try {
+    await anchorNewCredential(credential);
+  } catch (e) {
+    console.error("credential anchor assignment failed", credential.credential_code, e);
+  }
 }
 
 /**

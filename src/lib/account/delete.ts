@@ -9,6 +9,7 @@ export type DeletionReport = {
   attemptsDeleted: number;
   leadsDeleted: number;
   credentialsUnlinked: number;
+  anchorSaltsDeleted: number;
   filesDeleted: number;
   firebaseUserDeleted: boolean;
 };
@@ -39,6 +40,28 @@ async function deleteOwnedObjects(userId: string): Promise<number> {
   return removed;
 }
 
+/** Deletes the anchor salts of every credential currently linked to the user. */
+export async function deleteAnchorSalts(userId: string): Promise<number> {
+  const admin = supabaseAdmin();
+  const { data: owned, error: ownedError } = await admin
+    .from("credentials")
+    .select("id")
+    .eq("user_id", userId);
+  if (ownedError) throw ownedError;
+  if (!owned || owned.length === 0) return 0;
+
+  const { data, error } = await admin
+    .from("credential_anchor_secrets")
+    .delete()
+    .in(
+      "credential_id",
+      owned.map((c) => c.id),
+    )
+    .select("credential_id");
+  if (error) throw error;
+  return data?.length ?? 0;
+}
+
 /**
  * RA 10173 erasure (§14). Removes the person's account and everything
  * attributable to them, with two deliberate exceptions:
@@ -50,6 +73,9 @@ async function deleteOwnedObjects(userId: string): Promise<number> {
  *    the link to the account.
  *  - audit_log entries stay. They record what staff did, not what the
  *    subject did, and are the evidence that this deletion happened at all.
+ *
+ * The private anchor salt of each of their credentials is deleted
+ * (see the Certificate timestamps section of the privacy page).
  *
  * Everything else goes, including the avatar and portfolio images in storage.
  *
@@ -67,6 +93,7 @@ export async function deleteAccountData(input: {
     attemptsDeleted: 0,
     leadsDeleted: 0,
     credentialsUnlinked: 0,
+    anchorSaltsDeleted: 0,
     filesDeleted: 0,
     firebaseUserDeleted: false,
   };
@@ -74,6 +101,13 @@ export async function deleteAccountData(input: {
   // Before the profile row goes: portfolio_items cascade with it, and once
   // they are gone nothing records which files belonged to this person.
   report.filesDeleted = await deleteOwnedObjects(input.userId);
+
+  // Erase the private anchor salts while the credentials are still linked to
+  // this user, so a retry after a partial failure can still find them. The
+  // hash already published on Bitcoin cannot be removed, but without its salt
+  // it cannot be linked to this person from our side, and our proof download
+  // for the credential stops working (a missing salt means "no proof").
+  report.anchorSaltsDeleted = await deleteAnchorSalts(input.userId);
 
   // Unlink first: the profile delete would do it via ON DELETE SET NULL, but
   // doing it explicitly means the count is reportable and the intent is in

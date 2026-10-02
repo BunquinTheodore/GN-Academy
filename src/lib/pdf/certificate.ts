@@ -2,9 +2,10 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
 import fontkit from "@pdf-lib/fontkit";
-import { PDFDocument, rgb, type PDFFont } from "pdf-lib";
+import { PDFDocument, rgb, type PDFFont, type PDFPage } from "pdf-lib";
 
 import { formatDate } from "@/lib/format";
+import { qrMatrix, shortHashLine } from "@/lib/pdf/qr";
 
 /**
  * The certificate page, drawn with real embedded type.
@@ -209,7 +210,43 @@ export type CertificateInput = {
   issuedAt: Date | string;
   /** Host and path only, e.g. `gnacademy.ph/verify/CAVA-2026-000001`. */
   verifyLabel: string;
+  /** Full https URL the QR encodes. Falls back to https://{verifyLabel}. */
+  verifyUrl?: string;
+  /** Salted leaf hash, printed shortened. Omitted for credentials not anchored. */
+  anchorHash?: string | null;
 };
+
+/** QR box (including its light quiet zone) and where it sits, inside the gold rule. */
+const QR_BOX = 74;
+const QR_QUIET_MODULES = 3;
+const QR_RIGHT_MARGIN = FRAME_INSET + 20;
+const QR_BOTTOM_MARGIN = FRAME_INSET + 16;
+const HASH_LINE_SIZE = 9;
+
+/**
+ * Draws the QR as vector squares on a light plate, since the page itself is
+ * dark and a QR needs dark modules on a light ground to scan.
+ */
+function drawQr(page: PDFPage, text: string): void {
+  const matrix = qrMatrix(text);
+  const x0 = PAGE_WIDTH - QR_RIGHT_MARGIN - QR_BOX;
+  const y0 = QR_BOTTOM_MARGIN;
+  const cell = QR_BOX / (matrix.length + 2 * QR_QUIET_MODULES);
+
+  page.drawRectangle({ x: x0, y: y0, width: QR_BOX, height: QR_BOX, color: PAPER });
+  matrix.forEach((row, r) => {
+    row.forEach((dark, c) => {
+      if (!dark) return;
+      page.drawRectangle({
+        x: x0 + (c + QR_QUIET_MODULES) * cell,
+        y: y0 + QR_BOX - (r + QR_QUIET_MODULES + 1) * cell,
+        width: cell,
+        height: cell,
+        color: INK,
+      });
+    });
+  });
+}
 
 export async function renderCertificatePdf(
   input: CertificateInput,
@@ -329,6 +366,12 @@ export async function renderCertificatePdf(
     fonts.body,
     SLATE,
   );
+
+  const hashLine = shortHashLine(input.anchorHash);
+  if (hashLine) {
+    centerText(hashLine, top - 492, HASH_LINE_SIZE, fonts.body, SLATE);
+  }
+  drawQr(page, input.verifyUrl ?? `https://${input.verifyLabel}`);
 
   centerText(
     "This certificate is only as valid as its verification page. Check the code.",

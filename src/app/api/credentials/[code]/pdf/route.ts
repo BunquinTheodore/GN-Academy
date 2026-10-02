@@ -51,6 +51,8 @@ export async function GET(
     credentialCode: credential.credential_code,
     issuedAt: credential.issued_at,
     verifyLabel: `${host}/verify/${credential.credential_code}`,
+    verifyUrl: `${env.NEXT_PUBLIC_SITE_URL.replace(/\/+$/, "")}/verify/${credential.credential_code}`,
+    anchorHash: credential.anchor_hash ?? null,
   });
 
   return new Response(Buffer.from(bytes), {

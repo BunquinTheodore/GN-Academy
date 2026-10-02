@@ -49,6 +49,10 @@ export const RATE_LIMITS = {
   // behaviour, so this is looser than the other write buckets.
   enquiry: { route: "enquiry", max: 10, windowSeconds: 3600 },
   verifyLookup: { route: "verify-lookup", max: 30, windowSeconds: 3600 },
+  // Its own bucket so downloading proofs never eats the budget of the verify
+  // page lookups behind the same IP, and higher because one person checking a
+  // handful of credentials fetches the proof for each.
+  proofLookup: { route: "proof-lookup", max: 60, windowSeconds: 3600 },
 } as const satisfies Record<string, RateLimitRule>;
 
 /**

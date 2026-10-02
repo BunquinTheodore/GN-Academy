@@ -8,6 +8,7 @@ vi.mock("@/lib/db/credentials", () => ({
   getCredentialForUserAndCertification: vi.fn(),
   issueCredential: vi.fn(),
 }));
+vi.mock("@/lib/anchor/assign", () => ({ anchorNewCredential: vi.fn() }));
 vi.mock("@/lib/db/enrollments", () => ({
   getEnrollment: vi.fn(),
   markEnrollmentCompleted: vi.fn(),
@@ -34,6 +35,7 @@ import {
 } from "@/lib/db/assignments";
 import { getProfileById } from "@/lib/db/profiles";
 import { sendEmail } from "@/lib/email/send";
+import { anchorNewCredential } from "@/lib/anchor/assign";
 import { maybeIssueCredential } from "@/lib/credentials/issue";
 
 /**
@@ -120,6 +122,9 @@ describe("maybeIssueCredential", () => {
       .mockReset()
       .mockResolvedValue({ full_name: "Test Learner", email: "learner@example.com" } as never);
     vi.mocked(sendEmail).mockReset().mockResolvedValue(undefined as never);
+    vi.mocked(anchorNewCredential)
+      .mockReset()
+      .mockResolvedValue({ status: "pending", salt: "00", hash: "00" });
   });
 
   it("is blocked when the certification does not exist", async () => {
@@ -318,5 +323,51 @@ describe("maybeIssueCredential", () => {
     });
     expect(outcome.status).toBe("blocked");
     expect(issueCredential).not.toHaveBeenCalled();
+  });
+  describe("certificate anchoring", () => {
+    const issueOnce = () => {
+      vi.mocked(supabaseAdmin).mockReturnValue(
+        makeAdmin({
+          certifications: [{ data: CERT_EXAM, error: null }],
+          assessments: [
+            { data: [{ id: "exam-1" }], error: null },
+            { data: [], error: null },
+          ],
+          attempts: [{ data: [{ id: "attempt-1" }], error: null }],
+        }),
+      );
+      return maybeIssueCredential({
+        userId: "user-1",
+        certificationId: "cert-1",
+        competencies: [],
+      });
+    };
+
+    it("queues the new credential for anchoring", async () => {
+      const outcome = await issueOnce();
+      expect(outcome.status).toBe("issued");
+      expect(anchorNewCredential).toHaveBeenCalledTimes(1);
+      expect(anchorNewCredential).toHaveBeenCalledWith(CREDENTIAL);
+    });
+
+    it("still issues, completes the enrollment and emails when anchoring fails", async () => {
+      const spy = vi.spyOn(console, "error").mockImplementation(() => {});
+      vi.mocked(anchorNewCredential).mockRejectedValue(new Error("tables missing"));
+      const outcome = await issueOnce();
+      expect(outcome).toEqual({ status: "issued", credential: CREDENTIAL });
+      expect(markEnrollmentCompleted).toHaveBeenCalledWith("user-1", "cert-1");
+      expect(sendEmail).toHaveBeenCalledTimes(1);
+      expect(spy).toHaveBeenCalled();
+      spy.mockRestore();
+    });
+
+    it("does not anchor when the credential already exists", async () => {
+      vi.mocked(supabaseAdmin).mockReturnValue(
+        makeAdmin({ certifications: [{ data: CERT_EXAM, error: null }] }),
+      );
+      vi.mocked(getCredentialForUserAndCertification).mockResolvedValue(CREDENTIAL);
+      await maybeIssueCredential({ userId: "user-1", certificationId: "cert-1" });
+      expect(anchorNewCredential).not.toHaveBeenCalled();
+    });
   });
 });

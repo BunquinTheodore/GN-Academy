@@ -1,0 +1,43 @@
+# Daily certificate anchoring: builds a Merkle root of the day's new credentials,
+# timestamps it with OpenTimestamps (Bitcoin), and upgrades earlier timestamps
+# once Bitcoin confirms them. Free: GitHub Actions plus one HTTPS call.
+#
+# Repo secrets required:
+#   ANCHOR_CRON_SECRET  same value as the ANCHOR_CRON_SECRET env var on the site
+#   ANCHOR_SITE_URL     production origin, e.g. https://gnacademy.institute
+#
+# Fails loudly: a missing secret, a non-2xx answer, or a body that reports
+# errors all turn the run red, so GitHub emails the repo owner.
+name: Daily certificate anchor
+
+on:
+  schedule:
+    - cron: "41 18 * * *" # 02:41 Asia/Manila
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  anchor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Run the anchor batch
+        env:
+          ANCHOR_CRON_SECRET: ${{ secrets.ANCHOR_CRON_SECRET }}
+          ANCHOR_SITE_URL: ${{ secrets.ANCHOR_SITE_URL }}
+        run: |
+          if [ -z "$ANCHOR_CRON_SECRET" ] || [ -z "$ANCHOR_SITE_URL" ]; then
+            echo "ANCHOR_CRON_SECRET and ANCHOR_SITE_URL must both be set as repo secrets." >&2
+            exit 1
+          fi
+          curl --fail-with-body -sS --proto '=https' --max-redirs 0 --max-time 90 --retry 2 --retry-delay 10 \
+            -X POST "${ANCHOR_SITE_URL%/}/api/internal/anchor-batch" \
+            -H "Authorization: Bearer $ANCHOR_CRON_SECRET" \
+            -o response.json
+          cat response.json
+          echo
+          if grep -q '"ok":false' response.json; then
+            echo "Anchor batch reported errors." >&2
+            exit 1
+          fi

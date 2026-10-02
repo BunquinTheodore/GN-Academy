@@ -1,6 +1,8 @@
 import "server-only";
 import { z } from "zod";
 
+const MIN_CRON_SECRET_LENGTH = 32;
+
 const serverSchema = z.object({
   FIREBASE_ADMIN_PROJECT_ID: z.string().min(1),
   FIREBASE_ADMIN_CLIENT_EMAIL: z.string().email(),
@@ -8,6 +10,13 @@ const serverSchema = z.object({
   SUPABASE_SERVICE_ROLE_KEY: z.string().min(1),
   RESEND_API_KEY: z.string().min(1),
   IP_HASH_SALT: z.string().min(1),
+  // Optional so the site boots without it. A blank value (`ANCHOR_CRON_SECRET=`
+  // in .env gives "") or one shorter than 32 characters is treated as unset
+  // rather than crashing the whole site: the cron route then answers 401.
+  ANCHOR_CRON_SECRET: z.preprocess(
+    (v) => (typeof v === "string" && v.length >= MIN_CRON_SECRET_LENGTH ? v : undefined),
+    z.string().optional(),
+  ),
 });
 
 const parsed = serverSchema.safeParse(process.env);

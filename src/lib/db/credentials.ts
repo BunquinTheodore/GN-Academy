@@ -20,6 +20,15 @@ export type Credential = {
   pdf_url: string | null;
   revoked_reason: string | null;
   revoked_at: string | null;
+  /**
+   * Anchoring columns (migration 0014). Optional because rows read before the
+   * migration is applied do not carry them, and because the salt is deliberately
+   * not here: it lives in credential_anchor_secrets, service role only.
+   */
+  anchor_hash?: string | null;
+  anchor_status?: "pending" | "anchored" | "skipped";
+  anchor_batch_id?: string | null;
+  anchor_proof?: { position: "left" | "right"; hash: string }[] | null;
 };
 
 export async function getCredentialByCode(

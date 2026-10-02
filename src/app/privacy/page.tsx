@@ -43,6 +43,13 @@ const sections = [
     ],
   },
   {
+    heading: "Certificate timestamps",
+    body: [
+      "To let anyone check that a certificate was not created or altered later, we publish a timestamp of each new credential on the Bitcoin blockchain through the free OpenTimestamps service. What is published is a salted cryptographic hash, combined with other hashes into a single daily value. No name, email, course or score is ever sent, and the hash cannot be reversed or linked to you without a random salt that we keep private.",
+      "Be aware that anything recorded on Bitcoin cannot be erased by us or anyone else. If you delete your account, we delete the private salt we store for each of your credentials. After that, the timestamp proof for those credentials can no longer be verified from our site. The hash already on Bitcoin stays there, but without the salt it cannot be linked to you. The salt is also part of the downloadable proof for your credential, so anyone who already saved that proof can still show the link for the copy they hold.",
+    ],
+  },
+  {
     heading: "Who processes it",
     body: [
       "We use Google Firebase (authentication), Supabase (database and file storage, hosted in Singapore), Resend (transactional email), and our hosting provider. Each processes data only to provide its service to us.",
