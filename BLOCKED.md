@@ -52,6 +52,13 @@ argument that the GN Ventures community is a hiring network, under the heading
 "The network behind the credential", but no longer opens on parent-brand
 framing. MAZAL / GN Club naming is still unused anywhere in the product.
 
+## 6. LinkedIn Company Page for GN Academy
+"Add to LinkedIn profile" currently sends the plain name "GN Academy". Create a
+GN Academy LinkedIn Company Page (logo and link), then set
+`NEXT_PUBLIC_LINKEDIN_ORG_ID` to its numeric ID in `.env.local` and the Vercel
+project settings. Certificates added to profiles will then show the page's logo
+and link to it. Nothing breaks if it stays unset.
+
 ---
 Resolved 2026-08-18: Firebase web config ✓ · Firebase service account ✓
 (admin SDK verified against live project) · Supabase URL/anon/secret keys ✓

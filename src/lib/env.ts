@@ -13,6 +13,8 @@ const clientSchema = z.object({
   NEXT_PUBLIC_SUPABASE_URL: z.string().url(),
   NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().min(1),
   NEXT_PUBLIC_SITE_URL: z.string().url(),
+  // Optional: LinkedIn Company Page ID, so certificates show the page's logo.
+  NEXT_PUBLIC_LINKEDIN_ORG_ID: z.string().trim().optional(),
 });
 
 const parsed = clientSchema.safeParse({
@@ -23,6 +25,7 @@ const parsed = clientSchema.safeParse({
   NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
   NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
   NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL,
+  NEXT_PUBLIC_LINKEDIN_ORG_ID: process.env.NEXT_PUBLIC_LINKEDIN_ORG_ID,
 });
 
 if (!parsed.success) {

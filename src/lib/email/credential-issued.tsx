@@ -15,14 +15,23 @@ type CredentialIssuedEmailProps = {
   title: string;
   credentialCode: string;
   verifyUrl: string;
+  /** Redirect link that opens LinkedIn's add-certification form. Derived from verifyUrl when omitted. */
+  addToLinkedInUrl?: string;
 };
+
+function deriveAddToLinkedInUrl(verifyUrl: string, code: string): string {
+  return `${new URL(verifyUrl).origin}/credentials/${encodeURIComponent(code)}/add-to-linkedin`;
+}
 
 export function CredentialIssuedEmail({
   holderName,
   title,
   credentialCode,
   verifyUrl,
+  addToLinkedInUrl,
 }: CredentialIssuedEmailProps) {
+  const linkedInUrl =
+    addToLinkedInUrl ?? deriveAddToLinkedInUrl(verifyUrl, credentialCode);
   return (
     <Html lang="en">
       <Head />
@@ -69,6 +78,22 @@ export function CredentialIssuedEmail({
               }}
             >
               View my public verification page
+            </Link>
+          </Section>
+          <Section style={{ marginTop: 12 }}>
+            <Link
+              href={linkedInUrl}
+              style={{
+                border: "1px solid #B9C4D6",
+                borderRadius: 6,
+                color: "#ffffff",
+                display: "inline-block",
+                fontSize: 15,
+                padding: "11px 20px",
+                textDecoration: "none",
+              }}
+            >
+              Add to my LinkedIn profile
             </Link>
           </Section>
           <Text style={{ color: "#B9C4D6", fontSize: 13, marginTop: 20 }}>

@@ -29,6 +29,13 @@ export type ShareCredential = {
   issuedAt: string;
   /** Absolute origin of the site, no trailing slash. */
   siteUrl: string;
+  /** ISO timestamp the credential expires, when it does. */
+  expiresAt?: string | null;
+  /**
+   * LinkedIn Company Page ID. When set it replaces the plain organization
+   * name, so the certificate shows the page's logo and links to it.
+   */
+  organizationId?: string | null;
 };
 
 const ORGANIZATION_NAME = "GN Academy";
@@ -83,6 +90,18 @@ export function buildLinkedInPostUrl(text: string): string {
   return `https://www.linkedin.com/feed/?${params.toString()}`;
 }
 
+/** Adds `<prefix>Year` and `<prefix>Month`, or nothing for an unparseable date. */
+function setMonthYear(
+  params: URLSearchParams,
+  prefix: "issue" | "expiration",
+  isoTimestamp: string,
+): void {
+  const date = new Date(isoTimestamp);
+  if (Number.isNaN(date.getTime())) return;
+  params.set(`${prefix}Year`, String(date.getUTCFullYear()));
+  params.set(`${prefix}Month`, String(date.getUTCMonth() + 1));
+}
+
 /**
  * Opens LinkedIn's "Add license or certification" form with the fields filled
  * in, which puts the credential on the learner's profile itself rather than in
@@ -90,18 +109,24 @@ export function buildLinkedInPostUrl(text: string): string {
  * visitor click through to the verification page.
  */
 export function buildAddToProfileUrl(credential: ShareCredential): string {
-  const issued = new Date(credential.issuedAt);
-  const valid = !Number.isNaN(issued.getTime());
   const params = new URLSearchParams({
     startTask: "CERTIFICATION_NAME",
     name: credential.title,
-    organizationName: ORGANIZATION_NAME,
     certUrl: verifyUrlFor(credential),
     certId: credential.credentialCode,
   });
-  if (valid) {
-    params.set("issueYear", String(issued.getUTCFullYear()));
-    params.set("issueMonth", String(issued.getUTCMonth() + 1));
+
+  // LinkedIn accepts one or the other, never both.
+  const organizationId = credential.organizationId?.trim();
+  if (organizationId) {
+    params.set("organizationId", organizationId);
+  } else {
+    params.set("organizationName", ORGANIZATION_NAME);
+  }
+
+  setMonthYear(params, "issue", credential.issuedAt);
+  if (credential.expiresAt) {
+    setMonthYear(params, "expiration", credential.expiresAt);
   }
   return `https://www.linkedin.com/profile/add?${params.toString()}`;
 }

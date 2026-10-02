@@ -5,12 +5,12 @@ import { BadgeCheck, Check, Copy, ExternalLink, Plus } from "lucide-react";
 import {
   LINKEDIN_POST_MAX_LENGTH,
   SHARE_TEMPLATES,
-  buildAddToProfileUrl,
   buildLinkedInPostUrl,
   buildPostText,
   type ShareCredential,
   type ShareTemplateId,
 } from "@/lib/linkedin/share";
+import { addToLinkedInPath } from "@/lib/linkedin/add-to-profile";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
@@ -26,6 +26,24 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
 
 type CopyState = "idle" | "copied" | "failed";
+type ShareMode = "post" | "profile";
+
+const SHARE_MODES: readonly {
+  id: ShareMode;
+  label: string;
+  hint: string;
+}[] = [
+  {
+    id: "post",
+    label: "Post to your feed",
+    hint: "Edit a ready-made post, then publish it yourself.",
+  },
+  {
+    id: "profile",
+    label: "Add to LinkedIn profile",
+    hint: "Lists it under Licenses and certifications. No typing needed.",
+  },
+];
 
 /** The LinkedIn mark. lucide-react dropped its brand icons, so it is inlined. */
 function LinkedInMark({ className }: { className?: string }) {
@@ -84,6 +102,7 @@ export function LinkedInShareDialog({
   const [template, setTemplate] = useState<ShareTemplateId>("earned");
   const [text, setText] = useState(() => buildPostText("earned", credential));
   const [copyState, setCopyState] = useState<CopyState>("idle");
+  const [mode, setMode] = useState<ShareMode>("post");
 
   // Clear the "Copied" confirmation after a moment so it never goes stale.
   useEffect(() => {
@@ -134,124 +153,168 @@ export function LinkedInShareDialog({
         </DialogHeader>
 
         <div className="flex flex-col gap-2">
-          <p className="text-sm font-medium" id={`${fieldId}-template`}>
-            Template
+          <p className="text-sm font-medium" id={`${fieldId}-mode`}>
+            How do you want to share it?
           </p>
           <RadioGroup
-            value={template}
-            onValueChange={pickTemplate}
-            aria-labelledby={`${fieldId}-template`}
-            className="gap-2"
+            value={mode}
+            onValueChange={(next) => setMode(next as ShareMode)}
+            aria-labelledby={`${fieldId}-mode`}
+            className="grid gap-2 sm:grid-cols-2"
           >
-            {SHARE_TEMPLATES.map((option) => {
-              const optionId = `${fieldId}-${option.id}`;
+            {SHARE_MODES.map((option) => {
+              const optionId = `${fieldId}-mode-${option.id}`;
               return (
                 <Label
                   key={option.id}
                   htmlFor={optionId}
                   className={cn(
-                    "flex min-h-11 cursor-pointer items-center gap-3 rounded-lg border p-3 text-sm font-medium transition-colors",
-                    template === option.id
+                    "flex min-h-11 cursor-pointer items-start gap-3 rounded-lg border p-3 text-sm transition-colors",
+                    mode === option.id
                       ? "border-primary bg-primary/5"
                       : "border-border hover:border-muted-foreground/40",
                   )}
                 >
-                  <RadioGroupItem value={option.id} id={optionId} />
-                  {option.label}
+                  <RadioGroupItem
+                    value={option.id}
+                    id={optionId}
+                    className="mt-0.5"
+                  />
+                  <span className="flex flex-col gap-0.5">
+                    <span className="font-medium">{option.label}</span>
+                    <span className="font-normal text-muted-foreground">
+                      {option.hint}
+                    </span>
+                  </span>
                 </Label>
               );
             })}
           </RadioGroup>
         </div>
 
-        <div className="flex flex-col gap-2">
-          <Label htmlFor={`${fieldId}-text`}>Post text</Label>
-          <Textarea
-            id={`${fieldId}-text`}
-            value={text}
-            onChange={(event) => {
-              setText(event.target.value);
-              setCopyState("idle");
-            }}
-            rows={8}
-            aria-invalid={tooLong}
-            className="min-h-40 resize-y"
-          />
-          <p
-            className={cn(
-              "text-xs tabular-nums",
-              tooLong ? "text-destructive" : "text-muted-foreground",
-            )}
-          >
-            {length} / {LINKEDIN_POST_MAX_LENGTH}
-          </p>
-        </div>
+        {mode === "post" ? (
+          <>
+          <div className="flex flex-col gap-2">
+            <p className="text-sm font-medium" id={`${fieldId}-template`}>
+              Template
+            </p>
+            <RadioGroup
+              value={template}
+              onValueChange={pickTemplate}
+              aria-labelledby={`${fieldId}-template`}
+              className="gap-2"
+            >
+              {SHARE_TEMPLATES.map((option) => {
+                const optionId = `${fieldId}-${option.id}`;
+                return (
+                  <Label
+                    key={option.id}
+                    htmlFor={optionId}
+                    className={cn(
+                      "flex min-h-11 cursor-pointer items-center gap-3 rounded-lg border p-3 text-sm font-medium transition-colors",
+                      template === option.id
+                        ? "border-primary bg-primary/5"
+                        : "border-border hover:border-muted-foreground/40",
+                    )}
+                  >
+                    <RadioGroupItem value={option.id} id={optionId} />
+                    {option.label}
+                  </Label>
+                );
+              })}
+            </RadioGroup>
+          </div>
 
-        <div className="flex flex-col gap-3">
-          <div className="flex flex-wrap gap-2">
-            <Button
-              type="button"
-              className="h-11 px-4"
-              disabled={!canShare}
-              onClick={() => void copyAndOpen()}
-            >
-              <LinkedInMark />
-              Copy + open LinkedIn
-              <ExternalLink aria-hidden />
-            </Button>
-            <Button
-              type="button"
-              variant="outline"
-              className="h-11 px-4"
-              disabled={!canShare}
-              onClick={() => void copyOnly()}
-            >
-              {copyState === "copied" ? (
-                <Check aria-hidden />
-              ) : (
-                <Copy aria-hidden />
+          <div className="flex flex-col gap-2">
+            <Label htmlFor={`${fieldId}-text`}>Post text</Label>
+            <Textarea
+              id={`${fieldId}-text`}
+              value={text}
+              onChange={(event) => {
+                setText(event.target.value);
+                setCopyState("idle");
+              }}
+              rows={8}
+              aria-invalid={tooLong}
+              className="min-h-40 resize-y"
+            />
+            <p
+              className={cn(
+                "text-xs tabular-nums",
+                tooLong ? "text-destructive" : "text-muted-foreground",
               )}
-              Copy only
-            </Button>
+            >
+              {length} / {LINKEDIN_POST_MAX_LENGTH}
+            </p>
           </div>
-          <p
-            role="status"
-            aria-live="polite"
-            className={cn(
-              "min-h-5 text-sm",
-              copyState === "failed"
-                ? "text-destructive"
-                : "text-muted-foreground",
-            )}
-          >
-            {copyState === "copied" &&
-              "Copied. If LinkedIn opened empty, paste it into the post box."}
-            {copyState === "failed" &&
-              "Could not copy automatically. Select the text above and copy it yourself."}
-          </p>
-        </div>
 
-        <div className="flex flex-col gap-2 rounded-lg border border-border bg-muted/40 p-4">
-          <p className="text-sm font-medium">Also add it to your profile</p>
-          <p className="text-sm text-muted-foreground">
-            Puts this credential under Licenses and certifications, with a link
-            back to its verification page, so it stays on your profile after the
-            post scrolls away.
-          </p>
-          <div>
-            <Button asChild variant="outline" className="h-10 px-3.5">
-              <a
-                href={buildAddToProfileUrl(credential)}
-                target="_blank"
-                rel="noopener noreferrer"
+          <div className="flex flex-col gap-3">
+            <div className="flex flex-wrap gap-2">
+              <Button
+                type="button"
+                className="h-11 px-4"
+                disabled={!canShare}
+                onClick={() => void copyAndOpen()}
               >
-                <Plus aria-hidden />
-                Add to LinkedIn profile
+                <LinkedInMark />
+                Copy + open LinkedIn
                 <ExternalLink aria-hidden />
-              </a>
-            </Button>
+              </Button>
+              <Button
+                type="button"
+                variant="outline"
+                className="h-11 px-4"
+                disabled={!canShare}
+                onClick={() => void copyOnly()}
+              >
+                {copyState === "copied" ? (
+                  <Check aria-hidden />
+                ) : (
+                  <Copy aria-hidden />
+                )}
+                Copy only
+              </Button>
+            </div>
+            <p
+              role="status"
+              aria-live="polite"
+              className={cn(
+                "min-h-5 text-sm",
+                copyState === "failed"
+                  ? "text-destructive"
+                  : "text-muted-foreground",
+              )}
+            >
+              {copyState === "copied" &&
+                "Copied. If LinkedIn opened empty, paste it into the post box."}
+              {copyState === "failed" &&
+                "Could not copy automatically. Select the text above and copy it yourself."}
+            </p>
           </div>
-        </div>
+
+          </>
+        ) : (
+          <div className="flex flex-col gap-3">
+            <p className="text-sm text-muted-foreground">
+              LinkedIn opens its Add license or certification form with the
+              details filled in, and a link back to your verification page.
+              You only press Save there.
+            </p>
+            <div>
+              <Button asChild className="h-11 px-4">
+                <a
+                  href={addToLinkedInPath(credential.credentialCode)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Plus aria-hidden />
+                  Add to LinkedIn profile
+                  <ExternalLink aria-hidden />
+                </a>
+              </Button>
+            </div>
+          </div>
+        )}
 
         <DialogFooter>
           <Button

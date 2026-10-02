@@ -81,6 +81,41 @@ describe("buildAddToProfileUrl", () => {
     expect(url.searchParams.get("issueMonth")).toBe("9");
   });
 
+  it("sends the expiry month and year when the credential expires", () => {
+    const url = new URL(
+      buildAddToProfileUrl({
+        ...credential,
+        expiresAt: "2028-03-15T00:00:00.000Z",
+      }),
+    );
+    expect(url.searchParams.get("expirationYear")).toBe("2028");
+    expect(url.searchParams.get("expirationMonth")).toBe("3");
+  });
+
+  it("omits expiry for a credential that never expires or has a bad date", () => {
+    for (const expiresAt of [undefined, null, "not a date"]) {
+      const url = new URL(buildAddToProfileUrl({ ...credential, expiresAt }));
+      expect(url.searchParams.has("expirationYear")).toBe(false);
+      expect(url.searchParams.has("expirationMonth")).toBe(false);
+    }
+  });
+
+  it("uses organizationId instead of organizationName once a Company Page exists", () => {
+    const url = new URL(
+      buildAddToProfileUrl({ ...credential, organizationId: "12345678" }),
+    );
+    expect(url.searchParams.get("organizationId")).toBe("12345678");
+    expect(url.searchParams.has("organizationName")).toBe(false);
+  });
+
+  it("ignores a blank organizationId and keeps the name", () => {
+    const url = new URL(
+      buildAddToProfileUrl({ ...credential, organizationId: "  " }),
+    );
+    expect(url.searchParams.has("organizationId")).toBe(false);
+    expect(url.searchParams.get("organizationName")).toBe("GN Academy");
+  });
+
   it("leaves the date out rather than sending NaN when the timestamp is bad", () => {
     const url = new URL(
       buildAddToProfileUrl({ ...credential, issuedAt: "not a date" }),
