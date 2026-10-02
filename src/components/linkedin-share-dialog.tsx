@@ -34,14 +34,14 @@ const SHARE_MODES: readonly {
   hint: string;
 }[] = [
   {
-    id: "post",
-    label: "Post to your feed",
-    hint: "Edit a ready-made post, then publish it yourself.",
-  },
-  {
     id: "profile",
     label: "Add to LinkedIn profile",
     hint: "Lists it under Licenses and certifications. No typing needed.",
+  },
+  {
+    id: "post",
+    label: "Post to your feed",
+    hint: "Edit a ready-made post, then publish it yourself.",
   },
 ];
 
@@ -102,7 +102,7 @@ export function LinkedInShareDialog({
   const [template, setTemplate] = useState<ShareTemplateId>("earned");
   const [text, setText] = useState(() => buildPostText("earned", credential));
   const [copyState, setCopyState] = useState<CopyState>("idle");
-  const [mode, setMode] = useState<ShareMode>("post");
+  const [mode, setMode] = useState<ShareMode>("profile");
 
   // Clear the "Copied" confirmation after a moment so it never goes stale.
   useEffect(() => {
