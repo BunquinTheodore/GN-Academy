@@ -20,7 +20,7 @@ import {
 import { landing } from "@/content/landing";
 import { cn } from "@/lib/utils";
 import { SignUpCta } from "@/components/sign-up-cta";
-import { HeroVerifyForm } from "@/components/hero-verify-form";
+import { HeroMedia } from "@/components/motion/hero-media";
 import { splitSentences } from "@/lib/text/split-sentences";
 import { getSessionUser } from "@/lib/auth/session";
 import { Button } from "@/components/ui/button";
@@ -35,7 +35,6 @@ import {
   PageAmbience,
   ScrollProgress,
   Sheen,
-  SpotlightPanel,
   TypeHeading,
 } from "@/components/motion/landing-motion";
 import { ProofOfWorkGallery } from "@/components/advocacy/ProofOfWorkGallery";
@@ -171,103 +170,109 @@ export default async function HomePage() {
       <main className="flex-1">
         {/* ── Hero ─────────────────────────────────────────────────────── */}
         {/*
-          The headline is the picture. It runs the full width of the panel at
-          display size, and beneath it sit the two things a visitor can do: take
-          the free test (learners) or check a credential code (employers). The
-          check field is the memorable part. A page arguing that a claim nobody
-          can check is worth nothing should let you check one before you have
-          read a word.
+          Type directly on the page, no panel. The headline is the loudest
+          thing on the page and takes its contrast from the theme: foreground
+          for the setup, the primary colour for the claim (lime in dark mode, a
+          deep olive in light mode, which is what keeps it readable on a white
+          page). The event photo sits on the right in a tilted, outlined frame.
 
-          There is no photograph and no sample certificate here any more. The
-          photo carried no name or caption on purpose (see
-          public/landing/CREDITS.md), so it was atmosphere, and the sample card
-          next to it showed a credential nobody could look up on this page.
+          Under the copy sit the primary action, the free test, and a quieter
+          link to how certification works.
 
           Everything above the fold animates in CSS (rise-in), never in JS:
           motion writes its initial opacity 0 into the server HTML, which would
           leave the headline invisible until hydration, and invisible for good
           if the bundle never lands. h1 is uppercase Josefin Light through the
           global rule in globals.css.
+
+          The photo carries no name or caption on purpose (see
+          public/landing/CREDITS.md): a stock portrait labelled as a graduate
+          would be a fabricated testimonial on the page arguing that claims
+          should be checkable.
         */}
-        <section className="mx-auto w-full max-w-6xl px-4 pt-6 pb-2">
+        <section className="mx-auto w-full max-w-6xl px-4 pt-10 pb-6 sm:pt-14 lg:pt-16">
           <HeroScrollFade>
-            <SpotlightPanel className="relative isolate overflow-hidden rounded-3xl bg-ink px-6 py-12 ring-1 ring-white/10 sm:px-10 sm:py-16 lg:px-14 lg:py-20">
-              {/* No AuroraField/GridField/Grain here: the panel is translucent
-                  specifically so PageAmbience's single instance of each shows
-                  through. A second copy was pure duplication. */}
-
-              <h1 className="font-display text-[clamp(2rem,7.4vw,5rem)] leading-[1.04] tracking-[0.03em] text-balance">
-                <span
-                  className="rise-in block text-white/55"
-                  style={{ animationDelay: "0.05s" }}
-                >
-                  {heroSentences.first}
-                </span>
-                <span
-                  className="rise-in block text-brand"
-                  style={{ animationDelay: "0.2s" }}
-                >
-                  {heroSentences.rest}
-                </span>
-              </h1>
-
-              <div className="mt-10 grid gap-8 lg:mt-14 lg:grid-cols-[1.05fr_0.95fr] lg:items-end lg:gap-14">
-                <div>
-                  <p
-                    className="rise-in max-w-lg text-base leading-[1.65] text-white/70 sm:text-lg"
-                    style={{ animationDelay: "0.4s" }}
+            <div className="grid items-center gap-12 lg:grid-cols-[1.4fr_0.6fr] lg:gap-14">
+              <div>
+                <h1 className="font-display text-[clamp(2.1rem,4.9vw,3.6rem)] leading-[1.05] tracking-[0.03em] text-balance">
+                  <span
+                    className="rise-in block text-foreground/60"
+                    style={{ animationDelay: "0.05s" }}
                   >
-                    {landing.hero.subheading}
-                  </p>
-
-                  <div
-                    className="rise-in mt-8 flex flex-col gap-3 sm:flex-row"
-                    style={{ animationDelay: "0.5s" }}
+                    {heroSentences.first}
+                  </span>
+                  <span
+                    className="rise-in block text-primary"
+                    style={{ animationDelay: "0.2s" }}
                   >
-                    {user ? (
-                      <SignUpCta href="/dashboard">
-                        Go to my dashboard
+                    {heroSentences.rest}
+                  </span>
+                </h1>
+
+                <p
+                  className="rise-in mt-10 max-w-lg text-base leading-[1.65] text-foreground/80 sm:text-lg"
+                  style={{ animationDelay: "0.4s" }}
+                >
+                  {landing.hero.subheading}
+                </p>
+
+                <div
+                  className="rise-in mt-8 flex flex-col gap-3 sm:flex-row"
+                  style={{ animationDelay: "0.5s" }}
+                >
+                  {user ? (
+                    <SignUpCta href="/dashboard">
+                      Go to my dashboard
+                      <ArrowRight className="size-4" aria-hidden />
+                    </SignUpCta>
+                  ) : (
+                    <>
+                      <SignUpCta href={landing.hero.primary.href}>
+                        {landing.hero.primary.label}
                         <ArrowRight className="size-4" aria-hidden />
                       </SignUpCta>
-                    ) : (
-                      <>
-                        <SignUpCta href={landing.hero.primary.href}>
-                          {landing.hero.primary.label}
-                          <ArrowRight className="size-4" aria-hidden />
-                        </SignUpCta>
-                        <Button
-                          asChild
-                          size="lg"
-                          variant="outline"
-                          className="h-12 border-white/20 bg-transparent text-white hover:bg-white/10 hover:text-white"
-                        >
-                          <Link href={landing.hero.secondary.href}>
-                            {landing.hero.secondary.label}
-                          </Link>
-                        </Button>
-                      </>
-                    )}
-                  </div>
-
-                  {/* Facts, not badges. Every one is checkable on this site. */}
-                  <ul
-                    className="rise-in mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-white/55"
-                    style={{ animationDelay: "0.6s" }}
-                  >
-                    {landing.hero.pills.map((pill) => (
-                      <li key={pill} className="flex items-center gap-2">
-                        <Check className="size-3.5 text-brand" aria-hidden />
-                        {pill}
-                      </li>
-                    ))}
-                  </ul>
+                      <Button
+                        asChild
+                        size="lg"
+                        variant="outline"
+                        className="h-12 bg-background/40 backdrop-blur-sm"
+                      >
+                        <Link href={landing.hero.secondary.href}>
+                          {landing.hero.secondary.label}
+                        </Link>
+                      </Button>
+                    </>
+                  )}
                 </div>
 
-                <div className="rise-in" style={{ animationDelay: "0.55s" }}>
-                  <HeroVerifyForm />
+                {/* Facts, not badges. Every one is checkable on this site. */}
+                <ul
+                  className="rise-in mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-foreground/65"
+                  style={{ animationDelay: "0.6s" }}
+                >
+                  {landing.hero.pills.map((pill) => (
+                    <li key={pill} className="flex items-center gap-2">
+                      <Check className="size-3.5 text-primary" aria-hidden />
+                      {pill}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* The event photo, tilted in an outlined frame with a solid
+                  offset shadow. Hidden under lg (see hero-media.tsx for why
+                  that matters for the image fetch). */}
+              <div
+                className="rise-in relative mx-auto hidden w-full max-w-[19rem] lg:block"
+                style={{ animationDelay: "0.3s" }}
+              >
+                <div className="rotate-[2.5deg] rounded-[1.75rem] border-[5px] border-foreground bg-background p-1.5 shadow-[10px_12px_0_0_color-mix(in_oklab,var(--brand)_80%,transparent)]">
+                  <div className="relative aspect-[4/5] overflow-hidden rounded-[1.25rem]">
+                    <HeroMedia className="absolute inset-0 size-full object-cover" />
+                  </div>
                 </div>
               </div>
-            </SpotlightPanel>
+            </div>
           </HeroScrollFade>
         </section>
 
