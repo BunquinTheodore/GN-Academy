@@ -20,16 +20,15 @@ import {
 import { landing } from "@/content/landing";
 import { cn } from "@/lib/utils";
 import { SignUpCta } from "@/components/sign-up-cta";
+import { HeroVerifyForm } from "@/components/hero-verify-form";
+import { splitSentences } from "@/lib/text/split-sentences";
 import { getSessionUser } from "@/lib/auth/session";
 import { Button } from "@/components/ui/button";
-import { CredentialCard } from "@/components/credential-card";
 import { SiteHeader } from "@/components/site/header";
 import { SiteFooter } from "@/components/site/footer";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/reveal";
 import {
-  AnimatedHeading,
   CountUpOnView,
-  Float,
   GlowCard,
   HeroScrollFade,
   Marquee,
@@ -39,7 +38,6 @@ import {
   SpotlightPanel,
   TypeHeading,
 } from "@/components/motion/landing-motion";
-import { HeroMedia } from "@/components/motion/hero-media";
 import { ProofOfWorkGallery } from "@/components/advocacy/ProofOfWorkGallery";
 
 /**
@@ -148,6 +146,16 @@ function TrackMarqueeRow({
  * is offered their dashboard instead, since sending them to a sales page for
  * something they have already bought into is just friction.
  */
+/**
+ * The headline is two sentences, set as two lines in different tones: the
+ * setup is quiet and the claim is bright. Splitting at the full stop keeps the
+ * copy in landing.ts a single editable string.
+ */
+const heroSentences = (() => {
+  const [first, ...rest] = splitSentences(landing.hero.heading);
+  return { first, rest: rest.join(" ") };
+})();
+
 export default async function HomePage() {
   const user = await getSessionUser();
 
@@ -163,66 +171,58 @@ export default async function HomePage() {
       <main className="flex-1">
         {/* ── Hero ─────────────────────────────────────────────────────── */}
         {/*
-          A dark inset panel, a photograph on a brand-coloured plate, and the
-          credential card floating across the corner of it.
+          The headline is the picture. It runs the full width of the panel at
+          display size, and beneath it sit the two things a visitor can do: take
+          the free test (learners) or check a credential code (employers). The
+          check field is the memorable part. A page arguing that a claim nobody
+          can check is worth nothing should let you check one before you have
+          read a word.
 
-          The first version put the credential card alone on a flat slab of
-          lime. It was legible and it read cheap: a large area of unbroken
-          saturated colour with a rectangle sitting on it has no depth, and next
-          to type this careful it looked like a different site. The plate is now
-          a soft gradient rotated a couple of degrees behind a photograph, and
-          the card sits over the photo as glass, which is where the depth comes
-          from.
+          There is no photograph and no sample certificate here any more. The
+          photo carried no name or caption on purpose (see
+          public/landing/CREDITS.md), so it was atmosphere, and the sample card
+          next to it showed a credential nobody could look up on this page.
 
-          The photograph is atmosphere. It carries no name, no caption and no
-          quote, because a stock portrait labelled as a graduate is a fabricated
-          testimonial on the one page arguing that claims should be checkable.
-          public/landing/CREDITS.md keeps that rule next to the files.
-
-          Everything above the fold animates in CSS. motion writes its initial
-          opacity 0 into the server HTML, so a JS-driven hero leaves the
-          headline invisible until hydration, and invisible for good if the
-          bundle never lands.
+          Everything above the fold animates in CSS (rise-in), never in JS:
+          motion writes its initial opacity 0 into the server HTML, which would
+          leave the headline invisible until hydration, and invisible for good
+          if the bundle never lands. h1 is uppercase Josefin Light through the
+          global rule in globals.css.
         */}
         <section className="mx-auto w-full max-w-6xl px-4 pt-6 pb-2">
           <HeroScrollFade>
-            <SpotlightPanel className="relative isolate overflow-hidden rounded-3xl bg-ink px-6 py-14 ring-1 ring-white/10 sm:px-10 sm:py-14 lg:px-14 lg:py-16">
+            <SpotlightPanel className="relative isolate overflow-hidden rounded-3xl bg-ink px-6 py-12 ring-1 ring-white/10 sm:px-10 sm:py-16 lg:px-14 lg:py-20">
               {/* No AuroraField/GridField/Grain here: the panel is translucent
                   specifically so PageAmbience's single instance of each shows
-                  through, per the comment above. A second copy was pure
-                  duplication (8 blurred orbs animating at once). */}
+                  through. A second copy was pure duplication. */}
 
-              <div className="relative grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
-                <div className="max-w-xl">
+              <h1 className="font-display text-[clamp(2rem,7.4vw,5rem)] leading-[1.04] tracking-[0.03em] text-balance">
+                <span
+                  className="rise-in block text-white/55"
+                  style={{ animationDelay: "0.05s" }}
+                >
+                  {heroSentences.first}
+                </span>
+                <span
+                  className="rise-in block text-brand"
+                  style={{ animationDelay: "0.2s" }}
+                >
+                  {heroSentences.rest}
+                </span>
+              </h1>
+
+              <div className="mt-10 grid gap-8 lg:mt-14 lg:grid-cols-[1.05fr_0.95fr] lg:items-end lg:gap-14">
+                <div>
                   <p
-                    className="rise-in mb-6 inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/5 py-1.5 pr-4 pl-2 text-xs font-medium text-white/75"
-                    style={{ animationDelay: "0.05s" }}
-                  >
-                    <span className="relative flex size-2">
-                      <span className="absolute inline-flex size-full animate-ping rounded-full bg-brand opacity-60" />
-                      <span className="relative inline-flex size-2 rounded-full bg-brand" />
-                    </span>
-                    Practical basics. Verifiable skills.
-                  </p>
-
-                  <AnimatedHeading
-                    as="h1"
-                    text={landing.hero.heading}
-                    className="font-display text-[1.75rem] leading-[1.1] tracking-[0.04em] text-balance text-white min-[400px]:text-[2rem] sm:text-4xl lg:text-5xl"
-                    delay={0.1}
-                    stagger={0.05}
-                  />
-
-                  <p
-                    className="rise-in mt-6 max-w-lg text-base leading-[1.65] text-white/65 sm:text-lg"
-                    style={{ animationDelay: "0.6s" }}
+                    className="rise-in max-w-lg text-base leading-[1.65] text-white/70 sm:text-lg"
+                    style={{ animationDelay: "0.4s" }}
                   >
                     {landing.hero.subheading}
                   </p>
 
                   <div
-                    className="rise-in mt-9 flex flex-col gap-3 sm:flex-row"
-                    style={{ animationDelay: "0.72s" }}
+                    className="rise-in mt-8 flex flex-col gap-3 sm:flex-row"
+                    style={{ animationDelay: "0.5s" }}
                   >
                     {user ? (
                       <SignUpCta href="/dashboard">
@@ -251,8 +251,8 @@ export default async function HomePage() {
 
                   {/* Facts, not badges. Every one is checkable on this site. */}
                   <ul
-                    className="rise-in mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-white/50"
-                    style={{ animationDelay: "0.84s" }}
+                    className="rise-in mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-white/55"
+                    style={{ animationDelay: "0.6s" }}
                   >
                     {landing.hero.pills.map((pill) => (
                       <li key={pill} className="flex items-center gap-2">
@@ -263,53 +263,8 @@ export default async function HomePage() {
                   </ul>
                 </div>
 
-                {/*
-                  The clip, its plate, and the credential beneath it.
-
-                  The card used to sit across the corner of the video, and it
-                  could not be made to work: a tall portrait clip and a card
-                  wide enough not to wrap "CAVA-2026-000001" are both about the
-                  width of this column, so wherever the card went it covered the
-                  person. Moving it to each corner in turn just moved which part
-                  of her it hid.
-
-                  Stacking solves it outright. The card overlaps the bottom edge
-                  of the clip by a little, which keeps them reading as one
-                  object, and takes the full column width, which is what stops
-                  the credential code breaking across two lines.
-                */}
-                <div
-                  className="rise-in relative mx-auto hidden w-full max-w-[22rem] lg:block"
-                  style={{ animationDelay: "0.4s" }}
-                >
-                  {/* Gradient, rotated, softened at the edge. A flat rectangle
-                      of saturated colour is what made the first version cheap. */}
-                  <div
-                    aria-hidden
-                    className="absolute -inset-3 bottom-24 -z-10 rotate-3 rounded-[1.75rem] bg-[linear-gradient(140deg,var(--brand),var(--brand-cyan))] opacity-90 blur-[2px]"
-                  />
-                  <div className="relative aspect-[4/5] overflow-hidden rounded-3xl ring-1 ring-white/20">
-                    <HeroMedia className="absolute inset-0 size-full object-cover" />
-                    {/* Ties the clip into the panel, and darkens the strip the
-                        card overlaps so the two do not fight. */}
-                    <div
-                      aria-hidden
-                      className="absolute inset-0 bg-gradient-to-t from-ink/85 via-transparent to-transparent"
-                    />
-                  </div>
-
-                  <Float amplitude={6} duration={6} className="relative -mt-12">
-                    <div className="rounded-2xl border border-white/15 bg-ink/80 p-1 shadow-2xl backdrop-blur-md">
-                      <CredentialCard
-                        state="verified"
-                        holderName="Juana D. (Demo credential)"
-                        title="Certified AI Virtual Assistant"
-                        level="Professional certification"
-                        credentialCode="CAVA-2026-000001"
-                        issuedAt={new Date("2026-08-01")}
-                      />
-                    </div>
-                  </Float>
+                <div className="rise-in" style={{ animationDelay: "0.55s" }}>
+                  <HeroVerifyForm />
                 </div>
               </div>
             </SpotlightPanel>
