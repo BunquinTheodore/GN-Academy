@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import { landing } from "@/content/landing";
 import { cn } from "@/lib/utils";
+import { SignUpCta } from "@/components/sign-up-cta";
 import { getSessionUser } from "@/lib/auth/session";
 import { Button } from "@/components/ui/button";
 import { CredentialCard } from "@/components/credential-card";
@@ -40,18 +41,6 @@ import {
 } from "@/components/motion/landing-motion";
 import { HeroMedia } from "@/components/motion/hero-media";
 import { ProofOfWorkGallery } from "@/components/advocacy/ProofOfWorkGallery";
-
-/**
- * Button colours for the hero panel.
- *
- * `--primary` is a deepened lime chosen to pass AA as text and as a fill on the
- * *page* background, which flips with the theme. The hero panel does not flip:
- * it is ink in both. In light mode the default primary therefore rendered dark
- * green on near-black, which is the one button on the page that has to be
- * unmissable. On ink, the logo's actual neon is both correct and legible.
- */
-const ON_INK_PRIMARY =
-  "bg-brand text-brand-foreground hover:bg-brand/90 focus-visible:ring-brand/40";
 
 /**
  * Subject to icon. Kept here rather than in `src/content/landing.ts` because a
@@ -219,7 +208,7 @@ export default async function HomePage() {
                   <AnimatedHeading
                     as="h1"
                     text={landing.hero.heading}
-                    className="font-display text-[2.6rem] leading-[1.05] font-semibold tracking-[-0.02em] text-balance text-white sm:text-5xl lg:text-[3.4rem]"
+                    className="font-display text-[1.75rem] leading-[1.1] tracking-[0.04em] text-balance text-white min-[400px]:text-[2rem] sm:text-4xl lg:text-5xl"
                     delay={0.1}
                     stagger={0.05}
                   />
@@ -236,20 +225,16 @@ export default async function HomePage() {
                     style={{ animationDelay: "0.72s" }}
                   >
                     {user ? (
-                      <Button asChild size="lg" className={cn("h-12", ON_INK_PRIMARY)}>
-                        <Link href="/dashboard">
-                          Go to my dashboard
-                          <ArrowRight className="size-4" aria-hidden />
-                        </Link>
-                      </Button>
+                      <SignUpCta href="/dashboard">
+                        Go to my dashboard
+                        <ArrowRight className="size-4" aria-hidden />
+                      </SignUpCta>
                     ) : (
                       <>
-                        <Button asChild size="lg" className={cn("h-12", ON_INK_PRIMARY)}>
-                          <Link href={landing.hero.primary.href}>
-                            {landing.hero.primary.label}
-                            <ArrowRight className="size-4" aria-hidden />
-                          </Link>
-                        </Button>
+                        <SignUpCta href={landing.hero.primary.href}>
+                          {landing.hero.primary.label}
+                          <ArrowRight className="size-4" aria-hidden />
+                        </SignUpCta>
                         <Button
                           asChild
                           size="lg"

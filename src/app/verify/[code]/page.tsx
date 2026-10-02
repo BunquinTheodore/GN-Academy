@@ -5,6 +5,8 @@ import { getCredentialByCode, type Credential } from "@/lib/db/credentials";
 import { formatDate } from "@/lib/format";
 import { env } from "@/lib/env";
 import { CredentialCard } from "@/components/credential-card";
+import { AnchorProofPanel } from "@/components/anchor-proof-panel";
+import { CertificateViewer } from "@/components/certificate-3d/certificate-viewer";
 import { SiteHeader } from "@/components/site/header";
 import { SiteFooter } from "@/components/site/footer";
 import { TrackView } from "@/components/track-view";
@@ -80,6 +82,22 @@ export default async function VerifyCodePage({
 
   const isDemo = credential?.holder_name.includes("(Demo Record)") ?? false;
 
+  const levelLabel = credential?.level
+    ? `${credential.level[0].toUpperCase()}${credential.level.slice(1)} certification`
+    : undefined;
+
+  const flatCard = credential ? (
+    <CredentialCard
+      state={credential.status === "active" ? "verified" : "earned"}
+      holderName={credential.holder_name}
+      title={credential.title}
+      level={levelLabel}
+      credentialCode={credential.credential_code}
+      issuedAt={credential.issued_at}
+      className="max-w-full"
+    />
+  ) : null;
+
   return (
     <div className="flex min-h-svh flex-col">
       <SiteHeader />
@@ -132,19 +150,19 @@ export default async function VerifyCodePage({
           )}
 
           <div className="mt-6">
-            <CredentialCard
-              state={credential.status === "active" ? "verified" : "earned"}
-              holderName={credential.holder_name}
-              title={credential.title}
-              level={
-                credential.level
-                  ? `${credential.level[0].toUpperCase()}${credential.level.slice(1)} certification`
-                  : undefined
-              }
-              credentialCode={credential.credential_code}
-              issuedAt={credential.issued_at}
-              className="max-w-full"
-            />
+            {credential.status === "active" ? (
+              <CertificateViewer
+                holderName={credential.holder_name}
+                title={credential.title}
+                level={levelLabel}
+                credentialCode={credential.credential_code}
+                issuedAt={credential.issued_at}
+                verifyUrl={`${env.NEXT_PUBLIC_SITE_URL.replace(/\/+$/, "")}/verify/${encodeURIComponent(credential.credential_code)}`}
+                poster={flatCard}
+              />
+            ) : (
+              flatCard
+            )}
           </div>
 
           {credential.competencies && credential.competencies.length > 0 && (
@@ -172,6 +190,8 @@ export default async function VerifyCodePage({
               ))}
             </div>
           )}
+
+          <AnchorProofPanel credential={credential} />
 
           <div className="mt-6 flex flex-col gap-2 text-sm text-muted-foreground">
             <p>

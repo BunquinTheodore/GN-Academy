@@ -12,7 +12,7 @@ import { env } from "@/lib/env";
 import { SiteHeader } from "@/components/site/header";
 import { SiteFooter } from "@/components/site/footer";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { SignUpCta } from "@/components/sign-up-cta";
 import { CredentialCard } from "@/components/credential-card";
 import { TrackView } from "@/components/track-view";
 import { JsonLd } from "@/components/json-ld";
@@ -116,11 +116,9 @@ export default async function CertificationPage({
                       ? formatPhp(cert.price_php)
                       : ""}
                 </p>
-                <Button asChild size="lg" className="h-12">
-                  <Link href={`/certifications/${cert.slug}/enroll`}>
-                    {cert.is_free ? "Start the free course" : "Enroll now"}
-                  </Link>
-                </Button>
+                <SignUpCta href={`/certifications/${cert.slug}/enroll`}>
+                  {cert.is_free ? "Start the free course" : "Enroll now"}
+                </SignUpCta>
               </div>
               <p className="mt-3 text-xs text-muted-foreground">
                 {lessonCount} lessons

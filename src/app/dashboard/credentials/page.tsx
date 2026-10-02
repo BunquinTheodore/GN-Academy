@@ -4,8 +4,11 @@ import { redirect } from "next/navigation";
 import { getSessionUser } from "@/lib/auth/session";
 import { listCredentialsForUser } from "@/lib/db/credentials";
 import { CredentialCard } from "@/components/credential-card";
+import { CertificateViewer } from "@/components/certificate-3d/certificate-viewer";
 import { LinkedInShareButton } from "@/components/linkedin-share-dialog";
 import { env } from "@/lib/env";
+import { addToLinkedInPath } from "@/lib/linkedin/add-to-profile";
+import { Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = { title: "My credentials" };
@@ -40,14 +43,25 @@ export default async function CredentialsPage() {
         <div className="grid gap-6 md:grid-cols-2">
           {credentials.map((credential) => (
             <div key={credential.id} className="flex flex-col items-start gap-3">
-              <CredentialCard
-                state="earned"
-                holderName={credential.holder_name}
-                title={credential.title}
-                level={credential.level ?? undefined}
-                credentialCode={credential.credential_code}
-                issuedAt={credential.issued_at}
-              />
+              {credential.status === "active" ? (
+                <CertificateViewer
+                  holderName={credential.holder_name}
+                  title={credential.title}
+                  level={credential.level ?? undefined}
+                  credentialCode={credential.credential_code}
+                  issuedAt={credential.issued_at}
+                  verifyUrl={`${env.NEXT_PUBLIC_SITE_URL}/verify/${credential.credential_code}`}
+                />
+              ) : (
+                <CredentialCard
+                  state="earned"
+                  holderName={credential.holder_name}
+                  title={credential.title}
+                  level={credential.level ?? undefined}
+                  credentialCode={credential.credential_code}
+                  issuedAt={credential.issued_at}
+                />
+              )}
               <div className="flex flex-wrap gap-2">
                 {credential.status === "active" && (
                   <LinkedInShareButton
@@ -59,6 +73,18 @@ export default async function CredentialsPage() {
                       siteUrl: env.NEXT_PUBLIC_SITE_URL,
                     }}
                   />
+                )}
+                {credential.status === "active" && (
+                  <Button asChild size="sm" variant="outline">
+                    <a
+                      href={addToLinkedInPath(credential.credential_code)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Plus aria-hidden />
+                      Add to LinkedIn profile
+                    </a>
+                  </Button>
                 )}
                 <Button asChild size="sm" variant="outline">
                   <Link href={`/verify/${credential.credential_code}`}>
