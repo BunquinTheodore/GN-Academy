@@ -190,9 +190,9 @@ export default async function HomePage() {
           would be a fabricated testimonial on the page arguing that claims
           should be checkable.
         */}
-        <section className="mx-auto w-full max-w-6xl px-4 pt-10 pb-6 sm:pt-14 lg:pt-16">
+        <section className="mx-auto w-full max-w-6xl px-4 pt-10 pb-6 sm:pt-14 lg:pt-16 min-[1360px]:max-w-7xl">
           <HeroScrollFade>
-            <div className="grid items-center gap-12 lg:grid-cols-[1.4fr_0.6fr] lg:gap-14">
+            <div className="grid items-center gap-12 lg:grid-cols-[1.4fr_0.6fr] lg:gap-14 min-[1360px]:grid-cols-[1.25fr_0.75fr]">
               <div>
                 <h1 className="font-display text-[clamp(2.1rem,4.9vw,3.6rem)] leading-[1.05] tracking-[0.03em] text-balance">
                   <span
@@ -263,7 +263,7 @@ export default async function HomePage() {
                   offset shadow. Hidden under lg (see hero-media.tsx for why
                   that matters for the image fetch). */}
               <div
-                className="rise-in relative mx-auto hidden w-full max-w-[19rem] lg:block"
+                className="rise-in relative mx-auto hidden w-full max-w-[19rem] lg:block min-[1360px]:max-w-[22rem]"
                 style={{ animationDelay: "0.3s" }}
               >
                 <div className="rotate-[2.5deg] rounded-[1.75rem] border-[5px] border-foreground bg-background p-1.5 shadow-[10px_12px_0_0_color-mix(in_oklab,var(--brand)_80%,transparent)]">

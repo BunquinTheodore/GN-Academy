@@ -22,7 +22,7 @@ export function HeroMedia({ className }: { className?: string }) {
       src="/landing/hero-loop-poster.jpg"
       alt="GN Academy community and mentors at a startup event."
       fill
-      sizes="(min-width: 1024px) 21rem, 1px"
+      sizes="(min-width: 1360px) 22rem, (min-width: 1024px) 19rem, 1px"
       className={className}
     />
   );
