@@ -12,7 +12,7 @@ export const site = {
   // someone is already stuck.
   contactEmail: "gnclub.contactus@gmail.com",
   description:
-    "Practical foundations and verified credentials for Filipinos, from AI and blockchain to online safety, finance, freelancing, and career skills. The team behind GN Academy also brings trading and tech education directly to university campuses.",
+    "Practical foundations and verified credentials for Filipinos, from AI and blockchain to online safety, finance, freelancing, and career skills. The team behind GN Academy also brings AI, blockchain and tech education directly to university campuses.",
 } as const;
 
 export const nav = {
@@ -61,7 +61,7 @@ export const home = {
 
 export const footer = {
   blurb:
-    "GN Academy helps Filipinos build practical foundations, prove what they know, and connect with employers who value verified skills. Beyond the platform, the team brings trading and tech education access to university campuses directly.",
+    "GN Academy helps Filipinos build practical foundations, prove what they know, and connect with employers who value verified skills. Beyond the platform, the team brings AI, blockchain and tech education access to university campuses directly.",
   columns: [
     {
       heading: "Platform",

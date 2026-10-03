@@ -23,8 +23,8 @@ export const advocacy = {
    */
   intro: {
     eyebrow: "Beyond the platform",
-    heading: "Bringing trading and tech education to more campuses",
-    body: "Outside the courses on this site, the GN Ventures team runs talks, workshops and hackathon sessions that bring practical trading and technology education directly to university students. Below are real photos from the talks, panels and expo stops the team has shown up for, proof of that work as it happens.",
+    heading: "Bringing AI, blockchain and tech education to more campuses",
+    body: "Outside the courses on this site, the GN Ventures team runs talks, workshops and hackathon sessions that bring practical AI, blockchain and technology education directly to university students. Below are real photos from the talks, panels and expo stops the team has shown up for, proof of that work as it happens.",
   },
 
   gallery: {
@@ -79,7 +79,7 @@ export const advocacy = {
   speakerBooking: {
     eyebrow: "Book a speaker",
     heading: "Bring GN Ventures to your campus or event",
-    body: "Jops speaks with university students and communities about practical trading and technology skills, the same foundations taught in GN Academy's free tracks. Tell us about your event and we will follow up by email.",
+    body: "Jops speaks with university students and communities about practical AI, blockchain and technology skills, the same foundations taught in GN Academy's free tracks. Tell us about your event and we will follow up by email.",
     imagery: [
       { file: "speaker-jops-01.jpg", alt: "Jops speaking into a microphone during a presentation, gesturing while addressing the audience." },
       { file: "speaker-jops-02.jpg", alt: "Jops speaking at a Web3 community event, holding a microphone in front of a branded stage backdrop." },
