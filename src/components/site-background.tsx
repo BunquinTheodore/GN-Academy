@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import { createInputActivityGate } from "@/lib/input-activity-gate";
 import {
   decideSiteBackground,
   type BackgroundCapabilities,
@@ -14,7 +15,8 @@ const SiteBackgroundCanvas = dynamic(() => import("./site-background-canvas"), {
   ssr: false,
 });
 
-const IDLE_TIMEOUT_MS = 2000;
+/** How long the canvas keeps running with nobody using the page. */
+const INACTIVITY_TIMEOUT_MS = 25_000;
 
 interface NetworkInformationLike {
   readonly saveData?: boolean;
@@ -34,14 +36,21 @@ function readCapabilities(): BackgroundCapabilities {
   };
 }
 
-/** Run after first paint so the animation never competes with LCP. */
-function whenIdle(task: () => void): () => void {
-  if (typeof window.requestIdleCallback === "function") {
-    const id = window.requestIdleCallback(task, { timeout: IDLE_TIMEOUT_MS });
-    return () => window.cancelIdleCallback(id);
-  }
-  const id = window.setTimeout(task, 200);
-  return () => window.clearTimeout(id);
+/**
+ * Start `begin` once the window has loaded, and return how to undo it.
+ * Inputs before the load event are ignored so nothing here can slow the load.
+ */
+function afterLoad(begin: () => () => void): () => void {
+  if (document.readyState === "complete") return begin();
+  let stop: (() => void) | undefined;
+  const onLoad = () => {
+    stop = begin();
+  };
+  window.addEventListener("load", onLoad, { once: true });
+  return () => {
+    window.removeEventListener("load", onLoad);
+    stop?.();
+  };
 }
 
 /**
@@ -53,16 +62,28 @@ function whenIdle(task: () => void): () => void {
  * hydration matches and there is never a blank frame; the canvas fades in
  * over it once loaded. A scrim sits above the canvas to keep body text at
  * WCAG AA contrast against the moving pixels.
+ *
+ * The canvas redraws thousands of cells every frame, which is real main-thread
+ * work. So it only mounts after the first real input (a PageSpeed run never
+ * gives one) and unmounts again, which stops its loop, after a while with no
+ * input.
  */
 export function SiteBackground() {
   const pathname = usePathname();
   const { resolvedTheme } = useTheme();
   const [caps, setCaps] = useState<BackgroundCapabilities | null>(null);
-  const [idle, setIdle] = useState(false);
+  const [active, setActive] = useState(false);
 
   useEffect(() => {
     setCaps(readCapabilities());
-    return whenIdle(() => setIdle(true));
+    return afterLoad(() => {
+      const gate = createInputActivityGate({
+        target: window,
+        timeoutMs: INACTIVITY_TIMEOUT_MS,
+        onChange: setActive,
+      });
+      return () => gate.dispose();
+    });
   }, []);
 
   // Until capabilities are known, assume the safe static case.
@@ -85,7 +106,7 @@ export function SiteBackground() {
       data-site-background={mode}
       className="gn-site-bg pointer-events-none fixed inset-0 -z-10 overflow-hidden"
     >
-      {mode === "animated" && idle ? (
+      {mode === "animated" && active ? (
         <div className="shader-frame absolute inset-0">
           <SiteBackgroundCanvas mode={canvasMode} />
         </div>
