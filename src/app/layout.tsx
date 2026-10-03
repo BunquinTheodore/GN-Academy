@@ -64,7 +64,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_SITE_URL),
   title: {
-    default: "GN Academy: Learn. Prove. Get hired.",
+    default: "GN Academy | Learn. Prove. Get hired.",
     template: "%s · GN Academy",
   },
   description:
